@@ -1,21 +1,33 @@
-# Week 1 Reflection Template
+# Week 01 Log and Reflection
 
-Complete this reflection at the end of Week 1.  Use it to think deeply about your progress and plan the next week.
+## Weekly Reflection
 
-## What went well?
+### What went well?
+This week, I successfully set up all required profiles and accounts, which exposed me to various communities and learning resources. I also completed multiple GitHub courses and made significant progress on the Block Theme Academy course. Setting up Local Ollie and LSX-Demo Site went smoothly, and I’m proud of the progress I made in understanding block themes.
 
-Describe the successes of this week.  Which tasks or concepts were straightforward?  What are you proud of?
+### What can be improved?
+The Block Theme Academy course required more time and focus than I initially anticipated. I could improve my time management by allocating more focused blocks of time for complex tasks. Additionally, I could streamline the process of taking notes to make it more efficient.
 
-## What can be improved?
+### What have you learned?
+I learned how to set up and secure various accounts, work with Local Ollie and LSX-Demo Site, and navigate the Block Theme Academy course. The GitHub courses introduced me to new workflows and tools, including GitHub Copilot and MCP integration.
 
-Identify areas where you struggled or could be more efficient.  Consider workflow, communication and time management.
+### What are your next actions?
+- Continue exploring advanced topics in block themes.
+- Start applying the knowledge gained from GitHub courses to real-world tasks.
+- Plan and prioritize tasks for Week 2 to ensure steady progress.
+- Explore additional resources and communities to deepen my understanding of WordPress themes.
 
-## What have you learned?
+---
 
-Summarise the key takeaways from this week.  Mention new tools, concepts or patterns you mastered.
+## Daily Log
 
-## What are your next actions?
+### 2025‑09‑DD
 
-List the concrete steps you will take next week to continue your progress.  These could be tasks from the curriculum, topics to study or goals to achieve.
+- **Hours:** _e.g. 3.5_
+- **Task:** _Describe the task or issue you worked on._
+- **Description:** _Explain what you did, resources used, obstacles encountered, and how you resolved them._
+- **Next Steps:** _Outline what you plan to work on next._
 
-Use this reflection to prepare your Week 1 submission issue.  Reflective writing helps consolidate knowledge and demonstrates growth.
+---
+
+Repeat the daily section for each day you work during Week 01.

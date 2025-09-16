@@ -1,28 +1,23 @@
 # Week 1, Day 3 Log Template
 
-Use this template to record your third day’s stand‑up and work log.
-
 ## Daily Standup
+### 2025‑09‑03
 
 ### How do you feel today?
-
-How are you feeling?  Are you energized, tired or somewhere in between?
+Feeling focused but aware that the Block Theme Academy course requires a lot of attention.
 
 ### What did you do yesterday?
-
-Summarise yesterday’s achievements.  Include issue numbers if applicable.
+Set up Local Ollie and LSX-Demo Site, and started the Block Theme Academy course. Forked the lsx-demo-theme. 
 
 ### What do you plan to do today?
-
-List today’s tasks:
-
-- [ ] Replace with an actual task description.
-- [ ] Add additional tasks as needed.
+- [x] Continue the Block Theme Academy course.
+- [x] Remove duplicate links on the Enhancing LSX-Demo-Theme.
+- [x] Add links to the resources in the study curriculum document.
 
 ### What are your blockers?
-
-Identify any blockers or uncertainties.
+None.
 
 ## Daily Logs
-
-Record each Harvest entry with hours and a description.  Keep bullet points clear and concise.
+- 4.0 hrs – Continued the Block Theme Academy course and refined notes.
+- 2.0 hrs – Removed duplicate links on Enhancing LSX-Demo-Theme.
+- 2.0 hrs – Added links to the resources in the study curriculum document.

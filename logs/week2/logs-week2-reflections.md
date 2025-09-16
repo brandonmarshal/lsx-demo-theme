@@ -1,35 +1,33 @@
-# Week 2, Reflections.
+# Week 02 Log and Reflection
 
-This template illustrates how to structure your daily log.  Duplicate this file for each day of the week and replace the placeholder text with your own entries.
+## Weekly Reflection
 
-## Daily Standup
+### What went well?
+This week, I completed several Microsoft and GitHub courses, which helped me deepen my understanding of repository management, GitHub Copilot, and best practices for maintaining secure repositories. Collaborating with Seren was a highlight, as we were able to plan and divide tasks for the lsx-demo-theme project effectively. Resolving the GitHub billing issue was also a success, ensuring my account was fully functional.
 
-### How do you feel today?
+### What can be improved?
+The GitHub billing issue caused a slight delay in progress, but it was resolved quickly. I could improve my workflow by allocating more time for reading and processing the learning material from forums. Additionally, I should aim to streamline email management to save time.
 
-Describe your overall mood or energy level.  For example: “Feeling excited to start working on the project.”
+### What have you learned?
+I learned how to use advanced GitHub Copilot features, manage repositories effectively, and maintain secure repositories. The forums provided valuable insights into best practices for WordPress themes and GitHub workflows. Collaborating with Seren also taught me the importance of teamwork and task division.
 
-### What did you do yesterday?
+### What are your next actions?
+- Continue working on the lsx-demo-theme project and implement the next steps.
+- Explore additional forums and resources to deepen my understanding of WordPress themes.
+- Plan Week 3 tasks with Seren and ensure steady progress.
+- Take more advanced courses on GitHub and WordPress development.
 
-Summarise what you accomplished in the previous session.  Mention specific tasks or issues you worked on.
+---
 
-### What do you plan to do today?
+## Daily Log
 
-List the tasks you intend to work on today.  Use a checklist to break them down:
+### 2025‑09‑DD
 
-- [ ] Replace this line with an actual task; keep descriptions short and action‑oriented.
-- [ ] Add more tasks as needed.
+- **Hours:** _e.g. 3.5_
+- **Task:** _Describe the task or issue you worked on._
+- **Description:** _Explain what you did, resources used, obstacles encountered, and how you resolved them._
+- **Next Steps:** _Outline what you plan to work on next._
 
-### What are your blockers?
+---
 
-Identify anything that might prevent you from making progress (e.g. waiting for feedback, unsure about a tool).  If you have no blockers, state “None”.
-
-## Daily Logs
-
-Copy your Harvest time entries here.  Use bullets to list each time entry along with a brief description.  For example:
-
-```
-- 1.5 hrs – cloned repo and installed dependencies (Issue #1)
-- 2.0 hrs – read WordPress block theme documentation and took notes
-```
-
-You can draft notes throughout the day in this section and refine them before committing.
+Repeat the daily section for each day you work during Week 01.
