@@ -1,0 +1,20 @@
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+newIssueWelcomeComment: >
+  Thank you for opening this issue! A LightSpeed team member will review it soon.
+  Please ensure your issue follows our [CONTRIBUTING.md](../contribution_guide/CONTRIBUTING.md) guidelines and includes all relevant details (steps to reproduce, expected behavior, environment, etc.).
+  By participating, you agree to our [Code of Conduct](../contribution_guide/CODE_OF_CONDUCT.md).
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+newPRWelcomeComment: >
+  Thank you for your pull request and for contributing to LightSpeed!
+  Please confirm your PR includes:
+  - A linked GitHub Issue in the description
+  - Clear, conventional commit messages (e.g., feat:, fix:, docs:)
+  - Screenshots for any UI changes
+  - Passing tests (no skips unless justified)
+  - No committed secrets
+
+  For full details, see our [CONTRIBUTING.md](../contribution_guide/CONTRIBUTING.md).
+  A maintainer will review and provide feedback soon.

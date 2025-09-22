@@ -15,13 +15,25 @@ Thank you for your interest in contributing to LightSpeed! Please follow this wo
 - Use a descriptive branch name, such as `feature/short-description`, `bugfix/short-description`, or `chore/short-description`.
 
 ### 3. Develop Your Solution
-- Follow the coding standards and style guides used in this repository. If a linter or formatter is configured (e.g., ESLint, Prettier, PHPCS), ensure your code passes all checks before submitting.
+Follow the coding standards and style guides used in this repository. This project uses the following linters and formatters:
+  - **ESLint** (v8.x) with configuration in `.eslintrc.js`
+  - **Prettier** (v3.x) with configuration in `.prettierrc`
+  - **PHPCS** (v3.x) with configuration in `phpcs.xml`
+To reproduce checks locally before submitting:
+  1. Install dependencies: `npm install`
+  2. Run linters/formatters:
+     - JavaScript/TypeScript: `npm run lint` (ESLint)
+     - Formatting: `npm run format` (Prettier)
+     - PHP: `npm run phpcs` (PHPCS)
+  3. Optionally, use pre-commit hooks (via Husky) by running `npm run prepare` to enable automatic checks on commit.
+  4. Config files are located at the project root: `.eslintrc.js`, `.prettierrc`, `phpcs.xml`.
+Ensure your code passes all checks before submitting your PR.
 - Use **[CodeRabbit.ai](https://coderabbit.ai/)** alongside your local tools to perform automated code reviews and identify issues early.
 - Write clear, concise commit messages (e.g., Conventional Commits: feat:, fix:, docs:, chore:, refactor:).
-- Open a PR from your branch to the appropriate base branch (e.g., `trunk` or `trunk 2.1`).
+- Open a PR from your branch to the appropriate base branch (e.g., `main` or `release/2.1`).
 - **All PRs must have a description.** Make sure the description is accurate and updated if changes are made.
 - **All PRs must include a link to the related GitHub Issue in the description.** If a ticket does not exist, please create one.
-- Open a PR from your branch to the appropriate base branch (e.g., `main` or `release/2.1`).- **All PRs must contain screenshot(s) of any UI changes.** Add screenshots in the PR details and update them as needed in comments.
+- **All PRs must contain screenshot(s) of any UI changes.** Add screenshots in the PR details and update them as needed in comments.
 - **Tests should not be skipped!** If you must skip a test, provide your justification.
 - **PRs with module version bumps should have a link to the release notes and a summary of notable changes.**
 - **Any PR that doesn't meet the criteria in this list should be converted to a draft PR until it is ready to go.**
@@ -29,8 +41,6 @@ Thank you for your interest in contributing to LightSpeed! Please follow this wo
 - **No new failing or flaky tests.** If a test must be skipped, document the reason and linked issue, and add an unblock date.
 - **Do not commit or paste secrets.** Run secret scanning locally before opening a PR.
 
-- Be responsive to feedback and make requested changes as needed.
-- Only maintainers can approve and merge PRs.
 - PRs will be reviewed by **maintainers**. Automated tools (e.g., **CodeRabbit.ai**, Copilot) may assist with feedback, but human maintainers provide approvals.
   **CodeRabbit.ai** runs pre‑review automated checks for quality, performance, and best practices.
 - Be responsive to feedback and make requested changes as needed.
