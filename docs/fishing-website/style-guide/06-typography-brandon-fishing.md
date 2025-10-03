@@ -1,81 +1,176 @@
-# **Typography**
-
-**Google Fonts typography breakdown** tailored for Brandon’s Fishing Adventures site. It balances friendliness, readability, and a natural, outdoors-inspired vibe.
-
----
-
-## **1\. Headings (H1–H3)**
-
-**Montserrat** (Bold / Semi-Bold)
-
--   Clean, geometric sans-serif with a modern but approachable feel.
-
--   Works well for strong headlines like _“Smallmouth Yellowfish”_ or _“Fishing Adventures in KZN”_.
-
--   Keeps the site adventurous yet professional.
-
-Alternative: **Raleway** (slightly more elegant, softer personality).
+# Brandon’s Fishing Adventures  
+**Typography Guide**
 
 ---
 
-## **2\. Body Text (Paragraphs, Blog Content)**
+## 0. Deliverables
 
-**Lora** (Regular / Italic)
+- **Primary heading font (Google Font):** Montserrat
+- **Body text font (Google Font):** Lora
+- **UI/Caption font (Google Font):** Open Sans
 
--   Warm, humanist serif that’s easy to read in longer paragraphs.
+**Font Weights & Responsive Scale**
+- **Montserrat:** 600 (Semi-Bold), 700 (Bold)
+- **Lora:** 400 (Regular), 400 Italic
+- **Open Sans:** 400 (Regular), 600 (Semi-Bold)
+- **Scale method:** Fluid clamp scale
 
--   Adds a touch of personality and storytelling character, perfect for Brandon’s blog-style writing.
+**Line-height Rules**
+- **Body:** 1.6
+- **Headings:** 1.3
 
--   Italics can be used for anecdotes, fish species names, or quotes.
-
-Alternative: **Merriweather** (slightly darker tone, very readable on screen).
-
----
-
-## **3\. Navigation, Captions, Microcopy**
-
-**Open Sans** (Regular / Medium)
-
--   Neutral and highly legible.
-
--   Great for menus, buttons, forms, and small UI text.
-
--   Provides balance against the personality of Montserrat and Lora.
-
-Alternative: **Work Sans** (friendly, a bit more rounded).
+**theme.json Typography Setup:** See Section 6
 
 ---
 
-## **4\. Hierarchy in Use**
+## 1. Headings (H1–H3)
 
--   **H1:** Montserrat Bold, 36–48px
-
--   **H2/H3:** Montserrat Semi-Bold, 24–32px
-
--   **Body:** Lora Regular, 16–18px, line-height 1.6–1.8
-
--   **Captions / Buttons / Forms:** Open Sans Medium, 14–16px
-
----
-
-## **5\. Pairing Justification**
-
--   **Montserrat** gives Brandon’s site a modern adventure look.
-
--   **Lora** softens it with warmth and readability for long fishing stories.
-
--   **Open Sans** keeps functional areas clean, ensuring accessibility and contrast in UI elements.
+- **Font:** Montserrat (Bold 700 / Semi-Bold 600)
+- **Tone/Feel:** Clean, geometric, approachable, adventurous
+- **Best for:** Headlines like “Smallmouth Yellowfish” or “Fishing Adventures in KZN”
+- **Brand Fit:** Adds professionalism while keeping the outdoor adventure feel
+- **Alternative:** Raleway (slightly more elegant, softer personality)
+- **System Fallback Stack:** `"Montserrat", system-ui, sans-serif`
 
 ---
 
-## **6\. Accessibility & Fallbacks**
+## 2. Body Text (Paragraphs, Blog Content)
 
--   Ensure all text meets **WCAG AA contrast ratios**.
--   Use system fonts (e.g., Arial, Georgia) as fallbacks in case Google Fonts are unavailable.
+- **Font:** Lora (Regular 400 / Italic 400)
+- **Tone/Feel:** Warm, humanist, storytelling, natural
+- **Best for:** Blog articles, fishing stories, longer content
+- **Italics Usage:** Anecdotes, fish species names, quotes
+- **Alternative:** Merriweather (darker tone, very readable on screen)
+- **System Fallback Stack:** `"Lora", Georgia, serif`
 
 ---
 
-## **7\. Testing Typography**
+## 3. Navigation, Captions, Microcopy
 
--   Test font sizes and line heights on mobile, tablet, and desktop.
--   Use tools like Lighthouse or Axe to verify readability and accessibility.
+- **Font:** Open Sans (Regular 400 / Medium 600)
+- **Use In:** Menus, buttons, forms, labels, captions
+- **Why:** Neutral and highly legible, balances Montserrat and Lora
+- **Alternative:** Work Sans (friendlier, slightly more rounded)
+- **System Fallback Stack:** `"Open Sans", system-ui, sans-serif`
+
+---
+
+## 4. Hierarchy in Use
+
+- **H1:** Montserrat Bold, `clamp(2.25rem → 3rem)`, line-height 1.3
+- **H2/H3:** Montserrat Semi-Bold, `clamp(1.5rem → 2rem)`, line-height 1.3
+- **Body:** Lora Regular, `clamp(1rem → 1.125rem)`, line-height 1.6
+- **Captions/Buttons/Forms:** Open Sans Medium, `clamp(0.875rem → 1rem)`, `text-transform: UPPERCASE`
+
+**Responsive Notes**
+- Headings scale fluidly with `clamp()` between 320px and 1440px
+- Slightly reduce letter-spacing at larger sizes
+- Maintain minimum tap target size (44px) for buttons and inputs
+
+---
+
+## 5. Pairing Justification
+
+- **Montserrat** gives confident, adventurous headlines
+- **Lora** ensures warmth and readability for fishing stories and blogs
+- **Open Sans** keeps UI clean, consistent, and accessible
+
+**Performance:**  
+Load 2–3 weights per family, use `display=swap`, Latin subset only
+
+---
+
+## 6. theme.json – Typography Section
+
+```json
+{
+  "$schema": "https://schemas.wp.org/wp/6.8/block.json",
+  "version": 3,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Montserrat', sans-serif",
+          "slug": "montserrat",
+          "name": "Montserrat"
+        },
+        {
+          "fontFamily": "'Lora', serif",
+          "slug": "lora",
+          "name": "Lora"
+        },
+        {
+          "fontFamily": "'Open Sans', sans-serif",
+          "slug": "open-sans",
+          "name": "Open Sans"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "font-size-100", "size": "clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem)", "name": "Tiny" },
+        { "slug": "font-size-200", "size": "clamp(1rem, 0.95rem + 0.25vw, 1.125rem)",  "name": "Base" },
+        { "slug": "font-size-300", "size": "clamp(1.25rem, 1.15rem + 0.35vw, 1.5rem)", "name": "Small" },
+        { "slug": "font-size-400", "size": "clamp(1.5rem, 1.4rem + 0.5vw, 2rem)",      "name": "Medium" },
+        { "slug": "font-size-500", "size": "clamp(2rem, 1.8rem + 0.6vw, 2.5rem)",      "name": "Large" },
+        { "slug": "font-size-600", "size": "clamp(2.5rem, 2.3rem + 0.7vw, 3rem)",      "name": "X-Large" },
+        { "slug": "font-size-700", "size": "clamp(3rem, 2.6rem + 0.9vw, 3.5rem)",      "name": "Huge" },
+        { "slug": "font-size-800", "size": "clamp(4rem, 3.2rem + 1vw, 4.5rem)",        "name": "Gigantic" },
+        { "slug": "font-size-900", "size": "clamp(5rem, 4rem + 1.5vw, 6rem)",          "name": "Colossal" }
+      ],
+      "lineHeight": true,
+      "dropCap": false
+    },
+    "styles": {
+      "typography": {
+        "fontFamily": "var(--wp--preset--font-family--lora)",
+        "fontSize": "var(--wp--preset--font-size--font-size-200)",
+        "lineHeight": "1.6"
+      },
+      "elements": {
+        "heading": {
+          "typography": {
+            "fontFamily": "var(--wp--preset--font-family--montserrat)",
+            "fontWeight": "700",
+            "lineHeight": "1.3"
+          }
+        },
+        "button": {
+          "typography": {
+            "fontFamily": "var(--wp--preset--font-family--open-sans)",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "fontSize": "var(--wp--preset--font-size--font-size-200)"
+          }
+        },
+        "caption": {
+          "typography": {
+            "fontFamily": "var(--wp--preset--font-family--open-sans)",
+            "fontSize": "var(--wp--preset--font-size--font-size-100)"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+---
+
+## 7. Key Points
+
+- **Fonts:** Montserrat (headings), Lora (body), Open Sans (UI)
+- **Font sizes:** Fluid numeric scale 100–900
+- **Defaults:** Body = Lora, base = 1rem (16px)
+- **Headings:** Montserrat Bold, line-height 1.3
+- **Buttons/Captions:** Open Sans Medium, compact and clear
+- **Accessibility:** Maintain AA contrast, min tap targets, clear focus styles
+
+---
+
+## 8. Typography Specimen Sheet Example
+
+- **H1 – Montserrat Bold:** “Fishing Adventures in KZN”
+- **H2 – Montserrat Semi-Bold:** “Smallmouth Yellowfish”
+- **Body – Lora Regular:** “Brandon shares his fishing experiences across rivers and coasts…”
+- **Caption/Button – Open Sans Medium (uppercase):** “Book Now”
+
+---
