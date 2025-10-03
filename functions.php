@@ -821,8 +821,8 @@ if ( ! function_exists( 'lsx_demo_theme_manual_import_demo_content' ) ) :
 		
 		// Show admin notice
 		add_action( 'admin_notices', 'lsx_demo_theme_admin_notice_demo_imported' );
+		}
 	}
-
 /**
  * Displays a success notice after demo content import.
  *
