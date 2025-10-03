@@ -1,40 +1,126 @@
-## **📣 Voice & Tone (recap, page by page)**
-
--   **Homepage:** energetic, passionate, adventurous.
-
--   **About:** personal storytelling, first-person perspective, “this is my journey.”
-
--   **Fish (CPT archive):** clear, informative, visual; almost like a guidebook.
-
--   **Blog:** casual, conversational, friendly — Brandon talking to a mate.
-
--   **Contact:** short, human, “Drop me a note, I’ll get back soon.”
+# Brandons Fishing Adventures  
+**Website Voice & Tone Template**
 
 ---
 
-## **⚖️ Style Rules & Tone Sliders**
+## 0. Summary
 
--   ZA English, short sentences (8–18 words).
+**Purpose:**  
+Define a unique, recognisable voice and adaptive tone for _[Fishing Project]_’s website that resonates with fishing enthusiasts, hobbyists, and curious readers.
 
--   Tone sliders: **Casual, Playful, Plain, Energetic, Educational**.
+**Intended Users:**  
+- Designers  
+- Copywriters  
+- Developers  
+- Content Managers
 
-    -   **Casual:** “Hey there! Let’s talk about fishing.”
-    -   **Playful:** “Hooked on fishing? Let’s dive in!”
-    -   **Plain:** “Fishing is a popular outdoor activity.”
-    -   **Energetic:** “Get ready to explore the rivers of KZN!”
-    -   **Educational:** “Yellowfish are native to South Africa’s rivers.”
+**Primary Outcomes:**  
+- Overall website voice description (adjectives + visitor impression)  
+- Tone guidelines by page/section  
+- Style rules, tone sliders, accessibility & SEO considerations  
+- Sample microcopy for CTAs, forms, and errors  
 
--   Accessibility: high contrast for text, alt text for every fish photo.
-
--   SEO: write for humans, use species names naturally, descriptive slugs (`/fish/smallmouth-yellowfish/`).
+**Success Criteria:**  
+Copy should feel authentic, consistent, human, and adaptable to different page contexts.
 
 ---
 
-👉 With this, Brandon’s site would feel **authentic, grounded in place, and welcoming**, while still structured enough for discoverability and ease of use.
+## 1. Overall Website Voice
+
+**Purpose:** Define the website as if it were a person.
+
+- **Personality:** Friendly, adventurous, knowledgeable
+- **Three adjectives:** Energetic, Approachable, Informative
+- **Desired visitor impression:**  
+  Visitors should feel welcomed, excited about fishing, and confident they can learn while enjoying the journey.
 
 ---
 
-### **Testing Tone Consistency**
+## 2. Tone by Page/Section
 
--   Review each page to ensure the tone matches its purpose (e.g., adventurous for the homepage, friendly for the blog).
--   Use tools like Grammarly or Hemingway to check readability and tone alignment.
+| Page / Section         | Tone Description                | Notes / Examples                                                                 |
+|------------------------|---------------------------------|----------------------------------------------------------------------------------|
+| Homepage               | Energetic, passionate, adventurous | Greet visitors with excitement; highlight fishing adventures and value propositions |
+| About Page             | Personal, humble, storytelling  | First-person narrative: “This is my journey.” Share authentic fishing experiences |
+| Fish Archive (CPT)     | Clear, informative, visual      | Guidebook style; descriptive with images, highlight species naturally             |
+| Blog / Articles        | Casual, conversational, friendly| Brandon “talking to a mate”; expert but approachable                              |
+| Contact Page           | Short, human, approachable      | Example: “Drop me a note, I’ll get back soon.”                                    |
+| Error Pages (404 etc.) | Helpful, lighthearted           | Keep frustration low; guide users back to the main site                           |
+
+---
+
+## 3. Style Rules & Tone Sliders
+
+**Language & Grammar**  
+- Variant: ZA English  
+- Sentence length: 8–18 words  
+- Active voice preferred  
+- Inclusive language required  
+
+**Headlines**  
+- Style: Benefit-driven, adventurous, clear questions, or value + verb
+
+**Calls-to-Action (CTAs)**  
+- Style: Clear, direct, sometimes playful  
+  _Examples: “Start exploring,” “Discover your next catch”_
+
+**Tone Sliders** _(1–5 scale):_
+
+| Dimension        | Value | (1 = …, 5 = …)         |
+|------------------|-------|------------------------|
+| Casual vs Formal | 2     | (Casual)              |
+| Playful vs Serious | 3   | (Balanced)            |
+| Plain vs Elaborate | 2   | (Plain)               |
+| Energetic vs Calm | 4    | (Energetic)           |
+| Educational vs Entertaining | 3 | (Balanced)      |
+| Direct vs Indirect | 2   | (Direct)              |
+| Humble vs Confident | 3  | (Balanced)            |
+
+---
+
+## 4. Accessibility & SEO Considerations
+
+**Accessibility:**  
+- High-contrast text for readability  
+- Concise, clear language for screen readers  
+- Descriptive alt text for all fish photos and graphics  
+
+**SEO:**  
+- Write for humans first  
+- Use fish species names naturally in content  
+- Descriptive, human-readable slugs: `/fish/smallmouth-yellowfish/`  
+- Clear hierarchical headings (H1 → H2 → H3)  
+
+---
+
+## 5. Sample Content Snippets
+
+**CTAs:**  
+- “Discover the next fishing spot”  
+- “Learn more about [Fish Species]”  
+- “Start your journey today”  
+
+**Form Microcopy:**  
+- “Enter your email”  
+- “Tell me your name”  
+- “Drop me a note — I’ll get back soon”  
+
+**Error Messages:**  
+- “Page not found. Let’s get you back to the water.”  
+- “Oops! Something went wrong. Please try again.”  
+- “Email is missing ‘@’. Add it to continue.”  
+
+---
+
+## 6. Approvals & Sign-off
+
+**Stakeholders:**  
+Brandon Marshall (Owner/Content Creator)
+
+**Review gate / milestone:**  
+[Insert Date]
+
+**Acceptance criteria:**  
+Meets §§1–5; consistent with brand voice; passes accessibility & SEO checks
+
+---
