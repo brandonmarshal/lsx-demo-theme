@@ -1,12 +1,35 @@
 <!-- wp:template-part {"slug":"header"} /-->
-
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
-	<!-- wp:query-title {"type":"search"} /-->
-	<!-- wp:pattern {"slug":"lsx-demo-theme/hidden-search"} /-->
-	<!-- wp:pattern {"slug":"lsx-demo-theme/template-query-loop"} /-->
-	<!-- wp:pattern {"slug":"lsx-demo-theme/more-posts"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- wp:query-title {"type":"search","level":1} /-->
+    <!-- Search form -->
+    <!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside","query":{"post_type":"any"}} /-->
+    <!-- Results loop -->
+    <!-- wp:query {"queryId":3,"query":{"perPage":10,"postType":"any","order":"desc","orderBy":"date"},"displayLayout":{"type":"list"}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <!-- wp:group {"tagName":"article","style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"},"className":"search-card"} -->
+        <article class="wp-block-group search-card">
+            <!-- wp:post-title {"level":2,"isLink":true} /-->
+            <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+        </article>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph -->
+        <p>
+            No results match your search. Try different species, gear, or story
+            keywords.
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
 </main>
 <!-- /wp:group -->
-
 <!-- wp:template-part {"slug":"footer"} /-->
