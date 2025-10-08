@@ -1,35 +1,45 @@
-# Week 6, Day 4 Log Template
+# Week 5, Day 4 Log 2025-10-03
 
-This template illustrates how to structure your daily log.  Duplicate this file for each day of the week and replace the placeholder text with your own entries.
+## Today's Progress
 
-## Daily Standup
+### What have you accomplished today?
 
-### How do you feel today?
+-   Catchup with Seren
+-   Made some changes to the template doc
+-   Learning and understanding the patterns, templates and parts that @Ash shared with me yesterday
+-   Changes some of my files for my personal project
+-   Continue making changes to my personal project files
+-   I want to learn more about copilot features and the Awesome copilot MCP server
+-   I will then do any other tasks I get assigned today
 
-Describe your overall mood or energy level.  For example: “Feeling excited to start working on the project.”
+### How do you feel about today's progress?
 
-### What did you do yesterday?
+I feel productive and focused on learning. The patterns, templates and parts from @Ash are really helping me understand the structure better, and I'm making good progress on my personal project files. The continued exploration of Copilot features is expanding my capabilities.
 
-Summarise what you accomplished in the previous session.  Mention specific tasks or issues you worked on.
+---
 
-### What do you plan to do today?
+## Challenges Faced Today
 
-List the tasks you intend to work on today.  Use a checklist to break them down:
+-   Understanding the complexity of patterns, templates and parts requires careful study and practice.
+-   Balancing learning new concepts while making practical changes to project files.
 
-- [ ] Replace this line with an actual task; keep descriptions short and action‑oriented.
-- [ ] Add more tasks as needed.
+---
 
-### What are your blockers?
+## Time Logs
 
-Identify anything that might prevent you from making progress (e.g. waiting for feedback, unsure about a tool).  If you have no blockers, state “None”.
+-   1.0 hrs – Daily catchup with Seren
+-   1.5 hrs – Making changes to the template doc
+-   1.5 hrs – Learning and understanding patterns, templates and parts from @Ash
+-   2.0 hrs – Making changes to personal project files
+-   1.5 hrs – Continuing changes to personal project files
+-   1.5 hrs – Learning more about copilot features and Awesome copilot MCP server
+-   1.0 hrs – Completing other assigned tasks
 
-## Daily Logs
+---
 
-Copy your Harvest time entries here.  Use bullets to list each time entry along with a brief description.  For example:
+## Notes
 
-```
-- 1.5 hrs – cloned repo and installed dependencies (Issue #1)
-- 2.0 hrs – read WordPress block theme documentation and took notes
-```
-
-You can draft notes throughout the day in this section and refine them before committing.
+-   The patterns, templates and parts from @Ash are proving to be very valuable for understanding proper project structure
+-   Personal project files are becoming more organized and better structured
+-   Deeper understanding of Copilot features and MCP server capabilities is improving workflow efficiency
+-   Template documentation continues to evolve with new insights gained

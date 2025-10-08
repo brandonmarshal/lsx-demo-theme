@@ -1,35 +1,43 @@
-# Week 6, Day 5 Log Template
+# Week 5, Day 5 Log 2025-10-04
 
-This template illustrates how to structure your daily log.  Duplicate this file for each day of the week and replace the placeholder text with your own entries.
+## Today's Progress
 
-## Daily Standup
+### What have you accomplished today?
 
-### How do you feel today?
+-   Fix staging site error
+-   Setup bugherd in my personal project.
+-   Finalise templates doc
+-   helped Seren understand what was wrong with our staging sites
+-   created a prompt to fill in my fishing content in the templates we have been working on.
+-   Been using that prompt to update my personal website document so I can start prompting the site.
 
-Describe your overall mood or energy level.  For example: “Feeling excited to start working on the project.”
+### How do you feel about today's progress?
 
-### What did you do yesterday?
+I feel accomplished and productive today. Fixing the staging site issues was satisfying, and helping Seren understand the staging problems was valuable teamwork. Creating the fishing content prompt and using it to update my website documentation feels like a significant step forward in preparing for the actual site development.
 
-Summarise what you accomplished in the previous session.  Mention specific tasks or issues you worked on.
+---
 
-### What do you plan to do today?
+## Challenges Faced Today
 
-List the tasks you intend to work on today.  Use a checklist to break them down:
+-   None
 
-- [ ] Replace this line with an actual task; keep descriptions short and action‑oriented.
-- [ ] Add more tasks as needed.
+---
 
-### What are your blockers?
+## Time Logs
 
-Identify anything that might prevent you from making progress (e.g. waiting for feedback, unsure about a tool).  If you have no blockers, state “None”.
+-   1.5 hrs – Fixing staging site error
+-   1.0 hrs – Setting up bugherd in personal project
+-   1.5 hrs – Finalising templates doc
+-   1.5 hrs – Helping Seren understand staging site issues
+-   0.5 hrs – Creating prompt for fishing content in templates
+-   2.0 hrs – Using prompt to update personal website document for site prompting
 
-## Daily Logs
+---
 
-Copy your Harvest time entries here.  Use bullets to list each time entry along with a brief description.  For example:
+## Notes
 
-```
-- 1.5 hrs – cloned repo and installed dependencies (Issue #1)
-- 2.0 hrs – read WordPress block theme documentation and took notes
-```
-
-You can draft notes throughout the day in this section and refine them before committing.
+-   Staging site fixes are now stable and should prevent similar issues in the future
+-   BugHerd integration will improve project management and issue tracking
+-   Templates documentation is now in final state and ready for implementation
+-   The fishing content prompt is working well and streamlining the website preparation process
+-   Personal website document is becoming comprehensive and ready for active site development prompting

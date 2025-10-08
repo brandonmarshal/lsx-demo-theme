@@ -1,35 +1,44 @@
-# Week 6, Day 2 Log Template
+# Week 5, Day 2 Log 2025-10-01
 
-This template illustrates how to structure your daily log.  Duplicate this file for each day of the week and replace the placeholder text with your own entries.
+## Today's Progress
 
-## Daily Standup
+### What have you accomplished today?
 
-### How do you feel today?
+-   Worked on the template doc but I was doing it all wrong so spent most of the day in docs.
+-   Had a meet with @Ash last night and he showed me how to create my own copilot space and to add relevant content in it to work on my site.
+-   Catchup with @Seren this morning.
+-   Looking into the Awesome Github Copilot MCP Server
+-   I have received a couple of files from Ash that I need to revise and tweak if required.
+-   I need to reorganise files in my project repo and rename using 01, 02 values for the lists.
+-   I need to complete the Template documents today so I can download them as .md and commit them to my repository.
 
-Describe your overall mood or energy level.  For example: “Feeling excited to start working on the project.”
+### How do you feel about today's progress?
 
-### What did you do yesterday?
+I feel like I learned an important lesson today. While I spent most of the day struggling with the template documentation approach, the meeting with @Ash was extremely valuable and opened up new possibilities for organizing my Copilot workspace more effectively.
 
-Summarise what you accomplished in the previous session.  Mention specific tasks or issues you worked on.
+---
 
-### What do you plan to do today?
+## Challenges Faced Today
 
-List the tasks you intend to work on today.  Use a checklist to break them down:
+-   Spent most of the day working on template documentation with the wrong approach.
+-   Need to better understand the proper structure and methodology for template creation.
 
-- [ ] Replace this line with an actual task; keep descriptions short and action‑oriented.
-- [ ] Add more tasks as needed.
+---
 
-### What are your blockers?
+## Time Logs
 
-Identify anything that might prevent you from making progress (e.g. waiting for feedback, unsure about a tool).  If you have no blockers, state “None”.
+-   4.5 hrs – Working on template documentation (wrong approach, learning experience)
+-   1.0 hrs – Meeting with @Ash about Copilot workspace setup
+-   1.0 hrs – Catchup with @Seren this morning
+-   2.0 hrs – Looking into the Awesome Github Copilot MCP Server
+-   1.5 hrs – Reviewing and revising files received from Ash
+-   2.0 hrs – Reorganising files in project repo and renaming using 01, 02 values
+-   1.5 hrs – Working on completing Template documents for .md download and commit
 
-## Daily Logs
+---
 
-Copy your Harvest time entries here.  Use bullets to list each time entry along with a brief description.  For example:
+## Notes
 
-```
-- 1.5 hrs – cloned repo and installed dependencies (Issue #1)
-- 2.0 hrs – read WordPress block theme documentation and took notes
-```
-
-You can draft notes throughout the day in this section and refine them before committing.
+-   @Ash's guidance on creating a personalized Copilot space could significantly improve my workflow
+-   Need to apply the new approach learned from @Ash to reorganize my project files
+-   Template documentation needs to be completed with the correct methodology today
