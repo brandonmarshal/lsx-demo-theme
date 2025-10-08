@@ -1,0 +1,46 @@
+<!-- Gear Archive Template -->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- wp:query-title {"type":"archive","level":1} /-->
+    <!-- wp:term-description /-->
+
+    <!-- Filters Placeholder -->
+    <!-- wp:group {"className":"gear-archive__filters visually-hidden"} -->
+    <div class="wp-block-group gear-archive__filters visually-hidden">
+        <p>Filters placeholder (gear type / usage)</p>
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Gear Query Loop -->
+    <!-- wp:query {"queryId":31,"query":{"perPage":12,"postType":"gear","order":"asc","orderBy":"title"},"displayLayout":{"type":"flex","columns":3},"layout":{"type":"default"}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <!-- wp:group {"tagName":"article","className":"gear-card","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"bottom":"var:preset|spacing|60"}}}} -->
+        <article class="wp-block-group gear-card">
+            <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
+            <!-- wp:post-title {"level":2,"isLink":true} /-->
+            <!-- wp:post-excerpt {"moreText":"View gear details"} /-->
+            <!-- wp:group {"className":"gear-card__taxonomies","layout":{"type":"flex","flexWrap":"wrap"}} -->
+            <div class="wp-block-group gear-card__taxonomies">
+                <!-- wp:post-terms {"term":"gear_type"} /-->
+            </div>
+            <!-- /wp:group -->
+        </article>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph -->
+        <p>No gear items available yet.</p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer"} /-->

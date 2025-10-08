@@ -1,0 +1,114 @@
+<!-- Single Story Template -->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- Title & Meta -->
+    <!-- wp:post-title {"level":1} /-->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|30"}}} -->
+    <div class="wp-block-group">
+        <!-- wp:post-date /--><!-- wp:post-author-name /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Featured Image -->
+    <!-- wp:post-featured-image {"aspectRatio":"16/9"} /-->
+
+    <!-- Story Highlights Placeholder -->
+    <!-- wp:group {"className":"story-highlights visually-hidden","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}}} -->
+    <div
+        class="wp-block-group story-highlights visually-hidden"
+        aria-hidden="true"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Highlights</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>
+            Highlights placeholder (location, weather, species targeted, key
+            moments).
+        </p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Content -->
+    <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+    <!-- Taxonomy Terms -->
+    <!-- wp:group {"className":"story-single__taxonomies","layout":{"type":"flex","flexWrap":"wrap"}} -->
+    <div class="wp-block-group story-single__taxonomies">
+        <!-- wp:post-terms {"term":"story_category"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Related Fish -->
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+    <div
+        class="wp-block-group"
+        style="margin-top: var(--wp--preset--spacing--70)"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Related Fish</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>
+            Related fish placeholder – will show fish mentioned or tagged in
+            this story.
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- wp:query {"queryId":51,"className":"related-fish-query","query":{"perPage":3,"postType":"fish","order":"asc","orderBy":"title"},"displayLayout":{"type":"list"},"enhancedPagination":true} -->
+        <div class="wp-block-query related-fish-query">
+            <!-- wp:post-template -->
+            <!-- wp:group {"tagName":"article","className":"related-fish-item","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+            <article class="wp-block-group related-fish-item">
+                <!-- wp:post-title {"level":3,"isLink":true} /-->
+            </article>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+            <!-- wp:query-no-results -->
+            <!-- wp:paragraph -->
+            <p>No related fish entries yet.</p>
+            <!-- /wp:paragraph -->
+            <!-- /wp:query-no-results -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Related Gear -->
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+    <div
+        class="wp-block-group"
+        style="margin-top: var(--wp--preset--spacing--70)"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Related Gear</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>Related gear placeholder – will show gear used in this story.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:query {"queryId":52,"className":"related-gear-query","query":{"perPage":3,"postType":"gear","order":"asc","orderBy":"title"},"displayLayout":{"type":"list"},"enhancedPagination":true} -->
+        <div class="wp-block-query related-gear-query">
+            <!-- wp:post-template -->
+            <!-- wp:group {"tagName":"article","className":"related-gear-item","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+            <article class="wp-block-group related-gear-item">
+                <!-- wp:post-title {"level":3,"isLink":true} /-->
+            </article>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+            <!-- wp:query-no-results -->
+            <!-- wp:paragraph -->
+            <p>No related gear entries yet.</p>
+            <!-- /wp:paragraph -->
+            <!-- /wp:query-no-results -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Navigation & Comments Patterns -->
+    <!-- wp:pattern {"slug":"lsx-demo-theme/post-navigation"} /-->
+    <!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer"} /-->
