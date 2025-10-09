@@ -188,6 +188,7 @@ function lsx_demo_theme_load_cpt_and_tax_files()
 		'inc/cpt-gear.php',
 		'inc/cpt-story.php',
 		'inc/taxonomies.php',
+		'inc/seed-bass-post.php', // temporary: seeds "How to Catch a Bass" post (remove after creation)
 	);
 
 	foreach ($files as $relative_path) {
