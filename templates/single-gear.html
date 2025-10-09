@@ -1,0 +1,93 @@
+<!-- Single Gear Template -->
+<!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- Title & Featured Image -->
+    <!-- wp:post-title {"level":1} /-->
+    <!-- wp:post-featured-image {"aspectRatio":"3/2"} /-->
+
+    <!-- Specifications Placeholder -->
+    <!-- wp:group {"className":"gear-specifications visually-hidden","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"}}} -->
+    <div
+        class="wp-block-group gear-specifications visually-hidden"
+        aria-hidden="true"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Specifications</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>
+            Specifications placeholder (brand, model, size, material, weight).
+        </p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Usage Tips Placeholder -->
+    <!-- wp:group {"className":"gear-usage-tips visually-hidden","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|20"}}} -->
+    <div
+        class="wp-block-group gear-usage-tips visually-hidden"
+        aria-hidden="true"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Usage Tips</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>
+            Usage tips placeholder (best conditions, maintenance advice, safety
+            notes).
+        </p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Content -->
+    <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+    <!-- Taxonomy Terms -->
+    <!-- wp:group {"className":"gear-single__taxonomies","layout":{"type":"flex","flexWrap":"wrap"}} -->
+    <div class="wp-block-group gear-single__taxonomies">
+        <!-- wp:post-terms {"term":"gear_type"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Related Gear -->
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+    <div
+        class="wp-block-group"
+        style="margin-top: var(--wp--preset--spacing--70)"
+    >
+        <!-- wp:heading {"level":2} -->
+        <h2>Related Gear</h2>
+        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p>
+            Related gear placeholder – will display gear sharing gear_type
+            taxonomy terms.
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- wp:query {"queryId":32,"className":"related-gear-query","query":{"perPage":3,"postType":"gear","order":"asc","orderBy":"title"},"displayLayout":{"type":"list"},"enhancedPagination":true} -->
+        <div class="wp-block-query related-gear-query">
+            <!-- wp:post-template -->
+            <!-- wp:group {"tagName":"article","className":"related-gear-item","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+            <article class="wp-block-group related-gear-item">
+                <!-- wp:post-title {"level":3,"isLink":true} /-->
+            </article>
+            <!-- /wp:group -->
+            <!-- /wp:post-template -->
+            <!-- wp:query-no-results -->
+            <!-- wp:paragraph -->
+            <p>No related gear entries yet.</p>
+            <!-- /wp:paragraph -->
+            <!-- /wp:query-no-results -->
+        </div>
+        <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Navigation & Comments Patterns -->
+    <!-- wp:pattern {"slug":"lsx-demo-theme/post-navigation"} /-->
+    <!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer"} /-->

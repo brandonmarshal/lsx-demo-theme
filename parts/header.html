@@ -1,1 +1,27 @@
-<!-- wp:pattern {"slug":"lsx-demo-theme/header"} /-->
+<!-- wp:group {"tagName":"header","className":"site-header","layout":{"type":"constrained"}} -->
+<header class="wp-block-group site-header">
+    <!-- wp:html -->
+    <a class="skip-link visually-hidden" href="#main">Skip to main content</a>
+    <!-- /wp:html -->
+
+    <!-- wp:group {"className":"site-header__inner","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+    <div class="wp-block-group site-header__inner">
+        <!-- wp:group {"className":"site-branding","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+        <div class="wp-block-group site-branding">
+            <!-- wp:site-logo {"shouldSyncIcon":true} /-->
+            <!-- wp:site-title /-->
+            <!-- wp:paragraph {"className":"site-tagline"} -->
+            <p class="site-tagline">Catch the story.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:navigation {"ariaLabel":"Primary navigation","layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"overlayMenu":"mobile","className":"primary-navigation"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"site-header__utility visually-hidden","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group site-header__utility visually-hidden"></div>
+    <!-- /wp:group -->
+</header>
+<!-- /wp:group -->

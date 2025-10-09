@@ -1,11 +1,35 @@
 <!-- wp:template-part {"slug":"header"} /-->
-
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
-	<!-- wp:query-title {"type":"archive"} /-->
-	 <!-- wp:term-description /-->
-	<!-- wp:pattern {"slug":"lsx-demo-theme/template-query-loop"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- H1 Archive Title -->
+    <!-- wp:query-title {"type":"archive","level":1} /-->
+    <!-- Archive description -->
+    <!-- wp:term-description /-->
+    <!-- Archive Loop -->
+    <!-- wp:query {"queryId":2,"query":{"perPage":12,"pages":0,"offset":0,"postType":[],"order":"desc","orderBy":"date"},"displayLayout":{"type":"list"},"layout":{"type":"default"}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <!-- wp:group {"tagName":"article","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"bottom":"var:preset|spacing|60"}}},"className":"archive-card"} -->
+        <article class="wp-block-group archive-card">
+            <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2"} /-->
+            <!-- wp:post-title {"level":2,"isLink":true} /-->
+            <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+            <!-- wp:post-date /-->
+        </article>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph -->
+        <p>No content found in this archive.</p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
 </main>
 <!-- /wp:group -->
-
 <!-- wp:template-part {"slug":"footer"} /-->
