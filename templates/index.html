@@ -1,10 +1,36 @@
 <!-- wp:template-part {"slug":"header"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|60"}}} -->
+<main id="main" class="wp-block-group">
+    <!-- Main heading for blog index (hidden previously) -->
+    <!-- wp:heading {"level":1} -->
+    <h1>Latest Posts</h1>
+    <!-- /wp:heading -->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
-	<!-- wp:pattern {"slug":"lsx-demo-theme/hidden-blog-heading"} /-->
-	<!-- wp:pattern {"slug":"lsx-demo-theme/template-query-loop"} /-->
+    <!-- Posts loop -->
+    <!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"list"},"layout":{"type":"default"}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <!-- wp:group {"tagName":"article","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"bottom":"var:preset|spacing|60"}}},"className":"post-card"} -->
+        <article class="wp-block-group post-card">
+            <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2"} /-->
+            <!-- wp:post-title {"level":2,"isLink":true,"rel":"bookmark"} /-->
+            <!-- wp:post-excerpt {"moreText":"Read more"} /-->
+            <!-- wp:post-date /-->
+        </article>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph -->
+        <p>No posts found.</p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
 </main>
 <!-- /wp:group -->
-
 <!-- wp:template-part {"slug":"footer"} /-->

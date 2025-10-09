@@ -1,9 +1,9 @@
 /*
 Theme Name: lsx-demo-theme
-Theme URI: 
-Author: 
-Author URI: 
-Description: 
+Theme URI:
+Author:
+Author URI:
+Description:
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
@@ -23,37 +23,53 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
  * https://github.com/WordPress/gutenberg/issues/42319
  */
 a {
-	text-decoration-thickness: 1px !important;
-	text-underline-offset: .1em;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.1em;
 }
 
 /* Focus styles */
 :where(.wp-site-blocks *:focus) {
-	outline-width: 2px;
-	outline-style: solid;
+    outline-width: 2px;
+    outline-style: solid;
 }
 
 /* Increase the bottom margin on submenus, so that the outline is visible. */
-.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
-	margin-bottom: 3px;
+.wp-block-navigation
+    .wp-block-navigation-submenu
+    .wp-block-navigation-item:not(:last-child) {
+    margin-bottom: 3px;
 }
 
 /* Increase the outline offset on the parent menu items, so that the outline does not touch the text. */
-.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
-	outline-offset: 4px;
+.wp-block-navigation
+    .wp-block-navigation-item
+    .wp-block-navigation-item__content {
+    outline-offset: 4px;
 }
 
 /* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
-.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
-	outline-offset: 0;
+.wp-block-navigation
+    .wp-block-navigation-item
+    ul.wp-block-navigation__submenu-container
+    .wp-block-navigation-item__content {
+    outline-offset: 0;
 }
 
 /*
  * Progressive enhancement to reduce widows and orphans
  * https://github.com/WordPress/gutenberg/issues/55190
  */
-h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
-	text-wrap: pretty;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+caption,
+figcaption,
+p {
+    text-wrap: pretty;
 }
 
 /*
@@ -61,5 +77,44 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
  * https://github.com/WordPress/gutenberg/issues/65934
 */
 .more-link {
-	display: block;
+    display: block;
+}
+
+/* =============================================
+   Accessibility Utilities (Header/Footer Task #57)
+   ============================================= */
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: var(--wp--preset--color--primary, #3a6b68);
+    color: var(--wp--preset--color--contrast, #111);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transform: translateY(-150%);
+    transition: transform 0.2s ease;
+    z-index: 1000;
+}
+.skip-link:focus,
+.skip-link:active {
+    transform: translateY(0);
+}
+
+/* Footer minor layout helpers */
+.site-footer__bar {
+    gap: 1rem;
+}
+.footer-widgets {
+    row-gap: 2rem;
 }

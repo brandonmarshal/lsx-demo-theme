@@ -1,35 +1,47 @@
-# Week 5, Day 1 Log Template
+# Week 5, Day 1 Log 2025-09-30
 
-This template illustrates how to structure your daily log.  Duplicate this file for each day of the week and replace the placeholder text with your own entries.
+## Today's Progress
 
-## Daily Standup
+### What have you accomplished today?
 
-### How do you feel today?
+-   Catchup with @Seren
+-   Did the release tag for lsx-demo-theme repo. (<https://github.com/lightspeedwp/lsx-demo-theme/releases>)
+-   I have done the following on my web project with copilot:
+    -   theme foundations
+    -   theme.json and global styles
+    -   custom post type: fish
+    -   templates and template parts
+    -   block patterns
+    -   SEO, Accessibility, Performance
+    -   Multilingual & Internationalization
+-   Research on tag releases.
 
-Describe your overall mood or energy level.  For example: “Feeling excited to start working on the project.”
+### How do you feel about today's progress?
 
-### What did you do yesterday?
+I feel accomplished having made significant progress on the web project with Copilot's assistance. The release tagging process was successful, and I've covered most of the major theme development areas. The collaboration with @Seren was productive for planning.
 
-Summarise what you accomplished in the previous session.  Mention specific tasks or issues you worked on.
+---
 
-### What do you plan to do today?
+## Challenges Faced Today
 
-List the tasks you intend to work on today.  Use a checklist to break them down:
+-   Balancing comprehensive theme development with other responsibilities.
+-   Need to catch up on studies that have been lagging behind this week.
 
-- [ ] Replace this line with an actual task; keep descriptions short and action‑oriented.
-- [ ] Add more tasks as needed.
+---
 
-### What are your blockers?
+## Time Logs
 
-Identify anything that might prevent you from making progress (e.g. waiting for feedback, unsure about a tool).  If you have no blockers, state “None”.
+-   1.0 hrs – Catchup with @Seren
+-   2.0 hrs – Release tag creation for lsx-demo-theme repo and research.
+-   4.0 hrs – Web project development with Copilot (theme foundations, theme.json, custom post types, templates, patterns)
+-   1.5 hrs – SEO, Accessibility, Performance implementation
+-   1.0 hrs – Multilingual & Internationalization setup
 
-## Daily Logs
+---
 
-Copy your Harvest time entries here.  Use bullets to list each time entry along with a brief description.  For example:
+## Notes
 
-```
-- 1.5 hrs – cloned repo and installed dependencies (Issue #1)
-- 2.0 hrs – read WordPress block theme documentation and took notes
-```
-
-You can draft notes throughout the day in this section and refine them before committing.
+-   The lsx-demo-theme release is now available on GitHub releases page
+-   Made substantial progress on the fish-themed website project covering all major development areas
+-   Need to prioritize study time tomorrow alongside finalizing the web project
+-   Multilingual implementation is complete but needs final QA testing
