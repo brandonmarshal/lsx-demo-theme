@@ -1,38 +1,27 @@
-<!-- Accessible site header -->
-<!-- wp:group {"tagName":"header","layout":{"type":"constrained"},"className":"site-header"} -->
+<!-- wp:group {"tagName":"header","className":"site-header","layout":{"type":"constrained"}} -->
 <header class="wp-block-group site-header">
-    <!-- Skip link (focusable on tab) -->
     <!-- wp:html -->
     <a class="skip-link visually-hidden" href="#main">Skip to main content</a>
     <!-- /wp:html -->
 
-    <!-- Branding & navigation wrapper -->
-    <!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"},"className":"site-header__inner"} -->
+    <!-- wp:group {"className":"site-header__inner","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
     <div class="wp-block-group site-header__inner">
-        <!-- Branding -->
-        <!-- wp:group {"layout":{"type":"flex","orientation":"horizontal","flexWrap":"nowrap"},"className":"site-branding"} -->
+        <!-- wp:group {"className":"site-branding","layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group site-branding">
-            <!-- Site Logo (placeholder if not set) -->
-            <!-- wp:site-logo {"width":64,"shouldSyncIcon":true} /-->
-            <!-- Site Title (link) -->
-            <!-- wp:site-title {"level":2} /-->
-            <!-- Tagline (short variant) -->
+            <!-- wp:site-logo {"shouldSyncIcon":true} /-->
+            <!-- wp:site-title /-->
             <!-- wp:paragraph {"className":"site-tagline"} -->
             <p class="site-tagline">Catch the story.</p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
-        <!-- Primary Navigation -->
-        <!-- wp:navigation {"ariaLabel":"Primary","layout":{"type":"flex","justifyContent":"right"},"overlayMenu":"never","className":"primary-navigation"} /-->
+        <!-- wp:navigation {"ariaLabel":"Primary navigation","layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"overlayMenu":"mobile","className":"primary-navigation"} /-->
     </div>
     <!-- /wp:group -->
 
-    <!-- Optional secondary bar placeholder (future utilities / search) -->
-    <!-- wp:group {"layout":{"type":"constrained"},"className":"site-header__utility visually-hidden","metadata":{"name":"Utility Bar (Future)"}} -->
-    <div class="wp-block-group site-header__utility visually-hidden">
-        <!-- Placeholder for future search / social -->
-    </div>
+    <!-- wp:group {"className":"site-header__utility visually-hidden","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group site-header__utility visually-hidden"></div>
     <!-- /wp:group -->
 </header>
 <!-- /wp:group -->
