@@ -21,10 +21,7 @@
 	<!-- wp:paragraph {"align":"center"} -->
 	<p class="has-text-align-center"><?php echo esc_html_x('One concise monthly email. No spam. Unsubscribe anytime.', 'Newsletter intro', 'bfa'); ?></p>
 	<!-- /wp:paragraph -->
-	<form action="#" method="post" class="newsletter-signup" style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem">
-		<label class="screen-reader-text" for="nl-email"><?php echo esc_html_x('Email address', 'Newsletter field label', 'bfa'); ?></label>
-		<input id="nl-email" name="email" type="email" required placeholder="<?php echo esc_attr_x('you@example.com', 'Email placeholder', 'bfa'); ?>" style="padding:.75rem 1rem;min-width:250px;" />
-		<button type="submit" style="padding:.75rem 1.25rem;background:var(--wp--preset--color--burnt-cta);color:var(--wp--preset--color--contrast);border:none;border-radius:4px;"><?php esc_html_e('Sign Up', 'bfa'); ?></button>
-	</form>
+	<!-- Replace the shortcode below with your newsletter plugin's form shortcode, e.g. [newsletter_form], [mailpoet_form id="1"], [wpforms id="123"], etc. -->
+	<?php echo do_shortcode('[newsletter_form]'); ?>
 </div>
 <!-- /wp:group -->
