@@ -21,7 +21,7 @@
 	<!-- wp:query {"queryId":17,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date","inherit":false},"displayLayout":{"type":"flex","columns":3}} -->
 	<div class="wp-block-query">
 		<!-- wp:post-template -->
-		<div class="wp-block-group" style="border:1px solid var(--wp--preset--color--neutral-300);border-radius:6px;padding:var(--wp--preset--spacing--30)">
+		<div class="wp-block-group bfa-report-card" style="padding:var(--wp--preset--spacing--30)">
 			<!-- wp:post-featured-image {"isLink":true,"height":"180px","style":{"border":{"radius":"4px"}}} /-->
 			<!-- wp:post-title {"level":3,"isLink":true} /-->
 			<!-- wp:post-excerpt {"moreText":"Read Report","excerptLength":18} /-->
