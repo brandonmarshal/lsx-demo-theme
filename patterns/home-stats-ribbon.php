@@ -15,10 +15,35 @@
 <div class="wp-block-group" style="border-top-color:var(--wp--preset--color--neutral-300);border-top-width:1px;border-bottom-color:var(--wp--preset--color--neutral-300);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
 	<div class="wp-block-group">
-		<div class="wp-block-group"><strong><?php echo esc_html( get_theme_mod( 'bfa_stats_waters_fished', '12' ) ); ?></strong><br><small><?php esc_html_e('Waters Fished', 'bfa'); ?></small></div>
-		<div class="wp-block-group"><strong><?php echo esc_html( get_theme_mod( 'bfa_stats_species', '20+' ) ); ?></strong><br><small><?php esc_html_e('Species', 'bfa'); ?></small></div>
-		<div class="wp-block-group"><strong><?php echo esc_html( get_theme_mod( 'bfa_stats_return_guests', '85%' ) ); ?></strong><br><small><?php esc_html_e('Return Guests', 'bfa'); ?></small></div>
-		<div class="wp-block-group"><strong><?php echo esc_html( get_theme_mod( 'bfa_stats_season_label', __( 'Year‑Round', 'bfa' ) ) ); ?></strong><br><small><?php esc_html_e('Seasons', 'bfa'); ?></small></div>
+		<?php
+		$stats = [
+			[
+				'key' => 'bfa_stats_waters_fished',
+				'default' => '12',
+				'label' => __('Waters Fished', 'bfa'),
+			],
+			[
+				'key' => 'bfa_stats_species',
+				'default' => '20+',
+				'label' => __('Species', 'bfa'),
+			],
+			[
+				'key' => 'bfa_stats_return_guests',
+				'default' => '85%',
+				'label' => __('Return Guests', 'bfa'),
+			],
+			[
+				'key' => 'bfa_stats_season_label',
+				'default' => __('Year‑Round', 'bfa'),
+				'label' => __('Seasons', 'bfa'),
+			],
+		];
+		foreach ( $stats as $stat ) : ?>
+			<div class="wp-block-group">
+				<strong><?php echo esc_html( get_theme_mod( $stat['key'], $stat['default'] ) ); ?></strong><br>
+				<small><?php echo esc_html( $stat['label'] ); ?></small>
+			</div>
+		<?php endforeach; ?>
 	</div>
 </div>
 <!-- /wp:group -->
