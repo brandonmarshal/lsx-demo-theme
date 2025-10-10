@@ -1,8 +1,6 @@
 <?php
 
 /**
-	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
-	<div class="wp-block-group">
  * Categories: featured, columns
  * Keywords: stats, metrics, highlights
  * Viewport width: 1400
