@@ -264,8 +264,8 @@
             "core/group": {
                 "spacing": {
                     "padding": {
-                        "top": "var(--wp--preset--spacing--spacing-70)",
-                        "bottom": "var(--wp--preset--spacing--spacing-70)"
+                        "top": "0",
+                        "bottom": "0"
                     }
                 }
             },
