@@ -13,7 +13,7 @@ header {
     font-family: 'Montserrat', sans-serif !important;
     border-bottom: 1px solid #b3b7b0 !important;
     backdrop-filter: blur(6px) saturate(110%) !important;
-    -webkit-backdrop-filter: blur(6px) saturate(110%) !important;
+    -webkit-backdrop-filter: blur(6px) saturate(110%);
 }
 
 header a {
