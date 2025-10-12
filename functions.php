@@ -65,7 +65,7 @@ if (! function_exists('lsx_demo_theme_enqueue_styles')) :
 		);
 
 		// Conditionally enqueue About page styles
-		if (is_page() && ('about' === get_post_field('post_name', get_queried_object_id()))) {
+		if (is_page('about')) {
 			$about_css_path = get_theme_file_path('assets/css/about-me.css');
 			wp_enqueue_style(
 				'lsx-demo-theme-about',
