@@ -1,0 +1,61 @@
+/* HEADER MODERN NEUTRAL - NAV RIGHT */
+header {
+    background: rgba(220, 220, 215, 0.95) !important; /* neutral grey "rock" */
+    color: #3b2f23 !important; /* brown-friendly text */
+    padding: 1.5rem 2rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    border-bottom: 1px solid #b3b7b0 !important;
+    backdrop-filter: blur(6px) saturate(110%) !important;
+    -webkit-backdrop-filter: blur(6px) saturate(110%) !important;
+}
+
+header a {
+    color: #3b2f23 !important;
+    text-decoration: none !important;
+    margin: 0 1rem !important;
+    font-weight: 600 !important;
+    transition: color 0.3s ease !important;
+}
+
+header a:hover,
+header a:focus-visible {
+    color: #e58f5c !important; /* warm accent */
+}
+
+/* NAVIGATION */
+header nav {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: auto !important; /* push navigation to the far right */
+}
+
+header .site-title {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+}
+
+header .header-logo {
+    max-height: 60px !important;
+    margin-right: 1rem !important;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 1rem 1.5rem !important;
+    }
+    header nav {
+        margin-top: 1rem !important;
+        flex-wrap: wrap !important;
+        margin-left: 0 !important; /* reset on mobile */
+    }
+}
