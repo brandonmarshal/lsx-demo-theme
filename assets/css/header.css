@@ -1,6 +1,6 @@
 /* HEADER MODERN NEUTRAL - NAV RIGHT */
 header {
-    background: rgba(220, 220, 215, 0.95) !important; /* neutral grey "rock" */
+    background: var(--wp--preset--color--neutral-grey-rock, rgba(220, 220, 215, 0.95)) !important; /* neutral grey "rock" */
     color: #3b2f23 !important; /* brown-friendly text */
     padding: 1.5rem 2rem !important;
     display: flex !important;
