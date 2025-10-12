@@ -132,59 +132,17 @@
                 {
                     "name": "Montserrat",
                     "slug": "montserrat",
-                    "fontFamily": "Montserrat, system-ui, sans-serif",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Montserrat",
-                            "fontStyle": "normal",
-                            "fontWeight": "600",
-                            "src": []
-                        },
-                        {
-                            "fontFamily": "Montserrat",
-                            "fontStyle": "normal",
-                            "fontWeight": "700",
-                            "src": []
-                        }
-                    ]
+                    "fontFamily": "Montserrat, system-ui, sans-serif"
                 },
                 {
                     "name": "Lora",
                     "slug": "lora",
-                    "fontFamily": "Lora, Georgia, serif",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Lora",
-                            "fontStyle": "normal",
-                            "fontWeight": "400",
-                            "src": []
-                        },
-                        {
-                            "fontFamily": "Lora",
-                            "fontStyle": "italic",
-                            "fontWeight": "400",
-                            "src": []
-                        }
-                    ]
+                    "fontFamily": "Lora, Georgia, serif"
                 },
                 {
                     "name": "Open Sans",
                     "slug": "open-sans",
-                    "fontFamily": "Open Sans, system-ui, sans-serif",
-                    "fontFace": [
-                        {
-                            "fontFamily": "Open Sans",
-                            "fontStyle": "normal",
-                            "fontWeight": "400",
-                            "src": []
-                        },
-                        {
-                            "fontFamily": "Open Sans",
-                            "fontStyle": "normal",
-                            "fontWeight": "600",
-                            "src": []
-                        }
-                    ]
+                    "fontFamily": "Open Sans, system-ui, sans-serif"
                 }
             ],
             "fontSizes": [
@@ -217,9 +175,7 @@
                     "lineHeight": "1.3",
                     "fontWeight": "600"
                 },
-                "color": {
-                    "text": "var(--wp--preset--color--primary)"
-                }
+                "color": { "text": "var(--wp--preset--color--primary)" }
             },
             "link": {
                 "color": { "text": "var(--wp--preset--color--primary)" },
@@ -262,20 +218,7 @@
                 }
             },
             "core/group": {
-                "spacing": {
-                    "padding": {
-                        "top": "var(--wp--preset--spacing--spacing-70)",
-                        "bottom": "var(--wp--preset--spacing--spacing-70)"
-                    }
-                }
-            },
-            "core/site-title": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)",
-                    "fontWeight": "700",
-                    "fontSize": "var(--wp--preset--font-size--h3)",
-                    "lineHeight": "1.2"
-                }
+                "spacing": { "padding": { "top": "0", "bottom": "0" } }
             },
             "core/paragraph": {
                 "typography": {
@@ -296,11 +239,7 @@
         }
     },
     "templateParts": [
-        {
-            "area": "header",
-            "name": "header",
-            "title": "Header"
-        },
+        { "area": "header", "name": "header", "title": "Header" },
         {
             "area": "header",
             "name": "vertical-header",
@@ -311,11 +250,7 @@
             "name": "header-large-title",
             "title": "Header with large title"
         },
-        {
-            "area": "footer",
-            "name": "footer",
-            "title": "Footer"
-        },
+        { "area": "footer", "name": "footer", "title": "Footer" },
         {
             "area": "footer",
             "name": "footer-columns",
@@ -326,10 +261,6 @@
             "name": "footer-newsletter",
             "title": "Footer Newsletter"
         },
-        {
-            "area": "uncategorized",
-            "name": "sidebar",
-            "title": "Sidebar"
-        }
+        { "area": "uncategorized", "name": "sidebar", "title": "Sidebar" }
     ]
 }
