@@ -42,7 +42,7 @@
 
 <!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
 <div class="wp-block-buttons"><!-- wp:button {"width":100,"fontSize":"x-small"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-x-small-font-size has-custom-font-size wp-element-button">Get Started Today</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a href="#" class="wp-block-button__link has-x-small-font-size has-custom-font-size wp-element-button">Get Started Today</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
