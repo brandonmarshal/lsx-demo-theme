@@ -2,7 +2,7 @@
 /**
  * Title: Mobile Menu BFA
  * Slug: lsx-demo-theme/mobile-menu-bfa
- * Categories: Menu
+ * Categories: menu
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Menu"},"className":"is-style-default","style":{"position":{"type":""},"spacing":{"padding":{"right":"var:preset|spacing|large","left":"var:preset|spacing|large","top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|x-large"},"border":{"radius":"10px"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"main","textColor":"base","layout":{"type":"constrained","justifyContent":"left"}} -->
