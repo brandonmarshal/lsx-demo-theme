@@ -340,23 +340,23 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignwide"><!-- wp:image {"width":"122px","height":"auto","sizeSlug":"full","linkDestination":"none","style":{"color":[]}} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/logo-1.webp" alt="Brand logo" class="" style="width:122px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/ollie/patterns/images/logo-1.webp" alt="Acme Corp logo" class="" style="width:122px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"148px","height":"auto","sizeSlug":"full","linkDestination":"none","style":{"color":[]}} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/logo-2.webp" alt="Brand logo" class="" style="width:148px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/ollie/patterns/images/logo-2.webp" alt="Globex logo" class="" style="width:148px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"139px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/logo-3.webp" alt="Brand logo" class="" style="width:139px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/ollie/patterns/images/logo-3.webp" alt="Initech logo" class="" style="width:139px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"150px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/logo-6.webp" alt="Brand logo" class="" style="width:150px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/ollie/patterns/images/logo-6.webp" alt="Umbrella Inc. logo" class="" style="width:150px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"width":"151px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/logo-4.webp" alt="Brand logo" class="" style="width:151px;height:auto"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wp-content/themes/ollie/patterns/images/logo-4.webp" alt="Hooli logo" class="" style="width:151px;height:auto"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
