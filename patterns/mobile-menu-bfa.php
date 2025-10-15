@@ -24,19 +24,19 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"></a><a href="#">Built for the Future</a></p>
+<p><a href="#">Built for the Future</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"></a><a href="#">Easy to Extend</a></p>
+<p><a href="#">Easy to Extend</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"></a><a href="#">Developer Friendly</a></p>
+<p><a href="#">Developer Friendly</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#"></a><a href="#">Publish Faster</a></p>
+<p><a href="#">Publish Faster</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
