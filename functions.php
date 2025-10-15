@@ -19,61 +19,17 @@ if (! function_exists('lsx_demo_theme_post_format_setup')) :
 endif;
 add_action('after_setup_theme', 'lsx_demo_theme_post_format_setup');
 
-// Enqueues editor-style.css in the editors.
-if (! function_exists('lsx_demo_theme_editor_style')) :
-	function lsx_demo_theme_editor_style()
-	{
-		add_editor_style(
-			array(
-				'assets/css/header.css',
-				'assets/css/footer.css',
-				'assets/css/about-me.css',
-			)
-		);
-	}
-endif;
-add_action('after_setup_theme', 'lsx_demo_theme_editor_style');
 
-// Enqueues style.css and additional header/footer CSS with !important override
+// Enqueue only the main stylesheet (style.css)
 if (! function_exists('lsx_demo_theme_enqueue_styles')) :
 	function lsx_demo_theme_enqueue_styles()
 	{
-		// Main stylesheet
 		wp_enqueue_style(
 			'lsx-demo-theme-style',
 			get_theme_file_uri('style.css'),
 			array(),
 			wp_get_theme()->get('Version')
 		);
-
-		// Header stylesheet
-		$header_css_path = get_theme_file_path('assets/css/header.css');
-		wp_enqueue_style(
-			'lsx-demo-theme-header',
-			get_theme_file_uri('assets/css/header.css'),
-			array('lsx-demo-theme-style'),
-			file_exists($header_css_path) ? filemtime($header_css_path) : wp_get_theme()->get('Version')
-		);
-
-		// Footer stylesheet
-		$footer_css_path = get_theme_file_path('assets/css/footer.css');
-		wp_enqueue_style(
-			'lsx-demo-theme-footer',
-			get_theme_file_uri('assets/css/footer.css'),
-			array('lsx-demo-theme-style'),
-			file_exists($footer_css_path) ? filemtime($footer_css_path) : wp_get_theme()->get('Version')
-		);
-
-		// Conditionally enqueue About page styles
-		if (is_page('about')) {
-			$about_css_path = get_theme_file_path('assets/css/about-me.css');
-			wp_enqueue_style(
-				'lsx-demo-theme-about',
-				get_theme_file_uri('assets/css/about-me.css'),
-				array('lsx-demo-theme-style'),
-				file_exists($about_css_path) ? filemtime($about_css_path) : wp_get_theme()->get('Version')
-			);
-		}
 	}
 endif;
 add_action('wp_enqueue_scripts', 'lsx_demo_theme_enqueue_styles');
