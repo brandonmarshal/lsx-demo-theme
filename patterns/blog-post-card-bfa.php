@@ -2,7 +2,7 @@
 /**
  * Title: Blog Post Card BFA
  * Slug: lsx-demo-theme/blog-post-card-bfa
- * Categories: My Cards, Posts
+ * Categories: cards, posts
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Blog Post Card"},"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"border":{"radius":"5px"}},"backgroundColor":"base","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between","justifyContent":"stretch"}} -->
