@@ -1,25 +1,26 @@
-# Week 05 Log and Reflection
+# Week 07 Log and Reflection
 
 ## Weekly Reflection
 
 ### What went well?
 
-This week was a significant milestone in my internship journey. Day 1 started strong with a successful release tag for the lsx-demo-theme repo and comprehensive web project development covering theme foundations, theme.json, custom post types, templates, block patterns, SEO, accessibility, performance, and multilingual features. The collaboration with @Seren throughout the week was consistently productive with daily catchups that kept projects on track. The breakthrough moment came with @Ash's guidance on creating personalized Copilot spaces, which opened up new possibilities for workflow organization. Testing the Awesome Copilot MCP Server proved to be a game-changer - it's really nice and very helpful for the team. By week's end, I successfully created a fishing content prompt and used it to update my personal website document, preparing it for active site development. The staging site fixes and BugHerd integration on Friday rounded out a productive week with tangible infrastructure improvements.
+Consistent forward progress on foundational site work and learning. Early in the week I organised the home page, stood up the about page, and redesigned header/footer which improved structure and visual clarity. I steadily advanced two WordPress Learn courses (low-code block theme and Intermediate Theme Developer) while simultaneously applying concepts directly in the Site Editor (template parts, mobile layouts, patterns, colour systems). Mid‑week focus on mobile friendliness, new styles, and pattern creation strengthened responsive design. Later in the week I resolved tooling/config items (Gravity Forms working, BugHerd configured), created custom Figma colour palettes and exported them for shared use, and captured previously missed tasks into Asana, tightening project tracking. Regular catchups with @Seren and meetings with @José and Barbs kept alignment strong. Overall: good balance of learning, implementation, design refinement, and process hygiene.
 
 ### What can be improved?
 
-The most significant learning opportunity came from spending 4.5 hours on template documentation with the wrong approach on Day 2. While this felt foolish at the time, it was a valuable learning experience that highlighted the importance of understanding proper methodology before diving deep into implementation. Balancing multiple concurrent tasks while maintaining quality work required careful attention, and I need to be more disciplined about setting aside dedicated study time as academic work has been lagging behind. The complexity of patterns, templates, and parts requires more careful study and practice to fully master.
+Some redesign tasks (headers/footers and mobile adjustments) took longer than ideal due to experimentation and pattern duplication confusion; tightening an upfront checklist for pattern vs template vs part choices will reduce friction. Figma acclimation still costs time—continued deliberate practice should shorten future design cycles. Balancing deep course study against hands‑on site changes risks splitting focus; I can schedule explicit blocks for uninterrupted learning. Need to ensure every emerging Slack action becomes an Asana task immediately (improved late week). Mobile pattern creation can be more systematic with defined breakpoints and accessibility review earlier. Colour system decisions should be validated for contrast before wider implementation.
 
 ### What have you learned?
 
-This week significantly advanced my understanding of Copilot and AI tools in general. @Ash's mentorship on workspace organization and the hands-on experience with the Awesome Copilot MCP Server expanded my capabilities considerably. I gained practical experience with WordPress theme development covering all major areas from foundations to internationalization. The file organization and naming conventions (using 01, 02 values) improved project structure and maintainability. Most importantly, I learned that while the learning curve can be steep and sometimes frustrating, persistence and proper guidance lead to breakthrough moments. The fishing content prompt creation demonstrated how AI can be leveraged to streamline content preparation for development.
+Deeper grasp of block theme composition: template parts vs patterns vs global styles and how design tokens (colour palettes) bridge Figma and theme.json. Learned practical responsive adjustments and the value of iterating header/footer early. Reinforced course concepts by immediately applying them (low‑code and intermediate theme). Improved fluency navigating Figma UI and exporting/shared asset workflows. Strengthened habit of translating informal discussions into tracked tasks. Gained insight into pacing—alternating structured learning blocks with focused implementation sprints preserves momentum and retention.
 
 ### What are your next actions?
 
--   Hard focus on the website project starting next week - this is now the primary priority
--   Continue leveraging the Awesome Copilot MCP Server and refined workspace organization for maximum efficiency
--   Apply the lessons learned from template documentation approaches to future work
--   Use the finalized templates documentation and fishing content prompts to accelerate website development
--   Maintain regular collaboration with @Seren and apply insights from @Ash's patterns, templates, and parts guidance
--   Balance project work with dedicated study time to keep academic progress on track
--   Build on the staging site stability and BugHerd integration to improve overall project management
+-   Finalise and implement refined header/footer and mobile patterns with accessibility & contrast checks
+-   Integrate new colour palettes into theme.json tokens and validate WCAG contrast before broad usage
+-   Continue progressing Intermediate Theme Developer course with scheduled daily focused block
+-   Systematise pattern creation (naming, breakpoints, purpose) and document a quick checklist
+-   Apply responsive/mobile adjustments to remaining templates (about, home variations) and test in Site Editor
+-   Maintain daily catchups and immediate Asana task capture from Slack/meetings
+-   Schedule Figma practice micro‑sessions to reinforce speed navigating tools
+-   Leverage Gravity Forms and BugHerd setup for early user flow & feedback capture on staging once designs land
