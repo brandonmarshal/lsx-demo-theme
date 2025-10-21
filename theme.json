@@ -305,7 +305,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "var(--wp--preset--color--olive-600)"
+					"text": "var(--wp--preset--color--heading)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)",
