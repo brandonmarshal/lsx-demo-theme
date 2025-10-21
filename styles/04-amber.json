@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+    "version": 3,
+    "title": "Warm Amber",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#3f290d",
+                    "name": "Deep Amber Brown"
+                },
+                {
+                    "slug": "surface",
+                    "color": "#231809",
+                    "name": "Surface Dark Brown"
+                },
+                {
+                    "slug": "text",
+                    "color": "#fbdec7",
+                    "name": "Soft Text (cream)"
+                },
+                {
+                    "slug": "heading",
+                    "color": "#ffffff",
+                    "name": "Heading (white)"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#feed79",
+                    "name": "Primary Soft Yellow"
+                },
+                { "slug": "muted", "color": "#95672C", "name": "Muted Brown" },
+                {
+                    "slug": "accent",
+                    "color": "#A39989",
+                    "name": "Neutral Accent"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                { "slug": "heading", "fontFamily": "Playfair Display, serif" },
+                { "slug": "body", "fontFamily": "Inter, system-ui, sans-serif" }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#3f290d",
+            "text": "#fbdec7"
+        },
+        "elements": {
+            "h1": { "color": { "text": "#ffffff" } },
+            "button": {
+                "color": {
+                    "background": "#feed79",
+                    "text": "#231809"
+                }
+            },
+            "link": { "color": { "text": "#A39989" } }
+        }
+    }
+}

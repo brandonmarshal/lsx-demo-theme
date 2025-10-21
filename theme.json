@@ -7,94 +7,39 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#FFFFFF",
-					"name": "Base / Background",
-					"slug": "base"
+					"color": "#231809",
+					"name": "Background Brown",
+					"slug": "background"
 				},
 				{
-					"color": "#111111",
-					"name": "Contrast / Text",
-					"slug": "contrast"
+					"color": "#3f290d",
+					"name": "Surface Brown",
+					"slug": "surface"
 				},
 				{
-					"color": "#3A6B68",
-					"name": "Primary / River",
+					"color": "#ebf2f4",
+					"name": "Body Text (light)",
+					"slug": "text"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Heading (white)",
+					"slug": "heading"
+				},
+				{
+					"color": "#f6ac4e",
+					"name": "Primary (Amber)",
 					"slug": "primary"
 				},
 				{
-					"color": "#A2B063",
-					"name": "Olive 200",
-					"slug": "olive-200"
+					"color": "#95672C",
+					"name": "Muted Brown",
+					"slug": "muted"
 				},
 				{
-					"color": "#879746",
-					"name": "Olive 400",
-					"slug": "olive-400"
-				},
-				{
-					"color": "#6B7C3A",
-					"name": "Olive 600",
-					"slug": "olive-600"
-				},
-				{
-					"color": "#E58F5C",
-					"name": "Burnt Orange CTA",
-					"slug": "burnt-cta"
-				},
-				{
-					"color": "#C06028",
-					"name": "Burnt Orange Hover",
-					"slug": "burnt-hover"
-				},
-				{
-					"color": "#FFFFFF",
-					"name": "Neutral 0",
-					"slug": "neutral-0"
-				},
-				{
-					"color": "#F7F7F6",
-					"name": "Neutral 100",
-					"slug": "neutral-100"
-				},
-				{
-					"color": "#ECEDEA",
-					"name": "Neutral 200",
-					"slug": "neutral-200"
-				},
-				{
-					"color": "#D9DBD6",
-					"name": "Neutral 300",
-					"slug": "neutral-300"
-				},
-				{
-					"color": "#B3B7B0",
-					"name": "Neutral 400",
-					"slug": "neutral-400"
-				},
-				{
-					"color": "#8C9188",
-					"name": "Neutral 500",
-					"slug": "neutral-500"
-				},
-				{
-					"color": "#6A6F66",
-					"name": "Neutral 600",
-					"slug": "neutral-600"
-				},
-				{
-					"color": "#4B4F48",
-					"name": "Neutral 700",
-					"slug": "neutral-700"
-				},
-				{
-					"color": "#2F332D",
-					"name": "Neutral 800",
-					"slug": "neutral-800"
-				},
-				{
-					"color": "#1A1C19",
-					"name": "Neutral 900",
-					"slug": "neutral-900"
+					"color": "#316C88",
+					"name": "Accent Blue",
+					"slug": "accent"
 				}
 			]
 		},
@@ -194,19 +139,74 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Montserrat, system-ui, sans-serif",
-					"name": "Montserrat",
-					"slug": "montserrat"
+					"fontFace": [
+						{
+							"fontFamily": "Abel",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/abel/abel-400-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "Abel, sans-serif",
+					"name": "Abel",
+					"slug": "abel"
 				},
 				{
-					"fontFamily": "Lora, Georgia, serif",
-					"name": "Lora",
-					"slug": "lora"
-				},
-				{
-					"fontFamily": "Open Sans, system-ui, sans-serif",
-					"name": "Open Sans",
-					"slug": "open-sans"
+					"fontFace": [
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-900-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-500-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/raleway/raleway-900-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Raleway, sans-serif",
+					"name": "Raleway",
+					"slug": "raleway"
 				}
 			],
 			"fontSizes": [
@@ -279,8 +279,8 @@
 			}
 		},
 		"color": {
-			"background": "#221c0f",
-			"text": "var(--wp--preset--color--neutral-400)"
+			"background": "#231809",
+			"text": "#ebf2f4"
 		},
 		"elements": {
 			"button": {
@@ -291,8 +291,16 @@
 					}
 				},
 				"color": {
-					"background": "var(--wp--preset--color--burnt-cta)",
-					"text": "var(--wp--preset--color--contrast)"
+					"background": "#f6ac4e",
+					"text": "var(--wp--preset--color--background)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--raleway)"
+				}
+			},
+			"h2": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
 				}
 			},
 			"heading": {
@@ -300,19 +308,24 @@
 					"text": "var(--wp--preset--color--olive-600)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--montserrat)",
-					"fontWeight": "600",
+					"fontFamily": "var(--wp--preset--font-family--raleway)",
+					"fontStyle": "normal",
+					"fontWeight": "500",
 					"lineHeight": "1.3"
 				}
 			},
 			"link": {
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--burnt-hover)"
+						"text": "var(--wp--preset--color--muted)"
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--base)"
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"textDecoration": "underline"
 				}
 			}
 		},
@@ -326,7 +339,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--lora)",
+			"fontFamily": "var(--wp--preset--font-family--raleway)",
 			"lineHeight": "1.6"
 		}
 	},
