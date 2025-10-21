@@ -18,8 +18,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"burnt-cta","textColor":"contrast","className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-contrast-color has-burnt-cta-background-color has-text-color has-background wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=209">Fish Species</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary","textColor":"text","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-primary-background-color has-text-color has-background wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=209">Fish Species</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->
