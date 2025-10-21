@@ -34,7 +34,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"wide","className":"is-style-default"} -->
-<figure class="wp-block-image alignwide size-full is-style-default"><img src="http://localhost:8883/wp-content/themes/ollie/patterns/images/desktop.webp" alt="Desktop screenshot" class=""/></figure>
+<figure class="wp-block-image alignwide size-full is-style-default"><img src="<?php echo get_template_directory_uri(); ?>/patterns/images/desktop.webp" alt="Desktop screenshot" class=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
