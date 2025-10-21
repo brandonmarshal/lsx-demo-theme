@@ -324,7 +324,7 @@
 					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"fontFamily": "var(--wp--preset--font-family--raleway)",
 					"textDecoration": "underline"
 				}
 			}
