@@ -292,7 +292,7 @@
 				},
 				"color": {
 					"background": "#f6ac4e",
-					"text": "var(--wp--preset--color--background)"
+					"text": "#ffffff"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)"
