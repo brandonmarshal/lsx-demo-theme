@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+    "version": 3,
+    "title": "Forest Green",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#0E2003",
+                    "name": "Forest Night"
+                },
+                {
+                    "slug": "surface",
+                    "color": "#21382C",
+                    "name": "Forest Surface"
+                },
+                {
+                    "slug": "text",
+                    "color": "#ebf2f4",
+                    "name": "Body Text (light)"
+                },
+                {
+                    "slug": "heading",
+                    "color": "#ffffff",
+                    "name": "Heading (white)"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#e0ff45",
+                    "name": "Primary Lime"
+                },
+                { "slug": "muted", "color": "#55620a", "name": "Muted Olive" },
+                { "slug": "accent", "color": "#88d1ab", "name": "Accent Mint" }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                { "slug": "heading", "fontFamily": "Merriweather, serif" },
+                { "slug": "body", "fontFamily": "Inter, system-ui, sans-serif" }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#0E2003",
+            "text": "#ebf2f4"
+        },
+        "elements": {
+            "h1": { "color": { "text": "#ffffff" } },
+            "button": {
+                "color": {
+                    "background": "#e0ff45",
+                    "text": "#0E2003"
+                }
+            },
+            "link": { "color": { "text": "#88d1ab" } }
+        }
+    }
+}

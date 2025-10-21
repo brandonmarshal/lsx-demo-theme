@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+    "version": 3,
+    "title": "Ocean Teal",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#0e2734",
+                    "name": "Deep Ocean"
+                },
+                {
+                    "slug": "surface",
+                    "color": "#213a43",
+                    "name": "Dark Teal Surface"
+                },
+                {
+                    "slug": "text",
+                    "color": "#ebf2f4",
+                    "name": "Body Text (light)"
+                },
+                {
+                    "slug": "heading",
+                    "color": "#ffffff",
+                    "name": "Heading (white)"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#0A3D47",
+                    "name": "Primary Teal (dark)"
+                },
+                {
+                    "slug": "muted",
+                    "color": "#316C88",
+                    "name": "Muted Ocean Blue"
+                },
+                {
+                    "slug": "accent",
+                    "color": "#59bae8",
+                    "name": "Accent Light Blue"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                { "slug": "heading", "fontFamily": "Playfair Display, serif" },
+                { "slug": "body", "fontFamily": "Inter, system-ui, sans-serif" }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#0e2734",
+            "text": "#ebf2f4"
+        },
+        "elements": {
+            "h1": { "color": { "text": "#ffffff" } },
+            "button": {
+                "color": {
+                    "background": "#0A3D47",
+                    "text": "#ffffff"
+                }
+            },
+            "link": { "color": { "text": "#59bae8" } }
+        }
+    }
+}
