@@ -1,27 +1,24 @@
 <!-- wp:template-part {"slug":"header"} /-->
-<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}}} -->
-<main id="main" class="wp-block-group">
-    <!-- wp:heading {"level":1} -->
-    <h1>Page Not Found</h1>
-    <!-- /wp:heading -->
-    <!-- wp:paragraph -->
-    <p>
-        The page you were looking for doesn’t exist or has been moved. Try
-        searching for a fish species, gear item, or story below.
-    </p>
-    <!-- /wp:paragraph -->
-    <!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside"} /-->
-    <!-- wp:buttons -->
-    <div class="wp-block-buttons">
-        <!-- wp:button {"textAlign":"center"} -->
-        <div class="wp-block-button">
-            <a class="wp-block-button__link wp-element-button" href="/"
-                >Return to Home</a
-            >
-        </div>
-        <!-- /wp:button -->
-    </div>
-    <!-- /wp:buttons -->
-</main>
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70);padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Page Not Found</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>
+    The page you were looking for doesn’t exist or has been moved. Try searching
+    for a fish species, gear item, or story below.
+</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonPosition":"button-inside"} /-->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","className":"wp-block-button__link wp-element-button"} -->
+<div class="wp-block-button wp-block-button__link wp-element-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="/">Return to Home</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></main>
 <!-- /wp:group -->
+
 <!-- wp:template-part {"slug":"footer"} /-->

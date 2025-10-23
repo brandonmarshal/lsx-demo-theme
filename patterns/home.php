@@ -8,7 +8,7 @@
 <!-- wp:template-part {"slug":"main-header-light","area":"uncategorized"} /-->
 
 <!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png","dimRatio":40,"overlayColor":"neutral-900","isUserOverlayColor":true,"minHeight":480,"contentPosition":"center center","sizeSlug":"large","metadata":{"categories":["banner","hero","featured"],"patternName":"bfa/home-hero","name":"Home Hero (Fishing Adventures)"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);min-height:480px"><img class="wp-block-cover__image-background  size-large" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-neutral-900-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"2.7rem"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);min-height:480px"><img class="wp-block-cover__image-background size-large" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-neutral-900-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"2.7rem"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","fontSize":"h1"} -->
 <h2 class="wp-block-heading has-text-align-center has-h-1-font-size">Welcome to my blog.</h2>
 <!-- /wp:heading -->
@@ -38,13 +38,15 @@
 <h2 class="wp-block-heading has-text-align-center">Recent Catches &amp; Stories</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"queryId":17,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date","inherit":false}} -->
+<!-- wp:query {"queryId":17,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date","inherit":false},"layout":{"type":"constrained","contentSize":""}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"wp-block-group bfa-report-card","layout":{"type":"grid","columnCount":3}} -->
-<!-- wp:post-featured-image {"isLink":true,"height":"180px","style":{"border":{"radius":"4px"}}} /-->
+<!-- wp:group {"style":{"border":{"radius":"5px","width":"1px"},"spacing":{"padding":{"left":"7px","right":"7px","top":"7px","bottom":"7px"},"margin":{"top":"40px","bottom":"40px"}},"dimensions":{"minHeight":""},"shadow":"var:preset|shadow|natural"},"borderColor":"muted","layout":{"type":"default"}} -->
+<div class="wp-block-group has-border-color has-muted-border-color" style="border-width:1px;border-radius:5px;margin-top:40px;margin-bottom:40px;padding-top:7px;padding-right:7px;padding-bottom:7px;padding-left:7px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-featured-image {"isLink":true,"height":"180px","style":{"border":{"radius":"5px"}}} /-->
 
 <!-- wp:post-title {"level":3,"isLink":true} /-->
 
-<!-- wp:post-excerpt {"moreText":"Read Report","excerptLength":18} /-->
+<!-- wp:post-excerpt {"moreText":"Read Report","excerptLength":18} /--></div>
+<!-- /wp:group -->
 <!-- /wp:post-template -->
 
 <!-- wp:query-no-results {"className":"has-text-align-center"} -->
@@ -55,7 +57,7 @@
 <!-- /wp:query -->
 
 <!-- wp:paragraph {"align":"center","className":"has-small-font-size"} -->
-<p class="has-text-align-center has-small-font-size"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">View All Trip Reports →</a></p>
+<p class="has-text-align-center has-small-font-size"><a href="http://brandonlightspeedwpdev.local/blog/">View All Trip Reports →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
