@@ -27,6 +27,6 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"align":"center","className":"has-small-font-size"} -->
-<p class="has-text-align-center has-small-font-size"><a href="http://brandonlightspeedwpdev.local/blog/">View All Trip Reports →</a></p>
+<p class="has-text-align-center has-small-font-size"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">View All Trip Reports →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
