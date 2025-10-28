@@ -1,41 +1,32 @@
-# Week 8, Day 2 Log 2025-10-21
+# Week 9, Day 2 Log 2025-10-28
 
 ## Today's Progress
 
 ### What have you accomplished today?
 
--   Completed courses with practical exercises on styling Gravity Forms, including:
-    -   Styling Gravity Forms with Orbital
-    -   Ultimate Guide: How to Style Forms in Gravity Forms
-    -   CSS Ready Classes
-    -   Styles and Layouts Add-On
--   Explored colour schemes and font pairing:
-    -   Explored colour harmony and preconfigured colour palettes
-    -   Conducted accessibility and contrast checks
-    -   Paired fonts for the website
--   Had a catchup session with Seren to discuss progress and next steps.
+-   Completed Asana Foundations course ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211719478941854?focus=true))
+-   Meeting with Barbra and Seren (project discussion and planning)
+-   Read SASS documentation (initial review, more to cover)
+-   Fixed mobile menu background
 
 ### How do you feel about today's progress?
 
-Today was a good day, quite peaceful, and I managed to focus on getting my colour palettes and fonts sorted. I realised that it is a crucial step to complete early in the building of a website.
+Today was more of a learning day. I focused on completing the Asana course and fixed my mobile menu. I made progress on SASS documentation but still have more to read. Looking forward to spending more time on learning and courses tomorrow.
 
 ---
 
 ## Time Logs
 
--   0.75 hrs – Styling Gravity Forms with Orbital.
--   0.75 hrs – Ultimate Guide: How to Style Forms in Gravity Forms.
--   0.75 hrs – CSS Ready Classes.
--   0.75 hrs – Styles and Layouts Add-On.
--   2.0 hrs – Exploring colour harmony and preconfigured colour palettes.
--   2.0 hrs – Accessibility and contrast checks.
--   1.0 hrs – Font pairing.
--   1.0 hrs – Catchup with Seren.
+-   3.0 hrs – Asana Foundations course completion
+-   1.0 hrs – Meeting with Barbra and Seren
+-   1.0 hrs – Reading SASS documentation
+-   1.0 hrs – Fixed mobile menu background
 
 ---
 
 ## Notes
 
--   Finalised colour palettes and font pairings for the website, ensuring accessibility and visual harmony.
--   Styling Gravity Forms is now better understood, and I feel more confident applying these techniques to forms in the project.
--   The catchup with Seren was productive and helped clarify next steps.
+-   Asana Foundations course completed, ready to apply project management learnings
+-   Initial SASS documentation review done, more to cover
+-   Mobile menu background issue resolved
+-   Productive meeting with Barbra and Seren for project alignment
