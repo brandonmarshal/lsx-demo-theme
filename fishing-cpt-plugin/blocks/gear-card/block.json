@@ -1,0 +1,10 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/gear-card",
+    "title": "Gear Card",
+    "category": "widgets",
+    "icon": "hammer",
+    "description": "Card showing gear meta data.",
+    "usesContext": ["postId", "postType"],
+    "render": "file:./render.php"
+}

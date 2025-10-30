@@ -1,0 +1,10 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/fish-card",
+    "title": "Fish Card",
+    "category": "widgets",
+    "icon": "palmtree",
+    "description": "Card showing fish meta data.",
+    "usesContext": ["postId", "postType"],
+    "render": "file:./render.php"
+}
