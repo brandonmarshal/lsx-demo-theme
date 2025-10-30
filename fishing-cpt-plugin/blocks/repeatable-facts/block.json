@@ -1,0 +1,17 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/repeatable-facts",
+    "title": "Repeatable Facts",
+    "category": "widgets",
+    "icon": "list-view",
+    "description": "Display a list of repeatable fish facts bound to meta.",
+    "usesContext": ["postId", "postType"],
+    "attributes": {
+        "facts": {
+            "type": "array",
+            "default": [],
+            "items": { "type": "string" }
+        }
+    },
+    "render": "file:./render.php"
+}

@@ -1,0 +1,5 @@
+{
+    "title": "Stories List Simple",
+    "categories": ["fishing"],
+    "content": "<!-- wp/query {\"query\":{\"perPage\":6,\"postType\":\"stories\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/post-title {\"level\":3,\"isLink\":true} /--><!-- wp/post-excerpt /--><!-- /wp/post-template --></div><!-- /wp/query -->"
+}

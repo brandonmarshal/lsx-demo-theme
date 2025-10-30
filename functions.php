@@ -117,13 +117,12 @@ endif;
 function lsx_demo_theme_load_cpt_and_tax_files()
 {
 	$files = array(
-		'inc/cpt-fish.php',
-		'inc/cpt-gear.php',
-		'inc/cpt-story.php',
+		'inc/cpt-fish.php',        // Restored: Keep existing posts safe
+		'inc/cpt-gear.php',       // Restored: Keep existing posts safe
+		'inc/cpt-story.php',      // Restored: Keep existing posts safe
 		'inc/taxonomies.php',
 		'inc/seed-bass-post.php', // temporary: seeds "How to Catch a Bass" post (remove after creation)
 	);
-
 	foreach ($files as $relative_path) {
 		$absolute_path = get_parent_theme_file_path($relative_path);
 		if (file_exists($absolute_path)) {

@@ -1,0 +1,5 @@
+{
+    "title": "Stories Highlights",
+    "categories": ["fishing"],
+    "content": "<!-- wp/group --><div class=\"wp-block-group\"><!-- wp/heading --><h2>Story Highlights</h2><!-- /wp/heading --><!-- wp/query {\"query\":{\"perPage\":4,\"postType\":\"stories\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/story-card /--><!-- /wp/post-template --></div><!-- /wp/query --></div><!-- /wp/group -->"
+}

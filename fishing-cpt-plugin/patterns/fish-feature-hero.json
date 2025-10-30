@@ -1,0 +1,5 @@
+{
+    "title": "Fish Feature Hero",
+    "categories": ["fishing"],
+    "content": "<!-- wp/group --><div class=\"wp-block-group\"><!-- wp/heading {\"level\":1} --><h1>Featured Fish Species</h1><!-- /wp/heading --><!-- wp/query {\"query\":{\"perPage\":3,\"postType\":\"fish\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/fish-card /--><!-- /wp/post-template --></div><!-- /wp/query --></div><!-- /wp/group -->"
+}
