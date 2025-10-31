@@ -1,35 +1,37 @@
-# Week 8, Day 5 Log 2025-10-24
+# Week 9, Day 5 Log 2025-10-31
 
 ## Today's Progress
 
 ### What have you accomplished today?
 
--   Created Gear Posts with my custom post type ([Task Link](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211732354501804?focus=true))
--   Created a Gear page and added the posts to it, then styled it like the fish-species page ([Task Link](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211732354501802?focus=true))
--   Started with Asana Foundations skill badge - spent 1 hour today ([Task Link](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211719478941854?focus=true))
--   Completed: [GitHub] Learn why conflicts happen and how to resolve them ([Task Link](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211732354501867?focus=true))
--   Completed: [GitHub] skills-introduction-to-repository-management ([Task Link](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211732354501874?focus=true))
+-   Created custom instructions for copilot to create 12 Github ISSUES from Ash's instructions, 1 being an EPIC and the other 11 Sub-issues. I will add this file to my google drive as well.
+-   Meeting with Ash and Seren
+-   Getting Asana tasks sorted and aligned
+-   Additional Meeting with Seren
+-   Started using the prompt I create, to get copilot to build my github issues which are looking very good.
 
 ### How do you feel about today's progress?
 
-Good. I worked smoothly today with the gear posts and the learning was very productive. Had a quick catchup meeting with Barbara to make sure everything is still understood. I am happy to end this week.
+Today was a good day, made some progress with my prompt and have my github issues created now. I will start getting Copilot to work on those issues from Monday or possibly over the weekend. I am happy with todays progress, I am bummed that I am still doing the logs incorrectly. I have a new strategy for logs now provided by Ash that I will follow.
 
 ---
 
 ## Time Logs
 
--   4.0 hrs – Created Gear Posts with custom post type and styled gear page
--   1.0 hrs – Asana Foundations skill badge training
--   1.0 hrs – GitHub learning modules (conflicts resolution and repository management)
--   0.5 hrs – Quick catchup meeting with Barbara
+-   2.5 hrs – Created custom instructions for copilot to create 12 Github ISSUES from Ash's instructions
+-   0.75 hrs – Meeting with Ash and Seren
+-   0.5 hrs – Getting Asana tasks sorted and aligned
+-   1.0 hrs – Additional Meeting with Seren
+-   1.0 hrs – Started using the prompt to get copilot to build github issues
 
 ---
 
 ## Notes
 
--   Successfully implemented gear custom post type following the same pattern as fish species
--   Gear page styling matches fish-species page for consistency
--   Making good progress on both technical implementation and learning objectives
--   Week 8 completed with solid momentum heading into next week
+-   Successfully created custom Copilot instructions for GitHub issue generation
+-   Generated 1 EPIC issue and 11 sub-issues following Ash's requirements
+-   Productive meetings with team members for alignment and planning
+-   GitHub issues are well-structured and ready for implementation
+-   New logging strategy provided by Ash will improve documentation consistency
 
 ---
