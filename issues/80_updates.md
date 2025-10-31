@@ -1,0 +1,1 @@
+Apply milestone "1.0 RC 2" and project assignments from issue #80 to sub-issues #81, #82, #83, #84, #85, #86, #87, #88, #89, #90, and #91
