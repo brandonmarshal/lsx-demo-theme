@@ -85,6 +85,23 @@
     -   [ ] Achieve "1.0 RC 2" milestone (due November 7th)
     -   [ ] Document week's accomplishments and prepare for next phase
 
+---
+
+## **Adjusted Distribution of 12 GitHub Issues (EPIC #80) Across the Week**
+
+| Day       | Issue(s)                                                                                 |
+|-----------|-----------------------------------------------------------------------------------------|
+| Monday    | Start #81 (Add Plugin Dependency Management)                                             |
+| Tuesday   | Work on #82 (Replace Stories CPT with Area CPT), Begin #83 (Google Maps), Start #84      |
+| Wednesday | Complete #85 (Repeatable Field Groups Gear CPT), Begin #86 (Custom Gutenberg Blocks), Work on #87 (Multi-Block Plugin Arch.) |
+| Thursday  | Complete #88 (Gallery Feature), Work on #89 (Template & Pattern Integration), Begin #90 (Section Style System)               |
+| Friday    | Complete #91 (Build & Package Plugin), Finalize & close all remaining sub-issues as needed including closing EPIC #80        |
+
+- Each day focuses on 2-3 core issues for implementation, leaving room for learning, documentation, and testing activities.
+- Friday is left for packaging, full QA, and catching up any remaining tasks, ensuring all 12 issues are closed by Milestone.
+
+---
+
 ## Priorities
 
 -   **High Priority** (Milestone Critical - Due Nov 7):
@@ -138,9 +155,18 @@
 4. **#84**: Define and Adjust Post Relationships (Fish ↔ Gear ↔ Area connections)
 5. **#85**: Add Repeatable Field Groups for Gear CPT (dynamic content structure)
 
-**Advanced Block Development Issues:** 6. **#86**: Create Custom Gutenberg Blocks for Repeatable Fields (editor integration) 7. **#87**: Implement Multi-Block Plugin Architecture (WordPress.org standards) 8. **#88**: Add Gallery Feature (Lightbox + media management) 9. **#89**: Template & Pattern Integration (WordPress 6.7 features) 10. **#90**: Section Style System (theme.json integration)
+**Advanced Block Development Issues:**
 
-**Build & Distribution Issues:** 11. **#91**: Build & Package Plugin via WP Scripts (final compilation & distribution) 12. **EPIC #80**: Overall coordination and milestone achievement
+6. **#86**: Create Custom Gutenberg Blocks for Repeatable Fields (editor integration)
+7. **#87**: Implement Multi-Block Plugin Architecture (WordPress.org standards)
+8. **#88**: Add Gallery Feature (Lightbox + media management)
+9. **#89**: Template & Pattern Integration (WordPress 6.7 features)
+10. **#90**: Section Style System (theme.json integration)
+
+**Build & Distribution Issues:**
+
+11. **#91**: Build & Package Plugin via WP Scripts (final compilation & distribution)
+12. **EPIC #80**: Overall coordination and milestone achievement
 
 ## Collaboration & Communication
 
@@ -158,3 +184,5 @@
 -   **Documentation**: Complete README, installation, and usage documentation
 -   **Learning Achievement**: Demonstrable skill advancement in block development
 -   **Milestone Success**: "1.0 RC 2" milestone completed on schedule
+
+{"type":"org-instructions","owner":"lightspeedwp Instructions","url":"https://docs.github.com/en/copilot/customizing-copilot/adding-organization-custom-instructions-for-github-copilot"}
