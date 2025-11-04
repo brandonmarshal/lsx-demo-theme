@@ -23,14 +23,40 @@
 		}
 
 		// Get map data from container data attributes
-		const latitude = parseFloat(mapContainer.dataset.latitude);
-		const longitude = parseFloat(mapContainer.dataset.longitude);
+		const latitudeAttr = mapContainer.dataset.latitude;
+		const longitudeAttr = mapContainer.dataset.longitude;
 		const areaName = mapContainer.dataset.areaName || '';
 		const address = mapContainer.dataset.address || '';
 		const zoom = parseInt(mapContainer.dataset.zoom, 10) || 12;
 		const mapType = mapContainer.dataset.mapType || 'roadmap';
 
-		// Validate coordinates
+		// Check for missing coordinate attributes
+		if (typeof latitudeAttr === 'undefined' && typeof longitudeAttr === 'undefined') {
+			mapContainer.innerHTML =
+				'<div class="fishing-map-error" role="alert">' +
+				'<p>Map coordinates (latitude and longitude) are missing for this location.</p>' +
+				'</div>';
+			return;
+		}
+		if (typeof latitudeAttr === 'undefined') {
+			mapContainer.innerHTML =
+				'<div class="fishing-map-error" role="alert">' +
+				'<p>Map latitude coordinate is missing for this location.</p>' +
+				'</div>';
+			return;
+		}
+		if (typeof longitudeAttr === 'undefined') {
+			mapContainer.innerHTML =
+				'<div class="fishing-map-error" role="alert">' +
+				'<p>Map longitude coordinate is missing for this location.</p>' +
+				'</div>';
+			return;
+		}
+
+		const latitude = parseFloat(latitudeAttr);
+		const longitude = parseFloat(longitudeAttr);
+
+		// Validate coordinates are valid numbers
 		if (isNaN(latitude) || isNaN(longitude)) {
 			mapContainer.innerHTML =
 				'<div class="fishing-map-error" role="alert">' +

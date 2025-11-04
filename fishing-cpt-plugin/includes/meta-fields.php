@@ -128,6 +128,11 @@ function sanitize_latitude($value): string
 		return '';
 	}
 
+	// Validate that the input is numeric before conversion
+	if (! is_numeric($value)) {
+		return '';
+	}
+
 	// Convert to float and back to string to ensure valid numeric format
 	$float_value = floatval($value);
 
@@ -150,6 +155,11 @@ function sanitize_latitude($value): string
 function sanitize_longitude($value): string
 {
 	if (empty($value)) {
+		return '';
+	}
+
+	// Validate that the input is numeric before conversion
+	if (! is_numeric($value)) {
 		return '';
 	}
 

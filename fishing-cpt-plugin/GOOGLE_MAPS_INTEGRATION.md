@@ -188,13 +188,6 @@ Common Google Maps API errors:
 ## Security Considerations
 
 1. **API Key Protection**:
-   - Set HTTP referrer restrictions in Google Cloud Console
-   - Limit API key to Maps JavaScript API only
-   - Never expose API key in client-side code (loaded server-side)
-
-## Security Considerations
-
-1. **API Key Protection**:
    - **Visible in Source**: The Google Maps JavaScript API requires the API key to be in the script URL. This is standard practice and documented by Google.
    - **Protection Methods**:
      - Set HTTP referrer restrictions in Google Cloud Console (e.g., `yourdomain.com/*`)
