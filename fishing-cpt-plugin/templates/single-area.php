@@ -18,6 +18,13 @@ if ($weather) : ?><li><strong><?php esc_html_e('Weather:', 'fishing-cpt-plugin')
 <?php $success = get_post_meta(get_the_ID(), 'catch_success', true);
 if ($success) : ?><li><strong><?php esc_html_e('Catch Success:', 'fishing-cpt-plugin'); ?></strong> <?php echo esc_html($success); ?></li><?php endif; ?>
 </ul>
+
+<?php
+// Display Google Map if location data exists
+if (function_exists('Fishing_CPT\GoogleMaps\render_area_map')) {
+	Fishing_CPT\GoogleMaps\render_area_map();
+}
+?>
 </div>
 </article>
 <?php endwhile; ?>

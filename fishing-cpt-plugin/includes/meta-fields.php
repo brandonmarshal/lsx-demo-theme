@@ -55,6 +55,31 @@ function register_meta_fields(): void
 			'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
 		]);
 	}
+
+	// Areas Google Maps location fields.
+	\register_post_meta('area', 'area_latitude', [
+		'single'            => true,
+		'type'              => 'string',
+		'show_in_rest'      => true,
+		'sanitize_callback' => __NAMESPACE__ . '\sanitize_coordinate',
+		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
+	]);
+
+	\register_post_meta('area', 'area_longitude', [
+		'single'            => true,
+		'type'              => 'string',
+		'show_in_rest'      => true,
+		'sanitize_callback' => __NAMESPACE__ . '\sanitize_coordinate',
+		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
+	]);
+
+	\register_post_meta('area', 'area_address', [
+		'single'            => true,
+		'type'              => 'string',
+		'show_in_rest'      => true,
+		'sanitize_callback' => 'sanitize_text_field',
+		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
+	]);
 }
 \add_action('init', __NAMESPACE__ . '\register_meta_fields', 15);
 
@@ -87,4 +112,30 @@ function sanitize_json_array($value): string
 		}
 	}
 	return \wp_json_encode($clean);
+}
+
+/**
+ * Sanitize coordinate values (latitude/longitude).
+ *
+ * @since 1.0.1
+ *
+ * @param mixed $value Raw coordinate input.
+ * @return string Sanitized coordinate value or empty string if invalid.
+ */
+function sanitize_coordinate($value): string
+{
+	if (empty($value)) {
+		return '';
+	}
+
+	// Convert to float and back to string to ensure valid numeric format
+	$float_value = floatval($value);
+
+	// Basic validation: latitude should be between -90 and 90, longitude between -180 and 180
+	// We'll accept both ranges here and validate in the frontend
+	if (abs($float_value) > 180) {
+		return '';
+	}
+
+	return \sanitize_text_field((string) $float_value);
 }

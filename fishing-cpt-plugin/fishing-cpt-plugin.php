@@ -115,6 +115,8 @@ function fishing_cpt_includes(): void
 		'includes/meta-fields.php',      // Add meta fields to existing CPTs
 		'includes/rest-api.php',
 		'includes/settings-page.php',
+		'includes/google-maps-settings.php',  // Google Maps settings page
+		'includes/google-maps-enqueue.php',   // Google Maps assets enqueue
 		'includes/blocks.php',
 		'includes/blocks-query-variations.php',
 		'includes/patterns.php',

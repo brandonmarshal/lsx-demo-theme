@@ -1,0 +1,114 @@
+/**
+ * Google Maps styles for Fishing CPT Area posts.
+ *
+ * @since 1.0.1
+ * @package FishingCPTPlugin
+ */
+
+/* Map container */
+#fishing-area-map {
+	width: 100%;
+	height: 450px;
+	margin: 2rem 0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	#fishing-area-map {
+		height: 350px;
+		margin: 1.5rem 0;
+	}
+}
+
+@media (max-width: 480px) {
+	#fishing-area-map {
+		height: 300px;
+		margin: 1rem 0;
+	}
+}
+
+/* Map error state */
+.fishing-map-error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 2rem;
+	background-color: #f8f9fa;
+	border: 2px dashed #dee2e6;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.fishing-map-error p {
+	margin: 0;
+	color: #6c757d;
+	font-size: 1rem;
+}
+
+/* Info window styles */
+.fishing-map-info-window h3 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: #212529;
+}
+
+.fishing-map-info-window p {
+	margin: 0;
+	font-size: 0.875rem;
+	color: #6c757d;
+}
+
+/* Map section wrapper */
+.area-map-section {
+	margin: 2rem 0;
+}
+
+.area-map-section h2 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #212529;
+}
+
+/* Loading state */
+#fishing-area-map.loading {
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+/* Accessibility improvements */
+#fishing-area-map:focus {
+	outline: 2px solid #0056b3;
+	outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.fishing-map-error {
+		border-width: 3px;
+		border-color: currentColor;
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	#fishing-area-map.loading {
+		animation: none;
+		background: #f0f0f0;
+	}
+}
