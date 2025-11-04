@@ -1,6 +1,6 @@
 # Fishing CPT Plugin
 
-Registers Fish, Gear, and Stories custom post types with meta fields, repeatable fish facts, Gutenberg blocks (fish-card, gear-card, story-card, repeatable-facts), query loop variations, patterns, REST API endpoint, settings page, and custom capabilities.
+Registers Fish, Gear, and Areas custom post types with meta fields, repeatable fish facts, Gutenberg blocks (fish-card, gear-card, area-card, repeatable-facts), query loop variations, patterns, REST API endpoint, settings page, Google Maps integration for Areas, and custom capabilities.
 
 ## Requirements
 
@@ -23,18 +23,34 @@ If the dependency is not met, the plugin will:
 - Automatically deactivate to prevent errors
 - Require you to install the dependency before reactivating
 
+## Features
+
+### Custom Post Types
+- **Fish** - Fish species with detailed metadata
+- **Gear** - Fishing equipment and gear
+- **Areas** - Fishing locations with Google Maps integration
+
+### Google Maps Integration
+Display interactive maps on Area posts showing fishing location coordinates. See [GOOGLE_MAPS_INTEGRATION.md](./GOOGLE_MAPS_INTEGRATION.md) for detailed setup and usage instructions.
+
+**Quick Setup:**
+1. Get a Google Maps API key from Google Cloud Console
+2. Navigate to **Fish > Maps Settings** in WordPress admin
+3. Enter your API key and configure display settings
+4. Add latitude/longitude coordinates to Area posts
+
 ## Blocks
 
 -   Fish Card (`fishing/fish-card`)
 -   Gear Card (`fishing/gear-card`)
--   Story Card (`fishing/story-card`)
+-   Area Card (`fishing/area-card`)
 -   Repeatable Facts (`fishing/repeatable-facts`)
 
 ## Query Loop Variations
 
 -   Fish Grid (fishing-fish-grid)
 -   Gear List (fishing-gear-list)
--   Featured Stories (fishing-stories-featured)
+-   Featured Areas (fishing-areas-featured)
 
 ## Patterns
 
@@ -46,7 +62,8 @@ Located in `patterns/` providing grids, heroes, lists and highlight sections for
 
 ## Settings
 
-Admin > Settings > Fishing CPT Settings – enable CPTs & posts per page.
+- **Admin > Fish > Settings** – Enable CPTs & posts per page
+- **Admin > Fish > Maps Settings** – Configure Google Maps API and display options
 
 ## Block Asset Pipeline
 
@@ -62,6 +79,12 @@ Generates production assets for block scripts/styles. SCSS can be introduced lat
 ## Internationalization
 
 Text domain `fishing-cpt-plugin`; POT file in `languages/`.
+
+## Documentation
+
+- [Google Maps Integration Guide](./GOOGLE_MAPS_INTEGRATION.md) - Comprehensive setup and usage documentation
+- [Dependency Implementation](./DEPENDENCY_IMPLEMENTATION.md) - Technical implementation details
+- [Testing Matrix](./TESTING_MATRIX.md) - Test coverage and validation
 
 ## License
 
