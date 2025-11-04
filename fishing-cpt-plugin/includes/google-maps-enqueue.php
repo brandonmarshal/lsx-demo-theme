@@ -54,7 +54,7 @@ function enqueue_maps_assets(): void
 	// Enqueue Google Maps JavaScript API
 	\wp_enqueue_script(
 		'google-maps',
-		'https://maps.googleapis.com/maps/api/js?key=' . \esc_attr($api_key),
+		'https://maps.googleapis.com/maps/api/js?key=' . urlencode($api_key),
 		[],
 		null,
 		true
