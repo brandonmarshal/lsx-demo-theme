@@ -43,32 +43,24 @@
 
 ### Wednesday (2025-11-05)
 
--   [ ] **Advanced Block Development**
+-   [ ] **Plugin & Theme Work**
     -   [ ] Complete Issue #85: Add Repeatable Field Groups for Gear CPT
     -   [ ] Begin Issue #86: Create Custom Gutenberg Blocks for Repeatable Fields
     -   [ ] Work on Issue #87: Implement Multi-Block Plugin Architecture
--   [ ] **Learning Intensification**
-    -   [ ] WordPress User Pathway - Intermediate and Advanced courses
-    -   [ ] WordPress Designer Pathway - Advanced design integration
-    -   [ ] Block bindings tutorial - Custom field integration patterns
--   [ ] **Technical Implementation**
-    -   [ ] Use @wordpress/scripts for block building and compilation
-    -   [ ] Test reciprocal field relationships and block editor integration
+    -   [ ] Address plugin inconsistencies ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211795987689038))
+    -   [ ] Complete milestone setup for plugin ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211795987689038))
+-   [ ] **Learning**
+    -   [ ] WordPress User Pathway - Intermediate and Advanced courses (may continue Thursday if not finished)
 
 ### Thursday (2025-11-06)
 
--   [ ] **Feature Implementation**
+-   [ ] **Plugin & Theme Work**
     -   [ ] Complete Issue #88: Add Gallery Feature (Lightbox + Media uploader)
     -   [ ] Work on Issue #89: Template & Pattern Integration
     -   [ ] Begin Issue #90: Section Style System
--   [ ] **Advanced WordPress Development**
-    -   [ ] WordPress Developer Pathway - Theme developer modules
-    -   [ ] Full Site Editing for Theme Developers advanced courses
-    -   [ ] Ollie theme academy and block theme academy modules
--   [ ] **Integration & Testing**
-    -   [ ] Test Google Maps integration with Area CPT
-    -   [ ] Validate gallery functionality across Fish, Gear, and Area posts
-    -   [ ] Verify template overrides in Full Site Editing
+    -   [ ] Copy the labels used in LightSpeed projects into my project
+-   [ ] **Learning**
+    -   [ ] WordPress Designer Pathway - Advanced design integration (continue Friday if not finished)
 
 ### Friday (2025-11-07) - Milestone Deadline
 
@@ -84,21 +76,23 @@
     -   [ ] Close EPIC #80: Fishing CPT Plugin — Dependency, Blocks & Templates
     -   [ ] Achieve "1.0 RC 2" milestone (due November 7th)
     -   [ ] Document week's accomplishments and prepare for next phase
+-   [ ] **Learning**
+    -   [ ] Block bindings tutorial - Custom field integration patterns (if not completed earlier)
 
 ---
 
 ## **Adjusted Distribution of 12 GitHub Issues (EPIC #80) Across the Week**
 
-| Day       | Issue(s)                                                                                 |
-|-----------|-----------------------------------------------------------------------------------------|
-| Monday    | Start #81 (Add Plugin Dependency Management)                                             |
-| Tuesday   | Work on #82 (Replace Stories CPT with Area CPT), Begin #83 (Google Maps), Start #84      |
+| Day       | Issue(s)                                                                                                                     |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Monday    | Start #81 (Add Plugin Dependency Management)                                                                                 |
+| Tuesday   | Work on #82 (Replace Stories CPT with Area CPT), Begin #83 (Google Maps), Start #84                                          |
 | Wednesday | Complete #85 (Repeatable Field Groups Gear CPT), Begin #86 (Custom Gutenberg Blocks), Work on #87 (Multi-Block Plugin Arch.) |
 | Thursday  | Complete #88 (Gallery Feature), Work on #89 (Template & Pattern Integration), Begin #90 (Section Style System)               |
 | Friday    | Complete #91 (Build & Package Plugin), Finalize & close all remaining sub-issues as needed including closing EPIC #80        |
 
-- Each day focuses on 2-3 core issues for implementation, leaving room for learning, documentation, and testing activities.
-- Friday is left for packaging, full QA, and catching up any remaining tasks, ensuring all 12 issues are closed by Milestone.
+-   Each day focuses on 2-3 core issues for implementation, leaving room for learning, documentation, and testing activities.
+-   Friday is left for packaging, full QA, and catching up any remaining tasks, ensuring all 12 issues are closed by Milestone.
 
 ---
 
