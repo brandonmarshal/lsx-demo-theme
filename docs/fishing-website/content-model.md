@@ -48,7 +48,7 @@ This document serves as a reference guide for content models and workflows. It i
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | Fish | `fish` | Fish Species | Fish Species | dashicons-admin-site-alt3 | title, editor, excerpt, thumbnail, revisions, author | true | true | true |
 | Gear | `gear` | Gear Item | Gear Items | dashicons-admin-tools | title, editor, excerpt, thumbnail, revisions, author | true | true | true |
-| Stories | `story` | Story | Stories | dashicons-format-chat | title, editor, excerpt, thumbnail, revisions, author | true | true | true |
+| Areas | `area` | Area | Areas | dashicons-location | title, editor, excerpt, thumbnail, revisions, author | true | true | true |
 
 **Notes:**
 
@@ -65,7 +65,7 @@ This document serves as a reference guide for content models and workflows. It i
 | Species | `species` | true | Classify Fish CPT by family/species type | Yellowfish, Bass, Tilapia |
 | Habitat | `habitat` | true | Location or environment for fish | Tugela River, Huttenspruit, Drakensberg Streams |
 | Gear Type | `gear_type` | true | Categorize gear by type | Rods, Reels, Baits, Lines |
-| Story Category | `story_category` | true | Organize Stories by type | Fishing Trip, Tips & Tricks, Seasonal |
+| Area Category | `area_category` | true | Organize Areas by type | Fishing Spot, River, Dam, Stream |
 | Fishing Season | `season` | false | Assign fish to active seasons | Summer, Autumn, Winter, Spring |
 
 **Notes:**
@@ -105,18 +105,21 @@ This document serves as a reference guide for content models and workflows. It i
 | Gallery | `gear_gallery` | Gallery | Optional | Max 8 images |
 | Notes | `gear_notes` | Textarea | Optional | Extra tips |
 
-**Stories CPT – `story`**  
- **Field Group: Story Details**
+**Areas CPT – `area`**  
+ **Field Group: Area Details**
 
 | Field | Key | Type | Required | Notes |
 | ----- | ----- | ----- | ----- | ----- |
-| Featured Image | `story_featured_image` | Thumbnail | Recommended | Hero section |
-| Category | `story_category` | Taxonomy | Yes | Fishing Trip, Tips & Tricks |
-| Related Fish | `story_related_fish` | Post Object / Relationship | Optional | Connect to Fish CPT |
-| Related Gear | `story_related_gear` | Post Object / Relationship | Optional | Connect to Gear CPT |
-| Story Body | `story_body` | WYSIWYG | Yes | Main content / narrative |
-| Media | `story_media` | Gallery | Optional | Photos/videos from trips |
-| Author Notes | `story_author_notes` | Textarea | Optional | Behind the scenes or personal tips |
+| Featured Image | `area_featured_image` | Thumbnail | Recommended | Hero section |
+| Category | `area_category` | Taxonomy | Yes | Fishing Spot, River, Dam, Stream |
+| Location | `location` | Text | Optional | Physical location or GPS coordinates |
+| Weather Conditions | `weather_conditions` | Text | Optional | Typical weather patterns |
+| Catch Success | `catch_success` | Text | Optional | Success rate or notes |
+| Related Fish | `area_related_fish` | Post Object / Relationship | Optional | Connect to Fish CPT |
+| Related Gear | `area_related_gear` | Post Object / Relationship | Optional | Connect to Gear CPT |
+| Area Body | `area_body` | WYSIWYG | Yes | Main content / description |
+| Media | `area_media` | Gallery | Optional | Photos/videos from area |
+| Notes | `area_notes` | Textarea | Optional | Additional tips or insights |
 
 ---
 
@@ -125,8 +128,8 @@ This document serves as a reference guide for content models and workflows. It i
 | Source CPT | Target CPT | Field Name | Relationship Type | Bidirectional | Notes |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | Gear | Fish | `gear_species` | Many-to-many | Yes | Connect gear to species it’s suited for |
-| Stories | Fish | `story_related_fish` | Many-to-many | Yes | Links story to fish featured |
-| Stories | Gear | `story_related_gear` | Many-to-many | Yes | Links story to gear used |
+| Areas | Fish | `area_related_fish` | Many-to-many | Yes | Links area to fish found there |
+| Areas | Gear | `area_related_gear` | Many-to-many | Yes | Links area to recommended gear |
 
 ---
 
@@ -163,12 +166,12 @@ This document serves as a reference guide for content models and workflows. It i
 | `single-gear.php` | Displays single Gear CPT post |
 | `archive-gear.php` | Lists all Gear CPT entries |
 | `taxonomy-gear_type.php` | Lists Gear filtered by type |
-| `single-story.php` | Displays single Story CPT post |
-| `archive-story.php` | Lists all Stories |
-| `taxonomy-story_category.php` | Lists stories filtered by category |
+| `single-area.php` | Displays single Area CPT post |
+| `archive-area.php` | Lists all Areas |
+| `taxonomy-area_category.php` | Lists areas filtered by category |
 | `parts/content-fish.php` | Reusable Fish content block |
 | `parts/content-gear.php` | Reusable Gear content block |
-| `parts/content-story.php` | Reusable Story content block |
+| `parts/content-area.php` | Reusable Story content block |
 | `patterns/*` | Hero, feature boxes, CTA sections, grids, galleries |
 
 **Block Bindings:**
@@ -189,7 +192,7 @@ This document serves as a reference guide for content models and workflows. It i
 
 2. Add Gear → assign Gear Type → link compatible Fish → fill specifications and gallery → Publish.
 
-3. Add Stories → assign Category → link Fish & Gear → Story Body & Media → Publish.
+3. Add Areas → assign Category → link Fish & Gear → Story Body & Media → Publish.
 
 **Governance / QA:**
 
@@ -199,7 +202,7 @@ This document serves as a reference guide for content models and workflows. It i
 
 * Habitat / Species taxonomies should be correctly applied.
 
-* Related content reviewed for accuracy (Fish ↔ Gear ↔ Stories).
+* Related content reviewed for accuracy (Fish ↔ Gear ↔ Areas).
 
 * REST exposure verified for headless / AI usage.
 
