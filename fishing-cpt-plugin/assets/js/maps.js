@@ -31,13 +31,6 @@
 		const mapType = mapContainer.dataset.mapType || 'roadmap';
 
 		// Check for missing coordinate attributes
-		if (typeof latitudeAttr === 'undefined' && typeof longitudeAttr === 'undefined') {
-			mapContainer.innerHTML =
-				'<div class="fishing-map-error" role="alert">' +
-				'<p>Map coordinates (latitude and longitude) are missing for this location.</p>' +
-				'</div>';
-			return;
-		}
 		if (typeof latitudeAttr === 'undefined') {
 			mapContainer.innerHTML =
 				'<div class="fishing-map-error" role="alert">' +
