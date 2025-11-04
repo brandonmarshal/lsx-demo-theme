@@ -9,7 +9,7 @@
 
 if (! function_exists('bfa_register_taxonomies')) {
 	/**
-	 * Registers fish, gear, and story taxonomies.
+	 * Registers fish, gear, and area taxonomies.
 	 *
 	 * @since 1.0.0
 	 * @return void
@@ -84,20 +84,20 @@ if (! function_exists('bfa_register_taxonomies')) {
 			)
 		);
 
-		// Story Category (hierarchical) for story.
+		// Area Category (hierarchical) for area.
 		register_taxonomy(
-			'story_category',
-			array('story'),
+			'area_category',
+			array('area'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Story Categories', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Story Category', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Area Categories', 'taxonomy general name', 'lsx-demo-theme'),
+					'singular_name' => _x('Area Category', 'taxonomy singular name', 'lsx-demo-theme'),
 				),
 				'hierarchical' => true,
 				'show_ui'      => true,
 				'show_in_rest' => true,
 				'show_admin_column' => true,
-				'rewrite'      => array('slug' => 'story-category'),
+				'rewrite'      => array('slug' => 'area-category'),
 			)
 		);
 	}

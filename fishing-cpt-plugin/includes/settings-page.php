@@ -18,7 +18,7 @@ function register_settings(): void
 function sanitize_settings($input): array
 {
 	$output = [];
-	$output['enabled_cpts']   = isset($input['enabled_cpts']) && is_array($input['enabled_cpts']) ? array_map('sanitize_key', $input['enabled_cpts']) : ['fish', 'gear', 'stories'];
+	$output['enabled_cpts']   = isset($input['enabled_cpts']) && is_array($input['enabled_cpts']) ? array_map('sanitize_key', $input['enabled_cpts']) : ['fish', 'gear', 'area'];
 	$output['posts_per_page'] = isset($input['posts_per_page']) ? max(1, (int) $input['posts_per_page']) : 6;
 	return $output;
 }
@@ -26,8 +26,8 @@ function sanitize_settings($input): array
 function field_enabled_cpts(): void
 {
 	$options = \get_option('fishing_cpt_settings', []);
-	$enabled = $options['enabled_cpts'] ?? ['fish', 'gear', 'stories'];
-	$cpts    = ['fish' => \__('Fish', 'fishing-cpt-plugin'), 'gear' => \__('Gear', 'fishing-cpt-plugin'), 'stories' => \__('Stories', 'fishing-cpt-plugin')];
+	$enabled = $options['enabled_cpts'] ?? ['fish', 'gear', 'area'];
+	$cpts    = ['fish' => \__('Fish', 'fishing-cpt-plugin'), 'gear' => \__('Gear', 'fishing-cpt-plugin'), 'area' => \__('Areas', 'fishing-cpt-plugin')];
 	foreach ($cpts as $slug => $label) {
 		echo '<label><input type="checkbox" name="fishing_cpt_settings[enabled_cpts][]" value="' . \esc_attr($slug) . '" ' . \checked(in_array($slug, $enabled, true), true, false) . '> ' . \esc_html($label) . '</label><br />';
 	}

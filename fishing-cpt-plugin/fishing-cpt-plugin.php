@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Fishing CPT Plugin
- * Description: Registers Fish, Gear, and Stories custom post types, meta fields, Gutenberg blocks, patterns, query variations, settings page, REST endpoints, and capabilities.
+ * Description: Registers Fish, Gear, and Areas custom post types, meta fields, Gutenberg blocks, patterns, query variations, settings page, REST endpoints, and capabilities.
  * Version: 1.0.1
  * Author: Brandon Marshall - LightSpeed WP
  * Text Domain: fishing-cpt-plugin

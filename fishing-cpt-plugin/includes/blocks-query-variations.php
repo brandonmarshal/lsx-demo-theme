@@ -34,14 +34,14 @@ function register_query_variations(): void
 		},
 	]);
 	\register_block_variation('core/query', [
-		'name'        => 'fishing-stories-featured',
-		'title'       => \__('Featured Stories', 'fishing-cpt-plugin'),
-		'description' => \__('Featured recent stories with large images.', 'fishing-cpt-plugin'),
-		'icon'        => 'book',
-		'attributes'  => ['query' => ['perPage' => 3, 'postType' => 'stories', 'order' => 'desc', 'orderBy' => 'date']],
-		'innerBlocks' => [['core/post-template', [], [['fishing/story-card']]]],
+		'name'        => 'fishing-areas-featured',
+		'title'       => \__('Featured Areas', 'fishing-cpt-plugin'),
+		'description' => \__('Featured fishing areas with large images.', 'fishing-cpt-plugin'),
+		'icon'        => 'location',
+		'attributes'  => ['query' => ['perPage' => 3, 'postType' => 'area', 'order' => 'desc', 'orderBy' => 'date']],
+		'innerBlocks' => [['core/post-template', [], [['fishing/area-card']]]],
 		'isActive'    => function ($attrs) {
-			return ($attrs['query']['postType'] ?? '') === 'stories';
+			return ($attrs['query']['postType'] ?? '') === 'area';
 		},
 	]);
 }

@@ -8,7 +8,7 @@ if (! defined('ABSPATH')) {
 
 function template_loader($template)
 {
-	$types = ['fish', 'gear', 'stories'];
+	$types = ['fish', 'gear', 'area'];
 	// Single.
 	if (\is_singular($types)) {
 		$type      = \get_post_type();

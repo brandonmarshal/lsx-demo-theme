@@ -120,7 +120,7 @@
         <p class="about-cta__text">
             Want to see the latest catches? Peek into the
             <a href="/portfolio">portfolio</a> or read my
-            <a href="/stories">river stories</a>.
+            <a href="/areas">fishing areas</a>.
         </p>
         <!-- /wp:paragraph -->
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
