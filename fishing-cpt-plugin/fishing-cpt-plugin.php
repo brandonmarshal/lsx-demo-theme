@@ -75,9 +75,11 @@ function fishing_cpt_dependency_notice(): void
 		<p>
 			<?php
 			/* translators: %s: URL to plugins page */
-			printf(
-				esc_html__('You can install it from the %s.', 'fishing-cpt-plugin'),
-				'<a href="' . esc_url(admin_url('plugin-install.php')) . '">' . esc_html__('WordPress plugin directory', 'fishing-cpt-plugin') . '</a>'
+			echo wp_kses_post(
+				sprintf(
+					esc_html__('You can install it from the %s.', 'fishing-cpt-plugin'),
+					'<a href="' . esc_url(admin_url('plugin-install.php')) . '">' . esc_html__('WordPress plugin directory', 'fishing-cpt-plugin') . '</a>'
+				)
 			);
 			?>
 		</p>
