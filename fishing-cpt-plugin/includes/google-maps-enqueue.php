@@ -39,6 +39,18 @@ function enqueue_maps_assets(): void
 		return;
 	}
 
+	/**
+	 * Note on API Key Security:
+	 * The Google Maps JavaScript API requires the API key to be included in the script URL.
+	 * This is standard practice and documented by Google. To protect against unauthorized usage:
+	 * 1. Restrict the API key in Google Cloud Console to specific domains (HTTP referrers)
+	 * 2. Limit the API key to only the Maps JavaScript API
+	 * 3. Set usage quotas and billing alerts
+	 * 4. Monitor usage in Google Cloud Console
+	 *
+	 * @see https://developers.google.com/maps/api-security-best-practices
+	 */
+
 	// Enqueue Google Maps JavaScript API
 	\wp_enqueue_script(
 		'google-maps',

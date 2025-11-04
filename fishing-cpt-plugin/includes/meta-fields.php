@@ -61,7 +61,7 @@ function register_meta_fields(): void
 		'single'            => true,
 		'type'              => 'string',
 		'show_in_rest'      => true,
-		'sanitize_callback' => __NAMESPACE__ . '\sanitize_coordinate',
+		'sanitize_callback' => __NAMESPACE__ . '\sanitize_latitude',
 		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
 	]);
 
@@ -69,7 +69,7 @@ function register_meta_fields(): void
 		'single'            => true,
 		'type'              => 'string',
 		'show_in_rest'      => true,
-		'sanitize_callback' => __NAMESPACE__ . '\sanitize_coordinate',
+		'sanitize_callback' => __NAMESPACE__ . '\sanitize_longitude',
 		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
 	]);
 
@@ -115,14 +115,14 @@ function sanitize_json_array($value): string
 }
 
 /**
- * Sanitize coordinate values (latitude/longitude).
+ * Sanitize latitude coordinate values.
  *
  * @since 1.0.1
  *
- * @param mixed $value Raw coordinate input.
- * @return string Sanitized coordinate value or empty string if invalid.
+ * @param mixed $value Raw latitude input.
+ * @return string Sanitized latitude value or empty string if invalid.
  */
-function sanitize_coordinate($value): string
+function sanitize_latitude($value): string
 {
 	if (empty($value)) {
 		return '';
@@ -131,9 +131,33 @@ function sanitize_coordinate($value): string
 	// Convert to float and back to string to ensure valid numeric format
 	$float_value = floatval($value);
 
-	// Basic validation: latitude should be between -90 and 90, longitude between -180 and 180
-	// We'll accept both ranges here and validate in the frontend
-	if (abs($float_value) > 180) {
+	// Latitude must be between -90 and 90
+	if ($float_value < -90 || $float_value > 90) {
+		return '';
+	}
+
+	return \sanitize_text_field((string) $float_value);
+}
+
+/**
+ * Sanitize longitude coordinate values.
+ *
+ * @since 1.0.1
+ *
+ * @param mixed $value Raw longitude input.
+ * @return string Sanitized longitude value or empty string if invalid.
+ */
+function sanitize_longitude($value): string
+{
+	if (empty($value)) {
+		return '';
+	}
+
+	// Convert to float and back to string to ensure valid numeric format
+	$float_value = floatval($value);
+
+	// Longitude must be between -180 and 180
+	if ($float_value < -180 || $float_value > 180) {
 		return '';
 	}
 

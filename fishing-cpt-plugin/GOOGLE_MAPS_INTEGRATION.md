@@ -22,11 +22,17 @@ This feature adds Google Maps integration to the Area custom post type, allowing
 2. Create a new project or select an existing one
 3. Enable the "Maps JavaScript API"
 4. Create credentials (API key)
-5. Restrict your API key:
-   - Set application restrictions (HTTP referrers recommended)
-   - Set API restrictions to only "Maps JavaScript API"
+5. **IMPORTANT: Restrict your API key:**
+   - **Application restrictions**: Set HTTP referrer restrictions
+     - Add your domain(s): `yourdomain.com/*`, `*.yourdomain.com/*`
+     - This prevents unauthorized use from other websites
+   - **API restrictions**: Limit to "Maps JavaScript API" only
+   - **Set quotas**: Configure usage limits to control costs
+   - **Enable billing alerts**: Get notified of unusual activity
 
-**Important**: Store your API key securely and never commit it to version control.
+**Security Note**: The Google Maps JavaScript API requires the API key to be visible in the page source. This is standard and documented by Google. Protect your key by implementing the restrictions above. The API key is not stored in version control.
+
+**Learn more**: [Google Maps API Security Best Practices](https://developers.google.com/maps/api-security-best-practices)
 
 ### 2. Configure Plugin Settings
 
@@ -186,14 +192,35 @@ Common Google Maps API errors:
    - Limit API key to Maps JavaScript API only
    - Never expose API key in client-side code (loaded server-side)
 
+## Security Considerations
+
+1. **API Key Protection**:
+   - **Visible in Source**: The Google Maps JavaScript API requires the API key to be in the script URL. This is standard practice and documented by Google.
+   - **Protection Methods**:
+     - Set HTTP referrer restrictions in Google Cloud Console (e.g., `yourdomain.com/*`)
+     - Limit API key to Maps JavaScript API only
+     - Configure usage quotas and billing alerts
+     - Monitor usage regularly in Google Cloud Console
+   - **Not a Secret**: Unlike backend API keys, browser API keys are meant to be visible but restricted by domain
+   - **Never in Version Control**: The key is stored in WordPress database, not in code
+
 2. **Input Validation**:
-   - All coordinates sanitized with `sanitize_coordinate()` function
+   - Latitude validated with `sanitize_latitude()` function (range: -90 to 90)
+   - Longitude validated with `sanitize_longitude()` function (range: -180 to 180)
    - Address data sanitized with `sanitize_text_field()`
-   - XSS prevention in info window content
+   - XSS prevention in info window content with `escapeHtml()` function
 
 3. **Permission Checks**:
    - Only users with `manage_options` capability can configure settings
    - Meta fields require `edit_posts` capability
+
+4. **Best Practices**:
+   - Regular monitoring of API usage
+   - Quick rotation of key if compromised
+   - Documentation of all restrictions applied
+   - Testing with production domain restrictions before launch
+
+**Reference**: [Google Maps API Security Best Practices](https://developers.google.com/maps/api-security-best-practices)
 
 ## Performance
 
@@ -201,6 +228,7 @@ Common Google Maps API errors:
 - Google Maps API loaded from CDN (cached by browsers)
 - CSS and JS minified and versioned for cache busting
 - Conditional loading prevents unnecessary API calls
+- Single database query per page load for settings
 
 ## Accessibility
 
