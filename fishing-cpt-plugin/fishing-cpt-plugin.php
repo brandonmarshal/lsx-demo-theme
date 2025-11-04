@@ -84,12 +84,7 @@ function fishing_cpt_dependency_notice(): void
 	</div>
 	<?php
 
-	// Remove plugin activation notice since we're deactivating.
-	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only checking for GET parameter existence, not processing form data.
-	if (isset($_GET['activate'])) {
-		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only unsetting GET parameter, not processing form data.
-		unset($_GET['activate']);
-	}
+	// No need to unset $_GET['activate']; WordPress handles the notice UX.
 }
 
 /**
