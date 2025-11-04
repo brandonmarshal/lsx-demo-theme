@@ -2,8 +2,8 @@
 
 /**
  * Plugin Name: Fishing CPT Plugin
- * Description: Registers Fish, Gear, and Areas custom post types, meta fields, Gutenberg blocks, patterns, query variations, settings page, REST endpoints, and capabilities.
- * Version: 1.0.1
+ * Description: Registers Fish, Gear, and Areas custom post types, meta fields, Gutenberg blocks, patterns, query variations, settings page, REST endpoints, and capabilities with bidirectional relationships.
+ * Version: 1.0.2
  * Author: Brandon Marshall - LightSpeed WP
  * Text Domain: fishing-cpt-plugin
  * Domain Path: /languages
@@ -17,7 +17,7 @@ if (! defined('ABSPATH')) {
 }
 
 // Constants.
-define('FISHING_CPT_PLUGIN_VERSION', '1.0.1');
+define('FISHING_CPT_PLUGIN_VERSION', '1.0.2');
 define('FISHING_CPT_PLUGIN_FILE', __FILE__);
 define('FISHING_CPT_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FISHING_CPT_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -111,8 +111,9 @@ function fishing_cpt_includes(): void
 		'includes/capabilities.php',
 		// 'includes/cpt-fish.php',        // Disabled: Using theme CPTs instead
 		// 'includes/cpt-gear.php',       // Disabled: Using theme CPTs instead
-		// 'includes/cpt-stories.php',    // Disabled: Using theme CPTs instead
 		'includes/meta-fields.php',      // Add meta fields to existing CPTs
+		'includes/relationship-fields.php',   // ACF/SCF relationship field groups
+		'includes/relationship-helpers.php',  // Bidirectional relationship sync
 		'includes/rest-api.php',
 		'includes/settings-page.php',
 		'includes/google-maps-settings.php',  // Google Maps settings page

@@ -26,9 +26,20 @@ If the dependency is not met, the plugin will:
 ## Features
 
 ### Custom Post Types
-- **Fish** - Fish species with detailed metadata
-- **Gear** - Fishing equipment and gear
-- **Areas** - Fishing locations with Google Maps integration
+- **Fish** - Fish species with detailed metadata and relationship fields
+- **Gear** - Fishing equipment and gear with compatibility relationships
+- **Areas** - Fishing locations with Google Maps integration and related content
+
+### Post Relationships
+The plugin provides bidirectional relationships between all CPTs:
+- **Fish ↔ Gear**: Link fish species to compatible gear and vice versa
+- **Fish ↔ Areas**: Connect fish to areas where they can be found
+- **Gear ↔ Areas**: Associate gear with recommended fishing areas
+
+All relationships are:
+- **Bidirectional**: Updating one side automatically updates the other
+- **Repeatable**: Select multiple related items per relationship
+- **Validated**: Prevents circular references and maintains data integrity
 
 ### Google Maps Integration
 Display interactive maps on Area posts showing fishing location coordinates. See [GOOGLE_MAPS_INTEGRATION.md](./GOOGLE_MAPS_INTEGRATION.md) for detailed setup and usage instructions.
@@ -82,6 +93,7 @@ Text domain `fishing-cpt-plugin`; POT file in `languages/`.
 
 ## Documentation
 
+- [Relationships Guide](./RELATIONSHIPS.md) - Complete guide to using and understanding post relationships
 - [Google Maps Integration Guide](./GOOGLE_MAPS_INTEGRATION.md) - Comprehensive setup and usage documentation
 - [Dependency Implementation](./DEPENDENCY_IMPLEMENTATION.md) - Technical implementation details
 - [Testing Matrix](./TESTING_MATRIX.md) - Test coverage and validation
