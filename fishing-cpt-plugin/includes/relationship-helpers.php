@@ -51,39 +51,53 @@ function update_reciprocal_relationships( int $post_id, $related_posts, string $
 		$related_posts
 	);
 
-	// Get all posts of the target type to remove stale relationships.
-	$all_target_posts = get_posts(
-		array(
-			'post_type'      => $target_post_type,
-			'posts_per_page' => -1,
-			'fields'         => 'ids',
-			'post_status'    => array( 'publish', 'draft', 'pending' ),
-		)
+	// Get the previous set of related post IDs for this post.
+	$previous_related = get_field( $source_field, $post_id );
+	if ( ! is_array( $previous_related ) ) {
+		$previous_related = array();
+	}
+	$previous_ids = array_map(
+		function( $item ) {
+			return is_object( $item ) ? $item->ID : (int) $item;
+		},
+		$previous_related
 	);
 
-	foreach ( $all_target_posts as $target_id ) {
+	// Calculate which posts were added and which were removed.
+	$added_ids   = array_diff( $related_ids, $previous_ids );
+	$removed_ids = array_diff( $previous_ids, $related_ids );
+
+	// Add reciprocal relationship to newly related posts.
+	foreach ( $added_ids as $target_id ) {
 		$existing_relationships = get_field( $target_field, $target_id );
 		if ( ! is_array( $existing_relationships ) ) {
 			$existing_relationships = array();
 		}
-
-		// Convert to IDs for comparison.
 		$existing_ids = array_map(
 			function( $item ) {
 				return is_object( $item ) ? $item->ID : (int) $item;
 			},
 			$existing_relationships
 		);
-
-		$should_be_related = in_array( $target_id, $related_ids, true );
-		$is_related        = in_array( $post_id, $existing_ids, true );
-
-		if ( $should_be_related && ! $is_related ) {
-			// Add the relationship.
+		if ( ! in_array( $post_id, $existing_ids, true ) ) {
 			$existing_ids[] = $post_id;
 			update_field( $target_field, $existing_ids, $target_id );
-		} elseif ( ! $should_be_related && $is_related ) {
-			// Remove the relationship.
+		}
+	}
+
+	// Remove reciprocal relationship from posts that are no longer related.
+	foreach ( $removed_ids as $target_id ) {
+		$existing_relationships = get_field( $target_field, $target_id );
+		if ( ! is_array( $existing_relationships ) ) {
+			$existing_relationships = array();
+		}
+		$existing_ids = array_map(
+			function( $item ) {
+				return is_object( $item ) ? $item->ID : (int) $item;
+			},
+			$existing_relationships
+		);
+		if ( in_array( $post_id, $existing_ids, true ) ) {
 			$existing_ids = array_diff( $existing_ids, array( $post_id ) );
 			update_field( $target_field, array_values( $existing_ids ), $target_id );
 		}
