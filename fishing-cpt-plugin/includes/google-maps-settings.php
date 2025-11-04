@@ -127,7 +127,10 @@ function sanitize_maps_settings($input): array
 	}
 
 	// If API key was provided and changed, add admin notice for verification
-	if (! empty($output['api_key']) && $output['api_key'] !== get_option('fishing_gmaps_settings')['api_key'] ?? '') {
+	$previous_settings = \get_option('fishing_gmaps_settings', []);
+	$previous_api_key = isset($previous_settings['api_key']) ? $previous_settings['api_key'] : '';
+
+	if (! empty($output['api_key']) && $output['api_key'] !== $previous_api_key) {
 		\add_settings_error(
 			'fishing_gmaps_settings',
 			'api_key_updated',

@@ -90,6 +90,7 @@ function get_area_map_data($post_id): ?array
 	$settings = \get_option('fishing_gmaps_settings', []);
 	$zoom     = isset($settings['default_zoom']) ? (int) $settings['default_zoom'] : 12;
 	$map_type = isset($settings['map_type']) ? $settings['map_type'] : 'roadmap';
+	$api_key  = isset($settings['api_key']) ? $settings['api_key'] : '';
 
 	return [
 		'latitude'  => \floatval($latitude),
@@ -98,6 +99,7 @@ function get_area_map_data($post_id): ?array
 		'zoom'      => $zoom,
 		'map_type'  => $map_type,
 		'area_name' => \get_the_title($post_id),
+		'api_key'   => $api_key,
 	];
 }
 
@@ -115,7 +117,7 @@ function render_area_map($post_id = null): void
 		$post_id = \get_the_ID();
 	}
 
-	// Get map data
+	// Get map data (includes API key check)
 	$map_data = get_area_map_data($post_id);
 
 	// Don't render if no location data
@@ -124,10 +126,7 @@ function render_area_map($post_id = null): void
 	}
 
 	// Check if API key is configured
-	$settings = \get_option('fishing_gmaps_settings', []);
-	$api_key  = isset($settings['api_key']) ? $settings['api_key'] : '';
-
-	if (empty($api_key)) {
+	if (empty($map_data['api_key'])) {
 		// Show admin notice if user is admin
 		if (\current_user_can('manage_options')) {
 			echo '<div class="fishing-map-notice" role="alert">';
