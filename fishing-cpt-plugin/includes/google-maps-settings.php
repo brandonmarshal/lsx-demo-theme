@@ -152,7 +152,7 @@ function sanitize_maps_settings($input): array
 function field_api_key(): void
 {
 	$options = \get_option('fishing_gmaps_settings', []);
-	$value   = isset($options['api_key']) ? $options['api_key'] : '';
+	$value   = $options['api_key'] ?? '';
 	?>
 	<input
 		type="text"
