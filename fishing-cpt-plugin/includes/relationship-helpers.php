@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-function update_reciprocal_relationships( int $post_id, $related_posts, string $source_field, string $target_field, string $target_post_type ): void {
+function update_reciprocal_relationships( int $post_id, array $related_posts, string $source_field, string $target_field, string $target_post_type ): void {
 	// Validate inputs.
 	if ( empty( $post_id ) || ! is_array( $related_posts ) ) {
 		return;
