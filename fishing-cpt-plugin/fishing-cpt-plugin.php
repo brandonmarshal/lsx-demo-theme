@@ -9,6 +9,7 @@
  * Domain Path: /languages
  * Requires at least: 6.8.0
  * Requires PHP: 7.4
+ * Requires Plugins: advanced-custom-fields
  * License: GPL-2.0-or-later
  */
 if (! defined('ABSPATH')) {
@@ -22,7 +23,81 @@ define('FISHING_CPT_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FISHING_CPT_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 /**
+ * Check for required plugin dependencies.
+ *
+ * Verifies that Secure Custom Fields (SCF) or Advanced Custom Fields (ACF)
+ * is installed and activated. If not found, displays an admin notice and
+ * deactivates this plugin to prevent errors.
+ *
+ * @since 1.0.1
+ *
+ * @return void
+ */
+function fishing_cpt_check_dependencies(): void
+{
+	// Check if ACF/SCF is active by looking for common functions.
+	if (! function_exists('acf') && ! function_exists('get_field') && ! class_exists('ACF')) {
+		// Deactivate this plugin.
+		deactivate_plugins(plugin_basename(__FILE__));
+
+		// Display admin notice.
+		add_action('admin_notices', 'fishing_cpt_dependency_notice');
+
+		// Prevent further execution.
+		return;
+	}
+}
+add_action('plugins_loaded', 'fishing_cpt_check_dependencies', 5);
+
+/**
+ * Display admin notice for missing dependency.
+ *
+ * Shows an error notice in the WordPress admin when Secure Custom Fields
+ * is not installed or activated. Provides clear guidance on how to resolve.
+ *
+ * @since 1.0.1
+ *
+ * @return void
+ */
+function fishing_cpt_dependency_notice(): void
+{
+	?>
+	<div class="notice notice-error is-dismissible">
+		<p>
+			<strong><?php echo esc_html__('Fishing CPT Plugin Error:', 'fishing-cpt-plugin'); ?></strong>
+			<?php
+			echo esc_html__(
+				'This plugin requires Secure Custom Fields (SCF) or Advanced Custom Fields (ACF) to be installed and activated. Please install and activate it to use the Fishing CPT Plugin.',
+				'fishing-cpt-plugin'
+			);
+			?>
+		</p>
+		<p>
+			<?php
+			/* translators: %s: URL to plugins page */
+			printf(
+				esc_html__('You can install it from the %s.', 'fishing-cpt-plugin'),
+				'<a href="' . esc_url(admin_url('plugin-install.php')) . '">' . esc_html__('WordPress plugin directory', 'fishing-cpt-plugin') . '</a>'
+			);
+			?>
+		</p>
+	</div>
+	<?php
+
+	// Remove plugin activation notice since we're deactivating.
+	// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only checking for GET parameter existence, not processing form data.
+	if (isset($_GET['activate'])) {
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Only unsetting GET parameter, not processing form data.
+		unset($_GET['activate']);
+	}
+}
+
+/**
  * Load text domain.
+ *
+ * @since 1.0.0
+ *
+ * @return void
  */
 function fishing_cpt_load_textdomain(): void
 {

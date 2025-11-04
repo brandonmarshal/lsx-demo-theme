@@ -2,6 +2,27 @@
 
 Registers Fish, Gear, and Stories custom post types with meta fields, repeatable fish facts, Gutenberg blocks (fish-card, gear-card, story-card, repeatable-facts), query loop variations, patterns, REST API endpoint, settings page, and custom capabilities.
 
+## Requirements
+
+**Required Plugin Dependency:**
+- **Secure Custom Fields (SCF)** or **Advanced Custom Fields (ACF)** - This plugin uses custom fields for managing post metadata. You must have either SCF or ACF installed and activated.
+
+**WordPress Requirements:**
+- WordPress 6.8.0 or higher
+- PHP 7.4 or higher
+
+### Installing Dependencies
+
+1. Navigate to **Plugins > Add New** in your WordPress admin
+2. Search for "Advanced Custom Fields" or "Secure Custom Fields"
+3. Click **Install Now** and then **Activate**
+4. Once activated, you can activate the Fishing CPT Plugin
+
+If the dependency is not met, the plugin will:
+- Display an admin error notice with installation instructions
+- Automatically deactivate to prevent errors
+- Require you to install the dependency before reactivating
+
 ## Blocks
 
 -   Fish Card (`fishing/fish-card`)
