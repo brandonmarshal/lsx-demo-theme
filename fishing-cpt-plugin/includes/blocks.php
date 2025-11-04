@@ -36,12 +36,12 @@ function register_blocks()
 		'render_callback' => __NAMESPACE__ . '\render_gear_card',
 	]);
 
-	register_block_type('fishing/story-card', [
-		'title' => 'Story Card',
-		'description' => 'Display story information card',
+	register_block_type('fishing/area-card', [
+		'title' => 'Area Card',
+		'description' => 'Display area information card',
 		'category' => 'widgets',
-		'icon' => 'book',
-		'render_callback' => __NAMESPACE__ . '\render_story_card',
+		'icon' => 'location',
+		'render_callback' => __NAMESPACE__ . '\render_area_card',
 	]);
 
 	register_block_type('fishing/repeatable-facts', [
@@ -65,9 +65,9 @@ function render_gear_card($attributes, $content, $block)
 	return '<div class="fishing-gear-card"><p>🎣 Gear Card - Plugin Working!</p></div>';
 }
 
-function render_story_card($attributes, $content, $block)
+function render_area_card($attributes, $content, $block)
 {
-	return '<div class="fishing-story-card"><p>📖 Story Card - Plugin Working!</p></div>';
+	return '<div class="fishing-area-card"><p>📍 Area Card - Plugin Working!</p></div>';
 }
 
 function render_repeatable_facts($attributes, $content, $block)

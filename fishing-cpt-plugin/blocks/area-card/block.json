@@ -1,0 +1,10 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/area-card",
+    "title": "Area Card",
+    "category": "widgets",
+    "icon": "location",
+    "description": "Card showing area meta data.",
+    "usesContext": ["postId", "postType"],
+    "render": "file:./render.php"
+}

@@ -119,7 +119,7 @@ function lsx_demo_theme_load_cpt_and_tax_files()
 	$files = array(
 		'inc/cpt-fish.php',        // Restored: Keep existing posts safe
 		'inc/cpt-gear.php',       // Restored: Keep existing posts safe
-		'inc/cpt-story.php',      // Restored: Keep existing posts safe
+		'inc/cpt-area.php',       // Area CPT - replaces story
 		'inc/taxonomies.php',
 		'inc/seed-bass-post.php', // temporary: seeds "How to Catch a Bass" post (remove after creation)
 	);

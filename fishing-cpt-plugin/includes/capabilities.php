@@ -12,14 +12,14 @@ if (! defined('ABSPATH')) {
 function add_caps(): void
 {
 	$roles = ['administrator', 'editor'];
-	$cpts  = ['fish', 'gear', 'stories'];
+	$cpts  = ['fish', 'gear', 'area'];
 	foreach ($roles as $role_name) {
 		$role = get_role($role_name);
 		if (! $role) {
 			continue;
 		}
 		foreach ($cpts as $cpt) {
-			$plural = $cpt === 'fish' ? 'fishes' : $cpt; // simple pluralization.
+			$plural = $cpt === 'fish' ? 'fishes' : ($cpt === 'area' ? 'areas' : $cpt); // simple pluralization.
 			$caps = [
 				"edit_{$cpt}",
 				"read_{$cpt}",

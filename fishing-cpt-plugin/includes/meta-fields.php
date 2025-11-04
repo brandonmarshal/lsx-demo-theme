@@ -7,7 +7,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Register post meta for Fish, Gear, Stories including repeatable JSON fish facts.
+ * Register post meta for Fish, Gear, Areas including repeatable JSON fish facts.
  */
 function register_meta_fields(): void
 {
@@ -44,10 +44,10 @@ function register_meta_fields(): void
 		]);
 	}
 
-	// Stories meta.
-	$stories_fields = ['location', 'weather_conditions', 'catch_success'];
-	foreach ($stories_fields as $field) {
-		\register_post_meta('stories', $field, [
+	// Areas meta.
+	$areas_fields = ['location', 'weather_conditions', 'catch_success'];
+	foreach ($areas_fields as $field) {
+		\register_post_meta('area', $field, [
 			'single'            => true,
 			'type'              => 'string',
 			'show_in_rest'      => true,
