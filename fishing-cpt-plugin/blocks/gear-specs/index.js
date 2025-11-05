@@ -6,7 +6,6 @@ import './editor.css';
 
 export default function Edit({ attributes, setAttributes, context }) {
     const { displayStyle } = attributes;
-    const postId = context.postId;
     const postType = context.postType;
     const blockProps = useBlockProps();
 
