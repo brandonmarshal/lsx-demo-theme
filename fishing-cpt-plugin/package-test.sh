@@ -38,6 +38,13 @@ if ! command -v zip &> /dev/null; then
     exit 1
 fi
 echo -e "${GREEN}✓${NC} zip command is available"
+
+if ! command -v rsync &> /dev/null; then
+    echo -e "${RED}Error: rsync is not installed${NC}"
+    echo "Please install rsync to use this script"
+    exit 1
+fi
+echo -e "${GREEN}✓${NC} rsync is available"
 echo ""
 
 # Step 2: Install npm dependencies
@@ -171,6 +178,18 @@ REQUIRED_FILES=(
     "includes/blocks.php"
     "build/blocks/fish-card/index.js"
     "build/blocks/fish-card/block.json"
+    "build/blocks/fish-card/index.asset.php"
+    "build/blocks/fish-card/render.php"
+    "build/blocks/gear-card/index.js"
+    "build/blocks/gear-card/block.json"
+    "build/blocks/area-card/index.js"
+    "build/blocks/area-card/block.json"
+    "build/blocks/fish-facts/index.js"
+    "build/blocks/fish-facts/block.json"
+    "build/blocks/gear-specs/index.js"
+    "build/blocks/gear-specs/block.json"
+    "build/blocks/repeatable-facts/index.js"
+    "build/blocks/repeatable-facts/block.json"
 )
 
 VERIFY_OK=true

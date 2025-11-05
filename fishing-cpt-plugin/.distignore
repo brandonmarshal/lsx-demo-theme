@@ -22,38 +22,31 @@
 /tsconfig.json
 
 # Exclude ONLY the source blocks directory (not build/blocks/)
-# Use leading slash to prevent matching build/blocks/
-/blocks/area-card/index.js
-/blocks/area-card/style.css
-/blocks/area-card/editor.css
-/blocks/fish-card/index.js
-/blocks/fish-card/style.css
-/blocks/fish-card/editor.css
-/blocks/fish-facts/index.js
-/blocks/fish-facts/style.css
-/blocks/fish-facts/editor.css
-/blocks/gear-card/index.js
-/blocks/gear-card/style.css
-/blocks/gear-card/editor.css
-/blocks/gear-specs/index.js
-/blocks/gear-specs/style.css
-/blocks/gear-specs/editor.css
-/blocks/repeatable-facts/index.js
-/blocks/repeatable-facts/style.css
-/blocks/repeatable-facts/editor.css
+# Use leading slash and patterns to prevent matching build/blocks/
+/blocks/*/index.js
+/blocks/*/style.css
+/blocks/*/editor.css
+/blocks/*/*.jsx
+/blocks/*/*.ts
+/blocks/*/*.tsx
+/blocks/*/*.scss
 
 # Testing
 /tests/
 /phpunit.xml
 /phpunit.xml.dist
+/phpcs.xml.dist
 /.phpunit.result.cache
 /playwright.config.js
 /playwright.config.ts
 
 # Documentation (except core docs)
+/CHANGELOG.md
 /DEPENDENCY_TEST_PLAN.md
 /GOOGLE_MAPS_TESTING.md
 /IMPLEMENTATION_SUMMARY.md
+/IMPLEMENTATION-SUMMARY.md
+/IMPLEMENTATION_COMPLETE.md
 /TASK_CHECKLIST.md
 /TESTING_MATRIX.md
 # Editor configs
