@@ -36,6 +36,18 @@ if (empty($facts) || ! is_array($facts)) {
 	return;
 }
 
+// Filter out invalid facts (DRY - done once instead of in each case)
+$valid_facts = array_filter($facts, function($fact) {
+	return !empty($fact['fact_label']) && !empty($fact['fact_value']);
+});
+
+if (empty($valid_facts)) {
+	echo '<div ' . $wrapper_attributes . '>';
+	echo '<p class="fishing-fish-facts__placeholder">' . esc_html__('No valid facts to display.', 'fishing-cpt-plugin') . '</p>';
+	echo '</div>';
+	return;
+}
+
 echo '<div ' . $wrapper_attributes . '>';
 
 // Display based on chosen style
@@ -47,10 +59,7 @@ switch ($display_style) {
 		echo '<th scope="col">' . esc_html__('Details', 'fishing-cpt-plugin') . '</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
-		foreach ($facts as $fact) {
-			if (empty($fact['fact_label']) || empty($fact['fact_value'])) {
-				continue;
-			}
+		foreach ($valid_facts as $fact) {
 			echo '<tr>';
 			echo '<td class="fishing-fish-facts__label"><strong>' . esc_html($fact['fact_label']) . '</strong></td>';
 			echo '<td class="fishing-fish-facts__value">' . wp_kses_post(wpautop($fact['fact_value'])) . '</td>';
@@ -61,10 +70,7 @@ switch ($display_style) {
 
 	case 'cards':
 		echo '<div class="fishing-fish-facts__cards">';
-		foreach ($facts as $fact) {
-			if (empty($fact['fact_label']) || empty($fact['fact_value'])) {
-				continue;
-			}
+		foreach ($valid_facts as $fact) {
 			echo '<div class="fishing-fish-facts__card">';
 			echo '<h4 class="fishing-fish-facts__label">' . esc_html($fact['fact_label']) . '</h4>';
 			echo '<div class="fishing-fish-facts__value">' . wp_kses_post(wpautop($fact['fact_value'])) . '</div>';
@@ -76,10 +82,7 @@ switch ($display_style) {
 	case 'list':
 	default:
 		echo '<dl class="fishing-fish-facts__list" aria-label="' . esc_attr__('Fish quick facts', 'fishing-cpt-plugin') . '">';
-		foreach ($facts as $fact) {
-			if (empty($fact['fact_label']) || empty($fact['fact_value'])) {
-				continue;
-			}
+		foreach ($valid_facts as $fact) {
 			echo '<dt class="fishing-fish-facts__label">' . esc_html($fact['fact_label']) . '</dt>';
 			echo '<dd class="fishing-fish-facts__value">' . wp_kses_post(wpautop($fact['fact_value'])) . '</dd>';
 		}
