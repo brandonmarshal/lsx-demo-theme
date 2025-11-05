@@ -26,6 +26,9 @@ If the dependency is not met, the plugin will:
 ## Features
 
 ### Custom Post Types
+
+**Architecture Note:** This plugin enhances existing Custom Post Types (Fish, Gear, Areas) that are registered by the theme. The plugin adds meta fields, relationships, blocks, and functionality to these CPTs rather than registering them directly. This architectural decision ensures proper separation of concerns and allows the theme to maintain control over core CPT configuration.
+
 - **Fish** - Fish species with detailed metadata and relationship fields
 - **Gear** - Fishing equipment and gear with compatibility relationships
 - **Areas** - Fishing locations with Google Maps integration and related content
