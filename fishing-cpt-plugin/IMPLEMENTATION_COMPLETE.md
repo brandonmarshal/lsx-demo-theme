@@ -403,7 +403,7 @@ While the current implementation is complete and compliant, future enhancements 
 - [@wordpress/scripts Package](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 - [Block Registration API](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/)
 - [block.json Metadata](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/)
-- [Multi-Block Plugin Example](https://github.com/WordPress/gutenberg-examples)
+- [Multi-Block Plugin Example](https://github.com/WordPress/gutenberg-examples/tree/trunk/multi-block-plugin)
 
 ---
 
