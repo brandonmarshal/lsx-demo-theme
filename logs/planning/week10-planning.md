@@ -50,7 +50,7 @@
     -   [ ] Address plugin inconsistencies ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211795987689038))
     -   [ ] Complete milestone setup for plugin ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211795987689038))
 -   [ ] **Learning**
-    -   [ ] WordPress User Pathway - Intermediate and Advanced courses (may continue Thursday if not finished)
+    -   [ ] Progress with WordPress Block Editor Getting Started tutorial - https://developer.wordpress.org/block-editor/getting-started/glossary/
 
 ### Thursday (2025-11-06)
 
