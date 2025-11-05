@@ -1,4 +1,3 @@
-import { useEntityProp } from '@wordpress/core-data';
 import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, SelectControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
@@ -10,12 +9,6 @@ export default function Edit({ attributes, setAttributes, context }) {
     const postId = context.postId;
     const postType = context.postType;
     const blockProps = useBlockProps();
-
-    // Only fetch meta if we're in a gear post
-    const [meta] = useEntityProp('postType', postType, 'meta', postId);
-
-    // Get gear_specs from meta (it's stored as a serialized array by ACF)
-    const gearSpecs = meta?.gear_specs || [];
 
     return (
         <>

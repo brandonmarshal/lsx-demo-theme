@@ -17,6 +17,11 @@ function init()
 
 function register_blocks()
 {
+	// Validate that plugin directory constant is defined
+	if (! defined('FISHING_CPT_PLUGIN_DIR')) {
+		return;
+	}
+	
 	// Register blocks using block.json files from the build directory
 	$blocks_dir = FISHING_CPT_PLUGIN_DIR . 'build/blocks/';
 	
