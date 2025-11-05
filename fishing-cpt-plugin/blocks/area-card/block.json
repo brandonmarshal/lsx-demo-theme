@@ -2,9 +2,43 @@
     "apiVersion": 3,
     "name": "fishing/area-card",
     "title": "Area Card",
-    "category": "widgets",
+    "category": "fishing",
     "icon": "location",
-    "description": "Card showing area meta data.",
+    "description": "Display fishing area information card with meta data",
+    "keywords": ["fishing", "area", "location", "card", "meta"],
+    "textdomain": "fishing-cpt-plugin",
     "usesContext": ["postId", "postType"],
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "fontFamily": false,
+            "fontWeight": false,
+            "textDecoration": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": false
+        },
+        "border": {
+            "radius": true,
+            "width": true,
+            "style": true,
+            "color": true
+        },
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
     "render": "file:./render.php"
 }

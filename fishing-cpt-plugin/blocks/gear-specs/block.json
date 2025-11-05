@@ -1,19 +1,26 @@
 {
     "apiVersion": 3,
-    "name": "fishing/gear-card",
-    "title": "Gear Card",
+    "name": "fishing/gear-specs",
+    "title": "Gear Specifications",
     "category": "fishing",
-    "icon": "hammer",
-    "description": "Display gear information card with meta data",
-    "keywords": ["fishing", "gear", "card", "meta"],
+    "icon": "list-view",
+    "description": "Display gear specifications from repeatable fields",
+    "keywords": ["fishing", "gear", "specifications", "repeatable", "data"],
     "textdomain": "fishing-cpt-plugin",
     "usesContext": ["postId", "postType"],
+    "attributes": {
+        "displayStyle": {
+            "type": "string",
+            "default": "table",
+            "enum": ["list", "table", "cards"]
+        }
+    },
     "supports": {
         "color": {
             "background": true,
             "text": true,
             "gradients": false,
-            "link": false
+            "link": true
         },
         "typography": {
             "fontSize": true,
@@ -25,7 +32,7 @@
         "spacing": {
             "margin": true,
             "padding": true,
-            "blockGap": false
+            "blockGap": true
         },
         "border": {
             "radius": true,

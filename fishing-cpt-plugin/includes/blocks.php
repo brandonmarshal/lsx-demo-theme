@@ -17,60 +17,26 @@ function init()
 
 function register_blocks()
 {
-	// Debug: Log that we're registering blocks
-	error_log('Fishing Plugin: Registering blocks');
-
-	register_block_type('fishing/fish-card', [
-		'title' => 'Fish Card',
-		'description' => 'Display fish information card',
-		'category' => 'widgets',
-		'icon' => 'palmtree',
-		'render_callback' => __NAMESPACE__ . '\render_fish_card',
-	]);
-
-	register_block_type('fishing/gear-card', [
-		'title' => 'Gear Card',
-		'description' => 'Display gear information card',
-		'category' => 'widgets',
-		'icon' => 'hammer',
-		'render_callback' => __NAMESPACE__ . '\render_gear_card',
-	]);
-
-	register_block_type('fishing/area-card', [
-		'title' => 'Area Card',
-		'description' => 'Display area information card',
-		'category' => 'widgets',
-		'icon' => 'location',
-		'render_callback' => __NAMESPACE__ . '\render_area_card',
-	]);
-
-	register_block_type('fishing/repeatable-facts', [
-		'title' => 'Repeatable Facts',
-		'description' => 'Display repeatable fish facts',
-		'category' => 'widgets',
-		'icon' => 'list-view',
-		'render_callback' => __NAMESPACE__ . '\render_repeatable_facts',
-	]);
-
-	error_log('Fishing Plugin: Blocks registered successfully');
-}
-
-function render_fish_card($attributes, $content, $block)
-{
-	return '<div class="fishing-fish-card"><p>🐟 Fish Card - Plugin Working!</p></div>';
-}
-
-function render_gear_card($attributes, $content, $block)
-{
-	return '<div class="fishing-gear-card"><p>🎣 Gear Card - Plugin Working!</p></div>';
-}
-
-function render_area_card($attributes, $content, $block)
-{
-	return '<div class="fishing-area-card"><p>📍 Area Card - Plugin Working!</p></div>';
-}
-
-function render_repeatable_facts($attributes, $content, $block)
-{
-	return '<div class="fishing-repeatable-facts"><p>📋 Repeatable Facts - Plugin Working!</p></div>';
+	// Register blocks using block.json files from the build directory
+	$blocks_dir = FISHING_CPT_PLUGIN_DIR . 'build/blocks/';
+	
+	// Array of block names to register
+	$blocks = [
+		'fish-card',
+		'gear-card',
+		'area-card',
+		'repeatable-facts',
+		'fish-facts',
+		'gear-specs',
+	];
+	
+	foreach ($blocks as $block_name) {
+		$block_path = $blocks_dir . $block_name;
+		
+		// Check if block directory exists in build folder
+		if (file_exists($block_path)) {
+			// Register block type from block.json with assets
+			register_block_type($block_path);
+		}
+	}
 }

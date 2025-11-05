@@ -1,10 +1,12 @@
 {
     "apiVersion": 3,
     "name": "fishing/repeatable-facts",
-    "title": "Repeatable Facts",
-    "category": "widgets",
+    "title": "Repeatable Facts (Legacy)",
+    "category": "fishing",
     "icon": "list-view",
-    "description": "Display a list of repeatable fish facts bound to meta.",
+    "description": "Display a list of repeatable fish facts bound to meta (legacy block, use Fish Quick Facts instead)",
+    "keywords": ["fishing", "fish", "facts", "repeatable", "legacy"],
+    "textdomain": "fishing-cpt-plugin",
     "usesContext": ["postId", "postType"],
     "attributes": {
         "facts": {
@@ -13,5 +15,37 @@
             "items": { "type": "string" }
         }
     },
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "fontFamily": false,
+            "fontWeight": false,
+            "textDecoration": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": false
+        },
+        "border": {
+            "radius": true,
+            "width": true,
+            "style": true,
+            "color": true
+        },
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
     "render": "file:./render.php"
 }
