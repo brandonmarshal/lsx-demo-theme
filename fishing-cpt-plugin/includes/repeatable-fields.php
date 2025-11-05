@@ -193,7 +193,7 @@ add_action( 'acf/init', __NAMESPACE__ . '\register_repeatable_fields' );
  * @return void
  */
 function display_gear_specifications( $post_id = null ): void {
-	$post_id = $post_id ? $post_id : get_the_ID();
+	$post_id = $post_id ?? get_the_ID();
 	
 	// Check if ACF function exists.
 	if ( ! function_exists( 'get_field' ) ) {
