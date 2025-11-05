@@ -1,0 +1,87 @@
+# Fishing CPT Plugin - Distribution Ignore
+# Files/directories to exclude from WordPress.org plugin distribution
+
+# IMPORTANT: The build/blocks/ directory contains compiled assets and MUST be included
+# Only the source blocks/ directory should have JS/CSS excluded
+# Use leading slash (/) to match from plugin root only
+
+# Development files
+/node_modules/
+/package-lock.json
+/.git/
+/.github/
+/.gitignore
+/.gitattributes
+
+# Build configuration
+/webpack.config.js
+/package.json
+/.babelrc
+/.eslintrc*
+/.prettierrc*
+/tsconfig.json
+
+# Exclude ONLY the source blocks directory (not build/blocks/)
+# Use leading slash to prevent matching build/blocks/
+/blocks/area-card/index.js
+/blocks/area-card/style.css
+/blocks/area-card/editor.css
+/blocks/fish-card/index.js
+/blocks/fish-card/style.css
+/blocks/fish-card/editor.css
+/blocks/fish-facts/index.js
+/blocks/fish-facts/style.css
+/blocks/fish-facts/editor.css
+/blocks/gear-card/index.js
+/blocks/gear-card/style.css
+/blocks/gear-card/editor.css
+/blocks/gear-specs/index.js
+/blocks/gear-specs/style.css
+/blocks/gear-specs/editor.css
+/blocks/repeatable-facts/index.js
+/blocks/repeatable-facts/style.css
+/blocks/repeatable-facts/editor.css
+
+# Testing
+/tests/
+/phpunit.xml
+/phpunit.xml.dist
+/.phpunit.result.cache
+/playwright.config.js
+/playwright.config.ts
+
+# Documentation (except core docs)
+/DEPENDENCY_TEST_PLAN.md
+/GOOGLE_MAPS_TESTING.md
+/IMPLEMENTATION_SUMMARY.md
+/TASK_CHECKLIST.md
+/TESTING_MATRIX.md
+/IMPLEMENTATION-SUMMARY.md
+
+# Editor configs
+/.editorconfig
+/.vscode/
+/.idea/
+/*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+._*
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp files
+*.tmp
+*.temp
+.cache/
+
+# Scripts (development only)
+/verify-multi-block.sh
+/package-test.sh
