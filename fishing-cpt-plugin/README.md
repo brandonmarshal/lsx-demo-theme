@@ -76,6 +76,18 @@ Located in `patterns/` providing grids, heroes, lists and highlight sections for
 - **Admin > Fish > Settings** – Enable CPTs & posts per page
 - **Admin > Fish > Maps Settings** – Configure Google Maps API and display options
 
+## Multi-Block Plugin Architecture
+
+This plugin is structured as a **multi-block plugin** following WordPress.org best practices. It efficiently manages 6 Gutenberg blocks with centralized registration and optimized builds.
+
+**Architecture Features:**
+- Centralized block registration system
+- Single build process for all blocks
+- Shared dependencies for optimized loading
+- WordPress.org compliant structure
+
+For detailed information, see [MULTI_BLOCK_ARCHITECTURE.md](./MULTI_BLOCK_ARCHITECTURE.md)
+
 ## Block Asset Pipeline
 
 Run:
@@ -85,7 +97,23 @@ npm install
 npm run build
 ```
 
-Generates production assets for block scripts/styles. SCSS can be introduced later; current setup uses direct CSS for simplicity. Accessibility and security were considered but further manual testing (axe, screen reader) is recommended.
+Generates production assets for block scripts/styles. The build process:
+- Compiles all 6 blocks with a single command
+- Uses `@wordpress/scripts` for standardized builds
+- Automatically handles dependencies via webpack
+- Copies block.json and render.php to build directory
+
+For development with hot reload:
+```bash
+npm run dev
+```
+
+To verify the multi-block setup:
+```bash
+./verify-multi-block.sh
+```
+
+Accessibility and security were considered but further manual testing (axe, screen reader) is recommended.
 
 ## Internationalization
 
@@ -93,9 +121,12 @@ Text domain `fishing-cpt-plugin`; POT file in `languages/`.
 
 ## Documentation
 
+- [Multi-Block Architecture](./MULTI_BLOCK_ARCHITECTURE.md) - Complete guide to the plugin's multi-block structure
+- [Blocks Documentation](./BLOCKS_DOCUMENTATION.md) - Detailed documentation for all available blocks
 - [Relationships Guide](./RELATIONSHIPS.md) - Complete guide to using and understanding post relationships
 - [Google Maps Integration Guide](./GOOGLE_MAPS_INTEGRATION.md) - Comprehensive setup and usage documentation
 - [Dependency Implementation](./DEPENDENCY_IMPLEMENTATION.md) - Technical implementation details
+- [Packaging Guide](./PACKAGING_GUIDE.md) - Instructions for creating distribution packages
 - [Testing Matrix](./TESTING_MATRIX.md) - Test coverage and validation
 
 ## License
