@@ -113,6 +113,8 @@ function fishing_cpt_includes(): void
 		// 'includes/cpt-gear.php',       // Disabled: Using theme CPTs instead
 		'includes/meta-fields.php',      // Add meta fields to existing CPTs
 		'includes/relationship-fields.php',   // ACF/SCF relationship field groups
+		'includes/repeatable-fields.php',     // ACF/SCF repeatable field groups
+		'includes/repeatable-fields-enqueue.php',  // Enqueue repeatable field styles
 		'includes/relationship-helpers.php',  // Bidirectional relationship sync
 		'includes/rest-api.php',
 		'includes/settings-page.php',
