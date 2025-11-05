@@ -1,19 +1,26 @@
 {
     "apiVersion": 3,
-    "name": "fishing/gear-card",
-    "title": "Gear Card",
+    "name": "fishing/fish-facts",
+    "title": "Fish Quick Facts",
     "category": "fishing",
-    "icon": "hammer",
-    "description": "Display gear information card with meta data",
-    "keywords": ["fishing", "gear", "card", "meta"],
+    "icon": "list-view",
+    "description": "Display fish quick facts from repeatable fields",
+    "keywords": ["fishing", "fish", "facts", "repeatable", "data"],
     "textdomain": "fishing-cpt-plugin",
     "usesContext": ["postId", "postType"],
+    "attributes": {
+        "displayStyle": {
+            "type": "string",
+            "default": "list",
+            "enum": ["list", "table", "cards"]
+        }
+    },
     "supports": {
         "color": {
             "background": true,
             "text": true,
             "gradients": false,
-            "link": false
+            "link": true
         },
         "typography": {
             "fontSize": true,
@@ -25,7 +32,7 @@
         "spacing": {
             "margin": true,
             "padding": true,
-            "blockGap": false
+            "blockGap": true
         },
         "border": {
             "radius": true,
