@@ -62,7 +62,6 @@ echo "2. Checking Block Registration"
 echo "------------------------------"
 check_file "includes/blocks.php"
 if [ -f "includes/blocks.php" ]; then
-    BLOCK_COUNT=$(grep -c "'" includes/blocks.php | grep -A 10 '$blocks = \[' | wc -l)
     echo -e "${GREEN}✓${NC} Block registration file contains block definitions"
 fi
 echo ""
