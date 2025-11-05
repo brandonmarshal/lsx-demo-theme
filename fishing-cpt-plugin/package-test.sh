@@ -171,26 +171,36 @@ unzip -l "$ZIP_PATH" > "$TEMP_LIST"
 
 # Check for required files
 echo "Checking required files..."
+
+# Core plugin files
 REQUIRED_FILES=(
     "fishing-cpt-plugin.php"
     "uninstall.php"
     "README.md"
+    "CHANGELOG.md"
     "includes/blocks.php"
-    "build/blocks/fish-card/index.js"
-    "build/blocks/fish-card/block.json"
-    "build/blocks/fish-card/index.asset.php"
-    "build/blocks/fish-card/render.php"
-    "build/blocks/gear-card/index.js"
-    "build/blocks/gear-card/block.json"
-    "build/blocks/area-card/index.js"
-    "build/blocks/area-card/block.json"
-    "build/blocks/fish-facts/index.js"
-    "build/blocks/fish-facts/block.json"
-    "build/blocks/gear-specs/index.js"
-    "build/blocks/gear-specs/block.json"
-    "build/blocks/repeatable-facts/index.js"
-    "build/blocks/repeatable-facts/block.json"
 )
+
+# Add all block files dynamically
+BLOCKS=(
+    "fish-card"
+    "gear-card"
+    "area-card"
+    "fish-facts"
+    "gear-specs"
+    "repeatable-facts"
+)
+
+for block in "${BLOCKS[@]}"; do
+    REQUIRED_FILES+=(
+        "build/blocks/$block/index.js"
+        "build/blocks/$block/block.json"
+        "build/blocks/$block/index.asset.php"
+        "build/blocks/$block/render.php"
+        "build/blocks/$block/style-index.css"
+        "build/blocks/$block/index.css"
+    )
+done
 
 VERIFY_OK=true
 for file in "${REQUIRED_FILES[@]}"; do

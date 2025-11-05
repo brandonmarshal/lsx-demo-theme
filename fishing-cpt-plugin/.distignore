@@ -31,7 +31,7 @@
 /blocks/*/*.tsx
 /blocks/*/*.scss
 
-# Testing
+# Testing configuration (excluded for end-users, retained in repo for CI/development)
 /tests/
 /phpunit.xml
 /phpunit.xml.dist
@@ -40,8 +40,7 @@
 /playwright.config.js
 /playwright.config.ts
 
-# Documentation (except core docs)
-/CHANGELOG.md
+# Documentation (development/implementation docs excluded; README.md and CHANGELOG.md are included in distribution)
 /DEPENDENCY_TEST_PLAN.md
 /GOOGLE_MAPS_TESTING.md
 /IMPLEMENTATION_SUMMARY.md

@@ -178,10 +178,19 @@ function register_blocks() {
 
 **Key Features:**
 - Excludes node_modules and development dependencies
-- Excludes source block files (keeps compiled versions)
-- Excludes build configuration files
-- Excludes testing and documentation files
-- Uses leading slashes for precise pattern matching
+- Excludes source block files (keeps compiled versions in build/)
+- Excludes build configuration files (webpack.config.js, package.json)
+- Excludes testing configuration (phpcs.xml.dist, phpunit.xml.dist) - retained in repository for CI/development but not needed by end-users
+- Excludes development documentation (IMPLEMENTATION_COMPLETE.md, TASK_CHECKLIST.md, etc.)
+- **Includes** README.md and CHANGELOG.md for end-user documentation
+- Uses leading slashes and pattern-based rules for precise, maintainable matching
+
+**Rationale for Test Config Exclusions:**
+Testing configurations (`phpcs.xml.dist`, `phpunit.xml.dist`) are development tools that:
+- Require additional Composer dependencies not bundled with the plugin
+- Are used in CI pipelines before building release assets
+- Provide no value to end-users installing the plugin
+- Are maintained in the repository for contributors and automated testing
 
 **Result:** Clean 108K package vs. 97MB with dev files
 
