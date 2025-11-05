@@ -222,11 +222,11 @@ function display_gear_specifications( $post_id = null ): void {
 			continue;
 		}
 		
-		$unit = ! empty( $spec['spec_unit'] ) ? ' ' . $spec['spec_unit'] : '';
+		$unit = ! empty( $spec['spec_unit'] ) ? ' ' . esc_html( $spec['spec_unit'] ) : '';
 		
 		echo '<tr>';
 		echo '<td>' . esc_html( $spec['spec_name'] ) . '</td>';
-		echo '<td>' . esc_html( $spec['spec_value'] . $unit ) . '</td>';
+		echo '<td>' . esc_html( $spec['spec_value'] ) . $unit . '</td>';
 		echo '</tr>';
 	}
 	

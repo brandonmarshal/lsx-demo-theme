@@ -36,9 +36,7 @@ get_header();
 				$facts      = json_decode( $facts_json, true );
 				
 				// Only show legacy facts if new structured facts are not available.
-				$has_structured_facts = function_exists( 'get_field' ) && get_field( 'fish_quick_facts', get_the_ID() );
-				
-				if ( ! $has_structured_facts && ! empty( $facts ) && is_array( $facts ) ) :
+				if ( ! ( function_exists( 'get_field' ) && get_field( 'fish_quick_facts', get_the_ID() ) ) && ! empty( $facts ) && is_array( $facts ) ) :
 					?>
 					<div class="fish-facts-legacy">
 						<h2><?php esc_html_e( 'Facts', 'fishing-cpt-plugin' ); ?></h2>
