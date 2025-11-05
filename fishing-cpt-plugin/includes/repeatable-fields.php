@@ -222,11 +222,14 @@ function display_gear_specifications( $post_id = null ): void {
 			continue;
 		}
 		
-		$unit = ! empty( $spec['spec_unit'] ) ? ' ' . esc_html( $spec['spec_unit'] ) : '';
+		$value_with_unit = $spec['spec_value'];
+		if ( ! empty( $spec['spec_unit'] ) ) {
+			$value_with_unit .= ' ' . $spec['spec_unit'];
+		}
 		
 		echo '<tr>';
 		echo '<td>' . esc_html( $spec['spec_name'] ) . '</td>';
-		echo '<td>' . esc_html( $spec['spec_value'] ) . $unit . '</td>';
+		echo '<td>' . esc_html( $value_with_unit ) . '</td>';
 		echo '</tr>';
 	}
 	
@@ -262,17 +265,15 @@ function display_fish_quick_facts( $post_id = null ): void {
 	
 	echo '<div class="fish-quick-facts">';
 	echo '<h3>' . esc_html__( 'Quick Facts', 'fishing-cpt-plugin' ) . '</h3>';
-	echo '<dl class="facts-list" role="list" aria-label="' . esc_attr__( 'Fish quick facts', 'fishing-cpt-plugin' ) . '">';
+	echo '<dl class="facts-list" aria-label="' . esc_attr__( 'Fish quick facts', 'fishing-cpt-plugin' ) . '">';
 	
 	foreach ( $facts as $fact ) {
 		if ( empty( $fact['fact_label'] ) || empty( $fact['fact_value'] ) ) {
 			continue;
 		}
 		
-		echo '<div class="fact-item" role="listitem">';
-		echo '<dt>' . esc_html( $fact['fact_label'] ) . '</dt>';
-		echo '<dd>' . wp_kses_post( wpautop( $fact['fact_value'] ) ) . '</dd>';
-		echo '</div>';
+		echo '<dt class="fact-label">' . esc_html( $fact['fact_label'] ) . '</dt>';
+		echo '<dd class="fact-value">' . wp_kses_post( wpautop( $fact['fact_value'] ) ) . '</dd>';
 	}
 	
 	echo '</dl>';

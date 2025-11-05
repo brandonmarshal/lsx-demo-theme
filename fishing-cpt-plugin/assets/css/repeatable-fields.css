@@ -97,31 +97,27 @@
 	list-style: none;
 }
 
-.fact-item {
-	display: grid;
-	grid-template-columns: minmax(150px, 1fr) 2fr;
-	gap: 1rem;
-	padding: 0.75rem 0;
-	border-bottom: 1px solid #e0e0e0;
-}
-
-.fact-item:last-child {
-	border-bottom: none;
-}
-
-.fact-item dt {
+.facts-list dt {
 	font-weight: 600;
 	color: #0073aa;
 	margin: 0;
+	padding: 0.75rem 0 0.25rem 0;
+	border-top: 1px solid #e0e0e0;
 }
 
-.fact-item dd {
+.facts-list dt:first-of-type {
+	padding-top: 0;
+	border-top: none;
+}
+
+.facts-list dd {
 	margin: 0;
+	padding: 0 0 0.75rem 0;
 	color: #333;
 	line-height: 1.6;
 }
 
-.fact-item dd p {
+.facts-list dd p {
 	margin: 0;
 }
 
@@ -208,7 +204,7 @@
 	background-color: #f9f9f9;
 	border-radius: 4px;
 	border: 1px solid #e0e0e0;
-	transition: all 0.2s ease;
+	transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .related-fish li:hover,
@@ -279,15 +275,6 @@
 		width: auto;
 	}
 
-	.fact-item {
-		grid-template-columns: 1fr;
-		gap: 0.5rem;
-	}
-
-	.fact-item dt {
-		padding-bottom: 0.25rem;
-	}
-
 	.related-fish ul,
 	.related-gear ul,
 	.related-areas ul {
@@ -347,7 +334,7 @@
 @media (prefers-contrast: high) {
 
 	.specs-table,
-	.fact-item,
+	.facts-list dt,
 	.gear-meta li,
 	.fish-meta li {
 		border-color: #000;

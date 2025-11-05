@@ -21,7 +21,7 @@ get_header();
 			<header class="entry-header">
 				<h1 id="post-title-<?php the_ID(); ?>"><?php echo esc_html( get_the_title() ); ?></h1>
 			</header>
-			
+
 			<div class="entry-content">
 				<?php the_content(); ?>
 				
@@ -36,7 +36,10 @@ get_header();
 				$facts      = json_decode( $facts_json, true );
 				
 				// Only show legacy facts if new structured facts are not available.
-				if ( ! ( function_exists( 'get_field' ) && get_field( 'fish_quick_facts', get_the_ID() ) ) && ! empty( $facts ) && is_array( $facts ) ) :
+				$has_new_facts    = function_exists( 'get_field' ) && get_field( 'fish_quick_facts', get_the_ID() );
+				$has_legacy_facts = ! empty( $facts ) && is_array( $facts );
+
+				if ( ! $has_new_facts && $has_legacy_facts ) :
 					?>
 					<div class="fish-facts-legacy">
 						<h2><?php esc_html_e( 'Facts', 'fishing-cpt-plugin' ); ?></h2>

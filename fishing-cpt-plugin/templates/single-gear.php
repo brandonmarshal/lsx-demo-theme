@@ -21,7 +21,7 @@ get_header();
 			<header class="entry-header">
 				<h1 id="post-title-<?php the_ID(); ?>"><?php echo esc_html( get_the_title() ); ?></h1>
 			</header>
-			
+
 			<div class="entry-content">
 				<?php the_content(); ?>
 				
