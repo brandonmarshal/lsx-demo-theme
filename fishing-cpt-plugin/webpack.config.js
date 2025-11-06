@@ -10,6 +10,7 @@ module.exports = {
         'blocks/repeatable-facts/index': './blocks/repeatable-facts/index.js',
         'blocks/fish-facts/index': './blocks/fish-facts/index.js',
         'blocks/gear-specs/index': './blocks/gear-specs/index.js',
+        'blocks/fishing-gallery/index': './blocks/fishing-gallery/index.js',
     },
     plugins: [
         ...defaultConfig.plugins,

@@ -33,6 +33,7 @@ function register_blocks()
 		'repeatable-facts',
 		'fish-facts',
 		'gear-specs',
+		'fishing-gallery',
 	];
 	
 	foreach ($blocks as $block_name) {
