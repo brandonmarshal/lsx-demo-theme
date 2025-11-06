@@ -57,7 +57,7 @@ $wrapper_attributes = get_block_wrapper_attributes(
 ?>
 
 <div <?php echo $wrapper_attributes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
-	<div class="fishing-gallery__grid" style="grid-template-columns: repeat(<?php echo absint( $columns ); ?>, 1fr);">
+	<div class="fishing-gallery__grid">
 		<?php foreach ( $gallery as $index => $image ) : ?>
 			<?php
 			if ( ! $image || ! isset( $image['ID'] ) ) {
