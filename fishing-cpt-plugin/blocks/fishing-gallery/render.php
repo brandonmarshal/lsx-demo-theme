@@ -38,8 +38,13 @@ $lightbox   = $attributes['lightbox'] ?? true;
 $captions   = $attributes['captions'] ?? true;
 $image_size = $attributes['imageSize'] ?? 'large';
 
-// Generate unique ID for this gallery instance.
-$gallery_id = 'fishing-gallery-' . $post_id . '-' . uniqid();
+// Generate deterministic unique ID for this gallery instance.
+if ( isset( $block->parsed_block['attrs']['clientId'] ) ) {
+    $gallery_id = 'fishing-gallery-' . $post_id . '-' . sanitize_key( $block->parsed_block['attrs']['clientId'] );
+} else {
+    // Fallback: use a hash of post ID and block content.
+    $gallery_id = 'fishing-gallery-' . $post_id . '-' . substr( md5( $post_id . serialize( $attributes ) . $content ), 0, 8 );
+}
 
 // Build wrapper attributes.
 $wrapper_attributes = get_block_wrapper_attributes(
