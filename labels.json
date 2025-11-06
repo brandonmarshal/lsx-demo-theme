@@ -1,0 +1,418 @@
+[
+    {
+        "name": "ai-ops:agents",
+        "color": "0052CC",
+        "description": "Agent definitions"
+    },
+    {
+        "name": "ai-ops:chat-modes",
+        "color": "0052CC",
+        "description": "Prompt sets / modes"
+    },
+    {
+        "name": "ai-ops:datasets",
+        "color": "BFD4F2",
+        "description": "Training/eval datasets"
+    },
+    {
+        "name": "ai-ops:evaluations",
+        "color": "BFD4F2",
+        "description": "Evaluation results"
+    },
+    {
+        "name": "ai-ops:instructions",
+        "color": "0052CC",
+        "description": "AI instruction docs"
+    },
+    {
+        "name": "ai-ops:prompts",
+        "color": "0052CC",
+        "description": "Reusable prompts"
+    },
+    {
+        "name": "ai-ops:tools",
+        "color": "BFD4F2",
+        "description": "Tool/plugin manifests"
+    },
+    {
+        "name": "area:analytics",
+        "color": "C2E0C6",
+        "description": "Analytics & tracking"
+    },
+    {
+        "name": "area:ci",
+        "color": "BFD4F2",
+        "description": "Build and CI pipelines"
+    },
+    {
+        "name": "area:content",
+        "color": "C5DEF5",
+        "description": "Anything that needs copy-editing assistance"
+    },
+    {
+        "name": "area:dependencies",
+        "color": "F9D0C4",
+        "description": "Composer/npm dependency work"
+    },
+    {
+        "name": "area:deployment",
+        "color": "006B75",
+        "description": "Deploy/release operations"
+    },
+    {
+        "name": "area:design-system",
+        "color": "C5DEF5",
+        "description": "Tokens/components guidelines"
+    },
+    {
+        "name": "area:forms",
+        "color": "C5DEF5",
+        "description": "Forms (Gravity Forms etc.)"
+    },
+    {
+        "name": "area:i18n",
+        "color": "C5DEF5",
+        "description": "Internationalisation"
+    },
+    {
+        "name": "area:infrastructure",
+        "color": "006B75",
+        "description": "Infrastructure"
+    },
+    {
+        "name": "area:integration",
+        "color": "D93F0B",
+        "description": "External integrations"
+    },
+    {
+        "name": "area:navigation",
+        "color": "C5DEF5",
+        "description": "Menus & nav UX"
+    },
+    {
+        "name": "area:plugins",
+        "color": "C5DEF5",
+        "description": "Plugin configuration/internals"
+    },
+    {
+        "name": "area:search",
+        "color": "C5DEF5",
+        "description": "Search/filters (incl. FacetWP)"
+    },
+    {
+        "name": "area:seo",
+        "color": "C2E0C6",
+        "description": "Technical SEO (meta/schema/sitemaps)"
+    },
+    {
+        "name": "area:theme",
+        "color": "C5DEF5",
+        "description": "Theme & styles (templates, template parts, FSE)"
+    },
+    {
+        "name": "area:woocommerce",
+        "color": "D4C5F9",
+        "description": "WooCommerce templates, blocks, hooks"
+    },
+    {
+        "name": "comp:block-bindings",
+        "color": "C5DEF5",
+        "description": "Block bindings"
+    },
+    {
+        "name": "comp:block-editor",
+        "color": "C5DEF5",
+        "description": "Block/site editor work"
+    },
+    {
+        "name": "comp:block-inserter",
+        "color": "C5DEF5",
+        "description": "Inserter UI/behaviour"
+    },
+    {
+        "name": "comp:block-json",
+        "color": "C5DEF5",
+        "description": "Block metadata (block.json)"
+    },
+    {
+        "name": "comp:block-locking",
+        "color": "C5DEF5",
+        "description": "Block locking"
+    },
+    {
+        "name": "comp:block-patterns",
+        "color": "C5DEF5",
+        "description": "Patterns library/registration"
+    },
+    {
+        "name": "comp:block-styles",
+        "color": "C5DEF5",
+        "description": "Styles registered via JSON"
+    },
+    {
+        "name": "comp:block-supports",
+        "color": "C5DEF5",
+        "description": "Block supports"
+    },
+    {
+        "name": "comp:block-templates",
+        "color": "C5DEF5",
+        "description": "Template files/editor"
+    },
+    {
+        "name": "comp:block-variations",
+        "color": "C5DEF5",
+        "description": "Block variations"
+    },
+    {
+        "name": "comp:color-palette",
+        "color": "C5DEF5",
+        "description": "Palette tokens/usage"
+    },
+    {
+        "name": "comp:help-tabs",
+        "color": "C5DEF5",
+        "description": "WP help tabs"
+    },
+    {
+        "name": "comp:post-settings",
+        "color": "C5DEF5",
+        "description": "Post editor settings panel"
+    },
+    {
+        "name": "comp:section-styles",
+        "color": "C5DEF5",
+        "description": "Section/background styles"
+    },
+    {
+        "name": "comp:settings",
+        "color": "C5DEF5",
+        "description": "Global/settings UX"
+    },
+    {
+        "name": "comp:spacing",
+        "color": "C5DEF5",
+        "description": "Spacing tokens/layout gaps"
+    },
+    {
+        "name": "comp:style-variations",
+        "color": "C5DEF5",
+        "description": "JSON style variations"
+    },
+    {
+        "name": "comp:template-parts",
+        "color": "C5DEF5",
+        "description": "Header/footer/loop/nav parts"
+    },
+    {
+        "name": "comp:theme-json",
+        "color": "C5DEF5",
+        "description": "Tokens, presets, settings"
+    },
+    {
+        "name": "comp:typography",
+        "color": "C5DEF5",
+        "description": "Type scale/fluids"
+    },
+    {
+        "name": "comp:wp-admin",
+        "color": "C5DEF5",
+        "description": "WP Admin screens"
+    },
+    {
+        "name": "compat:gutenberg",
+        "color": "D93F0B",
+        "description": "Package compatibility"
+    },
+    {
+        "name": "compat:multisite",
+        "color": "F9D0C4",
+        "description": "Multisite/network considerations."
+    },
+    {
+        "name": "compat:php",
+        "color": "D93F0B",
+        "description": "Min/tested-up-to PHP"
+    },
+    {
+        "name": "compat:woocommerce",
+        "color": "D93F0B",
+        "description": "WooCommerce versions"
+    },
+    {
+        "name": "compat:wordpress",
+        "color": "D93F0B",
+        "description": "Core/Gutenberg versions"
+    },
+    {
+        "name": "contrib:good-first-issue",
+        "color": "D4C5F9",
+        "description": "Good for first-time contributors."
+    },
+    {
+        "name": "contrib:help-wanted",
+        "color": "C2E0C6",
+        "description": "Maintainer requests help."
+    },
+    {
+        "name": "cpt:pages",
+        "color": "C5DEF5",
+        "description": "WordPress Pages"
+    },
+    {
+        "name": "cpt:posts",
+        "color": "C5DEF5",
+        "description": "WordPress Posts"
+    },
+    { "name": "env:live", "color": "0E8A16", "description": "Live/production" },
+    {
+        "name": "env:prototype",
+        "color": "E1E4E8",
+        "description": "Prototype/sandbox"
+    },
+    { "name": "env:staging", "color": "BFD4F2", "description": "Staging/UAT" },
+    { "name": "lang:css", "color": "C5DEF5", "description": "Stylesheets" },
+    { "name": "lang:html", "color": "C5DEF5", "description": "Markup" },
+    {
+        "name": "lang:js",
+        "color": "C5DEF5",
+        "description": "JavaScript/TypeScript"
+    },
+    {
+        "name": "lang:json",
+        "color": "C5DEF5",
+        "description": "JSON config/content"
+    },
+    {
+        "name": "lang:md",
+        "color": "C5DEF5",
+        "description": "Markdown content/docs"
+    },
+    { "name": "lang:php", "color": "C5DEF5", "description": "PHP code" },
+    { "name": "lang:yaml", "color": "C5DEF5", "description": "YAML config" },
+    {
+        "name": "meta:has-pr",
+        "color": "E1E4E8",
+        "description": "Issue has a linked PR"
+    },
+    {
+        "name": "meta:needs-changelog",
+        "color": "E1E4E8",
+        "description": "Requires a changelog entry before merge"
+    },
+    {
+        "name": "meta:no-issue-activity",
+        "color": "E1E4E8",
+        "description": "No recent issue activity"
+    },
+    {
+        "name": "meta:no-pr-activity",
+        "color": "E1E4E8",
+        "description": "No recent PR activity"
+    },
+    {
+        "name": "meta:stale",
+        "color": "9198A1",
+        "description": "Marked as stale"
+    },
+    {
+        "name": "priority:critical",
+        "color": "B60205",
+        "description": "Production/launch-blocking"
+    },
+    {
+        "name": "priority:important",
+        "color": "D93F0B",
+        "description": "Must-do in current/next iteration"
+    },
+    {
+        "name": "priority:minor",
+        "color": "C2E0C6",
+        "description": "Nice-to-have / low urgency"
+    },
+    {
+        "name": "priority:normal",
+        "color": "0052CC",
+        "description": "Default priority"
+    },
+    {
+        "name": "status:blocked",
+        "color": "E99695",
+        "description": "Blocked; see Blocked reason"
+    },
+    {
+        "name": "status:duplicate",
+        "color": "E99695",
+        "description": "Duplicate of another issue"
+    },
+    {
+        "name": "status:in-discussion",
+        "color": "BFD4F2",
+        "description": "Needs alignment/decision"
+    },
+    {
+        "name": "status:in-progress",
+        "color": "1D76DB",
+        "description": "Work actively underway"
+    },
+    {
+        "name": "status:needs-design",
+        "color": "C5DEF5",
+        "description": "Early execution signal (triage queue for design)"
+    },
+    {
+        "name": "status:needs-design-review",
+        "color": "D4C5F9",
+        "description": "Awaiting design review"
+    },
+    {
+        "name": "status:needs-dev",
+        "color": "C5DEF5",
+        "description": "Early execution signal (triage queue for engineering)"
+    },
+    {
+        "name": "status:needs-figma-update",
+        "color": "C5DEF5",
+        "description": "Existing Figma design needs updating"
+    },
+    {
+        "name": "status:needs-more-info",
+        "color": "BFD4F2",
+        "description": "Missing details to proceed"
+    },
+    {
+        "name": "status:needs-qa",
+        "color": "FBCA04",
+        "description": "QA pass required"
+    },
+    {
+        "name": "status:needs-review",
+        "color": "BFD4F2",
+        "description": "Awaiting code review"
+    },
+    {
+        "name": "status:needs-testing",
+        "color": "FEF2C0",
+        "description": "Testing needed (manual/auto)"
+    },
+    {
+        "name": "status:needs-triage",
+        "color": "BFD4F2",
+        "description": "New/ungroomed; needs review by PM/lead"
+    },
+    {
+        "name": "status:on-hold",
+        "color": "F9D0C4",
+        "description": "Paused, awaiting external input"
+    },
+    {
+        "name": "status:ready",
+        "color": "0E8A16",
+        "description": "Groomed and ready to start"
+    },
+    {
+        "name": "status:wontfix",
+        "color": "E1E4E8",
+        "description": "Not planned to address"
+    }
+]

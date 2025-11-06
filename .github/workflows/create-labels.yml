@@ -1,0 +1,21 @@
+name: Create GitHub Labels
+
+# Allows the workflow to be run manually
+on:
+    workflow_dispatch:
+
+jobs:
+    create_labels:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Step 1: Checkout the repo so we can access labels.json
+            - name: Checkout Repository
+              uses: actions/checkout@v3
+
+            # Step 2: Create/Update labels from labels.json
+            - name: Create GitHub Labels
+              uses: ahmadnassri/action-label-sync@v1
+              with:
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
+                  configuration-path: labels.json # <-- your file path here
