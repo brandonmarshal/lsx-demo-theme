@@ -15,7 +15,7 @@ jobs:
 
             # Step 2: Create/Update labels from labels.json
             - name: Create GitHub Labels
-              uses: github/labels-action@v2
+              uses: actions/labeler@v5
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   configuration-path: labels.json # <-- your file path here
