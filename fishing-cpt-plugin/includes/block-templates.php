@@ -61,7 +61,8 @@ function register_single_fish_template(): void {
 	// Get template content.
 	$content = file_get_contents( $template_file );
 
-	if ( empty( $content ) ) {
+	if ( false === $content || empty( $content ) ) {
+		error_log( 'Fishing CPT Plugin: Failed to load template: ' . $template_file );
 		return;
 	}
 
@@ -98,7 +99,8 @@ function register_archive_fish_template(): void {
 	// Get template content.
 	$content = file_get_contents( $template_file );
 
-	if ( empty( $content ) ) {
+	if ( false === $content || empty( $content ) ) {
+		error_log( 'Fishing CPT Plugin: Failed to load template: ' . $template_file );
 		return;
 	}
 
