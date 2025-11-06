@@ -70,6 +70,48 @@ Display interactive maps on Area posts showing fishing location coordinates. See
 
 Located in `patterns/` providing grids, heroes, lists and highlight sections for each CPT.
 
+**New in v1.0.2:**
+- **Gear Sidebar** - Sidebar pattern with related gear and specifications
+- **Fish Details with Facts** - Comprehensive species information using block bindings
+- **Related Gear & Techniques** - Combined pattern with gear recommendations and fishing tips
+
+### Block Bindings
+
+The plugin registers a custom block bindings source (`fishing/scf-fields`) that connects WordPress blocks with ACF/SCF custom field values. This enables dynamic content display without custom PHP code.
+
+**Usage Example:**
+```json
+{
+  "metadata": {
+    "bindings": {
+      "content": {
+        "source": "fishing/scf-fields",
+        "args": {
+          "field_name": "water_type"
+        }
+      }
+    }
+  }
+}
+```
+
+Supported fields: `water_type`, `average_size`, `bait_type`, `scientific_name`, and all ACF/SCF fields registered by the plugin.
+
+## Block Templates (WordPress 6.7+)
+
+The plugin registers block templates for Fish post types using the WordPress 6.7+ template registration API. These templates:
+
+- **single-fish** - Individual fish species display template
+- **archive-fish** - Fish species archive/listing template
+
+Templates are fully customizable via the Site Editor and can be overridden by themes. The templates use block bindings to display custom field data dynamically.
+
+**Template Hierarchy:**
+1. Theme HTML block templates
+2. Theme PHP templates
+3. Plugin registered block templates
+4. Plugin PHP templates (fallback)
+
 ## REST API
 
 `/wp-json/fishing/v1/fish/{id}/facts` – returns JSON array of fish facts.
