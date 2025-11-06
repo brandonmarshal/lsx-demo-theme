@@ -1,0 +1,73 @@
+/**
+ * Fishing Gallery Block - Editor Styles
+ *
+ * Styles specific to the block editor interface.
+ */
+
+.fishing-gallery {
+	border: 1px solid #ddd;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	background: #f9f9f9;
+}
+
+.fishing-gallery__header {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+}
+
+.fishing-gallery__header h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+	color: #1e1e1e;
+}
+
+.fishing-gallery__description {
+	margin: 0;
+	color: #757575;
+	font-size: 0.875rem;
+}
+
+.fishing-gallery__grid {
+	display: grid;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.fishing-gallery__item {
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.fishing-gallery__image {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	aspect-ratio: 4 / 3;
+}
+
+.fishing-gallery__caption {
+	padding: 0.5rem;
+	font-size: 0.75rem;
+	color: #757575;
+	background: #f9f9f9;
+	border-top: 1px solid #ddd;
+	margin: 0;
+}
+
+.fishing-gallery__more {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f0f0f0;
+	color: #757575;
+	font-size: 0.875rem;
+	border: 1px dashed #ddd;
+	border-radius: 0.5rem;
+	min-height: 150px;
+}

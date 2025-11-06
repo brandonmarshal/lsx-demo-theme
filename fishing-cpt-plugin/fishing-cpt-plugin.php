@@ -116,6 +116,8 @@ function fishing_cpt_includes(): void
 		'includes/repeatable-fields.php',     // ACF/SCF repeatable field groups
 		'includes/repeatable-fields-enqueue.php',  // Enqueue repeatable field styles
 		'includes/relationship-helpers.php',  // Bidirectional relationship sync
+		'includes/gallery-fields.php',        // ACF/SCF gallery field groups
+		'includes/gallery-enqueue.php',       // Enqueue gallery lightbox assets
 		'includes/rest-api.php',
 		'includes/settings-page.php',
 		'includes/google-maps-settings.php',  // Google Maps settings page
