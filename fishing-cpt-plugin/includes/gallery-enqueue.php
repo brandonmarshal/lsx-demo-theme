@@ -30,8 +30,12 @@ function enqueue_gallery_lightbox_assets(): void {
 		return;
 	}
 
-	// Check if current post has the gallery block.
-	global $post;
+	// Only proceed on singular post/page and if the post has the gallery block.
+	if ( ! is_singular() ) {
+		return;
+	}
+
+	$post = get_post();
 	if ( ! $post || ! has_block( 'fishing/gallery', $post ) ) {
 		return;
 	}
