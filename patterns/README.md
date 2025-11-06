@@ -13,6 +13,16 @@ A collection of patterns specifically designed for fish species and fishing cont
 - **Fish Gallery** (`fish-gallery.php`) - Responsive image gallery showcasing multiple fish species
 - **Related Fish Species** (`fish-related.php`) - Query block displaying related fish posts with featured images
 
+### Section Style Patterns
+
+Demonstration patterns for the Section Style System with fishing-specific layouts:
+
+- **Section Style - Hero** (`section-style-hero.php`) - Hero section with River Blue background, large padding, and centered content
+- **Section Style - Gallery** (`section-style-gallery.php`) - Gallery section with Surface Brown background and consistent spacing
+- **Section Style - Archive Grid** (`section-style-archive.php`) - Three-column archive grid for fish species or blog posts
+
+See [Section Style System Documentation](../docs/SECTION_STYLE_SYSTEM.md) for detailed usage and customization options.
+
 ## Pattern Header Specification
 
 All patterns must include a complete PHP header block with the following required fields:

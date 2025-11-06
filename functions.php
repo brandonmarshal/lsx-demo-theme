@@ -122,6 +122,7 @@ function lsx_demo_theme_load_cpt_and_tax_files()
 		'inc/cpt-area.php',       // Area CPT - replaces story
 		'inc/taxonomies.php',
 		'inc/seed-bass-post.php', // temporary: seeds "How to Catch a Bass" post (remove after creation)
+		'inc/block-styles.php',   // Block styles for fishing section layouts
 	);
 	foreach ($files as $relative_path) {
 		$absolute_path = get_parent_theme_file_path($relative_path);
