@@ -126,6 +126,8 @@ function fishing_cpt_includes(): void
 		'includes/blocks-query-variations.php',
 		'includes/patterns.php',
 		'includes/template-loader.php',
+		'includes/block-bindings.php',       // Block bindings for SCF fields
+		'includes/block-templates.php',      // WP 6.7+ block template registration
 	];
 	foreach ($files as $rel) {
 		$path = FISHING_CPT_PLUGIN_DIR . $rel;
