@@ -1,21 +1,21 @@
-name: Create GitHub Labels
+name: Sync GitHub Labels
 
-# Allows the workflow to be run manually
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
-    create_labels:
-        runs-on: ubuntu-latest
+  sync_labels:
+    runs-on: ubuntu-latest
 
-        steps:
-            # Step 1: Checkout the repo so we can access labels.json
-            - name: Checkout Repository
-              uses: actions/checkout@v3
+    # This permission is required so the Action can *create/update* labels
+    permissions:
+      issues: write
 
-            # Step 2: Create/Update labels from labels.json
-            - name: Create GitHub Labels
-              uses: actions/labeler@v5
-              with:
-                  repo-token: ${{ secrets.GITHUB_TOKEN }}
-                  configuration-path: labels.json # <-- your file path here
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Sync labels from config
+        uses: cssnr/label-creator-action@v1
+        with:
+          file: labels.json
