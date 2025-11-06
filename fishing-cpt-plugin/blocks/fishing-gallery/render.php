@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Get post ID from context or current post.
-$post_id = $context['postId'] ?? get_the_ID();
+$post_id = $block->context['postId'] ?? get_the_ID();
 
 // Bail early if no post ID.
 if ( ! $post_id ) {
