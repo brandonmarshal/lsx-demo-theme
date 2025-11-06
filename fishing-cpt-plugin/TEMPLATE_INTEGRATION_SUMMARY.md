@@ -287,7 +287,7 @@ No action required. The plugin handles template registration automatically. Temp
 ## Version Information
 
 - **Plugin Version**: 1.0.2
-- **WordPress Requirement**: 6.8.0+
+- **WordPress Requirement**: 6.7.0+
 - **PHP Requirement**: 7.4+
 - **Feature Level**: WordPress 6.7+ (block templates & bindings)
 
