@@ -62,7 +62,28 @@ function get_scf_field_value( array $source_args, $block_instance, string $attri
 	}
 
 	$field_name = sanitize_text_field( $source_args['field_name'] );
-	
+
+	/**
+	 * Define a whitelist of allowed field names for block bindings.
+	 * You can filter this list using the 'fishing_cpt_allowed_field_names' filter.
+	 *
+	 * @since 1.0.3
+	 */
+	$allowed_field_names = apply_filters(
+		'fishing_cpt_allowed_field_names',
+		array(
+			// Add allowed field names here, e.g.:
+			'fishing_location',
+			'fishing_species',
+			'fishing_weight',
+			'fishing_length',
+			// Add more as needed.
+		)
+	);
+
+	if ( ! in_array( $field_name, $allowed_field_names, true ) ) {
+		return '';
+	}
 	// Get post ID from context or use current post.
 	$post_id = $block_instance->context['postId'] ?? get_the_ID();
 	
