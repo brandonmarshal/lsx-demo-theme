@@ -93,6 +93,60 @@ This implementation adds custom Gutenberg blocks for displaying repeatable field
 
 **Note:** This block is maintained for backward compatibility. New implementations should use the `fishing/fish-facts` block instead.
 
+### 7. Fishing Gallery (`fishing/gallery`)
+
+**Purpose:** Display image galleries with lightbox functionality for Fish, Gear, and Area posts.
+
+**Usage:** Add this block to any Fish, Gear, or Area post template or content area to display images from the ACF gallery field.
+
+**Features:**
+- Responsive grid layout with 1-6 columns
+- Multiple image size options (thumbnail, medium, large, full)
+- Optional lightbox overlay with image zoom
+- Keyboard navigation (Arrow keys, Escape, Home, End)
+- Touch/swipe support for mobile devices
+- Optional image captions
+- Lazy loading for performance
+- Full accessibility with ARIA labels and focus management
+
+**Block Supports:**
+- Color (background, text)
+- Spacing (margin, padding, blockGap)
+- Border (radius)
+- Alignment (wide, full)
+- Anchor links
+
+**Inspector Controls:**
+- Columns (1-6) - Number of columns in gallery grid
+- Image Size - Select thumbnail, medium, large, or full size
+- Enable Lightbox - Toggle lightbox overlay functionality
+- Show Captions - Toggle image caption display
+
+**ACF Field Requirements:**
+- Field name: `fishing_gallery`
+- Field type: Gallery
+- Supported formats: jpg, jpeg, png, gif, webp
+- Maximum images: 50
+
+**Example Usage:**
+```html
+<!-- wp:fishing/gallery {"columns":3,"lightbox":true,"captions":true,"imageSize":"large"} /-->
+```
+
+**Lightbox Controls:**
+- **Click/Tap** image to open lightbox
+- **Arrow Keys** or **Navigation Buttons** to move between images
+- **Escape** key or **Close Button** to exit lightbox
+- **Home/End** keys to jump to first/last image
+- **Swipe Left/Right** on touch devices for navigation
+
+**Accessibility Features:**
+- Modal dialog with proper ARIA attributes
+- Focus trap within lightbox
+- Keyboard-navigable controls
+- Screen reader announcements
+- Reduced motion support
+
 ## Block Category
 
 All blocks are now registered under the **"fishing"** category in the block inserter for easier discovery.
@@ -115,6 +169,7 @@ function register_blocks()
         'repeatable-facts',
         'fish-facts',
         'gear-specs',
+        'fishing-gallery',
     ];
     
     foreach ($blocks as $block_name) {

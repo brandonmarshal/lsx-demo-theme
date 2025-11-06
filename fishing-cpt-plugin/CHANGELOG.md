@@ -5,6 +5,26 @@ All notable changes to the Fishing CPT Plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Gallery field for Fish, Gear, and Area post types via ACF/SCF
+- `fishing/gallery` Gutenberg block with lightbox functionality
+- Responsive image gallery with 1-6 column support
+- Lightbox overlay with keyboard navigation (Arrow keys, Escape, Home, End)
+- Touch/swipe support for mobile devices
+- Image caption display toggle
+- Multiple image size options (thumbnail, medium, large, full)
+- Lazy loading for gallery images
+- ARIA labels and focus management for accessibility
+- Reduced motion support for animations
+- Gallery lightbox JavaScript asset (`fishing-gallery-lightbox.js`)
+- Gallery asset enqueue system
+
+### Changed
+- Updated BLOCKS_DOCUMENTATION.md with gallery block documentation
+- Enhanced block registration to include fishing-gallery block
+
 ## [1.0.2] - 2025-11-05
 
 ### Added
