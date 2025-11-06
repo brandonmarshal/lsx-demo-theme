@@ -5,6 +5,27 @@ All notable changes to the LSX Demo Theme are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)  
 and the project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- Section Style System with three fishing-specific block styles: Hero, Gallery, and Archive Grid
+- Three new fishing-specific colors to theme palette: River Blue (#3A6B68), Burnt Orange (#E58F5C), Olive Deep (#6B7C3A)
+- Block style variations for core/group: `fishing-hero` and `fishing-gallery-section`
+- Block style variation for core/columns: `fishing-archive-grid`
+- Three demonstration section patterns: section-style-hero, section-style-gallery, section-style-archive
+- Comprehensive Section Style System documentation (docs/SECTION_STYLE_SYSTEM.md)
+- Block styles registration file (inc/block-styles.php) with proper WordPress hooks
+
+### Changed
+- Extended theme.json with fishing section style variations and color palette
+- Updated functions.php to load block styles registration file
+
+### Accessibility
+- All new section colors meet WCAG 2.2 AA contrast requirements
+- River Blue background: 6.03:1 contrast ratio with white text
+- Olive Deep background: 4.60:1 contrast ratio with white text
+- Burnt Orange buttons: 6.98:1 contrast ratio with dark text (Background Brown)
+
 ## [1.0.0-rc.1] - 2025-10-27
 Release Candidate 1 consolidates design system evolution, Fish CPT full site editing support, expanded block patterns, styling, accessibility/performance optimization, and extensive documentation/log updates.
 

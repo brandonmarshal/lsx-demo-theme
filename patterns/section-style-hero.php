@@ -23,8 +23,8 @@
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|spacing-60"}}}} -->
 	<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--spacing-60)">
-		<!-- wp:button {"backgroundColor":"burnt-orange","textColor":"heading"} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-heading-color has-burnt-orange-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Book Your Trip', 'lsx-demo-theme' ); ?></a></div>
+		<!-- wp:button {"backgroundColor":"burnt-orange","textColor":"background"} -->
+		<div class="wp-block-button"><a class="wp-block-button__link has-background-color has-burnt-orange-background-color has-text-color has-background wp-element-button"><?php esc_html_e( 'Book Your Trip', 'lsx-demo-theme' ); ?></a></div>
 		<!-- /wp:button -->
 
 		<!-- wp:button {"className":"is-style-outline"} -->
