@@ -108,8 +108,24 @@ function get_scf_field_value( array $source_args, $block_instance, string $attri
 	}
 
 	// Return string value or empty string.
-	return is_string( $value ) ? $value : (string) $value;
-}
+	if ( is_string( $value ) ) {
+		return $value;
+	}
+	if ( is_null( $value ) ) {
+		return '';
+	}
+	if ( is_object( $value ) ) {
+		// Only cast to string if object implements __toString().
+		if ( method_exists( $value, '__toString' ) ) {
+			return (string) $value;
+		}
+		return '';
+	}
+	if ( is_resource( $value ) ) {
+		return '';
+	}
+	// For scalars (int, float, bool), cast to string.
+	return (string) $value;
 
 /**
  * Get formatted field value for display.
