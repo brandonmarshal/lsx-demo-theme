@@ -79,7 +79,7 @@ The section styles leverage the existing spacing scale:
 | Token | Size | Usage in Sections |
 |-------|------|-------------------|
 | `spacing-50` | 24px | Gallery padding, grid gaps |
-| `spacing-60` | 32px | Hero padding (left/right), gallery block gaps |
+| `spacing-60` | 24px | Hero padding (left/right), gallery block gaps |
 | `spacing-70` | 48px | Archive padding |
 | `spacing-85` | 48px | Gallery padding (top/bottom) |
 | `spacing-95` | 64px | Hero padding (top/bottom) |
