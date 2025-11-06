@@ -190,9 +190,32 @@
 			}
 
 			// Trap focus within lightbox when open
-			const focusableElements = lightbox.querySelectorAll(
-				'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-			);
+			// Improved selector: exclude disabled and aria-hidden elements, and filter for visibility
+			const focusableSelector = [
+				'button:not(:disabled):not([aria-hidden="true"])',
+				'[href]:not([disabled]):not([aria-hidden="true"])',
+				'input:not(:disabled):not([aria-hidden="true"])',
+				'select:not(:disabled):not([aria-hidden="true"])',
+				'textarea:not(:disabled):not([aria-hidden="true"])',
+				'[tabindex]:not([tabindex="-1"]):not(:disabled):not([aria-hidden="true"])'
+			].join(', ');
+
+			const allFocusable = Array.from(lightbox.querySelectorAll(focusableSelector));
+
+			// Helper to check if element is visible and not aria-hidden (including ancestors)
+			function isVisibleAndAccessible(el) {
+				if (!el.offsetParent || el.hasAttribute('aria-hidden')) return false;
+				let ancestor = el.parentElement;
+				while (ancestor && ancestor !== lightbox) {
+					if (ancestor.hasAttribute('aria-hidden') && ancestor.getAttribute('aria-hidden') === 'true') {
+						return false;
+					}
+					ancestor = ancestor.parentElement;
+				}
+				return true;
+			}
+
+			const focusableElements = allFocusable.filter(isVisibleAndAccessible);
 			const firstFocusable = focusableElements[0];
 			const lastFocusable = focusableElements[focusableElements.length - 1];
 
