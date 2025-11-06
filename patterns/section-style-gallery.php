@@ -12,7 +12,7 @@
  */
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|spacing-85","bottom":"var:preset|spacing|spacing-85","left":"var:preset|spacing|spacing-50","right":"var:preset|spacing|spacing-50"},"blockGap":"var:preset|spacing|spacing-60"}},"backgroundColor":"surface","textColor":"text","layout":{"type":"constrained"},"className":"is-style-fishing-gallery-section"} -->
-<div class="wp-block-group alignfull is-style-fishing-gallery-section has-text-color has-surface-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--spacing-85);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-85);padding-left:var(--wp--preset--spacing--spacing-50)">
+<div class="wp-block-group alignfull is-style-fishing-gallery-section has-text-color has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--spacing-85);padding-right:var(--wp--preset--spacing--spacing-50);padding-bottom:var(--wp--preset--spacing--spacing-85);padding-left:var(--wp--preset--spacing--spacing-50)">
 	<!-- wp:heading {"textAlign":"center","level":2,"fontSize":"h2"} -->
 	<h2 class="wp-block-heading has-text-align-center has-h-2-font-size"><?php esc_html_e( 'Recent Catches', 'lsx-demo-theme' ); ?></h2>
 	<!-- /wp:heading -->
