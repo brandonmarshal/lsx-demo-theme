@@ -26,17 +26,39 @@ export default function Edit({ attributes, setAttributes, context }) {
             if (!postId) return [];
             
             const record = select('core').getEditedEntityRecord('postType', context.postType, postId);
-            const meta = record && record.meta ? record.meta : null;
             
-            if (!meta || !meta.fishing_gallery) return [];
+            // ACF fields with show_in_rest enabled can be accessed via:
+            // 1. record.acf (if ACF REST API is enabled)
+            // 2. record.meta (if field is registered as post meta with show_in_rest)
+            // 3. Direct property on record (depending on ACF configuration)
+            
+            let galleryData = null;
+            
+            // Try different access patterns for ACF data
+            if (record) {
+                // Try ACF property first (ACF REST API v3+)
+                if (record.acf && record.acf.fishing_gallery) {
+                    galleryData = record.acf.fishing_gallery;
+                }
+                // Try meta property (if registered as post meta)
+                else if (record.meta && record.meta.fishing_gallery) {
+                    galleryData = record.meta.fishing_gallery;
+                }
+                // Try direct property
+                else if (record.fishing_gallery) {
+                    galleryData = record.fishing_gallery;
+                }
+            }
+            
+            if (!galleryData) return [];
             
             // fishing_gallery might be a JSON string or already parsed
             try {
-                const galleryData = typeof meta.fishing_gallery === 'string' 
-                    ? JSON.parse(meta.fishing_gallery) 
-                    : meta.fishing_gallery;
+                const parsed = typeof galleryData === 'string' 
+                    ? JSON.parse(galleryData) 
+                    : galleryData;
                 
-                return Array.isArray(galleryData) ? galleryData : [];
+                return Array.isArray(parsed) ? parsed : [];
             } catch (e) {
                 return [];
             }

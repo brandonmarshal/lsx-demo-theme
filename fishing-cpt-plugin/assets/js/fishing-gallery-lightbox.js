@@ -100,15 +100,34 @@
 					counter.textContent = `${index + 1} / ${images.length}`;
 				}
 
-				// Update button states
-				prevBtn.disabled = index === 0;
-				nextBtn.disabled = index === images.length - 1;
+				// Update button states - use aria-disabled instead of disabled attribute
+				// to keep buttons in keyboard navigation and screen reader accessible
+				if (index === 0) {
+					prevBtn.setAttribute('aria-disabled', 'true');
+					prevBtn.classList.add('is-disabled');
+				} else {
+					prevBtn.setAttribute('aria-disabled', 'false');
+					prevBtn.classList.remove('is-disabled');
+				}
+
+				if (index === images.length - 1) {
+					nextBtn.setAttribute('aria-disabled', 'true');
+					nextBtn.classList.add('is-disabled');
+				} else {
+					nextBtn.setAttribute('aria-disabled', 'false');
+					nextBtn.classList.remove('is-disabled');
+				}
 			}
 
 			/**
 			 * Navigate to previous image.
 			 */
-			function showPrevious() {
+			function showPrevious(e) {
+				// Prevent action if button is aria-disabled
+				if (prevBtn.getAttribute('aria-disabled') === 'true') {
+					if (e) e.preventDefault();
+					return;
+				}
 				if (currentIndex > 0) {
 					currentIndex--;
 					showImage(currentIndex);
@@ -118,7 +137,12 @@
 			/**
 			 * Navigate to next image.
 			 */
-			function showNext() {
+			function showNext(e) {
+				// Prevent action if button is aria-disabled
+				if (nextBtn.getAttribute('aria-disabled') === 'true') {
+					if (e) e.preventDefault();
+					return;
+				}
 				if (currentIndex < images.length - 1) {
 					currentIndex++;
 					showImage(currentIndex);

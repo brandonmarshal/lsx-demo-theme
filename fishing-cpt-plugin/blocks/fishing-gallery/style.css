@@ -148,6 +148,20 @@
 	outline-offset: 2px;
 }
 
+/* Disabled state styling for aria-disabled buttons */
+.fishing-gallery-lightbox__prev.is-disabled,
+.fishing-gallery-lightbox__next.is-disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.fishing-gallery-lightbox__prev.is-disabled:hover,
+.fishing-gallery-lightbox__next.is-disabled:hover {
+	background: rgba(255, 255, 255, 0.9);
+	color: var(--wp--preset--color--contrast, #000);
+	transform: none;
+}
+
 .fishing-gallery-lightbox__close {
 	top: 1rem;
 	right: 1rem;

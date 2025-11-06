@@ -57,6 +57,7 @@ function register_gallery_fields(): void {
 					'max_height'    => 0,
 					'max_size'      => 0,
 					'mime_types'    => 'jpg,jpeg,png,gif,webp',
+					'show_in_rest'  => true,
 				),
 			),
 			'location'              => array(
