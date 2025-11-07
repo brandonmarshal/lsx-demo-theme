@@ -19,12 +19,12 @@
 	<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 	<div class="wp-block-group">
 		<!-- wp:heading {"textAlign":"center","level":1,"className":"is-style-text-annotation"} -->
-		<h1 class="wp-block-heading has-text-align-center is-style-text-annotation"><?php esc_html_e( 'Stories', 'lsx-demo-theme' ); ?></h1>
+		<h1 class="wp-block-heading has-text-align-center is-style-text-annotation"><?php esc_html_e( 'Stories', 'fishing-theme' ); ?></h1>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
 	<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"xx-large"} -->
-	<h2 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Tell your story', 'lsx-demo-theme' ); ?></h2>
+	<h2 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Tell your story', 'fishing-theme' ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:pattern {"slug":"lsx-demo-theme/template-query-loop-photo-blog"} /-->
 </main>

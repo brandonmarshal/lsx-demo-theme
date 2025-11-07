@@ -19,7 +19,7 @@
 		<div class="wp-block-column" style="flex-basis:56%">
 			<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full"} -->
 			<figure class="wp-block-image size-full">
-				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/botany-flowers.webp" alt="<?php echo esc_attr_x( 'Picture of a flower', 'Alt text for intro picture.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/>
+				<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/botany-flowers.webp" alt="<?php echo esc_attr_x( 'Picture of a flower', 'Alt text for intro picture.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/>
 			</figure>
 			<!-- /wp:image -->
 		</div>
@@ -28,18 +28,18 @@
 		<!-- wp:column {"verticalAlignment":"center","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 			<!-- wp:heading -->
-			<h2 class="wp-block-heading"><?php echo esc_html_x( 'New arrivals', 'Heading for banner pattern.', 'lsx-demo-theme' ); ?></h2>
+			<h2 class="wp-block-heading"><?php echo esc_html_x( 'New arrivals', 'Heading for banner pattern.', 'fishing-theme' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders.', 'Sample description for banner with flower.', 'lsx-demo-theme' ); ?></p>
+			<p><?php echo esc_html_x( 'Like flowers that bloom in unexpected places, every story unfolds with beauty and resilience, revealing hidden wonders.', 'Sample description for banner with flower.', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
 				<!-- wp:button -->
 				<div class="wp-block-button">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more', 'lsx-demo-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more', 'fishing-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

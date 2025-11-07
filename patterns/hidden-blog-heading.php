@@ -12,5 +12,5 @@
 
 ?>
 <!-- wp:heading {"textAlign":"left","level":1} -->
-<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Blog', 'lsx-demo-theme' ); ?></h1>
+<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Blog', 'fishing-theme' ); ?></h1>
 <!-- /wp:heading -->

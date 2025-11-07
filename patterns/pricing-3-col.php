@@ -16,11 +16,11 @@
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"fontSize":"x-large"} -->
-		<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Choose your membership', 'lsx-demo-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Choose your membership', 'fishing-theme' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"className":"is-style-text-annotation"} -->
-		<p class="is-style-text-annotation"><?php esc_html_e( 'Pricing', 'lsx-demo-theme' ); ?></p>
+		<p class="is-style-text-annotation"><?php esc_html_e( 'Pricing', 'fishing-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -34,11 +34,11 @@
 				<!-- wp:column {"width":"70%"} -->
 				<div class="wp-block-column" style="flex-basis:70%">
 					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
-					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Free', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php esc_html_e( 'Free', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"fontSize":"small"} -->
-					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our free articles and weekly newsletter.', 'lsx-demo-theme' ); ?></p>
+					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our free articles and weekly newsletter.', 'fishing-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -46,7 +46,7 @@
 				<!-- wp:column {"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
 				<div class="wp-block-column" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:heading {"textAlign":"right","level":3,"style":{"typography":{"textDecoration":"line-through"}}} -->
-					<h3 class="wp-block-heading has-text-align-right" style="text-decoration:line-through"><?php esc_html_e( '0€', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-right" style="text-decoration:line-through"><?php esc_html_e( '0€', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
@@ -56,7 +56,7 @@
 			<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
 				<!-- wp:button {"width":100,"style":{"typography":{"lineHeight":"1.2","letterSpacing":"0.08px"}}} -->
-				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'lsx-demo-theme' ); ?></a></div>
+				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'fishing-theme' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -70,11 +70,11 @@
 				<!-- wp:column {"width":"70%"} -->
 				<div class="wp-block-column" style="flex-basis:70%">
 					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
-					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php echo esc_html_x( 'Single', 'Name of membership package.', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php echo esc_html_x( 'Single', 'Name of membership package.', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"fontSize":"small"} -->
-					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our paid newsletter and a limited pass for one event.', 'lsx-demo-theme' ); ?></p>
+					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our paid newsletter and a limited pass for one event.', 'fishing-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -82,11 +82,11 @@
 				<!-- wp:column {"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
 				<div class="wp-block-column" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:heading {"textAlign":"right","level":3} -->
-					<h3 class="wp-block-heading has-text-align-right"><?php esc_html_e( '20€', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-right"><?php esc_html_e( '20€', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"align":"right","style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"small"} -->
-					<p class="has-text-align-right has-small-font-size" style="margin-top:0"><?php esc_html_e( 'Month', 'lsx-demo-theme' ); ?></p>
+					<p class="has-text-align-right has-small-font-size" style="margin-top:0"><?php esc_html_e( 'Month', 'fishing-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -96,7 +96,7 @@
 			<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
 				<!-- wp:button {"width":100,"style":{"typography":{"lineHeight":"1.2","letterSpacing":"0.08px"}}} -->
-				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'lsx-demo-theme' ); ?></a></div>
+				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'fishing-theme' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -110,11 +110,11 @@
 				<!-- wp:column {"width":"70%"} -->
 				<div class="wp-block-column" style="flex-basis:70%">
 					<!-- wp:heading {"level":3,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
-					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php echo esc_html_x( 'Expert', 'Name of membership package.', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--20)"><?php echo esc_html_x( 'Expert', 'Name of membership package.', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"fontSize":"small"} -->
-					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our paid newsletter and an unlimited pass.', 'lsx-demo-theme' ); ?></p>
+					<p class="has-small-font-size"><?php esc_html_e( 'Get access to our paid newsletter and an unlimited pass.', 'fishing-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -122,11 +122,11 @@
 				<!-- wp:column {"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
 				<div class="wp-block-column" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:heading {"textAlign":"right","level":3} -->
-					<h3 class="wp-block-heading has-text-align-right"><?php esc_html_e( '40€', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-right"><?php esc_html_e( '40€', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"align":"right","style":{"spacing":{"margin":{"top":"0"}}},"fontSize":"small"} -->
-					<p class="has-text-align-right has-small-font-size" style="margin-top:0"><?php esc_html_e( 'Month', 'lsx-demo-theme' ); ?></p>
+					<p class="has-text-align-right has-small-font-size" style="margin-top:0"><?php esc_html_e( 'Month', 'fishing-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:column -->
@@ -136,7 +136,7 @@
 			<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--30)">
 				<!-- wp:button {"width":100,"style":{"typography":{"lineHeight":"1.2","letterSpacing":"0.08px"}}} -->
-				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'lsx-demo-theme' ); ?></a></div>
+				<div class="wp-block-button has-custom-width wp-block-button__width-100" style="letter-spacing:0.08px;line-height:1.2"><a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'Join', 'Button text, refers to joining a community. Verb.', 'fishing-theme' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->

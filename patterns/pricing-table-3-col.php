@@ -18,11 +18,11 @@
     <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
     <div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--60)">
         <!-- wp:heading {"textAlign":"center","fontSize":"x-large"} -->
-        <h2 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php esc_html_e( 'Choose Your Perfect Plan', 'lsx-demo-theme' ); ?></h2>
+        <h2 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php esc_html_e( 'Choose Your Perfect Plan', 'fishing-theme' ); ?></h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"align":"center"} -->
-        <p class="has-text-align-center"><?php esc_html_e( 'Select the subscription plan that best fits your needs and budget.', 'lsx-demo-theme' ); ?></p>
+        <p class="has-text-align-center"><?php esc_html_e( 'Select the subscription plan that best fits your needs and budget.', 'fishing-theme' ); ?></p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -40,7 +40,7 @@
                 <!-- /wp:html -->
 
                 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
-                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Basic', 'lsx-demo-theme' ); ?></h3>
+                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Basic', 'fishing-theme' ); ?></h3>
                 <!-- /wp:heading -->
 
                 <!-- wp:heading {"textAlign":"center","level":4,"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
@@ -48,21 +48,21 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Perfect for individuals and small projects looking for essential features.', 'lsx-demo-theme' ); ?></p>
+                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Perfect for individuals and small projects looking for essential features.', 'fishing-theme' ); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:list {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"padding":{"left":"var:preset|spacing|40"}}}} -->
                 <ul style="margin-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
-                    <li><?php esc_html_e( '5 projects', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( '20GB storage', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( 'Basic support', 'lsx-demo-theme' ); ?></li>
+                    <li><?php esc_html_e( '5 projects', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( '20GB storage', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( 'Basic support', 'fishing-theme' ); ?></li>
                 </ul>
                 <!-- /wp:list -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons">
                     <!-- wp:button {"backgroundColor":"base","textColor":"light","width":100,"style":{"border":{"width":"1px"}},"borderColor":"base"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-light-color has-base-background-color has-text-color has-background has-border-color has-base-border-color wp-element-button" style="border-width:1px"><?php esc_html_e( 'Choose Basic', 'lsx-demo-theme' ); ?></a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-light-color has-base-background-color has-text-color has-background has-border-color has-base-border-color wp-element-button" style="border-width:1px"><?php esc_html_e( 'Choose Basic', 'fishing-theme' ); ?></a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
@@ -82,7 +82,7 @@
                 <!-- /wp:html -->
 
                 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
-                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Professional', 'lsx-demo-theme' ); ?></h3>
+                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Professional', 'fishing-theme' ); ?></h3>
                 <!-- /wp:heading -->
 
                 <!-- wp:heading {"textAlign":"center","level":4,"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
@@ -90,22 +90,22 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Ideal for growing businesses needing advanced features and priority support.', 'lsx-demo-theme' ); ?></p>
+                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Ideal for growing businesses needing advanced features and priority support.', 'fishing-theme' ); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:list {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"padding":{"left":"var:preset|spacing|40"}}}} -->
                 <ul style="margin-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
-                    <li><?php esc_html_e( '20 projects', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( '50GB storage', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( 'Priority support', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( 'Advanced analytics', 'lsx-demo-theme' ); ?></li>
+                    <li><?php esc_html_e( '20 projects', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( '50GB storage', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( 'Priority support', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( 'Advanced analytics', 'fishing-theme' ); ?></li>
                 </ul>
                 <!-- /wp:list -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons">
                     <!-- wp:button {"backgroundColor":"accent-1","width":100} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-accent-1-background-color has-background wp-element-button"><?php esc_html_e( 'Choose Professional', 'lsx-demo-theme' ); ?></a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-accent-1-background-color has-background wp-element-button"><?php esc_html_e( 'Choose Professional', 'fishing-theme' ); ?></a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
@@ -125,7 +125,7 @@
                 <!-- /wp:html -->
 
                 <!-- wp:heading {"textAlign":"center","level":3,"fontSize":"large"} -->
-                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Enterprise', 'lsx-demo-theme' ); ?></h3>
+                <h3 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Enterprise', 'fishing-theme' ); ?></h3>
                 <!-- /wp:heading -->
 
                 <!-- wp:heading {"textAlign":"center","level":4,"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|40"}}},"fontSize":"x-large"} -->
@@ -133,23 +133,23 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Complete solution for large organizations requiring maximum capabilities.', 'lsx-demo-theme' ); ?></p>
+                <p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php esc_html_e( 'Complete solution for large organizations requiring maximum capabilities.', 'fishing-theme' ); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:list {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"},"padding":{"left":"var:preset|spacing|40"}}}} -->
                 <ul style="margin-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
-                    <li><?php esc_html_e( 'Unlimited projects', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( '200GB storage', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( '24/7 dedicated support', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( 'Custom integrations', 'lsx-demo-theme' ); ?></li>
-                    <li><?php esc_html_e( 'White-label options', 'lsx-demo-theme' ); ?></li>
+                    <li><?php esc_html_e( 'Unlimited projects', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( '200GB storage', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( '24/7 dedicated support', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( 'Custom integrations', 'fishing-theme' ); ?></li>
+                    <li><?php esc_html_e( 'White-label options', 'fishing-theme' ); ?></li>
                 </ul>
                 <!-- /wp:list -->
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons">
                     <!-- wp:button {"backgroundColor":"base","textColor":"light","width":100,"style":{"border":{"width":"1px"}},"borderColor":"base"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-light-color has-base-background-color has-text-color has-background has-border-color has-base-border-color wp-element-button" style="border-width:1px"><?php esc_html_e( 'Choose Enterprise', 'lsx-demo-theme' ); ?></a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-light-color has-base-background-color has-text-color has-background has-border-color has-base-border-color wp-element-button" style="border-width:1px"><?php esc_html_e( 'Choose Enterprise', 'fishing-theme' ); ?></a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->

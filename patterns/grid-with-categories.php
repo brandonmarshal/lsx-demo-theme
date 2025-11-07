@@ -19,21 +19,21 @@
 		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"fontSize":"x-large"} -->
-			<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Top Categories', 'lsx-demo-theme' ); ?></h2>
+			<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Top Categories', 'fishing-theme' ); ?></h2>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group">
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-anthuriums.webp","alt":"Close up of a red anthurium.","dimRatio":0,"customOverlayColor":"#833d3a","isUserOverlayColor":true,"layout":{"type":"constrained"}} -->
-			<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#833d3a"></span><img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Close up of a red anthurium.', 'lsx-demo-theme' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-anthuriums.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+			<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#833d3a"></span><img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Close up of a red anthurium.', 'fishing-theme' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/category-anthuriums.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 				<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
 				<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 			</div></div>
 			<!-- /wp:cover -->
 			<!-- wp:paragraph {"align":"center"} -->
-			<p class="has-text-align-center"><?php esc_html_e( 'Anthuriums', 'lsx-demo-theme' ); ?></p>
+			<p class="has-text-align-center"><?php esc_html_e( 'Anthuriums', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -47,7 +47,7 @@
 			</div></div>
 			<!-- /wp:cover -->
 			<!-- wp:paragraph {"align":"center"} -->
-			<p class="has-text-align-center"><?php esc_html_e( 'Cactus', 'lsx-demo-theme' ); ?></p>
+			<p class="has-text-align-center"><?php esc_html_e( 'Cactus', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -61,7 +61,7 @@
 			</div></div>
 			<!-- /wp:cover -->
 			<!-- wp:paragraph {"align":"center"} -->
-			<p class="has-text-align-center"><?php esc_html_e( 'Sunflowers', 'lsx-demo-theme' ); ?></p>
+			<p class="has-text-align-center"><?php esc_html_e( 'Sunflowers', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

@@ -1,7 +1,7 @@
-# LSX Demo Theme Development Setup
+# Fishing Theme Development Setup
 
 <!--
-Inline documentation: This file provides a complete guide for setting up, developing, testing, and contributing to the LSX Demo Theme. All steps are verified for accuracy and compliance with WordPress and project standards.
+Inline documentation: This file provides a complete guide for setting up, developing, testing, and contributing to the Fishing Theme. All steps are verified for accuracy and compliance with WordPress and project standards.
 -->
 
 ## Prerequisites
@@ -20,8 +20,8 @@ Reference: Ensure all prerequisites are installed before proceeding. Node.js and
 1. Clone the repository:
 
 ````bash
-    git clone https://github.com/lightspeedwp/lsx-demo-theme.git
-    cd lsx-demo-theme
+    git clone https://github.com/lightspeedwp/fishing-theme.git
+    cd fishing-theme
     ```
 
 2. Install Node.js dependencies:

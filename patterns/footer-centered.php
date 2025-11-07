@@ -30,8 +30,8 @@
 		<?php
 		printf(
 			/* translators: Designed with WordPress. %s: WordPress link. */
-			esc_html__( 'Designed with %s', 'lsx-demo-theme' ),
-			'<a href="' . esc_url( __( 'https://wordpress.org', 'lsx-demo-theme' ) ) . '" rel="nofollow">WordPress</a>'
+			esc_html__( 'Designed with %s', 'fishing-theme' ),
+			'<a href="' . esc_url( __( 'https://wordpress.org', 'fishing-theme' ) ) . '" rel="nofollow">WordPress</a>'
 		);
 		?>
 	</p>
