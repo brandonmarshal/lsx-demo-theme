@@ -1,17 +1,17 @@
 /*
-Theme Name: lsx-demo-theme
-Theme URI:
-Author:
-Author URI:
-Description:
+Theme Name: Fishing Theme
+Theme URI: https://github.com/lightspeedwp/fishing-theme
+Author: LightSpeedWP
+Author URI: https://lightspeedwp.agency
+Description: A modern WordPress block theme for fishing and outdoor adventure websites, featuring Full Site Editing, custom post types for fish species and gear, and comprehensive fishing content management. Built following LightSpeed organization standards.
 Requires at least: 6.8
 Tested up to: 6.8
 Requires PHP: 7.2
-Version: 1.0
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: lsx-demo-theme
-Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+Text Domain: fishing-theme
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, fishing, outdoors, sports
 
 /*
  * Link styles

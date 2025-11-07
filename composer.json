@@ -1,6 +1,6 @@
 {
     "_documentation": {
-        "description": "LSX Demo Theme - Composer Configuration for WordPress Block Theme Development",
+        "description": "Fishing Theme - Composer Configuration for WordPress Block Theme Development",
         "purpose": "Provides PHP linting, testing, and WordPress coding standards enforcement",
         "usage": {
             "setup": "Run 'composer install' to set up development tools",
@@ -20,14 +20,14 @@
             }
         }
     },
-    "name": "lightspeedwp/lsx-demo-theme",
-    "description": "Block theme development starter for LightSpeed",
+    "name": "lightspeedwp/fishing-theme",
+    "description": "A modern WordPress block theme for fishing and outdoor adventure websites",
     "type": "wordpress-theme",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "LightSpeed",
-            "email": "tech@lightspeed.dev"
+            "name": "LightSpeedWP",
+            "email": "tech@lightspeedwp.agency"
         }
     ],
     "minimum-stability": "stable",
