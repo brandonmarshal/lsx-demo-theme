@@ -7,7 +7,7 @@
  * Viewport width: 1400
  * Description: Hero section pattern demonstrating the fishing-hero block style with River Blue background, large padding, and centered content layout.
  *
- * @package lsx-demo-theme
+ * @package Fishing_Theme
  * @since 1.0.0
  */
 ?>

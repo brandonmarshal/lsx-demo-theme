@@ -7,7 +7,7 @@
  * Viewport width: 1400
  * Description: Archive grid section pattern demonstrating the fishing-archive-grid block style with column layout for displaying fish species or blog posts.
  *
- * @package lsx-demo-theme
+ * @package Fishing_Theme
  * @since 1.0.0
  */
 ?>

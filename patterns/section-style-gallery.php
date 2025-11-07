@@ -7,7 +7,7 @@
  * Viewport width: 1400
  * Description: Gallery section pattern demonstrating the fishing-gallery-section block style with consistent padding and spacing for image layouts.
  *
- * @package lsx-demo-theme
+ * @package Fishing_Theme
  * @since 1.0.0
  */
 ?>
