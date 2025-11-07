@@ -16,5 +16,4 @@ jobs:
       - name: Sync labels from config
         uses: crazy-max/ghaction-github-labeler@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          yaml_file: labels.json
+          yaml-file: labels.yml

@@ -1,0 +1,9 @@
+- name: ai-ops:agents
+  color: '0052CC'
+  description: Agent definitions
+- name: ai-ops:chat-modes
+  color: '0052CC'
+  description: Prompt sets / modes
+- name: ai-ops:datasets
+  color: 'BFD4F2'
+  description: Training/eval datasets
