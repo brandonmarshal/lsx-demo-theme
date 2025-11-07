@@ -25,6 +25,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated BLOCKS_DOCUMENTATION.md with gallery block documentation
 - Enhanced block registration to include fishing-gallery block
 
+### Plugin Work since last release (2025-11-05):
+- **Rebranded plugin for organization compliance** – Refactored text, variable names, and branding to "Fishing Theme" throughout blocks, patterns, documentation, and asset structure.
+- **Comprehensive documentation update** – Added `REBRAND_SUMMARY.md`, extended all major guides for new naming and plugin handling.
+- **Finalized pattern and block updates** – Standardized slugs, categories, and all references. Ensured all parts/blocks/templates use consistent domain/title.
+- **Accessibility and code review improvements** – Completed semantic revision, improved ARIA usage, and fixed focus management across custom blocks (notably gallery/facts).
+- **Dependency management optimization** – Plugin now more robustly handles missing dependencies, including secure error notices and auto-deactivation if ACF/SCF is not installed.
+- **Internal build/process enhancements**:
+  - Gallery asset enqueue is conditional for frontend (only loads if block exists).
+  - Block registration scripts refactored for performance and maintainability.
+  - Package, multi-block verification, and automated packaging scripts improved.
+
+### Fixed
+- Documentation, README, and meta file links/branding now up to date with all changes from the develop branch as of this morning.
+
 ## [1.0.2] - 2025-11-05
 
 ### Added
