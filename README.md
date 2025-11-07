@@ -1,8 +1,8 @@
-# 🧱 LSX Demo Theme
+# 🎣 Fishing Theme
 
-A modern WordPress block theme built with Full Site Editing (FSE) capabilities, enhanced with AI development tools and comprehensive testing. This theme serves as both a learning project and production-ready WordPress block theme template.
+A modern WordPress block theme built with Full Site Editing (FSE) capabilities for fishing and outdoor adventure websites. This theme provides comprehensive features for managing fish species, gear, fishing areas, and adventure content, built following [LightSpeedWP organization standards](https://github.com/lightspeedwp/.github).
 
-[![WordPress](https://img.shields.io/badge/WordPress-6.0+-blue.svg)](https://wordpress.org/)
+[![WordPress](https://img.shields.io/badge/WordPress-6.8+-blue.svg)](https://wordpress.org/)
 [![Block Theme](https://img.shields.io/badge/Block%20Theme-FSE-green.svg)](https://developer.wordpress.org/themes/block-themes/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Testing](https://img.shields.io/badge/Testing-Playwright-red.svg)](https://playwright.dev/)
@@ -10,15 +10,15 @@ A modern WordPress block theme built with Full Site Editing (FSE) capabilities, 
 <!--
 README.md Inline Documentation
 --------------------------------
-This README provides a comprehensive overview of the LSX Demo Theme, including setup, architecture, contributor recognition, funding, and key documentation references. All badges and links are verified for accuracy. See .all-contributorsrc for contributor config and .github/FUNDING.yml for funding details.
+This README provides a comprehensive overview of the Fishing Theme, including setup, architecture, contributor recognition, and key documentation references. All content follows LightSpeedWP organization standards as outlined in @lightspeedwp/.github.
 -->
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/lightspeedwp/lsx-demo-theme.git
-cd lsx-demo-theme
+git clone https://github.com/lightspeedwp/fishing-theme.git
+cd fishing-theme
 
 # Install dependencies
 npm install
@@ -34,70 +34,60 @@ npm test
 **[📖 Full Development Setup Guide →](./DEVELOPMENT.md)**
 
 <!--
-Reference: DEVELOPMENT.md contains step-by-step setup, workflow, and troubleshooting for local development. Always review this file for the latest instructions.
+Reference: Key documentation files follow LightSpeedWP organization standards. See each file for details on security, contributing, code of conduct, changelog, license, and support. All standards reference @lightspeedwp/.github.
 -->
 
-## 🎯 Project Overview
+## 🤝 Contributing & Support
 
-### Built for Modern WordPress Development
+<!--
+This section covers contributor recognition, support channels, and links to key documentation following LightSpeedWP organization standards.
+-->
+
+### Built for Fishing & Outdoor Adventure Websites
 
 **Full Site Editing (FSE)** with comprehensive `theme.json` configuration
-**Block patterns and template parts** for rapid development
-**AI-enhanced development** with GitHub Copilot integration
+**Custom Post Types** for Fish Species, Gear, and Fishing Areas
+**Block patterns and template parts** for rapid fishing content development
 **Comprehensive testing** with Playwright and accessibility checks
 **WordPress coding standards** enforcement via automated linting
 **Performance optimized** for Core Web Vitals
-**Fish Species Demo Content** with comprehensive CPT implementation
-**SEO & Accessibility Optimized** - WCAG 2.2 AA compliant with comprehensive SEO
+**SEO & Accessibility Optimized** - WCAG 2.2 AA compliant
 
-### 🎣 Brandon's Fishing Adventures Demo
+### 🎣 Key Features
 
-This theme showcases a complete fishing adventure website featuring:
+This theme is specifically designed for fishing and outdoor adventure websites featuring:
 
--   **Fish Species Guide**: Custom post type with detailed species profiles
--   **Conservation Focus**: Protected species information and sustainable fishing practices
--   **Blog Integration**: Fishing stories and educational content
--   **Rich Structured Data**: Schema.org implementation for enhanced search results
--   **Internal Linking**: Automatic cross-linking between species and related content
+-   **Fish Species Management**: Custom post type with detailed species profiles, habitats, and seasonal information
+-   **Fishing Gear Catalog**: Organize and showcase fishing equipment and accessories
+-   **Fishing Areas**: Document and share information about fishing locations and areas
+-   **Blog Integration**: Share fishing stories, tips, and educational content
+-   **Taxonomy System**: Species, habitats, seasons, gear types, and area categories
+-   **Responsive Design**: Mobile-first design optimized for field use
 
 ### ✨ Technical Highlights
 
--   **🔍 SEO Excellence**: Comprehensive meta tags, XML sitemaps, structured data
+-   **🔍 SEO Excellence**: Comprehensive meta tags, structured data
 -   **♿ Accessibility**: WCAG 2.2 AA compliant with zero axe-core violations
--   **⚡ Performance**: Core Web Vitals optimized with lazy loading and resource hints
+-   **⚡ Performance**: Core Web Vitals optimized with lazy loading
 -   **🧪 Testing**: Automated accessibility and performance testing with Playwright
 -   **📱 Responsive**: Mobile-first design with progressive enhancement
-
-### Demo Content Features
-
-This theme includes a fully implemented Fish Custom Post Type with demo content showcasing Brandon's fishing adventures in KwaZulu-Natal:
-
--   **🐟 Fish Species CPT** with 10 comprehensive fish profiles
--   **📝 Blog Posts** covering fishing tips, conservation, and adventures
--   **🗂️ Taxonomies** for species categories and fishing locations
--   **📞 Contact Page** with fishing-specific FAQ section
--   **🖼️ Placeholder Assets** ready for actual fish photography
-
-**Demo Content Import:**
-
--   Automatically imports on theme activation
--   Includes taxonomies, meta fields, and proper i18n
--   Manual import available for testing: `/wp-admin/?import_demo=1`
+-   **🛠️ Developer-Friendly**: Built following [LightSpeedWP coding standards](https://github.com/lightspeedwp/.github)
 
 ### Based on WordPress Twenty Twenty-Five
 
 This theme extends the WordPress [Twenty Twenty-Five](https://make.wordpress.org/core/2024/08/15/introducing-twenty-twenty-five/) theme with:
 
-**LSX Design System** integration with contemporary styling
-**Custom color palette** and typography (Lexend & Manrope fonts)
-**Accessibility-first** approach (WCAG 2.1 AA compliance)
+**Fishing-specific features** and custom post types
+**Custom color palette** and typography optimized for outdoor/adventure content
+**Accessibility-first** approach (WCAG 2.2 AA compliance)
 **Performance optimization** and modern build tools
+**Organization compliance** with [LightSpeedWP standards](https://github.com/lightspeedwp/.github)
 
 ## 🛠️ Technology Stack
 
 ### Core Technologies
 
-**WordPress 6.0+** with Full Site Editing (FSE)
+**WordPress 6.8+** with Full Site Editing (FSE)
 **Node.js 18+** and npm for build tooling
 **@wordpress/scripts** for development workflow
 **Sass/SCSS** for stylesheets with PostCSS processing
@@ -106,45 +96,47 @@ This theme extends the WordPress [Twenty Twenty-Five](https://make.wordpress.org
 ### Development Tools
 
 **[VS Code](https://code.visualstudio.com/)** with WordPress-optimized configuration
-**[GitHub Copilot](https://github.com/features/copilot)** with AI-enhanced development
 **[WordPress Studio](https://developer.wordpress.com/studio/)** or [LocalWP](https://localwp.com/) for local development
-**[Figma](https://figma.com)** with [LSX Design System](https://lsx.rocks/design-system)
+**[GitHub](https://github.com/)** for version control and collaboration
+**Compliance with** [LightSpeedWP standards](https://github.com/lightspeedwp/.github)
 
-### AI Development Features
+### Development Best Practices
 
-**150+ Specialized Assets** for WordPress development
-**GitHub Copilot Integration** with WordPress-specific context
-**Automated Code Review** with WordPress standards enforcement
-**AI Agents** for accessibility, performance, and security auditing
+**Coding Standards** - Following [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/) and [LightSpeedWP guidelines](https://github.com/lightspeedwp/.github/blob/develop/.github/instructions/coding-standards.instructions.md)
+**Automated Testing** - Playwright for E2E and accessibility validation
+**Code Quality** - PHPCS, ESLint, and Stylelint enforcement
+**Documentation** - Comprehensive inline docs and README files per [LightSpeedWP docs standards](https://github.com/lightspeedwp/.github)
 
 ## 🏗️ Theme Architecture
 
 ```text
-├── 📁 .github/              # AI development assets & workflows
-│   ├── agents/             # Specialized AI agents (accessibility, performance, etc.)
-│   ├── chatmodes/          # Extended AI workflows (pattern wizard, test coach)
-│   ├── instructions/       # Auto-applied coding standards & best practices
-│   ├── prompts/            # Reusable development task templates
-│   ├── workflows/          # CI/CD automation
-│   └── FUNDING.yml         # Funding configuration (see below)
-├── 📁 .vscode/              # VS Code configuration with AI enhancements
-│   ├── agent.json          # WordPress block theme AI assistant
-│   ├── configuration.md    # Development guidelines for Copilot
+├── 📁 .github/              # GitHub workflows and organization compliance
+│   ├── agents/             # Specialized development agents
+│   ├── chatmodes/          # Extended development workflows
+│   ├── instructions/       # Coding standards & best practices
+│   ├── prompts/            # Reusable development templates
+│   └── workflows/          # CI/CD automation
+├── 📁 .vscode/              # VS Code configuration
 │   ├── extensions.json     # WordPress development extensions
 │   └── settings.json       # WordPress-optimized editor settings
+├── 📁 inc/                 # Theme includes
+│   ├── cpt-fish.php        # Fish species custom post type
+│   ├── cpt-gear.php        # Gear custom post type
+│   ├── cpt-area.php        # Fishing areas custom post type
+│   ├── taxonomies.php      # Custom taxonomies
+│   └── block-styles.php    # Custom block styles
 ├── 📁 patterns/            # Block patterns for content creation
 ├── 📁 parts/               # Template parts (header, footer, etc.)
 ├── 📁 templates/           # Block templates for FSE
 ├── 📁 styles/              # Theme style variations
 ├── 📁 e2e/                 # Playwright end-to-end tests
 ├── 📁 src/                 # Source files (SCSS, JS)
-├── .all-contributorsrc     # Contributor configuration (see below)
 ├── SECURITY.md             # Security policy and reporting
-├── CONTRIBUTING.md         # Contribution guidelines
+├── CONTRIBUTING.md         # Contribution guidelines per LightSpeedWP standards
 ├── CODE_OF_CONDUCT.md      # Community standards
 ├── CHANGELOG.md            # Release history
-├── LICENSE                 # Project license
-├── SUPPORT.md              # Support policy
+├── LICENSE                 # GPL-3.0 license
+└── SUPPORT.md              # Support policy
 ```
 
 <!--
@@ -167,44 +159,31 @@ This section covers contributor recognition, support channels, and links to key 
 
 ### Contributors
 
-This project recognizes contributors from the LightSpeed organization and key external contributors. See [.all-contributorsrc](./.all-contributorsrc) for configuration.
-
-<!--
-Contributor badges are automatically updated in README.md by the all-contributors bot. To add yourself, run 'npx all-contributors add <username> <contributions>'.
--->
+This project is maintained by the LightSpeedWP organization and follows all [organizational standards](https://github.com/lightspeedwp/.github).
 
 #### Current Contributors
 
-[![Contributors](https://img.shields.io/badge/Contributors-LightSpeedWP%20Org-blue)](https://github.com/lightspeedwp/lsx-demo-theme/graphs/contributors)
+[![Contributors](https://img.shields.io/badge/Contributors-LightSpeedWP%20Org-blue)](https://github.com/lightspeedwp/fishing-theme/graphs/contributors)
 
--   **LightSpeedWP** ([profile](https://github.com/lightspeedwp))
+-   **LightSpeedWP** ([organization](https://github.com/lightspeedwp))
 -   **Ashley Shaw (LightSpeed)** ([profile](https://lightspeedwp.agency))
-
-### Funding
-
-Support professional WordPress block theme development and open source contributions by LightSpeed.
-
--   [Sponsor via GitHub](https://github.com/sponsors/lightspeedwp)
--   [LightSpeed Professional Services](https://lightspeedwp.agency/services)
--   [Contact for custom sponsorship](https://lightspeedwp.agency/contact)
-
-See [.github/FUNDING.yml](./.github/FUNDING.yml) for full funding configuration.
 
 ### For Contributors
 
 1. **Fork the repository** and create a feature branch
-2. **Follow WordPress coding standards** (automated linting enforced)
-3. **Write tests** for new functionality (Playwright for E2E, unit tests for PHP)
+2. **Follow WordPress and LightSpeedWP coding standards** (automated linting enforced)
+   - Reference: [Coding Standards](https://github.com/lightspeedwp/.github/blob/develop/.github/instructions/coding-standards.instructions.md)
+   - Reference: [Custom Instructions](https://github.com/lightspeedwp/.github/blob/develop/.github/custom-instructions.md)
+3. **Write tests** for new functionality (Playwright for E2E, PHPUnit for PHP)
 4. **Update documentation** for any new features or changes
-5. **Submit a pull request** with clear description and issue references
+5. **Submit a pull request** with clear description and issue references following [LightSpeedWP PR guidelines](https://github.com/lightspeedwp/.github)
 
 ### Getting Help
 
 -   **📖 Documentation**: Check [DEVELOPMENT.md](./DEVELOPMENT.md) for technical setup
--   **🤖 AI Assistance**: Use GitHub Copilot with enhanced WordPress context
 -   **📋 Issues**: Create GitHub issues for bugs or feature requests
 -   **💬 Community**: WordPress.org forums and Slack communities
--   **🎓 Learning**: Review [/docs](./docs/) for curriculum and resources
+-   **🏢 Organization**: Follow [LightSpeedWP standards](https://github.com/lightspeedwp/.github)
 
 ### Issue Templates
 
@@ -218,11 +197,13 @@ Use the provided issue templates in `.github/ISSUE_TEMPLATE/`:
 
 ### Key Documentation & Policies
 
+All documentation follows [LightSpeedWP organization standards](https://github.com/lightspeedwp/.github):
+
 -   [Security Policy](./SECURITY.md)
--   [Contributing Guide](./CONTRIBUTING.md)
+-   [Contributing Guide](./CONTRIBUTING.md) - References [LightSpeedWP Contributing Guidelines](https://github.com/lightspeedwp/.github/blob/develop/.github/instructions/coding-standards.instructions.md)
 -   [Code of Conduct](./CODE_OF_CONDUCT.md)
 -   [Changelog](./CHANGELOG.md)
--   [License](./LICENSE)
+-   [License](./LICENSE) - GPL-3.0-or-later
 -   [Support Policy](./SUPPORT.md)
 
 <!--
@@ -233,12 +214,12 @@ Each documentation file above provides detailed guidance on its topic. Review th
 
 -   **License**: GPL-3.0-or-later (see [LICENSE](./LICENSE))
 -   **Base Theme**: Twenty Twenty-Five by WordPress.org
--   **Design System**: LSX Design System by LightSpeed
--   **Typography**: [Lexend](https://fonts.google.com/specimen/Lexend) and [Manrope](https://fonts.google.com/specimen/Manrope) from Google Fonts
+-   **Organization**: Built following [LightSpeedWP standards](https://github.com/lightspeedwp/.github)
+-   **Typography**: [Abel](https://fonts.google.com/specimen/Abel) and [Raleway](https://fonts.google.com/specimen/Raleway) from Google Fonts
 -   **Testing**: Powered by [Playwright](https://playwright.dev/)
 
-**Built with ❤️ for the WordPress community**
+**Built with ❤️ for the WordPress fishing and outdoor adventure community**
 
 <!--
-License is GPL-3.0-or-later, inherited from WordPress. See LICENSE for full terms. Credits are listed for base theme, design system, typography, and testing tools.
+License is GPL-3.0-or-later, following WordPress and LightSpeedWP standards. See LICENSE for full terms and @lightspeedwp/.github for organization guidelines.
 -->
