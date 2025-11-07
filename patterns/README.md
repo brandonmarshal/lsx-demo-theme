@@ -1,6 +1,6 @@
 # Block Patterns Directory
 
-This directory contains WordPress block patterns for the LSX Demo Theme, following LightSpeed and WordPress development standards.
+This directory contains WordPress block patterns for the Fishing Theme, following LightSpeed and WordPress development standards.
 
 ## Pattern Categories
 
@@ -12,6 +12,16 @@ A collection of patterns specifically designed for fish species and fishing cont
 - **Fish Facts Box** (`fish-facts-box.php`) - Grid layout displaying key species information (size, habitat, bait, season)
 - **Fish Gallery** (`fish-gallery.php`) - Responsive image gallery showcasing multiple fish species
 - **Related Fish Species** (`fish-related.php`) - Query block displaying related fish posts with featured images
+
+### Section Style Patterns
+
+Demonstration patterns for the Section Style System with fishing-specific layouts:
+
+- **Section Style - Hero** (`section-style-hero.php`) - Hero section with River Blue background, large padding, and centered content
+- **Section Style - Gallery** (`section-style-gallery.php`) - Gallery section with Surface Brown background and consistent spacing
+- **Section Style - Archive Grid** (`section-style-archive.php`) - Three-column archive grid for fish species or blog posts
+
+See [Section Style System Documentation](../docs/SECTION_STYLE_SYSTEM.md) for detailed usage and customization options.
 
 ## Pattern Header Specification
 

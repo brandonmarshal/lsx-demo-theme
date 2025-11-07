@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Audio format
- * Slug: lsx-demo-theme/format-audio
- * Categories: lsx_demo_theme_post-format
+ * Slug: fishing-theme/format-audio
+ * Categories: fishing_theme_post-format
  * Description: An audio post format with an image, title, audio player, and description.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -17,17 +17,17 @@
 	<div class="wp-block-columns is-not-stacked-on-mobile">
 		<!-- wp:column {"width":"100px"} -->
 		<div class="wp-block-column" style="flex-basis:100px"><!-- wp:image {"width":"100px","height":"auto","aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
-		<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ruins-image.webp' ); ?>" alt="<?php esc_attr_e( 'Event image', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover;width:100px;height:auto"/></figure>
+		<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ruins-image.webp' ); ?>" alt="<?php esc_attr_e( 'Event image', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover;width:100px;height:auto"/></figure>
 		<!-- /wp:image --></div>
 		<!-- /wp:column -->
 
 		<!-- wp:column {"width":""} -->
 		<div class="wp-block-column"><!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Episode 1: Acoma Pueblo with Prof. Fiona Presley', 'lsx-demo-theme' ); ?></p>
+		<p><?php esc_html_e( 'Episode 1: Acoma Pueblo with Prof. Fiona Presley', 'fishing-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:paragraph {"fontSize":"small"} -->
-		<p class="has-small-font-size"><?php esc_html_e( 'Acoma Pueblo, in New Mexico, stands as a testament to the resilience and cultural heritage of the Acoma people', 'lsx-demo-theme' ); ?></p>
+		<p class="has-small-font-size"><?php esc_html_e( 'Acoma Pueblo, in New Mexico, stands as a testament to the resilience and cultural heritage of the Acoma people', 'fishing-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:audio -->

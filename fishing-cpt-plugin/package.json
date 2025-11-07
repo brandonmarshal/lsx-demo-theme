@@ -1,0 +1,13 @@
+{
+    "name": "fishing-cpt-plugin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "wp-scripts start",
+        "build": "wp-scripts build"
+    },
+    "devDependencies": {
+        "@babel/runtime": "^7.28.4",
+        "@wordpress/scripts": "^28.0.0"
+    }
+}

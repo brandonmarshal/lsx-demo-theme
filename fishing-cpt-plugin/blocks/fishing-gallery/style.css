@@ -1,0 +1,248 @@
+/**
+ * Fishing Gallery Block - Frontend Styles
+ *
+ * Styles for the gallery grid and lightbox overlay.
+ */
+
+/* Gallery Grid */
+.fishing-gallery {
+	margin: 2rem 0;
+}
+
+.fishing-gallery__grid {
+	display: grid;
+	gap: 1rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.fishing-gallery__item {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	background: var(--wp--preset--color--contrast, #000);
+}
+
+.fishing-gallery__link {
+	display: block;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+}
+
+.fishing-gallery__link:hover,
+.fishing-gallery__link:focus {
+	transform: scale(1.02);
+}
+
+.fishing-gallery__link:focus {
+	outline: 2px solid var(--wp--preset--color--primary, #007cba);
+	outline-offset: 2px;
+}
+
+.fishing-gallery__image {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	aspect-ratio: 4 / 3;
+}
+
+.fishing-gallery__caption {
+	padding: 0.75rem;
+	font-size: 0.875rem;
+	color: var(--wp--preset--color--base, #fff);
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0;
+}
+
+/* Lightbox Styles */
+.fishing-gallery-lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.fishing-gallery-lightbox[aria-hidden="false"] {
+	display: flex;
+	opacity: 1;
+}
+
+.fishing-gallery-lightbox__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.fishing-gallery-lightbox__content {
+	position: relative;
+	max-width: 90vw;
+	max-height: 90vh;
+	z-index: 1;
+}
+
+.fishing-gallery-lightbox__image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 80vh;
+}
+
+.fishing-gallery-lightbox__image {
+	max-width: 100%;
+	max-height: 80vh;
+	height: auto;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Lightbox Controls */
+.fishing-gallery-lightbox__close,
+.fishing-gallery-lightbox__prev,
+.fishing-gallery-lightbox__next {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.9);
+	border: none;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	font-size: 2rem;
+	line-height: 1;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--wp--preset--color--contrast, #000);
+}
+
+.fishing-gallery-lightbox__close:hover,
+.fishing-gallery-lightbox__close:focus,
+.fishing-gallery-lightbox__prev:hover,
+.fishing-gallery-lightbox__prev:focus,
+.fishing-gallery-lightbox__next:hover,
+.fishing-gallery-lightbox__next:focus {
+	background: var(--wp--preset--color--primary, #007cba);
+	color: var(--wp--preset--color--base, #fff);
+	transform: scale(1.1);
+}
+
+.fishing-gallery-lightbox__close:focus,
+.fishing-gallery-lightbox__prev:focus,
+.fishing-gallery-lightbox__next:focus {
+	outline: 2px solid var(--wp--preset--color--primary, #007cba);
+	outline-offset: 2px;
+}
+
+/* Disabled state styling for aria-disabled buttons */
+.fishing-gallery-lightbox__prev.is-disabled,
+.fishing-gallery-lightbox__next.is-disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.fishing-gallery-lightbox__prev.is-disabled:hover,
+.fishing-gallery-lightbox__next.is-disabled:hover {
+	background: rgba(255, 255, 255, 0.9);
+	color: var(--wp--preset--color--contrast, #000);
+	transform: none;
+}
+
+.fishing-gallery-lightbox__close {
+	top: 1rem;
+	right: 1rem;
+}
+
+.fishing-gallery-lightbox__prev {
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fishing-gallery-lightbox__next {
+	right: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fishing-gallery-lightbox__caption {
+	text-align: center;
+	color: var(--wp--preset--color--base, #fff);
+	margin-top: 1rem;
+	font-size: 1rem;
+	padding: 0 2rem;
+}
+
+.fishing-gallery-lightbox__counter {
+	position: absolute;
+	bottom: -3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	color: var(--wp--preset--color--base, #fff);
+	font-size: 0.875rem;
+	padding: 0.5rem 1rem;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.fishing-gallery--columns-4,
+	.fishing-gallery--columns-5,
+	.fishing-gallery--columns-6 {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	.fishing-gallery-lightbox__prev {
+		left: 0.5rem;
+	}
+
+	.fishing-gallery-lightbox__next {
+		right: 0.5rem;
+	}
+
+	.fishing-gallery-lightbox__close {
+		top: 0.5rem;
+		right: 0.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.fishing-gallery--columns-2,
+	.fishing-gallery--columns-3,
+	.fishing-gallery--columns-4,
+	.fishing-gallery--columns-5,
+	.fishing-gallery--columns-6 {
+		grid-template-columns: 1fr !important;
+	}
+
+	.fishing-gallery-lightbox__content {
+		max-width: 95vw;
+		max-height: 95vh;
+	}
+}
+
+/* Reduce Motion Support */
+@media (prefers-reduced-motion: reduce) {
+	.fishing-gallery-lightbox,
+	.fishing-gallery-lightbox__close,
+	.fishing-gallery-lightbox__prev,
+	.fishing-gallery-lightbox__next,
+	.fishing-gallery__link {
+		transition: none;
+	}
+}

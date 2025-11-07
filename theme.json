@@ -40,6 +40,21 @@
 					"color": "#316C88",
 					"name": "Accent Blue",
 					"slug": "accent"
+				},
+				{
+					"color": "#3A6B68",
+					"name": "River Blue",
+					"slug": "river-blue"
+				},
+				{
+					"color": "#E58F5C",
+					"name": "Burnt Orange",
+					"slug": "burnt-orange"
+				},
+				{
+					"color": "#6B7C3A",
+					"name": "Olive Deep",
+					"slug": "olive-deep"
 				}
 			]
 		},
@@ -274,6 +289,58 @@
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--spacing-70)",
 						"top": "var(--wp--preset--spacing--spacing-70)"
+					}
+				}
+			},
+			"core/group": {
+				"variations": {
+					"fishing-hero": {
+						"color": {
+							"background": "var(--wp--preset--color--river-blue)",
+							"text": "#ffffff"
+						},
+						"spacing": {
+							"padding": {
+								"top": "var(--wp--preset--spacing--spacing-95)",
+								"bottom": "var(--wp--preset--spacing--spacing-95)",
+								"left": "var(--wp--preset--spacing--spacing-60)",
+								"right": "var(--wp--preset--spacing--spacing-60)"
+							}
+						},
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--lead)"
+						}
+					},
+					"fishing-gallery-section": {
+						"color": {
+							"background": "var(--wp--preset--color--surface)",
+							"text": "var(--wp--preset--color--text)"
+						},
+						"spacing": {
+							"padding": {
+								"top": "var(--wp--preset--spacing--spacing-85)",
+								"bottom": "var(--wp--preset--spacing--spacing-85)",
+								"left": "var(--wp--preset--spacing--spacing-50)",
+								"right": "var(--wp--preset--spacing--spacing-50)"
+							},
+							"blockGap": "var(--wp--preset--spacing--spacing-60)"
+						}
+					}
+				}
+			},
+			"core/columns": {
+				"variations": {
+					"fishing-archive-grid": {
+						"spacing": {
+							"blockGap": {
+								"top": "var(--wp--preset--spacing--spacing-60)",
+								"left": "var(--wp--preset--spacing--spacing-50)"
+							},
+							"padding": {
+								"top": "var(--wp--preset--spacing--spacing-70)",
+								"bottom": "var(--wp--preset--spacing--spacing-70)"
+							}
+						}
 					}
 				}
 			}

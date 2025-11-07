@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Centered footer (Copy)
- * Slug: lsx-demo-theme/centered-footer-copy
+ * Slug: fishing-theme/centered-footer-copy
  * Categories: Footers
  */
 ?>

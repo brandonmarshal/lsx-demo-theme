@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Photo blog page
- * Slug: lsx-demo-theme/template-page-photo-blog
+ * Slug: fishing-theme/template-page-photo-blog
  * Template Types: page
  * Viewport width: 1400
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

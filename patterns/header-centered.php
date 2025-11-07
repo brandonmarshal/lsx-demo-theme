@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Centered site header
- * Slug: lsx-demo-theme/header-centered
+ * Slug: fishing-theme/header-centered
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Site header with centered site title and navigation.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

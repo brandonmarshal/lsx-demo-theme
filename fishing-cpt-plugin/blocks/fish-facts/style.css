@@ -1,0 +1,110 @@
+/* Fish Quick Facts Block - Frontend Styles */
+
+.fishing-fish-facts {
+    margin: 1.5rem 0;
+}
+
+.fishing-fish-facts__placeholder,
+.fishing-fish-facts__notice {
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    color: #666;
+    font-style: italic;
+}
+
+/* List Display */
+.fishing-fish-facts__list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem 1.5rem;
+    margin: 0;
+}
+
+.fishing-fish-facts__list .fishing-fish-facts__label {
+    font-weight: 600;
+    color: inherit;
+    margin: 0;
+}
+
+.fishing-fish-facts__list .fishing-fish-facts__value {
+    margin: 0;
+    color: inherit;
+}
+
+.fishing-fish-facts__list .fishing-fish-facts__value p {
+    margin: 0;
+}
+
+/* Table Display */
+.fishing-fish-facts__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.fishing-fish-facts__table th,
+.fishing-fish-facts__table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fishing-fish-facts__table th {
+    font-weight: 600;
+    background: #f5f5f5;
+}
+
+.fishing-fish-facts__table tbody tr:hover {
+    background: #fafafa;
+}
+
+.fishing-fish-facts__table .fishing-fish-facts__value p {
+    margin: 0;
+}
+
+/* Cards Display */
+.fishing-fish-facts__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.fishing-fish-facts__card {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.fishing-fish-facts__card .fishing-fish-facts__label {
+    margin: 0 0 0.5rem;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.fishing-fish-facts__card .fishing-fish-facts__value {
+    margin: 0;
+    color: #666;
+}
+
+.fishing-fish-facts__card .fishing-fish-facts__value p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fishing-fish-facts__list {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    .fishing-fish-facts__list .fishing-fish-facts__label {
+        margin-top: 0.75rem;
+    }
+
+    .fishing-fish-facts__table {
+        display: block;
+        overflow-x: auto;
+    }
+}

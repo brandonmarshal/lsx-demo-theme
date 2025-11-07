@@ -1,0 +1,44 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/fish-card",
+    "title": "Fish Card",
+    "category": "fishing",
+    "icon": "palmtree",
+    "description": "Display fish information card with meta data",
+    "keywords": ["fishing", "fish", "card", "meta"],
+    "textdomain": "fishing-cpt-plugin",
+    "usesContext": ["postId", "postType"],
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "fontFamily": false,
+            "fontWeight": false,
+            "textDecoration": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": false
+        },
+        "border": {
+            "radius": true,
+            "width": true,
+            "style": true,
+            "color": true
+        },
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php"
+}

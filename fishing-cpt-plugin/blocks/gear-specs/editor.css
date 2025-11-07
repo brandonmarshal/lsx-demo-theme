@@ -1,0 +1,26 @@
+/* Gear Specifications Block - Editor Styles */
+.fishing-gear-specs-block {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.fishing-gear-specs-block strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1em;
+}
+
+.fishing-gear-specs-block .notice,
+.fishing-gear-specs-block .info {
+    margin: 0.5rem 0 0;
+    padding: 0.5rem;
+    background: #fff;
+    border-left: 3px solid #2271b1;
+    font-size: 0.9em;
+}
+
+.fishing-gear-specs-block .notice {
+    border-left-color: #d63638;
+}

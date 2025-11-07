@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Dark BFA
- * Slug: lsx-demo-theme/header-dark-bfa
+ * Slug: fishing-theme/header-dark-bfa
  * Categories: Headers
  */
 ?>

@@ -1,0 +1,106 @@
+/* Gear Specifications Block - Frontend Styles */
+
+.fishing-gear-specs {
+    margin: 1.5rem 0;
+}
+
+.fishing-gear-specs__placeholder,
+.fishing-gear-specs__notice {
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    color: #666;
+    font-style: italic;
+}
+
+/* Table Display (Default) */
+.fishing-gear-specs__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.fishing-gear-specs__table th,
+.fishing-gear-specs__table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fishing-gear-specs__table th {
+    font-weight: 600;
+    background: #f5f5f5;
+}
+
+.fishing-gear-specs__table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* List Display */
+.fishing-gear-specs__list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.75rem 1.5rem;
+    margin: 0;
+}
+
+.fishing-gear-specs__list .fishing-gear-specs__label {
+    font-weight: 600;
+    color: inherit;
+    margin: 0;
+}
+
+.fishing-gear-specs__list .fishing-gear-specs__value {
+    margin: 0;
+    color: inherit;
+}
+
+/* Cards Display */
+.fishing-gear-specs__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.fishing-gear-specs__card {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+}
+
+.fishing-gear-specs__card .fishing-gear-specs__label {
+    margin: 0 0 0.5rem;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fishing-gear-specs__card .fishing-gear-specs__value {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fishing-gear-specs__list {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    .fishing-gear-specs__list .fishing-gear-specs__label {
+        margin-top: 0.75rem;
+    }
+
+    .fishing-gear-specs__table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .fishing-gear-specs__cards {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

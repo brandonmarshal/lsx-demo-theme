@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: about
- * Slug: lsx-demo-theme/about
+ * Slug: fishing-theme/about
  * Inserter: no
  */
 ?>
@@ -37,7 +37,7 @@
         >
             <figure class="wp-block-media-text__media about-section__figure">
                 <img
-                    src="/wp-content/themes/lsx-demo-theme/assets/images/about/river-kayak.jpg"
+                    src="/wp-content/themes/fishing-theme/assets/images/about/river-kayak.jpg"
                     alt="Paddling a river"
                     class="about-section__img"
                 />
@@ -120,7 +120,7 @@
         <p class="about-cta__text">
             Want to see the latest catches? Peek into the
             <a href="/portfolio">portfolio</a> or read my
-            <a href="/stories">river stories</a>.
+            <a href="/areas">fishing areas</a>.
         </p>
         <!-- /wp:paragraph -->
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Text blog single post
- * Slug: lsx-demo-theme/template-single-text-blog
+ * Slug: fishing-theme/template-single-text-blog
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -33,15 +33,15 @@
 
 		<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
-			<!-- wp:group {"ariaLabel":"<?php esc_attr_e( 'Post navigation', 'lsx-demo-theme' ); ?>","tagName":"nav","align":"wide","style":{"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"},"right":[],"bottom":[],"left":[]},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-			<nav class="wp-block-group alignwide" aria-label="<?php esc_attr_e( 'Post navigation', 'lsx-demo-theme' ); ?>" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+			<!-- wp:group {"ariaLabel":"<?php esc_attr_e( 'Post navigation', 'fishing-theme' ); ?>","tagName":"nav","align":"wide","style":{"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"},"right":[],"bottom":[],"left":[]},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+			<nav class="wp-block-group alignwide" aria-label="<?php esc_attr_e( 'Post navigation', 'fishing-theme' ); ?>" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 				<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow"} /-->
 				<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /-->
 			</nav>
 			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+		<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 	</div>
 	<!-- /wp:group -->
 </main>

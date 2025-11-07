@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Right-aligned home
- * Slug: lsx-demo-theme/template-home-vertical-header-blog
+ * Slug: fishing-theme/template-home-vertical-header-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -27,12 +27,12 @@
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:pattern {"slug":"lsx-demo-theme/hidden-blog-heading"} /-->
+			<!-- wp:pattern {"slug":"fishing-theme/hidden-blog-heading"} /-->
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:pattern {"slug":"lsx-demo-theme/template-query-loop-vertical-header-blog"} /-->
+			<!-- wp:pattern {"slug":"fishing-theme/template-query-loop-vertical-header-blog"} /-->
 
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

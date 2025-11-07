@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog Post Card BFA
- * Slug: lsx-demo-theme/blog-post-card-bfa
+ * Slug: fishing-theme/blog-post-card-bfa
  * Categories: cards, posts
  */
 ?>

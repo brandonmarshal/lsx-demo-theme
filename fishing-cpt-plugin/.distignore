@@ -1,0 +1,77 @@
+# Fishing CPT Plugin - Distribution Ignore
+# Files/directories to exclude from WordPress.org plugin distribution
+
+# IMPORTANT: The build/blocks/ directory contains compiled assets and MUST be included
+# Only the source blocks/ directory should have JS/CSS excluded
+# Use leading slash (/) to match from plugin root only
+
+# Development files
+/node_modules/
+/package-lock.json
+/.git/
+/.github/
+/.gitignore
+/.gitattributes
+
+# Build configuration
+/webpack.config.js
+/package.json
+/.babelrc
+/.eslintrc*
+/.prettierrc*
+/tsconfig.json
+
+# Exclude ONLY the source blocks directory (not build/blocks/)
+# Use leading slash and patterns to prevent matching build/blocks/
+/blocks/*/index.js
+/blocks/*/style.css
+/blocks/*/editor.css
+/blocks/*/*.jsx
+/blocks/*/*.ts
+/blocks/*/*.tsx
+/blocks/*/*.scss
+
+# Testing configuration (excluded for end-users, retained in repo for CI/development)
+/tests/
+/phpunit.xml
+/phpunit.xml.dist
+/phpcs.xml.dist
+/.phpunit.result.cache
+/playwright.config.js
+/playwright.config.ts
+
+# Documentation (development/implementation docs excluded; README.md and CHANGELOG.md are included in distribution)
+/DEPENDENCY_TEST_PLAN.md
+/GOOGLE_MAPS_TESTING.md
+/IMPLEMENTATION_SUMMARY.md
+/IMPLEMENTATION-SUMMARY.md
+/IMPLEMENTATION_COMPLETE.md
+/TASK_CHECKLIST.md
+/TESTING_MATRIX.md
+# Editor configs
+/.editorconfig
+/.vscode/
+/.idea/
+/*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+._*
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp files
+*.tmp
+*.temp
+.cache/
+
+# Scripts (development only)
+/verify-multi-block.sh
+/package-test.sh

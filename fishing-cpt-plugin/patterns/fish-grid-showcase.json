@@ -1,0 +1,5 @@
+{
+    "title": "Fish Grid Showcase",
+    "categories": ["fishing"],
+    "content": "<!-- wp/query {\"query\":{\"perPage\":6,\"postType\":\"fish\",\"order\":\"desc\",\"orderBy\":\"date\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/fish-card /--><!-- /wp/post-template --></div><!-- /wp/query -->"
+}

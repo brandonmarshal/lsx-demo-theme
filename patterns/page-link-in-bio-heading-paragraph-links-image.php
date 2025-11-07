@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Link in bio heading, paragraph, links and full-height image
- * Slug: lsx-demo-theme/page-link-in-bio-heading-paragraph-links-image
- * Categories: lsx_demo_theme_page, banner, featured
+ * Slug: fishing-theme/page-link-in-bio-heading-paragraph-links-image
+ * Categories: fishing_theme_page, banner, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Viewport width: 1400
@@ -10,7 +10,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -23,25 +23,25 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 				<!-- wp:heading -->
-				<h2 class="wp-block-heading"><?php esc_html_e( 'Lewis Hine', 'lsx-demo-theme' ); ?></h2>
+				<h2 class="wp-block-heading"><?php esc_html_e( 'Lewis Hine', 'fishing-theme' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Lewis W. Hine studied sociology before moving to New York in 1901 to work at the Ethical Culture School, where he took up photography to enhance his teaching practices', 'lsx-demo-theme' ); ?></p>
+				<p><?php esc_html_e( 'Lewis W. Hine studied sociology before moving to New York in 1901 to work at the Ethical Culture School, where he took up photography to enhance his teaching practices', 'fishing-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph -->
-					<p><a href="#"><?php esc_html_e( 'Instagram', 'lsx-demo-theme' ); ?></a></p>
+					<p><a href="#"><?php esc_html_e( 'Instagram', 'fishing-theme' ); ?></a></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:paragraph -->
-					<p><a href="#"><?php echo esc_html_x( 'X', 'Refers to the social media platform formerly known as Twitter.', 'lsx-demo-theme' ); ?></a></p>
+					<p><a href="#"><?php echo esc_html_x( 'X', 'Refers to the social media platform formerly known as Twitter.', 'fishing-theme' ); ?></a></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:paragraph -->
-					<p><a href="#"><?php esc_html_e( 'TikTok', 'lsx-demo-theme' ); ?></a></p>
+					<p><a href="#"><?php esc_html_e( 'TikTok', 'fishing-theme' ); ?></a></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -54,7 +54,7 @@
 		<div class="wp-block-column">
 			<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-background.webp","alt":"Photo of a woman worker.","dimRatio":0,"customOverlayColor":"#6b6b6b","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","layout":{"type":"default"}} -->
 			<div class="wp-block-cover" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#6b6b6b"></span>
-				<img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Photo of a woman worker.', 'lsx-demo-theme' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-background.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+				<img class="wp-block-cover__image-background" alt="<?php esc_attr_e( 'Photo of a woman worker.', 'fishing-theme' ); ?>" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/link-in-bio-background.webp" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
 				<!-- wp:spacer {"height":"var:preset|spacing|20"} -->
 				<div style="height:var(--wp--preset--spacing--20)" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: home
- * Slug: lsx-demo-theme/home
+ * Slug: fishing-theme/home
  * Inserter: no
  */
 ?>

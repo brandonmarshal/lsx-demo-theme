@@ -1,0 +1,5 @@
+{
+    "title": "Gear Price Cards",
+    "categories": ["fishing"],
+    "content": "<!-- wp/query {\"query\":{\"perPage\":6,\"postType\":\"gear\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/gear-card /--><!-- /wp/post-template --></div><!-- /wp/query -->"
+}

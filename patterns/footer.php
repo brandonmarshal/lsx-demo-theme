@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Footer
- * Slug: lsx-demo-theme/footer
+ * Slug: fishing-theme/footer
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: Footer columns with logo, title, tagline and links.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -42,23 +42,23 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top","justifyContent":"space-between"}} -->
 			<div class="wp-block-group">
 				<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} -->
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'FAQs', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'FAQs', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Authors', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Authors', 'fishing-theme' ); ?>","url":"#"} /-->
 				<!-- /wp:navigation -->
 
 				<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} -->
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Events', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Events', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Shop', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Shop', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Patterns', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Patterns', 'fishing-theme' ); ?>","url":"#"} /-->
 
-					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Themes', 'lsx-demo-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Themes', 'fishing-theme' ); ?>","url":"#"} /-->
 				<!-- /wp:navigation -->
 			</div>
 				<!-- /wp:group -->
@@ -72,15 +72,15 @@
 		<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignfull">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'lsx-demo-theme', 'lsx-demo-theme' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'fishing-theme', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
 				<?php
 				printf(
 					/* translators: Designed with WordPress. %s: WordPress link. */
-					esc_html__( 'Designed with %s', 'lsx-demo-theme' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org', 'lsx-demo-theme' ) ) . '" rel="nofollow">WordPress</a>'
+					esc_html__( 'Designed with %s', 'fishing-theme' ),
+					'<a href="' . esc_url( __( 'https://wordpress.org', 'fishing-theme' ) ) . '" rel="nofollow">WordPress</a>'
 				);
 				?>
 			</p>

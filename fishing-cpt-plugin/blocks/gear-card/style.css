@@ -1,0 +1,20 @@
+.gear-card {
+    border: 1px solid var(--wp--preset--color--contrast, #333);
+    padding: 1rem;
+}
+.gear-card:focus-within {
+    outline: 2px solid var(--wp--preset--color--accent, #0069d9);
+    outline-offset: 2px;
+}
+.gear-card__title {
+    margin: 0.25rem 0 0;
+    font-size: 1.1rem;
+}
+.gear-card__meta {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+}
+.gear-card__meta li {
+    margin-bottom: 0.25rem;
+}

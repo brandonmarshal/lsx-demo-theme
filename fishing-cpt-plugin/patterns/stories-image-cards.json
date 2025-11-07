@@ -1,0 +1,5 @@
+{
+    "title": "Stories Image Cards",
+    "categories": ["fishing"],
+    "content": "<!-- wp/query {\"query\":{\"perPage\":6,\"postType\":\"stories\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/story-card /--><!-- /wp/post-template --></div><!-- /wp/query -->"
+}

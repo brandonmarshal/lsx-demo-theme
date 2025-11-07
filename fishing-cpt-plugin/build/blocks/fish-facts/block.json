@@ -1,0 +1,51 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/fish-facts",
+    "title": "Fish Quick Facts",
+    "category": "fishing",
+    "icon": "list-view",
+    "description": "Display fish quick facts from repeatable fields",
+    "keywords": ["fishing", "fish", "facts", "repeatable", "data"],
+    "textdomain": "fishing-cpt-plugin",
+    "usesContext": ["postId", "postType"],
+    "attributes": {
+        "displayStyle": {
+            "type": "string",
+            "default": "list",
+            "enum": ["list", "table", "cards"]
+        }
+    },
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "gradients": false,
+            "link": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "fontFamily": false,
+            "fontWeight": false,
+            "textDecoration": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "border": {
+            "radius": true,
+            "width": true,
+            "style": true,
+            "color": true
+        },
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php"
+}
