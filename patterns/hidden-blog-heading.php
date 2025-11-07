@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Hidden blog heading
- * Slug: lsx-demo-theme/hidden-blog-heading
+ * Slug: fishing-theme/hidden-blog-heading
  * Description: Hidden heading for the home page and index template.
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

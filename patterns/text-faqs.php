@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: FAQs
- * Slug: lsx-demo-theme/text-faqs
+ * Slug: fishing-theme/text-faqs
  * Categories: text, about
  * Keywords: faq, about, frequently asked questions
  * Viewport width: 1400

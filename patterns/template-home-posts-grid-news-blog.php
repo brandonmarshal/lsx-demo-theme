@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: News blog with featured posts grid
- * Slug: lsx-demo-theme/template-home-posts-grid-news-blog
+ * Slug: fishing-theme/template-home-posts-grid-news-blog
  * Template Types: front-page, index, home
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -131,6 +131,6 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"lsx-demo-theme/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/cta-newsletter"} /-->
 
 <!-- wp:template-part {"slug":"footer-columns"} /-->

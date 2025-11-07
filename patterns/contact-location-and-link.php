@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Contact location and link
- * Slug: lsx-demo-theme/contact-location-and-link
+ * Slug: fishing-theme/contact-location-and-link
  * Categories: contact, featured
  * Description: Contact section with a location address, a directions link, and an image of the location.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

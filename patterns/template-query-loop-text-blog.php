@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Text blog query loop
- * Slug: lsx-demo-theme/template-query-loop-text-blog
+ * Slug: fishing-theme/template-query-loop-text-blog
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

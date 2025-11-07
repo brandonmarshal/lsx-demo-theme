@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: News blog single post with sidebar
- * Slug: lsx-demo-theme/template-single-news-blog
+ * Slug: fishing-theme/template-single-news-blog
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -113,7 +113,7 @@
 			<div class="wp-block-column" style="padding-top:0;padding-bottom:0;flex-basis:65%">
 				<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
 				<div class="wp-block-group" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-					<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+					<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 				</div>
 				<!-- /wp:group -->
 			</div>

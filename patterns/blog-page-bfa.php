@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog Page BFA
- * Slug: lsx-demo-theme/blog-page-bfa
+ * Slug: fishing-theme/blog-page-bfa
  * Categories: Pages
  */
 ?>

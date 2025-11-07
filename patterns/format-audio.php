@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Audio format
- * Slug: lsx-demo-theme/format-audio
- * Categories: lsx_demo_theme_post-format
+ * Slug: fishing-theme/format-audio
+ * Categories: fishing_theme_post-format
  * Description: An audio post format with an image, title, audio player, and description.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

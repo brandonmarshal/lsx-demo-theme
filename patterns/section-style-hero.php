@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Section Style - Hero
- * Slug: lsx-demo-theme/section-style-hero
+ * Slug: fishing-theme/section-style-hero
  * Categories: banner, hero, featured
  * Keywords: hero, section, fishing, river
  * Viewport width: 1400

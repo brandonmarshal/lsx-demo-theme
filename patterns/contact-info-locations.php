@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Contact, info and locations
- * Slug: lsx-demo-theme/contact-info-locations
+ * Slug: fishing-theme/contact-info-locations
  * Keywords: contact, location
  * Categories: contact
  * Viewport width: 1400
@@ -9,7 +9,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

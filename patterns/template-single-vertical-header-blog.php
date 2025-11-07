@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Right-aligned single post
- * Slug: lsx-demo-theme/template-single-vertical-header-blog
+ * Slug: fishing-theme/template-single-vertical-header-blog
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -89,7 +89,7 @@
 		<!-- /wp:group -->
 		<!-- wp:group {"tagName":"aside","align":"wide","layout":{"type":"constrained","justifyContent":"left"},"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
 		<aside class="wp-block-group alignwide" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-			<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+			<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 		</aside>
 		<!-- /wp:group -->
 	</div>

@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Hero, full width image
- * Slug: lsx-demo-theme/hero-full-width-image
+ * Slug: fishing-theme/hero-full-width-image
  * Categories: banner
  * Description: A hero with a full width image, heading, short paragraph and button.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: CV/bio
- * Slug: lsx-demo-theme/page-cv-bio
- * Categories: lsx_demo_theme_page, about, featured
+ * Slug: fishing-theme/page-cv-bio
+ * Categories: fishing_theme_page, about, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Viewport width: 1400
@@ -10,7 +10,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

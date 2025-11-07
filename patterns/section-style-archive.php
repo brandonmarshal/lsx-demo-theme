@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Section Style - Archive Grid
- * Slug: lsx-demo-theme/section-style-archive
+ * Slug: fishing-theme/section-style-archive
  * Categories: posts, columns
  * Keywords: archive, grid, section, fishing
  * Viewport width: 1400

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Event RSVP
- * Slug: lsx-demo-theme/event-rsvp
+ * Slug: fishing-theme/event-rsvp
  * Keywords: call-to-action, rsvp, event
  * Categories: call-to-action
  * Block Types: core/post-content
@@ -10,7 +10,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

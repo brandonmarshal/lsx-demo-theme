@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Instagram grid
- * Slug: lsx-demo-theme/media-instagram-grid
+ * Slug: fishing-theme/media-instagram-grid
  * Categories: media, gallery, featured
  * Viewport width: 1440
  * Description: A grid section with photos and a link to an Instagram profile.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

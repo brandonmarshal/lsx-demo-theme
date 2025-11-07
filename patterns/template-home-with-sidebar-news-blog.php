@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: News blog with sidebar
- * Slug: lsx-demo-theme/template-home-with-sidebar-news-blog
+ * Slug: fishing-theme/template-home-with-sidebar-news-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

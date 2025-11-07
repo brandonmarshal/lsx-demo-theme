@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for podcast
- * Slug: lsx-demo-theme/page-landing-podcast
- * Categories: lsx_demo_theme_page, featured
+ * Slug: fishing-theme/page-landing-podcast
+ * Categories: fishing_theme_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,13 +11,13 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
 
-<!-- wp:pattern {"slug":"lsx-demo-theme/hero-podcast"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/heading-and-paragraph-with-image"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/logos"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/grid-videos"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/hero-podcast"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/heading-and-paragraph-with-image"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/logos"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/grid-videos"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/cta-newsletter"} /-->

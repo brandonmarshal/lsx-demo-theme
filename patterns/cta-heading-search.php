@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Heading and search form
- * Slug: lsx-demo-theme/cta-heading-search
+ * Slug: fishing-theme/cta-heading-search
  * Categories: call-to-action
  * Description: Large heading with a search form for quick navigation.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

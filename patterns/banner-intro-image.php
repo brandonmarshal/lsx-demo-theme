@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Short heading and paragraph and image on the left
- * Slug: lsx-demo-theme/banner-intro-image
+ * Slug: fishing-theme/banner-intro-image
  * Categories: banner, featured
  * Description: A Intro pattern with Short heading, paragraph and image on the left.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

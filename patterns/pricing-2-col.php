@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Pricing, 2 columns
- * Slug: lsx-demo-theme/pricing-2-col
+ * Slug: fishing-theme/pricing-2-col
  * Categories: call-to-action
  * Viewport width: 1400
  * Description: Pricing section with two columns, pricing plan, description, and call-to-action buttons.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

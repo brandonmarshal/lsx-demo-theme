@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Call to action with grid layout with products and link
- * Slug: lsx-demo-theme/cta-grid-products-link
+ * Slug: fishing-theme/cta-grid-products-link
  * Categories: call-to-action, featured
  * Viewport width: 1400
  * Description: A call to action featuring product images.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

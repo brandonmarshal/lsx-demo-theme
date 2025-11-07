@@ -1,15 +1,15 @@
 <?php
 /**
  * Title: Pricing Table, 3 columns with icons
- * Slug: lsx-demo-theme/pricing-table-3-col
- * Categories: lsx_demo_theme_pricing, call-to-action, services
+ * Slug: fishing-theme/pricing-table-3-col
+ * Categories: fishing_theme_pricing, call-to-action, services
  * Keywords: pricing, table, columns, subscription, plan, icon
  * Description: A three-column pricing table with icons, descriptions, and call-to-action buttons.
  * ViewportWidth: 1200
  *
  * @package WordPress
  * @subpackage LSX_Demo_Theme
- * @since LSX Demo Theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

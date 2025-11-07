@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Logos
- * Slug: lsx-demo-theme/logos
+ * Slug: fishing-theme/logos
  * Categories: banner
  * Description: Showcasing the podcast's clients with a heading and a series of client logos.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

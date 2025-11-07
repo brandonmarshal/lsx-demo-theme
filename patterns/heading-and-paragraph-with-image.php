@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Heading and paragraph with image on the right
- * Slug: lsx-demo-theme/heading-and-paragraph-with-image
+ * Slug: fishing-theme/heading-and-paragraph-with-image
  * Categories: about
  * Description: A two-column section with a heading and paragraph on the left, and an image on the right.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

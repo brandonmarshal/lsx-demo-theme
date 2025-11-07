@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Section Style - Gallery
- * Slug: lsx-demo-theme/section-style-gallery
+ * Slug: fishing-theme/section-style-gallery
  * Categories: gallery, featured
  * Keywords: gallery, section, fishing, images
  * Viewport width: 1400

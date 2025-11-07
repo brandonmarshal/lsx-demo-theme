@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Centered link and social links
- * Slug: lsx-demo-theme/contact-centered-social-link
+ * Slug: fishing-theme/contact-centered-social-link
  * Keywords: contact, faq, questions
  * Categories: contact
  * Description: Centered contact section with a prominent message and social media links.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Centered heading
- * Slug: lsx-demo-theme/cta-centered-heading
+ * Slug: fishing-theme/cta-centered-heading
  * Categories: call-to-action
  * Description: A hero with a centered heading, paragraph and button.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

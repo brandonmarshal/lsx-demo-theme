@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Pricing, 3 columns
- * Slug: lsx-demo-theme/pricing-3-col
+ * Slug: fishing-theme/pricing-3-col
  * Categories: call-to-action, banner, services
  * Description: A three-column boxed pricing table designed to showcase services, descriptions, and pricing options.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

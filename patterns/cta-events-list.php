@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Events list
- * Slug: lsx-demo-theme/cta-events-list
+ * Slug: fishing-theme/cta-events-list
  * Categories: call-to-action
  * Description: A list of events with call to action.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

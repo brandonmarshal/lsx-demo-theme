@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Photo blog posts
- * Slug: lsx-demo-theme/template-query-loop-photo-blog
+ * Slug: fishing-theme/template-query-loop-photo-blog
  * Categories: query
  * Block Types: core/query
  * Viewport width: 1400
@@ -9,7 +9,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

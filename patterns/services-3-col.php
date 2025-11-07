@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Services, 3 columns
- * Slug: lsx-demo-theme/services-3-col
+ * Slug: fishing-theme/services-3-col
  * Categories: call-to-action, banner, services
  * Description: Three columns with images and text to showcase services.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

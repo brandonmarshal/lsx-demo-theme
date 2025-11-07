@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Centered footer
- * Slug: lsx-demo-theme/footer-centered
+ * Slug: fishing-theme/footer-centered
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: Footer with centered site title and tagline.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Poster-like section
- * Slug: lsx-demo-theme/banner-poster
+ * Slug: fishing-theme/banner-poster
  * Categories: banner, media
  * Description: A section that can be used as a banner or a landing page to announce an event.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

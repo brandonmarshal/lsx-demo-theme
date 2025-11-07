@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Events, 3 columns with event images and titles
- * Slug: lsx-demo-theme/event-3-col
+ * Slug: fishing-theme/event-3-col
  * Categories: banner
  * Description: A header with title and text and three columns that show 3 events with their images and titles.
  * Keywords: events, columns, images
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

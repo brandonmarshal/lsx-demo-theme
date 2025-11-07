@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: hero-light-bfa
- * Slug: lsx-demo-theme/hero-light-bfa
+ * Slug: fishing-theme/hero-light-bfa
  * Categories: Hero
  */
 ?>

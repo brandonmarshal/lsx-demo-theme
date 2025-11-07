@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Event schedule
- * Slug: lsx-demo-theme/event-schedule
+ * Slug: fishing-theme/event-schedule
  * Categories: about
  * Description: A section with specified dates and times for an event.
  * Keywords: events, agenda, schedule, lectures
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

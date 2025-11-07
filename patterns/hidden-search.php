@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Search
- * Slug: lsx-demo-theme/hidden-search
+ * Slug: fishing-theme/hidden-search
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

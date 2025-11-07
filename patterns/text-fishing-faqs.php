@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Fishing FAQs
- * Slug: lsx-demo-theme/text-fishing-faqs
- * Categories: text, about, lsx_demo_theme_fish
+ * Slug: fishing-theme/text-fishing-faqs
+ * Categories: text, about, fishing_theme_fish
  * Keywords: faq, about, frequently asked questions, fishing, contact
  * Viewport width: 1400
  * Description: A FAQs section with fishing-specific questions and answers for the contact page.

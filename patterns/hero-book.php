@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Hero book
- * Slug: lsx-demo-theme/hero-book
+ * Slug: fishing-theme/hero-book
  * Categories: banner
  * Keywords: podcast, hero, stories
  * Description: A hero section for the book with a description and pre-order link.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

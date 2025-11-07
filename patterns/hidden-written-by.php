@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Written by
- * Slug: lsx-demo-theme/hidden-written-by
+ * Slug: fishing-theme/hidden-written-by
  * Inserter: no
  *
  * @package    WordPress

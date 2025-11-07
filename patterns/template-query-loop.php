@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: List of posts, 1 column
- * Slug: lsx-demo-theme/template-query-loop
+ * Slug: fishing-theme/template-query-loop
  * Categories: query
  * Block Types: core/query
  * Description: A list of posts, 1 column, with featured image and post date.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

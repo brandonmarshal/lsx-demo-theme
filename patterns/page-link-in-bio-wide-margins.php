@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Link in bio with profile, links and wide margins
- * Slug: lsx-demo-theme/page-link-in-bio-wide-margins
- * Categories: lsx_demo_theme_page, banner, featured
+ * Slug: fishing-theme/page-link-in-bio-wide-margins
+ * Categories: fishing_theme_page, banner, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Viewport width: 1400
@@ -10,7 +10,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

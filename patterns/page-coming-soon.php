@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Coming soon
- * Slug: lsx-demo-theme/page-coming-soon
- * Categories: lsx_demo_theme_page, featured
+ * Slug: fishing-theme/page-coming-soon
+ * Categories: fishing_theme_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,7 +11,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

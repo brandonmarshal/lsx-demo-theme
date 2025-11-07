@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: 2 columns with avatar
- * Slug: lsx-demo-theme/testimonials-2-col
+ * Slug: fishing-theme/testimonials-2-col
  * Keywords: testimonial
  * Categories: testimonials
  * Description: Two columns with testimonials and avatars.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

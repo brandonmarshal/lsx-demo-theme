@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: 404
- * Slug: lsx-demo-theme/hidden-404
+ * Slug: fishing-theme/hidden-404
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -35,7 +35,7 @@
 				<!-- wp:paragraph -->
 				<p><?php echo esc_html_x( 'The page you are looking for doesn\'t exist, or it has been moved. Please try searching using the form below.', '404 error message', 'fishing-theme' ); ?></p>
 				<!-- /wp:paragraph -->
-				<!-- wp:pattern {"slug":"lsx-demo-theme/hidden-search"} /-->
+				<!-- wp:pattern {"slug":"fishing-theme/hidden-search"} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>

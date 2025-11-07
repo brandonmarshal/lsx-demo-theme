@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Header with large title
- * Slug: lsx-demo-theme/header-large-title
+ * Slug: fishing-theme/header-large-title
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Site header with large site title and right-aligned navigation.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

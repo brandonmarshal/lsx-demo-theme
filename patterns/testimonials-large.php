@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Review with large image on right
- * Slug: lsx-demo-theme/testimonials-large
+ * Slug: fishing-theme/testimonials-large
  * Keywords: testimonial
  * Categories: testimonials
  * Description: A testimonial with a large image on the right.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

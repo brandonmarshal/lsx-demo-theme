@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Footer
- * Slug: lsx-demo-theme/footer
+ * Slug: fishing-theme/footer
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: Footer columns with logo, title, tagline and links.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Vertical site header
- * Slug: lsx-demo-theme/vertical-header
+ * Slug: fishing-theme/vertical-header
  * Categories: header
  * Block Types: core/template-part/vertical-header
  * Description: Vertical site header with site title and navigation.
@@ -9,7 +9,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

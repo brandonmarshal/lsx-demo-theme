@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Call to action with locations
- * Slug: lsx-demo-theme/cta-book-locations
+ * Slug: fishing-theme/cta-book-locations
  * Categories: call-to-action
  * Description: A call to action section with links to get the book in the most popular locations.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

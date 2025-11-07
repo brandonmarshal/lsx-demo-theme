@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Comments
- * Slug: lsx-demo-theme/comments
+ * Slug: fishing-theme/comments
  * Description: Comments area with comments list, pagination, and comment form.
  * Categories: text
  * Block Types: core/comments
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

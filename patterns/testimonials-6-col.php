@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: 3 column layout with 6 testimonials
- * Slug: lsx-demo-theme/testimonials-6-col
+ * Slug: fishing-theme/testimonials-6-col
  * Keywords: testimonial
  * Categories: testimonials
  * Description: A section with three columns and two rows, each containing a testimonial and citation.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

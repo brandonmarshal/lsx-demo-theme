@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Text blog single post
- * Slug: lsx-demo-theme/template-single-text-blog
+ * Slug: fishing-theme/template-single-text-blog
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -41,7 +41,7 @@
 			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
-		<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+		<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 	</div>
 	<!-- /wp:group -->
 </main>

@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Cover with big heading
- * Slug: lsx-demo-theme/banner-cover-big-heading
+ * Slug: fishing-theme/banner-cover-big-heading
  * Categories: banner, about, featured
  * Description: A full-width cover section with a large background image and an oversized heading.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

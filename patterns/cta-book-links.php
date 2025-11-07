@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Call to action with book links
- * Slug: lsx-demo-theme/cta-book-links
+ * Slug: fishing-theme/cta-book-links
  * Categories: call-to-action
  * Description: A call to action section with links to get the book in different websites.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

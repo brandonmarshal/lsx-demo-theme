@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Newsletter sign-up
- * Slug: lsx-demo-theme/cta-newsletter
+ * Slug: fishing-theme/cta-newsletter
  * Keywords: call-to-action, newsletter
  * Categories: call-to-action
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

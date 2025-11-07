@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Link in bio with tight margins
- * Slug: lsx-demo-theme/page-link-in-bio-with-tight-margins
- * Categories: lsx_demo_theme_page, banner
+ * Slug: fishing-theme/page-link-in-bio-with-tight-margins
+ * Categories: fishing_theme_page, banner
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,7 +11,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

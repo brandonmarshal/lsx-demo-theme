@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Overlapping images and paragraph on right
- * Slug: lsx-demo-theme/overlapped-images
+ * Slug: fishing-theme/overlapped-images
  * Categories: about, featured
  * Description: A section with overlapping images, and a description.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

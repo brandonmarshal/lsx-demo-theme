@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Blog Post Card Ollie
- * Slug: lsx-demo-theme/blog-post-card-ollie
+ * Slug: fishing-theme/blog-post-card-ollie
  * Categories: Cards, Posts
  */
 ?>

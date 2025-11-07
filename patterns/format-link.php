@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Link format
- * Slug: lsx-demo-theme/format-link
- * Categories: lsx_demo_theme_post-format
+ * Slug: fishing-theme/format-link
+ * Categories: fishing_theme_post-format
  * Description: A link post format with a description and an emphasized link for key content.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

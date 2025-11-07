@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Banner with description and images grid
- * Slug: lsx-demo-theme/banner-description-images-grid
+ * Slug: fishing-theme/banner-description-images-grid
  * Categories: banner, featured
  * Description: A banner with a short paragraph, and two images displayed in a grid layout.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

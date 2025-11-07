@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Hero, overlapped book cover with links
- * Slug: lsx-demo-theme/hero-overlapped-book-cover-with-links
+ * Slug: fishing-theme/hero-overlapped-book-cover-with-links
  * Categories: banner
  * Description: A hero with an overlapped book cover and links.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

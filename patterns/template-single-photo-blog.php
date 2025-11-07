@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Photo blog single post
- * Slug: lsx-demo-theme/template-single-photo-blog
+ * Slug: fishing-theme/template-single-photo-blog
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -89,7 +89,7 @@
 
 	<!-- wp:group {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+		<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 	</div>
 	<!-- /wp:group -->
 </main>

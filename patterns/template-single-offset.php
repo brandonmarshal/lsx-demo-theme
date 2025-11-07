@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Offset post without featured image
- * Slug: lsx-demo-theme/template-single-offset
+ * Slug: fishing-theme/template-single-offset
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -80,7 +80,7 @@
 			<!-- /wp:column -->
 			<!-- wp:column {"width":"70%","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
 			<div class="wp-block-column" style="padding-top:0;padding-bottom:0;flex-basis:70%">
-				<!-- wp:pattern {"slug":"lsx-demo-theme/comments"} /-->
+				<!-- wp:pattern {"slug":"fishing-theme/comments"} /-->
 			</div>
 			<!-- /wp:column -->
 		</div>
