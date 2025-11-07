@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Mobile Menu BFA
- * Slug: lsx-demo-theme/mobile-menu-bfa
+ * Slug: fishing-theme/mobile-menu-bfa
  * Categories: menu
  */
 ?>

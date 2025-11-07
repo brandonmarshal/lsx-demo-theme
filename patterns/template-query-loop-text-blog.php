@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Text blog query loop
- * Slug: lsx-demo-theme/template-query-loop-text-blog
+ * Slug: fishing-theme/template-query-loop-text-blog
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -16,7 +16,7 @@
 	<div class="wp-block-group">
 		<!-- wp:query-no-results {"align":"wide","fontSize":"medium"} -->
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

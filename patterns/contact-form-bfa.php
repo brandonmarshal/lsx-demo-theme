@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: contact form bfa
- * Slug: lsx-demo-theme/contact-form-bfa
+ * Slug: fishing-theme/contact-form-bfa
  * Categories: Contact
  *
  * NOTE: This pattern requires the Gravity Forms plugin to be installed and activated.

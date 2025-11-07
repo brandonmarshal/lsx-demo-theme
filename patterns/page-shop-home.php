@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Shop homepage
- * Slug: lsx-demo-theme/page-shop-home
- * Categories: lsx_demo_theme_page
+ * Slug: fishing-theme/page-shop-home
+ * Categories: fishing_theme_page
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -11,11 +11,11 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
 
-<!-- wp:pattern {"slug":"lsx-demo-theme/banner-intro-image"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/grid-with-categories"} /-->
-<!-- wp:pattern {"slug":"lsx-demo-theme/media-instagram-grid"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/banner-intro-image"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/grid-with-categories"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/media-instagram-grid"} /-->

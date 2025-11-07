@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Intro with left-aligned description
- * Slug: lsx-demo-theme/banner-intro
+ * Slug: fishing-theme/banner-intro
  * Categories: banner
  * Description: A large left-aligned heading with a brand name emphasized in bold.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -18,8 +18,8 @@
 		<?php
 			printf(
 				/* translators: %s is the brand name, e.g., 'Fleurs'. */
-				esc_html_x( 'We\'re %s, our mission is to deliver exquisite flower arrangements that not only adorn living spaces but also inspire a deeper appreciation for natural beauty.', 'Pattern placeholder text.', 'lsx-demo-theme' ),
-				'<strong>' . esc_html_x( 'Fleurs', 'Example brand name.', 'lsx-demo-theme' ) . '</strong>'
+				esc_html_x( 'We\'re %s, our mission is to deliver exquisite flower arrangements that not only adorn living spaces but also inspire a deeper appreciation for natural beauty.', 'Pattern placeholder text.', 'fishing-theme' ),
+				'<strong>' . esc_html_x( 'Fleurs', 'Example brand name.', 'fishing-theme' ) . '</strong>'
 			);
 			?>
 	</h2>

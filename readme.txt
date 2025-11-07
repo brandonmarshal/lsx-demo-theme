@@ -1,9 +1,9 @@
-== lsx-demo-theme ==
+== Fishing Theme ==
 
-Contributors: 
+Contributors: lightspeedwp
 Requires at least: 6.8
 Tested up to: 6.8
-Requires PHP: 5.7
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,8 +16,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Copyright ==
 
-lsx-demo-theme WordPress Theme, (C) 2025 
-lsx-demo-theme is distributed under the terms of the GNU GPL.
+Fishing Theme WordPress Theme, (C) 2025 LightSpeedWP
+Fishing Theme is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -30,5 +30,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
-lsx-demo-theme is based on Twenty Twenty-Five (https://wordpress.org/themes/twentytwentyfive/), (C) the WordPress team, [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
+Fishing Theme is based on Twenty Twenty-Five (https://wordpress.org/themes/twentytwentyfive/), (C) the WordPress team, [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 

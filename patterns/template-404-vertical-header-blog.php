@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Right-aligned 404
- * Slug: lsx-demo-theme/template-404-vertical-header-blog
+ * Slug: fishing-theme/template-404-vertical-header-blog
  * Template Types: 404
  * Viewport width: 1400
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -26,7 +26,7 @@
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:pattern {"slug":"lsx-demo-theme/hidden-404"} /-->
+			<!-- wp:pattern {"slug":"fishing-theme/hidden-404"} /-->
 
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

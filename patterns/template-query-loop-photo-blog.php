@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Photo blog posts
- * Slug: lsx-demo-theme/template-query-loop-photo-blog
+ * Slug: fishing-theme/template-query-loop-photo-blog
  * Categories: query
  * Block Types: core/query
  * Viewport width: 1400
@@ -9,7 +9,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -19,7 +19,7 @@
 		<div class="wp-block-group">
 		<!-- wp:query-no-results -->
 		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center"><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+		<p class="has-text-align-center"><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

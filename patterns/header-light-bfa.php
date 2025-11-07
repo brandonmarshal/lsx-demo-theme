@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Light BFA
- * Slug: lsx-demo-theme/header-light-bfa
+ * Slug: fishing-theme/header-light-bfa
  * Categories: Headers
  */
 ?>

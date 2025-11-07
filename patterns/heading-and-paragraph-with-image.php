@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: Heading and paragraph with image on the right
- * Slug: lsx-demo-theme/heading-and-paragraph-with-image
+ * Slug: fishing-theme/heading-and-paragraph-with-image
  * Categories: about
  * Description: A two-column section with a heading and paragraph on the left, and an image on the right.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -20,11 +20,11 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
 			<!-- wp:heading {"className":"wp-block-heading"} -->
 			<h2 class="wp-block-heading">
-				<?php esc_html_e( 'About the event', 'lsx-demo-theme' ); ?>
+				<?php esc_html_e( 'About the event', 'fishing-theme' ); ?>
 			</h2>
 			<!-- /wp:heading -->
 			<!-- wp:paragraph {"fontSize":"medium"} -->
-			<p class="has-medium-font-size"><?php echo esc_html_x( 'Held over a weekend, the event is structured around a series of exhibitions, workshops, and panel discussions. The exhibitions showcase a curated selection of photographs that tell compelling stories from various corners of the globe, each image accompanied by detailed narratives that provide context and deeper insight into the historical significance of the scenes depicted. These photographs are drawn from the archives of renowned photographers, as well as emerging talents, ensuring a blend of both classical and contemporary perspectives.', 'Event Overview Text.', 'lsx-demo-theme' ); ?></p>
+			<p class="has-medium-font-size"><?php echo esc_html_x( 'Held over a weekend, the event is structured around a series of exhibitions, workshops, and panel discussions. The exhibitions showcase a curated selection of photographs that tell compelling stories from various corners of the globe, each image accompanied by detailed narratives that provide context and deeper insight into the historical significance of the scenes depicted. These photographs are drawn from the archives of renowned photographers, as well as emerging talents, ensuring a blend of both classical and contemporary perspectives.', 'Event Overview Text.', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
@@ -33,7 +33,7 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
 			<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full"} -->
 			<figure class="wp-block-image size-full">
-				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ruins-image.webp' ); ?>" alt="<?php echo esc_attr_x( 'Cliff Palace, Colorado', 'Alt text for Overview picture.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/>
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/ruins-image.webp' ); ?>" alt="<?php echo esc_attr_x( 'Cliff Palace, Colorado', 'Alt text for Overview picture.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/>
 			</figure>
 			<!-- /wp:image -->
 		</div>

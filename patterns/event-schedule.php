@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Event schedule
- * Slug: lsx-demo-theme/event-schedule
+ * Slug: fishing-theme/event-schedule
  * Categories: about
  * Description: A section with specified dates and times for an event.
  * Keywords: events, agenda, schedule, lectures
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -17,10 +17,10 @@
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"fontSize":"xx-large"} -->
-		<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Agenda', 'lsx-demo-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Agenda', 'fishing-theme' ); ?></h2>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'These are some of the upcoming events.', 'lsx-demo-theme' ); ?></p>
+		<p><?php esc_html_e( 'These are some of the upcoming events.', 'fishing-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
 		<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
@@ -32,7 +32,7 @@
 				<!-- wp:column {"verticalAlignment":"top","width":"40%"} -->
 				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:40%">
 					<!-- wp:heading {"level":3} -->
-					<h3 class="wp-block-heading"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
@@ -43,7 +43,7 @@
 						<!-- wp:column {"width":"33.33%"} -->
 						<div class="wp-block-column" style="flex-basis:33.33%">
 							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"270px"}}} -->
-							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/marshland-birds-square.webp" alt="<?php esc_attr_e( 'Birds on a lake.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/marshland-birds-square.webp" alt="<?php esc_attr_e( 'Birds on a lake.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:column -->
@@ -54,15 +54,15 @@
 								<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 								<div class="wp-block-group">
 									<!-- wp:heading {"level":4} -->
-									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Fauna from North America and its characteristics', 'lsx-demo-theme' ); ?></a></h4>
+									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Fauna from North America and its characteristics', 'fishing-theme' ); ?></a></h4>
 									<!-- /wp:heading -->
 									<!-- wp:paragraph -->
-									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'lsx-demo-theme' ); ?></p>
+									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'fishing-theme' ); ?></p>
 									<!-- /wp:paragraph -->
 								</div>
 								<!-- /wp:group -->
 								<!-- wp:paragraph {"fontSize":"small"} -->
-								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'lsx-demo-theme' ) ); ?></p>
+								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'fishing-theme' ) ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -75,7 +75,7 @@
 						<!-- wp:column {"width":"33.33%"} -->
 						<div class="wp-block-column" style="flex-basis:33.33%">
 							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"270px"}}} -->
-							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coral-square.webp" alt="<?php esc_attr_e( 'View of the deep ocean.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coral-square.webp" alt="<?php esc_attr_e( 'View of the deep ocean.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:column -->
@@ -86,15 +86,15 @@
 								<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 								<div class="wp-block-group">
 									<!-- wp:heading {"level":4} -->
-									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Things you didn’t know about the deep ocean', 'lsx-demo-theme' ); ?></a></h4>
+									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Things you didn’t know about the deep ocean', 'fishing-theme' ); ?></a></h4>
 									<!-- /wp:heading -->
 									<!-- wp:paragraph -->
-									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'lsx-demo-theme' ); ?></p>
+									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'fishing-theme' ); ?></p>
 									<!-- /wp:paragraph -->
 								</div>
 								<!-- /wp:group -->
 								<!-- wp:paragraph {"fontSize":"small"} -->
-								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'lsx-demo-theme' ) ); ?></p>
+								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'fishing-theme' ) ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -118,7 +118,7 @@
 				<!-- wp:column {"verticalAlignment":"top","width":"40%"} -->
 				<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:40%">
 					<!-- wp:heading {"level":3} -->
-					<h3 class="wp-block-heading"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'lsx-demo-theme' ); ?></h3>
+					<h3 class="wp-block-heading"><?php echo esc_html_x( 'Mon, Jan 1', 'Example event date in pattern.', 'fishing-theme' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:column -->
@@ -129,7 +129,7 @@
 						<!-- wp:column {"width":"33.33%"} -->
 						<div class="wp-block-column" style="flex-basis:33.33%">
 							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"270px"}}} -->
-							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/parthenon-square.webp" alt="<?php esc_attr_e( 'The Acropolis of Athens.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/parthenon-square.webp" alt="<?php esc_attr_e( 'The Acropolis of Athens.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:column -->
@@ -139,15 +139,15 @@
 								<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 								<div class="wp-block-group">
 									<!-- wp:heading {"level":4} -->
-									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Ancient buildings and symbols', 'lsx-demo-theme' ); ?></a></h4>
+									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'Ancient buildings and symbols', 'fishing-theme' ); ?></a></h4>
 									<!-- /wp:heading -->
 									<!-- wp:paragraph -->
-									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'lsx-demo-theme' ); ?></p>
+									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'fishing-theme' ); ?></p>
 									<!-- /wp:paragraph -->
 								</div>
 								<!-- /wp:group -->
 								<!-- wp:paragraph {"fontSize":"small"} -->
-								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'lsx-demo-theme' ) ); ?></p>
+								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'fishing-theme' ) ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -160,7 +160,7 @@
 						<!-- wp:column {"width":"33.33%"} -->
 						<div class="wp-block-column" style="flex-basis:33.33%">
 							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"270px"}}} -->
-							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/agenda-img-4.webp" alt="<?php esc_attr_e( 'Black and white photo of an African woman.', 'lsx-demo-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
+							<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/agenda-img-4.webp" alt="<?php esc_attr_e( 'Black and white photo of an African woman.', 'fishing-theme' ); ?>" style="aspect-ratio:1;object-fit:cover"/></figure>
 							<!-- /wp:image -->
 						</div>
 						<!-- /wp:column -->
@@ -171,15 +171,15 @@
 								<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 								<div class="wp-block-group">
 									<!-- wp:heading {"level":4} -->
-									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'An introduction to African dialects', 'lsx-demo-theme' ); ?></a></h4>
+									<h4 class="wp-block-heading"><a href="#"><?php esc_html_e( 'An introduction to African dialects', 'fishing-theme' ); ?></a></h4>
 									<!-- /wp:heading -->
 									<!-- wp:paragraph -->
-									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'lsx-demo-theme' ); ?></p>
+									<p><?php echo esc_html_x( '9 AM — 11 AM', 'Example event time in pattern.', 'fishing-theme' ); ?></p>
 									<!-- /wp:paragraph -->
 								</div>
 								<!-- /wp:group -->
 								<!-- wp:paragraph {"fontSize":"small"} -->
-								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'lsx-demo-theme' ) ); ?></p>
+								<p class="has-small-font-size"><?php echo wp_kses_post( _x( 'Lecture by <a href="#">Prof. Fiona Presley</a>', 'Pattern placeholder text with link.', 'fishing-theme' ) ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->

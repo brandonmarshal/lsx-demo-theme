@@ -1,6 +1,6 @@
 # Block Patterns Directory
 
-This directory contains WordPress block patterns for the LSX Demo Theme, following LightSpeed and WordPress development standards.
+This directory contains WordPress block patterns for the Fishing Theme, following LightSpeed and WordPress development standards.
 
 ## Pattern Categories
 

@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: News blog with featured posts grid
- * Slug: lsx-demo-theme/template-home-posts-grid-news-blog
+ * Slug: fishing-theme/template-home-posts-grid-news-blog
  * Template Types: front-page, index, home
  * Inserter: no
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>
@@ -31,8 +31,8 @@
 				<!-- /wp:group -->
 			<!-- /wp:post-template -->
 			<!-- wp:query-no-results -->
-				<!-- wp:paragraph {"align":"center","placeholder":"<?php esc_attr_e( 'Add text or blocks that will display when a query returns no results.', 'lsx-demo-theme' ); ?>"} -->
-				<p class="has-text-align-center"><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+				<!-- wp:paragraph {"align":"center","placeholder":"<?php esc_attr_e( 'Add text or blocks that will display when a query returns no results.', 'fishing-theme' ); ?>"} -->
+				<p class="has-text-align-center"><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			<!-- /wp:query-no-results -->
 		</div>
@@ -57,7 +57,7 @@
 				<!-- /wp:post-template -->
 				<!-- wp:query-no-results -->
 				<!-- wp:paragraph -->
-				<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+				<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- /wp:query-no-results -->
 			</div>
@@ -75,7 +75,7 @@
 				<!-- /wp:post-template -->
 				<!-- wp:query-no-results -->
 				<!-- wp:paragraph -->
-				<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+				<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- /wp:query-no-results -->
 			</div>
@@ -100,7 +100,7 @@
 			<!-- /wp:post-template -->
 			<!-- wp:query-no-results -->
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'lsx-demo-theme' ); ?></p>
+			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'fishing-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- /wp:query-no-results -->
 		</div>
@@ -111,7 +111,7 @@
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 		<!-- wp:heading {"align":"wide"} -->
-		<h2 class="wp-block-heading alignwide"><?php esc_html_e( 'Architecture', 'lsx-demo-theme' ); ?></h2>
+		<h2 class="wp-block-heading alignwide"><?php esc_html_e( 'Architecture', 'fishing-theme' ); ?></h2>
 		<!-- /wp:heading -->
 		<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":"6","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]},"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-query alignwide">
@@ -131,6 +131,6 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"lsx-demo-theme/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"fishing-theme/cta-newsletter"} /-->
 
 <!-- wp:template-part {"slug":"footer-columns"} /-->

@@ -1,6 +1,6 @@
 {
     "_documentation": {
-        "description": "LSX Demo Theme - npm Configuration for WordPress Block Theme Development",
+        "description": "Fishing Theme - npm Configuration for WordPress Block Theme Development",
         "purpose": "Manages modern build tools, linting, and testing for WordPress FSE themes",
         "workflow": {
             "development": "npm start - Hot reload development server with @wordpress/scripts",
@@ -15,9 +15,9 @@
             "standards": "WordPress ESLint and Stylelint configurations for code quality"
         }
     },
-    "name": "lsx-demo-theme",
+    "name": "fishing-theme",
     "version": "1.0.0",
-    "description": "A modern WordPress block theme with Full Site Editing capabilities",
+    "description": "A modern WordPress block theme for fishing and outdoor adventure websites with Full Site Editing capabilities",
     "scripts": {
         "start": "wp-scripts start",
         "build": "wp-scripts build",
@@ -43,6 +43,6 @@
     "browserslist": [
         "extends @wordpress/browserslist-config"
     ],
-    "author": "LightSpeed",
+    "author": "LightSpeedWP",
     "license": "GPL-2.0-or-later"
 }

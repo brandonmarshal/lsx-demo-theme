@@ -3,7 +3,7 @@
 /**
  * Taxonomy registrations for Brandon's Fishing Adventures.
  *
- * @package lsx-demo-theme
+ * @package Fishing_Theme
  * @since 1.0.0
  */
 
@@ -22,8 +22,8 @@ if (! function_exists('bfa_register_taxonomies')) {
 			array('fish'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Species', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Species', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Species', 'taxonomy general name', 'fishing-theme'),
+					'singular_name' => _x('Species', 'taxonomy singular name', 'fishing-theme'),
 				),
 				'hierarchical' => true,
 				'show_ui'      => true,
@@ -39,8 +39,8 @@ if (! function_exists('bfa_register_taxonomies')) {
 			array('fish'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Habitats', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Habitat', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Habitats', 'taxonomy general name', 'fishing-theme'),
+					'singular_name' => _x('Habitat', 'taxonomy singular name', 'fishing-theme'),
 				),
 				'hierarchical' => true,
 				'show_ui'      => true,
@@ -56,8 +56,8 @@ if (! function_exists('bfa_register_taxonomies')) {
 			array('fish'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Seasons', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Season', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Seasons', 'taxonomy general name', 'fishing-theme'),
+					'singular_name' => _x('Season', 'taxonomy singular name', 'fishing-theme'),
 				),
 				'hierarchical' => false,
 				'show_ui'      => true,
@@ -73,8 +73,8 @@ if (! function_exists('bfa_register_taxonomies')) {
 			array('gear'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Gear Types', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Gear Type', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Gear Types', 'taxonomy general name', 'fishing-theme'),
+					'singular_name' => _x('Gear Type', 'taxonomy singular name', 'fishing-theme'),
 				),
 				'hierarchical' => true,
 				'show_ui'      => true,
@@ -90,8 +90,8 @@ if (! function_exists('bfa_register_taxonomies')) {
 			array('area'),
 			array(
 				'labels'       => array(
-					'name'          => _x('Area Categories', 'taxonomy general name', 'lsx-demo-theme'),
-					'singular_name' => _x('Area Category', 'taxonomy singular name', 'lsx-demo-theme'),
+					'name'          => _x('Area Categories', 'taxonomy general name', 'fishing-theme'),
+					'singular_name' => _x('Area Category', 'taxonomy singular name', 'fishing-theme'),
 				),
 				'hierarchical' => true,
 				'show_ui'      => true,

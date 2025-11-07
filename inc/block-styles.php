@@ -6,7 +6,7 @@
  * These styles enable customizable background, padding, and typography options
  * for homepage and archive sections.
  *
- * @package lsx-demo-theme
+ * @package Fishing_Theme
  * @since 1.0.0
  */
 
@@ -26,13 +26,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-function lsx_demo_theme_register_fishing_section_styles() {
+function fishing_theme_register_fishing_section_styles() {
 	// Register fishing hero section style for core/group.
 	register_block_style(
 		'core/group',
 		array(
 			'name'  => 'fishing-hero',
-			'label' => __( 'Fishing Hero Section', 'lsx-demo-theme' ),
+			'label' => __( 'Fishing Hero Section', 'fishing-theme' ),
 		)
 	);
 
@@ -41,7 +41,7 @@ function lsx_demo_theme_register_fishing_section_styles() {
 		'core/group',
 		array(
 			'name'  => 'fishing-gallery-section',
-			'label' => __( 'Gallery Section', 'lsx-demo-theme' ),
+			'label' => __( 'Gallery Section', 'fishing-theme' ),
 		)
 	);
 
@@ -50,8 +50,8 @@ function lsx_demo_theme_register_fishing_section_styles() {
 		'core/columns',
 		array(
 			'name'  => 'fishing-archive-grid',
-			'label' => __( 'Archive Grid Layout', 'lsx-demo-theme' ),
+			'label' => __( 'Archive Grid Layout', 'fishing-theme' ),
 		)
 	);
 }
-add_action( 'init', 'lsx_demo_theme_register_fishing_section_styles' );
+add_action( 'init', 'fishing_theme_register_fishing_section_styles' );

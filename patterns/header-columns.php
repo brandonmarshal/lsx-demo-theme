@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Header with columns
- * Slug: lsx-demo-theme/header-columns
+ * Slug: fishing-theme/header-columns
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Site header with site title and navigation in columns.
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since lsx-demo-theme 1.0
+ * @since Fishing Theme 1.0
  */
 
 ?>

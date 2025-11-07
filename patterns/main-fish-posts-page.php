@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: main-fish-posts-page
- * Slug: lsx-demo-theme/main-fish-posts-page
+ * Slug: fishing-theme/main-fish-posts-page
  * Categories: fish
  */
 ?>

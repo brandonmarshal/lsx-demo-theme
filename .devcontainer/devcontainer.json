@@ -2,7 +2,7 @@
   "name": "LSX Demo Theme Development",
   "dockerComposeFile": "docker-compose.yml",
   "service": "wordpress",
-  "workspaceFolder": "/var/www/html/wp-content/themes/lsx-demo-theme",
+  "workspaceFolder": "/var/www/html/wp-content/themes/fishing-theme",
   "forwardPorts": [8080, 3306],
   "remoteUser": "www-data",
   "customizations": {
