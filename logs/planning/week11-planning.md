@@ -26,14 +26,17 @@
 
 -   [ ] **Build & Package Plugin via WP Scripts**
     -   [ ] Resolve [#91](https://github.com/brandonmarshal/lsx-demo-theme/issues/91): Build & Package Plugin via WP Scripts
--   [ ] **Final GitHub Issue Actions**
-    -   [ ] Address any remaining checklist tasks and close out all referenced issues if not completed Monday
-    -   [ ] Self-review: assure documentation and code updates per LightSpeedWP coding standards
+-   [ ] **SASS/SCSS Research & Test**
+    -   [ ] Read up on SASS/SCSS and create something simple to test if it works
 -   [ ] **Learning**
     -   [ ] Continue Ollie Block Theme Academy (Day 2)
 
 ### Wednesday (2025-11-12)
 
+-   [ ] **GitHub Issue Review & Closure (Part 1)**
+    -   [ ] Validate completion, review and close:
+        -   [ ] [EPIC] WordPress Block Theme Plugin – Phase 2: Automation, Release, and Long-Term Compliance ([#110](https://github.com/brandonmarshal/lsx-demo-theme/issues/110))
+        -   [ ] Unify Namespaces and Codebase Metadata ([#93](https://github.com/brandonmarshal/lsx-demo-theme/issues/93))
 -   [ ] **Design & UI**
     -   [ ] Finish mobile menu design ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211847567462273?focus=true))
 -   [ ] **Testing & QA Prep**
@@ -43,6 +46,10 @@
 
 ### Thursday (2025-11-13)
 
+-   [ ] **GitHub Issue Review & Closure (Part 2)**
+    -   [ ] Validate completion, review and close:
+        -   [ ] Documentation & Repo Structure Overhaul ([#94](https://github.com/brandonmarshal/lsx-demo-theme/issues/94))
+        -   [ ] WordPress.org Submission—Final Standards & QA Sweep ([#95](https://github.com/brandonmarshal/lsx-demo-theme/issues/95))
 -   [ ] **Plugin Quality Assurance**
     -   [ ] Test the packaged plugin after build ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211862340619421))
     -   [ ] Document testing process and results for future release QA
@@ -65,13 +72,13 @@
 
 ## **Distribution of Key Tasks Across the Week**
 
-| Day       | Task(s)                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------- |
-| Monday    | Close out major GitHub Issues (#110, #93, #94, #95), Begin Ollie Block Theme Academy                          |
-| Tuesday   | Build & Package Plugin via WP Scripts (#91), Issue closure, documentation, Continue Ollie Block Theme Academy |
-| Wednesday | Finish mobile menu design, Package plugin zip for testing, Continue Ollie Block Theme Academy                 |
-| Thursday  | Test plugin after build, Intern project checklist, Continue Ollie Block Theme Academy                         |
-| Friday    | Affiliate integration, Reporting, planning next phase, Complete Ollie Block Theme Academy module              |
+| Day       | Task(s)                                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Monday    | Begin Ollie Block Theme Academy                                                                                                          |
+| Tuesday   | Build & Package Plugin via WP Scripts (#91), SASS/SCSS research & test, Continue Ollie Block Theme Academy                               |
+| Wednesday | GitHub Issue Review & Closure (#110, #93), Finish mobile menu design, Package plugin zip for testing, Continue Ollie Block Theme Academy |
+| Thursday  | GitHub Issue Review & Closure (#94, #95), Test plugin after build, Intern project checklist, Continue Ollie Block Theme Academy          |
+| Friday    | Affiliate integration, Reporting, planning next phase, Complete Ollie Block Theme Academy module                                         |
 
 -   Ollie Block Theme Academy is embedded as a daily learning focus.
 -   Initial week prioritized for issue closure, second half for design, packaging, QA, and integration.
