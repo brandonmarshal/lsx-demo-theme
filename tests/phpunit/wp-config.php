@@ -7,6 +7,9 @@
 
 // Test with WordPress debug mode on
 define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'SCRIPT_DEBUG', true );
+define( 'WP_DEVELOPMENT_MODE', true );
 
 // Disable direct file access
 define( 'ABSPATH', true );
