@@ -1,4 +1,4 @@
-# Week 11, Day 1 Log 2025-11-10
+# Week 11, Day 2 Log 2025-11-11
 
 ## Today's Progress
 
