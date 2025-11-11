@@ -52,7 +52,7 @@
 					"slug": "burnt-orange"
 				},
 				{
-					"color": "#6B7C3A",
+					"color": "#5d6630",
 					"name": "Olive Deep",
 					"slug": "olive-deep"
 				}
@@ -276,6 +276,58 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/columns": {
+				"variations": {
+					"fishing-archive-grid": {
+						"spacing": {
+							"blockGap": {
+								"left": "var(--wp--preset--spacing--spacing-50)",
+								"top": "var(--wp--preset--spacing--spacing-60)"
+							},
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-70)",
+								"top": "var(--wp--preset--spacing--spacing-70)"
+							}
+						}
+					}
+				}
+			},
+			"core/group": {
+				"variations": {
+					"fishing-gallery-section": {
+						"color": {
+							"background": "var(--wp--preset--color--surface)",
+							"text": "var(--wp--preset--color--text)"
+						},
+						"spacing": {
+							"blockGap": "var(--wp--preset--spacing--spacing-60)",
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-85)",
+								"left": "var(--wp--preset--spacing--spacing-50)",
+								"right": "var(--wp--preset--spacing--spacing-50)",
+								"top": "var(--wp--preset--spacing--spacing-85)"
+							}
+						}
+					},
+					"fishing-hero": {
+						"color": {
+							"background": "var(--wp--preset--color--river-blue)",
+							"text": "#ffffff"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-95)",
+								"left": "var(--wp--preset--spacing--spacing-60)",
+								"right": "var(--wp--preset--spacing--spacing-60)",
+								"top": "var(--wp--preset--spacing--spacing-95)"
+							}
+						},
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--lead)"
+						}
+					}
+				}
+			},
 			"core/paragraph": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body)"
@@ -289,58 +341,6 @@
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--spacing-70)",
 						"top": "var(--wp--preset--spacing--spacing-70)"
-					}
-				}
-			},
-			"core/group": {
-				"variations": {
-					"fishing-hero": {
-						"color": {
-							"background": "var(--wp--preset--color--river-blue)",
-							"text": "#ffffff"
-						},
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-95)",
-								"bottom": "var(--wp--preset--spacing--spacing-95)",
-								"left": "var(--wp--preset--spacing--spacing-60)",
-								"right": "var(--wp--preset--spacing--spacing-60)"
-							}
-						},
-						"typography": {
-							"fontSize": "var(--wp--preset--font-size--lead)"
-						}
-					},
-					"fishing-gallery-section": {
-						"color": {
-							"background": "var(--wp--preset--color--surface)",
-							"text": "var(--wp--preset--color--text)"
-						},
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-85)",
-								"bottom": "var(--wp--preset--spacing--spacing-85)",
-								"left": "var(--wp--preset--spacing--spacing-50)",
-								"right": "var(--wp--preset--spacing--spacing-50)"
-							},
-							"blockGap": "var(--wp--preset--spacing--spacing-60)"
-						}
-					}
-				}
-			},
-			"core/columns": {
-				"variations": {
-					"fishing-archive-grid": {
-						"spacing": {
-							"blockGap": {
-								"top": "var(--wp--preset--spacing--spacing-60)",
-								"left": "var(--wp--preset--spacing--spacing-50)"
-							},
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-70)",
-								"bottom": "var(--wp--preset--spacing--spacing-70)"
-							}
-						}
 					}
 				}
 			}
@@ -358,7 +358,7 @@
 					}
 				},
 				"color": {
-					"background": "#f6ac4e",
+					"background": "var(--wp--preset--color--muted)",
 					"text": "#ffffff"
 				},
 				"typography": {
