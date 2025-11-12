@@ -5,25 +5,21 @@
  * Inserter: no
  */
 ?>
-<!-- wp:template-part {"slug":"main-header-light","area":"uncategorized"} /-->
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png","dimRatio":40,"overlayColor":"neutral-900","isUserOverlayColor":true,"minHeight":480,"contentPosition":"center center","sizeSlug":"large","metadata":{"categories":["banner","hero","featured"],"patternName":"bfa/home-hero","name":"Home Hero (Fishing Adventures)"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);min-height:480px"><img class="wp-block-cover__image-background size-large" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-neutral-900-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"2.7rem"}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png","dimRatio":50,"overlayColor":"neutral-900","isUserOverlayColor":true,"minHeight":480,"contentPosition":"center center","sizeSlug":"large","metadata":{"categories":["banner","hero","featured"],"patternName":"bfa/home-hero","name":"Home Hero (Fishing Adventures)"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-cover" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);min-height:480px"><img class="wp-block-cover__image-background size-large" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/blogs-background-1024x683.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-neutral-900-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"2.7rem"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"3rem"}}} -->
-<h2 class="wp-block-heading has-text-align-center" style="font-size:3rem">Unforgettable Fishing Adventures</h2>
+<h2 class="wp-block-heading has-text-align-center" style="font-size:3rem"><strong>Brandon's Fishing Adventures</strong></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"align":"center","fontSize":"h3"} -->
-<p class="has-text-align-center has-h-3-font-size">Check out some interesting information I gathered about fish species and gear.</p>
-<!-- /wp:paragraph -->
-
 <!-- wp:buttons {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"muted","textColor":"text","className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-muted-background-color has-text-color has-background wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=209">Fish Species</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"surface","textColor":"text","className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-color has-surface-background-color has-text-color has-background wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=209"><strong>Fish Species</strong></a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=334">Gear</a></div>
+<!-- wp:button {"backgroundColor":"surface","textColor":"heading","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|heading"}}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-heading-color has-surface-background-color has-text-color has-background has-link-color wp-element-button" href="http://brandonlightspeedwpdev.local/?page_id=334"><strong>Gear</strong></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
@@ -33,19 +29,19 @@
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
 
-<!-- wp:group {"metadata":{"categories":["posts","posts"],"patternName":"bfa/home-recent-reports","name":"Recent Trip Reports"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center"} -->
+<!-- wp:group {"metadata":{"categories":["posts","posts"],"patternName":"bfa/home-recent-reports","name":"Recent Trip Reports"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|spacing-85","bottom":"var:preset|spacing|spacing-85","left":"var:preset|spacing|spacing-85","right":"var:preset|spacing|spacing-85"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--spacing-85);padding-right:var(--wp--preset--spacing--spacing-85);padding-bottom:var(--wp--preset--spacing--spacing-85);padding-left:var(--wp--preset--spacing--spacing-85)"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Recent Catches &amp; Stories</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"queryId":17,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date","inherit":false},"layout":{"type":"constrained","contentSize":""}} -->
+<!-- wp:query {"queryId":17,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date","inherit":false},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"wp-block-group bfa-report-card","layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <!-- wp:group {"style":{"border":{"radius":"5px","width":"1px"},"spacing":{"padding":{"left":"7px","right":"7px","top":"7px","bottom":"7px"},"margin":{"top":"40px","bottom":"40px"}},"dimensions":{"minHeight":""},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface","borderColor":"primary","layout":{"type":"default"}} -->
-<div class="wp-block-group has-border-color has-primary-border-color has-surface-background-color has-background" style="border-width:1px;border-radius:5px;margin-top:40px;margin-bottom:40px;padding-top:7px;padding-right:7px;padding-bottom:7px;padding-left:7px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-featured-image {"isLink":true,"height":"180px","style":{"border":{"radius":"5px"}}} /-->
+<div class="wp-block-group has-border-color has-primary-border-color has-surface-background-color has-background" style="border-width:1px;border-radius:5px;margin-top:40px;margin-bottom:40px;padding-top:7px;padding-right:7px;padding-bottom:7px;padding-left:7px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"auto","width":"","height":"400px","dimRatio":20,"style":{"border":{"radius":"5px"},"shadow":"var:preset|shadow|natural"}} /-->
 
-<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|heading"},":hover":{"color":{"text":"var:preset|color|primary"}}}}}} /-->
 
-<!-- wp:post-excerpt {"moreText":"Read Report","excerptLength":18} /--></div>
+<!-- wp:post-excerpt {"moreText":"Read Report","excerptLength":18,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"},":hover":{"color":{"text":"var:preset|color|heading"}}}}},"textColor":"heading"} /--></div>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
@@ -56,9 +52,64 @@
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query -->
 
-<!-- wp:paragraph {"align":"center","className":"has-small-font-size"} -->
+<!-- wp:paragraph {"align":"center","className":"has-small-font-size","style":{"elements":{"link":{":hover":{"color":{"text":"#012975"}}}}}} -->
 <p class="has-text-align-center has-small-font-size"><a href="http://brandonlightspeedwpdev.local/blog/">View All Trip Reports →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer-main","area":"uncategorized"} /-->
+<!-- wp:group {"metadata":{"categories":["footer"],"patternName":"fishing-theme/footer","name":"Footer"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50"}},"elements":{"link":{"color":{"text":"var:preset|color|heading"}}}},"backgroundColor":"surface","textColor":"heading","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-heading-color has-surface-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:site-logo /-->
+
+<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+<div class="wp-block-group alignfull"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"100%"} -->
+<div class="wp-block-column" style="flex-basis:100%"><!-- wp:site-title {"level":2} /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":""} -->
+<div class="wp-block-column"><!-- wp:spacer {"height":"var:preset|spacing|40","width":"0px"} -->
+<div style="height:var(--wp--preset--spacing--40);width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"top","justifyContent":"space-between"}} -->
+<div class="wp-block-group"><!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} -->
+<!-- wp:navigation-link {"label":"Blog","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"About","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"FAQs","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"Authors","url":"#"} /-->
+<!-- /wp:navigation -->
+
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} -->
+<!-- wp:navigation-link {"label":"Events","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"Shop","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"Patterns","url":"#"} /-->
+
+<!-- wp:navigation-link {"label":"Themes","url":"#"} /-->
+<!-- /wp:navigation --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"var:preset|spacing|70"} -->
+<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignfull"><!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">© 2025 Brandon's Fishing Adventure. All rights reserved.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">
+				Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>			</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
