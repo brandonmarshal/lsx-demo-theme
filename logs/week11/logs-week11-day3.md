@@ -9,6 +9,9 @@
 -   I used accessibility checker to test the colour combination and it passes.
 -   I have edited my header and footer templates as well.
 -   I got AI to create me a lighter variant of my logo for dark backgrounds
+-   I have been fixing some templates that had errors, such as 404, archive-all, search results, page-no-title
+-   Added all pages to Navigation and adjusted global theme colours for better accessibility.
+-   Started working on the about page and will continue further after lunch. 
 
 ### How do you feel about today's progress?
 
@@ -18,11 +21,12 @@
 
 -   0.5 hrs – Short catchup with Ash
 -   2.0 hrs - Editing my themes style for better accessibility.
+-   2.0 hrs - Fixing templates with errors, re-do single-fish template, added all pages to nav, adjusted theme colours for better accessibility
+-   0.5 hrs - Started changes on about page, inluding looking for actual photos of my trips.  
 
 ---
 
 ## Notes
 
--   I appreciate the feedback from Ash, it points me in the right direction and I can see things I am doing wrong and need to improve on.
--   It took me some time to do this, there are some settings on the site editor that I am still not 100% sure how to use, I consistently learn better understanding of the settings as I use them and practice on my site. Prompting with AI also really helps.
--   These changes I have made on the site are all on the local still, I need to still push the last 2 changes to Github Development branch.
+-   I am liking the new colour scheme a lot more, luckily it was already a style that existed in my theme, it just needed slight adjustments.
+-   As I continue to edit templates that need fixing I will adjust colour where needed. 
