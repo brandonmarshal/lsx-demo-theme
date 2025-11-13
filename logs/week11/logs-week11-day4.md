@@ -9,6 +9,7 @@
 -   Tried to fix the conflicts on my PR to sync my REPO with the UPSTREAM but I am struggling as I need to resolve them with the command line instead of in the Web Editor. - #114
 -   Started 'SEO For Beginners' course on yoast - [Course link]([url](https://academy.yoast.com/lessons/what-is-seo/))
 -   I watched the videos and did the quizzes that followed
+-   Understanding and implementing the Claude and Gemini Agents.
 
   
 ### What I learnt
@@ -33,6 +34,7 @@
 -   2.0 hrs – Going through tasks and assigning tags and projects, also grouping all tasks.
 -   1.75 hrs - Trying to resolve the merge conflicts on my SYNC Pull Request.
 -   1.5 hrs - Started "SEO For Beginners" course on Yoast
+-   1.0 hrs - Understanding and implementing the Claude and Gemini Agents. 
 
 ---
 
