@@ -7,6 +7,22 @@
 -   I have spent time to organise my asana tasks as they were a mess.
 -   I added tags, projects and grouped all my tasks for better navigation and tracking.
 -   Tried to fix the conflicts on my PR to sync my REPO with the UPSTREAM but I am struggling as I need to resolve them with the command line instead of in the Web Editor. - #114
+-   Started 'SEO For Beginners' course on yoast - [Course link]([url](https://academy.yoast.com/lessons/what-is-seo/))
+-   I watched the videos and did the quizzes that followed
+
+  
+### What I learnt
+
+-  SEO is basically the process of making your website show up higher on Google so more people can find it easily.
+-  How to ensure holistic SEO:
+-    User Experience
+-    Mobile friendliness
+-    Page speed
+-    Quality content
+-    Keywords
+-    Image optimisation
+-    Internal Links
+
 
 ### How do you feel about today's progress?
 
@@ -15,7 +31,8 @@
 ## Time Logs
 
 -   2.0 hrs – Going through tasks and assigning tags and projects, also grouping all tasks.
--   1.75 hrs - Trying to resolve the merge conflicts on my SYNC Pull Request. 
+-   1.75 hrs - Trying to resolve the merge conflicts on my SYNC Pull Request.
+-   1.5 hrs - Started "SEO For Beginners" course on Yoast
 
 ---
 
