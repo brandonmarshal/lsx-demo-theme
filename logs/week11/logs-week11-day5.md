@@ -18,7 +18,11 @@
 -   General updates to my site like
 -   adding padding in certain areas
 -   changing designs of some images
--   adjusting text colours and link colour where they are needed for better accessibility. 
+-   adjusting text colours and link colour where they are needed for better accessibility.
+-   My colour scheme for some reason reset, so I had to go back and apply previous revisions to recover as much as possible, I had to re-do my single-fish again as well as edit my gear and fish species page templates.
+-   I also looked through some of the suggested fixes from my Yoast plugin and that is giving me some good insight to where I need to improve my site.
+-   Had a short catchup with Barbs.
+-   I am still going through and learning how to properly use the Yoast SEO, but there is a course they offer that I will definitely do to get a full understanding. 
 
 ### How do you feel about today's progress?
 
@@ -28,7 +32,10 @@
 
 -   2.0 hrs – Todays SEO Study session.
 -   1.0 hrs - Reading up on FacetWP and how to install it, also installed Yoast and navigated through the settings.
--   1.5 hrs - Editing my site on the FSE to improve areas that needed improvement. 
+-   1.5 hrs - Editing my site on the FSE to improve areas that needed improvement.
+-   1.0 hrs - Loading previous revision and editing templates again because it did not save.
+-   1.0 hrs - Going through some suggested fixes from the Yoast plugin. 
+-   0.25 hrs - Catchup with Barbs.
 
 ---
 
