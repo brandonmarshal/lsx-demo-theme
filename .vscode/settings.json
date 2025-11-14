@@ -34,7 +34,7 @@
     },
     "files.exclude": {
         "**/node_modules": true,
-        "**/logs": true,
+        "**/logs": false,
         "**/.DS_Store": true,
         "**/vendor": true,
         "**/*.map": true
