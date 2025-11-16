@@ -303,11 +303,11 @@
 			"link": {
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--heading)"
+						"text": "#3897f0"
 					}
 				},
 				"color": {
-					"text": "#1193d3"
+					"text": "#2240eb"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)",
