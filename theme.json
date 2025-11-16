@@ -7,13 +7,13 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#231809",
-					"name": "Background Brown",
+					"color": "#0E2003",
+					"name": "Forest Night",
 					"slug": "background"
 				},
 				{
-					"color": "#3f290d",
-					"name": "Surface Brown",
+					"color": "#21382C",
+					"name": "Forest Surface",
 					"slug": "surface"
 				},
 				{
@@ -27,34 +27,19 @@
 					"slug": "heading"
 				},
 				{
-					"color": "#f6ac4e",
-					"name": "Primary (Amber)",
+					"color": "#e0ff45",
+					"name": "Primary Lime",
 					"slug": "primary"
 				},
 				{
-					"color": "#95672C",
-					"name": "Muted Brown",
+					"color": "#55620a",
+					"name": "Muted Olive",
 					"slug": "muted"
 				},
 				{
-					"color": "#316C88",
-					"name": "Accent Blue",
+					"color": "#88d1ab",
+					"name": "Accent Mint",
 					"slug": "accent"
-				},
-				{
-					"color": "#3A6B68",
-					"name": "River Blue",
-					"slug": "river-blue"
-				},
-				{
-					"color": "#E58F5C",
-					"name": "Burnt Orange",
-					"slug": "burnt-orange"
-				},
-				{
-					"color": "#6B7C3A",
-					"name": "Olive Deep",
-					"slug": "olive-deep"
 				}
 			]
 		},
@@ -152,78 +137,7 @@
 		"typography": {
 			"defaultFontSizes": false,
 			"fluid": true,
-			"fontFamilies": [
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Abel",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/abel/abel-400-normal.woff2"
-							]
-						}
-					],
-					"fontFamily": "Abel, sans-serif",
-					"name": "Abel",
-					"slug": "abel"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-400-normal.woff2"
-							]
-						},
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "normal",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-500-normal.woff2"
-							]
-						},
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "normal",
-							"fontWeight": "900",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-900-normal.woff2"
-							]
-						},
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-400-italic.woff2"
-							]
-						},
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "italic",
-							"fontWeight": "500",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-500-italic.woff2"
-							]
-						},
-						{
-							"fontFamily": "Raleway",
-							"fontStyle": "italic",
-							"fontWeight": "900",
-							"src": [
-								"file:./assets/fonts/raleway/raleway-900-italic.woff2"
-							]
-						}
-					],
-					"fontFamily": "Raleway, sans-serif",
-					"name": "Raleway",
-					"slug": "raleway"
-				}
-			],
+			"fontFamilies": [],
 			"fontSizes": [
 				{
 					"name": "Small",
@@ -276,6 +190,58 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/columns": {
+				"variations": {
+					"fishing-archive-grid": {
+						"spacing": {
+							"blockGap": {
+								"left": "var(--wp--preset--spacing--spacing-50)",
+								"top": "var(--wp--preset--spacing--spacing-60)"
+							},
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-70)",
+								"top": "var(--wp--preset--spacing--spacing-70)"
+							}
+						}
+					}
+				}
+			},
+			"core/group": {
+				"variations": {
+					"fishing-gallery-section": {
+						"color": {
+							"background": "var(--wp--preset--color--surface)",
+							"text": "var(--wp--preset--color--text)"
+						},
+						"spacing": {
+							"blockGap": "var(--wp--preset--spacing--spacing-60)",
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-85)",
+								"left": "var(--wp--preset--spacing--spacing-50)",
+								"right": "var(--wp--preset--spacing--spacing-50)",
+								"top": "var(--wp--preset--spacing--spacing-85)"
+							}
+						}
+					},
+					"fishing-hero": {
+						"color": {
+							"background": "var(--wp--preset--color--river-blue)",
+							"text": "#ffffff"
+						},
+						"spacing": {
+							"padding": {
+								"bottom": "var(--wp--preset--spacing--spacing-95)",
+								"left": "var(--wp--preset--spacing--spacing-60)",
+								"right": "var(--wp--preset--spacing--spacing-60)",
+								"top": "var(--wp--preset--spacing--spacing-95)"
+							}
+						},
+						"typography": {
+							"fontSize": "var(--wp--preset--font-size--lead)"
+						}
+					}
+				}
+			},
 			"core/paragraph": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body)"
@@ -291,63 +257,11 @@
 						"top": "var(--wp--preset--spacing--spacing-70)"
 					}
 				}
-			},
-			"core/group": {
-				"variations": {
-					"fishing-hero": {
-						"color": {
-							"background": "var(--wp--preset--color--river-blue)",
-							"text": "#ffffff"
-						},
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-95)",
-								"bottom": "var(--wp--preset--spacing--spacing-95)",
-								"left": "var(--wp--preset--spacing--spacing-60)",
-								"right": "var(--wp--preset--spacing--spacing-60)"
-							}
-						},
-						"typography": {
-							"fontSize": "var(--wp--preset--font-size--lead)"
-						}
-					},
-					"fishing-gallery-section": {
-						"color": {
-							"background": "var(--wp--preset--color--surface)",
-							"text": "var(--wp--preset--color--text)"
-						},
-						"spacing": {
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-85)",
-								"bottom": "var(--wp--preset--spacing--spacing-85)",
-								"left": "var(--wp--preset--spacing--spacing-50)",
-								"right": "var(--wp--preset--spacing--spacing-50)"
-							},
-							"blockGap": "var(--wp--preset--spacing--spacing-60)"
-						}
-					}
-				}
-			},
-			"core/columns": {
-				"variations": {
-					"fishing-archive-grid": {
-						"spacing": {
-							"blockGap": {
-								"top": "var(--wp--preset--spacing--spacing-60)",
-								"left": "var(--wp--preset--spacing--spacing-50)"
-							},
-							"padding": {
-								"top": "var(--wp--preset--spacing--spacing-70)",
-								"bottom": "var(--wp--preset--spacing--spacing-70)"
-							}
-						}
-					}
-				}
 			}
 		},
 		"color": {
-			"background": "#231809",
-			"text": "#ebf2f4"
+			"background": "var(--wp--preset--color--text)",
+			"text": "var(--wp--preset--color--background)"
 		},
 		"elements": {
 			"button": {
@@ -358,21 +272,26 @@
 					}
 				},
 				"color": {
-					"background": "#f6ac4e",
-					"text": "#ffffff"
+					"background": "var(--wp--preset--color--surface)",
+					"text": "var(--wp--preset--color--heading)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)"
 				}
 			},
+			"h1": {
+				"color": {
+					"text": "var(--wp--preset--color--background)"
+				}
+			},
 			"h2": {
 				"color": {
-					"text": "var(--wp--preset--color--primary)"
+					"text": "var(--wp--preset--color--background)"
 				}
 			},
 			"heading": {
 				"color": {
-					"text": "var(--wp--preset--color--primary)"
+					"text": "var(--wp--preset--color--background)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)",
@@ -384,11 +303,11 @@
 			"link": {
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--muted)"
+						"text": "#3897f0"
 					}
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary)"
+					"text": "#2240eb"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--raleway)",
