@@ -35,6 +35,34 @@ if (! function_exists('fishing_theme_enqueue_styles')) :
 endif;
 add_action('wp_enqueue_scripts', 'fishing_theme_enqueue_styles');
 
+// Enqueue webpack built assets
+function fishing_theme_enqueue_webpack_assets()
+{
+	$asset_path = get_template_directory() . '/build/';
+	$style_file = 'style-index.css';
+	$script_file = 'index.js';
+
+	if (file_exists($asset_path . $style_file)) {
+		wp_enqueue_style(
+			'fishing-theme-main',
+			get_template_directory_uri() . '/build/' . $style_file,
+			array(),
+			filemtime($asset_path . $style_file)
+		);
+	}
+
+	if (file_exists($asset_path . $script_file)) {
+		wp_enqueue_script(
+			'fishing-theme-main',
+			get_template_directory_uri() . '/build/' . $script_file,
+			array(),
+			filemtime($asset_path . $script_file),
+			true
+		);
+	}
+}
+add_action('wp_enqueue_scripts', 'fishing_theme_enqueue_webpack_assets');
+
 // Registers custom block styles.
 if (! function_exists('fishing_theme_block_styles')) :
 	function fishing_theme_block_styles()
