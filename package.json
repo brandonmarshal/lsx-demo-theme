@@ -36,7 +36,7 @@
         "@wordpress/scripts": "31.0.0",
         "autoprefixer": "^10.4.14",
         "css-loader": "7.1.2",
-        "hint": "2.0.0",
+        "hint": "7.1.13",
         "mini-css-extract-plugin": "2.9.4",
         "postcss": "8.5.6",
         "postcss-cli": "^10.1.0",
