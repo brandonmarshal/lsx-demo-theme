@@ -15,6 +15,7 @@
 -   Refactored my weekly planning - https://github.com/brandonmarshal/lsx-demo-theme/blob/main/logs/planning/week12-planning.md
 -   Added tasks that were mentioned and discussed in the meeting with Ash
 -   Used the Fireflies to help me update the planning correctly - https://app.fireflies.ai/view/oug-rsns-qfk::01KA8PPXESMMF66Y64QF2PA29M
+-   I have completed the webpack implementation and all the required testing. (Build Test, Watch Mode Test, Manual Test)
 
 ### How do you feel about today's progress?
 
@@ -27,7 +28,8 @@
 -   2.0 hrs - Completed my SEO for Beginners Course.
 -   0.5 hrs - Creating plan for meeting.
 -   0.5 hrs - Catchup with Ash.
--   1.0 hrs - Refactoring Planning to include everything Ash discussed with me. 
+-   1.0 hrs - Refactoring Planning to include everything Ash discussed with me.
+-   1.5 hrs - Completed the webpack implementation and testing. 
 
 ---
 
@@ -35,4 +37,5 @@
 
 -   I am starting to understand the dependencies more clearly and how they work.
 -   I can definitely learn a lot more about these dependencies and how they all work together for better site performance.
--   I need to refactor my planning for this week. 
+-   I need to refactor my planning for this week.
+-   I feel this practical experience of implementing webpack has really helped me understand the process, but I will definitely still need to read more of the provided docs to understand. 
