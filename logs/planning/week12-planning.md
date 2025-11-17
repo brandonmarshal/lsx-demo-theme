@@ -24,6 +24,8 @@
 -   [ ] BugHerd Tasks
 -   [ ] Alternative page template ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907181207950))
 -   [x] Yoast SEO course (Day 1)
+-   [x] Implement Webpack
+-   [x] Implement SASS/SCSS loaders
 
 ### Tuesday (2025-11-18)
 
