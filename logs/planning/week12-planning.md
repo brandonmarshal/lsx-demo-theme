@@ -2,90 +2,67 @@
 
 ## Weekly Goals
 
--   [ ] **Goal 1**: Complete Yoast SEO course (progressive study all week)
+-   [x] **Goal 1**: Complete Yoast SEO course
 -   [ ] **Goal 2**: Resolve and close all high-priority BugHerd tasks
 -   [ ] **Goal 3**: Complete key Asana tasks (see below)
+-   [ ] **Goal 4**: Conduct continuous testing and quality assurance for all new interfaces during development, not delaying until project end
+-   [ ] Refactor plugin development plan to incorporate correct copilot usage with branch-based prompting and merging
+-   [ ] Immediately address namespace and naming convention consistency at the start of plugin work
+-   [ ] Implement build and package process for plugin using WP scripts and fully test the build
+-   [ ] Conduct continuous testing and quality assurance for all new interfaces during development, not delaying until project end
+-   [ ] Complete basic SCSS and Sass integration with webpack, ensuring compilation works for both JS and SCSS styles
+-   [ ] Update and track issue statuses on GitHub, adding comments and moving tasks to review when ready
+-   [ ] Prioritize completion of critical website sections, including all custom post types, archive templates, blog pages, index, and a custom 404 page
+-   [ ] Set up local WordPress environments to test and verify all theme functionality including Light Speeds LSX demo theme
+-   [ ] Extend use of AI tools for workspace-specific questions to gain insights on theme and plugin code quality
+-   [ ] Provide an ambitious, definitive work plan and deliverables commitment by Friday
 
 ## Key Tasks
 
 ### Monday (2025-11-17)
 
--   [ ] **BugHerd Tasks**
-    -   [ ] BugHerd Task 1
-    -   [ ] BugHerd Task 2
-    -   [ ] BugHerd Task 3
-        -   [ ] Alternative page template ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907181207950))
-        -   [ ] Yoast SEO course (Day 1)
+-   [ ] BugHerd Tasks
+-   [ ] Alternative page template ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907181207950))
+-   [x] Yoast SEO course (Day 1)
 
 ### Tuesday (2025-11-18)
 
--   [ ] **BugHerd Tasks**
-    -   [ ] BugHerd Task 4
-    -   [ ] BugHerd Task 5
-    -   [ ] BugHerd Task 6
-        -   [ ] Improve archive and single pages with custom fields ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589441))
-        -   [ ] Yoast SEO course (Day 2)
+-   [ ] BugHerd Tasks
+-   [ ] Learn about changes in WP 6.9 RC1.
+-   [ ] Test WP 6.9 RC1 and implement all features to my site ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211963428600813))
+-   [ ] Refactor plugin development plan to incorporate correct copilot usage with branch-based prompting and merging
+-   [ ] Immediately address namespace and naming convention consistency at the start of plugin work
+-   [ ] Implement build and package process for plugin using WP scripts and fully test the build
 
 ### Wednesday (2025-11-19)
 
--   [ ] **BugHerd Tasks**
-    -   [ ] BugHerd Task 7
-    -   [ ] BugHerd Task 8
-    -   [ ] BugHerd Task 9
-        -   [ ] Complete the about page changes ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589439))
-        -   [ ] Yoast SEO course (Day 3)
+-   [ ] BugHerd Tasks
+-   [ ] Improve archive and single pages with custom fields ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589441))
+-   [ ] Learn how to use Section Styles ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211963425314044))
+-   [ ] Complete basic SCSS and Sass integration with webpack, ensuring compilation works for both JS and SCSS styles
 
 ### Thursday (2025-11-20)
 
--   [ ] **BugHerd Tasks**
-    -   [ ] BugHerd Task 10
-    -   [ ] BugHerd Task 11
-    -   [ ] BugHerd Task 12
-        -   [ ] Add FacetWP block-based filters ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589440?focus=true))
-        -   [ ] Yoast SEO course (Day 4)
+-   [ ] BugHerd Tasks
+-   [ ] Complete the about page changes ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589439))
+-   [ ] Add FacetWP block-based filters ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614080?focus=true))
+-   [ ] Prioritize completion of critical website sections, including all custom post types, archive templates, blog pages, index, and a custom 404 page
+-   [ ] Set up local WordPress environments to test and verify all theme functionality including Light Speeds LSX demo theme
 
 ### Friday (2025-11-21)
 
--   [ ] **BugHerd Tasks**
-    -   [ ] BugHerd Task 13
-    -   [ ] BugHerd Task 14
-    -   [ ] BugHerd Task 15
-        -   [ ] Final review of week’s deliverables; update Asana and BugHerd for reporting and hand-off
-        -   [ ] Prepare next phase planning and assess any open items requiring next week’s attention
-        -   [ ] Yoast SEO course (Day 5)
-
----
-
-## **Distribution of Key Tasks Across the Week**
-
-| Day       | Task(s)                                                                                              |
-| --------- | ---------------------------------------------------------------------------------------------------- |
-| Monday    | BugHerd Tasks 1-3, Alternative page template (Asana), Yoast SEO course (Day 1)                       |
-| Tuesday   | BugHerd Tasks 4-6, Improve archive/single pages with custom fields (Asana), Yoast SEO course (Day 2) |
-| Wednesday | BugHerd Tasks 7-9, Complete about page changes (Asana), Yoast SEO course (Day 3)                     |
-| Thursday  | BugHerd Tasks 10-12, Add FacetWP block-based filters (Asana), Yoast SEO course (Day 4)               |
-| Friday    | BugHerd Tasks 13-15, Weekly wrap-up/reporting/planning, Yoast SEO course (Day 5)                     |
-
--   Yoast SEO course is embedded as a daily learning focus.
--   BugHerd tasks are prioritized for resolution each day, with Asana tasks distributed for steady progress.
-
----
-
-## Priorities
-
--   **High Priority**
-    -   BugHerd task resolution and closure
-    -   Daily Yoast SEO course study and application
--   **Medium Priority**
-    -   Completion of key Asana tasks (see daily breakdown)
--   **Supporting Tasks**
-    -   Documentation of key steps taken in Asana and BugHerd
-    -   Maintain code and documentation in line with LightSpeedWP standards
-    -   Prepare next week’s roadmap by end of Friday
+-   [ ] BugHerd Tasks
+-   [ ] Final review of week’s deliverables; update Asana and BugHerd for reporting and hand-off
+-   [ ] Prepare next phase planning and assess any open items requiring next week’s attention
+-   [ ] Do weekly reflections and planning for the next week.
+-   [ ] Extend use of AI tools for workspace-specific questions to gain insights on theme and plugin code quality
+-   [ ] Provide an ambitious, definitive work plan and deliverables commitment by Friday
 
 ## Learning Goals
 
 -   **Yoast SEO Mastery**: Complete and apply learnings from the course
+-   Understand WP6.9 RC1 Features and implement them.
+-   Understnad how to use section styles.
 -   **BugHerd Task Management**: Efficiently resolve and document all assigned tasks
 -   **Asana Task Progression**: Complete and document all key Asana tasks
 
