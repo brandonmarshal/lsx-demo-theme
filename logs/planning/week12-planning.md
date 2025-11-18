@@ -39,6 +39,10 @@
 ### Wednesday (2025-11-19)
 
 -   [ ] BugHerd Tasks
+-   [ ] Troubleshoot FacetWP error
+-   [ ] Refactor plugin development plan to incorporate correct copilot usage with branch-based prompting and merging
+-   [ ] Immediately address namespace and naming convention consistency at the start of plugin work
+-   [ ] Implement build and package process for plugin using WP scripts and fully test the build
 -   [ ] Improve archive and single pages with custom fields ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589441))
 -   [ ] Learn how to use Section Styles ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211963425314044))
 -   [ ] Complete basic SCSS and Sass integration with webpack, ensuring compilation works for both JS and SCSS styles
