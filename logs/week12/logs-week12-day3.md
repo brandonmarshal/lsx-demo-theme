@@ -11,7 +11,8 @@
 -   I moved on to the Namespacing ISSUE for my plugin. Copilot is reviewing and suggesting where the namespacing needs to be unified.
 -   I have refactored my plugin to unify namespacing among ALL the files in my plugin.
 -   I had to do some auditing on packages that had ISSUES. 
--   I have tested the npm build and it runs successfully. Now for other testing. 
+-   I have tested the npm build and it runs successfully. Now for other testing.
+-   I created a testing zip file for my plugin and began testing on a fresh wordpress site. 
 
 ## Time Logs
 
@@ -19,7 +20,9 @@
 -   1.0 hrs - Designed a simple Species Archive with a query loop post cards
 -   1.0 hrs - Troublehooting why Facet and SCF are not working together.
 -   1.0 hrs - Started working on my "Unify Namespaces" task for plugin.
--   2.5 hrs - Refactoring namespaces on my plugin and began testing. 
+-   2.5 hrs - Refactoring namespaces on my plugin and began testing.
+-   1.0 hrs - continued with testing and built a zip file for manual tests.
+-   1.0 hrs - Attempted to troubleshoot the HTTP ERROR 500 cause by my plugin.
 
 ---
 
@@ -27,3 +30,4 @@
 
 - I currently have copilot running and reviewing my plugin to let me know where the namespaces need to be unified.
 - I am having lunch now and when I am back I will review and apply the changes.
+- Tomorrow I am only focusing on my plugin work, because I have a release on Friday. 
