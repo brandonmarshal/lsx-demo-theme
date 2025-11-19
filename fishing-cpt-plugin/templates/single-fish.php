@@ -2,7 +2,7 @@
 /**
  * Template for displaying single Fish posts.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.0
  */
 

@@ -5,11 +5,11 @@
  * Registers block bindings source to connect WordPress blocks
  * with SCF/ACF custom field values for dynamic content display.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

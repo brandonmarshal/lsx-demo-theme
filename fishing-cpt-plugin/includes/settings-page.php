@@ -1,6 +1,6 @@
 <?php
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;

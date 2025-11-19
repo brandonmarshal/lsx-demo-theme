@@ -2,11 +2,11 @@
 /**
  * Tests for Repeatable Fields functionality.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT\Tests;
+namespace FishingCPTPlugin\Tests;
 
 /**
  * Test repeatable field groups registration.

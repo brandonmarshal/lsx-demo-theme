@@ -5,11 +5,11 @@
  * Registers ACF/SCF repeatable field groups for structured data entry
  * including gear specifications and fish quick facts.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

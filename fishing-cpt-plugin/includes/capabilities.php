@@ -1,6 +1,6 @@
 <?php
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -14,7 +14,7 @@ function add_caps(): void
 	$roles = ['administrator', 'editor'];
 	$cpts  = ['fish', 'gear', 'area'];
 	foreach ($roles as $role_name) {
-		$role = get_role($role_name);
+		$role = \get_role($role_name);
 		if (! $role) {
 			continue;
 		}
@@ -37,4 +37,4 @@ function add_caps(): void
 		}
 	}
 }
-add_action('init', __NAMESPACE__ . '\add_caps');
+\add_action('init', __NAMESPACE__ . '\add_caps');

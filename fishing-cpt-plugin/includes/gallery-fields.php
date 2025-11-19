@@ -5,11 +5,11 @@
  * Registers ACF/SCF gallery field group for image galleries across
  * all fishing-related custom post types.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

@@ -22,6 +22,10 @@ define('FISHING_CPT_PLUGIN_FILE', __FILE__);
 define('FISHING_CPT_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('FISHING_CPT_PLUGIN_URL', plugin_dir_url(__FILE__));
 
+// Use statements for namespaced functions
+use function FishingCPTPlugin\add_caps;
+use function FishingCPTPlugin\Blocks\init;
+
 /**
  * Check for required plugin dependencies.
  *
@@ -140,7 +144,7 @@ fishing_cpt_includes();
 
 // Initialize blocks functionality
 if (function_exists('FishingCPTPlugin\Blocks\init')) {
-	FishingCPTPlugin\Blocks\init();
+	init();
 }
 
 /**
@@ -149,8 +153,8 @@ if (function_exists('FishingCPTPlugin\Blocks\init')) {
 function fishing_cpt_activate(): void
 {
 	// CPTs are handled by theme, we just add capabilities and flush rules
-	if (function_exists('Fishing_CPT\add_caps')) {
-		Fishing_CPT\add_caps();
+	if (function_exists('FishingCPTPlugin\add_caps')) {
+		add_caps();
 	}
 	flush_rewrite_rules();
 }
