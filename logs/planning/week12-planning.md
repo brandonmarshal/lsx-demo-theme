@@ -40,8 +40,8 @@
 
 -   [ ] BugHerd Tasks
 -   [ ] Troubleshoot FacetWP error
--   [ ] Refactor plugin development plan to incorporate correct copilot usage with branch-based prompting and merging
--   [ ] Immediately address namespace and naming convention consistency at the start of plugin work
+-   [x] Refactor plugin development plan to incorporate correct copilot usage with branch-based prompting and merging
+-   [x] Immediately address namespace and naming convention consistency at the start of plugin work
 -   [ ] Implement build and package process for plugin using WP scripts and fully test the build
 -   [ ] Improve archive and single pages with custom fields ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589441))
 -   [ ] Learn how to use Section Styles ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211963425314044))
@@ -49,9 +49,9 @@
 
 ### Thursday (2025-11-20)
 
--   [ ] BugHerd Tasks
--   [ ] Complete the about page changes ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614088/task/1211907180589439))
--   [ ] Add FacetWP block-based filters ([Asana Task](https://app.asana.com/1/1152726221312/project/1211920281614080?focus=true))
+-   [ ] Learn how to use Section Styles ([Asana Task](https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211963425314044))
+-   [ ] Continue troubleshooting FacetWP error
+-   [ ] Implement build and package process for plugin using WP scripts and fully test the build
 -   [ ] Prioritize completion of critical website sections, including all custom post types, archive templates, blog pages, index, and a custom 404 page
 -   [ ] Set up local WordPress environments to test and verify all theme functionality including Light Speeds LSX demo theme
 
