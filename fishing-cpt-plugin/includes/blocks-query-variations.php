@@ -4,7 +4,9 @@ namespace FishingCPTPlugin\Blocks;
 
 if (! defined('ABSPATH')) {
 	exit;
-}namespace FishingCPTPlugin;
+}
+
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;

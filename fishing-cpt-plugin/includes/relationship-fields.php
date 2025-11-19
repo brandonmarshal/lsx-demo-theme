@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Relationship Field Groups for Fish, Gear, and Areas CPTs.
  *
@@ -11,7 +12,7 @@
 
 namespace FishingCPTPlugin;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit;
 }
 
@@ -25,9 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-function register_relationship_fields(): void {
+function register_relationship_fields(): void
+{
 	// Only proceed if ACF/SCF is available.
-	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+	if (! function_exists('acf_add_local_field_group')) {
 		return;
 	}
 
@@ -35,16 +37,16 @@ function register_relationship_fields(): void {
 	\acf_add_local_field_group(
 		array(
 			'key'                   => 'group_fish_relationships',
-			'title'                 => \__( 'Fish Relationships', 'fishing-cpt-plugin' ),
+			'title'                 => \__('Fish Relationships', 'fishing-cpt-plugin'),
 			'fields'                => array(
 				array(
 					'key'           => 'field_fish_related_gear',
-					'label'         => \__( 'Related Gear', 'fishing-cpt-plugin' ),
+					'label'         => \__('Related Gear', 'fishing-cpt-plugin'),
 					'name'          => 'related_gear',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select gear items that work well with this fish species.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select gear items that work well with this fish species.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'gear' ),
+					'post_type'     => array('gear'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -52,12 +54,12 @@ function register_relationship_fields(): void {
 				),
 				array(
 					'key'           => 'field_fish_related_areas',
-					'label'         => \__( 'Fishing Areas', 'fishing-cpt-plugin' ),
+					'label'         => \__('Fishing Areas', 'fishing-cpt-plugin'),
 					'name'          => 'related_areas',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select fishing areas where this species can be found.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select fishing areas where this species can be found.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'area' ),
+					'post_type'     => array('area'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -85,16 +87,16 @@ function register_relationship_fields(): void {
 	\acf_add_local_field_group(
 		array(
 			'key'                   => 'group_gear_relationships',
-			'title'                 => \__( 'Gear Relationships', 'fishing-cpt-plugin' ),
+			'title'                 => \__('Gear Relationships', 'fishing-cpt-plugin'),
 			'fields'                => array(
 				array(
 					'key'           => 'field_gear_related_fish',
-					'label'         => \__( 'Compatible Fish Species', 'fishing-cpt-plugin' ),
+					'label'         => \__('Compatible Fish Species', 'fishing-cpt-plugin'),
 					'name'          => 'related_fish',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select fish species this gear is suited for.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select fish species this gear is suited for.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'fish' ),
+					'post_type'     => array('fish'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -102,12 +104,12 @@ function register_relationship_fields(): void {
 				),
 				array(
 					'key'           => 'field_gear_related_areas',
-					'label'         => \__( 'Recommended Areas', 'fishing-cpt-plugin' ),
+					'label'         => \__('Recommended Areas', 'fishing-cpt-plugin'),
 					'name'          => 'related_areas',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select fishing areas where this gear is recommended.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select fishing areas where this gear is recommended.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'area' ),
+					'post_type'     => array('area'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -135,16 +137,16 @@ function register_relationship_fields(): void {
 	\acf_add_local_field_group(
 		array(
 			'key'                   => 'group_area_relationships',
-			'title'                 => \__( 'Area Relationships', 'fishing-cpt-plugin' ),
+			'title'                 => \__('Area Relationships', 'fishing-cpt-plugin'),
 			'fields'                => array(
 				array(
 					'key'           => 'field_area_related_fish',
-					'label'         => \__( 'Fish Species Found Here', 'fishing-cpt-plugin' ),
+					'label'         => \__('Fish Species Found Here', 'fishing-cpt-plugin'),
 					'name'          => 'related_fish',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select fish species that can be found in this area.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select fish species that can be found in this area.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'fish' ),
+					'post_type'     => array('fish'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -152,12 +154,12 @@ function register_relationship_fields(): void {
 				),
 				array(
 					'key'           => 'field_area_related_gear',
-					'label'         => \__( 'Recommended Gear', 'fishing-cpt-plugin' ),
+					'label'         => \__('Recommended Gear', 'fishing-cpt-plugin'),
 					'name'          => 'related_gear',
 					'type'          => 'post_object',
-					'instructions'  => \__( 'Select gear that works well in this fishing area.', 'fishing-cpt-plugin' ),
+					'instructions'  => \__('Select gear that works well in this fishing area.', 'fishing-cpt-plugin'),
 					'required'      => 0,
-					'post_type'     => array( 'gear' ),
+					'post_type'     => array('gear'),
 					'return_format' => 'object',
 					'multiple'      => 1,
 					'ui'            => 1,
@@ -181,4 +183,4 @@ function register_relationship_fields(): void {
 		)
 	);
 }
-\add_action( 'acf/init', __NAMESPACE__ . '\register_relationship_fields' );
+\add_action('acf/init', __NAMESPACE__ . '\register_relationship_fields');

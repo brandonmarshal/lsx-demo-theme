@@ -65,7 +65,7 @@ add_action('plugins_loaded', 'fishing_cpt_check_dependencies', 5);
  */
 function fishing_cpt_dependency_notice(): void
 {
-	?>
+?>
 	<div class="notice notice-error is-dismissible">
 		<p>
 			<strong><?php echo esc_html__('Fishing CPT Plugin Error:', 'fishing-cpt-plugin'); ?></strong>
@@ -88,7 +88,7 @@ function fishing_cpt_dependency_notice(): void
 			?>
 		</p>
 	</div>
-	<?php
+<?php
 
 	// No need to unset $_GET['activate']; WordPress handles the notice UX.
 }

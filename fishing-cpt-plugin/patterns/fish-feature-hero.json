@@ -1,5 +1,48 @@
-{
-    "title": "Fish Feature Hero",
-    "categories": ["fishing"],
-    "content": "<!-- wp/group --><div class=\"wp-block-group\"><!-- wp/heading {\"level\":1} --><h1>Featured Fish Species</h1><!-- /wp/heading --><!-- wp/query {\"query\":{\"perPage\":3,\"postType\":\"fish\"}} --><div class=\"wp-block-query\"><!-- wp/post-template --><!-- wp/fishing/fish-card /--><!-- /wp/post-template --></div><!-- /wp/query --></div><!-- /wp/group -->"
+/**
+ * Block: FishingPlugin Fish Feature Hero
+ * Category: fishing
+ * Description: Featured Fish Species hero section, leveraging FishingPlugin namespace for code and registration.
+ *
+ * @namespace FishingPlugin
+ * @link https://github.com/lightspeedwp/.github/blob/develop/.github/custom-instructions.md
+ */
+
+// Register block using project JS namespace (FishingPlugin)
+wp.blocks.registerBlockType('fishing-plugin/fish-feature-hero', {
+    title: 'Fish Feature Hero',
+    category: 'fishing',
+    icon: 'fish', // Specify icon if custom, otherwise remove or update.
+    edit: function () {
+        return (
+            <div className="fishing-plugin-fish-feature-hero">
+                <h1>Featured Fish Species</h1>
+                <FishingPluginFishQuery perPage={3} postType="fish" />
+            </div>
+        );
+    },
+    save: function () {
+        // Save markup if using dynamic/static block
+        return null;
+    },
+});
+
+// React component using namespace convention for custom queries/templates.
+function FishingPluginFishQuery({ perPage, postType }) {
+    // Example query implementation (could use wp.data or REST API)
+    // Replace with actual WP Query logic as appropriate for your stack.
+    return (
+        <div className="fishing-plugin-query">
+            {/* Loop and display fish cards here */}
+            <FishingPluginFishCard /> {/* Replace legacy 'fishing/fish-card' */}
+        </div>
+    );
+}
+
+function FishingPluginFishCard() {
+    // Your fish card UI/logic here.
+    return (
+        <div className="fishing-plugin-fish-card">
+            {/* Fish card content */}
+        </div>
+    );
 }
