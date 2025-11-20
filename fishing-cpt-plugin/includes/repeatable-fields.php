@@ -31,8 +31,11 @@ function register_repeatable_fields(): void
 {
 	// Only proceed if ACF/SCF is available.
 	if (! function_exists('acf_add_local_field_group')) {
+		error_log('FishingCPTPlugin: ACF not available for repeatable fields registration');
 		return;
 	}
+
+	error_log('FishingCPTPlugin: Registering repeatable field groups');
 
 	// Gear Specifications Field Group.
 	acf_add_local_field_group(
@@ -181,7 +184,9 @@ function register_repeatable_fields(): void
 		)
 	);
 }
-add_action('acf/init', __NAMESPACE__ . '\register_repeatable_fields');
+add_action('init', __NAMESPACE__ . '\register_repeatable_fields', 20);
+
+error_log('FishingCPTPlugin: Repeatable field groups registration completed');
 
 /**
  * Display gear specifications in a structured table format.
@@ -198,14 +203,9 @@ function display_gear_specifications($post_id = null): void
 {
 	$post_id = $post_id ?? get_the_ID();
 
-	// Check if ACF function exists.
-	if (! function_exists('get_field')) {
-		return;
-	}
+	$specifications = get_post_meta($post_id, '_gear_specifications', true);
 
-	$specs = get_field('gear_specs', $post_id);
-
-	if (empty($specs) || ! is_array($specs)) {
+	if (empty($specifications) || ! is_array($specifications)) {
 		return;
 	}
 
@@ -220,18 +220,18 @@ function display_gear_specifications($post_id = null): void
 	echo '</thead>';
 	echo '<tbody>';
 
-	foreach ($specs as $spec) {
-		if (empty($spec['spec_name']) || empty($spec['spec_value'])) {
+	foreach ($specifications as $spec) {
+		if (empty($spec['name']) || empty($spec['value'])) {
 			continue;
 		}
 
-		$value_with_unit = $spec['spec_value'];
-		if (! empty($spec['spec_unit'])) {
-			$value_with_unit .= ' ' . $spec['spec_unit'];
+		$value_with_unit = $spec['value'];
+		if (! empty($spec['unit'])) {
+			$value_with_unit .= ' ' . $spec['unit'];
 		}
 
 		echo '<tr>';
-		echo '<td>' . esc_html($spec['spec_name']) . '</td>';
+		echo '<td>' . esc_html($spec['name']) . '</td>';
 		echo '<td>' . esc_html($value_with_unit) . '</td>';
 		echo '</tr>';
 	}
@@ -256,12 +256,7 @@ function display_fish_quick_facts($post_id = null): void
 {
 	$post_id = $post_id ?? get_the_ID();
 
-	// Check if ACF function exists.
-	if (! function_exists('get_field')) {
-		return;
-	}
-
-	$facts = get_field('fish_quick_facts', $post_id);
+	$facts = get_post_meta($post_id, '_fish_quick_facts', true);
 
 	if (empty($facts) || ! is_array($facts)) {
 		return;
@@ -272,12 +267,12 @@ function display_fish_quick_facts($post_id = null): void
 	echo '<dl class="facts-list" aria-label="' . esc_attr__('Fish quick facts', 'fishing-cpt-plugin') . '">';
 
 	foreach ($facts as $fact) {
-		if (empty($fact['fact_label']) || empty($fact['fact_value'])) {
+		if (empty($fact['label']) || empty($fact['value'])) {
 			continue;
 		}
 
-		echo '<dt class="fact-label">' . esc_html($fact['fact_label']) . '</dt>';
-		echo '<dd class="fact-value">' . wp_kses_post(wpautop($fact['fact_value'])) . '</dd>';
+		echo '<dt class="fact-label">' . esc_html($fact['label']) . '</dt>';
+		echo '<dd class="fact-value">' . wp_kses_post(wpautop($fact['value'])) . '</dd>';
 	}
 
 	echo '</dl>';
