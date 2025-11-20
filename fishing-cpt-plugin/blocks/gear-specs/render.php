@@ -2,7 +2,7 @@
 /**
  * Gear Specifications Block - Frontend Render
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 

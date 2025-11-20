@@ -4,7 +4,7 @@
  * Handles lightbox functionality with keyboard navigation,
  * touch support, and accessibility features.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 

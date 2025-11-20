@@ -1,6 +1,12 @@
 <?php
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin\Blocks;
+
+if (! defined('ABSPATH')) {
+	exit;
+}
+
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;

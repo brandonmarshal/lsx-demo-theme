@@ -5,11 +5,11 @@
  * Registers fish-related block templates programmatically using
  * WordPress 6.7+ block template registration API.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

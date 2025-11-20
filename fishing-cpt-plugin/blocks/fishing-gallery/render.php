@@ -4,7 +4,7 @@
  *
  * Displays image gallery with optional lightbox functionality.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  *
  * @var array    $attributes Block attributes.
