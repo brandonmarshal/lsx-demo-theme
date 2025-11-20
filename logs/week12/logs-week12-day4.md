@@ -8,7 +8,8 @@
 -   Setup testing task for all the features on my plugin.
 -   Started testing the plugin with installation and activation, which were successful
 -   Then tested the Custom Post Types, which need adjustments.
--   Tested the Metadata, taxonomies, but ACF/SCF was not working with my plugin to I removed it after troubleshooting and finding no solution. 
+-   Tested the Metadata, taxonomies, but ACF/SCF was not working with my plugin to I removed it after troubleshooting and finding no solution.
+-   Merged the PR for Unifying Namespacing.
 
 ### How do you feel about today's progress?
 
