@@ -30,6 +30,8 @@ function enqueue_single_cpt_assets(): void
 		return;
 	}
 
+	// Temporarily disabled SCSS/CSS loading for testing
+	/*
 	// Enqueue single CPT styles (compiled from SCSS).
 	\wp_enqueue_style(
 		'fishing-single-cpt',
@@ -37,5 +39,6 @@ function enqueue_single_cpt_assets(): void
 		array(),
 		FISHING_CPT_PLUGIN_VERSION
 	);
+	*/
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_single_cpt_assets');

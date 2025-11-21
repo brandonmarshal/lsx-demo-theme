@@ -24,16 +24,6 @@ function register_fish_cpt(): void
 		'rewrite' => ['slug' => 'fish'],
 		'capability_type' => 'post',
 		'map_meta_cap' => true,
-		'template' => [
-			['core/heading', ['level' => 2, 'placeholder' => \__('Species overview', 'fishing-cpt-plugin')]],
-			['core/group', ['layout' => ['type' => 'constrained']], [
-				['core/columns', [], [
-					['core/column', [], [['core/image'], ['core/paragraph']]],
-					['core/column', [], [['core/heading', ['level' => 3, 'content' => \__('Facts', 'fishing-cpt-plugin')]], ['core/list']]],
-				]],
-			]],
-		],
-		'template_lock' => 'insert',
 	];
 	\register_post_type('fish', $args);
 }

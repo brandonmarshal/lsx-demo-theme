@@ -25,12 +25,15 @@ add_action('after_setup_theme', 'fishing_theme_post_format_setup');
 if (! function_exists('fishing_theme_enqueue_styles')) :
 	function fishing_theme_enqueue_styles()
 	{
+		// Temporarily disabled main theme CSS for testing
+		/*
 		wp_enqueue_style(
 			'fishing-theme-style',
 			get_theme_file_uri('style.css'),
 			array(),
 			wp_get_theme()->get('Version')
 		);
+		*/
 	}
 endif;
 add_action('wp_enqueue_scripts', 'fishing_theme_enqueue_styles');
@@ -42,6 +45,8 @@ function fishing_theme_enqueue_webpack_assets()
 	$style_file = 'style-index.css';
 	$script_file = 'index.js';
 
+	// Temporarily disabled SCSS/CSS loading for testing
+	/*
 	if (file_exists($asset_path . $style_file)) {
 		wp_enqueue_style(
 			'fishing-theme-main',
@@ -50,6 +55,7 @@ function fishing_theme_enqueue_webpack_assets()
 			filemtime($asset_path . $style_file)
 		);
 	}
+	*/
 
 	if (file_exists($asset_path . $script_file)) {
 		wp_enqueue_script(

@@ -1,148 +1,196 @@
-<!-- Single Fish Template -->
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php the_title(); ?> | <?php bloginfo( 'name' ); ?></title>
+  <?php wp_head(); ?>
+</head>
+<body <?php body_class('single-fish'); ?>>
 
-<!-- wp:template-part {"slug":"header"} /-->
+  <!-- FULL-WIDTH COVER BLOCK -->
+  <header class="fish-cover" style="position:relative; width:100%; background: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.40)), url('<?php echo esc_url( get_the_post_thumbnail_url( null, 'full' ) ); ?>') center/cover no-repeat;">
+    <div class="fish-cover__overlay" style="padding:40px 0 32px 0;">
+      <h1 class="fish-title" style="color:#fff; text-align:center; font-size:2.5rem; font-weight:bold;"><?php the_title(); ?></h1>
+      <?php if ( $scientific = get_field('scientific_name') ) : ?>
+        <p class="fish-scientific" style="text-align:center; color:#fff; font-style:italic;"><?php echo esc_html( $scientific ); ?></p>
+      <?php endif; ?>
+    </div>
+  </header>
 
-<!-- wp:group {"tagName":"main","className":"single-fish","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group single-fish">
+  <!-- Content Layout -->
+  <main class="fish-content" style="max-width:1280px; margin:0 auto; padding:0 20px;">
+    <!-- Two-column layout -->
+    <section class="fish-columns" style="display:flex; flex-wrap:wrap; margin:32px 0 0 0; gap:32px;">
+      <!-- Left Column: Quick Facts -->
+      <aside class="fish-facts" style="flex:1 1 380px; min-width:320px;">
+        <div class="fish-facts__block" style="background:#f9f9f9; border-radius:8px; border:1px solid #e0e0e0; padding:24px 32px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+          <h2 class="facts-heading" style="font-size:1.25rem; font-weight:bold; margin-bottom:12px;">Quick Facts</h2>
+          <ul style="list-style:none; padding:0; margin:0;">
+            <?php if ( $habitat = get_field('habitat') ) : ?>
+              <li><strong>Habitat:</strong> <span style="color:#555;"><?php echo esc_html( $habitat ); ?></span></li>
+            <?php endif; ?>
+            <?php if ( $avg_size = get_field('average_size') ) : ?>
+              <li><strong>Average Size:</strong> <span style="color:#555;"><?php echo esc_html( $avg_size ); ?></span></li>
+            <?php endif; ?>
+            <?php if ( $diet = get_field('diet') ) : ?>
+              <li><strong>Diet:</strong> <span style="color:#555;"><?php echo esc_html( $diet ); ?></span></li>
+            <?php endif; ?>
+            <?php if ( $status = get_field('conservation_status') ) : ?>
+              <li><strong>Conservation Status:</strong> <span style="color:#555;"><?php echo esc_html( $status ); ?></span></li>
+            <?php endif; ?>
+            <?php if ( $best_season = get_field('best_season') ) : ?>
+              <li><strong>Best Season:</strong> <span style="color:#555;"><?php echo esc_html( $best_season ); ?></span></li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </aside>
 
-<!-- wp:group {"className":"fish-hero","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-hero"><!-- wp:post-featured-image {"isLink":false,"aspectRatio":"16/9","scale":"cover","className":"fish-hero__image"} /-->
+      <!-- Right Column: Featured Image -->
+      <section class="fish-featured" style="flex:1 1 360px; min-width:320px;">
+        <figure style="background:#d0d0d0; border-radius:8px; border:1px solid #e0e0e0; overflow:hidden; margin:0; padding:0;">
+          <?php if ( has_post_thumbnail() ) : ?>
+            <?php the_post_thumbnail( 'large', ['style' => 'width:100%; height:auto; display:block;'] ); ?>
+          <?php else : ?>
+            <div style="height:220px; display:flex; align-items:center; justify-content:center; background:#e0e0e0;">
+              <span style="color:#666;">No image available</span>
+            </div>
+          <?php endif; ?>
+          <?php if ( $caption = get_post(get_post_thumbnail_id())->post_excerpt ) : ?>
+            <figcaption style="text-align:center; color:#999; font-size:0.95rem;"><?php echo esc_html( $caption ); ?></figcaption>
+          <?php endif; ?>
+        </figure>
+      </section>
+    </section>
 
-<!-- wp:group {"className":"fish-hero__overlay","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-hero__overlay"><!-- wp:group {"className":"fish-hero__content","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-hero__content"><!-- wp:post-title {"level":1,"className":"fish-hero__title"} /-->
+    <!-- Fish Description Block -->
+    <section class="fish-description" style="margin:40px 0 0 0; background:#fafafa; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
+      <?php if ( $desc = get_field('description') ) : ?>
+        <h2 style="font-size:1.3rem; font-weight:bold; margin-bottom:8px;">Fish Description / Overview</h2>
+        <p style="color:#777; font-size:1.08rem;"><?php echo wp_kses_post( $desc ); ?></p>
+      <?php else : ?>
+        <h2 style="font-size:1.3rem; font-weight:bold; margin-bottom:8px;">Fish Description / Overview</h2>
+        <p style="color:#777;">No overview available.</p>
+      <?php endif; ?>
+    </section>
 
-<!-- wp:group {"className":"fish-hero__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group fish-hero__meta"><!-- wp:post-terms {"term":"species","className":"fish-hero__taxonomy"} /-->
+    <!-- Identification Section -->
+    <section class="fish-identification" style="margin:40px 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
+      <h2 style="font-size:1.25rem; font-weight:bold;">Identification</h2>
+      <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <?php if ( $body_shape = get_field('body_shape') ) : ?>
+          <li><strong>Body shape:</strong> <span style="color:#555;"><?php echo esc_html( $body_shape ); ?></span></li>
+        <?php endif; ?>
+        <?php if ( $markings = get_field('distinguishing_markings') ) : ?>
+          <li><strong>Distinguishing markings:</strong> <span style="color:#555;"><?php echo esc_html( $markings ); ?></span></li>
+        <?php endif; ?>
+        <?php if ( $colors = get_field('color_variations') ) : ?>
+          <li><strong>Color variations:</strong> <span style="color:#555;"><?php echo esc_html( $colors ); ?></span></li>
+        <?php endif; ?>
+      </ul>
+    </section>
 
-<!-- wp:post-terms {"term":"habitat","className":"fish-hero__taxonomy"} /-->
+    <!-- Separator -->
+    <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
 
-<!-- wp:post-terms {"term":"season","className":"fish-hero__taxonomy"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+    <!-- Habitat & Behavior Section -->
+    <section class="fish-habitat-behavior" style="margin:0 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
+      <h2 style="font-size:1.25rem; font-weight:bold;">Habitat &amp; Behavior</h2>
+      <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
+      <?php if ( $habitat_behavior = get_field('habitat_behavior') ) : ?>
+        <p style="color:#777; font-size:1.08rem;"><?php echo wp_kses_post( $habitat_behavior ); ?></p>
+      <?php else : ?>
+        <p style="color:#777;">No habitat or behavior details available.</p>
+      <?php endif; ?>
+    </section>
 
-<!-- wp:group {"className":"fish-content","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-content">
+    <!-- Separator -->
+    <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
 
-<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
-<h2 class="wp-block-heading fish-section__title">About This Species</h2>
-<!-- /wp:heading -->
+    <!-- Fishing Tips Section -->
+    <section class="fish-tips" style="margin:0 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
+      <h2 style="font-size:1.25rem; font-weight:bold;">Fishing Tips</h2>
+      <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
+      <?php if ( have_rows('fishing_tips') ) : ?>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <?php while ( have_rows('fishing_tips') ) : the_row(); ?>
+            <?php if ( $tip = get_sub_field('tip') ) : ?>
+              <li style="margin-bottom:10px; color:#555;"><?php echo esc_html( $tip ); ?></li>
+            <?php endif; ?>
+          <?php endwhile; ?>
+        </ul>
+      <?php else : ?>
+        <!-- Fallback to individual fields -->
+        <?php if ( $lures = get_field('best_lures') ) : ?>
+          <li><strong>Best lures:</strong> <span style="color:#555;"><?php echo esc_html( $lures ); ?></span></li>
+        <?php endif; ?>
+        <?php if ( $seasons = get_field('best_seasons') ) : ?>
+          <li><strong>Best seasons:</strong> <span style="color:#555;"><?php echo esc_html( $seasons ); ?></span></li>
+        <?php endif; ?>
+        <?php if ( $gear = get_field('recommended_gear') ) : ?>
+          <li><strong>Recommended gear:</strong> <span style="color:#555;"><?php echo esc_html( $gear ); ?></span></li>
+        <?php endif; ?>
+      <?php endif; ?>
+    </section>
 
-<!-- wp:post-content {"layout":{"type":"constrained"}} /--></div>
-<!-- /wp:group -->
+    <!-- Separator -->
+    <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
 
-<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
-<h2 class="wp-block-heading fish-section__title">Quick Facts</h2>
-<!-- /wp:heading -->
+    <!-- Related Posts Section -->
+    <section class="fish-related" style="margin:0 0 64px 0; background:#f5f5f5; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
+      <h2 style="font-size:1.25rem; font-weight:bold;">More Fish Species</h2>
+      <hr style="margin:8px 0 24px 0; border:none; height:2px; background:#eee;">
+      <div class="fish-card-grid" style="display:flex; flex-wrap:wrap; gap:24px;">
+        <?php
+        $args = [
+          'post_type'      => 'fish',
+          'posts_per_page' => 3,
+          'post__not_in'   => [ get_the_ID() ],
+          'orderby'        => 'rand',
+          'tax_query'      => [],
+        ];
+        // If using taxonomies like "fish_type", fetch related.
+        $taxonomies = get_object_taxonomies('fish');
+        // If a taxonomy exists, add to args for matching.
+        if ($taxonomies) {
+          foreach ($taxonomies as $tax) {
+            $terms = wp_get_post_terms( get_the_ID(), $tax, ['fields'=>'ids'] );
+            if ($terms) {
+              $args['tax_query'][] = [
+                'taxonomy' => $tax,
+                'field'    => 'term_id',
+                'terms'    => $terms,
+                'operator' => 'IN',
+              ];
+            }
+          }
+        }
+        $related = new WP_Query($args);
+        if ( $related->have_posts() ) :
+          while ( $related->have_posts() ) : $related->the_post(); ?>
+            <article class="fish-card" style="flex:1 1 240px; background:#fff; border:1px solid #ccc; border-radius:8px; overflow:hidden; margin-bottom:8px;">
+              <a href="<?php the_permalink(); ?>" style="text-decoration:none; color:inherit; display:block;">
+                <figure style="height:120px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; margin:0;">
+                  <?php if ( has_post_thumbnail() ) :
+                    the_post_thumbnail( 'medium', ['style'=>'width:auto; height:100%; max-height:104px; object-fit:cover;'] );
+                  else : ?>
+                    <span style="color:#666;">Image</span>
+                  <?php endif; ?>
+                </figure>
+                <h3 style="text-align:center; margin:12px 8px 14px 8px; font-size:1.10rem; font-weight:bold;">
+                  <?php the_title(); ?>
+                </h3>
+              </a>
+            </article>
+          <?php endwhile; wp_reset_postdata();
+        else : ?>
+          <p style="color:#555;">No related fish species found.</p>
+        <?php endif; ?>
+      </div>
+    </section>
+  </main>
 
-<!-- wp:group {"className":"fish-quick-facts","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-quick-facts"><!-- wp:group {"className":"fish-quick-facts__header","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group fish-quick-facts__header"><!-- wp:paragraph {"className":"fish-quick-facts__title"} -->
-<p class="fish-quick-facts__title">Key Information</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fish-quick-facts__list","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-quick-facts__list"><!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
-<p class="fish-quick-facts__content"><strong>Scientific Name:</strong> Coming from custom fields</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
-<p class="fish-quick-facts__content"><strong>Water Type:</strong> Freshwater/Saltwater</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
-<p class="fish-quick-facts__content"><strong>Average Size:</strong> Size information</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
-<h2 class="wp-block-heading fish-section__title">Related Fish</h2>
-<!-- /wp:heading -->
-
-<!-- wp:group {"className":"related-content__section","layout":{"type":"constrained"}} -->
-<div class="wp-block-group related-content__section"><!-- wp:query {"queryId":22,"query":{"perPage":4,"postType":"fish","order":"asc","orderBy":"date","offset":0},"className":"related-content__grid"} -->
-<div class="wp-block-query related-content__grid"><!-- wp:post-template {"layout":{"type":"default"}} -->
-<!-- wp:group {"tagName":"article","className":"related-content__card","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<article class="wp-block-group related-content__card"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2","scale":"contain","className":"related-content__card-image"} /-->
-
-<!-- wp:group {"className":"related-content__card-content","layout":{"type":"constrained"}} -->
-<div class="wp-block-group related-content__card-content"><!-- wp:post-title {"level":3,"isLink":true,"className":"related-content__card-title"} /-->
-
-<!-- wp:post-excerpt {"moreText":"Read more","className":"related-content__card-meta"} /--></div>
-<!-- /wp:group --></article>
-<!-- /wp:group -->
-<!-- /wp:post-template -->
-
-<!-- wp:query-no-results -->
-<!-- wp:paragraph -->
-<p>No related fish entries yet.</p>
-<!-- /wp:paragraph -->
-<!-- /wp:query-no-results --></div>
-<!-- /wp:query --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"className":"fish-navigation","layout":{"type":"constrained"}} -->
-<div class="wp-block-group fish-navigation"><!-- wp:group {"className":"fish-navigation__links","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group fish-navigation__links"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"className":"fish-navigation__link"} /-->
-
-<!-- wp:post-navigation-link {"showTitle":true,"className":"fish-navigation__link"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:comments {"className":"fish-comments","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-comments fish-comments" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:heading {"fontSize":"x-large","className":"fish-comments__title"} -->
-<h2 class="wp-block-heading has-x-large-font-size fish-comments__title">Community Discussion</h2>
-<!-- /wp:heading -->
-
-<!-- wp:comments-title {"level":3,"fontSize":"large"} /-->
-
-<!-- wp:comment-template -->
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-group" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:avatar {"size":50} /-->
-
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:comment-date /-->
-
-<!-- wp:comment-author-name /-->
-
-<!-- wp:comment-content /-->
-
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:comment-edit-link /-->
-
-<!-- wp:comment-reply-link /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-<!-- /wp:comment-template -->
-
-<!-- wp:comments-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<!-- wp:comments-pagination-previous /-->
-
-<!-- wp:comments-pagination-next /-->
-<!-- /wp:comments-pagination -->
-
-<!-- wp:post-comments-form /--></div>
-<!-- /wp:comments --></div>
-<!-- /wp:group -->
-
-<!-- wp:template-part {"slug":"footer"} /-->
+  <?php wp_footer(); ?>
+</body>
+</html>

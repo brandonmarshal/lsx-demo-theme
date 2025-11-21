@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Block Template Registration for WordPress 6.7+
  *
@@ -11,7 +12,7 @@
 
 namespace FishingCPTPlugin;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit;
 }
 
@@ -26,19 +27,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-function register_block_templates(): void {
+function register_block_templates(): void
+{
 	// Check if wp_register_block_template is available (WP 6.7+)
-	if ( ! function_exists( 'wp_register_block_template' ) ) {
+	if (! function_exists('wp_register_block_template')) {
 		return;
 	}
-
-	// Register single fish template.
-	register_single_fish_template();
 
 	// Register archive fish template.
 	register_archive_fish_template();
 }
-add_action( 'init', __NAMESPACE__ . '\register_block_templates' );
+add_action('init', __NAMESPACE__ . '\register_block_templates');
 
 /**
  * Register single fish block template.
@@ -50,19 +49,20 @@ add_action( 'init', __NAMESPACE__ . '\register_block_templates' );
  *
  * @return void
  */
-function register_single_fish_template(): void {
+function register_single_fish_template(): void
+{
 	$template_file = FISHING_CPT_PLUGIN_DIR . 'templates/single-fish.html';
 
 	// Ensure template file exists.
-	if ( ! file_exists( $template_file ) ) {
+	if (! file_exists($template_file)) {
 		return;
 	}
 
 	// Get template content.
-	$content = file_get_contents( $template_file );
+	$content = file_get_contents($template_file);
 
-	if ( false === $content || empty( $content ) ) {
-		error_log( 'Fishing CPT Plugin: Failed to load template: ' . $template_file );
+	if (false === $content || empty($content)) {
+		error_log('Fishing CPT Plugin: Failed to load template: ' . $template_file);
 		return;
 	}
 
@@ -70,10 +70,10 @@ function register_single_fish_template(): void {
 	wp_register_block_template(
 		'fishing-cpt-plugin//single-fish',
 		array(
-			'title'       => __( 'Single Fish Species', 'fishing-cpt-plugin' ),
-			'description' => __( 'Template for displaying individual fish species with details, taxonomies, and related content.', 'fishing-cpt-plugin' ),
+			'title'       => __('Single Fish Species', 'fishing-cpt-plugin'),
+			'description' => __('Template for displaying individual fish species with details, taxonomies, and related content.', 'fishing-cpt-plugin'),
 			'content'     => $content,
-			'post_types'  => array( 'fish' ),
+			'post_types'  => array('fish'),
 		)
 	);
 }
@@ -88,19 +88,20 @@ function register_single_fish_template(): void {
  *
  * @return void
  */
-function register_archive_fish_template(): void {
+function register_archive_fish_template(): void
+{
 	$template_file = FISHING_CPT_PLUGIN_DIR . 'templates/archive-fish.html';
 
 	// Ensure template file exists.
-	if ( ! file_exists( $template_file ) ) {
+	if (! file_exists($template_file)) {
 		return;
 	}
 
 	// Get template content.
-	$content = file_get_contents( $template_file );
+	$content = file_get_contents($template_file);
 
-	if ( false === $content || empty( $content ) ) {
-		error_log( 'Fishing CPT Plugin: Failed to load template: ' . $template_file );
+	if (false === $content || empty($content)) {
+		error_log('Fishing CPT Plugin: Failed to load template: ' . $template_file);
 		return;
 	}
 
@@ -108,10 +109,10 @@ function register_archive_fish_template(): void {
 	wp_register_block_template(
 		'fishing-cpt-plugin//archive-fish',
 		array(
-			'title'       => __( 'Fish Species Archive', 'fishing-cpt-plugin' ),
-			'description' => __( 'Archive template for fish species listings with filtering and grid display.', 'fishing-cpt-plugin' ),
+			'title'       => __('Fish Species Archive', 'fishing-cpt-plugin'),
+			'description' => __('Archive template for fish species listings with filtering and grid display.', 'fishing-cpt-plugin'),
 			'content'     => $content,
-			'post_types'  => array( 'fish' ),
+			'post_types'  => array('fish'),
 		)
 	);
 }
@@ -127,16 +128,13 @@ function register_archive_fish_template(): void {
  * @param array $templates Array of template files.
  * @return array Modified template array.
  */
-function add_plugin_templates_to_hierarchy( array $templates ): array {
-	// Add plugin namespace to templates for Fish CPT.
-	if ( is_singular( 'fish' ) ) {
-		array_unshift( $templates, 'fishing-cpt-plugin//single-fish' );
-	}
-
-	if ( is_post_type_archive( 'fish' ) ) {
-		array_unshift( $templates, 'fishing-cpt-plugin//archive-fish' );
+function add_plugin_templates_to_hierarchy(array $templates): array
+{
+	// Add plugin namespace to templates for Fish CPT archive.
+	if (is_post_type_archive('fish')) {
+		array_unshift($templates, 'fishing-cpt-plugin//archive-fish');
 	}
 
 	return $templates;
 }
-add_filter( 'block_template_hierarchy', __NAMESPACE__ . '\add_plugin_templates_to_hierarchy' );
+add_filter('block_template_hierarchy', __NAMESPACE__ . '\add_plugin_templates_to_hierarchy');
