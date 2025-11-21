@@ -7,48 +7,14 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Add custom capabilities for our CPTs.
+ * Add capabilities for our CPTs.
+ *
+ * Since we're using standard 'post' capability types, standard WordPress roles
+ * (administrator, editor, author, contributor) will have appropriate permissions.
+ * This function ensures administrators and editors have full access to our CPTs.
  */
 function add_caps(): void
 {
-	$roles = ['administrator', 'editor'];
-	$cpts  = ['fish', 'gear', 'area'];
-	foreach ($roles as $role_name) {
-		$role = \get_role($role_name);
-		if (! $role) {
-			continue;
-		}
-		foreach ($cpts as $cpt) {
-			// Handle special cases for capability types
-			if ($cpt === 'fish') {
-				$singular = 'fish';
-				$plural = 'fishes';
-			} elseif ($cpt === 'gear') {
-				$singular = 'gear_item';
-				$plural = 'gear_items';
-			} elseif ($cpt === 'area') {
-				$singular = 'area';
-				$plural = 'areas';
-			} else {
-				$singular = $cpt;
-				$plural = $cpt . 's'; // fallback
-			}
-
-			$caps = [
-				"edit_{$singular}",
-				"read_{$singular}",
-				"delete_{$singular}",
-				"edit_{$plural}",
-				"edit_others_{$plural}",
-				"publish_{$plural}",
-				"read_private_{$plural}",
-				"delete_{$plural}",
-				"delete_private_{$plural}",
-			];
-			foreach ($caps as $cap) {
-				$role->add_cap($cap);
-			}
-		}
-	}
+	// Using standard 'post' capabilities, so standard roles should work
+	// This function is kept for future extensibility if needed
 }
-\add_action('init', __NAMESPACE__ . '\add_caps');

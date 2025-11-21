@@ -247,69 +247,22 @@ function render_fish_quick_facts_meta_box($post): void
 	wp_nonce_field('fish_quick_facts_meta_box', 'fish_quick_facts_meta_box_nonce');
 
 	$quick_facts = get_post_meta($post->ID, '_fish_quick_facts', true);
-	if (! is_array($quick_facts)) {
-		$quick_facts = array();
+	if (! is_string($quick_facts)) {
+		$quick_facts = '';
 	}
 
 ?>
 	<div id="fish-quick-facts-container">
-		<p><?php esc_html_e('Add quick facts about this fish species. These will be displayed in a structured format.', 'fishing-cpt-plugin'); ?></p>
+		<p><?php esc_html_e('Add quick facts about this fish species. Use bullet points (-) for lists. Each line will be displayed as a separate fact.', 'fishing-cpt-plugin'); ?></p>
 
-		<table class="widefat" id="fish-quick-facts-table">
-			<thead>
-				<tr>
-					<th><?php esc_html_e('Label', 'fishing-cpt-plugin'); ?></th>
-					<th><?php esc_html_e('Value', 'fishing-cpt-plugin'); ?></th>
-					<th><?php esc_html_e('Actions', 'fishing-cpt-plugin'); ?></th>
-				</tr>
-			</thead>
-			<tbody id="fish-quick-facts-rows">
-				<?php foreach ($quick_facts as $index => $fact) : ?>
-					<tr class="fact-row">
-						<td>
-							<input type="text" name="fish_quick_facts[<?php echo esc_attr($index); ?>][label]" value="<?php echo esc_attr($fact['label'] ?? ''); ?>" placeholder="<?php esc_attr_e('e.g., Scientific Name, Habitat', 'fishing-cpt-plugin'); ?>" class="regular-text" />
-						</td>
-						<td>
-							<textarea name="fish_quick_facts[<?php echo esc_attr($index); ?>][value]" rows="2" class="large-text" placeholder="<?php esc_attr_e('Enter the fact details', 'fishing-cpt-plugin'); ?>"><?php echo esc_textarea($fact['value'] ?? ''); ?></textarea>
-						</td>
-						<td>
-							<button type="button" class="button remove-fact"><?php esc_html_e('Remove', 'fishing-cpt-plugin'); ?></button>
-						</td>
-					</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
+		<textarea id="fish_quick_facts" name="fish_quick_facts" rows="10" class="large-text" placeholder="<?php esc_attr_e('Example:
+- Scientific Name: Oncorhynchus mykiss
+- Habitat: Freshwater rivers and lakes
+- Average Size: 12-18 inches
+- Bait Type: Minnows and spinners', 'fishing-cpt-plugin'); ?>"><?php echo esc_textarea($quick_facts); ?></textarea>
 
-		<p><button type="button" class="button" id="add-fish-fact"><?php esc_html_e('Add Fact', 'fishing-cpt-plugin'); ?></button></p>
+		<p class="description"><?php esc_html_e('Enter each fact on a new line. Use dashes (-) at the beginning of lines to create bullet points.', 'fishing-cpt-plugin'); ?></p>
 	</div>
-
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			let factIndex = <?php echo count($quick_facts); ?>;
-
-			$('#add-fish-fact').on('click', function() {
-				const rowHtml = `
-				<tr class="fact-row">
-					<td>
-						<input type="text" name="fish_quick_facts[${factIndex}][label]" placeholder="<?php echo esc_js(__('e.g., Scientific Name, Habitat', 'fishing-cpt-plugin')); ?>" class="regular-text" />
-					</td>
-					<td>
-						<textarea name="fish_quick_facts[${factIndex}][value]" rows="2" class="large-text" placeholder="<?php echo esc_js(__('Enter the fact details', 'fishing-cpt-plugin')); ?>"></textarea>
-					</td>
-					<td>
-						<button type="button" class="button remove-fact"><?php echo esc_js(__('Remove', 'fishing-cpt-plugin')); ?></button>
-					</td>
-				</tr>
-			`;
-				$('#fish-quick-facts-rows').append(rowHtml);
-				factIndex++;
-			});
-
-			$(document).on('click', '.remove-fact', function() {
-				$(this).closest('.fact-row').remove();
-			});
-		});
-	</script>
 <?php
 }
 
@@ -469,17 +422,8 @@ function save_meta_boxes($post_id): void
 		}
 
 		// Save quick facts
-		if (isset($_POST['fish_quick_facts']) && is_array($_POST['fish_quick_facts'])) {
-			$quick_facts = array();
-			foreach ($_POST['fish_quick_facts'] as $fact) {
-				if (! empty($fact['label']) && ! empty($fact['value'])) {
-					$quick_facts[] = array(
-						'label' => sanitize_text_field($fact['label']),
-						'value' => wp_kses_post($fact['value']),
-					);
-				}
-			}
-			update_post_meta($post_id, '_fish_quick_facts', $quick_facts);
+		if (isset($_POST['fish_quick_facts'])) {
+			update_post_meta($post_id, '_fish_quick_facts', wp_kses_post($_POST['fish_quick_facts']));
 		}
 	}
 

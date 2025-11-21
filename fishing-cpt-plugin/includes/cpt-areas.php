@@ -21,7 +21,7 @@ function register_areas_cpt(): void
 		'menu_icon' => 'dashicons-location',
 		'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
 		'rewrite' => ['slug' => 'areas'],
-		'capability_type' => ['area', 'areas'],
+		'capability_type' => 'post',
 		'map_meta_cap' => true,
 	];
 	\register_post_type('area', $args);

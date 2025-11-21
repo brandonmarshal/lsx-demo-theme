@@ -22,7 +22,7 @@ function register_fish_cpt(): void
 		'menu_icon' => 'dashicons-palmtree',
 		'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
 		'rewrite' => ['slug' => 'fish'],
-		'capability_type' => ['fish', 'fishes'],
+		'capability_type' => 'post',
 		'map_meta_cap' => true,
 		'template' => [
 			['core/heading', ['level' => 2, 'placeholder' => \__('Species overview', 'fishing-cpt-plugin')]],

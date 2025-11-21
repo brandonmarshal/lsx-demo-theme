@@ -21,7 +21,7 @@ function register_gear_cpt(): void
 		'menu_icon' => 'dashicons-hammer',
 		'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
 		'rewrite' => ['slug' => 'gear'],
-		'capability_type' => ['gear_item', 'gear_items'],
+		'capability_type' => 'post',
 		'map_meta_cap' => true,
 	];
 	\register_post_type('gear', $args);

@@ -256,9 +256,44 @@ function display_fish_quick_facts($post_id = null): void
 {
 	$post_id = $post_id ?? get_the_ID();
 
-	$facts = get_post_meta($post_id, '_fish_quick_facts', true);
+	$facts_text = get_post_meta($post_id, '_fish_quick_facts', true);
 
-	if (empty($facts) || ! is_array($facts)) {
+	if (empty($facts_text)) {
+		return;
+	}
+
+	// Split the text into lines and process each line
+	$lines = explode("\n", trim($facts_text));
+	$facts = array();
+
+	foreach ($lines as $line) {
+		$line = trim($line);
+		if (empty($line)) {
+			continue;
+		}
+
+		// Check if line starts with a dash (bullet point)
+		if (strpos($line, '-') === 0) {
+			$line = trim(substr($line, 1));
+		}
+
+		// Split on colon to separate label and value
+		if (strpos($line, ':') !== false) {
+			list($label, $value) = explode(':', $line, 2);
+			$facts[] = array(
+				'label' => trim($label),
+				'value' => trim($value),
+			);
+		} else {
+			// If no colon, treat the whole line as a value
+			$facts[] = array(
+				'label' => '',
+				'value' => $line,
+			);
+		}
+	}
+
+	if (empty($facts)) {
 		return;
 	}
 
@@ -267,12 +302,14 @@ function display_fish_quick_facts($post_id = null): void
 	echo '<dl class="facts-list" aria-label="' . esc_attr__('Fish quick facts', 'fishing-cpt-plugin') . '">';
 
 	foreach ($facts as $fact) {
-		if (empty($fact['label']) || empty($fact['value'])) {
+		if (empty($fact['value'])) {
 			continue;
 		}
 
-		echo '<dt class="fact-label">' . esc_html($fact['label']) . '</dt>';
-		echo '<dd class="fact-value">' . wp_kses_post(wpautop($fact['value'])) . '</dd>';
+		if (! empty($fact['label'])) {
+			echo '<dt class="fact-label">' . esc_html($fact['label']) . '</dt>';
+		}
+		echo '<dd class="fact-value">' . esc_html($fact['value']) . '</dd>';
 	}
 
 	echo '</dl>';
