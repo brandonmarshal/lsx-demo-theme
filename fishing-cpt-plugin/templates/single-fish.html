@@ -8,7 +8,7 @@
 </head>
 <body <?php body_class('single-fish'); ?>>
 
-  <!-- FULL-WIDTH COVER BLOCK -->
+  <!-- wp:cover {"className":"fish-cover"} -->
   <header class="fish-cover" style="position:relative; width:100%; background: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.40)), url('<?php echo esc_url( get_the_post_thumbnail_url( null, 'full' ) ); ?>') center/cover no-repeat;">
     <div class="fish-cover__overlay" style="padding:40px 0 32px 0;">
       <h1 class="fish-title" style="color:#fff; text-align:center; font-size:2.5rem; font-weight:bold;"><?php the_title(); ?></h1>
@@ -17,12 +17,13 @@
       <?php endif; ?>
     </div>
   </header>
+  <!-- /wp:cover -->
 
-  <!-- Content Layout -->
+  <!-- wp:group {"className":"fish-content"} -->
   <main class="fish-content" style="max-width:1280px; margin:0 auto; padding:0 20px;">
-    <!-- Two-column layout -->
+    <!-- wp:columns {"className":"fish-columns"} -->
     <section class="fish-columns" style="display:flex; flex-wrap:wrap; margin:32px 0 0 0; gap:32px;">
-      <!-- Left Column: Quick Facts -->
+      <!-- wp:column {"className":"fish-facts"} -->
       <aside class="fish-facts" style="flex:1 1 380px; min-width:320px;">
         <div class="fish-facts__block" style="background:#f9f9f9; border-radius:8px; border:1px solid #e0e0e0; padding:24px 32px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
           <h2 class="facts-heading" style="font-size:1.25rem; font-weight:bold; margin-bottom:12px;">Quick Facts</h2>
@@ -45,8 +46,9 @@
           </ul>
         </div>
       </aside>
+      <!-- /wp:column -->
 
-      <!-- Right Column: Featured Image -->
+      <!-- wp:column {"className":"fish-featured"} -->
       <section class="fish-featured" style="flex:1 1 360px; min-width:320px;">
         <figure style="background:#d0d0d0; border-radius:8px; border:1px solid #e0e0e0; overflow:hidden; margin:0; padding:0;">
           <?php if ( has_post_thumbnail() ) : ?>
@@ -61,9 +63,11 @@
           <?php endif; ?>
         </figure>
       </section>
+      <!-- /wp:column -->
     </section>
+    <!-- /wp:columns -->
 
-    <!-- Fish Description Block -->
+    <!-- wp:group {"className":"fish-description"} -->
     <section class="fish-description" style="margin:40px 0 0 0; background:#fafafa; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
       <?php if ( $desc = get_field('description') ) : ?>
         <h2 style="font-size:1.3rem; font-weight:bold; margin-bottom:8px;">Fish Description / Overview</h2>
@@ -73,8 +77,9 @@
         <p style="color:#777;">No overview available.</p>
       <?php endif; ?>
     </section>
+    <!-- /wp:group -->
 
-    <!-- Identification Section -->
+    <!-- wp:group {"className":"fish-identification"} -->
     <section class="fish-identification" style="margin:40px 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
       <h2 style="font-size:1.25rem; font-weight:bold;">Identification</h2>
       <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
@@ -90,11 +95,13 @@
         <?php endif; ?>
       </ul>
     </section>
+    <!-- /wp:group -->
 
-    <!-- Separator -->
+    <!-- wp:separator {"className":"fish-separator"} -->
     <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
+    <!-- /wp:separator -->
 
-    <!-- Habitat & Behavior Section -->
+    <!-- wp:group {"className":"fish-habitat-behavior"} -->
     <section class="fish-habitat-behavior" style="margin:0 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
       <h2 style="font-size:1.25rem; font-weight:bold;">Habitat &amp; Behavior</h2>
       <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
@@ -104,11 +111,13 @@
         <p style="color:#777;">No habitat or behavior details available.</p>
       <?php endif; ?>
     </section>
+    <!-- /wp:group -->
 
-    <!-- Separator -->
+    <!-- wp:separator {"className":"fish-separator"} -->
     <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
+    <!-- /wp:separator -->
 
-    <!-- Fishing Tips Section -->
+    <!-- wp:group {"className":"fish-tips"} -->
     <section class="fish-tips" style="margin:0 0 0 0; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
       <h2 style="font-size:1.25rem; font-weight:bold;">Fishing Tips</h2>
       <hr style="margin:8px 0 16px 0; border:none; height:2px; background:#eee;">
@@ -133,11 +142,13 @@
         <?php endif; ?>
       <?php endif; ?>
     </section>
+    <!-- /wp:group -->
 
-    <!-- Separator -->
+    <!-- wp:separator {"className":"fish-separator"} -->
     <hr class="fish-separator" style="margin:48px 0; border:none; border-top:2px dashed #ccc;">
+    <!-- /wp:separator -->
 
-    <!-- Related Posts Section -->
+    <!-- wp:group {"className":"fish-related"} -->
     <section class="fish-related" style="margin:0 0 64px 0; background:#f5f5f5; border-radius:6px; border:1px solid #e0e0e0; padding:32px;">
       <h2 style="font-size:1.25rem; font-weight:bold;">More Fish Species</h2>
       <hr style="margin:8px 0 24px 0; border:none; height:2px; background:#eee;">
@@ -189,7 +200,9 @@
         <?php endif; ?>
       </div>
     </section>
+    <!-- /wp:group -->
   </main>
+  <!-- /wp:group -->
 
   <?php wp_footer(); ?>
 </body>
