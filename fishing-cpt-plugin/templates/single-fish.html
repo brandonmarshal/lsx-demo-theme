@@ -2,31 +2,89 @@
 
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
-<main id="main" class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:post-title {"level":1} /-->
+<!-- wp:group {"tagName":"main","className":"single-fish","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group single-fish">
 
-<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2","scale":"contain"} /-->
+<!-- wp:group {"className":"fish-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-hero"><!-- wp:post-featured-image {"isLink":false,"aspectRatio":"16/9","scale":"cover","className":"fish-hero__image"} /-->
 
+<!-- wp:group {"className":"fish-hero__overlay","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-hero__overlay"><!-- wp:group {"className":"fish-hero__content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-hero__content"><!-- wp:post-title {"level":1,"className":"fish-hero__title"} /-->
 
-<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+<!-- wp:group {"className":"fish-hero__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group fish-hero__meta"><!-- wp:post-terms {"term":"species","className":"fish-hero__taxonomy"} /-->
 
-<!-- wp:group {"className":"fish-single__taxonomies","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group fish-single__taxonomies"><!-- wp:post-terms {"term":"species"} /-->
+<!-- wp:post-terms {"term":"habitat","className":"fish-hero__taxonomy"} /-->
 
-<!-- wp:post-terms {"term":"habitat"} /-->
-
-<!-- wp:post-terms {"term":"season"} /--></div>
+<!-- wp:post-terms {"term":"season","className":"fish-hero__taxonomy"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:heading -->
-<h2 class="wp-block-heading">Related Fish</h2>
+<!-- wp:group {"className":"fish-content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-content">
+
+<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
+<h2 class="wp-block-heading fish-section__title">About This Species</h2>
 <!-- /wp:heading -->
 
-<!-- wp:query {"queryId":22,"query":{"perPage":4,"postType":"fish","order":"asc","orderBy":"date","offset":0},"className":"related-fish-query"} -->
-<div class="wp-block-query related-fish-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
-<!-- wp:group {"tagName":"article","className":"related-fish-item","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
-<article class="wp-block-group related-fish-item"><!-- wp:post-title {"level":3,"isLink":true} /--></article>
+<!-- wp:post-content {"layout":{"type":"constrained"}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
+<h2 class="wp-block-heading fish-section__title">Quick Facts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"fish-quick-facts","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-quick-facts"><!-- wp:group {"className":"fish-quick-facts__header","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group fish-quick-facts__header"><!-- wp:paragraph {"className":"fish-quick-facts__title"} -->
+<p class="fish-quick-facts__title">Key Information</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fish-quick-facts__list","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-quick-facts__list"><!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
+<p class="fish-quick-facts__content"><strong>Scientific Name:</strong> Coming from custom fields</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
+<p class="fish-quick-facts__content"><strong>Water Type:</strong> Freshwater/Saltwater</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fish-quick-facts__item","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-quick-facts__item"><!-- wp:paragraph {"className":"fish-quick-facts__content"} -->
+<p class="fish-quick-facts__content"><strong>Average Size:</strong> Size information</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"fish-section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-section"><!-- wp:heading {"level":2,"className":"fish-section__title"} -->
+<h2 class="wp-block-heading fish-section__title">Related Fish</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"related-content__section","layout":{"type":"constrained"}} -->
+<div class="wp-block-group related-content__section"><!-- wp:query {"queryId":22,"query":{"perPage":4,"postType":"fish","order":"asc","orderBy":"date","offset":0},"className":"related-content__grid"} -->
+<div class="wp-block-query related-content__grid"><!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"article","className":"related-content__card","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+<article class="wp-block-group related-content__card"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2","scale":"contain","className":"related-content__card-image"} /-->
+
+<!-- wp:group {"className":"related-content__card-content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group related-content__card-content"><!-- wp:post-title {"level":3,"isLink":true,"className":"related-content__card-title"} /-->
+
+<!-- wp:post-excerpt {"moreText":"Read more","className":"related-content__card-meta"} /--></div>
+<!-- /wp:group --></article>
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
@@ -36,19 +94,21 @@
 <!-- /wp:paragraph -->
 <!-- /wp:query-no-results --></div>
 <!-- /wp:query --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><!-- wp:group {"tagName":"nav","align":"wide","style":{"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"ariaLabel":"Post navigation"} -->
-<nav class="wp-block-group alignwide" aria-label="Post navigation" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow"} /-->
-
-<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /--></nav>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:comments {"className":"wp-block-comments-query-loop","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-comments wp-block-comments-query-loop" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">Comments</h2>
+<!-- wp:group {"className":"fish-navigation","layout":{"type":"constrained"}} -->
+<div class="wp-block-group fish-navigation"><!-- wp:group {"className":"fish-navigation__links","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group fish-navigation__links"><!-- wp:post-navigation-link {"type":"previous","showTitle":true,"className":"fish-navigation__link"} /-->
+
+<!-- wp:post-navigation-link {"showTitle":true,"className":"fish-navigation__link"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:comments {"className":"fish-comments","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-comments fish-comments" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:heading {"fontSize":"x-large","className":"fish-comments__title"} -->
+<h2 class="wp-block-heading has-x-large-font-size fish-comments__title">Community Discussion</h2>
 <!-- /wp:heading -->
 
 <!-- wp:comments-title {"level":3,"fontSize":"large"} /-->
@@ -82,7 +142,7 @@
 <!-- /wp:comments-pagination -->
 
 <!-- wp:post-comments-form /--></div>
-<!-- /wp:comments --></main>
+<!-- /wp:comments --></div>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer"} /-->

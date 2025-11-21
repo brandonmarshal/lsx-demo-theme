@@ -55,6 +55,7 @@ function fishing_cpt_includes(): void
 		'includes/settings-page.php',
 		'includes/google-maps-settings.php',  // Google Maps settings page
 		'includes/google-maps-enqueue.php',   // Google Maps assets enqueue
+		'includes/repeatable-fields-enqueue.php', // Single CPT assets enqueue
 		'includes/blocks.php',
 		'includes/blocks-query-variations.php',
 		'includes/patterns.php',
