@@ -1,0 +1,52 @@
+{
+    "apiVersion": 3,
+    "name": "fishing/gallery",
+    "title": "Fishing Gallery",
+    "category": "fishing",
+    "icon": "format-gallery",
+    "description": "Display image gallery with lightbox functionality for Fish, Gear, and Area posts",
+    "keywords": ["fishing", "gallery", "images", "lightbox", "photos"],
+    "textdomain": "fishing-cpt-plugin",
+    "usesContext": ["postId", "postType"],
+    "attributes": {
+        "columns": {
+            "type": "number",
+            "default": 3
+        },
+        "lightbox": {
+            "type": "boolean",
+            "default": true
+        },
+        "captions": {
+            "type": "boolean",
+            "default": true
+        },
+        "imageSize": {
+            "type": "string",
+            "default": "large"
+        }
+    },
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "gradients": false,
+            "link": false
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "border": {
+            "radius": true
+        },
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php"
+}
