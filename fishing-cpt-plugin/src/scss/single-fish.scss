@@ -3,113 +3,47 @@
  * Modern, responsive design for fish species pages
  */
 
-// IMMEDIATE VISUAL CONFIRMATION - If you see this, CSS is loading!
-body.single-fish {
-    border: 10px solid #ff00ff !important; /* HOT PINK BORDER */
-    background: linear-gradient(
-        45deg,
-        #ff0000,
-        #00ff00
-    ) !important; /* RED TO GREEN GRADIENT */
-    min-height: 100vh !important;
-}
+// Debug visual styles removed (were adding full-page magenta border and gradient)
 
 /**
  * Single Fish Template Styles
  * Modern, responsive design for fish species pages
  */
 
-// Variables and mixins
+// Variables and mixins (consolidated palette)
 :root {
+    /* Palette requested by user */
+    --fish-bg-accent: #0e2003; /* Forest Night */
+    --fish-bg-secondary: #21382c; /* Forest Surface */
+    --fish-text-primary: #ebf2f4; /* Body Text (light) */
+    --fish-bg-primary: #ffffff; /* Heading (white) */
     --fish-primary: #e0ff45; /* Primary Lime */
     --fish-secondary: #55620a; /* Muted Olive */
     --fish-accent: #88d1ab; /* Accent Mint */
 
-    --fish-bg-primary: #ffffff; /* Heading (white) */
-    --fish-bg-secondary: #21382c; /* Forest Surface */
-    --fish-bg-accent: #0e2003; /* Forest Night */
-
-    --fish-text-primary: #ebf2f4; /* Body Text (light) */
-    --fish-text-secondary: #88d1ab; /* Accent Mint */
-    --fish-text-light: #ffffff; /* Heading (white) */
-
-    --fish-border: #55620a; /* Muted Olive */
-    --fish-border-light: #21382c; /* Forest Surface */
-
-    --fish-shadow-sm: 0 1px 2px 0 rgb(14 32 3 / 0.15);
-    --fish-shadow: 0 1px 3px 0 rgb(14 32 3 / 0.2),
-        0 1px 2px -1px rgb(14 32 3 / 0.2);
-    --fish-shadow-lg: 0 10px 15px -3px rgb(14 32 3 / 0.2),
-        0 4px 6px -4px rgb(14 32 3 / 0.2);
-
-    --fish-radius-sm: 0.375rem;
-    --fish-radius: 0.5rem;
-    --fish-radius-lg: 0.75rem;
-    --fish-radius-xl: 1rem;
-
-    --fish-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-:root {
-    --fish-primary: #2563eb;
-    --fish-secondary: #1e40af;
-    --fish-accent: #06b6d4;
+    /* Supporting tokens */
     --fish-success: #10b981;
     --fish-warning: #f59e0b;
     --fish-error: #ef4444;
 
-    --fish-text-primary: #1f2937;
-    --fish-text-secondary: #6b7280;
-    --fish-text-light: #9ca3af;
+    --fish-text-secondary: #88d1ab; /* small accent */
+    --fish-text-light: #ffffff;
 
-    --fish-bg-primary: #ffffff;
-    --fish-bg-secondary: #f8fafc;
-    --fish-bg-accent: #f1f5f9;
+    --fish-border: #55620a;
+    --fish-border-light: #21382c;
 
-    --fish-border: #e5e7eb;
-    --fish-border-light: #f3f4f6;
-
-    --fish-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --fish-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --fish-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --fish-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --fish-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08),
+        0 1px 2px -1px rgba(0, 0, 0, 0.06);
+    --fish-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.12),
+        0 4px 6px -4px rgba(0, 0, 0, 0.08);
 
     --fish-radius-sm: 0.375rem;
     --fish-radius: 0.5rem;
     --fish-radius-lg: 0.75rem;
     --fish-radius-xl: 1rem;
 
-    --fish-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-:root {
-    --fish-primary: #2563eb;
-    --fish-secondary: #1e40af;
-    --fish-accent: #06b6d4;
-    --fish-success: #10b981;
-    --fish-warning: #f59e0b;
-    --fish-error: #ef4444;
-
-    --fish-text-primary: #1f2937;
-    --fish-text-secondary: #6b7280;
-    --fish-text-light: #9ca3af;
-
-    --fish-bg-primary: #ffffff;
-    --fish-bg-secondary: #f8fafc;
-    --fish-bg-accent: #f1f5f9;
-
-    --fish-border: #e5e7eb;
-    --fish-border-light: #f3f4f6;
-
-    --fish-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --fish-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --fish-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-        0 4px 6px -4px rgb(0 0 0 / 0.1);
-
-    --fish-radius-sm: 0.375rem;
-    --fish-radius: 0.5rem;
-    --fish-radius-lg: 0.75rem;
-    --fish-radius-xl: 1rem;
-
-    --fish-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --fish-transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // Mixins
@@ -144,7 +78,11 @@ body.single-fish {
 .single-fish {
     --container-max-width: 1200px;
     --container-padding: 2rem;
-    background: var(--fish-bg-accent);
+    background: linear-gradient(
+        180deg,
+        var(--fish-bg-accent) 0%,
+        color-mix(in srgb, var(--fish-bg-accent) 10%, #21382c 90%)
+    );
     min-height: 100vh;
 
     @media (max-width: 768px) {
@@ -176,10 +114,9 @@ body.single-fish {
         position: absolute;
         inset: 0;
         background: linear-gradient(
-            135deg,
-            rgba(14, 32, 3, 0.8) 0%,
-            rgba(33, 56, 44, 0.6) 50%,
-            rgba(136, 209, 171, 0.4) 100%
+            180deg,
+            rgba(14, 32, 3, 0.85) 0%,
+            rgba(33, 56, 44, 0.55) 60%
         );
         display: flex;
         align-items: flex-end;
@@ -194,8 +131,8 @@ body.single-fish {
     }
 
     &__title {
-        font-size: clamp(2.5rem, 6vw, 5rem);
-        font-weight: 900;
+        font-size: clamp(2rem, 5.5vw, 4rem);
+        font-weight: 800;
         margin: 0 0 1.5rem 0;
         text-shadow: 0 3px 6px rgba(14, 32, 3, 0.7);
         line-height: 1.1;
@@ -220,6 +157,7 @@ body.single-fish {
 
     &__taxonomy {
         background: rgba(224, 255, 69, 0.15);
+        -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
         border: 2px solid var(--fish-primary);
         border-radius: 3rem;
@@ -320,8 +258,8 @@ body.single-fish {
     }
 
     &:hover {
-        box-shadow: 0 20px 40px rgba(14, 32, 3, 0.3);
-        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+        transform: translateY(-4px);
     }
 
     &__header {
@@ -334,7 +272,6 @@ body.single-fish {
             width: 3rem;
             height: 3rem;
             color: var(--fish-primary);
-            filter: drop-shadow(0 2px 4px rgba(224, 255, 69, 0.3));
         }
     }
 
@@ -368,7 +305,8 @@ body.single-fish {
         background: rgba(235, 242, 244, 0.1);
         border-radius: var(--fish-radius-lg);
         border-left: 4px solid var(--fish-primary);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
         transition: var(--fish-transition);
 
         &:hover {
@@ -447,7 +385,11 @@ body.single-fish {
         align-items: center;
         gap: 0.5rem;
         padding: 0.5rem 1rem;
-        background: var(--fish-bg-accent);
+        background: color-mix(
+            in srgb,
+            var(--fish-bg-accent) 85%,
+            rgba(255, 255, 255, 0.06)
+        );
         border-radius: var(--fish-radius);
         font-weight: 500;
     }
@@ -493,7 +435,7 @@ body.single-fish {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            transition: var(--fish-transition);
+            transition: transform 0.25s ease;
         }
 
         &-content {
@@ -576,15 +518,21 @@ body.single-fish {
         text-transform: uppercase;
         letter-spacing: 0.05em;
         transition: var(--fish-transition);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
         box-shadow: 0 4px 12px rgba(14, 32, 3, 0.2);
 
         &:hover {
-            background: var(--fish-primary);
+            background: color-mix(
+                in srgb,
+                var(--fish-primary) 70%,
+                var(--fish-bg-accent) 30%
+            );
             color: var(--fish-bg-accent);
             border-color: var(--fish-primary);
             transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 8px 20px rgba(224, 255, 69, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
         }
 
         &[data-direction='next'] {
@@ -676,7 +624,9 @@ body.single-fish {
         border: 1px solid rgba(224, 255, 69, 0.2);
         border-radius: var(--fish-radius-lg);
         padding: 2rem;
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
 
         &__title {
             font-size: 1.5rem;
@@ -746,6 +696,10 @@ body.single-fish {
                 border-color: var(--fish-accent);
                 transform: translateY(-2px);
                 box-shadow: 0 4px 12px rgba(136, 209, 171, 0.3);
+            }
+            &:focus-visible {
+                outline: 3px solid rgba(224, 255, 69, 0.9);
+                outline-offset: 3px;
             }
         }
     }
@@ -837,9 +791,31 @@ body.single-fish {
     padding: 0;
     margin: -1px;
     overflow: hidden;
+    /* legacy clip kept for older browsers */
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Modern sr-only that reveals on focus/active (helps keyboard users) */
+.sr-only--accessible {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* focus-visible outlines for keyboard users */
+.fish-navigation__link:focus-visible,
+.comment-form .submit:focus-visible,
+.fish-navigation__link:focus {
+    outline: 3px solid rgba(224, 255, 69, 0.9);
+    outline-offset: 3px;
 }
 
 .visually-hidden {
