@@ -51,4 +51,4 @@ function register_gear_cpt(): void
 	];
 	\register_post_type('gear', $args);
 }
-\add_action('after_setup_theme', 'register_gear_cpt', 20);
+\add_action('init', 'register_gear_cpt', 10);

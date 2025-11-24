@@ -51,4 +51,4 @@ function register_areas_cpt(): void
 	];
 	\register_post_type('area', $args);
 }
-\add_action('after_setup_theme', 'register_areas_cpt', 20);
+\add_action('init', 'register_areas_cpt', 15);
