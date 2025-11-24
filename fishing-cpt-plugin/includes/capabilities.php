@@ -1,6 +1,6 @@
 <?php
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -14,16 +14,30 @@ function add_caps(): void
 	$roles = ['administrator', 'editor'];
 	$cpts  = ['fish', 'gear', 'area'];
 	foreach ($roles as $role_name) {
-		$role = get_role($role_name);
+		$role = \get_role($role_name);
 		if (! $role) {
 			continue;
 		}
 		foreach ($cpts as $cpt) {
-			$plural = $cpt === 'fish' ? 'fishes' : ($cpt === 'area' ? 'areas' : $cpt); // simple pluralization.
+			// Handle special cases for capability types
+			if ($cpt === 'fish') {
+				$singular = 'fish';
+				$plural = 'fishes';
+			} elseif ($cpt === 'gear') {
+				$singular = 'gear_item';
+				$plural = 'gear_items';
+			} elseif ($cpt === 'area') {
+				$singular = 'area';
+				$plural = 'areas';
+			} else {
+				$singular = $cpt;
+				$plural = $cpt . 's'; // fallback
+			}
+
 			$caps = [
-				"edit_{$cpt}",
-				"read_{$cpt}",
-				"delete_{$cpt}",
+				"edit_{$singular}",
+				"read_{$singular}",
+				"delete_{$singular}",
 				"edit_{$plural}",
 				"edit_others_{$plural}",
 				"publish_{$plural}",
@@ -37,4 +51,4 @@ function add_caps(): void
 		}
 	}
 }
-add_action('init', __NAMESPACE__ . '\add_caps');
+\add_action('init', __NAMESPACE__ . '\add_caps');

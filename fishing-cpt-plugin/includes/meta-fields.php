@@ -1,6 +1,6 @@
 <?php
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -11,19 +11,7 @@ if (! defined('ABSPATH')) {
  */
 function register_meta_fields(): void
 {
-	// Fish meta (simple string fields).
-	$fish_fields = ['water_type', 'average_size', 'bait_type', 'scientific_name'];
-	foreach ($fish_fields as $field) {
-		\register_post_meta('fish', $field, [
-			'single'            => true,
-			'type'              => 'string',
-			'show_in_rest'      => true,
-			'sanitize_callback' => 'sanitize_text_field',
-			'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
-		]);
-	}
-
-	// Fish facts JSON array stored as string.
+	// Fish facts JSON array stored as string (handled by ACF repeater).
 	\register_post_meta('fish', 'fish_facts', [
 		'single'            => true,
 		'type'              => 'string',
@@ -32,31 +20,10 @@ function register_meta_fields(): void
 		'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
 	]);
 
-	// Gear meta.
-	$gear_fields = ['brand', 'gear_type', 'price'];
-	foreach ($gear_fields as $field) {
-		\register_post_meta('gear', $field, [
-			'single'            => true,
-			'type'              => 'string',
-			'show_in_rest'      => true,
-			'sanitize_callback' => 'sanitize_text_field',
-			'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
-		]);
-	}
+	// ACF fields (scientific_name, water_type, average_size, bait_type, brand, gear_type, price, location, weather_conditions, catch_success)
+	// are handled by ACF internally and don't need register_post_meta
 
-	// Areas meta.
-	$areas_fields = ['location', 'weather_conditions', 'catch_success'];
-	foreach ($areas_fields as $field) {
-		\register_post_meta('area', $field, [
-			'single'            => true,
-			'type'              => 'string',
-			'show_in_rest'      => true,
-			'sanitize_callback' => 'sanitize_text_field',
-			'auth_callback'     => __NAMESPACE__ . '\can_edit_meta',
-		]);
-	}
-
-	// Areas Google Maps location fields.
+	// Areas Google Maps location fields (not ACF fields, direct post meta).
 	\register_post_meta('area', 'area_latitude', [
 		'single'            => true,
 		'type'              => 'string',

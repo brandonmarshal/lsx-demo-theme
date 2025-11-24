@@ -10,6 +10,7 @@
 -   Started 'SEO For Beginners' course on yoast - [Course link]([url](https://academy.yoast.com/lessons/what-is-seo/))
 -   I watched the videos and did the quizzes that followed
 -   Understanding and implementing the Claude and Gemini Agents.
+-   Started building my webpack files but ran into error when running the build. 
 
   
 ### What I learnt
@@ -34,7 +35,8 @@
 -   2.0 hrs – Going through tasks and assigning tags and projects, also grouping all tasks.
 -   1.75 hrs - Trying to resolve the merge conflicts on my SYNC Pull Request.
 -   1.5 hrs - Started "SEO For Beginners" course on Yoast
--   1.0 hrs - Understanding and implementing the Claude and Gemini Agents. 
+-   1.0 hrs - Understanding and implementing the Claude and Gemini Agents.
+-   1.5 hrs - Building my webpack files and troubleshooting errors I got. 
 
 ---
 

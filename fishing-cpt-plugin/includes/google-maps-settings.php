@@ -1,6 +1,6 @@
 <?php
 
-namespace Fishing_CPT\GoogleMaps;
+namespace FishingCPTPlugin\GoogleMaps;
 
 if (! defined('ABSPATH')) {
 	exit;

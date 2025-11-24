@@ -6,11 +6,11 @@
  * WordPress 6.7+ block templates. Ensures proper template hierarchy
  * for Fish, Gear, and Area post types.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.0
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

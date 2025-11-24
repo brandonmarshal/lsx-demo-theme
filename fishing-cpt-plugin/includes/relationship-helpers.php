@@ -5,11 +5,11 @@
  * Manages reciprocal relationships between Fish, Gear, and Area CPTs
  * to ensure data integrity and prevent circular references.
  *
- * @package Fishing_CPT_Plugin
+ * @package FishingCPTPlugin
  * @since 1.0.2
  */
 
-namespace Fishing_CPT;
+namespace FishingCPTPlugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
