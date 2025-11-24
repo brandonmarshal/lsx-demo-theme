@@ -154,21 +154,23 @@ endif;
 // Load custom post type and taxonomy registration files.
 function fishing_theme_load_cpt_and_tax_files()
 {
+	error_log('Starting to load CPT and taxonomy files');
 	$files = array(
 		'inc/cpt-fish.php',
 		'inc/cpt-gear.php',
 		'inc/cpt-areas.php',
-		// 'inc/taxonomies.php', // Temporarily commented out
+		'inc/taxonomies.php', // Re-enabled
 		'inc/block-styles.php',
 	);
 	foreach ($files as $relative_path) {
 		$absolute_path = get_parent_theme_file_path($relative_path);
 		if (file_exists($absolute_path)) {
 			require_once $absolute_path;
-			error_log("Loaded: " . $relative_path);
+			error_log("Successfully loaded: " . $relative_path);
 		} else {
-			error_log("Failed to load: " . $relative_path);
+			error_log("Failed to load - file does not exist: " . $relative_path . " (absolute: " . $absolute_path . ")");
 		}
 	}
+	error_log('Finished loading CPT and taxonomy files');
 }
 add_action('init', 'fishing_theme_load_cpt_and_tax_files', 1);
