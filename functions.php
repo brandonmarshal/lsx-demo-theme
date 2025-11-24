@@ -20,6 +20,15 @@ if (! function_exists('fishing_theme_post_format_setup')) :
 endif;
 add_action('after_setup_theme', 'fishing_theme_post_format_setup');
 
+// Load theme text domain for translations
+if (! function_exists('fishing_theme_load_textdomain')) :
+	function fishing_theme_load_textdomain()
+	{
+		load_theme_textdomain('fishing-theme', get_template_directory() . '/languages');
+	}
+endif;
+add_action('after_setup_theme', 'fishing_theme_load_textdomain');
+
 
 // Enqueue only the main stylesheet (style.css)
 if (! function_exists('fishing_theme_enqueue_styles')) :
@@ -148,15 +157,18 @@ function fishing_theme_load_cpt_and_tax_files()
 	$files = array(
 		'inc/cpt-fish.php',
 		'inc/cpt-gear.php',
-		'inc/cpt-area.php',
-		'inc/taxonomies.php',
+		'inc/cpt-areas.php',
+		// 'inc/taxonomies.php', // Temporarily commented out
 		'inc/block-styles.php',
 	);
 	foreach ($files as $relative_path) {
 		$absolute_path = get_parent_theme_file_path($relative_path);
 		if (file_exists($absolute_path)) {
 			require_once $absolute_path;
+			error_log("Loaded: " . $relative_path);
+		} else {
+			error_log("Failed to load: " . $relative_path);
 		}
 	}
 }
-add_action('after_setup_theme', 'fishing_theme_load_cpt_and_tax_files');
+add_action('init', 'fishing_theme_load_cpt_and_tax_files', 1);
