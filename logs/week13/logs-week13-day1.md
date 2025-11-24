@@ -9,7 +9,9 @@
 -   Closed off the milestones and moved incomplete tasks over to the next milestone.
 -   Did prompt research and planning for a different approach to the plugin.
 -   After merging develop branch into main, I had some issues with my CPT's as copilot had deleted them and I never noticed.
--   I have managed to get backups and to get them functional again, this was important because without those CPT's my pages cannot work. 
+-   I have managed to get backups and to get them functional again, this was important because without those CPT's my pages cannot work.
+-   Started on my new approach to the plugin, with more consistent testing so I can stay in control.
+-   I have prepared proper taxonomies and custom fields for my CPT's that I can now add via SCF. 
 
 ### How do you feel about today's progress?
 
@@ -20,7 +22,8 @@
 -   2.0 hrs – Study time for today.
 -   2.0 hrs - Preping Plugin folder for release and then drafting and publishing a release tag.
 -   1.0 hrs - Prompt research with AI regarding essential files for a plugin and getting a different approach to my build.
--   1.5 hrs - Backing up my CPT's after I lost them and making sure they work correctly again. 
+-   1.5 hrs - Backing up my CPT's after I lost them and making sure they work correctly again.
+-   2.0 hrs - Preparing and creating new plugin folder and planning proper taxonomies and custom fields for my plugin CPT's 
 
 ---
 
