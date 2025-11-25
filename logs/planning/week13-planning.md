@@ -13,11 +13,17 @@
 
 ### Monday (2025-11-24)
 
--   [ ] Do a release candidate for the fishing CPT plugin
+-   [ ] Fix single-fish template on my plugin.
+-   [ ] Do a release tag for plugin (Extended to today)
+-   [ ] Working on templates for my theme
+-   [ ] Start a new course - https://learn.wordpress.org/course/creating-a-4-page-business-website/
 
 ### Tuesday (2025-11-25)
 
--   [ ] Complete comprehensive tests on the fishing CPT plugin
+-   [ ] Continue with my plugin progression.
+-   [ ] NB - Clearing away some bugherd tasks.
+-   [ ] Continue learning course "Building a 4-page Business website" https://app.asana.com/1/1152726221312/project/1211170302971594/task/1211693001586023?focus=true
+-   [ ] Update this weeks planning again.
 
 ### Wednesday (2025-11-26)
 
