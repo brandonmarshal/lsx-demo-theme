@@ -156,10 +156,6 @@ function fishing_theme_load_cpt_and_tax_files()
 {
 	error_log('Starting to load CPT and taxonomy files');
 	$files = array(
-		'inc/cpt-fish.php',
-		'inc/cpt-gear.php',
-		'inc/cpt-areas.php',
-		'inc/taxonomies.php', // Re-enabled
 		'inc/block-styles.php',
 	);
 	foreach ($files as $relative_path) {
