@@ -27,7 +27,10 @@
 
 ### Wednesday (2025-11-26)
 
--   [ ] Troubleshoot FacetWP error and implement fixes
+-   [ ] Start new wordpress course - https://learn.wordpress.org/lesson/user-management/
+-   [ ] Fix local DB to register plugin CPT's
+-   [ ] Complete the short content for each CPT, now adding custom fields etc.
+-   [ ] Attempt to implement FacetWP again now that I got the custom fields working correctly. 
 
 ### Thursday (2025-11-27)
 
