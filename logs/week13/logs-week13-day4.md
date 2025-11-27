@@ -11,19 +11,21 @@
 -   Daily Logs
 -   Weekly plan
 -   Evaluation & Mentorship
-
-### How do you feel about today's progress?
+-   Completed the Internship Admin tab as well as its sub tabs. 
 
 ---
 
 ## Time Logs
 
--   1.5 hrs – woo commerce workshop
+-   1.5 hrs – woo commerce workshop.
 -   1.0 hrs - Troubleshooting why shortcode were not working.
 -   1.0 hrs - Creating template parts for custom fields to be used and styled.
 -   1.5 hrs - Started working on the intern doc to improve some tabs and add more information for new interns.
+-   1.0 hrs - Completed the Internship Admin tab as well as the sub tabs on docs.
 
 ---
-
-## Notes
--  
+## How do you feel about today's progress?
+### Notes
+-  Today has been really productive. I manage to join a workshop this morning at 4am and it was quite interesting. I learnt how to navigate through Woo-commerce plugin and what the settings do etc.
+-  I am quite happy with my progress on my plugin, it is taking me a while to get a single-fish template that actually work with all my custom fields, but I am going to keep trying.
+-  I had to put the template building aside for a bit today, so I could focus on the intern document improvements. 
