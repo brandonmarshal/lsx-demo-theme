@@ -13,6 +13,8 @@
 -   Evaluation & Mentorship
 -   Completed the Internship Admin tab as well as its sub tabs.
 -   Attended Developer updates, Wordpress 6.9 Workshop
+-   I have been finding course materials for yoast, github, microsoft.learn and wordpress to fill in on the document.
+-   I have completed and re-designed the Yoast tab and the Github.learn tab. 
 
 ---
 
@@ -24,6 +26,7 @@
 -   1.5 hrs - Started working on the intern doc to improve some tabs and add more information for new interns.
 -   1.0 hrs - Completed the Internship Admin tab as well as the sub tabs on docs.
 -   1.0 hrs - Attended Developer updates, Wordpress 6.9 Workshop.
+-   2.0 hrs - Working on the documents study curriculum. 
 
 ---
 ## How do you feel about today's progress?
