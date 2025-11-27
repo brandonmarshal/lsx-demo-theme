@@ -11,7 +11,8 @@
 -   Daily Logs
 -   Weekly plan
 -   Evaluation & Mentorship
--   Completed the Internship Admin tab as well as its sub tabs. 
+-   Completed the Internship Admin tab as well as its sub tabs.
+-   Attended Developer updates, Wordpress 6.9 Workshop
 
 ---
 
@@ -22,6 +23,7 @@
 -   1.0 hrs - Creating template parts for custom fields to be used and styled.
 -   1.5 hrs - Started working on the intern doc to improve some tabs and add more information for new interns.
 -   1.0 hrs - Completed the Internship Admin tab as well as the sub tabs on docs.
+-   1.0 hrs - Attended Developer updates, Wordpress 6.9 Workshop.
 
 ---
 ## How do you feel about today's progress?
