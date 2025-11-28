@@ -20,7 +20,8 @@
 
 -   2.0 hrs – Completed studies for today.
 -   2.0 hrs - Catchup meeting with Ash.
--   2.5 hrs - Making improvements to the Intern google doc. 
+-   2.5 hrs - Making improvements to the Intern google doc.
+-   1.5 hrs - Using workspace to gather info for improvements and using plan-agent.md to do next weeks planning.
 
 ---
 ## How do you feel about today's progress?
