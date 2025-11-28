@@ -9,6 +9,10 @@
 -   We discussed the internship google doc and how we want to approach the plan
 -   We decided that it will be better to create a more guided curriculum, showing the interns EXACTLY what is important for each Month.
 -   Here are the meeting notes: https://app.fireflies.ai/view/Meet-ryu-bpkd-edf::01KAZM4ZWKEDWPBBCY51TBKQ2B
+-   Using the Awesome copilot resources to update the planning tab on the docs
+-   Updated the profiles section, those tabs can be merged into one.
+-   Generated a section in weekly planning that gives the awesome-copilot planning files and explains how to use each one and for what it is
+  typically used for. 
 
 ---
 
@@ -16,6 +20,7 @@
 
 -   2.0 hrs – Completed studies for today.
 -   2.0 hrs - Catchup meeting with Ash.
+-   2.5 hrs - Making improvements to the Intern google doc. 
 
 ---
 ## How do you feel about today's progress?
