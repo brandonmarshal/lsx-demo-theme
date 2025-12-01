@@ -6,14 +6,15 @@
 
 -   Had a catchup meeting with Ash regarding the intern document.
 -   I need to update the remaining tabs similar to Ash's example
+-   Continued work on the google document, but had silly struggles.
+-   I was trying with AI to get the codeblock background for all the tables but it was not working.
+-   I will add them manually.
 
-### How do you feel about today's progress?
-
----
 
 ## Time Logs
 
 -   1.0 hrs – Catchup meeting with Ash
+-   2.0 hrs - Working on the intern document.
 
 ---
 
