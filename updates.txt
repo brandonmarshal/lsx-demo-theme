@@ -1,0 +1,13 @@
+Checking /home/runner/work/lsx-demo-theme/lsx-demo-theme/package.json
+
+ @axe-core/playwright        4.10.2  →    4.11.0
+ @playwright/test            1.56.1  →    1.57.0
+ @types/node                 24.3.1  →   24.10.1
+ @wordpress/eslint-plugin   22.20.0  →   22.22.0
+ @wordpress/scripts          31.0.0  →    31.1.0
+ autoprefixer              ^10.4.14  →  ^10.4.22
+ postcss-cli                ^10.1.0  →   ^11.0.1
+ sass                        1.94.0  →    1.94.2
+ webpack                    5.102.1  →   5.103.0
+
+Run ncu -u to upgrade package.json
