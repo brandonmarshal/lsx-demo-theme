@@ -13,7 +13,9 @@
 -   All links are now back in the files
 -   Changelog has been updated.
 -   Last thing I need to do before merging:
-    -   Add the usage of PR template in the Github skills section for new interns to learn they need to use PR templates when creating PR's 
+    -   Add the usage of PR template in the Github skills section for new interns to learn they need to use PR templates when creating PR's
+ 
+-   I have create my planning from 3 Dec - 17 Dec which gives me two more days to make any changes afterwards. 
 
 
 ## Time Logs
@@ -22,6 +24,7 @@
 -   0.5 hrs - Catchup with Ash
 -   1.5 hrs - Reviewed the PR and had to add links in.
 -   2.0 hrs - Completed the reviewing and improvements required.
+-   1.5 hrs - Created end year sprint plan
 
 ---
 
