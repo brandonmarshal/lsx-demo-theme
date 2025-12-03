@@ -25,6 +25,7 @@
 -   2.0 hrs - Auditing plugin to ensure Area CPT convert 100% and audited theme to ensure successful rebrand (edits made)
 -   1.75 hrs - Working on "https://github.com/brandonmarshal/lsx-demo-theme/issues/125" Google maps integration
 -   2.0 hrs - Continued work on the above ISSUE. Also updated my details in the lightspeed team doc
+-   1.0 hrs - Continued work on the google map integration issue. 
 
 ---
 
