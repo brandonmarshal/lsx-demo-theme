@@ -1,6 +1,6 @@
 # Copilot Instructions for AI Block Theme Template
 
-You are working on the LSX Demo Theme, an intern learning project and WordPress block theme built with Full Site Editing (FSE). This - Prefix all functions with `lsx_demo_theme_`
+You are working on the LSX Demo Theme, an intern learning project and WordPress block theme built with Full Site Editing (FSE). This - Prefix all functions with `fishing_theme_`
 
 -   Use proper WordPress text domain: `lsx-demo-theme`pository serves as both a practical WordPress block theme and a comprehensive learning environment for WordPress development with integrated AI development tools and extensive Copilot asset library.
 
@@ -208,7 +208,7 @@ This project follows strict WordPress inline documentation standards:
 -   Include `@since` tags with version numbers
 -   Document all parameters with types and descriptions
 -   Document return values with types
--   Use WordPress function prefixes (`lsx_demo_theme_`)
+-   Use WordPress function prefixes (`fishing_theme_`)
 -   Follow [WordPress PHP Documentation Standards](https://github.com/WordPress/wpcs-docs/blob/master/inline-documentation-standards/php.md)
 
 ### JavaScript Documentation (JSDoc)

@@ -2,9 +2,9 @@ name: Theme CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   lint:
@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Lint JavaScript
@@ -31,7 +31,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: "8.1"
           tools: composer, phpcs
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
@@ -47,8 +47,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Install Pa11y
@@ -69,8 +69,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Install Playwright Browsers
@@ -102,8 +102,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -141,10 +141,10 @@ jobs:
           # Ensure build files are included
           cp -r build/* theme-package/
           # Create the zip file
-          cd theme-package && zip -r "../lsx-demo-theme-$VERSION.zip" .
+          cd theme-package && zip -r "../fishing-theme-$VERSION.zip" .
       - name: Upload zip artifact
         uses: actions/upload-artifact@v4
         with:
           name: theme-package
-          path: lsx-demo-theme-*.zip
+          path: fishing-theme-*.zip
           retention-days: 30

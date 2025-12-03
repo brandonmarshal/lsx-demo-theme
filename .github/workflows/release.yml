@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build:
@@ -15,8 +15,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: "18"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -40,7 +40,7 @@ jobs:
           cp -r build/* theme-package/ || true
 
           # Create the zip file
-          cd theme-package && zip -r "../lsx-demo-theme-$VERSION.zip" .
+          cd theme-package && zip -r "../fishing-theme-$VERSION.zip" .
 
       - name: Create Release
         id: create_release
@@ -52,7 +52,7 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            lsx-demo-theme-*.zip
+            fishing-theme-*.zip
           body: |
             ## LSX Demo Theme ${{ github.ref_name }}
 
