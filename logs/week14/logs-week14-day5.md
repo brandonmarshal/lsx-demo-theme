@@ -15,7 +15,8 @@
 ## Time Logs
 
 -   1.0 hrs – Finding plugin lessons and completing them. Also read through relevant section in the plugin handbook.
--   1.5 hrs - Working on my original plugin and make adjustments as mentioned above. Tested and working. 
+-   1.5 hrs - Working on my original plugin and make adjustments as mentioned above. Tested and working.
+-   1.0 hrs - troubleshooting my google maps block on my plugin, it does not want to register on wordpress
 
 ---
 
