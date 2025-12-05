@@ -9,7 +9,9 @@
 -   I have made some updates on my plugin:
     -   Added SCSS to settings page for better visuals
     -   API keys now get validated after saving with success/error message (tested and works)
-    -   Setup WP-scripts to compile my SCSS for me. 
+    -   Setup WP-scripts to compile my SCSS for me.
+ 
+-   Created a CHANGELOG tab in the intern doc and informed Ingrid of its use. 
 
 
 ## Time Logs
@@ -17,6 +19,7 @@
 -   1.0 hrs – Finding plugin lessons and completing them. Also read through relevant section in the plugin handbook.
 -   1.5 hrs - Working on my original plugin and make adjustments as mentioned above. Tested and working.
 -   1.0 hrs - troubleshooting my google maps block on my plugin, it does not want to register on wordpress
+-   0.25 hrs - Updating the Intern Doc with a CHANGELOG tab.
 
 ---
 
