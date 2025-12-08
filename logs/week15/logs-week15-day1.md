@@ -9,6 +9,7 @@
 ## Time Logs
 
 -   1.0 hrs – Finalised google maps integration. Tests complete.
+-   2.0 hrs - Working on the other 4 blocks in my plugin. 
 
 ---
 
