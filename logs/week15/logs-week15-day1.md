@@ -5,11 +5,13 @@
 ### What have you accomplished today?
 
 -   Finalised my google maps block is reading the API key and the long and lat custom fields on Area CPT.
+-   Fish-card block in my plugin was not working and not getting correct custom fields. I have worked through all the problems and I am happy with the result
 
 ## Time Logs
 
 -   1.0 hrs – Finalised google maps integration. Tests complete.
--   2.0 hrs - Working on the other 4 blocks in my plugin. 
+-   2.0 hrs - Working on the other 4 blocks in my plugin.
+-   2.0 hrs - Working on fish-card, now happy with the result
 
 ---
 
