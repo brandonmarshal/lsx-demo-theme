@@ -15,9 +15,10 @@
 -   1.0 hrs – Fixed the unique cards not loading error
 -   2.0 hrs - Working on my fish-query-block, fixing blockers and getting the block to read the data correctly.
 -   2.0 hrs - Finishing off the query-cards for each CPT and testing the data updates accordingly. Also updating settings for blocks.
+-   2.0 hrs - Continuious work on the plugin. Fixing errors
 
 ---
 
 ## Notes
 
--   
+-   My Custom fields are not not importing with SCF correctly. I am troubleshooting this issue still. 
