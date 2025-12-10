@@ -7,14 +7,16 @@
 -   Changed my importing approach to vendor method.
 -   Setup the SCF vendor and confirmed it is usable after activating my plugin.
 -   Fixed the import error, user can now sync the CPT's etc if they want to, otherwise they can create their own
+-   I am not finished with all the review suggestions. There are a lot of vulnerabilities that need to be fixed and then after implementing the improvement I need to make sure it did not break any functions in my plugin. 
 
 ## Time Logs
 
 -   2.0 hrs – I have been trying to get my imports working, multiple commits and prompts
 -   0.5 hrs - did an audit on my current plugin to see what I need to do to implement the vendor.
--   0.75 hrs - Setting up the SCF vendor
+-   1.0 hrs - Setting up the SCF vendor
 -   1.0 hrs - Attempting to get the CPT's, Taxonomies and Custom Fields to populate in the SCF menu.
--   1.0 hrs - Fixing the import errors and ensuring everything works on a fresh WP site. 
+-   1.5 hrs - Fixing the import errors and ensuring everything works on a fresh WP site.
+-   2.0 hrs - Creating the PR, using the correct template as well as going through coderabit reviews and testing the suggestions
 
 ---
 
