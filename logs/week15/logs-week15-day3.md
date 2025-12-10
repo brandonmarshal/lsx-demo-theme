@@ -5,14 +5,16 @@
 ### What have you accomplished today?
 
 -   Changed my importing approach to vendor method.
--   Setup the SCF vendor and confirmed it is usable after activating my plugin. 
+-   Setup the SCF vendor and confirmed it is usable after activating my plugin.
+-   Fixed the import error, user can now sync the CPT's etc if they want to, otherwise they can create their own
 
 ## Time Logs
 
 -   2.0 hrs – I have been trying to get my imports working, multiple commits and prompts
 -   0.5 hrs - did an audit on my current plugin to see what I need to do to implement the vendor.
 -   0.75 hrs - Setting up the SCF vendor
--   1.0 hrs - Attempting to get the CPT's, Taxonomies and Custom Fields to populate in the SCF menu. 
+-   1.0 hrs - Attempting to get the CPT's, Taxonomies and Custom Fields to populate in the SCF menu.
+-   1.0 hrs - Fixing the import errors and ensuring everything works on a fresh WP site. 
 
 ---
 
