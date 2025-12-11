@@ -15,7 +15,8 @@
 -   0.5 hrs - Getting Copilots review and then checking it to make sure there are no critical issues
 -   0.5 hrs - Built ZIP but was too large then figured out what I can remove to make it smaller (node_modules)
 -   2.0 hrs - Working on my Fish, Gear and Area posts.
--   0.5 hrs - Installed my plugin on my WP site and tested all features. 
+-   0.5 hrs - Installed my plugin on my WP site and tested all features.
+-   1.0 hrs - Created new page designs that work with my custom fields and made more edits to posts
 
 ---
 
