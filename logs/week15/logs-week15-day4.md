@@ -4,11 +4,11 @@
 
 ### What have you accomplished today?
 
--   Going through review comments from coderabbit and the last 3 weeks of plugin work.  
+-   I have completed all the comments in coderabbits code review, it had a lot of security and validation improvements.  
 
 ## Time Logs
 
--   2.5 hrs – Working through coderabbit review comments (280) Almost done
+-   3.5 hrs – Working through coderabbit review comments and implementing then testing. 
 
 ---
 
