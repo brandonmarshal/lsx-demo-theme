@@ -9,10 +9,11 @@
 ## Time Logs
 
 -   1.75 hrs - Troubleshooting and solving my broken blocks.
--   2.0 hrs - Working on my final design for query cards now that they work 100% with data 
+-   2.75 hrs - Working on my final design for query cards now that they work 100% with data 
 
 ---
 
 ## Notes
 
--   Now that I am understanding how the blocks work in a plugin, I am starting to think of all thing possibilities. I am very eager to keep working on my plugin 
+-   Now that I am understanding how the blocks work in a plugin, I am starting to think of all thing possibilities. I am very eager to keep working on my plugin
+-   I am really happy with my fish cards now, they look really good and worked out perfectly. 
