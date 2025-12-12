@@ -8,7 +8,8 @@
 
 ## Time Logs
 
--   1.75 hrs - Troubleshooting and solving my broken blocks. 
+-   1.75 hrs - Troubleshooting and solving my broken blocks.
+-   2.0 hrs - Working on my final design for query cards now that they work 100% with data 
 
 ---
 
