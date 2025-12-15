@@ -17,6 +17,7 @@
 -   2.5 hrs – Working on the gear display page, mainly the cards and sidebar.
 -   2.0 hrs - Working on the Sidebar blocks including filters, adding extra custom fields and udating the staging site to the latest version.
 -   1.5 hrs - Working on new block for sidebar on gear page and fixed mobile view of gear cards
+-   2.0 hrs - Working on a sing-archive template for the plugin that will work for the posts
 
 ---
 
