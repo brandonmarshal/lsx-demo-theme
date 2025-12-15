@@ -7,10 +7,13 @@
 -   I have worked on my gear page, the gear cards specifically
 -   Most of the meta data was not displaying correctly
 -   Worked on the backend because if I updated custom fields, they did not show on exisisting posts
+-   Completed my gear page sidebar for now and filters
+-   Updated staging site to the latest version of my plugin
 
 ## Time Logs
 
 -   2.5 hrs – Working on the gear display page, mainly the cards and sidebar.
+-   2.0 hrs - Working on the Sidebar blocks including filters, adding extra custom fields and udating the staging site to the latest version.
 
 ---
 
