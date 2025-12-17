@@ -1,35 +1,32 @@
 .connected-info-section {
     .connected-card {
+        background: #f8f8f8 !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         transition:
-            transform 0.4s ease,
-            box-shadow 0.4s ease;
-        opacity: 0.98;
+            box-shadow 0.3s ease,
+            transform 0.3s ease;
 
         &:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            transform: translateY(-8px);
         }
     }
 
     .wp-block-image img {
-        filter: brightness(0) invert(1); // Ensures icons appear white
-        transition: transform 0.4s ease;
+        opacity: 0.85;
+        transition: opacity 0.3s ease;
 
         .connected-card:hover & {
-            transform: scale(1.15);
+            opacity: 1;
         }
-    }
-
-    .manual-counter {
-        background: linear-gradient(90deg, #a0e7ff, #ffffff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
     }
 }
 
-// Mobile adjustments (core handles stacking)
 @media (max-width: 768px) {
+    .wp-block-columns {
+        flex-direction: column;
+    }
+
     .connected-card {
         margin-bottom: 2rem;
     }
