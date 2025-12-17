@@ -5,11 +5,14 @@
 ### What have you accomplished today?
 
 -   Created a wireframe for Area display page.
--   Created the first block, the query loop with cards. 
+-   Created the first block, the query loop with cards.
+-   Generated wireframes for About and Homepage
+-   Started working ont the homepage design
 
 ## Time Logs
 
--   2.0 hrs – Generating wireframe and creating and testing the query loop block. 
+-   2.0 hrs – Generating wireframe and creating and testing the query loop block.
+-   2.0 hrs - Generated About and homepage wireframes and started building patterns for homepage design
 
 ---
 
