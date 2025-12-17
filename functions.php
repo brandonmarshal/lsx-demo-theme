@@ -151,6 +151,82 @@ if (! function_exists('fishing_theme_format_binding')) :
 	}
 endif;
 
+// Register block bindings for CPT counts
+if (! function_exists('fishing_theme_register_cpt_count_bindings')) :
+	function fishing_theme_register_cpt_count_bindings()
+	{
+		// Fish species count
+		register_block_bindings_source(
+			'fishing-theme/fish-count',
+			array(
+				'label'              => _x('Fish Species Count', 'Label for the block binding placeholder in the editor', 'fishing-theme'),
+				'get_value_callback' => 'fishing_theme_get_fish_count',
+			)
+		);
+
+		// Gear items count
+		register_block_bindings_source(
+			'fishing-theme/gear-count',
+			array(
+				'label'              => _x('Gear Items Count', 'Label for the block binding placeholder in the editor', 'fishing-theme'),
+				'get_value_callback' => 'fishing_theme_get_gear_count',
+			)
+		);
+
+		// Fishing areas count
+		register_block_bindings_source(
+			'fishing-theme/area-count',
+			array(
+				'label'              => _x('Fishing Areas Count', 'Label for the block binding placeholder in the editor', 'fishing-theme'),
+				'get_value_callback' => 'fishing_theme_get_area_count',
+			)
+		);
+	}
+endif;
+add_action('init', 'fishing_theme_register_cpt_count_bindings', 5);
+
+// Filter pattern content to make counts dynamic
+function fishing_theme_filter_pattern_content($content, $block)
+{
+	if (isset($block['blockName']) && $block['blockName'] === 'core/pattern' && isset($block['attrs']['slug']) && $block['attrs']['slug'] === 'fishing-theme/connected-info') {
+		$fish_count = fishing_theme_get_fish_count();
+		$gear_count = fishing_theme_get_gear_count();
+		$area_count = fishing_theme_get_area_count();
+
+		// Replace static counts with dynamic ones
+		$content = str_replace('42<br>Species', $fish_count . '<br>Species', $content);
+		$content = str_replace('128<br>Items', $gear_count . '<br>Items', $content);
+		$content = str_replace('35<br>Areas', $area_count . '<br>Areas', $content);
+	}
+	return $content;
+}
+add_filter('render_block', 'fishing_theme_filter_pattern_content', 10, 2);
+
+// Callback functions for CPT counts
+if (! function_exists('fishing_theme_get_fish_count')) :
+	function fishing_theme_get_fish_count()
+	{
+		$count = wp_count_posts('fish'); // Fish CPT slug
+		return isset($count->publish) ? $count->publish : 0;
+	}
+endif;
+
+if (! function_exists('fishing_theme_get_gear_count')) :
+	function fishing_theme_get_gear_count()
+	{
+		$count = wp_count_posts('gear'); // Gear CPT slug
+		return isset($count->publish) ? $count->publish : 0;
+	}
+endif;
+
+if (! function_exists('fishing_theme_get_area_count')) :
+	function fishing_theme_get_area_count()
+	{
+		$count = wp_count_posts('area'); // Area CPT slug
+		return isset($count->publish) ? $count->publish : 0;
+	}
+endif;
+
 // Load custom post type and taxonomy registration files.
 function fishing_theme_load_cpt_and_tax_files()
 {
