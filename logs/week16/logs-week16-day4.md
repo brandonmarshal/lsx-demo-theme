@@ -7,12 +7,14 @@
 -   Finalised my homepage layout for now.
 -   Completed my about page, this still needs more posts to be created.
 -   Made good progress on contact page and almost complete.
+-   Completed the contact page.
 
 ## Time Logs
 
 -   2.0 hrs – Finalising homepage and fixing last issue with homepage blocks.
 -   4.0 hrs - Creating new layout for About page
--   2.0 hrs - Working on my contact page. 
+-   2.0 hrs - Working on my contact page.
+-   1.5 hrs - Completed work on the contact page. 
 
 ---
 
