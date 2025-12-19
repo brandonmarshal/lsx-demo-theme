@@ -11,12 +11,14 @@
 -   I have changed the colour of my header and footer for better. accessibility.
 -   Uploaded image to my featured CPT cards on the home page
 -   Fixed the fish query cards to align correctly on mobile
+-   Audited plugin and compared it to my end year sprint to see what needs to be done in the new year. 
 
 ## Time Logs
 
 -   2.0 hrs – Generating content and images for posts.
 -   2.0 hrs - Generating images and make many adjustments to my site, see above for more info.
--   1.5 hrs - Viewing my site on Mobile, laptop and PC. Fixed any issues I found. 
+-   1.5 hrs - Viewing my site on Mobile, laptop and PC. Fixed any issues I found.
+-   1.0 hrs - Auditing my plugin and comparing it to end year sprint plan and other tasks to build a 2 week plan for new year
 
 ---
 
