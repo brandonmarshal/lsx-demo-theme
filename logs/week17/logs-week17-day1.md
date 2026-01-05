@@ -17,7 +17,7 @@
 -   1.5 hrs - Figma Design For Beginners
 -   1.5 hrs - Continued with my Figma Course and doing practical on my own design file
 -   2.0 hrs - Progression with Figma Design Beginner Course
--   2.5 hrs - Continued with the course until Chapter 23. This course has 33 Chapters. 
+-   3.0 hrs - Continued with the course until Chapter 23. This course has 33 Chapters. 
 
 ---
 
