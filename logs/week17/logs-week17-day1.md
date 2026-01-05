@@ -7,7 +7,8 @@
 -   Catchup meeting with Ash
 -   Found Figma courses for this week
 -   Started with my first course (Figma Design for beginners)
--   Continued with my figma course and doing the practical as well. 
+-   Continued with my figma course and doing the practical as well.
+-   Progressed futher with the course
 
 ## Time Logs
 
@@ -15,6 +16,7 @@
 -   0.5 hrs - Finding Figma courses
 -   1.5 hrs - Figma Design For Beginners
 -   1.5 hrs - Continued with my Figma Course and doing practical on my own design file
+-   2.0 hrs - Progression with Figma Design Beginner Course
 
 ---
 
