@@ -6,13 +6,15 @@
 
 -   Figma Courses as well as practical work
 -   Training session with Zared regarding Figma work
--   Continued with my beginner course, almost done, 2 more chapters. 
+-   Continued with my beginner course, almost done, 2 more chapters.
+-   I have completed Figma Beginners course. 
 
 ## Time Logs
 
 -   0.75 hrs – Figma course and practical
 -   1.0 hrs - Meeting with Zared
 -   3.0 hrs - Figma beginners course
+-   2.5 hrs - Completed my Figma Beginner course with the practical design file.
 
 ---
 
