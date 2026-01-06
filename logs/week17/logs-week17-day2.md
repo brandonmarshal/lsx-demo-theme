@@ -17,3 +17,4 @@
 ## Notes
 
 -   Zared has showed me how the variables work in Figma and the importance of it.
+-   Lost 2 hours today for grooming my dogs, I will catchup those hours tonight. 
