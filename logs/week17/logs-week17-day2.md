@@ -1,4 +1,4 @@
-# Week 17, Day 1 Log 2026-01-05
+# Week 17, Day 2 Log 2026-01-06
 
 ## Today's Progress
 
@@ -7,7 +7,7 @@
 -   Figma Courses as well as practical work
 -   Training session with Zared regarding Figma work
 -   Continued with my beginner course, almost done, 2 more chapters.
--   I have completed Figma Beginners course. 
+-   I have completed Figma Beginners course.
 
 ## Time Logs
 
@@ -21,4 +21,4 @@
 ## Notes
 
 -   Zared has showed me how the variables work in Figma and the importance of it.
--   Lost 2 hours today for grooming my dogs, I will catchup those hours tonight. 
+-   Lost 2 hours today for grooming my dogs, I will catchup those hours tonight.
