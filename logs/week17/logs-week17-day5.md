@@ -16,9 +16,12 @@
 -   2.5 hrs - Creating components from the patterns I collected, from the page layout.
 -   0.5 hrs - Fixing the Strain Featured Cards so I can also start getting the components from there.
 -   0.5 hrs - Added descriptions to the existing components
+-   2.0 hrs - Continued to create components and adding them to sections for better readability
 
 ---
 
 ## Notes
 
 -   I have started building components for the flower page and I am happy with my approach so far, I will need to get feedback today in order to know if I am indeed on the right track.
+-   I have noticed that my components are not setup anywhere near what I imagine is a standard.
+-   Tonight I will work on the layout of my components, make sure they are usable for Wordpress. 
