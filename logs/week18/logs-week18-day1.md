@@ -9,6 +9,7 @@
 -   Created a base doc with no content at the moment.
 -   Started setting up the Document for Six Cats, I have only began with the Setup plan.
 -   Continued to identify the different componenets and patterns on the homepage and shop page of Six Cats
+-   Documented the naming conventions for Six Cats. 
 
 ## Time Logs
 
@@ -16,7 +17,8 @@
 -   3.0 hrs - Looking through the Medical Academic planning doc and using AI to explain certain sections to me and why they are important etc.
 -   0.5 hrs - I have create a Document so long for Six Cats and I have created tabs that I will need to populate still
 -   2.0 hrs - Looking at the prototype for Six Cats and then editing the Six Cats DS on Docs.
--   2.0 hrs - Documenting patterns and components from the Six Cats home page, shop page and "My Account" page. 
+-   2.0 hrs - Documenting patterns and components from the Six Cats home page, shop page and "My Account" page.
+-   1.5 hrs - Documenting the naming conventions for Six Cats before my meeting with Zared tomorrow. 
 
 ---
 
