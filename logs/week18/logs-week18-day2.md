@@ -10,13 +10,15 @@
 -   I have collected Templates from the Six Cats site and added it to the planning doc
 -   I have collected Templates for Desktop and for Mobile/Tablet
 -   I have collected Template states for Six Cats
+-   Collected the prototypes for Six Cats pages
 
 ## Time Logs
 
 -   1.0 hrs – Looking for more to add to the Six Cats planning doc
 -   0.5 hrs - Changed naming conventions according to Zareds suggestion and to make sure it is Wordpress compatible as possible
 -   2.0 hrs - Collected Templates and Template Parts from Six Cats prototype and added it to the planning doc
--   2.5 hrs - Collected Desktop and Mobile templates. Collected Template States. 
+-   2.5 hrs - Collected Desktop and Mobile templates. Collected Template States.
+-   2.0 hrs - Collected prototypes for Six Cats and went through documentation shared by Ash as well as the new tabs in Six Cats Planning Doc
 
 ---
 
