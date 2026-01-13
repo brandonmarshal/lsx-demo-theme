@@ -6,14 +6,17 @@
 
 -   Made adjustments to the naming conventions in the Six Cats planning doc
 -   Looking for more patterns and components to add to the planning doc from the prototype
+-   I have collected some Template parts from Six Cats and added it to the planning doc
+-   I have collected Tempalates from the Six Cats site and added it to the planning doc
 
 ## Time Logs
 
 -   1.0 hrs – Looking for more to add to the Six Cats planning doc
 -   0.5 hrs - Changed naming conventions according to Zareds suggestion and to make sure it is Wordpress compatible as possible
+-   2.0 hrs - Collected Templates and Template Parts from Six Cats prototype and added it to the planning doc
 
 ---
 
 ## Notes
 
--
+- I understand the importance of the planning doc, it makes sense to have all the foundations from the begin as it keeps me and the AI agent on track. 
