@@ -8,7 +8,8 @@
 -   Had a meeting with Zared regarding the planning and the design file
 -   Collected core pages from the prototype
 -   Gave AI screenshots of the Site to help indetify the custom fields and taxonomies.
--   Generated content for Six Cats site architecture and the "patterns, templates and blocks" tab. 
+-   Generated content for Six Cats site architecture and the "patterns, templates and blocks" tab.
+-   Started testing the components properties settings as well as variable liek Zared showed me.
 
 ## Time Logs
 
@@ -16,6 +17,8 @@
 -   1.0 hrs - Meeting with Zared
 -   2.5 hrs - Collected core pages and gave the screenshot to AI to help me get accurate taxonomies and custom fields
 -   0.5 hrs - Generated content for the pages on the Six Cats planning doc
+-   3.0 hrs - Working on components and testing the component properties and variables like Zared showed me.
+-   0.5 hrs - Catchup call with Ash regarding design file
 
 ---
 
