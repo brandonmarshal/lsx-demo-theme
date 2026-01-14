@@ -13,7 +13,7 @@
 
 -   0.75 hrs – Reading through Doc tabs as well as tabs on other docs that were shared with me.
 -   1.0 hrs - Meeting with Zared
--   2.0 hrs - Collected core pages and gave the screenshot to AI to help me get accurate taxonomies and custom fields
+-   2.5 hrs - Collected core pages and gave the screenshot to AI to help me get accurate taxonomies and custom fields
 
 ---
 
