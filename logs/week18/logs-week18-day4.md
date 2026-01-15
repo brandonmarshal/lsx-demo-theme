@@ -16,10 +16,11 @@
 -   1.0 hrs - Meeting with Zared
 -   0.5 hrs - Meeting with Ash
 -   1.0 hrs - Reading guideline docs with AI and comparing to Six Cats to collect colours
--   1.0 hrs - Collecting colours from the prototype and creating colour variables. 
+-   1.5 hrs - Collecting colours from the prototype and creating colour variables.
+-   3.0 hrs - Reading through the documents and creating more colour variables. 
 
 ---
 
 ## Notes
 
--
+- I have not completed the variables as yet, I feel like im making it a bigger deal than it is. I need to clear my head and re-approach with a fresh mind. 
