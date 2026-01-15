@@ -7,6 +7,8 @@
 -   Started the first article for Figma Design System
 -   Had a meeting with Zared regarding Figma Variables
 -   Catchup meeting with Ash regarding correct documentation for creating variables in Figma
+-   Went throught the docs Ash shared with me regarding the Figma variables
+-   I have started to collect the colours from the prototype and created some variables. 
 
 ## Time Logs
 
@@ -14,6 +16,7 @@
 -   1.0 hrs - Meeting with Zared
 -   0.5 hrs - Meeting with Ash
 -   1.0 hrs - Reading guideline docs with AI and comparing to Six Cats to collect colours
+-   1.0 hrs - Collecting colours from the prototype and creating colour variables. 
 
 ---
 
