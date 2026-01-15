@@ -13,7 +13,7 @@
 -   1.0 hrs – Reading first article about Figma Design System
 -   1.0 hrs - Meeting with Zared
 -   0.5 hrs - Meeting with Ash
--   0.5 hrs - Reading guideline docs with AI and comparing to Six Cats
+-   1.0 hrs - Reading guideline docs with AI and comparing to Six Cats to collect colours
 
 ---
 
