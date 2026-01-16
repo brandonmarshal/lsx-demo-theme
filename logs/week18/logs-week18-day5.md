@@ -15,10 +15,10 @@
 -   2.0 hrs – Working on the components in Six Cats DS
 -   2.0 hrs - Continued Collecting patterns and components
 -   1.0 hrs - Meeting with Zared
--   1.0 hrs - Continued collecting components and organising/naming them accordingly
+-   3.0 hrs - Continued collecting components and organising/naming them accordingly
 
 ---
 
 ## Notes
 
-- 
+- After the meeting with Zared, I am more clear on how to deconstruct a pattern to get its components. 
