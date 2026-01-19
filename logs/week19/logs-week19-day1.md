@@ -10,12 +10,14 @@
 -   Figma MCP course is completed (Still bonus content to watch)
 -   I have configured the Figma MCP into my VScode globally
 -   Enabled Desktop MCP in the Sixcats DS.
--   Published Sixcats library for now, to be able to test the MCP server tools are working. 
+-   Published Sixcats library for now, to be able to test the MCP server tools are working.
+-   I have made some good progress on the Variables for Sixcats. I still need to do typography scales
 
 ## Time Logs
 
 -   2.0 hrs – Admin work, setting up Asana tasks, meeting with Ash, doing follow ups on my work email and planning & commitment for the week.
 -   2.0 hrs - Working through the Figma MCP course and setting it up on my side as I work through the course. Also published the sixcats library for code connect usage
+-   2.0 hrs - Working on the variables for sixcats design system. I have done spacing and almost complete with colours. 
 
 ---
 
