@@ -17,7 +17,8 @@
 
 -   2.0 hrs – Admin work, setting up Asana tasks, meeting with Ash, doing follow ups on my work email and planning & commitment for the week.
 -   2.0 hrs - Working through the Figma MCP course and setting it up on my side as I work through the course. Also published the sixcats library for code connect usage
--   2.0 hrs - Working on the variables for sixcats design system. I have done spacing and almost complete with colours. 
+-   2.0 hrs - Working on the variables for sixcats design system. I have done spacing and almost complete with colours.
+-   1.0 hrs - Continued working on variables
 
 ---
 
