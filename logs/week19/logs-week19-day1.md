@@ -10,7 +10,7 @@
 
 ## Time Logs
 
--   2.0 hrs – Admin work, setting up Asana tasks, doing follow ups on my work email and planning & commitment for the week.
+-   2.0 hrs – Admin work, setting up Asana tasks, meeting with Ash, doing follow ups on my work email and planning & commitment for the week.
 
 ---
 
