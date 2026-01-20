@@ -13,9 +13,10 @@
 -   0.5 hrs – Creating base files
 -   1.5 hrs - Learning more about Figma MCP and what the tools do.
 -   0.5 hrs - Copying styles from lsx design to sixcats into the variables table
+-   1.5 hrs - Working on variables and testing them on components in the design file
 
 ---
 
 ## Notes
 
--
+- 
