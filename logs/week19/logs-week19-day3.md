@@ -17,7 +17,7 @@
 
 ## Notes
 
-- I have decided on using "Atoms", "Molecules", "Organisms", "Templates" and "Overlay". Basically everything on the site will fit within one of these categories.
-- I have started with the method I mentioned above for organisation and it is working well. The file is easier to navigate now and find things. I have also used "/" for the naming of the components to ensure that they are well organised in the Assets from the beginning.
-- I am not 100% sure if the way I am organising things are correct, but it is better than everything lying around, I have added heading to make it obvious where certain components and patterns are. 
--   Articles read today:
+-   I have decided on using "Atoms", "Molecules", "Organisms", "Templates" and "Overlay". Basically everything on the site will fit within one of these categories.
+-   I have started with the method I mentioned above for organisation and it is working well. The file is easier to navigate now and find things. I have also used "/" for the naming of the components to ensure that they are well organised in the Assets from the beginning.
+-   I am not 100% sure if the way I am organising things are correct, but it is better than everything lying around, I have added heading to make it obvious where certain components and patterns are. 
+-  I have not read my article yet today. I need a break and I will read my article for today after super. I will update my logs once I am done with the article.  
