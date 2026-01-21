@@ -9,9 +9,11 @@
 ## Time Logs
 
 -   2.0 hrs – Collecting components and patterns from Six cats pages
+-   1.0 hrs - Finding the best way to organise my components and patterns
 
 ---
 
 ## Notes
 
+- I have decided on using "Atoms", "Molecules", "Organisms", "Templates" and "Overlay". Basically everything on the site will fit within one of these categories. 
 -   Articles read today:
