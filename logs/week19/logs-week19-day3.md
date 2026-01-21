@@ -8,7 +8,7 @@
 
 ## Time Logs
 
--   1.0 hrs – Collecting components and patterns from Six cats pages
+-   2.0 hrs – Collecting components and patterns from Six cats pages
 
 ---
 
