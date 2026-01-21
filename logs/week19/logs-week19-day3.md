@@ -9,7 +9,7 @@
 ## Time Logs
 
 -   2.0 hrs – Collecting components and patterns from Six cats pages
--   1.0 hrs - Finding the best way to organise my components and patterns
+-   2.5 hrs - Finding the best way to organise my components and patterns
 
 ---
 
