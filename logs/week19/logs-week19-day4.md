@@ -13,6 +13,7 @@
 -   1.0 hrs – Read through my article: Design system 102: How to build a design system
 -   1.0 hrs - Finished off the components I was busy with yesterday and then I attempted to test the MCP extraction to Github.
 -   0.75 hrs - Catchup with Zared, he showed me the new standards and guidelines for setting up variables in our design systems
+-   1.0 hrs - Collected components and organised thme accordingly.
 
 ---
 
