@@ -17,6 +17,7 @@
 -   0.75 hrs - Catchup with Zared, he showed me the new standards and guidelines for setting up variables in our design systems
 -   1.0 hrs - Collected components and organised them accordingly.
 -   1.5 hrs - Reading through google doc and then starting to change the variables on sixcats
+-   1.0 hrs - Still busy working on the variables, applying the new standards.
 
 ---
 
