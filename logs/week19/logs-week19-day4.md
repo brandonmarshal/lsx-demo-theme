@@ -7,13 +7,16 @@
 -   Read my article for yesterday. As I was unable to attend to it last night.
 -   Collected components and extracted the Figma design to Github to test how it work.
 -   Catchup meet with Zared
+-   Took some time to go through the "Standardising Presets and Tokens in Block Themes" doc to better understand how variables are being setup
+-   Started editing the Sixcats variables to align with this new standard. 
 
 ## Time Logs
 
 -   1.0 hrs – Read through my article: Design system 102: How to build a design system
 -   1.0 hrs - Finished off the components I was busy with yesterday and then I attempted to test the MCP extraction to Github.
 -   0.75 hrs - Catchup with Zared, he showed me the new standards and guidelines for setting up variables in our design systems
--   1.0 hrs - Collected components and organised thme accordingly.
+-   1.0 hrs - Collected components and organised them accordingly.
+-   1.5 hrs - Reading through google doc and then starting to change the variables on sixcats
 
 ---
 
