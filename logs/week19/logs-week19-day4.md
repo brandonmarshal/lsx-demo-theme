@@ -8,7 +8,8 @@
 -   Collected components and extracted the Figma design to Github to test how it work.
 -   Catchup meet with Zared
 -   Took some time to go through the "Standardising Presets and Tokens in Block Themes" doc to better understand how variables are being setup
--   Started editing the Sixcats variables to align with this new standard. 
+-   Started editing the Sixcats variables to align with this new standard.
+-   I have converted most of the variables to the new setup and add presets for MCP extraction. 
 
 ## Time Logs
 
@@ -18,6 +19,7 @@
 -   1.0 hrs - Collected components and organised them accordingly.
 -   1.5 hrs - Reading through google doc and then starting to change the variables on sixcats
 -   1.0 hrs - Still busy working on the variables, applying the new standards.
+-   1.5 hrs - Continued working on the variables, I am almost done with them. I have also added ALL the presets where I was able to so long. 
 
 ---
 
