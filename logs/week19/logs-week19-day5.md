@@ -6,11 +6,15 @@
 
 -   Working on components for Sixcats
 -   Catchup meeting with Zared
+-   Downloaded and looked into Antigravity IDE. https://www.youtube.com/watch?v=-0Irz8G0PEE
+-   Started working on my variables and applying the changes discussed in the catchup meeting
 
 ## Time Logs
 
 -   1.5 hrs – Working on the components
 -   1.0 hrs - Catchup with Zared
+-   0.5 hrs - Downlaoded Antigravity IDE and watched youtube video that explains it for beginners.
+-   1.0 hrs - Continue to work on the variables in Sixcats
 
 ---
 
