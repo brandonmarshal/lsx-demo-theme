@@ -8,6 +8,7 @@
 -   Catchup meeting with Zared
 -   Downloaded and looked into Antigravity IDE. https://www.youtube.com/watch?v=-0Irz8G0PEE
 -   Started working on my variables and applying the changes discussed in the catchup meeting
+-   New Variable setup is almost completed. 
 
 ## Time Logs
 
@@ -15,6 +16,8 @@
 -   1.0 hrs - Catchup with Zared
 -   0.5 hrs - Downlaoded Antigravity IDE and watched youtube video that explains it for beginners.
 -   2.5 hrs - Continue to work on the variables in Sixcats
+-   2.0 hrs - Working on the Variables still, almost complete.
+-   0.5 hrs - Doing reflections, planning and logs. 
 
 ---
 
