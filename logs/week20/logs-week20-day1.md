@@ -6,14 +6,17 @@
 
 -   Asana Admin work
 -   Made good progress on Variables
+-   Completed Variables and continued working on components. 
 
 ## Time Logs
 
 -   0.5 hrs – Asana Admin
 -   1.0 hrs - Working on variables
+-   2.0 hrs - Completed variables and have been adding the variables to the components I have collected. 
 
 ---
 
 ## Notes
 
 -   I need to find out about the styles in the variables, I am not 100% sure if I need to work on those as well before applying the variables to my components, I will bring this up in my next catchup with Zared.
+-   Creating variables and adding them to components I collect is not difficult but it is time consuming, as I usually find a previous mistake that I then need to fix. Slowly but surely this design system is coming together. 
