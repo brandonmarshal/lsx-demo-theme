@@ -6,13 +6,15 @@
 
 -   Asana Admin work
 -   Made good progress on Variables
--   Completed Variables and continued working on components. 
+-   Completed Variables and continued working on components.
+-   Reading Claude Skills and Agents articles
 
 ## Time Logs
 
 -   0.5 hrs – Asana Admin
 -   1.0 hrs - Working on variables
--   2.0 hrs - Completed variables and have been adding the variables to the components I have collected. 
+-   2.0 hrs - Completed variables and have been adding the variables to the components I have collected.
+-   1.5 hrs - Reading through Claude skills and the Github repos that are shared regarding Claude Skills and Agents
 
 ---
 
