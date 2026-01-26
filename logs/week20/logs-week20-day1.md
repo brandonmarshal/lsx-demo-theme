@@ -14,7 +14,7 @@
 -   0.5 hrs – Asana Admin
 -   1.0 hrs - Working on variables
 -   2.0 hrs - Completed variables and have been adding the variables to the components I have collected.
--   1.5 hrs - Reading through Claude skills and the Github repos that are shared regarding Claude Skills and Agents
+-   1.5 hrs - Reading through Claude skills and the Github repos that are shared regarding Claude Skills and Agents, also worked on components adding variables
 
 ---
 
