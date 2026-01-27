@@ -7,10 +7,12 @@
 -   I have organised more components by adding them to thier categories.
 -   I have created text components to be able to replace all text on the patterns and components
 -   I have started replacing the components on the patterns I collected, to ensure the entire pattern is made up of my components and not from the prototype. This includes adding the created variables to them.
+-   Finalising the patterns and components for Mooiberry page. 
 
 ## Time Logs
 
 -   2.0 hrs – Working on the components and patterns
+-   2.5 hrs - Working on the Mooiberry page, basically done fixing all the components and adding correct variables
 
 ---
 
