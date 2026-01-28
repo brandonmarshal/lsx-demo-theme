@@ -5,10 +5,12 @@
 ### What have you accomplished today?
 
 -   Collecting and organising components from more site pages
+-   Collected patterns and components from Mushrooms, Bundles and Refer pages. 
 
 ## Time Logs
 
 -   2.0 hrs – Collecting components, organising and applying variables.
+-   3.0 hrs - Continued collecting components and patterns, it is going a lot faster. 
 
 ---
 
