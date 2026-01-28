@@ -5,14 +5,16 @@
 ### What have you accomplished today?
 
 -   Collecting and organising components from more site pages
--   Collected patterns and components from Mushrooms, Bundles and Refer pages.
+-   Collected patterns and components from Mushrooms, Bundles pages and almost the Refer page too.
 -   Completed study session about "How to streamline your design system workflow in Figma" - https://www.figma.com/blog/how-to-streamline-your-design-system-workflow-in-figma/
+-   Completed the refer page components collection as well as patterns and organised them. 
 
 ## Time Logs
 
 -   2.0 hrs – Collecting components, organising and applying variables.
 -   3.5 hrs - Continued collecting components and patterns, it is going a lot faster.
 -   1.0 hrs - Study session. I learnt about "How to streamline your design system workflow in Figma"
+-   1.5 hrs - Continued with component collection. Completed refer page and started Cannabis Cultivation
 
 ---
 
