@@ -5,12 +5,14 @@
 ### What have you accomplished today?
 
 -   Collecting and organising components from more site pages
--   Collected patterns and components from Mushrooms, Bundles and Refer pages. 
+-   Collected patterns and components from Mushrooms, Bundles and Refer pages.
+-   Completed study session about "How to streamline your design system workflow in Figma" - https://www.figma.com/blog/how-to-streamline-your-design-system-workflow-in-figma/
 
 ## Time Logs
 
 -   2.0 hrs – Collecting components, organising and applying variables.
--   3.0 hrs - Continued collecting components and patterns, it is going a lot faster. 
+-   3.5 hrs - Continued collecting components and patterns, it is going a lot faster.
+-   1.0 hrs - Study session. I learnt about "How to streamline your design system workflow in Figma"
 
 ---
 
