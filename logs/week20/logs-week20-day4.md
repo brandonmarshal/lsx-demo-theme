@@ -15,7 +15,8 @@
 -   0.5 hrs - Catchup with Zared
 -   1.0 hrs - Started planning the Agent skill I want to build for extracting Figma designs to JSON.
 -   1.0 hrs - Continued getting information for the Agent skills.
--   1.0 hrs - Building 3 skills, "visual-colour-palette-extraction", "wcag-contrast-accessibility-check", "Colour Clustering Heuristics". 
+-   1.5 hrs - Building 3 skills, "visual-colour-palette-extraction", "wcag-contrast-accessibility-check", "Colour Clustering Heuristics".
+-   1.5 hrs - Working on the components in Sixcats
 
 ---
 
