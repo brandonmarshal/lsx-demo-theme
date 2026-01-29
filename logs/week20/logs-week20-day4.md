@@ -5,11 +5,13 @@
 ### What have you accomplished today?
 
 -   Working on the components and patterns for Cultivation page.
+-   I have been doing planning with AI to help me gather all the information I need to build a quality agent skill prompt. 
 
 ## Time Logs
 
 -   2.5 hrs – Working on components
 -   0.5 hrs - Catchup with Zared
+-   1.0 hrs - Started planning the Agent skill I want to build for extracting Figma designs to JSON. 
 
 ---
 
