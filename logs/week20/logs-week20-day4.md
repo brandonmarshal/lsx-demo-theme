@@ -7,13 +7,15 @@
 -   Working on the components and patterns for Cultivation page.
 -   I have been doing planning with AI to help me gather all the information I need to build a quality agent skill prompt.
 -   Continued research for setting up the agent skills. (See notes for more info)
+-   Building agent skills to extract colours from images and do accessibility checks, then building a colour palette. The idea for this is to help me extract the correct light mode colours so I can create the tokens for the dark and light mode. 
 
 ## Time Logs
 
 -   2.5 hrs – Working on components
 -   0.5 hrs - Catchup with Zared
 -   1.0 hrs - Started planning the Agent skill I want to build for extracting Figma designs to JSON.
--   1.0 hrs - Continued getting information for the Agent skills. 
+-   1.0 hrs - Continued getting information for the Agent skills.
+-   1.0 hrs - Building 3 skills, "visual-colour-palette-extraction", "wcag-contrast-accessibility-check", "Colour Clustering Heuristics". 
 
 ---
 
