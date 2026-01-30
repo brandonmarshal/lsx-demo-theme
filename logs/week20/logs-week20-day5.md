@@ -9,7 +9,7 @@
 
 ## Time Logs
 
--   2.0 hrs – Working on components and variables
+-   3.0 hrs – Working on components and variables
 
 ---
 
