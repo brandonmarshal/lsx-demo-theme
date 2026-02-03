@@ -14,7 +14,8 @@
 -   2.5 hrs – Going through components and filling in missing variables, like spacing, fontsize, etc. Also collected some components for the MegaMenus
 -   2.5 hrs - Collected components for Delivery page, cookies banner, Shop Menu. Added variables to all components collected
 -   1.0 hrs - Setting up the agent skill to extract lightmode colours. Tested on 2 images so far, check accessibility with another agent skill.
--   1.0 hrs - Extracting lightmode colours and updating variables, now adding those Colour Tokens to the components. 
+-   1.0 hrs - Extracting lightmode colours and updating variables, now adding those Colour Tokens to the components.
+-   1.0 hrs - Adding more colour tokens to the components for light mode. Testing as I update the colours. 
 
 ---
 
@@ -22,4 +23,5 @@
 
 -   I still need to go back and update some of the earlier components to match the new look of the site. Buttons are also needing to be re-collected as their styles are different. But this should not take long.
 -   Most components have their variables now. So I will start using the MCP setup to extract code from the designs.
--   Once I have set the lightmode colours, I need to go and add the Token colours to all my components, that will allow me to switch between dark and light modes. 
+-   Once I have set the lightmode colours, I need to go and add the Token colours to all my components, that will allow me to switch between dark and light modes.
+-   Tonight I will continue with extracting code from design to get it going. 
