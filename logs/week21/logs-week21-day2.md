@@ -6,13 +6,15 @@
 
 -   Collected components for the MegaMenus. AS well as adding variables to the components that did not have set variables.
 -   Collected components for Delivery page, cookies banner, Shop Menu. Added variables to all components collected. Added the Sixcats figma make repo to my local.
--   Setting up the Agent skills for colour extraction, and tested 2 images for the white mode. 
+-   Setting up the Agent skills for colour extraction, and tested 2 images for the white mode.
+-   Collected light mode colours, still editing them as I use them. 
 
 ## Time Logs
 
 -   2.5 hrs – Going through components and filling in missing variables, like spacing, fontsize, etc. Also collected some components for the MegaMenus
 -   2.5 hrs - Collected components for Delivery page, cookies banner, Shop Menu. Added variables to all components collected
--   1.0 hrs - Setting up the agent skill to extract lightmode colours. Tested on 2 images so far, check accessibility with another agent skill. 
+-   1.0 hrs - Setting up the agent skill to extract lightmode colours. Tested on 2 images so far, check accessibility with another agent skill.
+-   1.0 hrs - Extracting lightmode colours and updating variables, now adding those Colour Tokens to the components. 
 
 ---
 
@@ -20,3 +22,4 @@
 
 -   I still need to go back and update some of the earlier components to match the new look of the site. Buttons are also needing to be re-collected as their styles are different. But this should not take long.
 -   Most components have their variables now. So I will start using the MCP setup to extract code from the designs.
+-   Once I have set the lightmode colours, I need to go and add the Token colours to all my components, that will allow me to switch between dark and light modes. 
