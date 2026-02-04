@@ -13,7 +13,8 @@
 -   Adding a light mode colours to a few more components
 -   Finished updating/building my new AI agents to align with the "Standardising Presets and Tokens in Block Themes" documentation.
 -   Built a foundations frame for Primitve colours
--   Editing colour variables to work with the extraction AI agent. 
+-   Editing colour variables to work with the extraction AI agent.
+-   Built foundations frame for semantic - colours and assigned colour variables to both frames.
 
 ## Time Logs
 
@@ -22,7 +23,8 @@
 -   0.5 hrs - Catchup with Ash, creating notes for meeting with Zared, looking at the theme.json structure of the sixcats prototype and now looking through the doc as well.
 -   2.0 hrs - Read through the Standardising presets document and started editing my AI agent to align with the doc. I have also added a few more light mode colours to a few components
 -   1.0 hrs - Finished updating my AI agents, I created an extractor and a governor.
--   1.0 hrs - I am updating the variables to work correclty with the AI agents, I built a foundations frame for Primitve colours. 
+-   1.0 hrs - I am updating the variables to work correclty with the AI agents, I built a foundations frame for Primitve colours.
+-   1.0 hrs - I have created the Primitive - colour and Semantic - colour frame on the foundation page. I have also assigned all the colour variables to their matching block. 
 
 ---
 
@@ -30,4 +32,5 @@
 
 -   Light mode colours are working fine so far, I will see if Zared is available for a meeting today, then we can discuss the MCP extraction, I am curious to see his Agent skill as well.
 -   Zared confirmed our meeting for tomorrow unless I am blocked. I am not blocked at least and I will continue to adjust my extraction agent prompt to get better extractions from Figma, I will testing each extraction on my Sixcats local site.
--   I am trying a new approach on the MCP extraction workflow. I am going to edit the foundations page and add a frame that includes all my colour variables. Then I will share that frame link in vscode and use my Agents to extract all the colour variables from the frame. If that works well I will then do the same thing for typography, spacing etc. 
+-   I am trying a new approach on the MCP extraction workflow. I am going to edit the foundations page and add a frame that includes all my colour variables. Then I will share that frame link in vscode and use my Agents to extract all the colour variables from the frame. If that works well I will then do the same thing for typography, spacing etc.
+-   Now that I have those foundation frames for the colours, I can start to extract those frames using my AI agent. I will begin this in the morning.  
