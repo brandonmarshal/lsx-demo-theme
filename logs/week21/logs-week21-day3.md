@@ -11,7 +11,9 @@
 -   Started reading the google doc - Standardising Presets and Tokens in Block Themes
 -   Reading Standardising presets doc and updating my Ai agents (still busy)
 -   Adding a light mode colours to a few more components
--   Finished updating/building my new AI agents to align with the "Standardising Presets and Tokens in Block Themes" documentation. 
+-   Finished updating/building my new AI agents to align with the "Standardising Presets and Tokens in Block Themes" documentation.
+-   Built a foundations frame for Primitve colours
+-   Editing colour variables to work with the extraction AI agent. 
 
 ## Time Logs
 
@@ -19,7 +21,8 @@
 -   1.5 hrs - Added light colours and needed to adjust some colours in the variables that were not working.
 -   0.5 hrs - Catchup with Ash, creating notes for meeting with Zared, looking at the theme.json structure of the sixcats prototype and now looking through the doc as well.
 -   2.0 hrs - Read through the Standardising presets document and started editing my AI agent to align with the doc. I have also added a few more light mode colours to a few components
--   1.0 hrs - Finished updating my AI agents, I created an extractor and a governor. 
+-   1.0 hrs - Finished updating my AI agents, I created an extractor and a governor.
+-   1.0 hrs - I am updating the variables to work correclty with the AI agents, I built a foundations frame for Primitve colours. 
 
 ---
 
