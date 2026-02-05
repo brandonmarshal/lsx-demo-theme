@@ -11,13 +11,14 @@
 -   Tested the first extraction of colour tokens, got a few inconsistencies.
 -   Refined my AI agent prompt further.
 -   Testing and further refining the prompt
+-   Tested my refined prompt and shared the extraction files with Zared for his feedback, he says it is good but the "semantic" should be replaced with "custom". 
 
 ## Time Logs
 
 -   2.0 hrs – Working with my AI agents, extracted primitive colours and ran governor on the result, got errors and adjusting the extractor now to avoid those errors.
 -   1.5 hrs - Catchup with Zared and testing/adjusting my extraction agent.
 -   1.5 hrs - Working on my AI agent. Researching and refining the instructions for good colour extraction for theme.json
--   1.0 hrs - Tested  my agent prompt again and results are getting better, I have now refined the prompt again. 
+-   2.0 hrs - Tested  my agent prompt again and results are getting better, I have now refined the prompt again. 
 
 ---
 
