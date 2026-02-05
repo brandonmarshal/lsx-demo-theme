@@ -18,7 +18,8 @@
 -   2.0 hrs – Working with my AI agents, extracted primitive colours and ran governor on the result, got errors and adjusting the extractor now to avoid those errors.
 -   1.5 hrs - Catchup with Zared and testing/adjusting my extraction agent.
 -   1.5 hrs - Working on my AI agent. Researching and refining the instructions for good colour extraction for theme.json
--   2.0 hrs - Tested  my agent prompt again and results are getting better, I have now refined the prompt again. 
+-   2.0 hrs - Tested  my agent prompt again and results are getting better, I have now refined the prompt again.
+-   1.0 hrs - Studied the prompt Zared provided me for Figma - WP Patterns. I added CSS rules to it and I am testing the pattern extraction with styles and not CSS
 
 ---
 
