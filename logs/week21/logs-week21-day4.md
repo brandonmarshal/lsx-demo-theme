@@ -15,7 +15,7 @@
 
 -   2.0 hrs – Working with my AI agents, extracted primitive colours and ran governor on the result, got errors and adjusting the extractor now to avoid those errors.
 -   1.5 hrs - Catchup with Zared and testing/adjusting my extraction agent.
--   1.0 hrs - Working on my AI agent. Researching and refining the instructions for good colour extraction for theme.json
+-   1.5 hrs - Working on my AI agent. Researching and refining the instructions for good colour extraction for theme.json
 
 ---
 
