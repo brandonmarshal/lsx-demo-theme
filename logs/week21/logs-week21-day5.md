@@ -1,0 +1,19 @@
+# Week 21, Day 5 Log 2026-02-06
+
+## Today's Progress
+
+### What have you accomplished today?
+
+-   Working on extraction prompts for Figma to Wordpress
+-   Catchup with Zared
+
+## Time Logs
+
+-   1.5 hrs – Editing my agent prompt for better extraction, I found some areas in my prompt that did not align with the google doc standardising, so I made adjustments.
+-   0.5 hrs - Catchup with Zared, discussing the Figma - Wordpress extractions.
+
+---
+
+## Notes
+
+-   Zared has shared with me what he discovered yesterday, I will now test his agent skill on the sixcats DS, to see if it is consistent enough for us to use.
