@@ -10,6 +10,7 @@
 -   Setup the colour variables frames with the Figma plugin "Variables Documentation"
 -   Used those frames to test Zared's agent skill.
 -   Updating Variables for sixcats
+-   Ran the orchestrator agent to extract variables from Figma and generate the theme.json
 
 ## Time Logs
 
@@ -18,6 +19,7 @@
 -   2.0 hrs - Finished testing the output of my agent, setup my colour variables frame with a figma plugin then started testing Zared's agent skill he shared with me.
 -   1.5 hrs - Updating Sixcats variables to be able to use the orchestrator prompt Zared created.
 -   1.5 hrs - Further updating the variables collections. I had to implement colours for disabled background, text and border. Then I completed the Styles: blocks for Sixcats. I also added the presets "var(--wp--custom--color--button-cta-solid-bg-default)".
+-   1.0 hrs - Completed admin for the week, reflections and next weeks planning. I ran the orchestrator skill now that the variables are updated, I will discuss the output with Zared next week. 
 
 ---
 
