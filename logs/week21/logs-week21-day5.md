@@ -6,11 +6,15 @@
 
 -   Working on extraction prompts for Figma to Wordpress
 -   Catchup with Zared
+-   Completed my tests with my ai agent output.
+-   Setup the colour variables frames with the Figma plugin "Variables Documentation"
+-   Used those frames to test Zared's agent skill.
 
 ## Time Logs
 
 -   1.5 hrs – Editing my agent prompt for better extraction, I found some areas in my prompt that did not align with the google doc standardising, so I made adjustments.
 -   0.5 hrs - Catchup with Zared, discussing the Figma - Wordpress extractions.
+-   2.0 hrs - Finished testing the output of my agent, setup my colour variables frame with a figma plugin then started testing Zared's agent skill he shared with me. 
 
 ---
 
