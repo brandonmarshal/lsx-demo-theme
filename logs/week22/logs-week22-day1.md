@@ -10,6 +10,7 @@
 -   Working on establishing block and section styles from the prototype
 -   Working on the style extraction agent, and working on document layouts for Block styles that will be used in theme.json
 -   Still figuring out the best way to document the styles, I am starting with ALL the button types and their styles and then I will move on with Blocks and Sections
+-   Started button types styling documentation
 
 ## Time Logs
 
@@ -17,7 +18,8 @@
 -   0.75 hrs - Started auditing the homepage
 -   2.0 hrs - Working on establishing block and section styles from the prototype
 -   1.0 hrs - Setting up an agent for style extraction, and getting a document layout for the block and sections styles
--   2.0 hrs - Prompting AI for documentation regarding the Button styles. 
+-   2.0 hrs - Prompting AI for documentation regarding the Button styles.
+-   1.5 hrs - Starting doing documentation for the different types of buttons on the prototype. 
 
 ---
 
