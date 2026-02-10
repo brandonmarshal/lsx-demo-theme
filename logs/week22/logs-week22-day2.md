@@ -9,7 +9,8 @@
 -   Reading Ollie and Twenty-Twenty-Five theme.json
 -   Small adjustments to the button styling tab in the doc
 -   Identifying the main block types and their variants.
--   Extracted all the updated pages for Dark and Light mode including Mega Menus. 
+-   Completed the documentation for block styles, section styles and animations - https://docs.google.com/document/d/1gOjcVbkeDqnwEC6kjSGsSGPWOMJ4F3NPwyjB7bwz7BA/edit?tab=t.jnmffx4ajpzd
+-   Extracted all the updated pages for Dark and Light mode including Mega Menus.
 
 ## Time Logs
 
