@@ -12,7 +12,8 @@
 -   Read Guide to prototyping in Figma
 -   Read Make your design systems work better for everyone
 -   Watched a couple youtube videos from Figma, related to prototyping in Figma.
--   Setup some frames to test prototyping. 
+-   Setup some frames to test prototyping.
+-   Setting up prototype components, like header and footer.
 
 ## Time Logs
 
@@ -20,7 +21,7 @@
 -   1.0 hrs - Catchup meet with Zared, and fixed some more components
 -   2.0 hrs - Learning about Figma Prototyping
 -   2.0 hrs - Learned more regarding the prototyping in Figma, and started setting up a simple prototype page in the design file so long.
--   1.0 hrs - Setting up basic frames for prototype practice. See notes. 
+-   1.5 hrs - Setting up basic frames for prototype practice. See notes. 
 
 ---
 
