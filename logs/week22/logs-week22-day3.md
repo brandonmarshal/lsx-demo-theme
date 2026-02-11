@@ -13,7 +13,7 @@
 ## Time Logs
 
 -   1.0 hrs – Fixing some of the broken components in the Design file, and had a catchup with Ash regarding prototyping in Figma.
--   0.5 hrs - Catchup meet with Zared, and fixed some more components
+-   1.0 hrs - Catchup meet with Zared, and fixed some more components
 -   2.0 hrs - Learning about Figma Prototyping
 
 ---
