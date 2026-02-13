@@ -11,6 +11,8 @@
 -   Completed Shop all page for Mobile and Desktop views in the prototype
 -   Setup connection for the mobile view prototype, from Homepage to shop and also the Mega menu.
 -   Adjusted Header and Footer to fit and look better on the Mobile Preview
+-   Added overlay for shop filter
+-   Made adjustments to the Homepage for Mobile view as there were some presentation improvements I noticed. 
 
 ## Time Logs
 
@@ -19,6 +21,7 @@
 -   1.0 hrs - Working on the Mobile Menu in the prototype.
 -   1.0 hrs - Setting up the shop page for Desktop and Mobile, still need to do tablet view
 -   1.0 hrs - Setting up connections for Mobile view as well as overlays. Also adjusted the footer and header for better preview on Mobile view.
+-   1.0 hrs - Organising the homepage mobile view, making adjustments to the layout for better presentation on mobile. Also added the overlay for the Shop filter.
 
 ---
 
@@ -26,4 +29,5 @@
 
 - I realised now that I need to rebuild the header and footer for tablet and mobile.
 - I am starting to understand the mobile layouts compared to the Desktop layouts. Tablet to me, feels closer to Mobile than to Desktop, so I assume I will use the Hamburger menu again with the Tablet view.
-- The setup for Mobile so far is looking good, I still have more connections to setup. 
+- The setup for Mobile so far is looking good, I still have more connections to setup.
+- What I noticed was that going from Desktop design to Mobile designs is not that quick, almost everything changes in Size and needs to still align nicely and neatly, but I am definitely learning a lot during this process. 
