@@ -7,11 +7,13 @@
 -   Working on the prototype, building homepage frames for all 3 views.
 -   Working on header and footer for Tablet and mobile views.
 -   Watched Figma's "Prototyping 101" video
+-   Setting up and working on the Mobile Menu in the prototype.
 
 ## Time Logs
 
 -   1.5 hrs – Working on the prototype
 -   1.0 hrs - Learning more about Figma prototyping from their Youtube videos
+-   1.0 hrs - Working on the Mobile Menu in the prototype.
 
 ---
 
