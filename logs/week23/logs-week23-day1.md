@@ -1,4 +1,4 @@
-# Week 22, Day 1 Log 2026-02-09
+# Week 22, Day 1 Log 2026-02-16
 
 ## Today's Progress
 
@@ -10,6 +10,8 @@
 -   Continued work on the Flower mobile view
 -   Updated the styles on Sixcats to use the variables I setup in Sixcats as well.
 -   Adjusting frame on the Flower page to get a mobile view for Flower.
+-   I have competed the Flower page for mobile view, with the variables updated this morning
+-   Created new connections for the Flower page on the prototype. 
 
 ## Time Logs
 
@@ -17,7 +19,8 @@
 -   1.5 hrs - Continued my work on the Mobile flower page for the prototype, then had a catchup meeting with Zared
 -   1.0 hrs - Fully updated the Styles with the Sixcats variables and started creating a mobile view for flower page
 -   1.5 hrs - Continued working on the Flower page for mobile view
--   0.5 hrs - Testing a plugin called "Scale". This plugin allows you to select a frame and resize it to any size including its contents. 
+-   0.5 hrs - Testing a plugin called "Scale". This plugin allows you to select a frame and resize it to any size including its contents.
+-   2.0 hrs - Completed the Flower page for Mobile view, adding styles and variables.
 
 ---
 
