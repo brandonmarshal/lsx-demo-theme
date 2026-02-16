@@ -11,7 +11,8 @@
 -   Updated the styles on Sixcats to use the variables I setup in Sixcats as well.
 -   Adjusting frame on the Flower page to get a mobile view for Flower.
 -   I have competed the Flower page for mobile view, with the variables updated this morning
--   Created new connections for the Flower page on the prototype. 
+-   Created new connections for the Flower page on the prototype.
+-   Read through an important article, typography systems in Figma - https://www.figma.com/best-practices/typography-systems-in-figma/#text-style-basics
 
 ## Time Logs
 
@@ -21,6 +22,7 @@
 -   1.5 hrs - Continued working on the Flower page for mobile view
 -   0.5 hrs - Testing a plugin called "Scale". This plugin allows you to select a frame and resize it to any size including its contents.
 -   2.0 hrs - Completed the Flower page for Mobile view, adding styles and variables.
+-   0.5 hrs - Read an article about Typography systems in Figma, link is in the section above. 
 
 ---
 
