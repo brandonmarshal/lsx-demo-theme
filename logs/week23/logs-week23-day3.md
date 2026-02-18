@@ -24,6 +24,7 @@
 -   1.0 hrs - Completed the Mooiberry and Mushroom pages for the prototype and added connections
 -   1.0 hrs - Catchup meet with Zared and started researching best variables setup for section styles
 -   1.0 hrs - Fixed the Sixcats-club repo Ash sent me yesterday, changed the name, added more to the README.md and basic fields.
+-   1.0 hrs - Used AI to help me setup variable tables for the section styles on Sixcats. See notes for more info. 
 
 ---
 
@@ -32,6 +33,17 @@
 -  I am now taking some time away from the Design file to learn about Figma Branching. Then I need to update the details of the Sixcats-club repo as requested yesterday. After that I will setup a meeting that suites Zared, for us to discuss how I should go about doing the new variables in a branch
 -  The branching is very similar to Github but its just for Designs and variables, the workflow stays the same. When a branch is ready, it needs to be reviewed and approved before being merged into the main file.
 -  On the section styles variables I am going to be sure to align them with the Sixcats sitemap dev tools
+-  The Section styles variables will be implemented tomorrow morning, but here are the sections that I have so far:
+    - Cards
+    - Archive Headers
+    - Page Section - Default
+    - Page Section - Neutral
+    - Page Section - Brand CTA
+    - Hero Section
+    - FAQ Section
+    - Product Grids
+    - Buttons 
+  
 -  See below about Glassmorphism
 
 ## Glassmorphism
