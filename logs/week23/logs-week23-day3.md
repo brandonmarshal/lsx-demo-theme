@@ -13,6 +13,8 @@
 -   Making adjustments to Refer page, still two more sections to do quick.
 -   Completed the Mooiberry and Mushroom pages for the Sixcats prototype
 -   Catchup with Zared, regarding variables for Section styles
+-   Updated the Sixcats-club repo, which is now called "sixcats-design-system". I have updated the README.md as well.
+-   I realised I was doing work on my local theme repo, so I needed to move all that work into the "sixcats-design-system" repo. From here I will make sure to use this repo when doing local work. 
 
 ## Time Logs
 
@@ -21,6 +23,7 @@
 -   1.0 hrs - Reading articles about Branching in Figma and researching Glassmorphism, also made some adjustments to the refer page
 -   1.0 hrs - Completed the Mooiberry and Mushroom pages for the prototype and added connections
 -   1.0 hrs - Catchup meet with Zared and started researching best variables setup for section styles
+-   1.0 hrs - Fixed the Sixcats-club repo Ash sent me yesterday, changed the name, added more to the README.md and basic fields.
 
 ---
 
