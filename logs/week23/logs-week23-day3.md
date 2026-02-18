@@ -11,12 +11,14 @@
 -   Read Figmas articles about branching - https://www.figma.com/best-practices/branching-in-figma/#best-practices-when-using-branches
 -   Researching glassmorphism where I found a Figma plugin for this - https://www.figma.com/community/plugin/1197106608665398190/glassmorphism
 -   Making adjustments to Refer page, still two more sections to do quick.
+-   Completed the Mooiberry and Mushroom pages for the Sixcats prototype
 
 ## Time Logs
 
 -   1.0 hrs – Running through my current Mobile prototype and making adjustments to all the existing pages, changing colours and fontsizes to my variables as well.
 -   2.0 hrs - Catchup meeting with Ash, and working on the mobile view pages for the Sixcats prototype
 -   1.0 hrs - Reading articles about Branching in Figma and researching Glassmorphism, also made some adjustments to the refer page
+-   1.0 hrs - Completed the Mooiberry and Mushroom pages for the prototype and added connections
 
 ---
 
