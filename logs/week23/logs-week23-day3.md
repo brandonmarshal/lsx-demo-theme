@@ -12,6 +12,7 @@
 -   Researching glassmorphism where I found a Figma plugin for this - https://www.figma.com/community/plugin/1197106608665398190/glassmorphism
 -   Making adjustments to Refer page, still two more sections to do quick.
 -   Completed the Mooiberry and Mushroom pages for the Sixcats prototype
+-   Catchup with Zared, regarding variables for Section styles
 
 ## Time Logs
 
@@ -19,6 +20,7 @@
 -   2.0 hrs - Catchup meeting with Ash, and working on the mobile view pages for the Sixcats prototype
 -   1.0 hrs - Reading articles about Branching in Figma and researching Glassmorphism, also made some adjustments to the refer page
 -   1.0 hrs - Completed the Mooiberry and Mushroom pages for the prototype and added connections
+-   1.0 hrs - Catchup meet with Zared and started researching best variables setup for section styles
 
 ---
 
@@ -26,6 +28,7 @@
 
 -  I am now taking some time away from the Design file to learn about Figma Branching. Then I need to update the details of the Sixcats-club repo as requested yesterday. After that I will setup a meeting that suites Zared, for us to discuss how I should go about doing the new variables in a branch
 -  The branching is very similar to Github but its just for Designs and variables, the workflow stays the same. When a branch is ready, it needs to be reviewed and approved before being merged into the main file.
+-  On the section styles variables I am going to be sure to align them with the Sixcats sitemap dev tools
 -  See below about Glassmorphism
 
 ## Glassmorphism
