@@ -10,6 +10,7 @@
 -   Editing variables for section styles, working on the buttons variables update as well.
 -   Watched all the Youtube videos I collected
 -   Practiced what they were teaching on the videos about Variable Modes
+-   Working on the Funky redesign variables, mainly primitives and then will setup the Dark and light mode tokens. 
 
 ## Time Logs
 
@@ -17,7 +18,8 @@
 -   1.0 hrs - Added more variables to "Styles: Sections", almost complete.
 -   2.0 hrs - Working on the new sections styles variables and the Mobile prortotyping pages, started reading the first article regarding Modes in Figma
 -   1.5 hrs - Reading through the articles I found about Variable Modes, and practicing on the prototype, how to implement the variable modes
--   1.5 hrs - Watching all the youtube videos I collected about Figma Variable Modes, and also testing on the prototype what I was learning. 
+-   1.5 hrs - Watching all the youtube videos I collected about Figma Variable Modes, and also testing on the prototype what I was learning.
+-   1.0 hrs - Working on the Funky redesign variables, started with the colour primitves, once those are done I can setup the Funky Dark and Light mode token collection
 
 ---
 
