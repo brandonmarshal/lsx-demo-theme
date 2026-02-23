@@ -15,6 +15,9 @@
 -   [ ] **Colour Variables Collection**
     -   [ ] Collect the remaining colours for the Sixcats Funky Redesign.
     -   [ ] Start applying collected colours to the prototype frames.
+-   [ ] **WordPress Setup**
+    -   [ ] Set up a local WP site.
+    -   [ ] Add the current Sixcats theme in the "Scclub" repository.
 -   [ ] **Study Session**
     -   [ ] 1 hour of focused study (document what you learn).
 -   [ ] **Planning & Logging**
@@ -23,21 +26,14 @@
 
 ### Tuesday (2026-02-24)
 
--   [ ] **Colour Variables Application**
-    -   [ ] Continue applying colour variables to prototype frames.
+-   [ ] **Spacing Variables Update**
     -   [ ] Begin updating spacing variables for the Funky Redesign.
--   [ ] **Study Session**
-    -   [ ] 1 hour of focused study.
-
-### Wednesday (2026-02-25)
-
--   [ ] **Spacing and Typography Variables**
-    -   [ ] Complete spacing variables updates.
+-   [ ] **Typography Variables Update**
     -   [ ] Start updating typography variables for the Funky Redesign.
 -   [ ] **Study Session**
     -   [ ] 1 hour of focused study.
 
-### Thursday (2026-02-26)
+### Wednesday (2026-02-25)
 
 -   [ ] **Variable Application and Testing**
     -   [ ] Apply all variables (colours, spacing, typography) to prototype frames where applicable.
@@ -45,11 +41,17 @@
 -   [ ] **Study Session**
     -   [ ] 1 hour of focused study.
 
-### Friday (2026-02-27)
+### Thursday (2026-02-26)
 
 -   [ ] **Frame Collection and Variable Application**
     -   [ ] Collect remaining frames and single page template frames.
     -   [ ] Add all variables to the new frames.
+-   [ ] **Study Session**
+    -   [ ] 1 hour of focused study.
+
+### Friday (2026-02-27)
+
+-   [ ] **Mobile Prototype Finalization**
     -   [ ] Final testing and adjustments for the Mobile view prototype.
 -   [ ] **Study Session**
     -   [ ] 1 hour of focused study.
