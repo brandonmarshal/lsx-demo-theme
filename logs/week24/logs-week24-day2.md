@@ -9,12 +9,14 @@
 -   Completed troubleshooting on theme.json and patterns
 -   Started updating the dark mode pages to align with how the site currently is looking.
 -   Worked on updating existing and adding in new pages from the Sixcats prototype in Make, since there have been a few updates.
+-   Added sustainability, press & media, dosage calculator, lab results, terpene guide, strain guide, blogs, gift cards, wholesale and updated the responsible use guide. 
 
 ## Time Logs
 
 -   2.0 hrs – Continued troubleshooting the theme.json, and testing patterns on my local
 -   1.75 hrs - Completed the troubleshooting on the local setup theme.json and hero patterns. Then I started updating the dark mode pages of the Sixcats site.
--   3.0 hrs - Working on the Sixcats Mobile prototype. Saving new pages like gallery, wishlist, premium grade, standard grade, budget grade, reviews, shipping and returns, then I update most of the existing pages, like all the About, Flower and Shop pages, deals, refers, homepage. 
+-   3.0 hrs - Working on the Sixcats Mobile prototype. Saving new pages like gallery, wishlist, premium grade, standard grade, budget grade, reviews, shipping and returns, then I update most of the existing pages, like all the About, Flower and Shop pages, deals, refers, homepage.
+-   1.5 hrs - Added more of the new pages for Dark mode, and started updating the prototypes homepage frame. 
 
 ---
 
