@@ -6,10 +6,13 @@
 
 -   Working on the troubleshooting from yesterday regarding the theme.json
 -   Testing patterns on my local WP site, these patterns are from the Figma make prototype for Sixcats
+-   Completed troubleshooting on theme.json and patterns
+-   Started updating the dark mode pages to align with how the site currently is looking. 
 
 ## Time Logs
 
 -   2.0 hrs – Continued troubleshooting the theme.json, and testing patterns on my local
+-   1.75 hrs - Completed the troubleshooting on the local setup theme.json and hero patterns. Then I started updating the dark mode pages of the Sixcats site. 
 
 ---
 
