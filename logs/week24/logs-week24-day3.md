@@ -5,10 +5,12 @@
 ### What have you accomplished today?
 
 -   Working on the mobile view prototype, specifically updating the Light mode homepage to the current and then creating components and adding variables
+-   Continued working on the components for homepage, completed the featured cards now, I created variants of the cards with their different states like Out of stock, Sale, grouped etc.
 
 ## Time Logs
 
 -   2.0 hrs – Creating components and adding variables for Light mode homepage
+-   1.0 hrs - Completed the Featured cards section components, now adjusting for mobile size. 
 
 ---
 
