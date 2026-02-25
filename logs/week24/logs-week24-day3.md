@@ -14,7 +14,8 @@
 -   2.0 hrs – Creating components and adding variables for Light mode homepage
 -   1.0 hrs - Completed the Featured cards section components, now adjusting for mobile size.
 -   1.75 hrs - Continued working on the components for the Mobile prototype.
--   1.5 hrs - Working on the mobile prototype components and and variables, almost complete with the Light mode home page. 
+-   1.5 hrs - Working on the mobile prototype components and and variables, almost complete with the Light mode home page.
+-   1.75 hrs - Continued work on the components for the homepage, rebuilding the sections with components and then applying variables where I can. 
 
 ---
 
