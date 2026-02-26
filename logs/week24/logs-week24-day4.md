@@ -10,13 +10,15 @@
 -   Added more colours to the theme, because some colours were not avaialable as variables.
 -   I have been adding colour variables to all the newly collected components
 -   I have updated the colour palette to accomodate for more of the colours on the site.
--   Added colour variables to one of the cards component and setup Dark and Light mode, the mode switching is working nciely. 
+-   Added colour variables to one of the cards component and setup Dark and Light mode, the mode switching is working nicely.
+-   Began testing the Sixcats Theme on Wordpress, here is the task with all my testing notes - https://app.asana.com/1/1152726221312/project/1211170302971594/task/1213418354427612?focus=true
 
 ## Time Logs
 
 -   2.0 hrs – Catchup meet with Zared and working on card components for the new sixcats design.
 -   1.5 hrs - Added colour varaibles to components and testing their Light and Dark modes. Also created more colours in the variables as some were not available that I needed.
 -   2.0 hrs - Working on colour variables and adding colours to all collected components
+-   2.0 hrs - Started testing the Sixcats theme on Wordpress. 
 
 ---
 
