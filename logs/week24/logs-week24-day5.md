@@ -9,7 +9,7 @@
 
 ## Time Logs
 
--   1.75 hrs – Working on the SC Design File
+-   2.25 hrs – Working on the SC Design File
 
 ---
 
