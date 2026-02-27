@@ -9,7 +9,9 @@
 -   Wroking on shop page, colelcting components, adding variables and ensuring Dark and Light modes work when switching.
 -   Completed majority of the shop page, I only have to add the filter in the prototyping now, but the filter is also a component with variables added to it.
 -   Started collecting the components from the Bundles page for Mobile prototype, also added the correct variables to the components
--   Continued with the troubleshooting from yesterday, on the Sixcats theme. 
+-   Continued with the troubleshooting from yesterday, on the Sixcats theme.
+-   Collected ALL the cards components for the bundles pages and assigned the new variables. Dark and Light mode work 100%
+-   I did more troubleshooting with AI on the theme.json error. I will update my task on Asana with my finds. 
 
 ## Time Logs
 
@@ -17,6 +19,7 @@
 -   2.0 hrs - Continued collecting components and adding variables to them, almost complete with the Shop page, dark and light mode.
 -   1.20 hrs - Continued working on the prototype shop page, collected components and added variables, ensured that Dark and Light mode switch works well.
 -   2.0 hrs - Started with the Sixcats theme testing again, doing troubleshooting on the errors, also worked on the Design File bundles page
+-   1.5 hrs - Continued troubleshooting with AI to understand the error, I also completed the bundles page cards, their components and variables are updated, Mode switching works 100%.
 
 ---
 
