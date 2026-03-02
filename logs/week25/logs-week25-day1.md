@@ -9,14 +9,17 @@
 -   Got the Dark and Light modes to switch on the prototype, I have also adjusted the templates so that the header remains on top of the screen even when scrolling. Use clip content for that.
 -   I have collected more components and added the new variables to the single product page.
 -   The single product page is now completed, I just need to add the connections and test it in the prototype.
--   Organising the components I was collecting today, there are quite a few so I had to get them all in order and in the right place.  
+-   Organising the components I was collecting today, there are quite a few so I had to get them all in order and in the right place.
+-   Read the article - https://developer.wordpress.org/news/2025/10/styling-accordions-in-wordpress-6-9/#a-look-at-the-default-accordion-design
+-   Setup a local site to test the accordion block, and how to style it with theme.json, still working on that practical. 
 
 ## Time Logs
 
 -   3.0 hrs – Working on the Sixcats Design System
 -   1.5 hrs - Continued work on the Sixcats Design System, working on the mobile prototype.
 -   1.5 hrs - Working on the Prototype still. The single product page has a lot of components, I am almost done collecting and adding all the variables for that page.
--   1.75 hrs - More progress on the Mobile prototype, adding variables and creating components for mobile view pages. 
+-   1.75 hrs - More progress on the Mobile prototype, adding variables and creating components for mobile view pages.
+-   0.5 hrs - Read through the articles regarding accordion on Wordpress, I also created a local site and inserted the accordion to test how it works and how to style it with theme.json
 
 ---
 
