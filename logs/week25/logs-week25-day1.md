@@ -6,12 +6,14 @@
 
 -   Working on Sixcats Design System, getting the Mobile prototype Bundles page components collected and added the variables.
 -   Attempting to get the Dark and Light mode switcher to work when I press the button on the prototype.
--   Got the Dark and Light modes to switch on the prototype, I have also adjusted the templates so that the header remains on top of the screen even when scrolling. Use clip content for that. 
+-   Got the Dark and Light modes to switch on the prototype, I have also adjusted the templates so that the header remains on top of the screen even when scrolling. Use clip content for that.
+-   I have collected more components and added the new variables to the single product page. 
 
 ## Time Logs
 
 -   3.0 hrs – Working on the Sixcats Design System
--   1.5 hrs - Continued work on the Sixcats Design System, working on the mobile prototype. 
+-   1.5 hrs - Continued work on the Sixcats Design System, working on the mobile prototype.
+-   1.5 hrs - Working on the Prototype still. The single product page has a lot of components, I am almost done collecting and adding all the variables for that page. 
 
 ---
 
