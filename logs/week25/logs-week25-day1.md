@@ -15,7 +15,7 @@
 -   3.0 hrs – Working on the Sixcats Design System
 -   1.5 hrs - Continued work on the Sixcats Design System, working on the mobile prototype.
 -   1.5 hrs - Working on the Prototype still. The single product page has a lot of components, I am almost done collecting and adding all the variables for that page.
--   1.0 hrs - More progress on the Mobile prototype, adding variables and creating components for mobile view pages. 
+-   1.75 hrs - More progress on the Mobile prototype, adding variables and creating components for mobile view pages. 
 
 ---
 
