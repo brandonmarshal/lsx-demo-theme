@@ -6,10 +6,12 @@
 
 -   Working on Sixcats Design System, getting the Mobile prototype Bundles page components collected and added the variables.
 -   Attempting to get the Dark and Light mode switcher to work when I press the button on the prototype.
+-   Got the Dark and Light modes to switch on the prototype, I have also adjusted the templates so that the header remains on top of the screen even when scrolling. Use clip content for that. 
 
 ## Time Logs
 
 -   3.0 hrs – Working on the Sixcats Design System
+-   1.5 hrs - Continued work on the Sixcats Design System, working on the mobile prototype. 
 
 ---
 
@@ -17,3 +19,4 @@
 
 -   I have completed the Bundles page, collected components, resized for mobile and added the spacing, typography and colour variables.
 -   I have been trying to figure out how to get the Dark and Light mode switcher to work on the prototype.
+-   From today onwards, I am focusing only on the Sixcats Design File, I was told this needs to be close to done, I still need to complete 3 prototype views, not all the components have been collected from the NEW Funky Redesign, each component ALSO needs spacing, text and colour variables, font styles etc, there is a lot to do when collecting components CORRECTLY, so now I only focus on this Design File. 
