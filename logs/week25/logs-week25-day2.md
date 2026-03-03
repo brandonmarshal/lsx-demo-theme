@@ -6,14 +6,19 @@
 
 -   Worked on the Sixcats DS, completed the single-product template and its components etc.
 -   Catchup meet with Ash regarding what I need to study and skill I need to work on.
+-   Read up on Autolayout and worked through their community file which was a tutorial on using Autolayout.
+-   Read up on Glassmorphism, found a decent plugin from Figma and practices on a card so long. All my notes for studies are on the following Asana task - https://app.asana.com/1/1152726221312/project/1211170302971594/task/1213505486362437?focus=true
 
 ## Time Logs
 
 -   1.5 hrs – Working on the Sixcats DS, collecting and organising the final components
 -   0.5 hrs - Catchup meeting with Ash
+-   2.0 hrs - Learning session about Auto layout in Figma as well as Glassmorphism. 
 
 ---
 
 ## Notes
 
 -   Ash recommended I step back today and focus on learning more in regards to what I am working on, so all DS related things, I am going to read articles from https://www.designsystems.com/ and use what I learn there in the Sixcats DS.
+-   I actually learnt 2 things from Autolayout that I did not know, the STROKES can be included or excluded in Auto layout and canvas stacking, I understood it but never used it yet, this articles helped me understand it better.
+-   Glassmorphism is AWESOME! I am seriously enjoying reading up on it. I have already tested a card with Glassmorphism and its looking good. Now I want to try out a Modal for a newsletter possibly. 
