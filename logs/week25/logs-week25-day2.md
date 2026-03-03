@@ -12,7 +12,9 @@
 -   Added icons from Phosphor, to replace current ones in the DS
 -   Started working on Footer and Mobile menu components, variables and styles, for the Mobile Prototype.
 -   Continued working on the Sixcats DS, collecting components, organising and adding styles via variables.
--   I have been adding Glassmorphism colours to the Sixcats variables. 
+-   I have been adding Glassmorphism colours to the Sixcats variables.
+-   Completed the Glassmorphism dark and light variables
+-   Applied those variables to components that use the glass effect.
 
 ## Time Logs
 
@@ -21,7 +23,8 @@
 -   2.0 hrs - Learning session about Auto layout in Figma as well as Glassmorphism.
 -   1.0 hrs - Did more learning about Glassmorphism and did some practical as well, testing the different colours, transparencies and blurs.
 -   1.0 hrs - I started replacing the icons in the DS to the icons from "Phosphor". I started page by page.
--   2.5 hrs - Spent time on the Sicats DS, doing the Mobile menu components and variables, styles etc. 
+-   2.5 hrs - Spent time on the Sicats DS, doing the Mobile menu components and variables, styles etc.
+-   1.5 hrs - I have fully added Dark and Light Glassmorphism colours to the Sixcats variables and using it on components that already have a glass effect.
 
 ---
 
