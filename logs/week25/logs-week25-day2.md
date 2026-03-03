@@ -10,7 +10,8 @@
 -   Read up on Glassmorphism, found a decent plugin from Figma and practices on a card so long. All my notes for studies are on the following Asana task - https://app.asana.com/1/1152726221312/project/1211170302971594/task/1213505486362437?focus=true
 -   Did more research into Glassmorphism, I learnt what colours are commonly used, and the layout hierarchy.
 -   Added icons from Phosphor, to replace current ones in the DS
--   Started working on Footer and Mobile menu components, variables and styles, for the Mobile Prototype. 
+-   Started working on Footer and Mobile menu components, variables and styles, for the Mobile Prototype.
+-   Continued working on the Sixcats DS, collecting components, organising and adding styles via variables. 
 
 ## Time Logs
 
@@ -19,7 +20,7 @@
 -   2.0 hrs - Learning session about Auto layout in Figma as well as Glassmorphism.
 -   1.0 hrs - Did more learning about Glassmorphism and did some practical as well, testing the different colours, transparencies and blurs.
 -   1.0 hrs - I started replacing the icons in the DS to the icons from "Phosphor". I started page by page.
--   1.0 hrs - Spent time on the Sicats DS, doing the Mobile menu components and variables, styles etc. 
+-   1.65 hrs - Spent time on the Sicats DS, doing the Mobile menu components and variables, styles etc. 
 
 ---
 
