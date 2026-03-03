@@ -1,12 +1,12 @@
-# Week 25 Planning (2026-03-02 to 2026-03-06)
+# Week 25 Planning (2026-03-02 to 2026-03-07)
 
 ## Weekly Goals
 
--   [ ] **Goal 1**: Gather all new components for the Sixcats Mobile prototype to match updated styles.
--   [ ] **Goal 2**: Apply the newly created colour, spacing, and typography variables to all collected components.
--   [ ] **Goal 3**: Replace current prototype pages with the updated component-based pages.
--   [ ] **Goal 4**: Conduct daily testing and troubleshooting on the Sixcats Theme to resolve critical issues.
--   [ ] **Goal 5**: Finalize the updated Mobile prototype with all new styles implemented.
+-   [ ] **Goal 1**: Gather all new components for the Sixcats Mobile prototype to match updated styles and apply variables.
+-   [ ] **Goal 2**: Advance Figma skills with focused sessions on Auto Layout, Glassmorphism, and Animations.
+-   [ ] **Goal 3**: Conduct deep research into major Design Systems (Material, Atlassian, Uber) and icons (Phosphor).
+-   [ ] **Goal 4**: Replace current prototype pages with updated component-based pages.
+-   [ ] **Goal 5**: Conduct daily testing and troubleshooting on the Sixcats Theme.
 
 ## Key Tasks
 
@@ -23,50 +23,54 @@
 
 ### Tuesday (2026-03-03)
 
--   [ ] **Variable Application**
-    -   [ ] Continue gathering components.
-    -   [ ] Start applying the new variables (created in Week 24) to the collected components.
+-   [ ] **Sixcats Mobile Prototype**
+    -   [ ] Continue gathering components and applying newly created variables (colour, text, spacing).
+-   [ ] **Figma Skill Development (1.1 - 1.2)**
+    -   [ ] **Auto Layout**: Practice nested layouts, spacing systems, hug vs. fill, and responsive resizing.
+    -   [ ] **Glassmorphism**: Study and recreate cards/modals with background blur and transparency.
 -   [ ] **Sixcats Theme Troubleshooting**
-    -   [ ] Continue troubleshooting theme errors.
-    -   [ ] Attempt fixes for identified issues.
--   [ ] **Study Session**
-    -   [ ] 1 hour of focused study.
+    -   [ ] Continue troubleshooting theme errors (attempt fixes).
 
 ### Wednesday (2026-03-04)
 
--   [ ] **Prototype Update**
-    -   [ ] Begin replacing the current prototype pages with the updated components.
-    -   [ ] Ensure proper variable linkage in the new pages.
+-   [ ] **Sixcats Mobile Prototype**
+    -   [ ] Begin replacing prototype pages with updated components.
+    -   [ ] Ensure variable linkage is correct.
+-   [ ] **Figma Skill Development (1.3) & Icon Research (2)**
+    -   [ ] **Animations**: Practice hover effects (buttons, cards) and micro-interactions using Smart Animate.
+    -   [ ] **Phosphor Icons**: Research library, understand weights, and learn Figma import/SVG usage.
 -   [ ] **Sixcats Theme Troubleshooting**
-    -   [ ] Run regression tests on any applied fixes.
-    -   [ ] Document progress and any new blockers.
--   [ ] **Study Session**
-    -   [ ] 1 hour of focused study.
+    -   [ ] Run regression tests on updates.
 
 ### Thursday (2026-03-05)
 
--   [ ] **Prototype Update & Refinement**
-    -   [ ] Continue replacing prototype pages.
-    -   [ ] Refine spacing and layout based on new variables.
+-   [ ] **Sixcats Mobile Prototype**
+    -   [ ] Continue replacing prototype pages and refining layout.
+-   [ ] **Design Systems Documentation (3) & Material Design (4.1)**
+    -   [ ] **Documentation**: Research tools for writing component docs and structuring guidelines.
+    -   [ ] **Material Design**: Deep dive into color, elevation, typography, and accessibility (Top Priority).
 -   [ ] **Sixcats Theme Troubleshooting**
-    -   [ ] Deep dive into persistent theme issues.
-    -   [ ] Consult documentation or resources if stuck.
--   [ ] **Study Session**
-    -   [ ] 1 hour of focused study.
+    -   [ ] Deep dive into persistent issues.
 
 ### Friday (2026-03-06)
 
--   [ ] **Mobile Prototype Finalization**
-    -   [ ] Complete the replacement of all prototype pages.
-    -   [ ] Perform a final walkthrough of the Mobile prototype.
+-   [ ] **Sixcats Mobile Prototype**
+    -   [ ] Complete page replacements and perform a walkthrough.
+-   [ ] **Design Systems Research (4.2 - 4.3)**
+    -   [ ] **Atlassian**: Study component docs and tokens. _Start Agile resources research (Scrum/Kanban)._
+    -   [ ] **Uber**: Review system structure and cross-platform consistency.
 -   [ ] **Sixcats Theme Troubleshooting**
-    -   [ ] Summarize the week's troubleshooting findings and fixes.
--   [ ] **Study Session**
-    -   [ ] 1 hour of focused study.
--   [ ] **Wrap-Up**
-    -   [ ] Review the week's deliverables against the Weekly Goals.
-    -   [ ] Update logs with what worked well and what was difficult.
-    -   [ ] Prepare for next week (Tablet/Desktop views).
+    -   [ ] Summarize week's findings.
+
+### Saturday (2026-03-07) - Overtime
+
+-   [ ] **DesignSystems.com Research (5)**
+    -   [ ] Read main articles and review repositories to understand governance and patterns.
+-   [ ] **Agile Research Prep (6)**
+    -   [ ] Initial deep study into Agile principles, Scrum, and Kanban (connecting to product development).
+-   [ ] **Sixcats Wrap-Up**
+    -   [ ] Final polish on Mobile Components and Prototype.
+    -   [ ] Prepare for Tablet/Desktop views next week.
 
 ## Commitment
 
@@ -74,24 +78,25 @@ This week, I commit to:
 
 -   Updating the Sixcats Mobile prototype to fully reflect the new design styles and variables.
 -   Dedicating time every day to troubleshooting and fixing the Sixcats Theme.
--   Ensuring all new components are properly tokenized with the correct variables.
--   Maintaining a daily 1-hour study session.
+-   Executing a rigorous study plan covering Figma advanced techniques and major Design Systems.
+-   Putting in overtime on Saturday to cover broad research topics.
 
 ## Success Metrics
 
--   **Prototype Update**: All current prototype pages replaced with new component-based versions using new variables.
--   **Theme Stability**: Significant progress or resolution of Sixcats Theme errors through daily troubleshooting.
--   **Variable Consistency**: 100% of new components utilizing the correct design tokens.
--   **Study Sessions**: 1 hour of study completed and logged each day.
+-   **Prototype Update**: Current prototype pages replaced with updated components using correct variables.
+-   **Skill Acquisition**: Completed practice exercises for Auto Layout, Glassmorphism, and Smart Animate.
+-   **Research Completion**: Notes documented for Material, Atlassian, Uber, and Phosphor icons.
+-   **Theme Stability**: Progress on Sixcats Theme errors documented.
 
 ## Learning Goals
 
--   **Advanced Component Management**: Efficiently swapping and updating large sets of components in Figma.
--   **Theme Debugging**: Deepening knowledge of WordPress theme structure and error resolution.
--   **Design System Maintenance**: keeping a design system synchronized with evolving style requirements.
+-   **Figma Advanced**: Mastery of Auto Layout, Glassmorphism, and Micro-interactions.
+-   **Design Systems**: Deep understanding of documentation standards (Material, Atlassian).
+-   **Iconography**: Best practices for integrating libraries like Phosphor.
+-   **Agile/Product**: Introductory understanding of Agile methodologies within design.
 
 ## Technical Skills Focus
 
--   **Figma Components**: Managing component updates and variable application.
--   **WordPress Troubleshooting**: Debugging theme errors (PHP/JSON/CSS).
--   **Prototyping**: Seamless page replacement and interaction testing.
+-   **Figma**: Auto Layout, Smart Animate, Variable management.
+-   **Design Documentation**: Writing clear guidelines and token structures.
+-   **WordPress**: Theme debugging and error resolution.
