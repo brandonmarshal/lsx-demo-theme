@@ -10,14 +10,15 @@
 -   Started working on the new Flower page design, collecting those components.
 -   Collected more components for Flower page
 -   Working on the Hover animations for the Strain type cards on the Flower page.
--   Updated variables to include colours for glow hover effects. 
+-   Updated variables to include colours for glow hover effects.
+-   Almost done with all 4 strain types and the 'All Flower' card. This includes components collected, variables assigned, hover variants created with their glow animations.
 
 ## Time Logs
 
 -   1.0 hrs – Studying Figma animations
 -   1.0 hrs - Animations Practical
 -   2.5 hrs - Spent time working on the Sixcats DS. Specifically completing the mobile menu (colours) and the Flower page, started collecting components.
--   1.25 hrs - Working on the DS, adding animations to the strain cards on the Flower page, collecting more flower page components as well
+-   2.25 hrs - Working on the DS, adding animations to the strain cards on the Flower page, collecting more flower page components as well
 
 ---
 
