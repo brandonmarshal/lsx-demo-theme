@@ -19,6 +19,7 @@
 -   1.0 hrs - Animations Practical
 -   2.5 hrs - Spent time working on the Sixcats DS. Specifically completing the mobile menu (colours) and the Flower page, started collecting components.
 -   2.25 hrs - Working on the DS, adding animations to the strain cards on the Flower page, collecting more flower page components as well
+-   2.0 hrs - Continued working on the Flower page and with aimations, see notes for more info
 
 ---
 
@@ -26,4 +27,5 @@
 
 -   I see some animations that I need to use in the Sixcats DS, like the Micro animation for Heart icons, when someone adds to wishlist the heart should fill. I will practice that now.
 -   I am understanding the animations now, the components variants are what make the animations work, for animations you need a frame with multiple states. Like default, hover and On-click. Then you connect the Prototype noodle from one state to another either on "Mouse enter" or "On-tap".
--   Next I will do a product card, to see if I can get that to animate on hover as well. 
+-   Next I will do a product card, to see if I can get that to animate on hover as well.
+-   I have been doing animations for the Flower page, specifically hover animations. These are taking time because I was learning today, from tomorrow I will be able to do the animations faster. For some of these animations there are duotone colours, then I need to go and create primitives and tokens for those colours. I cannot just collect components and not assign variables. 
