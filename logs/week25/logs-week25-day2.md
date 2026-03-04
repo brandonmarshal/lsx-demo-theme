@@ -1,4 +1,4 @@
-# Week 25, Day 1 Log 2026-03-3
+# Week 25, Day 2 Log 2026-03-03
 
 ## Today's Progress
 
@@ -32,4 +32,4 @@
 
 -   Ash recommended I step back today and focus on learning more in regards to what I am working on, so all DS related things, I am going to read articles from https://www.designsystems.com/ and use what I learn there in the Sixcats DS.
 -   I actually learnt 2 things from Autolayout that I did not know, the STROKES can be included or excluded in Auto layout and canvas stacking, I understood it but never used it yet, this articles helped me understand it better.
--   Glassmorphism is AWESOME! I am seriously enjoying reading up on it. I have already tested a card with Glassmorphism and its looking good. Now I want to try out a Modal for a newsletter possibly. 
+-   Glassmorphism is AWESOME! I am seriously enjoying reading up on it. I have already tested a card with Glassmorphism and its looking good. Now I want to try out a Modal for a newsletter possibly.
