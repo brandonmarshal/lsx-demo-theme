@@ -7,13 +7,17 @@
 -   Studied Figma animations, see Asana task for more details - https://app.asana.com/1/1152726221312/project/1211170302971594/task/1213505486362437?focus=true
 -   Did some practical on Animations, I started with the Wishlist button, got it to hover and the heart to fill once clicked.
 -   Completed the Mobile menu components, I added linear colours for those buttons and divider.
--   Started working on the new Flower page design, collecting those components. 
+-   Started working on the new Flower page design, collecting those components.
+-   Collected more components for Flower page
+-   Working on the Hover animations for the Strain type cards on the Flower page.
+-   Updated variables to include colours for glow hover effects. 
 
 ## Time Logs
 
 -   1.0 hrs – Studying Figma animations
 -   1.0 hrs - Animations Practical
 -   2.5 hrs - Spent time working on the Sixcats DS. Specifically completing the mobile menu (colours) and the Flower page, started collecting components.
+-   1.25 hrs - Working on the DS, adding animations to the strain cards on the Flower page, collecting more flower page components as well
 
 ---
 
