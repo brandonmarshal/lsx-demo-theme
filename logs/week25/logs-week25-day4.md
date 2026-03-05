@@ -6,10 +6,12 @@
 
 -   Trying to debug Sixcats Prototype, not very successful
 -   Worked on components for Sixcats, adding variables to them.
+-   I have been working on the SC prototype still, the homepage is now loading, so I am moving on to other pages now. 
 
 ## Time Logs
 
 -   2.0 hrs – Working on the Sixcats DS and Prototype
+-   1.0 hrs - Continued debugging the Sixcats prototype and browsing "Makeup Portfolio" sitemap, to see the styles used and colour palettes. 
 
 ---
 
