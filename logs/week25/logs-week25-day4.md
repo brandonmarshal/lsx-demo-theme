@@ -16,7 +16,8 @@
 -   2.0 hrs – Working on the Sixcats DS and Prototype
 -   1.0 hrs - Continued debugging the Sixcats prototype and browsing "Makeup Portfolio" sitemap, to see the styles used and colour palettes.
 -   2.0 hrs - Working on LightspeedWP.agency and Sixcats Club prototypes, progressing the Memory optimisation prompts and debugging all errors on the Homepage, also reading articles in between prompts
--   2.35 hrs - Continued with the tasks on the Sixcats and LS prototypes, also doing debugging on any errors that come up. In between I have been reading articles. 
+-   2.35 hrs - Continued with the tasks on the Sixcats and LS prototypes, also doing debugging on any errors that come up. In between I have been reading articles.
+-   1.0 hrs - Debugging and doing tasks on the Sixcats and LS prototypes. 
 
 ---
 
