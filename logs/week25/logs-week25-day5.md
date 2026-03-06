@@ -8,6 +8,8 @@
 -   Continued with memory optimisation on LS and SC prototypes, doing design file work on Sixcats inbetween.
 -   Working on the SC design file, doing the Mobile menu design, adding the prototype connections, ensuring scrolling works, added dropdown menus as overlays.
 -   Worked on the SC and LS prototypes, doing optimisation tasks
+-   Worked on the SC design system
+-   Finished up the current section on each prototype, LS and SC. 
 
 ## Time Logs
 
@@ -15,6 +17,7 @@
 -   1.5 hrs - Continued work on the LS and SC prototypes, did some SC Design File work inbetween.
 -   3.0 hrs - Working on the SC and LS prototypes, doing the tasks for each one, also working on the SC design system in between prompting.
 -   1.0 hrs - Working on the SC design system and the 2 Figma make prototypes, doing their optimisations tasks.
+-   1.25 hrs - Finished up on certain phases on the 2 prototypes, working on the SC design file, collecting delivery page components, and doing admin (reflections and planning).
 
 ---
 
