@@ -14,6 +14,7 @@
 -   1.5 hrs – Working on SC and LS prototypes, doing the memory/css organisation tasks/audits. Working on the SC DS at the same time.
 -   1.5 hrs - Continued work on the LS and SC prototypes, did some SC Design File work inbetween.
 -   3.0 hrs - Working on the SC and LS prototypes, doing the tasks for each one, also working on the SC design system in between prompting.
+-   1.0 hrs - Working on the SC design system and the 2 Figma make prototypes, doing their optimisations tasks.
 
 ---
 
