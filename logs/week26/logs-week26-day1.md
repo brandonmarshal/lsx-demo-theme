@@ -16,6 +16,7 @@
 -   1.5 hrs – Cathcup with Ash and working on the Figma Make prototypes, doing debugging.
 -   1.0 hrs - Fixing errors on Sixcats site and attempting to fix publishing error on the Lightspeed site.
 -   3.0 hrs - Continued working on the Sixcats and Lightspeed prototype, doing troubleshooting for LS and fixing visuals for Sixcats, also worked on the SC Design system.
+-   1.0 hrs - Trying to get the LS Prototype to publish, and restoring content on certain pages on the Sixcats site.
 
 ---
 
@@ -23,3 +24,5 @@
 
 -   The Sixcats site, I am going around and fixing areas I can see need improvements, like spacing issues etc.
 -   With LS, it does not want to publish still, so I am running some audits at the moment to figure out what is casuing the Publishing to error out.
+-   The LS prototype error is not very obvious at this point, I have gone through two large audits I created for finding the issue. The 3rd audit I created was a reflection of how I fixed the publishing error on Sixcats, ALL checks passed, no fixes were needed. So theses audits are all saying that everything is ready and correct, but the publish does not work.
+-   I want to use the Github repo to help me troubleshoot now, this way I can downlaod files and bring them into my IDE, there I can use a different AI to do audits for me, like Claude or GPT Codex. 
