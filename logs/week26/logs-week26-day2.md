@@ -5,7 +5,7 @@
 ### What have you accomplished today?
 
 -   Catchup with Ash
--   Adjustments to the Sixcats Prototype
+-   Adjustments to the Sixcats Prototype (restored Mooiberry and Mushrooms pages)
 
 ## Time Logs
 
