@@ -18,9 +18,10 @@
 -   2.0 hrs – Catchup with Ash and working on an Audit for Tour Operator Prototype.
 -   2.75 - Working on the Sixcats and WooCommerce Subscriptions prototypes.
 -   2.0 hrs - Restoring pages on Sixcats and fixing visual errors, troubleshooting why the WooCommerce Subscriptions prototype does not want to commit to github.
+-   1.0 hrs - Continued improving the Sixcats Prototype and troubleshooting the WooCommerce prototype. 
 
 ---
 
 ## Notes
 
--  
+-  The WooCommerce prototype is not committing to the repo, I created a duplicate and tried to create a new repo for the duplicate but that also failed. So it seems to definitely be something in the Figma codebase that is casuing it to not commit. 
