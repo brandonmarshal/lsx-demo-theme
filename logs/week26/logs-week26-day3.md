@@ -6,10 +6,11 @@
 
 -   Running audits on the Tour Operator Prototype to try resolve the black screen error
 -   Quick catchup with Ash
+-   Continued with my Audit on the TO Prototype.
 
 ## Time Logs
 
--   1.5 hrs – Catchup with Ash and working on an Audit for Tour Operator Prototype.
+-   2.0 hrs – Catchup with Ash and working on an Audit for Tour Operator Prototype.
 
 ---
 
