@@ -18,7 +18,7 @@
 -   2.0 hrs – Catchup with Ash and working on an Audit for Tour Operator Prototype.
 -   2.75 - Working on the Sixcats and WooCommerce Subscriptions prototypes.
 -   2.0 hrs - Restoring pages on Sixcats and fixing visual errors, troubleshooting why the WooCommerce Subscriptions prototype does not want to commit to github.
--   1.0 hrs - Continued improving the Sixcats Prototype and troubleshooting the WooCommerce prototype. 
+-   1.5 hrs - Continued improving the Sixcats Prototype and troubleshooting the WooCommerce prototype. 
 
 ---
 
