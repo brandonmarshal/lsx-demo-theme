@@ -19,7 +19,8 @@
 -   2.5 hrs - Working on the prototypes, fixing visual errors and restoring content where needed.
 -   1.25 hrs - Continued work on the two prototypes, Sixcats and Tour Operator Alt.
 -   2.0 hrs - Still working on the 2 prototypes, doing fixes on visual errors, like spacing, block gaps, padding etc.
--   1.0 hrs - Working only on the Sixcats now, getting progress on there so I can focus on others tomorrow. 
+-   1.0 hrs - Working only on the Sixcats now, getting progress on there so I can focus on others tomorrow.
+-   4.0 hrs - Continued working on the Sixcats site making many improvements. The minimal working version of it is basically ready. 
 
 ---
 
