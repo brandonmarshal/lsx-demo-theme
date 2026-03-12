@@ -7,12 +7,14 @@
 -   Working on Sixcats Prototype, restoring pages and fixing Funnky redesigns
 -   Working on the Tour Operator Alt, fixing all the visual errors I am seeig, mostly spacing, block gaps and padding issues.
 -   Restored the community page (CatTalks). I also then did the Funky redesign on that page.
--   Working on the Travel styles page on Tour Operator Alt, making visual improvements. 
+-   Working on the Travel styles page on Tour Operator Alt, making visual improvements.
+-   Continued making visual improvements to the Sixcats and Tour Operator Prototypes. 
 
 ## Time Logs
 
 -   1.5 hrs – Working on the two prototypes for today, Sixcats and Tour Operator Alt
--   2.5 hrs - Working on the prototypes, fixing visual errors and restoring content where needed. 
+-   2.5 hrs - Working on the prototypes, fixing visual errors and restoring content where needed.
+-   1.25 hrs - Continued work on the two prototypes, Sixcats and Tour Operator Alt.
 
 ---
 
