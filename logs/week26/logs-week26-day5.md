@@ -17,10 +17,12 @@
 
 -   1.0 hrs – Working on the Sixcats prototype.
 -   2.0 hrs - Working on Sixcats and Woo Shop making visual improvements to different pages as I browse and test them.
--   3.0 hrs - Continued working on the Woo Shop and Sixcats Prototypes. 
+-   3.0 hrs - Continued working on the Woo Shop and Sixcats Prototypes.
+-   1.0 hrs - Continued working on the two prototypes, Woo Shop and Sixcats
 
 ---
 
 ## Notes
 
--
+-  Woo Shop is going well, made a lot of visual improvements, mainly BlockGaps that were not present and padding missing
+-  The Sixcats cart is giving me serious difficulties. I got it to do a redesign and it broke the page, now there is a massive gap between the Header and the Top of the Cart page. The Figma AI does not seem to know at all what is casuing it as I have been on the same issue for 2 hours now. 
