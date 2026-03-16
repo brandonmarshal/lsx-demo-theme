@@ -11,6 +11,7 @@
 -   Startd testing and making Bugherd tasks for the Tour Operator Plugin site.
 -   Working through the 'Tour Operator Plugin' site pages, and looking for pages that are not working.
 -   Testing the Impact Travel Site, making tasks on Bugherd for fixes and fixing pages that are not loading.
+-   continued testing the Impact Travel site. There were a lot of pages that were not loading, I am almost done getting them all fixed. 
 
 ## Time Logs
 
@@ -18,7 +19,8 @@
 -   2.0 hrs - Catchup with Ash, setting up the Bugherd project and linking the sites, started testing the "TO Plugin" and making Bugherd tasks.
 -   1.0 hrs - Working through the pages on Tour Operator Plugin, added Bugherd tasks to all the errors and was able to start fixing the major issues.
 -   0.5 hrs - Completed tests on the Tour Operator Plugin site, All pages are now confirmed to be working.
--   2.0 hrs - Testing Impact Travel prototype and making sure all pages are loading, fixing those pages that are not loading. 
+-   2.0 hrs - Testing Impact Travel prototype and making sure all pages are loading, fixing those pages that are not loading.
+-   1.75 hrs - Continue testing the Impact Travel, almost done with that site, then all pages will be loading.
 
 ---
 
