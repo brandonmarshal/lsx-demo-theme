@@ -9,14 +9,16 @@
 -   Setup Bugherd project, for all the tour operator prototypes that I am going to be testing
 -   Catchup with Ash, to discuss how I should do the testing on Bugherd.
 -   Startd testing and making Bugherd tasks for the Tour Operator Plugin site.
+-   Working through the 'Tour Operator Plugin' site pages, and looking for pages that are not working. 
 
 ## Time Logs
 
 -   2.0 hrs – Admin, working on the 2 prototypes mentioned above.
 -   2.0 hrs - Catchup with Ash, setting up the Bugherd project and linking the sites, started testing the "TO Plugin" and making Bugherd tasks.
+-   1.0 hrs - Working through the pages on Tour Operator Plugin, added Bugherd tasks to all the errors and was able to start fixing the major issues.
 
 ---
 
 ## Notes
 
--
+-  I am doing 1 site at a time, checking through ALL pages on the site making sure everything is loading correctly, if not I will make a Bugherd task to get back to that page, then continue with the testing. 
