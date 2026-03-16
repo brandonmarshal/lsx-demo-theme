@@ -16,9 +16,11 @@
 -   2.0 hrs – Admin, working on the 2 prototypes mentioned above.
 -   2.0 hrs - Catchup with Ash, setting up the Bugherd project and linking the sites, started testing the "TO Plugin" and making Bugherd tasks.
 -   1.0 hrs - Working through the pages on Tour Operator Plugin, added Bugherd tasks to all the errors and was able to start fixing the major issues.
+-   0.5 hrs - Completed tests on the Tour Operator Plugin site, All pages are now confirmed to be working. 
 
 ---
 
 ## Notes
 
--  I am doing 1 site at a time, checking through ALL pages on the site making sure everything is loading correctly, if not I will make a Bugherd task to get back to that page, then continue with the testing. 
+-  I am doing 1 site at a time, checking through ALL pages on the site making sure everything is loading correctly, if not I will make a Bugherd task to get back to that page, then continue with the testing.
+-  The Tour Operator Plugin site is not 100% visually, but all the pages are loading. I am going to take lunch break and then move on to the Retro Shop site and make sure that all pages there are also loading. 
