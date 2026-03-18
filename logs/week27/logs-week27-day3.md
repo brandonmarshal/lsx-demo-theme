@@ -18,6 +18,7 @@
 -   2.5 hrs - Working on Impact Travel, LSX Design, Rooi Rose
 -   0.75 hrs - Running through the published sites and look for more issues, I then log them in Bugherd for batch fixes.
 -   1.0 hrs - Working on the Rooi Rose site, going through pages and fixing any errors, also started gathering data for a documented list of all the Figma Sites we are working on.
+-   2.0 hrs - Continued working on the prototypes, going through the pages and logging bugherd tasks for the errors. Most pages are now working on all sites. 
 
 ---
 
