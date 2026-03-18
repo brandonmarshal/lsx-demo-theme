@@ -15,6 +15,7 @@
 
 -   2.0 hrs – Improving pages on the Impact Travel and LSX Design Sites.
 -   2.5 hrs - Working on Impact Travel, LSX Design, Rooi Rose
+-   0.75 hrs - Running through the published sites and look for more issues, I then log them in Bugherd for batch fixes. 
 
 ---
 
