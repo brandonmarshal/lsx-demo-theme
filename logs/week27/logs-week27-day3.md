@@ -9,13 +9,15 @@
 -   Last night I tested ALL the pages on Handcraft wine, there are still pages that contain KWV wording.
 -   Did more testing and fixing of pages on the LSX Design Site
 -   Tested the pages on Impact Travel that still needed BEM values applied
--   Navigating through pages on Rooi Rose, to find pages that do not load or pages that are giving BEM errors. 
+-   Navigating through pages on Rooi Rose, to find pages that do not load or pages that are giving BEM errors.
+-   Started creating the documented list of all the Figma Make site we are working on. 
 
 ## Time Logs
 
 -   2.0 hrs – Improving pages on the Impact Travel and LSX Design Sites.
 -   2.5 hrs - Working on Impact Travel, LSX Design, Rooi Rose
--   0.75 hrs - Running through the published sites and look for more issues, I then log them in Bugherd for batch fixes. 
+-   0.75 hrs - Running through the published sites and look for more issues, I then log them in Bugherd for batch fixes.
+-   1.0 hrs - Working on the Rooi Rose site, going through pages and fixing any errors, also started gathering data for a documented list of all the Figma Sites we are working on.
 
 ---
 
