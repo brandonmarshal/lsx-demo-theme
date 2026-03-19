@@ -7,14 +7,16 @@
 -   Working on the google document, adding Figma Sites Details
 -   Catchup meeting with Ash
 -   Added the client prototypes to the google doc
--   Working on creating the scanning prompt discussed with Ash. 
+-   Working on creating the scanning prompt discussed with Ash.
+-   Continued working on the scanning prompt, now made it into an orchestrator system, with specialist prompts.
 
 ## Time Logs
 
 -   1.5 hrs – Working on the Listed documented of Figma Sites, specifically adding client sites to the doc
 -   1.0 hrs - Catchup meet with Ash
 -   0.5 hrs - Added the rest of the Client sites on the google doc
--   2.0 hrs - Working on creating a scanning prompt for the Prototypes code base. 
+-   2.0 hrs - Working on creating a scanning prompt for the Prototypes code base.
+-   1.25 hrs - Working on the scanning prompt still. I have broken it up into a orchestrator prompt
 
 ---
 
