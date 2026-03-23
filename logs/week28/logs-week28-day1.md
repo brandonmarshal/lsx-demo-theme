@@ -19,7 +19,8 @@
 -   1.0 hrs - Catchup meet with Zared
 -   0.5 hrs - Catchup meet with Ash
 -   1.5 hrs - Worked on the planning section in the LS Design system planning doc. I used the codebase and the Sixcats planning doc tabs to build a detailed planning from the codebase itself.
--   1.25 hrs - Worked on copying and pasting pages from the prototype to the design system for Lightspeed site. 
+-   1.25 hrs - Worked on copying and pasting pages from the prototype to the design system for Lightspeed site.
+-   1.0 hrs - Continued collecting pages from the LS Site for Dark and Light mode in the Design System File
 
 ---
 
