@@ -16,6 +16,7 @@
 -   3.0 hrs – Downloading the document tabs, one by one. Then downloaded the repo for the codebase and started prompting for more guidelines. I then also ran the prompt to test and pasted the results in the google doc.
 -   1.0 hrs - Catchup meet with Zared
 -   0.5 hrs - Catchup meet with Ash
+-   1.5 hrs - Worked on the planning section in the LS Design system planning doc. I used the codebase and the Sixcats planning doc tabs to build a detailed planning from the codebase itself. 
 
 ---
 
