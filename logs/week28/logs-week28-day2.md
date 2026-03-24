@@ -8,11 +8,13 @@
 -   Catchup meet with Ash
 -   Updated the cover page on the Design System
 -   Adjusted some 'very broken' sections on the pages I have been copying.
+-   Copied over more pages, almost complete now then I will start working on the prototype and do the block and section styles.
 
 ## Time Logs
 
 -   2.0 hrs – Catchup with Ash and working on the LS Design system, copying pages over from the prototype and fixing Major frame breaks only
 -   1.5 hrs - Continued collecting pages and adjusting the major breaks, please see notes below for more context
+-   2.25 hrs - Continued collecting the pages from the prototype and documenting broken pages, broken links. 
 
 ---
 
