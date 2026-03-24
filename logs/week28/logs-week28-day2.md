@@ -19,6 +19,7 @@
 -   2.25 hrs - Continued collecting the pages from the prototype and documenting broken pages, broken links.
 -   2.0 hrs - Collected last few pages and started working on collecting the colours from different pages to update the colour palette variables.
 -   0.5 hrs - Completed the Primitive colour collection, I am not going to work on the Tokens for Dark and Light mode.
+-   1.0 hrs - Completed the Colour Token variables, I used the updated primitives to replace the old primitives in the Tokens group, now the Token are linked to the new primitive colours for LS Theme.
 
 ---
 
