@@ -10,6 +10,7 @@
 -   Adjusted some 'very broken' sections on the pages I have been copying.
 -   Copied over more pages, almost complete now then I will start working on the prototype and do the block and section styles.
 -   Collecting colours from multiple pages, to update the variables colour palette for LS Theme
+-   Collected the primitive colours and updated the variables table.
 
 ## Time Logs
 
@@ -17,6 +18,7 @@
 -   1.5 hrs - Continued collecting pages and adjusting the major breaks, please see notes below for more context
 -   2.25 hrs - Continued collecting the pages from the prototype and documenting broken pages, broken links.
 -   2.0 hrs - Collected last few pages and started working on collecting the colours from different pages to update the colour palette variables.
+-   0.5 hrs - Completed the Primitive colour collection, I am not going to work on the Tokens for Dark and Light mode.
 
 ---
 
