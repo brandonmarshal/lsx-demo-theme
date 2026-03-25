@@ -9,14 +9,16 @@
 -   Quick catchup with Zared
 -   Working on the Block Styles and Section Styles documentation.
 -   Working on the patterns tab in the doc, adding the patterns used in LS site.
--   Continued collecting the patterns for Lightspeed Site. 
+-   Continued collecting the patterns for Lightspeed Site.
+-   Added all the 'Parts' to the tab in the doc
 
 ## Time Logs
 
 -   1.25 hrs – Working on documentation, collecting values for block styles and documenting it
 -   3.0 hrs - Working on documentation and quick catchup with Zared
 -   1.25 hrs - Working on documentation, made progress on Block styles and section styles and Patterns.
--   1.10 hrs - Continued collecting the patterns from the downloaded repo, and adding it to the document. 
+-   1.10 hrs - Continued collecting the patterns from the downloaded repo, and adding it to the document.
+-   1.0 hrs - Added all the 'Parts' to the document.
 
 ---
 
