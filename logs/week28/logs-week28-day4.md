@@ -10,6 +10,7 @@
 -   Started reading articles regarding Patterns in WordPress to deepen my knowledge - https://app.asana.com/1/1152726221312/project/1211170302971594/task/1213815027478525?focus=true
 -   Catchup meeting with Zared regarding the improvements that can be made to my documentation for LS DS.
 -   Updated Spacing variables to accommodate 10 point scaling system instead of 8 point.
+-   Updating the block styles with recommended improvements by Zared.
 
 ## Time Logs
 
@@ -17,6 +18,7 @@
 -   1.0 hrs - Catchup meet with Ash and also reading about Patterns and noting my understadnings.
 -   1.20 hrs - Catchup meet with Zared, where he advise me on how to improve my documentation for LS Design System
 -   1.0 hrs - Reading articles regarding Patterns to get a deeper knowledge. As well as updating the Spacing variables in the Lightspeed DS.
+-   1.5 hrs - Working on the LS Document, applying improvements recommended by Zared. Adding all possible variable presets to the Blocks styles.
 
 ---
 
