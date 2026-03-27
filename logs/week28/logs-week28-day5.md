@@ -8,14 +8,16 @@
 -   Catchup with Zared, we discussed variables, presets and components
 -   Continued to work on the LS design file, made changed to the block styles and added actual variables that are being used
 -   Worked on the block styles more
--   Collected shadow variables for the button and card shadows. 
+-   Collected shadow variables for the button and card shadows.
+-   Moved the logos to a component set and applied the correct style variables.
 
 ## Time Logs
 
 -   2.0 hrs – Working on the Block Styles tab in the Lightspeed DS Doc
 -   1.0 hrs - Catchup meet with Zared, where he advise me on how to improve my documentation for LS Design System
--   0.30 hrs - Continued with Forms/Inputs in the Block styles documentation
+-   0.30 hrs - Continued with Forms/Inputs in the Block styles documentation.
 -   2.0 hrs - Worked on the block styles sections correcting the presets to be accurate against the figma variables. I also started collecting the Shadows for buttons and cards, and created variables for them.
+-   0.30 hrs - Moving the logos from sections to component sets and applying the correct variables.
 
 ---
 
