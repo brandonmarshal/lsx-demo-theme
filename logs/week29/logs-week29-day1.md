@@ -9,6 +9,8 @@
 -   Catchup meeting with Ash, regarding the Ls agency work
 -   Catchup with Zared regarding the Ls Design system.
 -   Worked on the homepage, collected components and applied variables
+-   Audited the text styles in LS Design system.
+-   Continued collecting components for homepage and applying variables.
 
 ## Time Logs
 
@@ -17,6 +19,7 @@
 -   0.40 hrs - Catchup with Ash regarding the new appraoch for LS agency.
 -   1.0 hrs - Catchup with Zared regarding the LS Design System
 -   2.20 hrs - Working on the LS Design System as well as the document, collecting components and applying variables for homepage
+-   2.0 hrs - Working on the LS homepage, collecting components and applying variables, I also started organising the text styles correclty by referring to MA.
 
 ---
 
