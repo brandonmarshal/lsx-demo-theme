@@ -8,12 +8,14 @@
 -   Catchup meeting with Ash and Zared regarding the LS Design System and this weeks sprint
 -   Continued working on the LS Design System, almost complete with Homepage
 -   Finished collecting the components for the homepage
+-   Organised the collected components for homepage and then started collecting for the About page
 
 ## Time Logs
 
 -   1.50 hrs – Working on the LS Design System
 -   1.0 hrs - Catchup meeting with Zared and Ash
--   2.5 hrs - Working on the Homepage, now completed, I have collected all the components
+-   2.30 hrs - Working on the Homepage, now completed, I have collected all the components
+-   1.45 - Organising the components I collected for the homepage, then I had to re-copy the about page and started collecting those components
 
 ---
 
