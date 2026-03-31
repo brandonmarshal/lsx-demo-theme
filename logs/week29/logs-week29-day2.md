@@ -10,7 +10,7 @@
 
 ## Time Logs
 
--   1.30 hrs – Working on the LS Design System
+-   1.50 hrs – Working on the LS Design System
 -   1.0 hrs - Catchup meeting with Zared and Ash
 
 ---
