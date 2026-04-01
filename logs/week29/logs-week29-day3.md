@@ -20,7 +20,8 @@
 -   2.0 hrs - Catchup meeting with Zared.
 -   1.40 hrs - Updating the document, and working on the About page in the Design file.
 -   1.17 hrs - Call with Ash regarding flaws on the Service cards, working on 'Our margin policy' reserach and documenting what I learn and made notes as well. I also fixed the cards Ash was referring to, I just need to confirm that I can adjust the styles for those that Zared and I set earlier.
--   1.30 hrs - Working on the about page and applying correct styles to components and page sections. Updated the document with more about Margin policy and updated my notes. 
+-   1.30 hrs - Working on the about page and applying correct styles to components and page sections. Updated the document with more about Margin policy and updated my notes.
+-   0.40 hrs - Continued working on the About page, fixing the sections, collecting components and applying correct styles.
 
 ---
 
