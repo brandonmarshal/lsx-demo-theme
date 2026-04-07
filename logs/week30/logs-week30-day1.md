@@ -10,6 +10,8 @@
 -   Working on Blog Card components and layout
 -   Working on the Card layout for blogs, almost completed.
 -   Completed the Blogs landing page and started working on the blog single page
+-   Redesigned Author Card for the single blog page
+-   Continued working on the single blog page getting it prepared for prototyping.
 
 ## Time Logs
 
@@ -17,6 +19,7 @@
 -   1.0 hrs - Continued work on the Blog Page, collecting components, currently I am working on the layouts of the Cards.
 -   1.0 hrs - Continued working on the Blog page, updating blog cards content after creating the component and applying the varaibles
 -   2.10 hrs - Completed the blog page and started with the blog single page. Almost done with that one as well
+-   1.30 hrs - Working on the Single blog page, and redesign the Author Card, need to get approval from Zared or Ash.
 
 ---
 
