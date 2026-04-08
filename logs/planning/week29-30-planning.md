@@ -109,3 +109,13 @@ Over the next two weeks, I commit to:
 -   **Figma Variables**: Robust use of boolean, spacing, and color aliases attached to complex layers.
 -   **Component Properties**: Clean utilization of boolean properties, text properties, and variant states.
 -   **Discipline & Consistency**: Rigorous tracking and changelog execution.
+
+## My Commitment
+
+I am committed to achieving the following by **Friday, April 10, 2026**:
+
+-   **Desktop Prototype Completion**: The full desktop prototype will be completed and ready for review.
+-   **Component Collection**: All components for ALL 5 priority pages will be collected and organized.
+-   **Variables Applied**: Design variables (padding, gap, typography, colors) will be properly applied to every collected component with zero hardcoded values.
+
+I will work diligently and systematically to ensure these deliverables are met on time, maintaining the highest standards of design system integrity throughout the process.
