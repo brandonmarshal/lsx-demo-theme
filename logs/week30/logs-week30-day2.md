@@ -13,6 +13,7 @@
 -   Connected all 5 pages together in the prototype
 -   Got the Mode switcher working, took me some time that one, minor confusions
 -   Working on Hover effects on the homepage.
+-   Working on animations/hover effects for Buttons and Cards.
 
 ## Time Logs
 
@@ -20,6 +21,7 @@
 -   1.15 hrs - Catchup meeting with Zared
 -   2.50 hrs - Working on the DS, completed the Blog page layout options, each layout has its own card component. Organised and implemented the Pagination discussed with Zared, as well as starting the Desktop prototype and the Headers hover animations
 -   2.0 hrs - Working on the DS and building the prototype, once all pages were connected, I started with Animation effects
+-   0.40 hrs - Working on animations for the prototype, specifically hover effects for Buttons and cards. 
 
 ---
 
