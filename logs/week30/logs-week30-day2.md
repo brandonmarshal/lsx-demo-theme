@@ -21,11 +21,12 @@
 -   1.15 hrs - Catchup meeting with Zared
 -   2.50 hrs - Working on the DS, completed the Blog page layout options, each layout has its own card component. Organised and implemented the Pagination discussed with Zared, as well as starting the Desktop prototype and the Headers hover animations
 -   2.0 hrs - Working on the DS and building the prototype, once all pages were connected, I started with Animation effects
--   0.40 hrs - Working on animations for the prototype, specifically hover effects for Buttons and cards. 
+-   1.0 hrs - Working on animations for the prototype, specifically hover effects for Buttons and cards. And logging progress for today.
 
 ---
 
 ## Notes
 
 -  As I work on the prototype I will see which patterns need to be added to the document still.
--  Now that all the components are collected, I can start the Desktop prototype and begin creating the hover effects, those will at least then be useful when doing Tablet and Mobile Prototypes. Once animations are built they are reusable on all size devices. 
+-  Now that all the components are collected, I can start the Desktop prototype and begin creating the hover effects, those will at least then be useful when doing Tablet and Mobile Prototypes. Once animations are built they are reusable on all size devices.
+-  I noticed that there are some moving hover animations, which I will need to discuss with Zared. 
