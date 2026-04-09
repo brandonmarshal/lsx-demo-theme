@@ -10,6 +10,7 @@
 -   Started building the single blog page in Wordpress on my local, with Ollie to get an idea of how it should be setup.
 -   Continued working on the DS, doing hover animations.
 -   Catchup meeting with Zared
+-   Working on the DS, completed the hompage animations.
 
 ## Time Logs
 
@@ -19,6 +20,7 @@
 -   0.50 hrs - Continued working on the DS, hover and active animations for the prototype.
 -   1.50 hrs - Catchup meeting with Zared
 -   0.40 hrs - Working on the DS, doing animations for the prototype
+-   1.0 hrs - Working on the DS, doing card lift animations, the way Zared showed me how to do it.
 
 ---
 
@@ -26,3 +28,4 @@
 
 -  In the meeting with Zared, he showed me how he achieves the card hover effects, specifically the lifts and image zoom.
 -  Now I can start applying those animations to the cards
+-  Tomorrow I will start with the redesign of the blog single page, then do more prototyping. 
