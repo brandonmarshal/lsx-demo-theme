@@ -8,6 +8,9 @@
 -   Working on the DS, doing animations and card lifts for the Blog archive page.
 -   Working on the DS, made more hover animation implementations and started struggling with the overlay for a filter dropdown.
 -   Used the workspace to find all the menus files and their styles, used that to write documentation
+-   Continued with the prototype and setting up hover effects
+-   Collected the Woo Shop Mega menus and mobile menu and saved it in the DS
+-   Meeting with Ash.
 
 ## Time Logs
 
@@ -15,6 +18,9 @@
 -   1.0 hrs - Working on the DS, doing animations effects for cards on the blog archive page.
 -   1.0 hrs - Working on the DS, applied some more hover animations to cards and working on the Sort by filter dropdown menu, currently having issues getting the overlay working
 -   0.50 hrs - Continued work on the DS and documenting the Mega menus as well as the Mobile menu - [Document]([url](https://docs.google.com/document/d/1cyYXtjTbo8TrA3AH-CcEI0goisrmHyMQjqNA00sr98g/edit?tab=t.fjrf0f53396k))
+-   2.0 hrs - Did some research about DS, copied Woo Shop menus to the LS DS. I also worked on a new blog single page and editted the current one.
+-   2.0 hrs - Continued work on the DS prototype, creating variants of components for hover and click animations.
+-   0.20 hrs - Catchup meeting with Ash
 
 ---
 
