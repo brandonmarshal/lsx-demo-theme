@@ -14,7 +14,7 @@
 -   1.0 hrs – Working on my local WP site.
 -   1.0 hrs - Working on the DS, doing animations effects for cards on the blog archive page.
 -   1.0 hrs - Working on the DS, applied some more hover animations to cards and working on the Sort by filter dropdown menu, currently having issues getting the overlay working
--   0.40 hrs - Continued work on the DS and documenting the Mega menus as well as the Mobile menu - [Document]([url](https://docs.google.com/document/d/1cyYXtjTbo8TrA3AH-CcEI0goisrmHyMQjqNA00sr98g/edit?tab=t.fjrf0f53396k))
+-   0.50 hrs - Continued work on the DS and documenting the Mega menus as well as the Mobile menu - [Document]([url](https://docs.google.com/document/d/1cyYXtjTbo8TrA3AH-CcEI0goisrmHyMQjqNA00sr98g/edit?tab=t.fjrf0f53396k))
 
 ---
 
