@@ -11,6 +11,7 @@
 -   Continued with the prototype and setting up hover effects
 -   Collected the Woo Shop Mega menus and mobile menu and saved it in the DS
 -   Meeting with Ash.
+-   Fixed some of the things on the homepage that Ash mentioned, like the background image, and the stats cards more consistent with the Figma site.
 
 ## Time Logs
 
@@ -21,6 +22,7 @@
 -   2.0 hrs - Did some research about DS, copied Woo Shop menus to the LS DS. I also worked on a new blog single page and editted the current one.
 -   2.0 hrs - Continued work on the DS prototype, creating variants of components for hover and click animations.
 -   0.20 hrs - Catchup meeting with Ash
+-   1.0 hrs - Working on the DS, fixing some of the things on the homepage that Ash discussed with me
 
 ---
 
