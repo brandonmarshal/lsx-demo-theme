@@ -5,10 +5,12 @@
 ### What have you accomplished today?
 
 -   Working on my WP local, completed the blog single page, using the WP core blocks
+-   Working on the DS, doing animations and card lifts for the Blog archive page.
 
 ## Time Logs
 
 -   1.0 hrs – Working on my local WP site.
+-   1.0 hrs - Working on the DS, doing animations effects for cards on the blog archive page. 
 
 ---
 
