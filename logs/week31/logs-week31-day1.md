@@ -12,6 +12,7 @@
 -   Continued with the About page hover effects
 -   Started setting up the Tablet prototype and completed the homepage
 -   Catchup meeting with Zared
+-   Working on the DS, doing the changes that Zared recommended
 
 ## Time Logs
 
@@ -20,6 +21,7 @@
 -   0.36 hrs - Continued work on the DS and catchup with Ash.
 -   2.30 hrs - Working on the DS, drafted the homepage for tablet layout and implementing more hover effects for Desktop 'About' page.
 -   2.20 hrs - Catchup meeting with Zared
+-   1.0 hrs - Working on the DS and editing the tablet homepage to align with how Zared showed me.
 
 ---
 
