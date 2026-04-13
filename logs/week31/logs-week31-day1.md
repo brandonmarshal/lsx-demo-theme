@@ -9,12 +9,15 @@
 -   Got the slider working on the homepage in the prototype
 -   Improved the CTA sections to include the glass box and hover effects
 -   Started working on the about page hover effects.
+-   Continued with the About page hover effects
+-   Started setting up the Tablet prototype and completed the homepage
 
 ## Time Logs
 
 -   1.0 hrs – Made a couple fixes accross the prototype, like logo, slider and frame width.
 -   1.0 hrs - Continued working on the DS, fixed ALL the pages widths now and improved the CTA
 -   0.36 hrs - Continued work on the DS and catchup with Ash.
+-   2.30 hrs - Working on the DS, drafted the homepage for tablet layout and implementing more hover effects for Desktop 'About' page.
 
 ---
 
@@ -22,3 +25,4 @@
 
 -  The tablet and mobile prototype are going to take some time, but I WILL NOT have to re-do the hover effects at least, I just need to create new component sets for the different screen sizes, by "Detatching instance" creating a new components after resizing to the device needed.
 -  I still need to implement the hover effects for the header.
+-  I did the tablet homepage, by detaching components, re-sizing columns and groups and then creating new components with 'Tablet' naming conventions. I will discuss this approach with Zared.
