@@ -14,6 +14,7 @@
 
 -   1.0 hrs – Made a couple fixes accross the prototype, like logo, slider and frame width.
 -   1.0 hrs - Continued working on the DS, fixed ALL the pages widths now and improved the CTA
+-   0.36 hrs - Continued work on the DS and catchup with Ash.
 
 ---
 
