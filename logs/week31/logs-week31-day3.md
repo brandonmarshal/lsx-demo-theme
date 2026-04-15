@@ -10,6 +10,7 @@
 -   Organised all the patterns, components and pages for 'Service' page and included the page in ALL screen prototypes
 -   Working on the Services 'Discover' page, collecting the patterns and building/reusing components, adding variables.
 -   HR meeting with Barbra
+-   Working on the Discover page patterns and components, I need to do 1 more patterns for that page and then its completed for Mobile, Tablet and Desktop.
 
 ## Time Logs
 
@@ -18,6 +19,7 @@
 -   1.15 hrs - Completed the 'Service' patterns and pages for the Tablet and Mobile prototype. Also organised all the patterns, components and pages and updated each prototype.
 -   2.20 hrs - Working on the Services 'Discover' page, collecting components and creating patterns
 -   0.40 hrs - HR meeting with Barbra
+-   1.0 hrs - Working on the Discover page patterns and components, I need to do 1 more patterns for that page and then its completed for Mobile, Tablet and Desktop.
 
 ---
 
