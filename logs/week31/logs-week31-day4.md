@@ -10,12 +10,15 @@
 -   Included all the pages into each prototype, Desktop, Mobile and Tablet.
 -   Setup the Work navigation mega menu for Desktop
 -   Working on animations for the new pages, I need to create 6 instances of each card and apply the 'Phase' colour to those in order to get correct colour hovers on ALL 6 pages.
+-   Worked on Service breadcrumbs, making sure they work in the prototype and each page loads.
+-   Updated the colour variables as recommneded by Zared in our catchup.
 
 ## Time Logs
 
 -   3.0 hrs – Working on the Sub Service pages, I have completed and added Discover, Create and Build, to the prototype.
 -   1.0 hrs - Completed the Launch, Grow and Evolve pages for ALL 3 prototypes.
 -   2.30 hrs - Catchup meeting with Zared and working on the Desktop Mega menu for Work navigation
+-   1.0 hrs - Working on the New pages animations, and focused on the Service breadcrumbs, connecting the prototype noodles and making sure they are navigable on the prototype and updated colour variables for the 6 phases of service.
 
 ---
 
