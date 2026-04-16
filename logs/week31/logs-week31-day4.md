@@ -19,6 +19,7 @@
 -   1.0 hrs - Completed the Launch, Grow and Evolve pages for ALL 3 prototypes.
 -   2.30 hrs - Catchup meeting with Zared and working on the Desktop Mega menu for Work navigation
 -   1.0 hrs - Working on the New pages animations, and focused on the Service breadcrumbs, connecting the prototype noodles and making sure they are navigable on the prototype and updated colour variables for the 6 phases of service.
+-   0.45
 
 ---
 
