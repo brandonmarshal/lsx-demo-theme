@@ -12,13 +12,15 @@
 -   Completed the desktop menus in Figma for the prototype.
 -   Started doing the solutions menu on the Wordpress dev site
 -   Collecting Dark & Light mode versions of the pages Ash fixes on the Make site.
+-   Collecting the pages sent to me by Ash, ensuring dark and light mode exist and that they are categorised.
 
 ## Time Logs
 
 -   1.20 hrs – Work session with Zared
 -   1.40 hrs - Working on the DS, doing the Mobile menu dropdowns and creating mega menus for the Desktop prototype
 -   2.10 hrs - Working on the Desktop Mega menus, and had a quick catchup with Ash.
--   2.30 hrs - Worked on Desktop menus, collected Dark & Light mode pages from the Make site. I also started working on the Wordpress dev site doing the solutions mega menu. 
+-   2.30 hrs - Worked on Desktop menus, collected Dark & Light mode pages from the Make site. I also started working on the Wordpress dev site doing the solutions mega menu.
+-   1.0 hrs - Collecting the pages sent to me by Ash, ensuring dark and light mode exist and that they are categorised.
 
 ---
 
