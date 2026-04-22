@@ -8,7 +8,7 @@
 
 ## Time Logs
 
--   1.20 hrs – Work session with Zared and Ash
+-   1.20 hrs – Work session with Zared and Ash and organising notes afterwards
 
 ---
 
