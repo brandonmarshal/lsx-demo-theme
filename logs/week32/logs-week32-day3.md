@@ -10,6 +10,7 @@
 -   Working on the services/design page, almost completed now.
 -   Completed the services/design page.
 -   Fixed the patterns on the new page, that were not working on Tablet and Mobile sizes.
+-   Worked on the services/wordpress-development page and almost completed with it, I need to create 2 section patterns and collect those components because they dont currently exist in the DS. 
 
 ## Time Logs
 
@@ -17,7 +18,8 @@
 -   1.20 hrs - Working on the 6 Phase pages, created new component design the for 'breadcrumb' looking bar that shows all phase.
 -   2.20 hrs - Working on the services/design page, there are a lot of components that I need to edit, almost completed with that page.
 -   1.30 hrs - Completed the services/design page, I took long because the second to last pattern was broken and I had to create my own design for that section.
--   0.40 hrs - While creating the Tablet and Mobile versions of the new page I noticed there were some patterns that needed editing to work on tab and mobile, so just made those adjustments now. 
+-   0.40 hrs - While creating the Tablet and Mobile versions of the new page I noticed there were some patterns that needed editing to work on tab and mobile, so just made those adjustments now.
+-   1.10 hrs - Working on services/wordpress-development page, almost completed.
 
 ---
 
