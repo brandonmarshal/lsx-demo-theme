@@ -7,11 +7,14 @@
 -   Completed the services/wordpress-dev page, collected the last 2 sections components and built their patterns.
 -   Started working on services/performance-&-accessibility, almost completed, this page also has 2 sections that need new components and patterns.
 -   Completed the services/performance-&-accessibility page, now need to complete the Tab and mobile view, wont take long and then I will attach this page and the services/wordpress-dev as well as the Design page to the prototype.
+-   Catchup meeting with Zared, going over some minor blockers
 
 ## Time Logs
 
 -   3.20 hrs – Working on the DS, completed the wordpress-dev page and almost completed with the performance & accessibility page.
 -   1.10 hrs - Completed the services/performance-&-accessibility page, just need to add the Tablet and Mobile views and attach them to the prototype.
+-   1.0 hrs - Completed Tablet and Mobile for performance & accessibility page, and then started working on services/support page building featured support card components
+-   0.30 hrs - Catchup meeting with Zared, where we went over my work and some minor blockers that I had.
 
 ---
 
