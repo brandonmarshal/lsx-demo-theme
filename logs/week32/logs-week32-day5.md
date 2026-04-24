@@ -6,12 +6,15 @@
 
 -   Started and completed the services/security page, I have not done it exactly according to the content yet, as Zared and I are going to discuss that in our catchup after lunch.
 -   I have been using the content doc and the existing Support page and trying to get Stitch to generate me a page layout with the new content, but that has not been working.
+-   Did adming and planning for next week.
+-   Had a catchup with Zared again
 
 ## Time Logs
 
 -   3.0 hrs – Working on the DS, completed the services/security page for all devices. I also started trying to get a new page design for Support, using the content from the document.
 -   2.30 hrs - Completed the services/hosting page and implemented some of the content from the doc, I also created an example of one of the section in the doc to discuss with Zared in our work session and find out if my approach/workflow is correct and where I can improve
 -   1.30 hrs - Work session with Zared, where he helped me design the sections for the Service pages
+-   2.0 hrs - Working on the prototype, adding back to contents buttons on frames and then did admin for week and next week.
 
 ---
 
