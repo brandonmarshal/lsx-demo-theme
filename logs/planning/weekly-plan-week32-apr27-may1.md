@@ -1,6 +1,6 @@
 # Weekly Plan: LS Design System Alignment
 
-**Week 32: April 27 - May 1, 2026**
+**Week 33: April 27 - May 1, 2026**
 
 ## Goal
 
