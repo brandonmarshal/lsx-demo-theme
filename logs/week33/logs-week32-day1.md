@@ -13,12 +13,15 @@
     -   (busy with) Case Study & Trust Testimonial
 -   Used stitch to generate new design ideas for me and copied them over to Figma to work on.
 -   Continued working on Case study & Trust testimonial section pattern.
+-   Working on more section patterns based on their content from the document.
+-   Implementing Bento block design for Services in a Phase section.
 
 ## Time Logs
 
 -   0.20 hrs – Catchup meet with Ash
 -   4.15 hrs - Read through the 6 Phase pages content on the doc and started working on the section patterns, getting new designs based on the content from the doc, then I used Stitch to build the designs and pasted them in Figma, where I can then work on them adding variables, tokens etc.
--   0.30 hrs - Continued working on the Case study & Trust testimonial section design. 
+-   0.30 hrs - Continued working on the Case study & Trust testimonial section design.
+-   2.0 hrs - Working on the Phase 1 page design, I have completed more sections according to their content on the doc.
 
 ---
 
