@@ -15,6 +15,7 @@
 -   Continued working on Case study & Trust testimonial section pattern.
 -   Working on more section patterns based on their content from the document.
 -   Implementing Bento block design for Services in a Phase section.
+-   Completed the next section on the Phase page 'Services in this phase' and 'AI Readiness Assessment' using the content from the doc. 
 
 ## Time Logs
 
@@ -22,6 +23,7 @@
 -   4.15 hrs - Read through the 6 Phase pages content on the doc and started working on the section patterns, getting new designs based on the content from the doc, then I used Stitch to build the designs and pasted them in Figma, where I can then work on them adding variables, tokens etc.
 -   0.30 hrs - Continued working on the Case study & Trust testimonial section design.
 -   2.0 hrs - Working on the Phase 1 page design, I have completed more sections according to their content on the doc.
+-   1.20 hrs - Completed the next section on the Phase page 'Services in this phase' and 'AI Readiness Assessment'
 
 ---
 
