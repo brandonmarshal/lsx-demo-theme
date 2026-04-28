@@ -25,7 +25,7 @@
 -   0.30 hrs - Continued working on the Case study & Trust testimonial section design.
 -   2.0 hrs - Working on the Phase 1 page design, I have completed more sections according to their content on the doc.
 -   1.20 hrs - Completed the next section on the Phase page 'Services in this phase' and 'AI Readiness Assessment'
--   0.50 hrs - Completed the final section to get a basic design of the Phase 1 page using the content from the document
+-   1.0 hrs - Completed the final section to get a basic design of the Phase 1 page using the content from the document
 
 ---
 
