@@ -10,7 +10,7 @@
 ## Time Logs
 
 -   2.10 hrs – Spent time making some improvements to the Phase 1 design page
--   0.30 hrs - Used the PRD and task planner files Ash shared with us, and created a task plan for fixing the desing Phase page.
+-   0.40 hrs - Used the PRD and task planner files Ash shared with us, and created a task plan for fixing the desing Phase page.
 
 ---
 
