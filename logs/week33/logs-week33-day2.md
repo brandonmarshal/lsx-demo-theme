@@ -15,6 +15,7 @@
 
 -   Created components and applied variables to them, then used those components to build the section pattern.
 -   Audited the page to ensure all the content from the doc exists on the prototype page
+-   Catchup meet with Ash to get feedback and go over improvements
 
 ## Time Logs
 
@@ -23,6 +24,7 @@
 -   0.40 hrs - Made improvements on the colours and radiuses in the sections of the Phase page
 -   3.40 hrs - Working on the design for the solutions page, reusing components from what I have created already.
 -   1.0 hrs - Audited the Servies and Solutions pages to ensure all the content from the doc is in
+-   0.25 hrs - Catchup meeting with Ash, getting feedback and going over some improvements.
 
 ---
 
