@@ -22,6 +22,7 @@
 -   0.40 hrs - Used the PRD and task planner files Ash shared with us, and created a task plan for fixing the desing Phase page.
 -   0.40 hrs - Made improvements on the colours and radiuses in the sections of the Phase page
 -   3.40 hrs - Working on the design for the solutions page, reusing components from what I have created already.
+-   1.0 hrs - Audited the Servies and Solutions pages to ensure all the content from the doc is in
 
 ---
 
