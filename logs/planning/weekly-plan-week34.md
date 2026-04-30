@@ -28,6 +28,9 @@ Complete Phase pages alignment, finalize Service/Solutions pages, and implement 
 -   [ ] Begin comparing new .md content files with existing content files in VSCode
 -   [ ] Document differences and improvements in new content
 -   [ ] Flag any questions or concerns about new content
+-   [ ] Review the Risk Parity document for LS
+-   [ ] Identify relevant insights or gaps from Risk Parity doc
+-   [ ] Prepare points to discuss with Zared
 
 **End of Day:** Services & Solutions approved, content comparison underway
 
@@ -60,6 +63,8 @@ Complete Phase pages alignment, finalize Service/Solutions pages, and implement 
 -   [ ] Add Phase 4 content from new approved files
 -   [ ] Create Tablet and Mobile versions of Phase 4
 -   [ ] Test Phase 4 in prototype
+-   [ ] Capture and organize important LS site links
+-   [ ] Add all relevant links to the canvas in the Lightspeedwp channel
 
 **End of Day:** Phases 3 & 4 complete with new content
 
@@ -101,6 +106,9 @@ Complete Phase pages alignment, finalize Service/Solutions pages, and implement 
     -   Service pages to Phase pages
     -   Solutions pages to related content
     -   Navigation menus to all relevant pages
+    -   Connect key pages using page links
+    -   Add mega menu connections
+    -   Implement "Learn More" buttons with proper linking
 -   [ ] Test all internal links in prototype
 -   [ ] Verify all content matches new approved files
 -   [ ] Check visual consistency across all pages
@@ -124,6 +132,12 @@ Complete Phase pages alignment, finalize Service/Solutions pages, and implement 
 -   [ ] Get final approval on new content
 -   [ ] Use new content for all Phase pages
 
+### Risk Parity Review
+
+-   [ ] Review the Risk Parity document for LS
+-   [ ] Identify relevant insights or gaps
+-   [ ] Prepare points to discuss with Zared
+
 ### Phase Pages (Complete 3-6)
 
 -   [ ] Phase 3 - Apply pattern + new content + responsive
@@ -146,7 +160,13 @@ Complete Phase pages alignment, finalize Service/Solutions pages, and implement 
 -   [ ] Implement Phase ↔ Service linking
 -   [ ] Implement Solutions page linking
 -   [ ] Update navigation menu links
+-   [ ] Connect key pages using page links, mega menus, and "Learn More" buttons
 -   [ ] Test all links functionality
+
+### LS Site Links Organization
+
+-   [ ] Capture and organize important LS site links
+-   [ ] Add all relevant links to the canvas in the Lightspeedwp channel
 
 ### Meetings & Collaboration
 
