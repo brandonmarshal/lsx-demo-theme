@@ -21,11 +21,13 @@
 -   Rebuild “Discovery” cards with:
     - A 40/60 image-to-text width split
     - Increased horizontal spacing for improved layout balance
+ 
+-   Made more improvements to some patterns, like adding dropshadows on cards to give them more effect.
 
 ## Time Logs
 
 -   2.0 hrs – Worked on the Phase design page, making updates as discussed with Ash yesterday. Also had a catchup with Ash this morning
--   1.0 hrs - Created the 2 variants of the Hero pattern, left aligned and center. Then continued working on the improvements from yesterday, completing everything I noted.
+-   1.20 hrs - Created the 2 variants of the Hero pattern, left aligned and center. Then continued working on the improvements from yesterday, completing everything I noted.
 
 ---
 
