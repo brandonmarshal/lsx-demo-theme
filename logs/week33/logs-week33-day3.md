@@ -9,20 +9,23 @@
 -   Move “Support and Training” to the Launch category
 -   Replace placeholder text on all six phase pages with AI-generated “Uncover, Research, Strategize” content
 -   Update the stage eyebrow to:
-    -   Show active stage in full color
-    -   Display past stages in muted/colored styles
-    -   Grey out future stages
+    - Show active stage in full color
+    - Display past stages in muted/colored styles
+    - Grey out future stages
 -   Increase eyebrow text size while using a Fine font weight
 -   Adjust underline lengths to match the updated text width
 -   Catchup with Ash
 -   Create two Hero pattern variations:
     - Fully centered layout (including buttons)
     - Fully left-aligned layout (including buttons)
+-   Rebuild “Discovery” cards with:
+    - A 40/60 image-to-text width split
+    - Increased horizontal spacing for improved layout balance
 
 ## Time Logs
 
 -   2.0 hrs – Worked on the Phase design page, making updates as discussed with Ash yesterday. Also had a catchup with Ash this morning
--   0.30 hrs - Created the 2 variants of the Hero pattern, left aligned and center.
+-   1.0 hrs - Created the 2 variants of the Hero pattern, left aligned and center. Then continued working on the improvements from yesterday, completing everything I noted.
 
 ---
 
