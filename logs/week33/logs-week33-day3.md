@@ -26,6 +26,8 @@
 -   Meeting with Warwick to discuss WordPress protfolio post types
 -   Working on the Phase pages, implementing the Phase 2 page colours and content as well as making improvements to the 'What happens during phase' pattern - [Pattern](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6466-54780&t=tcEuBoodbppFBMLn-4)
 -   Continued work on the Phase 2 content, then had a quick call with Ash regarding new 'Phase, Service & Solutions' page's content
+-   Completed the Services and Solutions design pages, created new patterns so they were not exactly the same.
+-   Added all 6 Phase 'TEST' pages to the prototype to be able to navigate the new design, content is still not updated as per discussion with Ash today
 
 ## Time Logs
 
@@ -34,6 +36,7 @@
 -   0.30 hrs - Meeting with Warwick to discuss WordPress protfolio post types
 -   0.50 hrs - Working on the Phase pages, implementing the Phase 2 page colours and content as well as making improvements to the 'What happens during phase' pattern - [Pattern](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6466-54780&t=tcEuBoodbppFBMLn-4)
 -   0.50 hrs - Continued working on the Phase pages, almost completed Phase 2 page content. Had a quick call with Ash regarding this
+-   4.0 hrs - Working on the Solutions and Services design page, created some new patterns for certain sections. I also create all 6 Phase pages, but they have duplicate content. I have also added all these pages into the Desktop Prototype
 
 ---
 
