@@ -23,14 +23,19 @@
     - Increased horizontal spacing for improved layout balance
  
 -   Made more improvements to some patterns, like adding dropshadows on cards to give them more effect.
+-   Meeting with Warwick to discuss WordPress protfolio post types
+-   Working on the Phase pages, implementing the Phase 2 page colours and content as well as making improvements to the 'What happens during phase' pattern - [Pattern](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6466-54780&t=tcEuBoodbppFBMLn-4)
 
 ## Time Logs
 
 -   2.0 hrs – Worked on the Phase design page, making updates as discussed with Ash yesterday. Also had a catchup with Ash this morning
 -   1.20 hrs - Created the 2 variants of the Hero pattern, left aligned and center. Then continued working on the improvements from yesterday, completing everything I noted.
+-   0.30 hrs - Meeting with Warwick to discuss WordPress protfolio post types
+-   0.50 hrs - Working on the Phase pages, implementing the Phase 2 page colours and content as well as making improvements to the 'What happens during phase' pattern - [Pattern](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6466-54780&t=tcEuBoodbppFBMLn-4)
 
 ---
 
 ## Notes
 
 -   Ash needs to me add internal linking on the prototype.
+-   Warwick and myself will discuss a meeting time next week for a second session on 'Patterns with block bindings'
