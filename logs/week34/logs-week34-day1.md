@@ -18,6 +18,9 @@
 -   Fixed the squashed logo/image in the Featured case study section by resizing properly
 -   Rebuilt the graphic section where text is being cut off in the screenshot
 -   Made improvements to all 3 Featured case study designs ([Services-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6526-66889&t=2WE8gMqTLv9SRqaa-4), [Solutions-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6526-66955&t=2WE8gMqTLv9SRqaa-4), [Phases-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6410-51228&t=2WE8gMqTLv9SRqaa-4))
+-   Test 300 vs. 400 font weights for list components to ensure they render correctly for the web.
+-   Add "Journey Phase" labels to all service pages to show exactly where they fit in the lifecycle.
+-   Tested the new changes in the prototype, and started adjusting section patterns that needed improvement
 
 ## Time Logs
 
@@ -26,6 +29,7 @@
 -   0.50 hrs - Completed my review on the Parity document and I have some pointers to discuss with Zared.
 -   1.42 hrs - Started working on the Services/Solutions pages, applying the feedback received from Ash. I also created a new design for Hosting WebGL.
 -   1.30 hrs - Continued working on the improvements for Service and Solutions page designs.
+-   1.30 hrs - Made improvements to the Phases-featured-case-study, as well as updating the 'What happens in Phase' section with bullet list items.
 
 ---
 
