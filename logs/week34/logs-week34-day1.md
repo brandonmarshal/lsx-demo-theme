@@ -10,6 +10,10 @@
 -   Completed my review on the Parity doucment and made comments based off my research in the lsx-theme workspace.
 -   Created a new design for a 'Hosting' WebGL in Stitch.
 -   Started working on the feedback improvements given by Ash. Started with typography adjustments.
+  -  Brighten the background blurs/glows so they are clearly visible on standard monitors.
+  -  Reduce the font weight on testimonials and test a cursive font option; explore increasing size while decreasing weight.
+  -  Rename all Figma frames to be specific to the service (e.g., "Hosting Page") rather than generic titles.
+  -  Remove unnecessary caps from headers and text blocks.
 
 ## Time Logs
 
