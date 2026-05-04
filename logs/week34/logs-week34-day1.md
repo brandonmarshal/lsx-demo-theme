@@ -14,13 +14,14 @@
   -  Reduce the font weight on testimonials and test a cursive font option; explore increasing size while decreasing weight.
   -  Rename all Figma frames to be specific to the service (e.g., "Hosting Page") rather than generic titles.
   -  Remove unnecessary caps from headers and text blocks.
+-   Working on the WebGL design, applying colours. 
 
 ## Time Logs
 
 -   0.21 hrs – Catchup meeting with Ash
 -   1.0 hrs - Doing admin, setting up my workspace for lsx-theme, and then started reviwing the parity doc.
 -   0.50 hrs - Completed my review on the Parity document and I have some pointers to discuss with Zared.
--   1.20 hrs - Started working on the Services/Solutions pages, applying the feedback received from Ash. I also created a new design for Hosting WebGL.
+-   1.42 hrs - Started working on the Services/Solutions pages, applying the feedback received from Ash. I also created a new design for Hosting WebGL.
 
 ---
 
