@@ -21,6 +21,7 @@
 -   Test 300 vs. 400 font weights for list components to ensure they render correctly for the web.
 -   Add "Journey Phase" labels to all service pages to show exactly where they fit in the lifecycle.
 -   Tested the new changes in the prototype, and started adjusting section patterns that needed improvement
+-   Created the Tablet and Mobile version of Phases page, and ensured all patterns scaled with the screen size. A few sections required me to set min and max values, to ensure wrapping when going to a smaller screen.
 
 ## Time Logs
 
@@ -30,6 +31,7 @@
 -   1.42 hrs - Started working on the Services/Solutions pages, applying the feedback received from Ash. I also created a new design for Hosting WebGL.
 -   1.30 hrs - Continued working on the improvements for Service and Solutions page designs.
 -   1.30 hrs - Made improvements to the Phases-featured-case-study, as well as updating the 'What happens in Phase' section with bullet list items.
+-   1.15 hrs - Created the Tablet and Mobile version of Phases page, and ensured all patterns scaled with the screen size. A few sections required me to set min and max values, to ensure wrapping when going to a smaller screen.
 
 ---
 
