@@ -14,7 +14,10 @@
   -  Reduce the font weight on testimonials and test a cursive font option; explore increasing size while decreasing weight.
   -  Rename all Figma frames to be specific to the service (e.g., "Hosting Page") rather than generic titles.
   -  Remove unnecessary caps from headers and text blocks.
--   Working on the WebGL design, applying colours. 
+-   Working on the WebGL design, applying colours.
+-   Fixed the squashed logo/image in the Featured case study section by resizing properly
+-   Rebuilt the graphic section where text is being cut off in the screenshot
+-   Made improvements to all 3 Featured case study designs ([Services-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6526-66889&t=2WE8gMqTLv9SRqaa-4), [Solutions-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6526-66955&t=2WE8gMqTLv9SRqaa-4), [Phases-FeaturedCaseStudy](https://www.figma.com/design/OTqchq3sRBzUy6TICruzc3/LightSpeedWP-Design-System?node-id=6410-51228&t=2WE8gMqTLv9SRqaa-4))
 
 ## Time Logs
 
@@ -22,6 +25,7 @@
 -   1.0 hrs - Doing admin, setting up my workspace for lsx-theme, and then started reviwing the parity doc.
 -   0.50 hrs - Completed my review on the Parity document and I have some pointers to discuss with Zared.
 -   1.42 hrs - Started working on the Services/Solutions pages, applying the feedback received from Ash. I also created a new design for Hosting WebGL.
+-   1.30 hrs - Continued working on the improvements for Service and Solutions page designs.
 
 ---
 
