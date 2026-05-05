@@ -15,6 +15,9 @@
 -   Made adjustments to the existing 'related services' pattern and reused it on Solutions Landing page
 -   Completed a new design for the 'Featured Solutions Highlights' to display all content from the doc.
 -   Completed 'Who these solutions are for' section, with two design options.
+-   Completed 'Featured Case Studies' section according to the doc
+-   Implemented the Solutions Landing page into the Desktop prototype
+-   Added internal linking on the homepage. 
 
 ## Time Logs
 
@@ -23,6 +26,7 @@
 -   1.20 hrs - Continued work on the Solutions landing page design.
 -   0.40 hrs - Completed the 'Featured Solution Highlights'
 -   2.0 hrs - Continued work on the Solutions landing page, busy with final section in the doc
+-   1.0 hrs - Implemented the Solutions page into the Prototype for Desktop and added internal linking on the hompage and completed the Solutions featured case studies section
 
 ---
 
