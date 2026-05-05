@@ -13,13 +13,14 @@
  
 -   Quick catchup with Zared to go over work completed last week and to discuss next steps.
 -   Made adjustments to the existing 'related services' pattern and reused it on Solutions Landing page
--   Worked on a design for the 'Featured Solutions Highlights' to display all content from the doc.
+-   Completed a new design for the 'Featured Solutions Highlights' to display all content from the doc.
 
 ## Time Logs
 
 -   2.30 hrs – Working on the DS, made changes to the Phases bar, and started building the Solutions Landing page, for internal linking.
 -   1.20 hrs - Catchup meeting with Zared, and continued work on the solutions landing page.
--   1.20 hrs - Continued work on the Solutions landing page design. 
+-   1.20 hrs - Continued work on the Solutions landing page design.
+-   0.40 hrs - Completed the 'Featured Solution Highlights'
 
 ---
 
