@@ -13,6 +13,9 @@
 -   Organised all the components that I have created accordingly in the DS
 -   Built the Free consultation page and implemented it into the Prototype, Light and Dark.
 -   Added the 'Free consultation' form from the LIVE ls site to the Consultation page, instead of having an overlay.
+-   Reviewed ALL the 'Thank You' pages on the Sitemap to indetify ALL variants.
+-   Saved all the 'Thank you' blocks in the DS to create a component set.
+-   Built the first thank you page - Subscription
 
 ## Time Logs
 
@@ -20,6 +23,7 @@
 -   0.20 hrs - Working on the Breadcrumbs bar, changed the styling according to the comment in the DS.
 -   0.20 hrs - Started organising the patterns and components on the DS, as it was getting clustered.
 -   2.0 hrs - Completed the components organisation and started building the free consultation page
+-   0.30 hrs - Built the first thank you page - Subscription
 
 ---
 
