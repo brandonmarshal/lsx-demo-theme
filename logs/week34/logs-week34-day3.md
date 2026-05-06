@@ -18,6 +18,8 @@
 -   Built the first thank you page - Subscription
 -   Used the first page to build the rest of the Thank you pages
 -   Implemented ALL the pages into the prototype and created buttons on each page to make it easier to navigate through the 'Thank you' pages on the prototype.
+-   Created Tablet and Mobile frames for Solutions Landing, Free Consultation and ALL 5 Thank you pages and implemented them into the prototype
+-   Updated the TOC to link all new pages added to the prototype, Desktop, Mobile and Tablet.
 
 ## Time Logs
 
@@ -27,6 +29,7 @@
 -   2.0 hrs - Completed the components organisation and started building the free consultation page
 -   0.30 hrs - Built the first thank you page - Subscription
 -   1.30 hrs - Used the first page to build the other 4 and implemented them in the prototype
+-   1.30 hrs - Created Tablet and Mobile frames for Solutions Landing, Free Consultation and ALL 5 Thank you pages, and updated the TOC to include all the new frames
 
 ---
 
