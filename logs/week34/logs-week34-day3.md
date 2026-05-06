@@ -16,6 +16,8 @@
 -   Reviewed ALL the 'Thank You' pages on the Sitemap to indetify ALL variants.
 -   Saved all the 'Thank you' blocks in the DS to create a component set.
 -   Built the first thank you page - Subscription
+-   Used the first page to build the rest of the Thank you pages
+-   Implemented ALL the pages into the prototype and created buttons on each page to make it easier to navigate through the 'Thank you' pages on the prototype.
 
 ## Time Logs
 
@@ -24,6 +26,7 @@
 -   0.20 hrs - Started organising the patterns and components on the DS, as it was getting clustered.
 -   2.0 hrs - Completed the components organisation and started building the free consultation page
 -   0.30 hrs - Built the first thank you page - Subscription
+-   1.30 hrs - Used the first page to build the other 4 and implemented them in the prototype
 
 ---
 
