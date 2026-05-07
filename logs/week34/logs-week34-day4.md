@@ -15,11 +15,16 @@
  
 -   Reviewed the page and compared to the doc to ensure consistentcy
 -   Created tablet and mobile screens for Service landing page, and implemented all pages into the prototype via TOC
+-   Created tablet and mobile screen for 'Solutions-WordPress' and implemented it into the prototype
+-   Tested new pages in the prototype and went back to fix inconsistencies
+-   Meeting session with Ash.
 
 ## Time Logs
 
 -   4.15 hrs – Working on the Service landing page design, creating and re-using components in the LS DS. As well as reviewing the page and comparing it to the content
 -   1.30 hrs - Created tablet and mobile screens for Service landing page, and implemented all pages into the prototype via TOC
+-   1.30 hrs - Meeting session with Ash.
+-   1.10 hrs - Working on the Tablet and Mobile views for pages on the prototype
 
 ---
 
