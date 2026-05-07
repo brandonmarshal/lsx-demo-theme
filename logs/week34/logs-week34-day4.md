@@ -12,10 +12,12 @@
     -   'Featured Case Studies' - Created a new component and reuse an existing component for this design.
     -   'Who these services are for'
     -   'Related Solutions'
+ 
+-   Reviewed the page and compared to the doc to ensure consistentcy
 
 ## Time Logs
 
--   4.0 hrs – Working on the Service landing page design, creating and re-using components in the LS DS.
+-   4.15 hrs – Working on the Service landing page design, creating and re-using components in the LS DS. As well as reviewing the page and comparing it to the content
 
 ---
 
