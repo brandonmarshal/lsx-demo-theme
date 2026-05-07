@@ -14,10 +14,12 @@
     -   'Related Solutions'
  
 -   Reviewed the page and compared to the doc to ensure consistentcy
+-   Created tablet and mobile screens for Service landing page, and implemented all pages into the prototype via TOC
 
 ## Time Logs
 
 -   4.15 hrs – Working on the Service landing page design, creating and re-using components in the LS DS. As well as reviewing the page and comparing it to the content
+-   1.30 hrs - Created tablet and mobile screens for Service landing page, and implemented all pages into the prototype via TOC
 
 ---
 
