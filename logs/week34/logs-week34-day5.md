@@ -8,10 +8,13 @@
 -   Designed a new section for 'Case Studies' on the portfolio page (Mobile view needs its own pattern)
 -   Updated the TOC with the new Portfolio page
 -   Tested the prototype and fixed the inconsistencies I noticed.
+-   Went through ALL the desktop pages and added all the internal linkings, buttons with existing pages, CTA Buttons, Learn more, etc.
+-   Setup my Claude account and reviewed the current Design system in Claude
 
 ## Time Logs
 
 -   4.25 hrs – Working on the Portfolio page design and implementing it into Desktop and Tablet prototypes.
+-   2.15 hrs - Going through all Desktop pages and adding internal linking where possible
 
 ---
 
