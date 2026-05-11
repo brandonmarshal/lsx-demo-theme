@@ -13,6 +13,9 @@
 -   Applied their content from the doc and created tablet & mobile frames for both pages
 -   Added the page to all 3 screen size prototypes, and tested them with Dark and Light mode.
 -   Created image component sets for the hero images, as well as the Featured Case study Images
+-   Created 'Content' service page for all screen sizes and implemented them into the prototype
+-   Created new images for 'Content' page featured case study and Hero image block.
+-   Added new pages to TOC in the prototype.
 
 ## Time Logs
 
@@ -20,6 +23,7 @@
 -   1.10 hrs - Catchup with Zared
 -   1.10 hrs - Reading the atomic design article and reporting in Asana
 -   2.20 hrs - Created 'AI' & 'Accessibility' Services pages, and applied their content from the doc, created tablet & mobile frames for both pages, added all 3 pages to the prototypes and tested them with Dark and Light mode.
+-   1.30 hrs - Working on the Content service page, created new images for this page with stitch
 
 ---
 
