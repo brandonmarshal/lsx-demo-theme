@@ -16,6 +16,10 @@
 -   Created 'Content' service page for all screen sizes and implemented them into the prototype
 -   Created new images for 'Content' page featured case study and Hero image block.
 -   Added new pages to TOC in the prototype.
+-   Completed 'Discovery' & 'Design' services pages
+-   Implemented the new pages into the prototype on the main 3 screen sizes
+-   Tested the new pages dark and light mode in the prototype
+-   Updated the TOC again with the new pages (Internal linking to be completed still)
 
 ## Time Logs
 
@@ -24,6 +28,7 @@
 -   1.10 hrs - Reading the atomic design article and reporting in Asana
 -   2.20 hrs - Created 'AI' & 'Accessibility' Services pages, and applied their content from the doc, created tablet & mobile frames for both pages, added all 3 pages to the prototypes and tested them with Dark and Light mode.
 -   1.30 hrs - Working on the Content service page, created new images for this page with stitch
+-   1.15 hrs - Completed the 'Discovery' & 'Design' services pages, and added them to all prototype screen sizes
 
 ---
 
