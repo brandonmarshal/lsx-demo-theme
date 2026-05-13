@@ -8,13 +8,18 @@
 -   Used the visual directions to generate example images of new designs, they are uplaoded to the shared drive.
 -   Generated Design brief and Visual direction for Tesimonials section and quote block
 -   Generated Image examples of the visual direction, struggled a lot with the images for Testimonials section, the AI contantly giving the same design.
--   Catchup meeting with Ash, discussing the design briefs and using Claude Design prompts and I got new tasks to work on. 
+-   Catchup meeting with Ash, discussing the design briefs and using Claude Design prompts and I got new tasks to work on.
+-   Reviewed the primitive colours on Claude DS and fixed the Accent two colours, which did not match figma primitives.
+-   Fixed the font scales section, which was not 100% accurate compared to the Figma setup.
+-   Fixed the buttons padding values to align with the Figma Design system.
+-   Corrected the Heading styles section on the showcase and left comments where I could not make certain changes
 
 ## Time Logs
 
 -   1.50 hrs – Working with the Design brief agent, creating briefs, visual directions and example images
 -   1.30 hrs - Continued working on Design briefs for the design improvements
 -   1.40 hrs - Catchup meeting with Ash, and me making notes afterwards
+-   1.10 hrs - Reviewed the primitive colours on Claude DS and fixed the Accent two colours, which did not match figma primitives, as well as font scales, they were not 100% accurate with the Figma DS.
 
 ---
 
