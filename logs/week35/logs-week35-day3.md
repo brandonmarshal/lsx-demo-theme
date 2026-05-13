@@ -14,6 +14,7 @@
 -   Fixed the buttons padding values to align with the Figma Design system.
 -   Corrected the Heading styles section on the showcase and left comments where I could not make certain changes
 -   Completed the Design brief and visual directions for the Showcase + Testimonial section, and uplaoded the new design ideas to the shared drive
+-   Used the content file and Design system to get GPT to generate me some Dark and Light page designs for Portfolio and Insights landing pages, I uploaded those designs to the shared drive.
 
 ## Time Logs
 
@@ -22,6 +23,7 @@
 -   1.40 hrs - Catchup meeting with Ash, and me making notes afterwards
 -   1.10 hrs - Reviewed the primitive colours on Claude DS and fixed the Accent two colours, which did not match figma primitives, as well as font scales, they were not 100% accurate with the Figma DS.
 -   0.40 hrs - Completed the Design brief and visual directions for the Showcase + Testimonial section, also uplaoded the New design ideas to the drive
+-   1.0 hrs - Used the content file and Design system ot get GPT to generate me some page designs for Portfolio and Insights landing pages
 
 ---
 
