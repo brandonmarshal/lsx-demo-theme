@@ -15,6 +15,7 @@
 -   Corrected the Heading styles section on the showcase and left comments where I could not make certain changes
 -   Completed the Design brief and visual directions for the Showcase + Testimonial section, and uplaoded the new design ideas to the shared drive
 -   Used the content file and Design system to get GPT to generate me some Dark and Light page designs for Portfolio and Insights landing pages, I uploaded those designs to the shared drive.
+-   Copied the content from the doc into the Create Phase page, created the Tablet and Mobile screens and added them to the prototype and TOC.
 
 ## Time Logs
 
@@ -24,10 +25,11 @@
 -   1.10 hrs - Reviewed the primitive colours on Claude DS and fixed the Accent two colours, which did not match figma primitives, as well as font scales, they were not 100% accurate with the Figma DS.
 -   0.40 hrs - Completed the Design brief and visual directions for the Showcase + Testimonial section, also uplaoded the New design ideas to the drive
 -   1.0 hrs - Used the content file and Design system ot get GPT to generate me some page designs for Portfolio and Insights landing pages
+-   0.40 hrs - Copied the content from the doc into the Create Phase page, created the Tablet and Mobile screens and added them to the prototype.
 
 ---
 
 ## Notes
 
 -   I had many issue with the AI agent that wasted time, I had to keep reminding it on the structure to use as it kept wanting to use its own layout.
--   I wasted a lot of time because of the AI not listening to me
+-   I wasted a lot of time because of the AI not listening to me. 
