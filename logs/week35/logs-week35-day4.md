@@ -10,13 +10,16 @@
 -   Organised ALL of my Asana tasks in my work account
 -   Created a design brief for the contact & contact-thank-you pages, using the content file and design system files as references
 -   Created 3 visual layouts for each page and updated the document
--   Generated 3 image examples for Contact page and Contact-thank-you page, based off their visual directions. 
+-   Generated 3 image examples for Contact page and Contact-thank-you page, based off their visual directions.
+-   Created design brief, 3 visual layouts and 3 images examples for Free Consultation & free-consultation-thank-you pages
+-   Created design brief, 3 visual layouts and 3 images examples for the 'Blog Single' page.
 
 ## Time Logs
 
 -   1.0 hrs – Creating the design brief and 3 new visual directions, as well as image examples of those.
 -   3.40 hrs - Catchup meeting with Ash, Zared & Warwick
 -   1.40 hrs - Creating design brief, 3 visual layouts and 3 images examples for Contact page and Contact-thank-you page.
+-   1.40 hrs - Creating design brief, 3 visual layouts and 3 images examples for Free Consultation, free-consultation-thank-you page and Blog Single
 
 ---
 
