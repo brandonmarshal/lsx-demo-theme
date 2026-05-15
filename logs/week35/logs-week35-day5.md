@@ -18,13 +18,14 @@
 -   Created sub-issues on Linear for the following revised design briefs:
     - solutions-design-systems
     - solutions-wordpress
+    - solutions-woocommerce
 
 ## Time Logs
 
 -   1.20 hrs – Creating design brief and visual directions for portfolio-single-page
 -   1.10 hrs - Created design briefs, visual layouts and image examples
 -   1.30 hrs - Catchup meeting with Ash, we discussed GPT agents, their skills and memory, as well as linear agent skills
--   2.50 hrs - Comparing LightSpeedWP Site.html pages to their content files and creating new design briefs to for the AI to correct the pages content structure
+-   3.15 hrs - Comparing LightSpeedWP Site.html pages to their content files and creating new design briefs to for the AI to correct the pages content structure
 
 ---
 
