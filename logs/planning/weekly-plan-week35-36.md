@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD030 MD036 -->
+
 # Weekly Plan: Figma Finalization & WordPress Implementation
 
 **Weeks 35-36: May 11 - May 22, 2026**
@@ -65,47 +67,75 @@
 
 ## Week 2: WordPress Development Blitz (May 18 - May 22)
 
-**Goal:** Full-speed implementation. Translate the perfected Figma designs into a functional WordPress theme.
+**Goal:** Week 36 kickoff. Set up Linear for a clean sprint, run the 81-page validation process, and establish handoff standards + AI templates.
 
 ### Monday, May 18
 
-**Goal:** Begin WordPress implementation of high-priority pages.
+**Goal:** Set up Linear so the validation sprint can run cleanly all week.
 
--   [ ] Set up the development environment for building the new theme pages.
--   [ ] Begin building the Homepage from the Figma prototype in WordPress.
--   [ ] Translate Figma components for the Homepage into reusable WordPress blocks and patterns.
+-   [ ] Enhance Project Metadata: Fill in short descriptions for initiatives and key tasks in Linear.
+-   [ ] Link Resources: Attach the most important Google Docs to their corresponding initiatives in Linear.
+-   [ ] Workspace Cleanup: Delete unnecessary “operator” items imported from GitHub and divvy up the team’s work.
+-   [ ] Issue Structure: Create a parent issue for “Web Design Refinements” and generate a sub-issue for each page to be reviewed (81 total).
+-   [ ] Task Refinement: Rewrite imported tasks into clear, granular instructions (page-level outcomes + definition of done).
+-   [ ] Permission Rules: Confirm/define “Read-Only” vs “Write” permissions for every connected app used in the workflow.
 
 ### Tuesday, May 19
 
-**Goal:** Continue building core pages in WordPress.
+**Goal:** Start the 81-page validation sprint with a consistent review workflow.
 
--   [ ] Continue building the Phase pages from the Figma prototype in WordPress.
--   [ ] Implement and refine the design system tokens (colors, fonts, spacing) in `theme.json` and block styles as pages are built.
--   [ ] Continuously test for responsiveness, functionality, and visual fidelity against the Figma designs.
+-   [ ] Single-Page Scrutiny: Review pages 1–16 in full-screen presentation mode; take screenshots and note missing components (e.g., “related” sections).
+-   [ ] Source Verification: Confirm content accuracy against original source files for pages 1–16.
+-   [ ] Strategic Briefing: Write a revised brief for pages 1–16 (Objective, Conversion Goal, User Journey).
+-   [ ] Documentation & Linking: For pages 1–16, link the relevant GitHub templates/patterns, Figma components, and live/prototype references, including reasoning for each link.
+-   [ ] Maintenance: Apply “Rule of Thumb” to what gets saved to agent memory (save only long-term items; avoid one-offs).
 
 ### Wednesday, May 20
 
-**Goal:** Build out Service pages and patterns.
+**Goal:** Continue the validation sprint and begin formalizing the handoff artifacts.
 
--   [ ] Begin building the key Service pages from the Figma prototype in WordPress.
--   [ ] Translate Figma components for the Service pages into reusable WordPress blocks and patterns.
--   [ ] Any task not completed on a given day automatically becomes the top priority for the next day.
+-   [ ] Single-Page Scrutiny: Review pages 17–32 with the same screenshot + gap checklist workflow.
+-   [ ] Source Verification: Confirm content accuracy for pages 17–32.
+-   [ ] Strategic Briefing: Write revised briefs for pages 17–32 (Objective, Conversion Goal, User Journey).
+-   [ ] Documentation & Linking: Add links + reasoning for pages 17–32.
+-   [ ] The “Three-File” Standard: Draft the three-file structure and naming conventions (Design Brief, Content, Implementation Prompt referencing `lightspeed WP site.html` in Claude).
+-   [ ] Enforce Chat Hygiene: Post/remind the team rule—new Claude chat per task to avoid context pollution.
 
 ### Thursday, May 21
 
-**Goal:** Focus on creating reusable patterns and completing page builds.
+**Goal:** Continue the sprint and build the reusable templates/schemas needed for consistency.
 
--   [ ] Continue building any remaining priority pages in WordPress.
--   [ ] Focus on creating and refining reusable block patterns for common layouts.
--   [ ] Continuously test for responsiveness and visual fidelity.
+-   [ ] Single-Page Scrutiny: Review pages 33–48 with screenshots + missing-elements audit.
+-   [ ] Source Verification: Confirm content accuracy for pages 33–48.
+-   [ ] Strategic Briefing: Write revised briefs for pages 33–48 (Objective, Conversion Goal, User Journey).
+-   [ ] Documentation & Linking: Add links + reasoning for pages 33–48.
+-   [ ] Template Brainstorming: Use the “Website Content Intake and Planning” agent to generate improved revision files.
+-   [ ] Memory & Schema Management: Create YAML schema files + markdown formatting skills so agent outputs remain consistent.
+-   [ ] Linear AI Skill Challenge: Create at least one custom AI skill in Linear to automate a personal workflow (e.g., generating task descriptions).
 
 ### Friday, May 22
 
-**Goal:** Finalize initial page builds and prepare for the next sprint.
+**Goal:** Finish the week’s pages, package uploads, and lock in standards for next week.
 
--   [ ] Complete the initial WordPress build for all high-priority pages (Homepage, Phases, key Services).
--   [ ] Conduct a thorough review of the pages built in WordPress against the Figma designs.
--   [ ] Plan the development tasks for the following week.
+-   [ ] Single-Page Scrutiny: Review pages 49–81 with screenshots + missing-elements audit.
+-   [ ] Source Verification: Confirm content accuracy for pages 49–81.
+-   [ ] Strategic Briefing: Write revised briefs for pages 49–81 (Objective, Conversion Goal, User Journey).
+-   [ ] Documentation & Linking: Add links + reasoning for pages 49–81.
+-   [ ] Standardize Uploads: Create a single Zip file containing all page contents and briefs (prompt files remain separate).
+-   [ ] The “Three-File” Standard: Ensure every page handoff has (1) Design Brief (2) Content (3) Implementation Prompt.
+-   [ ] Maintenance: Review and prune anything accidentally saved to agent memory that’s one-off.
+
+### Week 36 Roll-up Checklist
+
+-   [ ] Linear is cleaned up, initiatives/tasks have short descriptions, and key docs are linked.
+-   [ ] “Web Design Refinements” parent issue exists with 81 page sub-issues and refined instructions.
+-   [ ] All connected apps have explicit read/write permission rules.
+-   [ ] All 81 pages reviewed (screenshots logged), source-verified, and re-briefed (Objective, Conversion Goal, User Journey).
+-   [ ] Each page has documentation links to GitHub templates/patterns, Figma components, and live/prototype references with reasoning.
+-   [ ] Three-file handoff standard is in use; uploads are standardized (one zip + separate prompts).
+-   [ ] Team is following chat hygiene (new Claude chat per task).
+-   [ ] At least one Linear AI skill exists to automate a personal workflow.
+-   [ ] Templates + YAML schemas exist for consistent agent output formatting.
 
 ---
 
@@ -142,3 +172,5 @@
 ### Redesign
 
 -   [ ] Re-work the blog post metadata section to include author roles, an icon for reading time, and potentially mono fonts.
+
+<!-- markdownlint-enable MD030 MD036 -->
