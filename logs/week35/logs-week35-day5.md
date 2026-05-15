@@ -19,13 +19,17 @@
     - solutions-design-systems
     - solutions-wordpress
     - solutions-woocommerce
+    - solutions-publishing
+ 
+-   Updated my planning with next weeks work
 
 ## Time Logs
 
 -   1.20 hrs – Creating design brief and visual directions for portfolio-single-page
 -   1.10 hrs - Created design briefs, visual layouts and image examples
 -   1.30 hrs - Catchup meeting with Ash, we discussed GPT agents, their skills and memory, as well as linear agent skills
--   3.15 hrs - Comparing LightSpeedWP Site.html pages to their content files and creating new design briefs to for the AI to correct the pages content structure
+-   3.25 hrs - Comparing LightSpeedWP Site.html pages to their content files and creating new design briefs to for the AI to correct the pages content structure
+-   0.30 hrs - Did a final comparison and revised brief for Publsihing page for the day and then did my planning for next week. 
 
 ---
 
