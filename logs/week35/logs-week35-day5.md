@@ -10,11 +10,15 @@
     - Pricing
     - Tour Operators
     - WooCommerce
+    - WordPress
+ 
+-   Catchup meeting with Ash, we discussed GPT agents, their skills and memory, as well as linear agent skills
 
 ## Time Logs
 
 -   1.20 hrs – Creating design brief and visual directions for portfolio-single-page
 -   1.10 hrs - Created design briefs, visual layouts and image examples
+-   1.30 hrs - Catchup meeting with Ash, we discussed GPT agents, their skills and memory, as well as linear agent skills
 
 ---
 
