@@ -6,10 +6,15 @@
 
 -   Created a design brief for the portfolio-single-page, using the briefing agent, using awesome-screenshot to give the agent screenshots of exsiting pages.
 -   Created unique visual directions for the portfolio-single-page as well as getting images generate as example designs.
+-   Created design brief, visual directiions and example images for the following:
+    - Pricing
+    - Tour Operators
+    - WooCommerce
 
 ## Time Logs
 
 -   1.20 hrs – Creating design brief and visual directions for portfolio-single-page
+-   1.10 hrs - Created design briefs, visual layouts and image examples
 
 ---
 
