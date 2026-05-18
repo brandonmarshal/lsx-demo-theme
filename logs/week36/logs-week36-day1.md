@@ -15,13 +15,16 @@
     - Linear Instructions
     - Review Linear Setup
     - Linear Skill Ideas
+    - First-run onboarding (Had to do some research on this one and what exactly it does)
+    - Lean onboarding
+    - Memory first onboarding
 
 ## Time Logs
 
 -   1.25 hrs – Morning admin work, compared the Discover page on claude and revised the design brief.
 -   2.06 hrs - Catchup meeting with Ash
 -   2.0 hrs - Working out instructions and skills for my 81-pages workflow.
--   0.50 hrs - Testing the agent prompts and reporting back in the excel sheets
+-   2.20 hrs - Testing the agent prompts and reporting back in the excel sheets
 
 ---
 
