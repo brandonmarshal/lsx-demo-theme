@@ -18,13 +18,15 @@
     - First-run onboarding (Had to do some research on this one and what exactly it does)
     - Lean onboarding
     - Memory first onboarding
+ 
+-   Compared the existing 'Content' service page on Claude site to the content doc and revise the design brief to align with the content structure, created the issue on linear.
 
 ## Time Logs
 
 -   1.25 hrs – Morning admin work, compared the Discover page on claude and revised the design brief.
 -   2.06 hrs - Catchup meeting with Ash
 -   2.0 hrs - Working out instructions and skills for my 81-pages workflow.
--   2.20 hrs - Testing the agent prompts and reporting back in the excel sheets
+-   2.40 hrs - Testing the agent prompts and reporting back in the excel sheets as well as comparing the existing 'Content' service page on Claude site to the content doc and revising the design brief. 
 
 ---
 
