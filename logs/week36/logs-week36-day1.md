@@ -11,12 +11,17 @@
 -   Used the recommendations to build a 'Claude Page Issue Packager' skill for my linear agent
 -   Tested the skill and had to prompt some improvements to it.
 -   Tested again and it now builds me a draft sub-issue under 'Website design refinements' parent issue, it includes the calude instructions, claude prompt, design brief, content file and weather the page is an update on 'LightSpeedWP Site.html' or if a new page needs to be created on the site file and internal linking to be implemented.
+-   Tested the following 'Linear Workflow prompts':
+    - Linear Instructions
+    - Review Linear Setup
+    - Linear Skill Ideas
 
 ## Time Logs
 
 -   1.25 hrs – Morning admin work, compared the Discover page on claude and revised the design brief.
 -   2.06 hrs - Catchup meeting with Ash
--   2.0 hrs - Working out instructions and skills for my 81-pages workflow. 
+-   2.0 hrs - Working out instructions and skills for my 81-pages workflow.
+-   0.50 hrs - Testing the agent prompts and reporting back in the excel sheets
 
 ---
 
