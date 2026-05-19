@@ -20,7 +20,7 @@
 -   0.30 hrs – Updating my weeks planning and morning admin
 -   1.20 hrs - Corrected the 'Content' Service file to align with the correct Phase, I compared AI Chatbot solution to the existing Claude page and created a revised brief. Added all the information to the linear issue.
 -   1.30 hrs - Catchup meeting with Ash and worked on the Design Service brief, comparing content and revising a brief.
--   2.10 hrs - Organising meeting notes, started reading the Safari partner chatbot planning doc as well as the three new agents (Client Website Discovery Assistant, LightSpeed AI Readiness Estimator, Website Chatbot Planner).
+-   2.25 hrs - Organising meeting notes, started reading the Safari partner chatbot planning doc as well as the three new agents (Client Website Discovery Assistant, LightSpeed AI Readiness Estimator, Website Chatbot Planner).
 
 ---
 
