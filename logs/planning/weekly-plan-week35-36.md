@@ -82,24 +82,48 @@
 
 ### Tuesday, May 19
 
-**Goal:** Start the 81-page validation sprint with a consistent review workflow.
+**Goal:** Begin Linear setup improvements (templates + labels/types) and prep the validation sprint structure.
 
--   [ ] Single-Page Scrutiny: Review pages 1–16 in full-screen presentation mode; take screenshots and note missing components (e.g., “related” sections).
--   [ ] Source Verification: Confirm content accuracy against original source files for pages 1–16.
--   [ ] Strategic Briefing: Write a revised brief for pages 1–16 (Objective, Conversion Goal, User Journey).
--   [ ] Documentation & Linking: For pages 1–16, link the relevant GitHub templates/patterns, Figma components, and live/prototype references, including reasoning for each link.
--   [ ] Maintenance: Apply “Rule of Thumb” to what gets saved to agent memory (save only long-term items; avoid one-offs).
+-   [ ] Import the most relevant GitHub templates into Linear (only what we’ll actually use):
+
+        -   [ ] Create **one** standard Pull Request template (source: `lightspeedwp/.github/.github/PULL_REQUEST_TEMPLATE`).
+        -   [ ] Add **5–10** Issue templates (source: `lightspeedwp/.github/.github/ISSUE_TEMPLATE`).
+        -   [ ] Add **3–5** questionnaires (add as Linear documents).
+
+-   [ ] Add the above to the correct Linear settings areas:
+
+        -   [ ] Issue templates: <https://linear.app/lightspeedwp/settings/issue-templates>
+        -   [ ] Documents (questionnaires): <https://linear.app/lightspeedwp/settings/documents>
+        -   [ ] Project templates: <https://linear.app/lightspeedwp/settings/project-templates>
+
+-   [ ] Adapt my existing GitHub project template documentation for Linear (starting point):
+
+        -   <https://docs.google.com/document/d/1HSJL5i-kWfzlg2IOtNo3XgPyEW-NdGzDvgQKizy2_8Q/edit?tab=t.hbs98vk4as7m>
+
+-   [ ] Check existing issues in Linear and confirm **service pages** content files are ordered into the correct phases.
+-   [ ] Do the first update on the **Linear** project (high-level housekeeping + current status).
+-   [ ] Review Linear AI triage settings and note what we can improve next:
+
+        -   <https://linear.app/lightspeedwp/settings/ai/triage>
+
+-   [ ] Start improving issue **labels** and **issue types** using the standard list I defined.
+-   [ ] Don’t add everything at once—introduce a small, useful subset first.
 
 ### Wednesday, May 20
 
-**Goal:** Continue the validation sprint and begin formalizing the handoff artifacts.
+**Goal:** Finalize the initial Linear template system and validate issue structure for service pages.
 
--   [ ] Single-Page Scrutiny: Review pages 17–32 with the same screenshot + gap checklist workflow.
--   [ ] Source Verification: Confirm content accuracy for pages 17–32.
--   [ ] Strategic Briefing: Write revised briefs for pages 17–32 (Objective, Conversion Goal, User Journey).
--   [ ] Documentation & Linking: Add links + reasoning for pages 17–32.
--   [ ] The “Three-File” Standard: Draft the three-file structure and naming conventions (Design Brief, Content, Implementation Prompt referencing `lightspeed WP site.html` in Claude).
--   [ ] Enforce Chat Hygiene: Post/remind the team rule—new Claude chat per task to avoid context pollution.
+-   [ ] Review the templates imported on Tuesday and tighten.
+-   [ ] Remove duplicates / merge overlaps.
+-   [ ] Ensure naming is consistent and easy to scan.
+-   [ ] Confirm templates map to the workflows we actually run.
+-   [ ] Create/confirm a small starter set of **issue types** and **labels** (based on the standard list).
+-   [ ] Add only the labels/types we’ll use immediately.
+-   [ ] Note what should be added later (backlog).
+-   [ ] Re-check Linear issues and ensure service page content files are grouped/ordered correctly by phase.
+-   [ ] Continue improving the Linear project setup (second pass).
+-   [ ] Ensure templates are linked/visible where the team will find them.
+-   [ ] Add brief guidance notes so others know when to use each template.
 
 ### Thursday, May 21
 
