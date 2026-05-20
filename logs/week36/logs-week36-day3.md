@@ -23,6 +23,11 @@
     - chatbot-planning-orchestrator
     - chatbot-estimate-calibrator
     - lightspeed-faq-and-chatbot-source-curator
+    - lightspeed-github-issue-drafter
+    - lightspeed-implementation-plan-generator
+    - lightspeed-prd-task-reviewer
+    - lightspeed-requirements-traceability-mapper
+    - lightspeed-launch-qa-planner
 
 ## Time Logs
 
@@ -31,6 +36,7 @@
 -   0.30 hrs - Slack call with Ash to discuss the new 'skill-qa-audit' skill I want to create.
 -   1.40 hrs - Ran more prompts for Claude and did research prompting to build 'lightspeed-skill-qa-audit' skill. Tested the skill and reviewed the results. I then ran the skill to start testing the skills listed in the doc.
 -   0.50 hrs - Testing skills with the 'lightspeed-skill-qa-audit' skill.
+-   0.40 hrs - More skills testing
 
 ---
 
