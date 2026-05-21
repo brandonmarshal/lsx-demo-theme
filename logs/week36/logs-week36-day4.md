@@ -21,6 +21,9 @@
     -   linear-decision-logger
     -   linear-triage-sop-builder
     -   linear-triage-rules-designer
+    -   lightspeed-acceptance-test-planner
+    -   lightspeed-qa-findings-router
+    -   lightspeed-launch-readiness-auditor
 
 ## Time Logs
 
