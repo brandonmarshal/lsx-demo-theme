@@ -50,12 +50,23 @@
     -   lightspeed-policy-page-generator
     -   chatbot-discovery-question-prioritiser
     -   linear-triage-router
+    -   figma
+    -   figma-use
+    -   figma-generate-design
+    -   figma-implement-design
+    -   figma-generate-library
+    -   figma-create-new-file
+    -   figma-generate-diagram
+    -   edit-figma-design
+    -   audit-design-system
+
 
 ## Time Logs
 
 -   3.30 hrs – Testing GPT skills and redesigning the discovery page
 -   1.35 hrs - Continued testing GPT skills and also fixing issues on the Service Discovery page for a final polished result.
 -   2.0 hrs - Continued testing more GPT skills and created brief and prompt markdown files to help convert other service page layouts to the new design.
+-   0.50 hrs - Continued testing GPT skills.
 
 ---
 
