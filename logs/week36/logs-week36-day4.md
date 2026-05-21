@@ -59,6 +59,7 @@
     -   figma-generate-diagram
     -   edit-figma-design
     -   audit-design-system
+    -   apply-design-system
 
 
 ## Time Logs
