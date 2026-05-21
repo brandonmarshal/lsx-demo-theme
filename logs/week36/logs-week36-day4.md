@@ -27,7 +27,7 @@
 
 ## Time Logs
 
--   3.10 hrs – Testing GPT skills and redesigning the discovery page
+-   3.30 hrs – Testing GPT skills and redesigning the discovery page
 
 ---
 
