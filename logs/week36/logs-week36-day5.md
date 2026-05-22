@@ -17,8 +17,30 @@
     -   design-execution-packet
     -   lightspeed-figma-wordpress-technical-brief
     -   wp-figma-artifact-builder
+    -   figma
+    -   figma-use
+    -   figma-generate-design
+    -   figma-implement-design
+    -   figma-generate-library
+    -   figma-create-new-file
+    -   figma-generate-diagram
+    -   edit-figma-design
+    -   audit-design-system
+    -   apply-design-system
+    -   lightspeed-brand-guidelines
+    -   evidence-quality-review
+    -   markdown-content-validator
+    -   content-file-validator
+    -   lightspeed-project-intake-router
+    -   lightspeed-project-researcher
+    -   lightspeed-prd-task-manager
+    -   lightspeed-project-status-reporter
+    -   lightspeed-approval-gate-manager
+    -   lightspeed-change-request-router
+    -   lightspeed-release-handoff-generator
+
  
--   Creating the redesigned "Service" page in figma, accoridng to the Claude design.
+-   Creating the redesigned "Service" page in figma, according to the Claude design.
 -   Creating section patterns and components for the new service page's design as well as applying correct tokens from our DS:
     -    CTA
     -    Next Steps
@@ -34,6 +56,7 @@
 -   1.30 hrs – Testing GPT Skills from the doc
 -   2.05 hrs - Creating the redesigned 'Service' page in Figma, according to the Claude design.
 -   2.15 hrs - Completed the new Service page design and implemented it to the Desktop prototype.
+-   1.25 hrs - Did more GPT skills testing and organisation in the document.
 
 ---
 
