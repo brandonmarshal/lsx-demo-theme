@@ -50,6 +50,8 @@
     -    What Happens In This Service (BentoBlock)
     -    Why This Service?
     -    2 Column Hero
+ 
+-   Fixing section patterns in order to create the Mobile and Tablet screens for this design and added them to the prototype. (Some areas still need work on mobile)
 
 ## Time Logs
 
@@ -57,6 +59,7 @@
 -   2.05 hrs - Creating the redesigned 'Service' page in Figma, according to the Claude design.
 -   2.15 hrs - Completed the new Service page design and implemented it to the Desktop prototype.
 -   1.25 hrs - Did more GPT skills testing and organisation in the document.
+-   1.0 hrs - Implemented the Mobile and Tablet versions of the new page.
 
 ---
 
