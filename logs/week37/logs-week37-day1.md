@@ -15,6 +15,8 @@
 -   Used the improved content to generate a design brief for the page and then built a preview, which I had to make more improvements to os it aligns with our DS.
 -   Created the linear task for the Pricing page, with instructions, files and a prompt.
 -   Audited the content for the 'about-lightspeed' page and made some minor improvements, using the GPT skills library.
+-   Created the design brief for the content improvement and used it to generate a preview.
+-   Prompted improvements to the preview and updated the final brief for the page. 
 -   Created the task for the 'about-lightspeed' page on linear and included the instructions etc.
 
 ## Time Logs
