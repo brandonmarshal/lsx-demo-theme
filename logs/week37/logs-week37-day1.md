@@ -10,10 +10,12 @@
 -   I then used the brief and the 'web-artifacts-builder' skill to generate me a preview of the page.
 -   Prompting improvements with resources for the preview until it was acceptable for redesign and then I created a finalised brief for the redesign.
 -   Created a linear task for the Solutions Publishing redesign task and added the brief, content file and prompt to use.
+-   Worked on the Global Header and Footer components, did a linear task and a brief for redesign in Claude and created a preview for approval
 
 ## Time Logs
 
 -   3.10 hrs – Working on the solutions publishing redesign brief and task.
+-   0.45 hrs - Working on the Global Header and Footer components, doing a brief for redesign in Claude
 
 ---
 
