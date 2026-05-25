@@ -13,13 +13,16 @@
 -   Worked on the Global Header and Footer components, did a linear task and a brief for redesign in Claude and created a preview for approval
 -   Used the same GPT skills and workflow to do a content audit for the 'Pricing' page.
 -   Used the improved content to generate a design brief for the page and then built a preview, which I had to make more improvements to os it aligns with our DS.
--   Created the linear task for the Pricing page, with instructions, files and a prompt. 
+-   Created the linear task for the Pricing page, with instructions, files and a prompt.
+-   Audited the content for the 'about-lightspeed' page and made some minor improvements, using the GPT skills library.
+-   Created the task for the 'about-lightspeed' page on linear and included the instructions etc.
 
 ## Time Logs
 
 -   3.10 hrs – Working on the solutions publishing redesign brief and task.
 -   0.45 hrs - Working on the Global Header and Footer components, doing a brief for redesign in Claude
--   2.0 hrs - Working on the 'Pricing' page redesign, using the GPT skills and our resources to generate consistent brief for design. 
+-   2.0 hrs - Working on the 'Pricing' page redesign, using the GPT skills and our resources to generate consistent brief for design.
+-   2.50 hrs - Working on the 'About-lightspeed' page, updating content, briefs and creating a preview.  
 
 ---
 
