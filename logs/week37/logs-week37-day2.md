@@ -9,7 +9,7 @@
 -   I ran an AI accessibility audit on the Solutions landing page and it had a 'Conditional pass for design/context'. Final pass will come once I, the human run my manual tests with Stark and WAVE.
 -   Catchup meeting with Ash, where we discussed more on the accessibility testing, new tasks, showcases and guidelines for Claude Design.
 -   Organised my notes and created linear tasks for the new work assigned to me.
--   Reviewed the guidelines in Claude Design and started documenting them, to get a better understanding and to have the guidelines documented for future projects
+-   Reviewed the guidelines in Claude Design and started documenting them, to get a better understanding and to have the guidelines documented for future projects, this task is 70% complete
 -   Documented the following guidelines: [Shared Doc](https://docs.google.com/document/d/1L6AzRwzY-gyYyo44_Ty2SCDLhhF5xYBfxX30Dy9BY7w/edit?tab=t.0#heading=h.vjb7eovfkmmx)
     - Overview
     - token-usage
@@ -28,13 +28,17 @@
     - qa-overview
     - qa-checklist
     - sign-off-template
+ 
+-   Reviewed the "image-brief" instructions/guidelines and understood the expected workflow and results, I will continue testing tomorrow, this task is 70% complete.
+-   Reviewed the 'audit' and 'scoping' services, this task is 80% complete
 
 ## Time Logs
 
 -   2.0 hrs – Working on setting up the testing criteria and started on Solutions page testing
 -   2.52 hrs - Catchup meeting with Ash, creating new linear tasks for new work to be done, worked on the accessibility testing for Solutions landing page redesign
 -   1.10 hrs - Started reviewing the Claude design files to see what already exists and what needs to be added to guidelines. I also started documenting the guidelines in a doc for a better understanding of them as well.
--   1.20 hrs - Completed the documentation of the guidelines for our design system. 
+-   1.20 hrs - Completed the documentation of the guidelines for our design system.
+-   0.50 hrs - Reviewed the image-brief guidelines
 
 ---
 
