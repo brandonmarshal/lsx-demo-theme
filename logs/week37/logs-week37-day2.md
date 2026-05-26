@@ -8,12 +8,19 @@
 -   Created sub-issue for the Solutions landing page accessibility testing.
 -   I ran an AI accessibility audit on the Solutions landing page and it had a 'Conditional pass for design/context'. Final pass will come once I, the human run my manual tests with Stark and WAVE.
 -   Catchup meeting with Ash, where we discussed more on the accessibility testing, new tasks, showcases and guidelines for Claude Design.
--   Organised my notes and created linear tasks for the new work assigned to me. 
+-   Organised my notes and created linear tasks for the new work assigned to me.
+-   Reviewed the guidelines in Claude Design and started documenting them, to get a better understanding and to have the guidelines documented for future projects
+-   Documented the following guidelines:
+    - Overview
+    - token-usage
+    - token-categories
+    - css-variables-reference
 
 ## Time Logs
 
 -   2.0 hrs – Working on setting up the testing criteria and started on Solutions page testing
 -   2.52 hrs - Catchup meeting with Ash, creating new linear tasks for new work to be done, worked on the accessibility testing for Solutions landing page redesign
+-   1.10 hrs - Started reviewing the Claude design files to see what already exists and what needs to be added to guidelines. I also started documenting the guidelines in a doc for a better understanding of them as well. 
 
 ---
 
