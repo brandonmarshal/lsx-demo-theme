@@ -9,6 +9,7 @@
     -   Used the VALIDATOR to validate the YAML layout to esnure consistency
     -   Once validated, I provided the brief to GPT's image generation and reviewed the outcomes.
     -   Did the same for all current image briefs
+    -   Added generated images to the [shared drive](https://drive.google.com/drive/folders/1cQGlE1ovYIolo3ecTzLbjZQUj7zTCl04)
 
 -   Catchup call with Ash, discussing running the audit prompts as well as new tasks for myself.
 
