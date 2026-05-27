@@ -18,10 +18,12 @@
     -   Documented the improvements
     -   Implemented the improvements
     -   Ran prompt 1 - FIGMA_COMPONENT_TOKEN_REFERENCE.md
+    -   Reported the results & next steps on the task
+    -   Ran prompt 2 - DESIGN_SYSTEM_AUDIT_PROMPT.md
 
 ## Time Logs
 
--   3.10 hrs – Catchup call with Ash, working on image brief task and the 2 claude prompts task.
+-   3.30 hrs – Catchup call with Ash, working on image brief task and the 2 claude prompts task.
 
 ---
 
