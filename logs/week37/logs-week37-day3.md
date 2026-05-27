@@ -24,11 +24,19 @@
  
 -   Creating and organising new tasks received
 -   Completed the 4 Tier prompts task, and reported all findings on the task.
+-   Started working on the Design system colours audit task:
+    -    Used the 'audit-design-system' GPT skill to audit the current colour-tokens and primitive-colours used in the DS
+    -    Found quite a few inconsistencies, duplicates and unnecessary tokens.
+    -    Updated the colour tokens and primitives to comply with WCAG AA Standards.
+    -    Ran a second audit on the updated colours and found some minor improvements
+    -    Created updated v2 colour tokens and primitives
+    -    Did an implementation assessment, comparing the existing design system in Claude, to my newly updated tokens and primitives to find all implementation risks and a recommended approach.
 
 ## Time Logs
 
 -   3.30 hrs – Catchup call with Ash, working on image brief task and the 2 claude prompts task.
--   2.0 hrs - Completed the 2 Claude prompts task as well as the 4 Tier prompts task, reported my findings on both tasks. 
+-   2.0 hrs - Completed the 2 Claude prompts task as well as the 4 Tier prompts task, reported my findings on both tasks.
+-   2.30 hrs - Working on the Design system colour's task. 
 
 ---
 
