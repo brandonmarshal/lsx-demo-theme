@@ -15,11 +15,15 @@
     -    Downloaded and paired the required "figma-use" SKILL.d and references
     -    Created a new design file for testing the skills and I imported the LightSpeed Design System into the new file for the Figma skill to use.
     -    Ran the skill in VS CODE to test the generation and output, but had some blockers with "get_design_context" not working as well as the AI agent not following instructions correctly.
+    -    Did troubleshooting and managed to get the "get_design_context" to work, I realised the figma mcp I needed for the skills was not actually installed
+    -    I installed the MCP and authorised, then tried to test the skill again, but got told the account I was using has permission errors for (Brandon@lightspeed...) but it is supposed to be using the (accounts@lsdev) account as that is the account I authorised.
+    -    Working on the Mobile Menu accessibility in the Claude Prototype and will continue with Figma skills tomorrow. 
 
 ## Time Logs
 
 -   2.40 hrs – Study session.
--   2.20 hrs - Worked on setting up a workflow for testing the Figma Skills, created a new design file and imported the LightSpeed DS. 
+-   2.20 hrs - Worked on setting up a workflow for testing the Figma Skills, created a new design file and imported the LightSpeed DS.
+-   2.0 hrs - Continued troubleshooting the Figma MCP in my vs code to try and get the "figma-generate-design" skill to work.
 
 ---
 
