@@ -63,6 +63,10 @@ Strengthen the Claude + AI workflow and prototype system in the first half (Week
 
 ### Tasks (Week 38)
 
+**Meetings / coordination**
+
+-   [ ] Monday: Presentation with Zared, Jose and Warwick.
+
 **Claude Prototype & AI Systems (primary focus)**
 
 -   [ ] Create Tier-Based Claude Execution Prompt System (Tier 1 quick edits → Tier 3 deep refactors).
