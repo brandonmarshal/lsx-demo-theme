@@ -15,11 +15,14 @@
  
 -   Created the test/review criteria for the files and then got Claude and Copilot to review them.
 -   Got them reviewed/audited and pasted the audit reports on the linear task.
+-   Set up reviewing criteria for the infographics, audios, slide decks, etc, from NotebookLM
+-   Downloaded all the resources from NotebookLM and uploaded them to the shared drive into their category folders. 
 
 ## Time Logs
 
 -   3.40 hrs – Working on the ChatGPT Agent, catchup meeting with Ash, organising my 2 new tasks from Catchup with Ash.
 -   2.10 hrs - Reviewing the PLUGIN_INSTALLATION_GUIDE.md, PLUGIN_ARCHITECTURE_DEEP_DIVE_SLIDES.md and the talk-outline.md
+-   2.20 hrs - Creating test/review criteria for NotebookLM resources and started testing them
 
 ---
 
