@@ -8,7 +8,7 @@
 -   Catchup meeting with Ash to dsicuss the talk outline and resources, new linear agent and .github plugin installation guide.
 -   Created the new tasks from the catchup meeting with Ash.
 -   Forked the .github repo to my local and setup workspaces for Copilot/VS Code and Claude
--   I then started doing reviews on the following files:
+-   Started doing reviews on the following files:
     -  PLUGIN_INSTALLATION_GUIDE.md
     -  PLUGIN_ARCHITECTURE_DEEP_DIVE_SLIDES.md
     -  talk-outline-25min.md
