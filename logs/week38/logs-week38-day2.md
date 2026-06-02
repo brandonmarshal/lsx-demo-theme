@@ -4,6 +4,13 @@
 
 ### What have you accomplished today?
 
+## At a glance
+
+-   Repo created and configured: [lightspeedwp/lightspeed-agents](https://github.com/lightspeedwp/lightspeed-agents) (private, `develop` default).
+-   Core setup issues completed: LS-896, LS-897, LS-898, LS-899, LS-900.
+-   Open PRs awaiting merge: PR #1 (`feat/openspec-init`), PR #2 (`feat/linear-mind-skills`).
+-   Next focus after merges: LS-901 end-to-end validation.
+
 ---
 
 ## Planning & Discovery
@@ -138,10 +145,55 @@
 -   `agents/linear-mind/` directory structure created: `agent.md`, `CLAUDE.md`, `skills/`, `skills/source/`.
 -   Initial commit pushed to `develop`.
 
+---
+
+## lightspeed-agents — Progress Log
+
+**Date:** 2026-06-02
+**Continuing from:** LS-898 marked Done
+
+### Completed since last update
+
+-   **LS-899 — Commit linear-mind instruction files** ✅
+
+    -   All 5 files were already committed to `develop` from the initial scaffold session.
+    -   Files: root `CLAUDE.md`, `agents/linear-mind/CLAUDE.md`, `agents/linear-mind/agent.md`, `.github/instructions/agent-platform.instructions.md`, `.github/instructions/linear-mind.instructions.md`.
+    -   Marked Done in Linear.
+
+-   **LS-900 — Commit all 6 linear-mind skill files** ✅
+
+    -   Branch: `feat/linear-mind-skills`.
+    -   PR #2 raised: [PR #2 — linear-mind skills](https://github.com/lightspeedwp/lightspeed-agents/pull/2)
+    -   Files committed: `workspace-auditor.md`, `next-step-strategist.md`, `workflow-skill-recommender.md`, `skill-builder.md`, `change-approval-gate.md`, `implementation-runner.md`.
+    -   All 6 skills include: trigger phrases, workspace context (MCP calls), core logic, output format template, and structured handoff JSON schema.
+    -   Marked Done in Linear.
+
+-   **LS-901 — End-to-end validation** moved from Backlog → Todo in Linear (next up, pending PR merges).
+
+### Open PRs awaiting your review and merge
+
+| PR    | Branch                    | Merges into | Contents                                              |
+| ----- | ------------------------- | ----------- | ----------------------------------------------------- |
+| PR #1 | `feat/openspec-init`      | `develop`   | OpenSpec init — 5 skill files + 5 slash command files |
+| PR #2 | `feat/linear-mind-skills` | `develop`   | All 6 linear-mind skill files                         |
+
+### Current Linear status across all issues
+
+| Issue  | Title                                | Status     |
+| ------ | ------------------------------------ | ---------- |
+| LS-896 | Create repo + directory structure    | ✅ Done    |
+| LS-897 | Configure VS Code workspace + MCP    | ✅ Done    |
+| LS-898 | Install and initialise OpenSpec      | ✅ Done    |
+| LS-899 | Commit linear-mind instruction files | ✅ Done    |
+| LS-900 | Commit all 6 skill files             | ✅ Done    |
+| LS-901 | End-to-end validation                | 🔜 Todo    |
+| LS-902 | Platform documentation               | ⏳ Backlog |
+
 ## Time Logs
 
 -   3.0 hrs – Working on the Claude based linear-mind agent.
 -   1.15 hrs - Continued working on the Claude agent for Linear.
+-   1.40 hrs - Continued work on the lightspeed-agents repo
 
 ---
 
