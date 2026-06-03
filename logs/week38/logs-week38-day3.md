@@ -30,13 +30,15 @@
 -   Catchup with Warwick to understand what I need to do for the Dsicovery task
 -   Created the discovery task to work off so long.
 -   Created a new Linear skill to help me set up new projects, it asks me questions to gather important details for a Project set up.
--   Started the Discovery scan on the queenspark repo
+-   Started the Discovery scan on the queenspark theme repo and pasted the report in a google doc
+-   Started the second scan on the Nav Sync/Importer repo and pasted the report in the doc as well. 
 
 ## Time Logs
 
 -   3.0 hrs – Working on the Claude Global Components as well as setting up the Discovery taks and project for Queenspark.
 -   2.0 hrs - Continued working on improving the Global header and footer parts.
--   1.55 hrs - Working on the Global components still, the footer specifically needed more improvements and I got Claude to generate me a execution prompt for Claude Design. 
+-   1.55 hrs - Working on the Global components still, the footer specifically needed more improvements and I got Claude to generate me a execution prompt for Claude Design.
+-   1.0 hrs - Completed the first discovery scan on the theme repo and then started and complete the second one on the nav sync/importer repo.
 
 ---
 
