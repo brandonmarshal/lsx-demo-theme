@@ -55,14 +55,6 @@
 * Ran the initial discovery scan on the Queenspark Theme repository and documented findings in a Google Doc.
 * Started a second discovery scan on the Nav Sync/Importer repository and added the findings to the same discovery document for consolidated analysis.
 
-
--   Created the Project in linear for 'Queenspark'
--   Catchup with Warwick to understand what I need to do for the Dsicovery task
--   Created the discovery task to work off so long.
--   Created a new Linear skill to help me set up new projects, it asks me questions to gather important details for a Project set up.
--   Started the Discovery scan on the queenspark theme repo and pasted the report in a google doc
--   Started the second scan on the Nav Sync/Importer repo and pasted the report in the doc as well. 
-
 ## Time Logs
 
 -   3.0 hrs – Working on the Claude Global Components as well as setting up the Discovery taks and project for Queenspark.
