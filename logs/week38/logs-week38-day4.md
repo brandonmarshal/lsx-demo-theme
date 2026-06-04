@@ -15,11 +15,11 @@
 -   [LS-932](https://linear.app/lightspeedwp/issue/LS-932/plan-accessibility-auditing-agent-for-lightspeed-agents-repo) **— Plan Accessibility Auditing Agent for lightspeed-agents repo**
     Created the planning issue for the new accessibility auditing agent in the `lightspeed-agents` repository.
 -   [LS-904](https://linear.app/lightspeedwp/issue/LS-904/expand-queenspark-discovery-scope-to-include-dynamics-365-integration) **— Expand Queenspark discovery scope to include Dynamics 365 integration assessment**
-    Used the two discovery reports from yesterday’s scan and created a PRD with the `Lightspeed-prd-generator` GPT skill.
+    Used the two discovery reports from yesterday’s scan and created a PRD with the `Lightspeed-prd-generator` GPT skill. Then I reviewed it with the `Lightspeed-prd-reviewer` GPT skill and added all the reports to the [google doc](https://docs.google.com/document/d/1kjurpIiHDQsW0Eo8zYH0vI8ZMbe5GUZJkgJvAC2rnHs/edit?usp=sharing)
 
 ## Time Logs
 
--   3.0 hrs – Working on the Global components, Discovery accessibility audit, and the PRD for queenspark.
+-   3.30 hrs – Working on the Global components, Discovery accessibility audit, and the PRD for queenspark.
 
 ---
 
