@@ -27,8 +27,21 @@
 -   Opened PR #7 and attached it to the issue.
 -   A4 and A9 left out of scope, noted for follow-up.
 
+- **[LS-993](https://linear.app/lightspeedwp/issue/LS-993/implementation-full-site-audit-agent) — Implementation: full-site-audit Agent**
+  - Created the implementation issue for the `full-site-audit` agent and linked it to the planning work.
+  - Expanded the audit scope to include: SEO, AI readiness, performance signals, security hardening, internationalisation, third-party integrations, content integrity, legal & compliance, navigation & links, and forms & conversion.
+  - Updated the issue body and planning doc to reflect the broader professional site-audit standard.
+  - Added new Phase 1 reference files for SEO and security standards.
+  - Expanded the manual test library to include SEO, performance, and security checks.
+  - Updated scoring so the final audit score covers all 15 domains.
+  - Updated success criteria to include SEO, security headers, and Open Graph checks.
+  - Clarified scope so performance signals are automated, while Core Web Vitals remain manual.
+
+- **[LS-991](https://linear.app/lightspeedwp/issue/LS-991/research-and-planning-full-site-audit-agent) — Research & Planning: Full Site Audit Agent**
+  - Linked the planning issue to the new implementation issue LS-993.
+
 ### General Updates:
--  Catchup call with Ash to discuss Bugherd and Playwright for testing. Made notes for a new task. 
+-  Catchup call with Ash to discuss Bugherd and Playwright for testing. Made notes for a new task.
 
 ---
 
@@ -36,6 +49,7 @@
 
 -   4.0 hrs – Working on the second branch on the linked linear task as well as doing my research and planning for the Full site auditing agent.
 -   0.25 hrs - Call with Ash and noting my requirements for a linear task.
+-   1.50 hrs - 
 
 ---
 
