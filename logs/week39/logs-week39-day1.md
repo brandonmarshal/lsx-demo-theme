@@ -27,11 +27,15 @@
 -   Opened PR #7 and attached it to the issue.
 -   A4 and A9 left out of scope, noted for follow-up.
 
+### General Updates:
+-  Catchup call with Ash to discuss Bugherd and Playwright for testing. Made notes for a new task. 
+
 ---
 
 ## Time Logs
 
 -   4.0 hrs – Working on the second branch on the linked linear task as well as doing my research and planning for the Full site auditing agent.
+-   0.25 hrs - Call with Ash and noting my requirements for a linear task.
 
 ---
 
