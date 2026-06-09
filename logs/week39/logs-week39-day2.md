@@ -35,10 +35,7 @@
 
 ## Time Logs
 
--   4.0 hrs – Working on the second branch on the linked linear task as well as doing my research and planning for the Full site auditing agent.
--   0.25 hrs - Call with Ash and noting my requirements for a linear task.
--   1.50 hrs - Setup the full-site-audit linear task for implementing into the repo, I reviewed the planning multiple times and made improvements to criteria.
--   1.50 hrs - Working on the accessibility-auditor agent, testing and improving
+-   3.10 hrs – Running tests on the accessibiity-auditor agent & reviewed the PR and merged to develop
 
 ---
 
