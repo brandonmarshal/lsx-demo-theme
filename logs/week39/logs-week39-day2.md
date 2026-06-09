@@ -29,13 +29,27 @@
 -   Reviewed the generated report in detail and identified quality issues: score inflation, 5 missing WCAG criteria, Warn over-use, no dual scoring, no human verification path
 -   Implemented fixes across `02-build-criteria.md`, `03-evaluate.md`, `generate-report.js`, and `05-generate-report.md` — added dual scoring model, `Likely Fail` status, 5 missing criteria, and a Human Manual Checks page to every report
 -   TC-09 Quick Scan tested and passed — correct mode detected, right steps fired, disclaimer present, exact contrast ratios calculated
--   TC-10 Re-audit path not yet tested — `audit-log.json` from today's session is ready as the baseline
+-   TC-10 Re-audit path — implemented re-audit accuracy improvements (22/22 tasks complete); mandatory visual diff phase added to Skill 01, three-tier Warn annotation added to Skill 03, expanded comparison output in Skill 06 with `speculativeRisks[]`, `newElements[]`, and dual scoring; Skill 05 updated to show both Confirmed and Comprehensive scores in report delivery
+
+---
+
+**LS-993** — Full Site Audit Agent `[In Progress]`
+
+-   Expanded audit domain coverage to 15 domains — added SEO, AI Readiness, Performance Signals, Security Hardening, Internationalisation, Third-Party Integrations, Content Integrity, Legal & Compliance, Navigation & Links, and Forms & Conversion
+-   Added `references/seo-standards.md` and `references/security-standards.md` to the Phase 1 scaffold
+-   Updated Skill 07 manual test library to include SEO, performance, and security manual testing procedures
+-   Updated Skill 09 score calculation to weight across all 15 domains
+-   Ran full end-to-end Branch 1 test against the ATI Holidays (`ati-theme-2026`) client repo — all Phase 1 & 2 pipeline steps passed; 18 findings recorded (0 Critical, 3 High, 8 Medium, 7 Low)
+-   Generated 7 grouped Linear issue recommendations for ATI Holidays (recommendations only — none created)
+-   Raised PR #8 for Branch 1
+-   Hardened Skill 09 report stub to explicitly block docx improvisation — agent was generating broken `.docx` files using training knowledge; now outputs a structured markdown summary in chat until `generate-report.js` is built in Branch 2
 
 ---
 
 ## Time Logs
 
--   3.10 hrs – Running tests on the accessibiity-auditor agent & reviewed the PR and merged to develop
+-   3.10 hrs – Running tests on the accessibility-auditor agent & reviewed the PR and merged to develop
+-   2.10 hrs - Auditing the outcome reports and improving the agents workflow. I also started implementing the full-site-audit agent. 
 
 ---
 
