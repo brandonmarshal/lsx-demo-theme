@@ -37,7 +37,7 @@
 -   Reviewed the agent setup for the Lightspeed Support Agent
 -   Investigated what is causing the agent to fail for the rest of the team
 -   Identified the connected Apps as the likely primary cause of the failures — further testing still needed to confirm the root cause
--   Downloaded the content for all four main agents discussed in the meeting
+-   Downloaded the content for all the main agents discussed in the meeting
 
 ---
 
