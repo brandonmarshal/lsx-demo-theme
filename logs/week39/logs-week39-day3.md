@@ -21,15 +21,21 @@
     -   Dev site scanning + Live vs Dev comparison report (rebuilds only) — surface improvements, regressions, and differences between the live and dev environments
     -   MCP + WordPress integration investigation for Skill 04 — Zared testing, outcome TBC
     -   Dev site content checks: placeholder detection on single tour itinerary and accommodation pages, modal functionality verification, empty content detection, and Wetu card metadata validation (empty fields, incorrect data types, broken links)
+-   Completed Phase A (`full-site-audit-generic-refactor`) — all 13 checklist items done, PR #10 merged to `develop`
+-   Extended agent to support all 6 site types (Brochure/Corporate, Portfolio, Membership/LMS, Directory/Listing alongside existing TO and WooCommerce) across Skills 03, 04, and 07
+-   Updated `references/site-types.md`, `seo-standards.md`, `security-standards.md`, and `manual-test-library.md` to cover all site types equally
+-   Reviewed and resolved all 7 Gemini inline code review comments before merge
+-   Phase B (`full-site-audit-dev-target`) scoped and ready — switches audit target from Live to Dev/staging site; awaiting OpenSpec proposal approval before branch opens
 
 ---
 
-**Ash Catchup**
+**Ash Catchup & GPT Agents Review**
 
--   Catchup call with Ash
--   Discussed reviewing the four GPT agents (Support Agent, PRD Generator, Sales Assistant, Proposal Desk) to verify whether each is working or not
--   Discussed using the GPT agents and resources from the forwarded Queenspark email to generate a valid set of client discovery questions
--   Both tasks to be completed later today
+-   Catchup call with Ash — discussed reviewing the four GPT agents (Support Agent, PRD Generator, Sales Assistant, Proposal Desk) and generating Queenspark client discovery questions
+-   Logged into the account Ash provided for GPT
+-   Reviewed the agent setup for the Lightspeed Support Agent
+-   Investigated what is causing the agent to fail for the rest of the team
+-   Identified the connected Apps as the likely primary cause of the failures — further testing still needed to confirm the root cause
 
 ---
 
@@ -38,6 +44,7 @@
 -   1.00 hrs – Catchup with Zared — full-site-audit agent review
 -   0.20 hrs - Ash catchup — discussed GPT agents review and Queenspark discovery questions
 -   1.30 hrs - Setting up the linear issue in detail for Claude agent
+-   2.35 hrs - Audited the implementation plan for the improvements discussed with Zared, then implemented Phase A. 
 
 ---
 
