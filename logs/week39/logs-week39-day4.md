@@ -22,7 +22,8 @@
 -   Catchup with Zared to go over the WordPress MCP he set up yesterday
 -   Went through the setup on my Mac but ran into a connection issue
 -   Troubleshot the issue and identified it as a Cloudflare whitelisting problem
--   Waiting for an admin to whitelist my IP before we can continue — will meet again once that is resolved to test how the MCP works with the Claude agent
+-   Waited for IP to be whitelisted
+-   Tested again and it works now. 
 
 ---
 
@@ -44,10 +45,25 @@
 
 ---
 
+**LS-1016** — Build `proposal-desk` `[In Review]`
+
+-   Completed full Layer 1 core build via OpenSpec — `agent.md`, `CLAUDE.md`, and all 7 skills built (`rfp-response`, `evidence-claims-check`, `proposal-defaults-onboarding`, `proposal-intake`, `wordpress-plugin-packaging-review`, `markdown-format-validator`, `agent-rollout-readiness`)
+-   Created 38 stub reference files across Layer 2 (`references/`, `references/intake/`, `references/questionnaires/`, `references/rollout/`) — content to be filled in
+-   Fixed CI failure — added missing `version` and `last_updated` frontmatter to all 7 skill files
+-   Fixed merge conflict in `AGENT_CHANGELOG.md` caused by concurrent Phase D merge — resolved via rebase
+-   Fixed bug where audit and compare runs were polluting `AGENT_CHANGELOG.md` — updated `skills/changelog-entry.md`, `09-report-generation.md`, and `agents/full-site-audit/CLAUDE.md` to restrict changelog writes to platform implementations only
+-   Created `proposal-desk.instructions.md` and `docs/proposal-desk-guide.md` covering all 7 skills with worked examples, guardrails, app sources, and troubleshooting
+-   Tested the agent against the Queenspark RFP — worked well but follow-up questions were not accounting for what was already known about the client
+-   Implemented fix via OpenSpec (`existing-client-source-check`) — agent now checks all available existing sources (repo, live site, Linear, Drive) before generating any follow-up questions; only genuinely unknown items are sent to the client; updated `proposal-intake.md`, `rfp-response.md`, `proposal-defaults-onboarding.md`, `memory-schema-template.yaml`, and `CLAUDE.md`
+-   PR #14 open and ready for review
+
+---
+
 ## Time Logs
 
 -   3.20 hrs - Catchup meeting with Zared and running tests on yesterdays implementations
 -   1.35 hrs - Setting up linear issues for the new agent implementations
+-   3.20 hrs - Working on the proposal-desk implementation and testing.
 
 ---
 
