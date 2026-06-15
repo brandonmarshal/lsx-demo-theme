@@ -31,24 +31,30 @@
 -   Updated `AGENTS.md`, root `CLAUDE.md`, and `AGENT_CHANGELOG.md`
 -   Reviewed the Yoast SEO Starter Checklist 2026 (27 steps) and performed a full gap analysis against v1.0.0
 -   Planned and documented the full v1.1.0 upgrade — new Skill 07, rubric expansion from 9 to 14 checks, 4 new deductions, H1/internal link proposals, 4 new report sections, and 2 reference file updates
--   Implemented v1.1.0 in full — all 8 planned changes completed:
-    -   Skill 02 — expanded page record with 8 new fields (H1 text/count, H2 count, internal link count, noindex, image filenames, word count, avg sentence length)
-    -   Skill 03 — rubric expanded to 14 checks + 7 deductions; cross-page cannibalization and duplicate detection pre-scan added
-    -   Skill 04 — updated title and description formulas, added H1 proposal and internal link suggestion steps
-    -   Skill 06 — added Keyword Cannibalization Report, Noindex Flags, Thin Content List, Site Foundations block, and Advisory Manual Checklist sections
-    -   New Skill 07 — Site Foundations Check covering sitemap, noindex post types, orphaned pages, blog post count, thin content summary, navigation depth, and dedicated service pages
-    -   New `references/seo-checklist-foundations.md` — full 27-step Yoast checklist as a permanent agent reference
-    -   Updated `references/seo-copy-guidelines.md` — Yoast title/description formulas, H1 rules, readability guidance, image naming rules
--   Applied 6 Gemini code review fixes before merge: empty focus keyword guard, duplicate detection excludes empty values, image filename false positive fix, WordPress shortcode stripping for word count, sentence splitting handles abbreviations, orphaned pages corrected to use incoming link map
+-   Implemented v1.1.0 in full — all 8 planned changes completed across Skills 02, 03, 04, 06, new Skill 07, and both reference files
+-   Applied 6 Gemini code review fixes before merge
 -   Added `.claude/commands/wp-seo-audit/` with 3 slash command files
--   Added `last_updated` frontmatter to all 7 skill files to pass CI check
--   PR #17 merged to `develop` — live testing now in progress
+-   PR #17 merged to `develop`
+-   Ran first live test via `/wp-seo-audit:run` against ATI Holidays staging site — all 6 skills ran in order with no errors
+    -   500 of 887 items fetched across 9 post types — hit the MCP 500-item limit; remaining 387 not fetched
+    -   Key findings: site globally blocking search engines (`search_engine_visible: false` — expected on staging), 0 missing SEO titles or meta descriptions across all 500 items, 35/35 tours fully clean, 17/17 pages missing featured images, 14 confirmed empty-content pages, 176/500 items missing excerpts
+    -   All Phase 1 hard rules respected — no writes made, all proposals correctly labelled
+    -   Tool gap identified: `lightspeed-content-readiness` returns boolean presence flags only, not actual field values — full quality scoring (title length, keyword placement, H1 structure etc.) not currently possible; agent surfaced this transparently and routed affected checks to the manual advisory checklist
+    -   Recommended next step logged: investigate extending the MCP tool to return actual Yoast field values per post
+
+---
+
+**Ash Catchup**
+
+-   Catchup with Ash to discuss the Zendesk MCP setup and the plan for finishing the remaining Claude agents
+
 
 ---
 
 ## Time Logs
 
--   ***
+-   3.40 hrs - Working on the two agents mentioned above (LS-1029 & LS-1030)
+-   2.0 hrs - Testing the agents and catchup meeting with Ash.
 
 ## Notes
 
