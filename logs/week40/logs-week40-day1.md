@@ -22,7 +22,7 @@
 
 ---
 
-**LS-1030** — Build `wp-seo-audit` Agent `[In Progress]`
+**LS-1030** — Build `wp-seo-audit` Agent `[Done]`
 
 -   Built v1.0.0 — `agent.md`, `CLAUDE.md`, 6 skills (Skill 05 is a Phase 2 stub only), and 3 reference files
 -   Phase 1 read-only enforced — Hard Rule #1 blocks all writes; `/wp-seo-audit:fix` refuses with Phase 2 message
@@ -39,15 +39,28 @@
     -   500 of 887 items fetched across 9 post types — hit the MCP 500-item limit; remaining 387 not fetched
     -   Key findings: site globally blocking search engines (`search_engine_visible: false` — expected on staging), 0 missing SEO titles or meta descriptions across all 500 items, 35/35 tours fully clean, 17/17 pages missing featured images, 14 confirmed empty-content pages, 176/500 items missing excerpts
     -   All Phase 1 hard rules respected — no writes made, all proposals correctly labelled
-    -   Tool gap identified: `lightspeed-content-readiness` returns boolean presence flags only, not actual field values — full quality scoring (title length, keyword placement, H1 structure etc.) not currently possible; agent surfaced this transparently and routed affected checks to the manual advisory checklist
+    -   Tool gap identified: `lightspeed-content-readiness` returns boolean presence flags only — full quality scoring not currently possible; agent flagged this transparently and routed affected checks to the manual advisory checklist
     -   Recommended next step logged: investigate extending the MCP tool to return actual Yoast field values per post
+
+---
+
+**LS-903** — Zendesk MCP Research & Discovery `[In Progress]`
+
+-   Investigated connecting Claude Desktop to Zendesk via Swifteq's MCP Server — discovered it is not viable due to OAuth callback URL rejection (`mcp-remote` uses a random `localhost` port that Swifteq does not whitelist) and a known weekly re-auth issue with Swifteq + AI clients
+-   Identified and cleared a stale `mcp-remote` cache issue at `~/.mcp-remote-cache` during troubleshooting
+-   Confirmed that Claude Desktop has no custom connector UI — the + button shown in Swifteq's setup guide is a Claude Web (claude.ai) only feature
+-   Decided on API token auth for Phase 1 over OAuth — eliminates the re-auth problem entirely, trivial per-team-member setup, and acceptable security tradeoff for a read-only support tool
+-   Confirmed Zendesk Admin Center setup path for token generation: Apps and Integrations → APIs → API configuration and API tokens
+-   Decided to build the MCP server as a standalone repo (`lightspeedwp/zendesk-mcp`) rather than inside the agents monorepo — cleaner separation, easier to share, potential future open-sourcing
+-   Scoped Phase 1 build: Node.js/TypeScript MCP server with 5 read-only tools (`list_tickets`, `get_ticket`, `search_tickets`, `get_user`, `get_current_user`), `setup.sh` onboarding script, `npm run test-connection` credential validation, rate limit handling with exponential backoff, and cursor-based pagination
+-   Phase 2 write tools planned but not in scope for Phase 1
+-   Created the issue with full build spec ready — build path documented for both GitHub Copilot and Claude Code
 
 ---
 
 **Ash Catchup**
 
--   Catchup with Ash to discuss the Zendesk MCP setup and the plan for finishing the remaining Claude agents
-
+-   1 hour catchup with Ash to discuss the Zendesk MCP setup and the plan for finishing the remaining Claude agents
 
 ---
 
@@ -55,6 +68,7 @@
 
 -   3.40 hrs - Working on the two agents mentioned above (LS-1029 & LS-1030)
 -   2.0 hrs - Testing the agents and catchup meeting with Ash.
+-   2.30 hrs - Researching and testing ZenDesk MCP setup via Swifteq. Created plannign for a Lightspeed/zendesk-mcp
 
 ## Notes
 
