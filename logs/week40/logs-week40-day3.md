@@ -26,13 +26,17 @@
 -   Explored testing the Linear Agent starter prompts and began putting together a structured testing criteria framework covering 12 starter prompts
 -   After further review, identified that the correct starting point for agent testing is the rollout file in the GPT agent directory — this defines the proper testing process and criteria that should be followed
 -   Reviewed the rollout file to understand the correct testing approach before proceeding with any further testing
+-   Setup the google sheets testing handbook for the Zendesk agent testing
+-   Started testing the starter prompts and reporting feedback to the testing handbook
+-   Catchup meeting with Ash. 
 
 ---
 
 ## Time Logs
 
 -   3.0 hrs - Reviewing the Google Docs shared with me and troubleshooting GPT Agents.
--   2.40 hrs - Created testing criteria and test 2 starter prompts, then I got corrected in what I am supposed to do and started reviewing the rollout file for instructions. 
+-   2.40 hrs - Created testing criteria and test 2 starter prompts, then I got corrected in what I am supposed to do and started reviewing the rollout file for instructions.
+-   3.0 hrs - Properly reviewed the rollout instructions and setup the testing handbook to do my testing. I then started testing the starter prompts
 
 ---
 
