@@ -56,13 +56,28 @@
    - Generated two Claude Design prompts to fix all 16 pages:
       - Prompt 1 — Modal & Dialog + Tooltip & Popover (standalone, structural)
       - Prompt 2 — Remaining 14 pages in a single merged prompt
+    
+   - Executed Prompt 1 in Claude Design — fixed Modal & Dialog and Tooltip & Popover:
+      - All structural containment and overflow issues resolved
+      - Border-top/border-left + border-radius corner artefacts fixed
+      - Animation ease fallbacks applied
+      - Theme toggle flash resolved
+      - Post-fix correction applied for button and dark/light mode switcher issues introduced during the agent's changes
+    
+   - Completed LightSpeed Support Desk starter prompt testing and logged all feedback in the tracking sheet:
+      - SP-005A — Handoff or escalation choice
+      - SP-005 — Support handoff
+      - SP-006 — Documentation review
+      - SP-007 — Daily support digest
+      - SP-008 — Tool discipline      
 
 ---
 
 ## Time Logs
 
 -   4.15 hrs - Watched Youtube Videos on the Figma AI and how it works, then I did my owns testing in the DS as well and logged all reports on Asana
--   1.15 hrs - Auditing & Reviewing the showcases pages on Claude Desing, finding improvements and generated prompts to run. 
+-   1.15 hrs - Auditing & Reviewing the showcases pages on Claude Desing, finding improvements and generated prompts to run.
+-   2.40 hrs - Ran Prompt 1 and completed the rest of the Lightspeed support desk starter prompt's testing.
 
 ---
 
