@@ -29,7 +29,7 @@
 
 ## Time Logs
 
--   3 hrs - Ran the second prompt for the showcase pages, then started auditing the Figma Design system and making improvements to it.
+-   3.0 hrs - Ran the second prompt for the showcase pages, then started auditing the Figma Design system and making improvements to it.
 
 ---
 
