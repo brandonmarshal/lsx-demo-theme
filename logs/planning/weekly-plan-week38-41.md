@@ -271,7 +271,7 @@ Strengthen the Claude + AI workflow and prototype system in the first half (Week
 
 **Planning & Setup (Monday)**
 
--   [ ] Create and organize all of the week's tasks in Linear on Monday morning.
+-   [ ] Create and organize all of the week's tasks in Linear on Monday morning, using OpenSpec to help plan the issues.
 -   [ ] Review issue templates in the `.github` repository and copy the most useful ones into Linear.
 -   [ ] Review available Team Skills in Linear and integrate the ones that are applicable and beneficial.
 
