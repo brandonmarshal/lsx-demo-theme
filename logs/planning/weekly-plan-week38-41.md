@@ -260,34 +260,31 @@ Strengthen the Claude + AI workflow and prototype system in the first half (Week
 
 ### Objectives (Week 41)
 
--   Make website page updates the primary focus with a realistic, test-and-refine cadence.
--   Ship a batch of core pages and begin standardizing Service page layouts.
--   Define Discover phase services clearly so Services pages can be aligned to an explicit offering.
+-   Establish and organize the week's tasks in Linear to create a clear work plan.
+-   Migrate valuable issue templates from the project's GitHub repository to Linear to standardize task creation.
+-   Identify and integrate useful Team Skills from the Linear library to enhance workflow efficiency.
+-   Begin the high-fidelity design phase by transferring top-level pages from the Claude prototype into the Figma design system.
+-   Systematically process all remaining pages from the Claude prototype into Figma, ensuring design system consistency.
+-   Create clear documentation for finalized pages and submit them for stakeholder review.
 
 ### Tasks (Week 41)
 
-**Discovery services (must land this week)**
+**Planning & Setup (Monday)**
 
--   [ ] Define Audit and Scoping services for Discover phase.
--   [ ] Discover offering: draft service definition (outcomes, deliverables, process steps, timeboxes).
--   [ ] Discover offering: add FAQ/common objections and how the page should address them.
+-   [ ] Create and organize all of the week's tasks in Linear on Monday morning.
+-   [ ] Review issue templates in the `.github` repository and copy the most useful ones into Linear.
+-   [ ] Review available Team Skills in Linear and integrate the ones that are applicable and beneficial.
 
-**Website updates (primary focus; batch shipping)**
+**Website Implementation (Primary Focus)**
 
--   [ ] Pricing Page Updates.
--   [ ] Solutions Publishing Page Updates.
--   [ ] Solutions Tour Operators Page Update.
--   [ ] Services Discover Page Update (aligned to defined Audit/Scoping offering).
--   [ ] Services Design Page Update.
--   [ ] Update Service Page Layouts (standardize hero, section spacing, CTAs, proof blocks).
+-   [ ] Begin transferring top-level pages (to be identified during Monday's planning) from the Claude prototype into Figma.
+-   [ ] Ensure all transferred pages correctly apply variables from the Lightspeed Design System.
+-   [ ] Continue the process of moving all pages from the Claude design phase into the Figma design system throughout the week.
 
-**Content + assets (supporting, but ongoing)**
+**Documentation & Review (Continuous)**
 
--   [ ] Organize Claude Design Assets & Team Image Library (complete v1 structure + naming rules).
-
-**Claude Prototype & AI Systems (supporting only)**
-
--   [ ] Research Defensive Design Principles (apply to Service layout standardization).
+-   [ ] As each page is finalized in Figma, create comprehensive documentation for it.
+-   [ ] Submit finalized and documented pages for review with Zared or Ash.
 
 **Reserve capacity (testing + review + refinements)**
 
@@ -295,32 +292,28 @@ Strengthen the Claude + AI workflow and prototype system in the first half (Week
 -   [ ] Accessibility smoke checks (keyboard path, contrast, heading structure).
 -   [ ] Buffer time for unexpected discoveries (layout conflicts, reused components).
 
-**Ongoing page pipeline (continuous)**
-
--   [ ] Create page briefs for upcoming priority pages.
--   [ ] Improve page content using GPT skills (iterate copy on shipped pages based on clarity).
--   [ ] Update tracker across all 81 pages weekly.
-
 ### Deliverables (Week 41)
 
--   Discover phase Audit + Scoping offering definition (ready to brief/implement).
--   Batch of updated pages shipped or in review: Pricing, Solutions Publishing, Solutions Tour Operators, Services Discover, Services Design.
--   Standardized Service page layout baseline applied (first set).
--   Asset library organization v1 complete.
--   QA notes + fixes applied (responsive + accessibility smoke checks).
+-   A complete set of weekly tasks organized in Linear.
+-   Key issue templates successfully migrated from GitHub to Linear.
+-   A curated set of Linear Team Skills integrated into the workspace.
+-   Top-level pages implemented in Figma with correct design system variables.
+-   A consistent flow of pages transferred from the Claude prototype to the Figma design system.
+-   Comprehensive documentation for each finalized page.
+-   Finalized pages submitted for review.
 
 ### Risks / Dependencies (Week 41)
 
--   Services Discover page depends on defining Audit/Scoping services first.
--   Service layout standardization depends on stable shared patterns/components.
--   Page batch scope may need adjustment based on QA findings and regressions.
+-   The selection of top-level pages on Monday is a dependency for starting the website implementation work.
+-   The efficiency of transferring pages from Claude to Figma depends on the clarity of the prototype and the completeness of the Figma design system.
+-   Reviewer availability (Zared, Ash) may impact the feedback loop and final approval of pages.
 
 ### Success Criteria (Week 41)
 
--   A clear Discover offering exists and is reflected in Services pages.
--   Multiple priority pages are shipped with consistent navigation, spacing, and CTAs.
--   Service page layouts feel consistent enough to reuse patterns going forward.
--   Testing time is preserved and issues are captured in the tracker (not lost in chat).
+-   All weekly tasks are planned and tracked in Linear by the end of Monday.
+-   The process of moving pages from Claude to Figma is established and running smoothly.
+-   At least the top-level pages are fully implemented in Figma and submitted for review by the end of the week.
+-   Each completed page is accompanied by clear documentation.
 
 ---
 
