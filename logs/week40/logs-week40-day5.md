@@ -38,6 +38,11 @@
 -   Remaining on Foundations: Tokens - Semantic - Colours (72 nodes)
 -   Remaining across all pages: Patterns (13), Docs (8), Components (6), Prototype (1)
 
+---
+
+**Catchup meeting**
+-    Catchup meeting with Ash, to discuss Figma work as well as the importance of getting the LS website going. 
+
 
 ---
 
@@ -45,6 +50,7 @@
 
 -   3.0 hrs - Ran the second prompt for the showcase pages, then started auditing the Figma Design system and making improvements to it.
 -   2.50 hrs - Working on the Figma DS, making improvements and finding all the inconsistencies.
+-   0.16 hrs - Catchup meeting with Ash. 
 
 ---
 
