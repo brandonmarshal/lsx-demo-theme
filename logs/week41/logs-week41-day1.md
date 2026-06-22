@@ -24,7 +24,7 @@
 
 ## Time Logs
 
--   3.30 hrs - Morning admin, setup linear issue, based off workflow research on creating pages in Figma from Claude Design.
+-   3.35 hrs - Morning admin, setup linear issue, based off workflow research on creating pages in Figma from Claude Design.
 
 ---
 
