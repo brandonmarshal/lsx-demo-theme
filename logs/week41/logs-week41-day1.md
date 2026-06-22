@@ -8,26 +8,34 @@
 
 **LS-1158** — Claude Design Prototype → Figma Migration `[In Progress]`
 
--   Researched and confirmed the migration workflow — evaluated Google Stitch, html.to.design, and Figma MCP; selected html.to.design given the PRO subscription and the rendered nature of the prototype pages
--   Identified that the prototype is a React app shell loading external JSX files — pages render live in the browser so html.to.design can capture each page as a rendered visual regardless of file structure
--   Tested the workflow on one page — worked well with components included
--   Created LS-1158 to track the migration — single issue with a full 10-step workflow checklist and page checklist split into Top-Level and Site Section groups; new `Figma` label created under the Design group
--   **Homepage — Figma token cleanup completed before migration could proceed:**
-    -   Found 416 unused local styles, 265 nodes bound to external `claude.ai/*` and `21st.dev/*` style libraries, and 44 distinct hardcoded hex colours across 793 nodes
-    -   Replaced all 265 external style bindings with correct LS token variables
-    -   Deleted all 416 phantom local styles — styles panel is now clean
-    -   Updated 232 nodes from hardcoded hex to the closest matching LS tokens
-    -   Created two new semantic token groups to handle a repeating semi-transparent overlay pattern (`canvas/glass-white` and `canvas/glass-dark` — 5 steps each, full dark/light mode support)
-    -   Homepage frame is now fully tokenised and ready to continue
+-   Researched and confirmed migration workflow — selected html.to.design over Google Stitch and Figma MCP
+-   Confirmed prototype is a React app shell — html.to.design captures each page as a rendered visual regardless of file structure
+-   Tested on one page — worked well with components included
+-   Created LS-1158 with a 10-step workflow checklist, page checklist, and new `Figma` label under Design group
+-   **Homepage — token cleanup:**
+    -   Replaced 265 external `claude.ai/*` and `21st.dev/*` style bindings with LS tokens
+    -   Deleted 416 phantom local styles — styles panel now clean
+    -   Updated 232 nodes from hardcoded hex to LS tokens
+    -   Created `canvas/glass-white` and `canvas/glass-dark` token groups (5 steps each, dark/light mode support)
+-   **Homepage — section work:**
+    -   Completed Ready To Start, Where to Fit, Featured Work, and Why LightSpeed
+    -   Variables, colours, spacing, and typography applied to each section
+    -   Working manually section by section — Figma AI ruled out after incident below
+-   **Component cleanup:** removed unnecessary plugin-generated components, retained and updated reusable ones
+-   **Figma AI incident:**
+    -   Figma AI deleted all typography styles from the live DS file during colour work
+    -   Created a backup, restored previous file version, confirmed full recovery — no data lost
+    -   Figma AI will not be used on DS frames going forward
 
 ---
 
 ## Time Logs
 
 -   3.35 hrs - Morning admin, setup linear issue, based off workflow research on creating pages in Figma from Claude Design.
+-   3.20 hrs - Contiued work on the Homepage sections, and had a incident with Figma AI that I was able to resolve and restore without any losses. I managed to complete a few sections
 
 ---
 
 ## Notes
 
--
+-    The Figma muscle memory is started to kick in and I should be able to work at a faster pace once I have the flow. 
