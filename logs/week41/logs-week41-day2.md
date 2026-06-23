@@ -14,12 +14,13 @@
     -   Ran Check Design audit across the frame — flagged variables replaced; noted that Check Design can resolve to the wrong variable group so all recommendations need manual verification on future pages
     -   Started setting up a Table of Contents frame in Figma as the prototype index — all pages will connect from here
     -   Homepage complete across all 3 screen sizes and ready to connect to the prototype
+    -   Complete the entire TOC frame, and included Tablet and Mobile Icons to redirect to those screen pages.
 
 ---
 
 ## Time Logs
 
--   3.15 hrs - Working on the homepage, setting it up in the prototype and creating a TOC for the Claude prototype as its very different from the current pages we have.
+-   3.45 hrs - Working on the homepage, setting it up in the prototype and creating a TOC for the Claude prototype as its very different from the current pages we have.
 
 ---
 
