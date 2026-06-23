@@ -14,18 +14,25 @@
     -   Ran Check Design audit — flagged variables replaced; all recommendations manually verified before applying
     -   Started Table of Contents frame as the prototype index — homepage ready to connect once TOC is set up
 
--   **Work Page — DS cleanup complete:**
+-   **Work Page — Migration complete:**
     -   Completed all 6 sections — WorkHero, Project Categories, Selected Projects, Across Every Engagement, Ready to Discuss a Project, and Related Routes
     -   Colours, typography, spacing, and auto layout fixes applied throughout
     -   Check Design run completed — recommendations manually reviewed and corrected (noted that Check Design can suggest incorrect token types when values match numerically)
     -   Still to do: Mobile and Tablet frames, responsive checks, prototype connection
+ 
+-    **Travel Publisher Rebuild — Migration complete:**
+    -    Completed all sections of this page and applied all the correct variables.
+    -    Created all 3 screens, mobile still needs some adjustments to look compelete. 
+    -    Used Check designs to ensure all variables have been replaced. 
+
 
 ---
 
 ## Time Logs
 
 -   3.45 hrs - Working on the homepage, setting it up in the prototype and creating a TOC for the Claude prototype as its very different from the current pages we have.
--   1.40 hrs - Continue working on and completed all sections for the "Work" page from Claude design. 
+-   1.40 hrs - Continue working on and completed all sections for the "Work" page from Claude design.
+-   3.10 hrs - completed another page from Claude
 
 ---
 
