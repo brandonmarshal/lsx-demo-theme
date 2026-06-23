@@ -20,11 +20,10 @@
     -   Check Design run completed — recommendations manually reviewed and corrected (noted that Check Design can suggest incorrect token types when values match numerically)
     -   Still to do: Mobile and Tablet frames, responsive checks, prototype connection
  
--    **Travel Publisher Rebuild — Migration complete:**
-    -    Completed all sections of this page and applied all the correct variables.
-    -    Created all 3 screens, mobile still needs some adjustments to look compelete. 
-    -    Used Check designs to ensure all variables have been replaced. 
-
+- **Travel Publisher Rebuild — Migration Complete**
+  - Completed all sections of the page and applied the correct design variables throughout.
+  - Created all three responsive layouts (Desktop, Tablet, and Mobile). The Mobile layout still requires a few final adjustments to be fully complete.
+  - Used Check Designs to verify that all legacy values have been replaced with the appropriate variables.
 
 ---
 
