@@ -32,9 +32,22 @@
 
 ---
 
+**GPT PageSpeed Agent — Configuration Update**
+
+-   Added LightSpeed PageSpeed MCP to the agent using the existing connected account — MCP actions kept behind user confirmation while MCP is still WIP
+-   Updated audit routing: URL/sitemap provided → use MCP as default; evidence provided without a URL → use manual skill path
+-   Agent instructed to run multi-page MCP audits sequentially, not concurrently (I created a backup of the original instructions before editing)
+-   Expanded Memory guidance to support storing site registry defaults, reporting preferences, and follow-up audit continuity
+-   Added Memory guardrails — agent must not store raw MCP output, temporary metrics, speculative findings, or one-off scratch notes
+-   All existing skills, Drive delivery, agent name, and Memory setup preserved unchanged
+-   Next step: test that URL requests reliably trigger MCP path and evidence-only requests stay on the manual path
+
+---
+
 ## Time Logs
 
 -   3.15 hrs - Working on the Linear Skill and testing its output. I also worked on the DESIGN.md file for LS-Agency.
+-   1.35 hrs - Wokring on updating the PageSpeed Audit agent in ChatGPT by adding the MCP server to it and updating instructions and memory. 
 
 ---
 
