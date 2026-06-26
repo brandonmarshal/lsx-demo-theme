@@ -36,18 +36,31 @@
 
 -   Added LightSpeed PageSpeed MCP to the agent using the existing connected account — MCP actions kept behind user confirmation while MCP is still WIP
 -   Updated audit routing: URL/sitemap provided → use MCP as default; evidence provided without a URL → use manual skill path
--   Agent instructed to run multi-page MCP audits sequentially, not concurrently (I created a backup of the original instructions before editing)
+-   Agent instructed to run multi-page MCP audits sequentially, not concurrently
 -   Expanded Memory guidance to support storing site registry defaults, reporting preferences, and follow-up audit continuity
 -   Added Memory guardrails — agent must not store raw MCP output, temporary metrics, speculative findings, or one-off scratch notes
 -   All existing skills, Drive delivery, agent name, and Memory setup preserved unchanged
--   Next step: test that URL requests reliably trigger MCP path and evidence-only requests stay on the manual path
+
+---
+
+**GPT PageSpeed Agent — MCP Testing**
+
+-   Ran a sitemap benchmark prompt against Southern Destinations and a single-page audit against the LightSpeed "Developer Upskilling" blog post
+-   Both prompts routed correctly to the MCP — tool selection and agent routing confirmed working
+-   MCP approval prompted and confirmed in both tests
+-   Both MCP runs timed out after approximately 8–10 minutes without returning a completed result
+-   Confirmed the issue is not caused by prompt wording, agent instructions, memory, or incorrect tool selection — root cause is within the MCP execution/auth/runtime layer
+-   Documented likely causes: auth/session handoff issues, approval-state propagation, stale shared-account token, server-side hang, or long-running execution instability
+-   Submitted structured developer feedback with test results, investigation areas, and recommended focus on server logs and post-approval execution flow
+-   Outcome: MCP routing and approval stage confirmed working — execution layer requires developer investigation before further testing
 
 ---
 
 ## Time Logs
 
 -   3.15 hrs - Working on the Linear Skill and testing its output. I also worked on the DESIGN.md file for LS-Agency.
--   1.35 hrs - Wokring on updating the PageSpeed Audit agent in ChatGPT by adding the MCP server to it and updating instructions and memory. 
+-   1.35 hrs - Wokring on updating the PageSpeed Audit agent in ChatGPT by adding the MCP server to it and updating instructions and memory.
+-   1.20 hrs - Running testing prompts on the ChatGPT agent, to see how it uses the MCP after I added it to the agent config.
 
 ---
 
