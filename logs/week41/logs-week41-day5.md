@@ -59,7 +59,7 @@
 ## Time Logs
 
 -   3.15 hrs - Working on the Linear Skill and testing its output. I also worked on the DESIGN.md file for LS-Agency.
--   1.35 hrs - Wokring on updating the PageSpeed Audit agent in ChatGPT by adding the MCP server to it and updating instructions and memory.
+-   1.45 hrs - Wokring on updating the PageSpeed Audit agent in ChatGPT by adding the MCP server to it and updating instructions and memory.
 -   1.20 hrs - Running testing prompts on the ChatGPT agent, to see how it uses the MCP after I added it to the agent config.
 
 ---
