@@ -15,7 +15,31 @@
 -   3 validated `.docx` audit reports delivered, named by slug
 -   Ran PageSpeed audits on Posts 6–8 alongside the SEO audits
 -   All SEO and PageSpeed reports uploaded to shared Drive — `Reports/lightspeedwp.agency`
--   Posts 9–11 (`website-design-process-prototype`, `website-content-collection-process`, `website-discovery-process`) awaiting Yoast panel data before audits can begin
+-   Posts 9–11 awaiting Yoast panel data before audits can begin
+
+---
+
+**Meeting — Warwick Booth**
+
+-   Discussed integrating AI agents into SEO workflows for LS Agency, Southern Destinations, and African Safaris
+-   Demonstrated AI Engine MCP usage for SEO audits, metadata extraction, and keyword gap identification
+-   Discussed Yoast First Time Configuration, organisation schema, and Open Graph tags for social media representation
+-   Agreed on a modular skill approach — break SEO tasks into 2–3 skills added to the existing SEO agent rather than building a new dedicated agent
+-   Proposed a future content agent for post rewrites, keeping the SEO agent focused on configuration and reporting
+-   **Actionables from the meeting:**
+    -   Set up and connect MCP for LS Agency Dev/staging site — immediate priority
+    -   Remove the Live MCP connection from the agent and replace with staging MCP to prevent unintended live site changes
+    -   Break SEO tasks down into modular skills for the existing agent
+    -   Run through Yoast content types and taxonomies (posts, pages, tours, travel styles) — social titles, separators, and site titles
+    -   Prepare a list of site policy pages and client questions to support Google E-E-A-T scoring
+    -   Explore using the Projects feature in AI tools for better context retention across sessions
+
+---
+
+**Staging Site MCP — Setup Attempt**
+
+-   Started setting up the MCP connection for the staging site using the same method as the live site
+-   No connection being made — troubleshooting to continue after lunch
 
 ---
 
@@ -23,6 +47,8 @@
 
 -   0.20 hrs - Morning admin
 -   3.0 hrs - Re-connecting the MCP in Claude, doing SEO audits with the AI Engine plugin/mcp and then using the PageSpeed MCP to also run audits on the same blog.
+-   1.5 hrs - Catchup meeting with Warwick, where we went over SEO configs and what is most important to configure on every site.
+-   0.40 hrs - Catchup with Ash, where we discussed creating the Staging site MCP for testing, rather than using the LIVE. I also started working on setting up the MCP for staging but I am running into errors. I will troubleshoot after lunch. 
 
 ---
 
