@@ -21,11 +21,12 @@
 
 **Research — Tools & Skills from Meeting**
 
--   Created 4 Asana tasks to track learning for each resource shared in the meeting
--   **Learn uSpec** — reviewed the uSpec docs and Figma MCP native integration; task created to track ongoing learning
--   **Component Contracts for Figma** — reviewed the repo; understood it as a skill for building and maintaining reusable Figma DS components from structured JSON contracts (variants, states, tokens, spacing, etc.); most useful for building a consistent shared component library, not for page-level imports
--   **Eden Spiekermann Skills** — reviewed the repo; understood it as a set of AI skills for auditing and repairing existing Figma designs against a design system (audit-design-system, fix-design-system-finding, apply-design-system); most useful for cleaning up imported or prototype screens to properly use shared components, variables, and tokens
--   **Linear Notes for Team** — Asana task created to track preparation of Linear usage notes for the mentor session; covers planning, status updates, and OpenSpec
+-   Created 5 Asana tasks to track learning for each resource shared in the meeting; summarised and documented findings as comments on each task
+-   **Learn uSpec** — reviewed the uSpec docs and Figma MCP native integration; task created, no summary comment added yet
+-   **Component Contracts for Figma** — reviewed the repo; skill for building reusable Figma DS components from structured JSON contracts (variants, states, tokens, spacing etc.); documented how to set it up and use it with example prompts; best used for building and maintaining a consistent shared component library
+-   **Eden Spiekermann Skills** — reviewed the repo; set of AI skills for auditing and repairing existing Figma designs against a DS (`audit-design-system`, `fix-design-system-finding`, `apply-design-system`); documented setup steps and usage prompts; best used for cleaning up imported or prototype screens to properly use shared components, variables, and tokens
+-   **Rad Spacing** — reviewed the skill; a Figma spacing rulebook for AI using a 4-tier gap system (tight → group → section → page boundaries); not for component generation — for making spacing intentional, consistent, and maintainable through Figma variables
+-   **Linear Notes for Team** — Asana task created to track preparation of Linear usage notes for the mentor session covering planning, status updates, and OpenSpec; not yet started
 
 ---
 
@@ -38,7 +39,8 @@
 
 ## Time Logs
 
--   ***
+-  3.55 hrs - Reviewed, organised and went through all links shared with me, created Asana tasks for what I am learning and writing comments for what I have learned so fa, reading all the related documents.
+-  1.10 hrs - Meeting with Ash and Zared to discuss Uspec usage and other points
 
 ## Notes
 
