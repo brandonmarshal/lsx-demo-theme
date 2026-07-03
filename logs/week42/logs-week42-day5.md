@@ -43,7 +43,7 @@
 -   **LS-1209** — Created as parent issue to track all Free Consultation and Website Briefing form improvement work
 -   **LS-1210** — Created to track design of consultation notification and autoresponder emails
 -   **LS-1211** — Created to track the Thank You page build for Free Consultation
--   **LS-1212** — Created to track adding a Website Type field to Free Consultation; field changed from dropdown to multi-select checkboxes — Ash flagged a business can run both WordPress and WooCommerce so single-select was incorrect
+-   **LS-1212** — Created to track adding a Website Type field to Free Consultation; field changed from dropdown to multi-select checkboxes — Ash flagged a business can run both WordPress and WooCommerce so single-select was incorrect; field built and verified on dev — 7 options + Other with conditional "Please specify" text field; multi-select and conditional logic both tested and confirmed working via DB check on `gf_form_meta` (form ID 4); legacy unused "Untitled" checkbox field cleaned up; ready to push to live when scheduled
 -   **LS-1214** — Created to track Website Briefing form conditional logic and field improvements; description updated and related issues linked
 
 ---
@@ -62,7 +62,8 @@
 ## Time Logs
 
 -   3.0 hrs - Working on my Linear tasks and meeting with Ash.
--   2.30 hrs - Continued my work on the linear issues, did research on Gravity Forms MCP and what the ChatGPT agent can actually do. 
+-   2.30 hrs - Continued my work on the linear issues, did research on Gravity Forms MCP and what the ChatGPT agent can actually do.
+-   0.40 hrs - Added the new fields to the "Free Consultation" form.
 
 ## Notes
 
