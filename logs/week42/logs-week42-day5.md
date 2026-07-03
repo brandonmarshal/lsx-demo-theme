@@ -8,54 +8,51 @@
 
 **Meetings**
 
--   **Ash Shaw (30mins)** — Discussed Gravity Forms improvements and consultation flow
-    -   Design a confirmation email for the Free Consultation form
-    -   Create a single Thank You page for Free Consultation (consolidate to one)
-    -   Add a Website Type field to the Free Consultation form
-    -   Research what's possible with the Gravity Forms skill in GPT
-    -   Capture the current Website Briefing form and get recommendations for improvements and conditional logic options
-    -   Site types confirmed as the standard set plus "Other"
+-   **Ash Shaw (30mins)** — Discussed Gravity Forms improvements and consultation flow — confirmation email design, Thank You page, Website Type field, Gravity Forms GPT skill research, and Website Briefing form improvements
 
 ---
 
 **LS-1205** — Site Structure & Taxonomy Audit `[Done]`
 
--   Confirmed homepage CTA popup working correctly on live — dev retest flagged for later in the build
--   Investigated all 3 canonical duplicate page groups — resolved as cleanup of 4 empty stub pages; mature pages identified as canonical; no content merge needed
--   Pulled `ls-plugin` repo and confirmed it as the authoritative taxonomy source — `project_type` and `software` missing on dev
--   Completed full canonical page inventory from PRD "Content Map" section
--   Documented Phase 2 and Phase 3+ additional pages and patterns needed
--   All 4 tasks checked off — follow-up taxonomy work spun into LS-1208; issue moved to Done
+-   Confirmed homepage CTA popup working on live; investigated and resolved canonical duplicate pages
+-   Confirmed `project_type` and `software` taxonomies missing on dev via `ls-plugin` audit
+-   Completed full page inventory from PRD Content Map; follow-up taxonomy work spun into LS-1208
+-   Issue moved to Done
 
 ---
 
-**LS-1208** — Deploy Missing Portfolio Taxonomies to Dev `[Backlog]`
+**LS-1212** — Add Website Type Field to Free Consultation `[Done]`
 
--   Created as a follow-up to LS-1205
--   Scope: deploy `project_type` and `software` taxonomies to dev via `ls-plugin` repo — plugin update required before terms can be created
--   "Health & Fitness" industry term confirmed as belonging under Industries — to be recreated on dev once taxonomies are live
--   No write actions taken yet — Brandon to action via VS Code
-
----
-
-**LS-1209 — Form Improvements Parent Issue + Sub-issues Created `[Backlog]`**
-
--   **LS-1209** — Created as parent issue to track all Free Consultation and Website Briefing form improvement work
--   **LS-1210** — Created to track design of consultation notification and autoresponder emails
--   **LS-1211** — Created to track the Thank You page build for Free Consultation
--   **LS-1212** — Created to track adding a Website Type field to Free Consultation; field changed from dropdown to multi-select checkboxes — Ash flagged a business can run both WordPress and WooCommerce so single-select was incorrect; field built and verified on dev — 7 options + Other with conditional "Please specify" text field; multi-select and conditional logic both tested and confirmed working via DB check on `gf_form_meta` (form ID 4); legacy unused "Untitled" checkbox field cleaned up; ready to push to live when scheduled
--   **LS-1214** — Created to track Website Briefing form conditional logic and field improvements; description updated and related issues linked
+-   Field changed from dropdown to multi-select checkboxes — a business can run both WordPress and WooCommerce so single-select was incorrect
+-   Built and verified on dev — 7 options + Other with conditional "Please specify" text field; confirmed via DB check on `gf_form_meta` (form ID 4); legacy unused checkbox field cleaned up
+-   Ready to push to live when scheduled; moved to Done
 
 ---
 
-**LS-1213** — Document Gravity Forms GPT Skill Capabilities `[Backlog]`
+**LS-1211** — Build Thank You Page for Free Consultation `[In Progress]`
 
--   Created to track research and documentation of what the Gravity Forms skill can do in GPT
--   Researched Gravity Forms MCP feasibility — enabled GF REST API and evaluated GravityKit's GravityMCP project
--   Findings: GravityMCP is self-hosted only — no publicly hosted endpoint ChatGPT or Claude can connect to without custom infrastructure; GF REST API credentials alone are not usable from inside an LLM client without a server in between
--   Confirmed no shortcut exists — manual Form Editor changes remain the correct path; a custom MCP server (same pattern as `zendesk-mcp` under LS-867) would be required for write capability
--   Finding confirms the Gravity Forms skill's read-only/audit/draft design is correct as-is — not a gap
--   Linked to LS-867
+-   Generated light and dark mode design concepts via Design Partner agent; both signed off by Brandon
+-   Decisions locked: 3-column footer recap block kept, header CTA left as-is, SLA copy still placeholder pending real response time confirmation
+-   Design phase complete — build phase next; moved to In Progress
+
+---
+
+**LS-1213** — Document Gravity Forms GPT Skill Capabilities `[Done]`
+
+-   Researched GF MCP feasibility — enabled GF REST API and evaluated GravityKit's GravityMCP; confirmed it is self-hosted only with no publicly hosted endpoint available
+-   Confirmed no shortcut exists — manual Form Editor changes remain the correct path; custom MCP server would be required for write capability
+-   Skill's read-only/audit/draft design confirmed correct as-is; closing summary posted; moved to Done
+
+---
+
+**LS-1209** — Free Consultation & Website Briefing Form Improvements — created as parent epic; scoped and linked all sub-issues
+
+**Sub-issues created (no work done yet):**
+-   LS-1208 — Deploy missing portfolio taxonomies to dev via `ls-plugin`
+-   LS-1210 — Design consultation notification + autoresponder emails
+-   LS-1214 — Website Briefing form conditional logic + field improvements
+-   LS-1215 — Refine Free Consultation page design
+-   LS-1216 — Free Consultation CTA pattern library (3–4 versions)
 
 ---
 
@@ -64,6 +61,8 @@
 -   3.0 hrs - Working on my Linear tasks and meeting with Ash.
 -   2.30 hrs - Continued my work on the linear issues, did research on Gravity Forms MCP and what the ChatGPT agent can actually do.
 -   0.40 hrs - Added the new fields to the "Free Consultation" form.
+-   1.30 hrs - Working off linear tasks, using the ChatGPT Design agent to get a brief as well as concept images for the Thank You page.
+-   0.20 hrs - Doing Reflections and next weeks planning. 
 
 ## Notes
 
