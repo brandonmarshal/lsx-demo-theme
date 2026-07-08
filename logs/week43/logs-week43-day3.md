@@ -33,12 +33,17 @@
     -   Project types — new taxonomy seeded with live's 5 existing terms; 19 live posts will need matching tags added on dev
     -   Services — untouched, all 9 terms retained
 -   Next steps: build into plugin repo — term registration for Software + Project types, then post re-tagging
+-   Full implementation plan documented and approved:
+    -   **Part A — Repo:** new `inc/class-portfolio-terms.php` seeder class — defines approved term set as a PHP array, hooked on `init`, versioned and idempotent; wired into `ls-plugin.php` with `CHANGELOG.md` entry and minor version bump
+    -   **Part B — Dev site content:** follows only after Part A is merged and deployed — confirm seeder ran, re-tag 6 posts to Services "Design", tag 19 Project types posts to match live, verify and remove orphaned old Industries terms, re-run LS-1205 taxonomy audit
+-   No implementation started yet — plan approved and ready to action
 
 ---
 
 ## Time Logs
 
 -   3.45 hrs - Working on the final CTA Patterns on LS-1216, created PR, got Zared's approval and merged into develop.
+-   0.40 hrs - Planned my approach with Claude on the LS-1208 tasks. 
 
 ---
 
