@@ -41,7 +41,7 @@
 ## Time Logs
 
 -   3.40 hrs - Working on LS-1206 and created sub-tasks for carry over work.
--   2.35 hrs - Continue working on sub-issues of LS-1206 and started work on the ls-theme repo.
+-   2.45 hrs - Continue working on sub-issues of LS-1206 and started work on the ls-theme repo.
 
 ---
 
