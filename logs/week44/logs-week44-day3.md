@@ -10,7 +10,7 @@
 
 -   **Zared Rogers — WordPress Theme Architecture & MVP Strategy**
     -   Reviewed breadcrumbs implementation — confirmed mistake in building a custom block; new plan is to remove it and use `yoast-seo/breadcrumbs` directly in theme templates; Yoast SEO now a formal theme dependency
-    -   LS-1226 (slug deduplication) reviewed — Zared determined the 58 duplicates reported by the AI were orphaned DB/retired theme data, not active repo duplicates; zero real duplicates in the current repo; task to be repurposed to focus on building missing templates instead
+    -   LS-1226 (slug deduplication) reviewed — Zared determined the 58 duplicates were orphaned DB/retired theme data; zero real duplicates in current repo; task repurposed to focus on building missing templates
     -   Agreed on strict MVP Phase 1 order of operations: Parts → Templates → Pages
     -   Template vs pattern strategy confirmed — patterns created first, then injected into templates
     -   Styling philosophy confirmed — keep as much as possible in `theme.json`; CSS reserved for animations, WooCommerce overrides, and elements JSON can't handle; lazy-loaded per page
@@ -24,10 +24,12 @@
 
 ---
 
-**Linear Agent — Custom Instructions Update**
+**Linear Agent & Skills**
 
 -   Updated personal Linear agent custom instructions to align with the team's standards and preferences
--   Ensures the Linear agent works consistently with how the rest of the team operates
+-   Extracted shared team Linear skills from Linear
+-   Created a Google Doc with an Agent Personalisation tab and a Shared Skills tab for the team
+-   Used the document in NotebookLM to generate studio visuals
 
 ---
 
@@ -40,7 +42,7 @@
     -   `CHANGELOG.md` reworded to reflect Yoast block adoption
     -   `page.html`, `single.html`, `archive.html` confirmed — no changes needed, already wired to the generic `breadcrumbs` template-part slug
     -   Yoast settings configured on local test site — breadcrumbs for Posts set to Categories; Portfolios left at None intentionally; breadcrumbs enabled
-    -   Ran `wp yoast index --reindex` after creating nested test content and after settings change — normal one-time step on a fresh Yoast install
+    -   Ran `wp yoast index --reindex` after creating nested test content and after settings change
     -   Top-level page, nested/child page, nested category archive, and single post in nested category all render correct trail ✅
     -   Connected AI Engine WordPress MCP server so Claude Code (VS Code) can query the local site directly going forward
     -   **Still to do:** Portfolio CPT item/archive, search results, and 404 pages; final debug.log check
@@ -52,7 +54,8 @@
 -   1.06 hrs - Catchup meeting with Zared to discuss some of my LS issues.
 -   1.0 hrs - Gemini Enterprise Webinar
 -   2.50 hrs - Fixed my Claude setup in VS Code, setup Copilot Desktop app and looked into what it can do, and then started working on LS-1228 just before the webinar.
--   2.0 hrs - Working on LS-1228 and removing my mistakes previously made. Then I tested the Yoast breadcrumb block on my local testing site to ensure its working well. 
+-   2.0 hrs - Working on LS-1228 and removing my mistakes previously made. Then I tested the Yoast breadcrumb block on my local testing site to ensure its working well.
+-   1.40 hrs - Working on the PR comments for LS-1228 and doing Linear skills documentation. 
 
 ---
 
