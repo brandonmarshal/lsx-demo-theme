@@ -18,19 +18,37 @@
 
 ---
 
-**LS-1220** — Approve New Portfolio Taxonomy Terms `[In Progress]`
+**LS-1220** — Approve New Portfolio Taxonomy Terms `[Done]`
 
--   Progress update posted per Warwick's approved decisions
--   Opened PR #17 against `ls-plugin` `develop` — adds 3 approved terms to the Portfolio taxonomy seeder: Media (Industries), New Tour Operator Website (Project Type), Design System (Service — corrected from Project Type per Warwick)
--   Verified on local WP install via MCP — all 3 terms seed correctly, nothing else affected
--   CodeRabbit and Gemini Code Assist both reviewed with no actionable feedback; PR passing all checks, awaiting merge
--   **Pending once PR is merged and deployed to dev:** retag Novus Media, Giltedge Africa, ARMD Digital, Southern Destinations, and Slimmer met SARIE; trash the "Novus Media News Network" draft post
+-   PR #17 opened, reviewed (CodeRabbit + Gemini, no actionable feedback), and merged — adds Media, New Tour Operator Website, and Design System terms to the Portfolio taxonomy seeder
+-   Verified on local WP install via MCP before merge
+-   **Final retagging completed on dev:**
+    -   Novus Media — Industries → Media, Project Type → New Website, Services +Design System
+    -   Giltedge Africa — Project Type → New Tour Operator Website
+    -   ARMD Digital — Project Type → Website Redesign
+    -   Southern Destinations — Project Type → New Website
+    -   Slimmer met SARIE — Project Type → New Website
+    -   "Novus Media News Network" draft post deleted
+-   All changes verified on dev; issue closed as Done
 
 ---
 
 **LS-1226** — Phase 1 Templates: Build, Rework & Pattern Naming Convention `[Done]`
 
 -   PR merged; issue moved to Done
+
+---
+
+**LS-1214** — Website Briefing Form — Conditional Logic + Field Improvements `[Done]`
+
+-   Completed and verified live on dev (`/briefing/wordpress/`, form ID 21)
+-   Added Website Type checkbox field (same options as LS-1212) with conditional "Please specify" field for Other
+-   Domain field now conditional on "Do you own your domain name already?" = No
+-   Content-scope note added when client indicates they need help with content — flags the budget/content-writing mismatch
+-   Ecommerce, Blog, and Portfolio checklist items each now reveal their relevant follow-up fields (product count/gateway/shipping, posting frequency/writer, item count)
+-   Merged the two open-ended "what's in your head" / "list your pages" fields into one combined field
+-   Budget/timeframe section left untouched as specified
+-   Built and conditional-logic-tested locally first, then applied to dev; issue closed as Done
 
 ---
 
@@ -43,6 +61,7 @@
 ## Time Logs
 
 -   2.30 hrs - Completed LS-1223 and working on LS-1220, did a review for Zared's PR.
+-   2.10 hrs - Working on LS-1214 and revamped the Breifing form.
 
 ---
 
