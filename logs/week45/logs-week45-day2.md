@@ -35,12 +35,11 @@
 
 -   Decision agreed with boss: CPT stays as-is; `project_type` and `service` taxonomy slugs renamed; Industry and Software merged into one new combined taxonomy (`industry-and-software`)
 -   Full migration task list scoped: slug renames, new taxonomy creation, term migration, post re-tagging
--   Flagged as a blocker for LS-1616 (Portfolio archive template rework) — that template's queries need to be built against the final taxonomy structure
+-   Flagged as a blocker for LS-1616 (Portfolio archive template rework)
 
 ---
 
 **Issues created today (no work done yet):**
-
 -   LS-1615 — Templates, Menus and Block Bindings Cleanup (epic)
 -   LS-1616 — Rebuild Portfolio & Blog Archive Templates
 -   LS-1617 — Implement Block Bindings
@@ -48,10 +47,24 @@
 
 ---
 
+**Learning — WordPress Block Bindings**
+
+-   Learned how Block Bindings let a normal Core block (paragraph, image, button) pull its value live from a data source instead of static content — no custom React block needed for simple dynamic data
+-   Covered key distinctions: synced patterns vs synced patterns with overrides vs `core/post-meta` bindings inside a Query Loop
+-   Learned bindings aren't a separate saved item — they're JSON metadata attached directly to a block's markup wherever it sits
+-   Covered the 4 built-in Core sources and confirmed unlimited custom sources can be registered
+-   Learned the security gate on post-meta — field must have `show_in_rest => true`; underscore-prefixed keys always blocked
+-   Learned custom sources aren't DB-bound — a binding source is just a PHP function that can return a DB read, API call, or pure computed value
+-   Covered the PHP/JS registration split — PHP powers front-end output, JS powers editor UI/preview
+-   Built 2 hands-on tutorials: a simple UI-only binding, and a complex custom source with PHP callback + JS registration for auto-calculated reading time
+
+---
+
 ## Time Logs
 
 -   1.0 hrs - Meeting with Zared and Ash
 -   5.40 hrs - Working on the rest of the LS issues mentioned above, full work logs on the issues.
+-   1.50 hrs - Learning about block bindings get grasps the concept before meeting Warwick tomorrow.
 
 ## Notes
 
