@@ -6,6 +6,13 @@
 
 ---
 
+**Meeting — Warwick**
+
+-   Session on WordPress Block Bindings — demonstrated Tour Operators block bindings as a real reference example
+-   Covered custom block bindings and native WordPress block bindings functionality
+
+---
+
 **LS-1224** — Approval: Footer Legal Pages `[Done]`
 
 -   Final decisions confirmed: Privacy Policy retention set to 5 years minimum; processor list drafted from live plugin audit (Gravity Forms, Google Site Kit/GA, MailPoet, WP Mail SMTP, Cloudflare, Wordfence, AI providers); legal entity name confirmed unchanged for Terms & Conditions; Policies & Principles confirmed as single condensed page
@@ -37,18 +44,14 @@
 
 **LS-1618** — Fix Mega Menus + Header/Footer `[Backlog]`
 
--   **Full audit completed** on live site Header, Footer, and Mega Menus, cross-referenced against `ls-theme` repo:
-    -   `patterns/header.php` and `patterns/footer.php` confirmed still LS-1226 placeholder stubs — none of the live content comes from the repo yet, all authored ad hoc in Site Editor
-    -   No dedicated mega-menu pattern exists in the repo at all
-    -   Mega menu found riddled with broken links — most panel items recycle 6 placeholder URLs, 20+ items have no href, "View all work"/"View all about" both 404 due to a `/portrfolio/` typo
-    -   Footer legal links correct, but social links point to bare domains, one nav column mislabeled, several footer nav slots render empty
-    -   Header missing "Systems"/"Pricing" items and "Start a project" CTA from the approved design
--   **Research — Ollie Menu Designer confirmed pattern-based approach:**
-    -   Mega menus to be built as ordinary block patterns (not template parts/templates), using `Block Types: core/template-part/menu` and `Categories: menu` in pattern headers so Ollie's UI can select them
-    -   Namespaced as `ls-theme/mega-menu-default` and `ls-theme/mega-menu-service`, grouped under new `patterns/menu/` subfolder
-    -   Branch created: `feature/LS-1618-mega-menus-header-footer`
--   **Figma work done:** Service and Default Mega Menu frames built and validated against DS variables via Check Designs — ready to bring into WordPress
--   **Next:** extract validated Figma frames into WordPress patterns, then rebuild Header/Footer to match
+-   **Full audit completed** on live Header, Footer, and Mega Menus — found placeholder repo stubs, broken links throughout the mega menu, mislabeled/empty footer nav slots, and missing Header items vs approved design
+-   **Research confirmed pattern-based approach** via Ollie Menu Designer — mega menus built as block patterns rather than template parts; branch `feature/LS-1618-mega-menus-header-footer` created
+-   Figma work done — Service and Default Mega Menu frames built and validated against DS variables
+-   **Implementation started:**
+    -   Both mega menu patterns built (`mega-menu-default.php`, `mega-menu-service.php`) flagged correctly for Ollie's UI
+    -   New supporting tokens/styles added — `phase.*` colour family (AA-checked), `text.subtle`, `shadow.popover`, Mega Menu Panel section style
+    -   Confirmed correct setup location in Ollie's UI — via the Dropdown Menu block inside Navigation, not the Header's site-wide Mobile Menu setting
+    -   Hit a block preview error once the pattern was inserted into a Dropdown Menu template part — ruled out caching and pattern registration issues so far; still isolating the actual render failure
 
 ---
 
@@ -56,6 +59,7 @@
 
 -   2.30 hrs - Finished going over block bindings resources and working on LS-1609
 -   2.50 hrs - Working on LS-1224 and LS-1609 and LS-1618
+-   2.40 hrs - Working on LS-1618
 
 ---
 
