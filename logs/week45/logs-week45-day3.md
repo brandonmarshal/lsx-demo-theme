@@ -9,7 +9,7 @@
 **LS-1224** — Approval: Footer Legal Pages `[Done]`
 
 -   Final decisions confirmed: Privacy Policy retention set to 5 years minimum; processor list drafted from live plugin audit (Gravity Forms, Google Site Kit/GA, MailPoet, WP Mail SMTP, Cloudflare, Wordfence, AI providers); legal entity name confirmed unchanged for Terms & Conditions; Policies & Principles confirmed as single condensed page
--   All 3 drafts reviewed and approved by Zared — final `.md` files produced with no placeholders remaining
+-   All 3 drafts reviewed and approved by Zared last week already — final `.md` files produced with no placeholders remaining
 -   Content handoff moved to LS-1605 for build; issue closed
 
 ---
