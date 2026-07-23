@@ -18,6 +18,15 @@
     -   Extraction → editor refinement → JSON sync loop confirmed as the standard for turning Figma frames into production markup
     -   Local → Dev environment sync protocol aligned for finalising navigation menus
     -   Two reference documents produced as the standing spec for all future pattern/section work: "Style Implementation Strategy" and "Technical Workflow Specification"
+-   **Work mega menu hover/icon fixes — used as the test case before rolling out to the rest:**
+    -   Found icon wells were oversized and had a competing hover reaction of their own vs the row's intended hover
+    -   Discovered nested per-block style JSON files aren't consumed by WordPress at all — no PHP loader reads that folder, a known repo caveat
+    -   Corrected an invalid raw `"css"` string attempt for hover, rebuilt using the real supported nested `:hover` state schema
+    -   Restructured to one single registered style owning the whole row — icon no longer has independent hover behaviour
+    -   Confirmed via direct stylesheet inspection that WordPress's global-styles engine only generates hover/focus CSS for its built-in elements allowlist — arbitrary block style variations are silently dropped; confirmed as a WordPress core limitation, not a plugin bug
+    -   Per JSON-first policy, moved just the 2 unexpressible hover rules into `_menu-motion.scss`, compiled via `npm run build:css` — hover now works end-to-end
+    -   Found and fixed a second, separate editor-only bug — Icon Block wasn't reflecting its own colour attribute in the editor canvas preview; fixed using the plugin's native colour attributes instead of a style override
+    -   Work mega menu now fully correct in both editor and frontend — not yet rolled out to About/Insights/Pricing/Solutions/Services
 
 ---
 
@@ -25,6 +34,7 @@
 
 -   1.0 hrs - Work Session with Zared, we went over Mega menus and more about his workflows
 -   4.0 hrs - Continued working and the Mega Menus, this is taking long because I was not working with the best workflow.
+-   1.40 hrs - I struggled with the Menu's a lot and eventually found the problem I was stuck on. so I created SCSS to resolve that issue and now all hovers are working
 
 ---
 
