@@ -26,7 +26,13 @@
     -   Confirmed via direct stylesheet inspection that WordPress's global-styles engine only generates hover/focus CSS for its built-in elements allowlist — arbitrary block style variations are silently dropped; confirmed as a WordPress core limitation, not a plugin bug
     -   Per JSON-first policy, moved just the 2 unexpressible hover rules into `_menu-motion.scss`, compiled via `npm run build:css` — hover now works end-to-end
     -   Found and fixed a second, separate editor-only bug — Icon Block wasn't reflecting its own colour attribute in the editor canvas preview; fixed using the plugin's native colour attributes instead of a style override
-    -   Work mega menu now fully correct in both editor and frontend — not yet rolled out to About/Insights/Pricing/Solutions/Services
+-   **Rolled out to remaining menus + rebuilt Footer and Header:**
+    -   Default-menu pattern applied to About/Insights/Pricing/Solutions — 36px Phosphor icons matched per row, single-style hover source
+    -   Fixed a site-wide link-hover regression caused by `core/navigation`'s own higher-specificity underline-on-hover default
+    -   Rebuilt Services mega menu to match Figma — working phase dots/arrows, per-phase hover colour, panel that hugs its content
+    -   Rebuilt Footer and Header from LS-1226 placeholder stubs to approved Figma designs — footer notes panel, proof points, nav grid, socials; header logo, nav, search, and a fully functional light/dark toggle generated straight from `theme.json`/`styles/dark.json` so it can't drift out of sync
+    -   Caught and fixed 3 bugs before shipping: invalid block-attribute combo breaking editor validation, a gradient value in the wrong `theme.json` property, header clamped to content-width instead of full-width
+-   **Status:** all 6 mega menus, footer, and header now built to spec; nav items use plain link blocks so Ollie's Dropdown Menu blocks can be attached manually per item
 
 ---
 
@@ -35,6 +41,7 @@
 -   1.0 hrs - Work Session with Zared, we went over Mega menus and more about his workflows
 -   4.0 hrs - Continued working and the Mega Menus, this is taking long because I was not working with the best workflow.
 -   1.40 hrs - I struggled with the Menu's a lot and eventually found the problem I was stuck on. so I created SCSS to resolve that issue and now all hovers are working
+-   3.30 hrs - Worked overtime to make up some of the time lost with my struggles. Now back on track. 
 
 ---
 
