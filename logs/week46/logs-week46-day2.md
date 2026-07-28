@@ -31,6 +31,7 @@
 
 -   3.10 hrs - Working on LS-1616, completed the main components and completed new Hero section design.
 -   3.0 hrs - Continued working on work-archive sections on WordPress
+-   1.40 hrs - Continued working on the work-archive page. 
 
 ---
 
