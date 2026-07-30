@@ -45,9 +45,18 @@
 
 ---
 
+**UI Fixes — 3 Commits**
+
+-   **Portfolio archive** — was rendering the generic archive layout instead of the custom design; renamed the template file so WordPress picks it up automatically
+-   **Mobile menu** — fixed unreadable text in dark mode (core WordPress was forcing white/black regardless of mode), fixed 2 rows using the wrong font causing uneven padding, fixed row misalignment in the editor at wide screens
+-   **Header** — fixed hamburger menu floating in the middle instead of sitting beside the other icons on mobile/tablet; fixed uneven spacing gap below the header vs above it
+
+---
+
 ## Time Logs
 
 -   5.0 hrs - Mostly doing audits on yesterday's work, then I did some SCSS learning and reviewing of the files in ls-theme to ensure they are correct. Gathered resources to help me plan the work-single template.
+-   4.0 hrs - Worked on some UI fixes and completed the design plan for the work single template.
 
 ---
 
