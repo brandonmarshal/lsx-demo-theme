@@ -25,20 +25,33 @@
 **Meeting — Zared Rogers**
 
 -   Went through weekly planning; Zared gave advice on approach and workflow
--   **Header/Logo:** logo currently hard-coded as an image instead of a proper "side logo" — causes it to revert on every header reset; to be fixed
--   **Navigation menu audit:** numerous duplicate/broken draft menus need cleanup via Site Editor > Navigation (not possible in the standard block editor); primary menu to be renamed "Main Navigation"
--   **Responsive layout:** agreed on a nested-column approach (columns within columns) so content collapses cleanly from 4 columns (desktop) → 2 (tablet) → 1 (mobile), specifically for Platforms/Case Studies sections
--   **Workflow agreed:** DB-first approach — fine-tune in the editor first, then copy final code into theme files to keep dev and theme in sync; use the block editor more for small padding/spacing tweaks rather than manual coding
--   **Work Archive:** finalise template, recover any broken blocks, merge into theme
--   **Work Single:** for V1, keep existing content block structure to preserve data integrity (rebuilding it would require manually redoing every existing project); modernise only the Hero section with new styles, gradients, and custom taxonomies
--   **Task list agreed:** logo fix, menu audit + rename, Start Project button review, block recovery scan, mega menu spacing + 2x2 layout for Discover/Create/Build/Launch, nested column implementation, consistent block spacing, combined Header/Nav PR, Work Archive finalisation, Work Single Hero build — Work Archive and Single templates targeted for review by Tuesday/Wednesday
+-   **Header/Logo:** logo hard-coded as an image instead of a proper "side logo" — causes it to revert on every header reset; to be fixed
+-   **Navigation menu audit:** duplicate/broken draft menus need cleanup; primary menu to be renamed "Main Navigation"
+-   **Responsive layout:** agreed on a nested-column approach so content collapses cleanly from 4 columns (desktop) → 2 (tablet) → 1 (mobile)
+-   **Workflow agreed:** DB-first approach — fine-tune in editor, then copy final code into theme files
+-   **Work Archive:** finalise and merge into theme; **Work Single:** keep existing content block structure for V1, modernise only the Hero
+-   Task list agreed — targeting Work Archive/Single templates ready for review by Tuesday/Wednesday
 
+---
+
+**LS-2243** — Mobile Menu Editor Error + Header Logo Fix `[In Progress]`
+
+-   Created to track the navigation/menu audit and 2 related bugs
+-   Went through DB navigations on dev — deleted unused ones, kept those in use or not yet confirmed
+-   **Mobile Menu editor error — root cause found:**
+    -   Ruled out malformed markup, WP core/Gutenberg version mismatch, `ls-plugin` drift, and DB override
+    -   Isolated the cause to `core/details` blocks missing an explicit `layout` attribute — every other layout-aware block in the theme sets one, this file doesn't, triggering an editor crash
+    -   Fix identified but not yet applied: add `"layout":{"type":"default"}` to all 6 `wp:details` instances
+-   **Header logo issue confirmed:** `header.php` uses a hardcoded `wp:image` instead of `wp:site-logo`; Mobile Menu already does this correctly and `custom-logo` theme support already exists — fix is straightforward
+-   Branch created: `LS-2243-mobile-menu-editor-error-and-header-logo-block`
+-   No code edited yet — investigation only; fixes to be made and left uncommitted for review before handing off commit/push and PR
 ---
 
 ## Time Logs
 
 -   0.50 hrs - Catchup meeting with Zared
 -   2.0 hrs - Doing my admin work, like plannign for the week, reflections of last week and reviewed the Code from my simple-ui-fixes branch that was merged.
+-   1.0 hrs - Setting up the task and starting auditing the Mobile Menu. I also cleared the un-used Navigation Menus from the dev site db.
 
 ---
 
