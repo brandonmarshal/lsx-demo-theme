@@ -34,17 +34,23 @@
 
 ---
 
-**LS-2243** — Mobile Menu Editor Error + Header Logo Fix `[In Progress]`
+**LS-2243** — Navigation Audit & Menu Fixes (Header, Logo, Mega Menu) `[Backlog]`
 
--   Created to track the navigation/menu audit and 2 related bugs
--   Went through DB navigations on dev — deleted unused ones, kept those in use or not yet confirmed
--   **Mobile Menu editor error — root cause found:**
-    -   Ruled out malformed markup, WP core/Gutenberg version mismatch, `ls-plugin` drift, and DB override
-    -   Isolated the cause to `core/details` blocks missing an explicit `layout` attribute — every other layout-aware block in the theme sets one, this file doesn't, triggering an editor crash
-    -   Fix identified but not yet applied: add `"layout":{"type":"default"}` to all 6 `wp:details` instances
--   **Header logo issue confirmed:** `header.php` uses a hardcoded `wp:image` instead of `wp:site-logo`; Mobile Menu already does this correctly and `custom-logo` theme support already exists — fix is straightforward
--   Branch created: `LS-2243-mobile-menu-editor-error-and-header-logo-block`
--   No code edited yet — investigation only; fixes to be made and left uncommitted for review before handing off commit/push and PR
+-   Created to track the navigation/menu audit and related fixes
+-   Went through DB navigations on dev — deleted unused ones, kept those in use or not yet confirmed; confirmed 5 currently published Navigation menus remain, primary menu already correctly named "Main Navigation"
+-   No recoverable trace found for the manually-deleted draft/duplicate menus — checked trash, revisions, and Wordfence's audit log, all inconclusive
+-   **Mobile Menu editor error — fixed and verified:**
+    -   Root cause: `core/details` blocks missing an explicit `layout` attribute, triggering an editor crash on Dev
+    -   Fixed by adding `"layout":{"type":"default"}` to all 6 `wp:details` blocks in `parts/mobile-menu.html`
+    -   Verified live on Dev via a temporary DB override, confirmed crash resolved, then removed the override
+-   **Header logo — fixed:** replaced hardcoded `wp:image` in `patterns/header.php` with `wp:site-logo`, matching the Mobile Menu's existing approach — logo no longer reverts on header reset
+-   **Services mega menu (Mobile Menu) restructured:**
+    -   Changed from a single vertical stack of 6 phase rows into 3 paired columns (Discover+Create, Build+Launch, Grow+Evolve), 2-up at every screen width
+    -   Fixed columns not stretching full width
+    -   Separator line width issue between column pairs — CSS fix attempted and didn't resolve it; fixed manually in the editor instead using the "Wide Line" style
+-   Branch: `feature/ls-2243-navigation-audit-menu-fixes-header-logo-mega-menu`
+-   **Remaining scope:** mega menu spacing refinement, 2x2 layout for Discover/Create/Build/Launch, nested column technique for Work Engagement sections, standardised block spacing across rows/stacks
+
 ---
 
 ## Time Logs
@@ -52,6 +58,7 @@
 -   0.50 hrs - Catchup meeting with Zared
 -   2.0 hrs - Doing my admin work, like plannign for the week, reflections of last week and reviewed the Code from my simple-ui-fixes branch that was merged.
 -   1.0 hrs - Setting up the task and starting auditing the Mobile Menu. I also cleared the un-used Navigation Menus from the dev site db.
+-   2.0 hrs - Working on [LS-2243](https://linear.app/lightspeedwp/issue/LS-2243/navigation-audit-and-menu-fixes-header-logo-mega-menu), everything is logged on the issue. 
 
 ---
 
