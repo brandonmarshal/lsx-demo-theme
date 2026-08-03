@@ -34,23 +34,17 @@
 
 ---
 
-**LS-2243** — Navigation Audit & Menu Fixes (Header, Logo, Mega Menu) `[Backlog]`
+**LS-2243** — Navigation Audit & Menu Fixes (Header, Logo, Mega Menu) `[In Review]`
 
--   Created to track the navigation/menu audit and related fixes
--   Went through DB navigations on dev — deleted unused ones, kept those in use or not yet confirmed; confirmed 5 currently published Navigation menus remain, primary menu already correctly named "Main Navigation"
--   No recoverable trace found for the manually-deleted draft/duplicate menus — checked trash, revisions, and Wordfence's audit log, all inconclusive
--   **Mobile Menu editor error — fixed and verified:**
-    -   Root cause: `core/details` blocks missing an explicit `layout` attribute, triggering an editor crash on Dev
-    -   Fixed by adding `"layout":{"type":"default"}` to all 6 `wp:details` blocks in `parts/mobile-menu.html`
-    -   Verified live on Dev via a temporary DB override, confirmed crash resolved, then removed the override
--   **Header logo — fixed:** replaced hardcoded `wp:image` in `patterns/header.php` with `wp:site-logo`, matching the Mobile Menu's existing approach — logo no longer reverts on header reset
--   **Services mega menu (Mobile Menu) restructured:**
+-   **Logo fix** — replaced hardcoded `wp:image` in `patterns/header.php` with `wp:site-logo`, matching the Mobile Menu's existing approach; logo no longer reverts on header reset
+-   **Navigation menu audit** — deleted unused/draft menus via DB; confirmed 5 published menus remain, primary menu confirmed as "Main Navigation"; no recoverable trace found for the deleted duplicates
+-   **Mobile Menu editor error — fixed and verified:** root cause was `core/details` blocks missing an explicit `layout` attribute, triggering an editor crash on Dev; fixed and verified live via a temporary DB override, then removed
+-   **Services mega menu restructured:**
     -   Changed from a single vertical stack of 6 phase rows into 3 paired columns (Discover+Create, Build+Launch, Grow+Evolve), 2-up at every screen width
     -   Fixed columns not stretching full width
-    -   Separator-line approach abandoned entirely — removed both separator blocks, the custom style file created for them, and the related CSS/SCSS additions
-    -   Replaced with a simpler fix: dashed border styling added directly to 2 of the 3 column rows (Discover/Create and Build/Launch); third row (Grow/Evolve) intentionally left without a border
--   Branch: `feature/ls-2243-navigation-audit-menu-fixes-header-logo-mega-menu`
--   **Remaining scope:** mega menu spacing refinement, 2x2 layout for Discover/Create/Build/Launch, nested column technique for Work Engagement sections, standardised block spacing across rows/stacks
+    -   Separator-line approach abandoned and fully removed; replaced with dashed border styling on 2 of the 3 column rows
+-   **All remaining checklist items completed:** mega menu spacing refined, 2x2 column layout implemented for Discover/Create/Build/Launch, nested column technique applied to Work Engagement sections, block spacing standardised across all rows/stacks
+-   Branch committed and pushed; PR #18 opened against `ls-theme`, awaiting review
 
 ---
 
@@ -60,7 +54,8 @@
 -   2.0 hrs - Doing my admin work, like plannign for the week, reflections of last week and reviewed the Code from my simple-ui-fixes branch that was merged.
 -   1.0 hrs - Setting up the task and starting auditing the Mobile Menu. I also cleared the un-used Navigation Menus from the dev site db.
 -   2.0 hrs - Working on [LS-2243](https://linear.app/lightspeedwp/issue/LS-2243/navigation-audit-and-menu-fixes-header-logo-mega-menu), everything is logged on the issue.
--   0.40 hrs - Working on the Services Menu design. 
+-   0.40 hrs - Working on the Services Menu design.
+-   1.30 hrs - Completed LS-2243 and created the PR for review.
 
 ---
 
