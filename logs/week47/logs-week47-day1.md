@@ -47,7 +47,8 @@
 -   **Services mega menu (Mobile Menu) restructured:**
     -   Changed from a single vertical stack of 6 phase rows into 3 paired columns (Discover+Create, Build+Launch, Grow+Evolve), 2-up at every screen width
     -   Fixed columns not stretching full width
-    -   Separator line width issue between column pairs — CSS fix attempted and didn't resolve it; fixed manually in the editor instead using the "Wide Line" style
+    -   Separator-line approach abandoned entirely — removed both separator blocks, the custom style file created for them, and the related CSS/SCSS additions
+    -   Replaced with a simpler fix: dashed border styling added directly to 2 of the 3 column rows (Discover/Create and Build/Launch); third row (Grow/Evolve) intentionally left without a border
 -   Branch: `feature/ls-2243-navigation-audit-menu-fixes-header-logo-mega-menu`
 -   **Remaining scope:** mega menu spacing refinement, 2x2 layout for Discover/Create/Build/Launch, nested column technique for Work Engagement sections, standardised block spacing across rows/stacks
 
@@ -58,7 +59,8 @@
 -   0.50 hrs - Catchup meeting with Zared
 -   2.0 hrs - Doing my admin work, like plannign for the week, reflections of last week and reviewed the Code from my simple-ui-fixes branch that was merged.
 -   1.0 hrs - Setting up the task and starting auditing the Mobile Menu. I also cleared the un-used Navigation Menus from the dev site db.
--   2.0 hrs - Working on [LS-2243](https://linear.app/lightspeedwp/issue/LS-2243/navigation-audit-and-menu-fixes-header-logo-mega-menu), everything is logged on the issue. 
+-   2.0 hrs - Working on [LS-2243](https://linear.app/lightspeedwp/issue/LS-2243/navigation-audit-and-menu-fixes-header-logo-mega-menu), everything is logged on the issue.
+-   0.40 hrs - Working on the Services Menu design. 
 
 ---
 
