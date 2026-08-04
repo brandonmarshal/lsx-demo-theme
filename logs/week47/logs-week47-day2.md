@@ -6,11 +6,15 @@
 
 ---
 
-**LS-1616 / Work Archive — Pattern Cleanup**
+**LS-2244** — Work Archive Template: Audit & Fix `[In Progress]`
 
--   Went through the `work-archive` pattern in the editor to fix broken "Attempt Recovery" blocks and inconsistent styling
--   Made initial fixes so far — small set of changes, more to come
--   Plan: continue improvements to the pattern, then commit for testing
+-   Split out from LS-2243 to scope the `archive-work` block-recovery work specifically
+-   **Selected Projects** — fixed Query Loop grid so project cards return to 3-per-row instead of stretching full width; fixed Taxonomy Filter block showing "Attempt Recovery" by correcting the saved markup
+-   **Stats Grid** — restructured to nested columns so the 4 stats stay 2-per-row on mobile instead of stacking to 1
+-   **Discuss Project (CTA)** — fixed column width (58% → 50%) and removed a stale inline style that was also triggering "Attempt Recovery"
+-   **Icon colour fix applied consistently** across Hero, Categories, Selected Projects, Discuss Project (CTA), and Related Routes — bullet/eyebrow icon colour was hardcoded to Brand-500 instead of using the variable
+-   All fixes applied directly to individual section pattern files, not the template, so resetting each pattern picks up the fix
+-   A few small items still remaining before this can be closed out
 
 ---
 
@@ -31,6 +35,7 @@
 
 -   1.20 hrs - Learn Sass: Fundamentals.
 -   2.0 hrs - Working on the archive-work template pattern in the editor making adjustments and corrections and fixing "Attemp Recovery" blocks.
+-   2.0 hrs - Continued working on LS-2244 and making updates to the patterns for work-archive as well as testing. 
 
 ---
 
