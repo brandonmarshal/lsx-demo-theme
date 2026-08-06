@@ -22,14 +22,23 @@
 **LS-2335** — Set Up Playwright Testing + Generic Assertion Helpers `[In Progress]`
 
 -   All 6 generic assertion helpers planned: `expectSectionOrder`, `expectElementCount`, `expectCardParts`, `expectLinkHref`, `expectGridColumnsAtViewport`, `expectComputedStyle` — fully parameterised, reusable across future templates
--   First pass installed Playwright with a hand-rolled config (custom `playwright.config.ts`, `tsconfig.json`, `test:e2e` script, hardcoded/env-var `baseURL`) — worked, but wasn't grounded in any standard
--   Caught the setup drifting into a pile of ad hoc workarounds (forced serial execution, `baseURL` defaulting to dev — which tests already-merged code, not the PR under review — and an invented env-var scheme) — flagged as backwards and paused for a proper redo
--   **Redone from Playwright's actual official defaults:** ran the real unmodified installer (`npm init playwright@latest`) in a scratch directory and compared line-by-line against the repo setup
--   Found and corrected real gaps: official default runs all 3 browser projects (was Chromium-only), official reporter is `'html'` (was `'list'`), official `baseURL` is left commented with a gitignored `.env` (was hardcoded), and the official scaffold uses neither a `tsconfig.json` nor a `test:e2e` script (both removed)
--   Deliberately did not adopt the official CI workflow file — no environment currently exists that can test a PR's own unmerged branch code; flagged as a separate future infrastructure project, not something to bolt on here
--   Final setup landed: `@playwright/test`, `dotenv`, `@types/node` as dev dependencies; config matching verified official defaults with 2 named intentional exceptions (existing `testDir` convention, and `import.meta.dirname` instead of `__dirname` due to this repo's ESM `package.json`)
--   Real spec `tests/specs/work-archive.spec.ts` written using all 6 helpers against the live Work Archive template
+-   First pass installed Playwright with a hand-rolled config — worked, but wasn't grounded in any standard; caught it drifting into ad hoc workarounds and paused for a proper redo
+-   **Redone from Playwright's actual official defaults** — ran the real unmodified installer in a scratch directory and compared line-by-line against the repo setup
+-   Found and corrected real gaps: all 3 browser projects (was Chromium-only), `'html'` reporter (was `'list'`), `.env`-based `baseURL` (was hardcoded), removed unofficial `tsconfig.json`/`test:e2e` script
+-   Deliberately did not adopt the official CI workflow — no environment currently exists that can test a PR's own unmerged branch code; flagged as a separate future infrastructure decision
 -   Committed and pushed — testing is manual (`npx playwright test`) by design for now
+
+---
+
+**LS-2337** — ls-theme Cleanup: Restore Native WordPress Block Theme Conventions `[Backlog — Epic]`
+
+-   Ran a full repo audit with Claude — found ~90% of `assets/css/animations.css` (2,003 lines) is non-motion structural CSS mislabelled as animation; 51 registered style variants vs 27 on the reference `kwv-theme-2026` theme, ~30 of them single-use "fake" variants; a silent `wideSize` conflict between `theme.json` and a merged preset file; large CSS/JS (including GSAP) enqueued sitewide regardless of whether a page uses it
+-   Root cause traced to `ls-theme`'s own AI instruction files never stating a JSON-first, CSS-last-resort rule — unlike the reference theme's `AGENTS.md`
+-   **1hr meeting with Zared to review the audit and agree the remediation approach:**
+    -   Zared providing an updated WordPress agent skill set to close the instruction gap
+    -   Phased plan agreed — Phase 0 (fix AI instructions) → Phase 1 (enqueue fixes, token bypass cleanup, test run) → Phase 3 (move structural CSS into JSON) → Phase 4 (rationalise is-style layer), run strictly in that order
+    -   Phase 2 (pattern/DRY consolidation) and Phase 5 (theme.json fragmentation cleanup) intentionally excluded — need further review before scoping
+-   Epic (LS-2337) and all sub-issues created in Linear to track the phased plan — no implementation work started yet
 
 ---
 
@@ -57,7 +66,8 @@
 -   1.0 hrs - Learn Sass: Functions & Operations
 -   1.40 hrs - Working on the final polishes on archive-template and opened PR for review.
 -   1.25 hrs - Working on LS-2335 for the playwright tests.
--   2.0 hrs - Re-visited the implementation for playwright testing as I noticed AI did a custom install, not the standard install, this has now been fixed and the standard installation process has been followed. 
+-   2.0 hrs - Re-visited the implementation for playwright testing as I noticed AI did a custom install, not the standard install, this has now been fixed and the standard installation process has been followed.
+-   2.0 hrs - Auditing the ls-theme repo and its animations, patterns, parts etc and then went over the report with Zared to plan an approach to get this drift resolved. 
 
 ---
 
