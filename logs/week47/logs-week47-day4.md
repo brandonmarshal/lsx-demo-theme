@@ -19,6 +19,17 @@
 
 ---
 
+**LS-2335** — Set Up Playwright Testing + Generic Assertion Helpers `[In Progress]`
+
+-   All 6 generic assertion helpers planned: `expectSectionOrder`, `expectElementCount`, `expectCardParts`, `expectLinkHref`, `expectGridColumnsAtViewport`, `expectComputedStyle` — fully parameterised, reusable across future templates
+-   Installed `@playwright/test` + Chromium binary; added `playwright.config.ts` (serial execution, env-var overridable base URL/path) and `tsconfig.json`
+-   Added `test:e2e` npm script
+-   Wrote real spec `tests/specs/work-archive.spec.ts` using all 6 helpers against the live Work Archive template
+-   All 6 tests pass locally; dev environment confirmed reachable (200 response)
+-   Not yet committed — pending final local re-confirmation before commit, push, and PR against `develop`
+
+---
+
 **Learning — Sass: Operators, Colour Functions & Control Directives**
 
 -   **Operators & Math:**
@@ -42,6 +53,7 @@
 
 -   1.0 hrs - Learn Sass: Functions & Operations
 -   1.40 hrs - Working on the final polishes on archive-template and opened PR for review.
+-   1.25 hrs - Working on LS-2335 for the playwright tests. 
 
 ---
 
