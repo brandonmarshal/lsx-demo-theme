@@ -22,11 +22,14 @@
 **LS-2335** — Set Up Playwright Testing + Generic Assertion Helpers `[In Progress]`
 
 -   All 6 generic assertion helpers planned: `expectSectionOrder`, `expectElementCount`, `expectCardParts`, `expectLinkHref`, `expectGridColumnsAtViewport`, `expectComputedStyle` — fully parameterised, reusable across future templates
--   Installed `@playwright/test` + Chromium binary; added `playwright.config.ts` (serial execution, env-var overridable base URL/path) and `tsconfig.json`
--   Added `test:e2e` npm script
--   Wrote real spec `tests/specs/work-archive.spec.ts` using all 6 helpers against the live Work Archive template
--   All 6 tests pass locally; dev environment confirmed reachable (200 response)
--   Not yet committed — pending final local re-confirmation before commit, push, and PR against `develop`
+-   First pass installed Playwright with a hand-rolled config (custom `playwright.config.ts`, `tsconfig.json`, `test:e2e` script, hardcoded/env-var `baseURL`) — worked, but wasn't grounded in any standard
+-   Caught the setup drifting into a pile of ad hoc workarounds (forced serial execution, `baseURL` defaulting to dev — which tests already-merged code, not the PR under review — and an invented env-var scheme) — flagged as backwards and paused for a proper redo
+-   **Redone from Playwright's actual official defaults:** ran the real unmodified installer (`npm init playwright@latest`) in a scratch directory and compared line-by-line against the repo setup
+-   Found and corrected real gaps: official default runs all 3 browser projects (was Chromium-only), official reporter is `'html'` (was `'list'`), official `baseURL` is left commented with a gitignored `.env` (was hardcoded), and the official scaffold uses neither a `tsconfig.json` nor a `test:e2e` script (both removed)
+-   Deliberately did not adopt the official CI workflow file — no environment currently exists that can test a PR's own unmerged branch code; flagged as a separate future infrastructure project, not something to bolt on here
+-   Final setup landed: `@playwright/test`, `dotenv`, `@types/node` as dev dependencies; config matching verified official defaults with 2 named intentional exceptions (existing `testDir` convention, and `import.meta.dirname` instead of `__dirname` due to this repo's ESM `package.json`)
+-   Real spec `tests/specs/work-archive.spec.ts` written using all 6 helpers against the live Work Archive template
+-   Committed and pushed — testing is manual (`npx playwright test`) by design for now
 
 ---
 
@@ -53,7 +56,8 @@
 
 -   1.0 hrs - Learn Sass: Functions & Operations
 -   1.40 hrs - Working on the final polishes on archive-template and opened PR for review.
--   1.25 hrs - Working on LS-2335 for the playwright tests. 
+-   1.25 hrs - Working on LS-2335 for the playwright tests.
+-   2.0 hrs - Re-visited the implementation for playwright testing as I noticed AI did a custom install, not the standard install, this has now been fixed and the standard installation process has been followed. 
 
 ---
 
