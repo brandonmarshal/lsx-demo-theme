@@ -19,7 +19,12 @@
 -   **Follow-up — global Claude memory reviewed and updated (Step 6 close-out):**
     -   Reviewed all 9 memory files stored for this repo — 6 confirmed safe/unaffected
     -   3 updated to align with the new JSON-first standard: SCSS-formatting memory now leads with the JSON-first gate before format rules; skills-usage memory now includes the new `wp-block-style-audit` skill; pattern-reuse memory caveated so an existing SCSS hover contract reads as legacy-to-check, not a template for new work
--   **Real-world validation in progress:** new branch created, extraction prompt set up to build a new pattern from Figma via `pattern-extractor` under the updated instructions — testing whether the AI now defaults to JSON-first as intended
+-   **Real-world validation — Phase 0 confirmed:**
+    -   Ran the actual extraction prompt on branch `test/ls-2338-json-first-verification`, letting the agent build a new Figma-to-pattern conversion end-to-end
+    -   Reviewed the output personally first, specifically checking for the repo's usual repeat mistakes — result was noticeably cleaner than before
+    -   Held a review meeting with Zared to walk through the same branch together for his opinion
+    -   Both agreed the new pattern came out JSON-first with only genuinely unavoidable CSS exceptions, each documented, and no fake single-use is-styles
+    -   Phase 0 called confirmed — cleanup work (later phases) to begin next
 
 ---
 
@@ -36,7 +41,8 @@
 
 -   4.0 hrs - Started LS-2338 and completed it, then created a PR and reviewed it with Zared, now merged. Going to start with my study session now and then I will build a new pattern to test the workflow instruction fixes.
 -   0.50 hrs - Sass Learning
--   0.50 hrs - Cleared up my Claude Memory and re-wrote some of them to align with the new AGENT instructions, created a new branch to tests the workflow and setup a prompt which produced the Agent planned approach. 
+-   0.50 hrs - Cleared up my Claude Memory and re-wrote some of them to align with the new AGENT instructions, created a new branch to tests the workflow and setup a prompt which produced the Agent planned approach.
+-   1.20 hrs - Review the agent build with new instructions, then had a meeting with Zared to review it with him as well. 
 
 ---
 
