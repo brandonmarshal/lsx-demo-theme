@@ -28,6 +28,20 @@
 
 ---
 
+**LS-2339** — Phase 1: Enqueue Fixes, Token Bypass Cleanup, and Verification Test Run `[In Progress]`
+
+-   **GSAP enqueue gating:** replaced the unconditional `wp_enqueue_scripts` hook loading `gsap-animations.css`, the GSAP CDN script, and `gsap-effects.js` on every page with a `render_block` filter that detects the actual GSAP-powered block styles wherever they're rendered, then enqueues in `wp_footer` only when found — chosen so any future GSAP style automatically gets picked up without a manual page-check later
+-   **Hardcoded value cleanup — re-audited the full repo, not just originally-flagged files:**
+    -   7 hex colours fixed → existing palette tokens, exact matches
+    -   1 font-weight fixed → existing token, exact match
+    -   23 letter-spacing occurrences across 12 files normalised to a single existing token
+    -   Found and fixed a real pre-existing bug along the way — 7 elements referenced a non-existent fontSize slug, corrected to the real one
+    -   15 other broken-slug instances outside approved scope flagged but intentionally left untouched
+-   `inc/animations.php` intentionally not touched — confirmed out of scope for Phase 1, deferred to Phase 3
+-   Work committed and pushed to branch — not yet PR'd; self-review still pending before opening the PR and reviewing with Zared
+
+---
+
 **Learning — Sass Mixins (Flip Notecard Project, 1hr)**
 
 -   Built a flip-animation notecard using Sass mixins instead of repeated CSS
@@ -42,7 +56,8 @@
 -   4.0 hrs - Started LS-2338 and completed it, then created a PR and reviewed it with Zared, now merged. Going to start with my study session now and then I will build a new pattern to test the workflow instruction fixes.
 -   0.50 hrs - Sass Learning
 -   0.50 hrs - Cleared up my Claude Memory and re-wrote some of them to align with the new AGENT instructions, created a new branch to tests the workflow and setup a prompt which produced the Agent planned approach.
--   1.20 hrs - Review the agent build with new instructions, then had a meeting with Zared to review it with him as well. 
+-   1.20 hrs - Review the agent build with new instructions, then had a meeting with Zared to review it with him as well.
+-   1.20 hrs - Working on LS-2339
 
 ---
 
