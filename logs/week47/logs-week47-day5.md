@@ -20,9 +20,19 @@
 
 ---
 
+**Learning — Sass Mixins (Flip Notecard Project, 1hr)**
+
+-   Built a flip-animation notecard using Sass mixins instead of repeated CSS
+-   Covered basic mixin invocation, writing a custom vendor-prefixed mixin from scratch, default argument values, using `&` inside mixins to inherit the including selector, list arguments via the `...` splat, and string interpolation for dynamic file paths
+-   Applied `&` with counter-rotation so the flipped back face renders right-side-up instead of mirrored
+-   Final component: word flips 180° on hover with a smooth transition, reveals a definition + striped background + photo on the back, and turns red on hover just before flipping
+
+---
+
 ## Time Logs
 
 -   4.0 hrs - Started LS-2338 and completed it, then created a PR and reviewed it with Zared, now merged. Going to start with my study session now and then I will build a new pattern to test the workflow instruction fixes.
+-   0.50 hrs - Sass Learning
 
 ---
 
