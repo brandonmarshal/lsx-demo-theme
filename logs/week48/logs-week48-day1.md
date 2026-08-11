@@ -6,6 +6,10 @@
 
 ---
 
+### What have you accomplished today?
+
+---
+
 **LS-2339** — Phase 1: Enqueue Fixes, Token Bypass Cleanup, and Verification Test Run `[Done]`
 
 -   Self-review completed on the branch; PR #22 opened for review
@@ -25,18 +29,34 @@
 
 ---
 
-**LightSpeed Redesign — Project Plan Setup**
+**LS-2340** — Phase 3: Move Structural CSS into JSON/Block Supports `[In Progress]`
 
--   Using the PRD doc together with the Linear agent and Claude agent to build out a defined project plan for the LightSpeed Redesign
--   Agent set up to read all PRD-related docs via MCP so it has full context before generating the plan
--   Plan to be reviewed once generated — will approve as-is or request adjustments before final sign-off
+-   **Planning pass before any code:** ran a full selector-to-consumer inventory across all 15 animation/GSAP SCSS files, producing a file-disposition table, dead-selector list, and mixin-teardown plan; caught several miscategorisations in the original audit (plugin-owned classes, JS-injected DOM, files that are actually 100% motion) and surfaced 2 new scope items — the `inc/animations.php` enqueue gate and a WooCommerce dynamic-class lockstep note
+-   **Group 1 complete (mobile-menu-motion + home-hero-section):**
+    -   Found and fixed 3 real bugs during manual QA that the surface-level checks missed: a pre-existing H1 wrapping issue, an accordion padding/font bug traced to WordPress's `:where()` zero-specificity wrapping on all JSON style rules, and a services panel spacing bug caused by WordPress silently only rendering the first of two combined `is-style-*` classes on one block
+    -   Also caught 2 disguised single-use JSON style files and reverted them to inline block attributes, keeping only the genuinely reusable nested-selector piece
+    -   3 confirmed JSON mechanical limitations documented in the issue for all remaining groups: `:where()` specificity, `@media` queries being silently stripped from the JSON `css` field, and comma-separated selectors breaking in that field
+-   **Remaining:** Groups 2–9 (Card motion, Footer+menu, Buttons, Details+header, Links, Mixin teardown, Enqueue gating, Recompile+verify) — picking up with Group 2 next session
 
+---
+
+**LightSpeed Redesign — Project Plan (Work in Progress)**
+
+-   Read the full PRD plus 4 linked source docs (AI Service Packages, Design System, Content Finalisation, Website Strategy) via MCP to build full context
+-   Resolved one real conflict between source docs (self-hosted AI vs cloud API) in favour of the newer AI Service Packages doc
+-   **Key decisions locked so far:** Services and Solutions remain separate permanent hubs; mega menus confirmed as Phase 1 (already built, not Phase 2); "Why" pages merging into one FAQ page; consultation pages merging into one flow; existing dev pages to be reused in place rather than duplicated; AI Mega Page added as a Phase 3 addition; AI chatbot work confirmed cloud-based (AI Engine + OpenAI/Anthropic APIs)
+-   **Draft 4-phase plan produced:** Phase 1 MVP Launch (target 11 Sep), Phase 2 Service & Solution Depth (target 9 Oct), Phase 3 AI Readiness & AI Products (target 13 Nov), Phase 4 Content Finalisation (target 11 Dec)
+-   Reviewed the Linear Agent's generated timeline — Phases 1, 2, and 4 confirmed realistic; Phase 3 flagged as highest-risk and may run long
+-   Corrected one Linear Agent error (mega menus wrongly placed in Phase 2) and refined milestone structure per phase
+-   Go-live and post-launch review milestones deliberately dropped for now, pending a launch date decision
+-   **Still in progress** — additional sections still to be planned tomorrow, including internal config planning, which lives in Linear rather than GitHub since it involves no code changes
 ---
 
 ## Time Logs
 
 -    4.30 hrs - Morning admin work, self reviewed the work done on LS-2339 and then AI reviewed as well. Changes made where the AI found inconsistencies.
--    1.0 hrs - Created the PR, reviewed the work again, made more improvements and then got final review from Zared, then merged the PR. I also started working on a defined project plan for the LightSpeed Redesign. 
+-    1.0 hrs - Created the PR, reviewed the work again, made more improvements and then got final review from Zared, then merged the PR. I also started working on a defined project plan for the LightSpeed Redesign.
+-    3.50 hrs - Working on LS-2340 as well as planning the LS Redesign, getting context for all 4 phases as a base. 
 
 ## Notes
 
