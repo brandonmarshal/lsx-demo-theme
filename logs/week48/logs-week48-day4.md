@@ -18,9 +18,16 @@
 
 -   **Group 1 complete** — deleted 6 confirmed zero-consumer style files, 2 orphaned SCSS files, and their `@use`/`register_block_style()` references
 -   **Group 2 complete** — folded 10 single-use section/card JSON styles into their one real consumer as inline attributes or scoped SCSS, renamed `is-style-x` → `ls-x` convention, updated all consumer patterns, coordinated cross-file hover dependency renames, deleted all 10 folded JSON files
--   **Bonus fixes found during manual editor testing (pre-existing, unrelated bugs):** fixed a permanent editor error on Work Discuss Project CTA caused by a duplicate base class; removed 2 non-functional hand-authored inline spacing styles that WordPress was silently dropping anyway
--   Still actively troubleshooting one remaining "Selected Projects" editor error, narrowed to the custom SVG dot icon inside the Icon Block plugin
--   Nothing committed yet — holding for review/testing sign-off
+-   **Bonus fixes found during Group 1/2 manual editor testing (pre-existing, unrelated bugs):** fixed a permanent editor error on Work Discuss Project CTA caused by a duplicate base class; removed 2 non-functional hand-authored inline spacing styles that WordPress was silently dropping anyway
+-   **Group 3 complete** — remaining single-use footer/misc `is-style` variants folded into their one consumer as inline attributes or scoped SCSS
+-   **Group 4 complete** — converted WooCommerce taxonomy-driven `card-banner-tint`/`badge-brand` swaps from `is-style` to plain classes, since they're hook-driven programmatic swaps, not editor-chosen styles
+-   **Group 5 complete** — folded 5 more style files (`button-cta-gradient`, `glass-button`, `cta-inline-card`, `footer-notes-panel`, `work-hero`) into their consumers; `mega-menu-panel-services` confirmed multi-consumer and kept as-is; added 2 new structural SCSS partials for rest-state rules with no block-supports equivalent
+-   **Post-fold bugs found and fixed during manual verification:**
+    -   Header CTA button briefly regressed to unstyled — traced to a pre-existing DB-stored "Customized" template-part override unrelated to this phase; resolved by reverting the customisation
+    -   Duplicate arrow icon on header CTA and glass buttons — renaming from `is-style-*` to `ls-*` broke an existing default-button detector, causing both a literal arrow and the default arrow `::after` to render; fixed with explicit exclusions
+    -   Header CTA text contrast fixed by switching to the existing semantic `button.fill.text` token instead of a hardcoded on-dark value
+-   **Verification completed:** clean CSS build matching live-served CSS, `php -l` clean on every changed file, swept for dangling references to deleted styles/classnames (none found), block serialization validated before pattern edits, manual light/dark browser check on the header CTA fix
+-   5 commits pushed; PR #24 opened against `develop`, awaiting review
 
 ---
 
@@ -34,13 +41,13 @@
 -   **Created 14 new page-build issues** under LS-1596 (Contact thank-you, Search Results, 404, Development, Hosting, Support, AI Services, WordPress, WooCommerce, AI Solutions, Team, Culture, History, AI Mega Page) — all correctly parented, labelled, and assigned to Core & depth
 -   Normalised labels, priority, and estimates across the new issues to match the existing page-build pattern
 -   Planning phase confirmed complete — no missing pages, no duplicates remaining; ready to move into execution
-
 ---
 
 ## Time Logs
 
 -   2.0 hrs - Reviewing the comments from Copilot and Coderabbit and validate them, then applied them into the PR. Also had a meeting with Zared to go over the PR.
--   2.20 hrs - Working on LS-2341 and completed the Project planning. 
+-   2.20 hrs - Working on LS-2341 and completed the Project planning.
+-   4.0 hrs - Completed LS-2341 and opened the PR, I will review it and make any improvement to it and then request Zared's review. 
 
 ---
 
