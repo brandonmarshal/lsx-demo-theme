@@ -40,10 +40,29 @@
 
 ---
 
+**Meeting — Zared Rogers: Phase 4 Technical Cleanup**
+
+-   Discussed frustrations with Phase 4 cleanup taking priority over page builds, plus recent deployment issues — GSAP hero animations breaking and the "Start a Project" button malfunctioning
+-   Identified that resetting templates is a necessary step to fix front-end visual errors after these deployments; successfully applied to restore some animations
+-   Root cause of much of the Phase 4 struggle traced to running the entire cleanup in a single chat — AI lost context over time and eventually stopped following agent instructions
+-   `animations.css` confirmed still bloated at 2,000+ lines, loading unnecessary code sitewide
+-   **Zared's guidance for the next phase:**
+    -   Full cards and major patterns (card solutions, glass cards etc.) are legitimate section styles and should stay as-is
+    -   Internal components (badges, dividers, icons) should never have their own section style — inline these within the pattern instead
+    -   Break `animations.css` into smaller, purpose-specific files (e.g. `badge-motion.css`, `button-structure.css`) loaded only when needed
+    -   Process the refactor section-by-section (badges first, then cards, etc.) rather than a bulk pass, to avoid AI confusion
+    -   Start a completely fresh chat for the next refactor phase to ensure clean AI context
+    -   Navigation styles/links must remain editable in the backend — not hardcoded purely in CSS
+-   **Plan agreed:** complete the cleanup over the weekend so real page-build progress can resume Monday
+-   **Task list set:** audit deleted Phase 4 styles (badges/full cards) to identify what needs restoring, fix broken footer navigation to match prototype, build a phased CSS refactor plan, execute the refactor in a fresh chat, run a Copilot code review, present the completed work to Zared Monday morning
+
+---
+
 ## Time Logs
 
 -   3.30 hrs - Reviewed the PR from Yesterday and made some improvements. Continued working on the planning, especifically the configs that dont include code. Then I spotted a bug. All logged above with more detail.
--   0.30 hrs - Cleaning up the mess made on TO Repo because of ISSUE syncing. 
+-   0.30 hrs - Cleaning up the mess made on TO Repo because of ISSUE syncing.
+-   1.20 hrs - Preparing for meeting with Zared, then had the meeting, we went over the Phase 4 changes and he pointed out where I need to make improvements. 
 
 ---
 
