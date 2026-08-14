@@ -49,12 +49,21 @@
 -   **Zared's guidance for the next phase:**
     -   Full cards and major patterns (card solutions, glass cards etc.) are legitimate section styles and should stay as-is
     -   Internal components (badges, dividers, icons) should never have their own section style — inline these within the pattern instead
-    -   Break `animations.css` into smaller, purpose-specific files (e.g. `badge-motion.css`, `button-structure.css`) loaded only when needed
-    -   Process the refactor section-by-section (badges first, then cards, etc.) rather than a bulk pass, to avoid AI confusion
+    -   Break `animations.css` into smaller, purpose-specific files loaded only when needed
+    -   Process the refactor section-by-section rather than a bulk pass, to avoid AI confusion
     -   Start a completely fresh chat for the next refactor phase to ensure clean AI context
     -   Navigation styles/links must remain editable in the backend — not hardcoded purely in CSS
 -   **Plan agreed:** complete the cleanup over the weekend so real page-build progress can resume Monday
--   **Task list set:** audit deleted Phase 4 styles (badges/full cards) to identify what needs restoring, fix broken footer navigation to match prototype, build a phased CSS refactor plan, execute the refactor in a fresh chat, run a Copilot code review, present the completed work to Zared Monday morning
+
+---
+
+**Phase 4 Follow-Up — Scoped Into 2 Audit Phases**
+
+-   Trimmed the meeting notes down to only what applies to this branch — footer nav, GSAP (confirmed not actually broken, just needed a template reset), and Monday prep all cut as separate/out of scope
+-   **Phase 1 scoped:** audit `is-style` badge/full-card deletions and conversions made specifically on the `feature/ls-2341` branch — decision table only, no fixes applied; full cards/buttons always get their own JSON style even if single-use, internal components (icons, badges, pills) never do
+-   **Phase 2 scoped:** rationalise `animations.css` in a single, non-fragmented review pass — classify every rule as genuinely global vs a pattern-specific leak (e.g. Home Hero CSS currently loading sitewide), grouped by section; audit only, no migration yet, to be run in a separate fresh chat per Zared's guidance
+-   Attempted to create 1 epic + 2 sub-issues in Linear for both phases — confirmed the GitHub two-way sync setting can't be controlled at issue-creation time, proceeded anyway with manual GitHub cleanup planned
+-   **Not yet completed** — Linear MCP connection dropped before any of the 3 issues were created; retry pending once the MCP server reconnects
 
 ---
 
@@ -62,7 +71,8 @@
 
 -   3.30 hrs - Reviewed the PR from Yesterday and made some improvements. Continued working on the planning, especifically the configs that dont include code. Then I spotted a bug. All logged above with more detail.
 -   0.30 hrs - Cleaning up the mess made on TO Repo because of ISSUE syncing.
--   1.20 hrs - Preparing for meeting with Zared, then had the meeting, we went over the Phase 4 changes and he pointed out where I need to make improvements. 
+-   1.20 hrs - Preparing for meeting with Zared, then had the meeting, we went over the Phase 4 changes and he pointed out where I need to make improvements.
+-   0.25 hrs - Working on the plan for cleanup on the Phase 4 branch after meeting with Zared.
 
 ---
 
