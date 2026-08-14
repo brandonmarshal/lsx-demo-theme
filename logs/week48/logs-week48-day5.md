@@ -22,26 +22,28 @@
 
 **Config Planning — Site Configuration & Process Documentation**
 
--   Config-based work (menus, forms, SEO, launch checks) needs to be tracked in Linear as trackable issues, not just a project description
+-   Agreed with Ash that config-based work (menus, forms, SEO, launch checks) needs to be tracked in Linear as trackable issues, not just a project description
 -   Structured as one epic with sub-issues, mirroring the page-build epic; new `Config` label created for the LightSpeed team
 -   Reduced an initial 14-issue draft down to 4 — AI-related and Phase 4 config already deferred, taxonomy config already covered by closed issues
 -   **Created LS-2608 (epic) + 4 sub-issues:** LS-2609 Mega Menu Configuration, LS-2610 Gravity Forms Configuration, LS-2611 Yoast SEO Metadata Pass, LS-2612 Launch Readiness Config — all assigned to Brandon, labelled `Config`, placed on existing milestones
 
 ---
 
-**Bug Discovered — GitHub Sync Misconfiguration**
+**Bug Found & Resolved — GitHub Sync Misconfiguration**
 
 -   Found the Tour Operator GitHub repo was set to two-way sync in Linear, unlike every other connected repo (one-way, GitHub → Linear only)
--   **Impact confirmed:** creating Linear issues on this project was auto-creating matching phantom issues in the unrelated `tour-operator` GitHub repo — 19 issues total across 2 batches (14 page-build issues + 5 config issues), landing as GitHub issues #1294–#1313
--   **Remediation so far:** unlinked all 19 attachments from the Linear side; the 19 real GitHub issues have not yet been removed — needs to happen directly on GitHub
--   Team notified, awaiting go-ahead to switch `tour-operator` to one-way sync
--   **All further work paused** until the stray GitHub issues are manually closed and the sync setting is fixed
+-   **Impact confirmed:** creating Linear issues on this project was auto-creating matching phantom issues in the unrelated `tour-operator` GitHub repo — 19 issues total across 2 batches, landing as GitHub issues #1294–#1313
+-   Unlinked all 19 attachments from the Linear side
+-   All 19 stray GitHub issues manually closed on `lightspeedwp/tour-operator`, each with an explanatory comment
+-   Team notified about the two-way sync misconfiguration and asked to confirm switching it to one-way like every other repo
+-   Cleanup fully complete — work resumed
 
 ---
 
 ## Time Logs
 
 -   3.30 hrs - Reviewed the PR from Yesterday and made some improvements. Continued working on the planning, especifically the configs that dont include code. Then I spotted a bug. All logged above with more detail.
+-   0.30 hrs - Cleaning up the mess made on TO Repo because of ISSUE syncing. 
 
 ---
 
