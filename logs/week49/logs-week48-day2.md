@@ -19,13 +19,21 @@
 -   **External review from a GPT-based Playwright Testing Agent** — sent full context on the existing setup per a request from Brandon's manager for additional coverage review; got back 11 structured test-case recommendations with a traceability matrix
 -   Reviewed and triaged the recommendations: 6 accepted for immediate implementation (8 items once split out), 2 deferred with `.skip` (FAQ accordion not live yet, 404 page has no real content yet), 2 dropped entirely (browser zoom/reflow, visual regression screenshots)
 -   **Sourced real test fixtures from dev via read-only MCP** instead of guessing — a search term with exactly 1 confirmed match, and 2 real paginated archive/taxonomy examples (News category, Development tag)
--   **Next batch scoped, implementation in progress:** header-search, responsive-navigation, archive-pagination, keyboard-navigation, and reduced-motion as new feature specs; search-results and broken-placeholder-links as extensions to existing standing specs; a new landmark/heading-structure standing spec — nothing committed yet
+-   **Built the next batch of specs:** `header-search.spec.ts`, `navigation.spec.ts`, `archive-pagination.spec.ts`, `keyboard-navigation.spec.ts`, `reduced-motion.spec.ts`; added `faq-accordion.spec.ts` but skipped (FAQ block not live yet); extended `special-routes.spec.ts` and `internal-links.spec.ts`; added new standing spec `page-structure.spec.ts`
+-   Found and fixed 3 test-authoring mistakes during verification, plus 1 new real site bug: a zero-size, keyboard-reachable mega-menu link sitting inside a closed dropdown panel
+-   **First code-review validation pass — CodeRabbit, 23 findings:** checked every claim against real code; 6 genuinely valid and fixed (a listener leak, a config crash on missing `BASE_URL` moved into a new `global-setup.ts`, a missing network-errors allowlist, a crawl-budget mismatch, 2 mislabeled tests); rest already known/tracked or already disproven
+-   **Second code-review validation pass — Copilot, 10 findings + 1 flagged "High" severity:** 8 valid and fixed (relative-link resolution, a body-fallback gap, hardcoded DB-specific content replaced with a dynamic REST lookup, a wrong-property assertion, an OS path-separator bug in the dedup hashing, an iframe-scoping gap, a missing README install step, and a heading-hierarchy check that went inert — fixing it immediately caught a real, previously-hidden h1→h3 skip on a live page); 1 rejected with direct evidence; the "High" severity flag (git-email sent to BugHerd) investigated and confirmed intentional/low-risk, documented in the README rather than changed
+-   **Removed 3 page-specific feature specs** (`work-archive.spec.ts`, `work-single.spec.ts`, `archive-pagination.spec.ts`) — decided the suite should only contain genuinely page-agnostic specs; all 3 recoverable from git history
+-   **Final pre-commit review** — found and fixed 2 remaining stale references, added a proper CHANGELOG `### Removed` entry, re-confirmed every modified file loads clean
+-   **Planned but not yet built:** a comprehensive Google Doc explaining the whole Playwright/BugHerd setup for the rest of the team, structured with a linked outline standing in for tabs
+-   All code changes committed; only pre-merge items remain open (`.env` `BASE_URL` → staging, `MAX_TEST_URLS` → full site) plus the planned doc
 
 ---
 
 ## Time Logs
 
 -   2.20 hrs - Working on the Playwright branch, adding more features and reviewing recommendations from AI reviews.
+-   3.10 hrs - Completed the additional Playwright setup, found bugs to fix and completed the review on the PR, and planned the document to build for this implementation of Playwright.
 
 ---
 
