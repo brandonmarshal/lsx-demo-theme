@@ -6,6 +6,22 @@
 
 ---
 
+**LS-2341** — Phase 4: Rationalize the is-style Layer `[Done]`
+
+-   **Final review pass on PR #24 before merge:** reviewed all Copilot/CodeRabbit findings across the PR's full history, verified each against current code; 7 genuinely valid and fixed — restored a dropped `spacing.blockGap` on the Work archive discuss-project columns, moved `.ls-card__icon-shell`'s static padding onto its 5 consumer instances as inline attributes, filed LS-2640 for a pre-existing footer social-icon accessibility gap, removed a stray unrecognized key from `.coderabbit.yml`, and moved 2 non-motion rules out of their motion-only animation partials
+-   **Architecture correction:** Button Secondary and Link Arrow Accent found still loading via the global `animations.css` bundle despite being used in ordinary content patterns, not just sitewide chrome — pulled both into their own standalone bundles (`button-secondary.scss`, `links.scss`), matching the existing pattern for the other 8 structural bundles
+-   Cleaned up stray Playwright output left in the working tree from a branch switch
+-   Confirmed zero merge conflicts, clean fast-forward mergeable state; `build:css`, `lint:json`, `php -l` all pass clean
+-   **PR #24 merged to `develop`** — reviewed and approved by Zared beforehand
+
+---
+
+**LS-2615** — Phase 2: Rationalize animations.css Contents `[Done]`
+
+-   PR #20 (Playwright) and PR #24 (this cleanup work) both reviewed and approved by Zared, then merged to `develop` — both branches now fully complete
+
+---
+
 **LS-2335** — Set Up Playwright Testing + Generic Assertion Helpers `[In Progress]`
 
 -   Renamed PR #20 to reflect full scope: "Add Playwright testing: generic assertions, standing regression suite, and BugHerd auto-logging"
@@ -25,8 +41,14 @@
 -   **Second code-review validation pass — Copilot, 10 findings + 1 flagged "High" severity:** 8 valid and fixed (relative-link resolution, a body-fallback gap, hardcoded DB-specific content replaced with a dynamic REST lookup, a wrong-property assertion, an OS path-separator bug in the dedup hashing, an iframe-scoping gap, a missing README install step, and a heading-hierarchy check that went inert — fixing it immediately caught a real, previously-hidden h1→h3 skip on a live page); 1 rejected with direct evidence; the "High" severity flag (git-email sent to BugHerd) investigated and confirmed intentional/low-risk, documented in the README rather than changed
 -   **Removed 3 page-specific feature specs** (`work-archive.spec.ts`, `work-single.spec.ts`, `archive-pagination.spec.ts`) — decided the suite should only contain genuinely page-agnostic specs; all 3 recoverable from git history
 -   **Final pre-commit review** — found and fixed 2 remaining stale references, added a proper CHANGELOG `### Removed` entry, re-confirmed every modified file loads clean
--   **Planned but not yet built:** a comprehensive Google Doc explaining the whole Playwright/BugHerd setup for the rest of the team, structured with a linked outline standing in for tabs
--   All code changes committed; only pre-merge items remain open (`.env` `BASE_URL` → staging, `MAX_TEST_URLS` → full site) plus the planned doc
+-   All code changes committed; only pre-merge items remain open (`.env` `BASE_URL` → staging, `MAX_TEST_URLS` → full site)
+
+---
+
+**Playwright/BugHerd Reference Doc — Published**
+
+-   Built the full reference doc from the previously drafted plan, covering the entire setup for the team
+-   Published to the LightSpeed Shared Drive under "LS Website 2026," alongside the rest of the site's documentation
 
 ---
 
@@ -34,6 +56,7 @@
 
 -   2.20 hrs - Working on the Playwright branch, adding more features and reviewing recommendations from AI reviews.
 -   3.10 hrs - Completed the additional Playwright setup, found bugs to fix and completed the review on the PR, and planned the document to build for this implementation of Playwright.
+-   2.40 hrs - Made changes to the LS-2615 branch, applying recommendations from AI reviews. Then built the doc for LS-theme playwright guide. 
 
 ---
 
