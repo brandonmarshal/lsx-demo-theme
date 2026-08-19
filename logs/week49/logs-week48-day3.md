@@ -16,9 +16,20 @@
 
 ---
 
+**LS-1616** — Rebuild Portfolio + Blog Archive Templates `[In Progress]`
+
+-   **Branch housekeeping:** merged `develop` into `feature/ls-1616-blog-archive-page` to catch it up (7 commits + merge commit), resolving conflicts in `CHANGELOG.md`, `theme.json`, and `patterns/hero/work-hero.php`; found and fixed dead references left by the merge — `is-style-hero-dark` and `is-style-card-divider-top/bottom` had been removed theme-wide by `develop`'s is-style cleanup but were still referenced by the blog patterns
+-   **Blog Hero section rebuilt** (`blog-hero.php`, `blog-featured-article.php`, `blog-latest-item.php`) to match Figma — full-width eyebrow/heading/paragraph block, Featured Article + Latest row both content-width constrained; Featured Article card with 4-colour top border, pill category badge, date + reading time, hover button; Latest list with accent category label and continuous left rail with per-item divider
+-   Added `inc/blog-reading-time.php` for per-post reading time, mirroring the existing category-colour-swap convention
+-   **New tokens added:** `text.on-dark-accent`, `surface.on-dark-accent-tint`, `icon.on-dark`, `border.on-dark` (constant across light/dark toggle for the permanently-dark Hero); restored `text.on-light` and the `category.*` family to `theme.json`, which had been wiped during the `develop` merge — re-derived light-mode category values for WCAG AA
+-   **Bug fixed:** post title/terms text rendering black in the light "Default" style variation — `isLink` blocks render an `<a>` and the theme's global link-default colour was winning over the inherited heading colour; fixed with `elements.link` overrides pointing at the same constant on-dark tokens
+-   Hero section complete and approved; not yet committed/pushed — next up is All Articles, Engagement, and Writing CTA sections
+---
+
 ## Time Logs
 
 -   1.45 hrs - Working on LS-2436, ran into a blocker but its slowing me down too much, moving on for now as it was Minor "attempt recovery" issue. Opened PR and reviewed with AI.
+-   3.15 hrs - Working on LS-1616, the blog-archive template. 
 
 ---
 
