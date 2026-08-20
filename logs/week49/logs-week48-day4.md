@@ -40,22 +40,40 @@
 
 **LS-1597** — Build Home Page `[Backlog]`
 
--   Started bespoke build from Figma on `feature/ls-1616-homepage-build`, beginning with 3 sections rather than the full page at once
+-   Started bespoke build from Figma on `feature/ls-1597-build-home-page` (branch renamed to match ticket convention), beginning with 3 sections rather than the full page at once
 -   **Hero rebuilt** (`home-hero.php`) — eyebrow badge, headline with accent span, intro copy, decorative AI-planner prompt row (no functionality yet, scoped as future work), 6 suggestion pills, consultation link; kept the existing GSAP animated-network background, flagged for a decision since Figma shows a static gradient with no moving canvas
 -   **Stats Bar built** (`section-stats-bar.php`, new) — 4-figure stat strip beneath the Hero
 -   **Where to Start section built** (`homepage-where-to-start.php`, new) — reused the Work archive's `is-style-card-category` styling rather than duplicating a new card style, so both pages now share one improved treatment
 -   All 3 wired into `templates/front-page.html`
 -   Added 4 new mode-invariant colour tokens (`surface.glass`, `surface.glass-lighter`, `surface.glass-subtle`, `border.glass`) for the Hero's translucent badge/border treatment
 -   Confirmed no new `is-style` variants introduced, consistent with the LS-2341 cleanup
+-   **Visual QA round against Figma:**
+    -   Fixed Hero background rendering light (and text unreadable) in light mode — pinned to a fixed dark value independent of the site's style variation, same for gradient tint colours
+    -   Added the rainbow gradient bar at the Hero's bottom edge, missing from the original build
+    -   Tuned spacing, subtitle width/size, bumped undersized 12px text to 16px, recoloured the prompt button's icon for contrast, added backdrop blur so the prompt row stays legible over the GSAP animation
+    -   Stats Bar — widened item padding, removed default WordPress section gap so it sits flush against the Hero
+    -   Where to Start — fixed intro text alignment/width, resolved a couple of margin-collapse issues where sibling block margins were silently overriding gap changes
+-   **3 more sections built:**
+    -   **What We Build** — eyebrow, heading, 4-card row (WordPress platforms/WooCommerce/Design systems/Migrations) reusing the shared card-category shell, "All services" CTA
+    -   **Why LightSpeed** — two-column positioning section with two CTA buttons and a 5-item checklist card
+    -   **Featured Work** — a genuinely new horizontal "list view" case-study card (thumbnail, heading/description, 3-figure stat row, trailing arrow), with its own dedicated SCSS since nothing existing matched this shape
+    -   All wired into `templates/front-page.html` after Where to Start; no new colour tokens needed; all pill CTAs use native `core/button`
+-   **Further visual QA on the new sections:**
+    -   What We Build's background overridden to a lighter dark surface token for just this instance, without touching the shared content-band style
+    -   Increased the shared card-category padding site-wide — benefits Work Categories, Where to Start, and What We Build together
+    -   Swapped CTA buttons from square outline to the theme's existing pill-shaped secondary/outline styles
+    -   Added a hover-reveal arrow icon to 3 of 4 buttons, scoped to a new marker class so shared button styles elsewhere aren't affected
+    -   Fixed a low-contrast accessibility issue on the arrow's circular hover well
 -   Full validation suite run clean on all new/changed files
--   **Remaining:** additional homepage sections, content/copy finalisation, Free Consultation CTA wiring, design QA against Figma, SEO metadata, responsive check
+-   **Remaining:** additional homepage sections, content/copy finalisation, Free Consultation CTA wiring, further design QA against Figma, SEO metadata, responsive check
 
 ---
 
 ## Time Logs
 
 -   2.0 hrs - Working on the final touches on blog-archive template.
--   3.30 hrs - Merged the PR eventually and then tried to setup the blog template on DEV, had some struggle but managed. Then I started with the first 3 patterns on the Homepage with bot template. 
+-   3.30 hrs - Merged the PR eventually and then tried to setup the blog template on DEV, had some struggle but managed. Then I started with the first 3 patterns on the Homepage with bot template.
+-   3.20 hrs - Working on LS-1597 and building up the patterns for the Hompage, testing as I go. 
 
 ---
 
