@@ -35,9 +35,23 @@
 
 ---
 
+**LS-2801** — Final Menu Polish Pass `[Backlog]`
+
+-   **Investigation:** confirmed the mobile menu already uses the core Navigation block, no structural change needed; audited actual style consumer counts before touching anything — found `mega-menu-panel-services` was genuinely single-consumer and folded it into the existing multi-consumer panel style, while `mega-menu-item-service` stayed registered since it's genuinely reused across 6 menus
+-   **Generic dropdown redesign (Work/Solutions/Pricing/Insights/About):** iterated through several design directions using real reference patterns, landed on one bounding card per accordion body with a left accent rail + soft tint on hover/focus; fixed a CTA row padding misalignment and a mis-styled "Design Systems" item
+-   **Root-cause bugs found and fixed:**
+    -   Dark-mode token not resolving — traced to a stale cached "Custom Styles" DB record shadowing the theme file; patched directly and flushed cache
+    -   **Bigger structural bug found:** `/styles/blocks/**.json` and `/styles/sections/**.json` were never actually being loaded into WordPress at all — only `/styles/presets/` was wired up; fixed by extending `inc/presets.php` to properly merge and register both folders, benefiting every style variation in those folders, not just this menu
+    -   Attempted an accent-tag accordion indicator using the newly-fixed pipeline — reverted after it still didn't render correctly, flagged to revisit later
+-   **Services dropdown:** preserved its unique phase-colour design throughout; reworked the 2-column phase grid into colour-coded chip badges per phase label with plain rows underneath; bounding-card treatment matching the other dropdowns deferred as the next step
+-   Not yet committed — implementation continues
+
+---
+
 ## Time Logs
 
 -   3.0 hrs - Working on Homepage build cleanup, final review. Also had a meeting with Ash & Zared to go over the playwright setup.
+-   3.0 hrs - Finalising the Mobile Menu design, working on a new design that is more accessible. 
 
 ---
 
