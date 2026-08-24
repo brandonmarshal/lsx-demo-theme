@@ -38,20 +38,32 @@
 **LS-2801** — Final Menu Polish Pass `[Backlog]`
 
 -   **Investigation:** confirmed the mobile menu already uses the core Navigation block, no structural change needed; audited actual style consumer counts before touching anything — found `mega-menu-panel-services` was genuinely single-consumer and folded it into the existing multi-consumer panel style, while `mega-menu-item-service` stayed registered since it's genuinely reused across 6 menus
--   **Generic dropdown redesign (Work/Solutions/Pricing/Insights/About):** iterated through several design directions using real reference patterns, landed on one bounding card per accordion body with a left accent rail + soft tint on hover/focus; fixed a CTA row padding misalignment and a mis-styled "Design Systems" item
+-   **Generic dropdown redesign (Work/Solutions/Pricing/Insights/About) — first pass:** iterated through several design directions, landed on one bounding card per accordion body with a left accent rail + soft tint on hover/focus; fixed a CTA row padding misalignment and a mis-styled "Design Systems" item
 -   **Root-cause bugs found and fixed:**
     -   Dark-mode token not resolving — traced to a stale cached "Custom Styles" DB record shadowing the theme file; patched directly and flushed cache
     -   **Bigger structural bug found:** `/styles/blocks/**.json` and `/styles/sections/**.json` were never actually being loaded into WordPress at all — only `/styles/presets/` was wired up; fixed by extending `inc/presets.php` to properly merge and register both folders, benefiting every style variation in those folders, not just this menu
     -   Attempted an accent-tag accordion indicator using the newly-fixed pipeline — reverted after it still didn't render correctly, flagged to revisit later
--   **Services dropdown:** preserved its unique phase-colour design throughout; reworked the 2-column phase grid into colour-coded chip badges per phase label with plain rows underneath; bounding-card treatment matching the other dropdowns deferred as the next step
--   Not yet committed — implementation continues
+-   **Services dropdown — several iterations before landing on the final design:**
+    -   First pass (bounded card + chip-badge phase labels) rejected as visually inconsistent with the actual prototype reference
+    -   Reverted to original design, then rebuilt properly from a supplied prototype: each lifecycle group full-width and stacked vertically, heading on its own row, links underneath in a real 2-column CSS Grid
+    -   Found and fixed the real root cause of a staggered-column bug — WordPress was injecting its own sibling margin onto the grid children, fighting the grid; fixed with an explicit margin reset
+    -   Added softened separators between lifecycle groups, corrected link indentation to align under heading text, tightened spacing throughout, and upgraded "See all services" to match the other dropdowns' footer-link CTA treatment
+    -   Recovered from an accidental `git checkout` that wiped uncommitted work on the other dropdowns — caught immediately, fully restored, nothing lost
+-   **Simple dropdowns (Work/Solutions/Pricing/Insights/About) — redesigned to a new "simple submenu" pattern:**
+    -   Removed the bounded/card look entirely, deleted the now-unused style — dropdowns now sit flush against the menu background
+    -   Rebuilt as a real 2-column CSS Grid using the same margin-reset alignment fix as Services
+    -   Refactored the grid CSS so Services and the simple dropdowns share one base rule set, avoiding duplicated CSS
+    -   Each "See all X" footer CTA now matches Services' consistent divider + arrow-accent treatment
+    -   Confirmed via diff that accordion behaviour, URLs, menu hierarchy, and keyboard/focus handling were untouched by either pattern's styling work
+-   Not yet committed — pending visual review of both patterns together
 
 ---
 
 ## Time Logs
 
 -   3.0 hrs - Working on Homepage build cleanup, final review. Also had a meeting with Ash & Zared to go over the playwright setup.
--   3.0 hrs - Finalising the Mobile Menu design, working on a new design that is more accessible. 
+-   3.0 hrs - Finalising the Mobile Menu design, working on a new design that is more accessible.
+-   2.0 hrs - Working on the Menus dropdowns and meeting with Ash to go over things to get done for the LS Site and PageSpeed testing. Bugherds. 
 
 ---
 
