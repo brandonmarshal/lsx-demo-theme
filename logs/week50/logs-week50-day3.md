@@ -24,7 +24,14 @@
     -   2 explicitly approved actions taken: uploaded light/dark logo SVGs to DEV's Media Library (IDs 53633/53634); created a new Pricing Principles page on DEV as a child of Pricing, filling the one genuinely missing link target found during the mega-menu audit
     -   **Full mega-menu link audit completed** — cross-referenced every nav item across all 6 dropdowns against DEV's real pages; Solutions/Services/About/Pricing all resolved to real pages; Work and Insights agreed to convert from hardcoded placeholder links to dynamic Query Loops (Work: Featured case studies newest-first, matching the homepage's Featured Work pattern; Insights: real published blog posts)
     -   **Live-site coverage audit (read-only)** — confirmed all 69 live pages and all 19 live case studies have a matching ID on DEV, zero orphaned content; confirmed DEV is a strict superset of live with only pure additions
-    -   Plan fully drafted and confirmed internally, currently under review with Zared before implementation begins — no mega-menu code changes made yet
+-   **Implementation of the above plan — all complete on `feature/ls-2804-card-cursor-pointer-audit`:**
+    -   **Header nav ref portability fix** — `header.php`'s Navigation block referenced a hardcoded local post ID, breaking on other environments; added a fallback resolving the correct post by title when the saved ref doesn't exist, no more manual reattachment after a header reset
+    -   **Mega-menu links wired to real DEV pages** across all 6 dropdowns — Solutions/Services/Pricing/About matched 1:1 to real pages (1 new DEV page created — Design Systems); Work's earlier Query Loop plan abandoned since it can't carry per-item icons, hand-matched instead to 4 real case studies with rewritten titles/descriptions; Insights matched to 6 real blog posts, discarding 3 bogus zero-post categories found along the way
+    -   **Mobile menu logo fixed** — was using the core `site-logo` block instead of the header's light/dark logo pair; extracted into a new shared `patterns/site-logo-switcher.php` pattern, wired into both header and mobile menu; hit and worked around a WordPress pattern-registration caching bug along the way
+    -   **Mobile menu row spacing corrected** via exact DOM measurement, not just eyeballing
+    -   **Header CTA button polish** — several rounds of sizing/weight/padding refinement, landed on matching the search icon's height via the shared `tap-target-min` token
+    -   **Header responsive side padding fixed** — added breakpoint overrides so the wider desktop padding scales down properly on tablet/mobile
+    -   All changes complete and verified against the live local site, not yet committed
 
 ---
 
@@ -54,6 +61,7 @@
 -   3.45 hrs - Working on LS-2801 and LS-2804
 -   1.40 hrs - Merged PR #28 and continued working on LS-2804
 -   2.20 hrs - Working on the Menus again, finalising some changes, I only noticed them on the DEV site. Also completed LS-2804
+-   1.30 hrs - Working on final changes for the Mobile menu after meeting with Zared. 
 
 ---
 
