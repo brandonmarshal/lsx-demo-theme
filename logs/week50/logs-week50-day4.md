@@ -48,14 +48,18 @@
 -   **Found pipeline self-test scaffolding leaking into the real Backlog** — 2 tasks are Playwright self-tests, not real bugs, sitting in the same column as genuine findings with no distinguishing label
 -   **Found BugHerd AI mis-merging unrelated failures** — task #13 bundles two genuinely different failure classes (render/logic mismatches vs a CSS overflow bug) under one title; #14 confirmed as a legitimate merge, for contrast
 -   **Root cause identified:** failure descriptions are being truncated before reaching BugHerd, cutting off the actual expected-vs-received diff and contrast/element details — likely what's driving the bad AI merge behaviour
--   Parked 3 suggested inputs for this issue's acceptance criteria: a distinct label for pipeline self-tests, grouping by failure type + page rather than just spec file, and ensuring full untruncated error text reaches the task body
--   No implementation started — notes parked until LS-2806 is resolved
-
+-   **All 4 fixes implemented on `feature/ls-2810-improve-playwright-to-bugherd-failure-automation`, not yet committed:**
+    -   **Approved tags** — added the full 192-tag approved list and a function mapping each failure to a small relevant subset, hard-filtered against the approved list so nothing freeform or AI-suggested can slip through; verified against 4 realistic failure cases
+    -   **Description truncation fix** — was previously keeping only the first line of each error, discarding the actual diff content; now keeps the full multi-line message (ANSI codes stripped), capped sensibly so it can never exceed BugHerd's limit; verified with 3 tests
+    -   **Fallback signature URL normalisation** — found the existing URL-stripping logic didn't actually match the real message shapes being produced, so the same shared-template bug across 5 pages was creating 5 separate tasks instead of 1 — exactly the scenario this issue was created to fix; added precise patterns that correctly collapse same-bug-different-page cases while keeping genuinely different bugs separate; verified with 8 constructed cases
+    -   **Run-scoped dedup cache (found during investigation, not originally planned)** — traced a real duplicate-task pattern in live BugHerd data to a lookup/read-after-write timing gap on BugHerd's own API, not a code race; fixed with an in-memory run-scoped cache that skips re-querying BugHerd for a failure already resolved this run; verified with 2 behavioural tests
+-   Next step: review all 4 changes and confirm ready to commit/merge, then run the standing suite against dev to confirm real-world behaviour
 ---
 
 ## Time Logs
 
 -   3.30 hrs - Working on LS-2806 and LS-2810. Fixed all the Bugherd issues currently logged.
+-   2.50 hrs - Working on LS-2810, auditing the current bugs in Playwright setup and made improvements
 
 ---
 
