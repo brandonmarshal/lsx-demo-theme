@@ -15,7 +15,7 @@
 
 ---
 
-**LS-2806** — Review and Resolve BugHerd Items 11–14 `[In Progress]`
+**LS-2806** — Review and Resolve BugHerd Items 11–14 `[In Review]`
 
 -   **Triaged all 14 BugHerd tasks** — #1/#5 confirmed self-marked test scaffolding, deleted; #3/#4/#6/#7/#8/#9/#10/#12 already closed/merged prior; #13/#11/#2/#14 identified as the 4 tasks with real work
 -   **Task #13 (404 rendering + search overflow) — fixed:**
@@ -37,8 +37,10 @@
     -   **Result: 59 of 63 real broken links fixed**, final full re-audit performed before closing — nothing missed, no unintended edits
     -   Worked around repeated transport-level errors from the remote DB MCP connection during batch edits by independently verifying every batch against the live database rather than trusting the error/success messages
 -   **Completion comments posted on #14, #11, #2** (previously missing); #13 already had one — all 4 BugHerd tasks now ready for review and close
--   Code changes for #13/#11 committed on `feature/ls-2806-fix-404-and-search-overflow`, branch not yet merged
 -   All BugHerd tasks moved to "Testing" state
+-   **PR #30 opened** — covers this LS-2806 work plus a follow-up header fix from LS-2804 that landed on the same branch (nav ref portability + a block-validation error on the CTA button); labelled and assigned per repo convention
+-   **Blocked on CodeRabbit review** — no auto-review fired, and 2 manual `@coderabbitai` mentions got zero response, not even an acknowledgment; ruled out draft status, base-branch config, path filters, and CI as causes; most likely an account-level usage/credit limit based on a "0 remain" quota message seen on PR #29's review footer — only checkable from CodeRabbit's own dashboard
+-   PR open and mergeable, waiting on the CodeRabbit review (or a manual review in its place) before merge
 
 ---
 
@@ -60,6 +62,7 @@
 
 -   3.30 hrs - Working on LS-2806 and LS-2810. Fixed all the Bugherd issues currently logged.
 -   2.50 hrs - Working on LS-2810, auditing the current bugs in Playwright setup and made improvements
+-   2.0 hrs - Working on some bugs from Yesterdays changes on LS-2804 and applying them these bug fixes as well. PR #30 created. 
 
 ---
 
