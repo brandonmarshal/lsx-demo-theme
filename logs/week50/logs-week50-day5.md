@@ -31,12 +31,22 @@
 -   **First full real-world run against dev site (all specs, all 3 browsers):**
     -   Found `.env`'s `BASE_URL` had never actually pointed at dev all session — was still `localhost:8882`; corrected permanently
     -   Grouping fix confirmed working on genuine site content — a contrast violation across 2 pages and 32 placeholder links across 8 pages each correctly landed in one task apiece
-    -   Found and fixed missing Firefox/WebKit browser binaries causing ~19 false "browser executable missing" tasks — environment issue, not code, fixed via `npx playwright install`
-    -   Found and fixed Firefox-specific console error noise (`{file: ... line: N}`) breaking grouping since it wasn't stripped before signature computation
-    -   Also fixed ANSI codes leaking into task titles/descriptions for bare `expect.soft` checks with no custom message — consolidated to one shared stripping step
-    -   Manually reviewed and deleted 18 confirmed-duplicate tasks created during this run; verified nothing removed that was genuinely distinct
-    -   **Known accepted gap, not fixed:** cross-browser/cross-spec correlation for the same broken resource reported with different wording — deliberately not built, would require guessing at similarity rather than removing pure noise
--   All fixes committed; board now a clean, accurate reflection of real dev-site issues; ready for a final confirmation run
+    -   Found and fixed missing Firefox/WebKit browser binaries causing ~19 false "browser executable missing" tasks — environment issue, not code
+    -   Found and fixed Firefox-specific console error noise breaking grouping, plus ANSI codes leaking into task titles/descriptions for bare `expect.soft` checks
+    -   Manually reviewed and deleted 18 confirmed-duplicate tasks created during this run
+-   **First "final" confirmation run — all 4 improvements verified at scale:**
+    -   Discovered the earlier Firefox fix had actually never worked — tested against a hand-typed approximation rather than the real captured bytes (real message uses an escaped quote the original regex never matched); fixed properly this time against real content
+    -   Recognised every signature-algorithm change was making previously-created tasks stale, causing repeat duplicates on every re-run — did a full clean sweep, deleting all 44 same-day backlog tasks and running fresh
+    -   31 tasks created from a clean slate — grouping proven at real scale (30 pages with placeholder links → 1 task, 20 pages with a 404'd CSS resource → 1 task, etc.)
+    -   Programmatic re-verification confirmed zero ANSI bytes, zero non-approved tags, zero description-length violations, only 1 remaining (already-accepted) duplicate cluster
+-   **Reopened same day after a readability request surfaced a much bigger issue:**
+    -   Restructured `buildDescription()` to use plain-text pseudo-headings and per-page bullets with extracted category-specific detail, instead of repeating identical diff boilerplate per occurrence that was crowding out real content within the character cap
+    -   **Major finding:** `MAX_TEST_URLS = 10` — a forgotten temporary rollout throttle — meant every "test every discovered page" standing spec had silently only ever tested the first 10 of the site's real ~326 pages this entire ticket; raised to 30 as a deliberate middle ground
+    -   **Timeout bug found and fixed suite-wide:** several specs looping over all discovered pages were hitting Playwright's bare 30s default and getting killed mid-request, producing misleading `net::ERR_ABORTED`/`Request context disposed` errors that were being wrongly filed as real site bugs; added scaled `testInfo.setTimeout()` to all 8 affected specs, gave the `siteUrls` fixture its own 120s setup timeout, added a 60s top-level config safety net, capped local workers at 4, and extended noise-filtering for both misleading error phrasings
+    -   Added retry-with-backoff on BugHerd HTTP 429s (previously silently dropped) plus a small delay between sequential group-report calls to reduce rate-limit hits
+    -   Fixed 4 message-less assertions in `special-routes.spec.ts` causing "unknown page" bullets and false-looking duplicates; fixed a broken-link summary bug accidentally grabbing Jest's own boilerplate instead of the real HTTP status
+    -   Verified via 2 full delete-all-and-rerun cycles — second run: 20 real tasks, only 1 correctly-filtered timeout (down from 5), real URLs throughout
+-   **Not yet committed** — recommended one more clean run before calling this genuinely done; more testing planned for a future session
 
 ---
 
@@ -44,6 +54,7 @@
 
 -   3.15 hrs - Working on a bug I noticed with Mobile Menu Dropdown for mobile. And then finishing off LS-2810
 -   2.0 hrs - Ran the full suite testing on Dev site and came across a lot more bugs, so I audited those and have been applying fixes and re-testing.
+-   3.20 hrs - Working on LS-2810, still more testing and bugs to resolve. 
 
 ---
 
