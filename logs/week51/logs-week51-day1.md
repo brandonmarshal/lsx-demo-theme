@@ -26,21 +26,23 @@
 
 -   Sub-issue of LS-2803, scoped to the homepage only (mobile Performance score 75, others strong)
 -   **Root cause investigation done against actual theme code, not just the PageSpeed report:** ~20 structural CSS bundles loading unconditionally sitewide, no compressed production CSS build, all 17 `fontFace` entries missing `font-display`, no resource hints for the LCP path
--   **Adversarial safety check before implementing** — caught that gating CSS bundles by template alone would have broken several bundles genuinely shared across multiple pages (e.g. `work-archive-sections`'s icon-well classes also used on 3 homepage sections); caught that the proposed header-search animation fix would have broken layout alignment and dropped it from scope
+-   **Adversarial safety check before implementing** — caught that gating CSS bundles by template alone would have broken several bundles genuinely shared across multiple pages; caught that the proposed header-search animation fix would have broken layout alignment and dropped it from scope
 -   **Approved scope:** gate CSS bundles by verified real usage rather than assumed template ownership, add `font-display: swap` everywhere, add a compressed production CSS build; JS minification and the header animation explicitly descoped
--   **Implementation:** added `condition` callbacks to 19 of 20 bundles in `inc/animations.php`, each verified against real pattern usage; added `font-display: swap` to all 17 fontFace entries; added a `build:css:prod` compressed build script and ran it across all 22 bundles
--   **Self-review caught 2 real bugs before shipping:** `is_page_template()` checks were including a `.html` extension WordPress never actually stores, which would have silently broken all Blog archive styling; pattern-usage detection was checking for expanded CSS classes that don't exist when a pattern is inserted normally via the block inserter (only a slug reference is stored) — fixed both, re-verified live
--   **User-reported bug fixed:** Featured Work cards broken on homepage — same class of gating mistake missed on a sibling bundle, condition corrected and swept for any other instances
--   **User-reported bug fixed (unrelated):** Featured Work card grid invisible in light mode — traced to a shared colour token also driving glass-card/button sheen elsewhere; fixed by pointing the grid line at a different, already-adaptive token instead of touching the shared one, avoiding a regression on the glass effects
--   Covers render-blocking requests, unused CSS, CSS minification, and font-display from the original findings; legacy JS and the one non-composited animation candidate explicitly descoped; forced reflow/long-task profiling and LCP preload hint flagged as follow-up, not yet done
--   **PR #33 opened; review (Copilot + self) surfaced a deeper root cause — all 8 comments validated as genuine bugs:**
-    -   Every gated pattern is individually insertable via the block inserter, so an editor can place any of them somewhere the template-based conditions never anticipated — confirmed this was already live-breaking something: the mobile menu's 2 CTA buttons were unstyled on every page except homepage/Work archive/404, since template-part content never appears in a page's `post_content`
-    -   Fixed with a `render_block`-based safety net alongside the existing head-time conditions — detects a bundle wherever it actually renders (post content, pattern reference, template part, synced pattern) and prints anything missed via a `wp_footer` fallback, with WordPress's own dedup preventing any bundle being printed twice
-    -   `card-shells`, `cta-buttons`, and `faq` now rely entirely on this safety net; `button-secondary` keeps its fast-path conditions and drops its unreliable fallback
-    -   Also fixed `package.json`'s `build:css` to produce the compressed output that actually ships, instead of expanded — removing the risk of someone reverting all 22 CSS files by running the "default" build command
-    -   Verified by directly reproducing the previously-broken mobile-menu scenario and confirming the fix catches it; re-ran the full page-type matrix (Homepage, Work archive, Blog archive, Search, 404, plain page) with identical correct results
-    -   Design decision confirmed with Brandon beforehand — chose the footer-fallback approach over a full page-buffering rewrite, accepting a narrow-scope FOUC risk on off-template insertions rather than a much larger architectural change
--   All changes implemented and verified on branch, pushed but not yet committed — working tree left for review
+-   **Implementation:** added `condition` callbacks to 19 of 20 bundles in `inc/animations.php`; added `font-display: swap` to all 17 fontFace entries; added a `build:css:prod` compressed build script and ran it across all 22 bundles
+-   **Self-review caught 2 real bugs before shipping:** `is_page_template()` checks including a `.html` extension WordPress never actually stores, which would have silently broken all Blog archive styling; pattern-usage detection checking for expanded CSS classes that don't exist for block-inserter-added patterns — fixed both, re-verified live
+-   **User-reported bug fixed:** Featured Work cards broken on homepage — same class of gating mistake missed on a sibling bundle
+-   **User-reported bug fixed (unrelated):** Featured Work card grid invisible in light mode — fixed by pointing the grid line at a different, already-adaptive token instead of touching the shared one driving the glass-card sheen
+-   **PR #33 opened; review surfaced a deeper root cause — all 8 comments validated as genuine bugs:**
+    -   Every gated pattern is individually insertable via the block inserter, so an editor can place any of them somewhere the template-based conditions never anticipated — confirmed this was already live-breaking the mobile menu's CTA buttons on every page except homepage/Work archive/404
+    -   Fixed with a `render_block`-based safety net alongside the existing head-time conditions, plus a `wp_footer` fallback for anything missed, with WordPress's own dedup preventing double-printing
+    -   Also fixed `build:css` to produce the compressed output that actually ships, instead of expanded
+    -   Verified by reproducing the previously-broken scenario and confirming the fix catches it; re-ran the full page-type matrix with identical correct results
+    -   Design decision confirmed with Brandon beforehand — chose the footer-fallback approach over a full page-buffering rewrite
+-   **Committed (`0b2ca28`) and re-verified against all 8 PR comments individually, not just GitHub's "Outdated" badge:**
+    -   3 comments confirmed correctly resolved — anchored lines were rewritten or fully removed
+    -   5 comments not marked Outdated by GitHub but confirmed already fixed — they anchor to the unchanged fast-path conditions, while the actual fix lives in a separate new marker table; checked every bundle named across all 5 comments has a corresponding entry and the `render_block`/`wp_footer` wiring is correct
+    -   **One known, deliberate gap found:** `homepage-why-lightspeed` has no marker entry and still relies on `is_front_page()` alone — its only defined CSS class doesn't currently exist anywhere in the pattern's markup (a pre-existing, unrelated mismatch), so risk is low today but would need the same safety-net treatment if that class is ever reintroduced; flagged to Brandon, decision pending
+-   Committed, not yet re-reviewed by Copilot — branch `feature/ls-2922-pagespeed-fix-mobile-performance-on-homepage`
 
 ---
 
@@ -56,7 +58,7 @@
 ## Time Logs
 
 -   3.40 hrs - Completed LS-2810 and started working on LS-2922 for the PageSpeed fixes and improvements.
--   1.23 hrs - Opened the PR and reviewed with Copilot and Linear agents, then applied some fixes and now currently testing those fixes before committing.
+-   1.36 hrs - Opened the PR and reviewed with Copilot and Linear agents, then applied some fixes and now currently testing those fixes before committing.
 
 ---
 
