@@ -36,13 +36,24 @@
     -   Every gated pattern is individually insertable via the block inserter, so an editor can place any of them somewhere the template-based conditions never anticipated — confirmed this was already live-breaking the mobile menu's CTA buttons on every page except homepage/Work archive/404
     -   Fixed with a `render_block`-based safety net alongside the existing head-time conditions, plus a `wp_footer` fallback for anything missed, with WordPress's own dedup preventing double-printing
     -   Also fixed `build:css` to produce the compressed output that actually ships, instead of expanded
-    -   Verified by reproducing the previously-broken scenario and confirming the fix catches it; re-ran the full page-type matrix with identical correct results
     -   Design decision confirmed with Brandon beforehand — chose the footer-fallback approach over a full page-buffering rewrite
--   **Committed (`0b2ca28`) and re-verified against all 8 PR comments individually, not just GitHub's "Outdated" badge:**
-    -   3 comments confirmed correctly resolved — anchored lines were rewritten or fully removed
-    -   5 comments not marked Outdated by GitHub but confirmed already fixed — they anchor to the unchanged fast-path conditions, while the actual fix lives in a separate new marker table; checked every bundle named across all 5 comments has a corresponding entry and the `render_block`/`wp_footer` wiring is correct
-    -   **One known, deliberate gap found:** `homepage-why-lightspeed` has no marker entry and still relies on `is_front_page()` alone — its only defined CSS class doesn't currently exist anywhere in the pattern's markup (a pre-existing, unrelated mismatch), so risk is low today but would need the same safety-net treatment if that class is ever reintroduced; flagged to Brandon, decision pending
--   Committed, not yet re-reviewed by Copilot — branch `feature/ls-2922-pagespeed-fix-mobile-performance-on-homepage`
+-   **Committed (`0b2ca28`) and re-verified against all 8 PR comments individually:**
+    -   3 comments confirmed correctly resolved; 5 comments confirmed already fixed via a separate new marker table despite not showing as Outdated
+    -   One known, deliberate gap found on `homepage-why-lightspeed` (dead CSS class, low risk today) — flagged to Brandon, decision pending
+-   **Remaining PR review findings applied:**
+    -   Added missing `work-archive-sections` markers for 4 patterns that were still losing their CSS outside the Work archive — verified live
+    -   Fixed 16 PHPCS array-alignment warnings and 2 more Copilot findings (explicit variable init, per-request caching so the `render_block` filter stops re-scanning bundles already found)
+-   **FOUC/CLS trade-off decided:** `card-shells`, `cta-buttons`, and `faq` reverted back to loading unconditionally (small combined size, no head-time condition at all so every use relied purely on the fallback) — removed from the marker table accordingly
+-   **Housekeeping:** added the missing `CHANGELOG.md` entry (caught after being skipped across 4 commits); rewrote the stale PR body to match the final approach; confirmed full Sass/SCSS compliance across the branch
+-   **Verified live on dev** (deployed for pre-merge testing) — confirmed via a cache-busted request that the homepage now loads exactly the 15 expected bundles, with `font-display:swap` present across all 17 fontFace entries
+-   **Real PageSpeed result confirmed (mobile, fresh capture):**
+    -   Performance score: 75 → **89**
+    -   First Contentful Paint: 3.6s → **1.8s**
+    -   Largest Contentful Paint: 4.4s → **3.2s**
+    -   Total Blocking Time: 10ms → **0ms**
+    -   Reduce unused CSS: 49 KiB → **39 KiB**
+    -   CLS shifted slightly (0 → 0.028, still well within Google's "good" range) — expected side effect of `font-display: swap`, not treated as a regression
+-   Branch fully tested pre-merge, live on dev, real performance improvement confirmed; PR #33 up to date with all review findings addressed — not yet merged
 
 ---
 
@@ -59,6 +70,7 @@
 
 -   3.40 hrs - Completed LS-2810 and started working on LS-2922 for the PageSpeed fixes and improvements.
 -   1.36 hrs - Opened the PR and reviewed with Copilot and Linear agents, then applied some fixes and now currently testing those fixes before committing.
+-   2.50 hrs - Working on LS-2922, testing changes and making improvements based off AI Code Reviews. 
 
 ---
 
