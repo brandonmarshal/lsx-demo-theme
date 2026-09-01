@@ -24,7 +24,7 @@
 **LS-2277** — Build Work Single Template (Simplified, Matching Live) `[Backlog]`
 
 -   Re-scoped with Zared to match current LIVE Work Single design rather than the more ambitious version originally planned
--   Built on local `ls-theme-testing` env, branch `feature/ls-2277-work-single-rebuild` — nothing committed yet
+-   Built on local `ls-theme-testing` env, branch `feature/ls-2277-work-single-rebuild`
 -   **Built so far:**
     -   `templates/single-project.html` — new dedicated template for the `project` CPT, previously falling back to the generic blog `single.html`
     -   `patterns/template-work-single.php` — hero + `wp:post-content`, post body renders exactly as authored
@@ -35,7 +35,27 @@
 -   **Other fixes found while narrowing down the crash:**
     -   Meta row/CTA column reverted from an untested fixed-pixel + flex-wrap combination back to the standard percentage-width columns shape already proven throughout the theme
     -   "View site" button was wired to the wrong post meta key (sourced from a different environment) — corrected via WP-CLI to the site's actual key
--   **Not yet started:** block bindings audit across the new patterns, dark/light colour-switcher verification
+-   **Design refinements to the hero:**
+    -   Refined metadata row spacing, added vertical column dividers, fixed the divider rendering as a full black box on all 4 sides (WordPress core's border-colour behaviour) by zeroing the other 3 sides
+    -   Fixed the "View site" button's hover animation overlapping its own text — icon-well transparency and custom padding were both breaking the built-in slide animation's math, reverted to theme defaults
+    -   Fixed case-study body content capped at 800px instead of 1370px — `wp:post-content` itself needed `align:"wide"`, not just its children
+-   **Drive Botswana's post content fixed via WP-CLI** (data, not theme code) — standardised inconsistent column widths, replaced invalid spacing tokens carried over from a different theme, fixed a `blockGap:"0"` override silently zeroing all child margins, and converted plain-paragraph mini-heading labels using non-existent style classes into real `core/heading` blocks
+-   **PR #35 opened** against `develop`, ready for review
+-   **Copilot review — 4 findings, all validated and fixed:**
+    -   `render_block` filter was removing the "View site" button entirely with no post context (Site Editor canvas) — now returns original content, matching the theme's other filters
+    -   Fragile `str_replace()` href swap replaced with `WP_HTML_Tag_Processor`
+    -   New SCSS file was missing from `watch:css`
+    -   Separately found: featured-image panel rendered an empty bordered box for posts with no image — styling moved from the wrapping group onto `wp:post-featured-image` directly, catching and fixing a follow-on border-colour regression along the way
+-   All fixes verified via computed styles/live rendering, replies posted individually on each Copilot comment
+-   **Remaining:** block bindings audit across the new patterns, dark/light colour-switcher verification (still blocked on a working toggle in this local env)
+
+---
+
+**Meeting — Team: LightSpeed Flow App (15:00–15:30)**
+
+-   Team shared real usage experience and bugs encountered with the new LightSpeed Flow app
+-   Discussed and resolved confusion points on how to use the app
+-   Agreed to switch email configuration from personal emails to work email addresses
 
 ---
 
@@ -53,7 +73,8 @@
 ## Time Logs
 
 -   2.40 hrs - Finalised the planning for the meeting with Richard, regarding the Bugherd MCP. (He postponed). I then proceeded with the Work and Blog PageSpeed testing/fixing. PR has been merged.
--   2.0 hrs - Working on LS-2277 building the single-work page. 
+-   2.0 hrs - Working on LS-2277 building the single-work page.
+-   3.50 hrs - Completing LS-2277 single-work page. 
 
 ---
 
