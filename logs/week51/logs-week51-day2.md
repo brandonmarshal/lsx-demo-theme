@@ -21,6 +21,24 @@
 
 ---
 
+**LS-2277** — Build Work Single Template (Simplified, Matching Live) `[Backlog]`
+
+-   Re-scoped with Zared to match current LIVE Work Single design rather than the more ambitious version originally planned
+-   Built on local `ls-theme-testing` env, branch `feature/ls-2277-work-single-rebuild` — nothing committed yet
+-   **Built so far:**
+    -   `templates/single-project.html` — new dedicated template for the `project` CPT, previously falling back to the generic blog `single.html`
+    -   `patterns/template-work-single.php` — hero + `wp:post-content`, post body renders exactly as authored
+    -   `patterns/hero/work-single-hero.php` — new hero with breadcrumb, "Case Study" eyebrow, title/excerpt, 2 CTA buttons, a 3-column meta row sourced from existing taxonomies (deliberately not inventing new fields so existing LIVE posts don't ship with blank data), and a bordered featured image panel
+    -   `inc/work-single-hero.php` — `render_block` filter resolving the "View site" button's real URL at render time, since a pattern file's PHP runs once at registration with no post context
+    -   Verified on frontend at desktop/tablet/mobile — matches the Figma hero direction while the rest matches LIVE
+-   **Site Editor crash resolved:** root cause was an invalid `"layout":{"type":"flow"}` value on a `core/group` block — not a real Gutenberg layout type, causing a `.getAlignments()` crash; frontend was unaffected since block themes silently ignore unrecognised layout types there, but the pattern was unusable in the Site Editor until fixed
+-   **Other fixes found while narrowing down the crash:**
+    -   Meta row/CTA column reverted from an untested fixed-pixel + flex-wrap combination back to the standard percentage-width columns shape already proven throughout the theme
+    -   "View site" button was wired to the wrong post meta key (sourced from a different environment) — corrected via WP-CLI to the site's actual key
+-   **Not yet started:** block bindings audit across the new patterns, dark/light colour-switcher verification
+
+---
+
 **BugHerd MCP Debrief — Artifact for Richard (Head of Product)**
 
 -   Richard requested a 30-minute call to review BugHerd MCP usage — what's working, what to fix/build next
@@ -35,6 +53,7 @@
 ## Time Logs
 
 -   2.40 hrs - Finalised the planning for the meeting with Richard, regarding the Bugherd MCP. (He postponed). I then proceeded with the Work and Blog PageSpeed testing/fixing. PR has been merged.
+-   2.0 hrs - Working on LS-2277 building the single-work page. 
 
 ---
 
