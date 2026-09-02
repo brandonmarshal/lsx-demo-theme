@@ -31,11 +31,24 @@
 
 ---
 
-**Blog Single Page — Research & Planning**
+**LS-2932** — Build Single Blog Template `[In Review]`
 
--   Compared the prototype design against LIVE's real blog post content to confirm the rebuild will still correctly hold existing LIVE post data — treated as critical before any build work starts
--   Copied the prototype page into Figma using the html-to-design plugin
--   Set up a full planned build approach for the Blog Single page — implementation to start after lunch
+-   **Research & planning:** compared the prototype design against LIVE's real blog post content to confirm the rebuild will still correctly hold existing LIVE post data — treated as critical before any build work started; copied the prototype into Figma using the html-to-design plugin
+-   **Context gathering:** re-confirmed AGENTS.md's theme-first/core-blocks-first/token/a11y/security rules before building; pulled all 4 Figma frames via Dev Mode MCP and cross-checked against two real live blog posts
+-   Flagged and agreed with Brandon that Figma's "Content" frame (sticky ToC, custom blockquote/callout) doesn't match real post content — dropped in favour of styling `post-content` only, no forced structure
+-   Used the in-progress Work Single template (LS-2277) as a structural reference for the hero
+-   **Built:**
+    -   `patterns/hero/blog-single-hero.php` — new hero with breadcrumb, dot-icon category eyebrow, title/excerpt, bordered meta strip (author/date/read-time/tags), full-wide featured image capped to `21/9`
+    -   `inc/blog-single-related-query.php` — render-time filter scoping "Related Reading" to the post's own category, returning zero results (not unfiltered posts) when the post has no category
+    -   `patterns/template-single.php` rewired — hero → post content (800px) → share row → wide Related Reading grid (reused `blog-post-card`) → wide `blog-writing-cta` (reused instead of building an unwired newsletter form)
+    -   `templates/single.html` — removed the duplicate shared breadcrumbs part reference since the hero now renders its own
+    -   Added a "Core WordPress blocks first" rule to `AGENTS.md` per request, plus a `CHANGELOG.md` entry
+-   **Iteration based on visual review:** fixed duplicate breadcrumbs, a badge that had inherited card-chip border styling from a reused class name, unconstrained featured image height, and incorrect width constraints
+-   **Real bug found and fixed:** a `constrained`-layout parent silently re-narrows any unmarked child back to 800px — `align:wide` needs setting on each direct child, not just the wrapping group; affected Related Reading
+-   **Testing:** ran the standing Playwright suite via `SINGLE_PAGE_URL` against a live local post — accessibility, heading hierarchy, image alt text, and responsive overflow all pass; remaining failures traced to pre-existing site-wide gaps unrelated to this template, not LS-2932 regressions
+-   All lint/escape/security/schema checks clean on every touched file
+-   **PR #38 opened; review fixes applied:** breadcrumb links inheriting the wrong accent colour, hero missing a tags display entirely, Related Reading falling back to unfiltered posts on category-less posts — all fixed
+-   **Open/still to do:** design QA against Figma on staging, SEO metadata verification, manual responsive check, and 3 unrelated site-wide issues flagged for their own follow-up tickets rather than fixed here
 
 ---
 
@@ -51,7 +64,8 @@
 -   1.0 hrs - Completing final changes required to the Blog and Work archive templates, and got those PR's ready to merge, after being reviewed by Zared, I merged them
 -   1.20 hrs - Made sure there were no merge conflicts on this single-work branch, after merging the others and then began using the Single page playwright test for the Single-Work template, but had some issues I had to resolve first and then re-ran the test.
 -   1.0 hrs - Cleaning up Linear workspace a bit, closing off old issues not related anymore, cleaning up the Kanban board so I can work with it on a daily basis correctly.
--   2.0 hrs - Working on Blog-single. Firstly I could not find the design on the prototype, then AI found it for me. I had to then compare it against the LIVE site current blog-single to ensure the content will still work on the new designed page. Then I setup a planned approach for the Blog-single template build. 
+-   2.0 hrs - Working on Blog-single. Firstly I could not find the design on the prototype, then AI found it for me. I had to then compare it against the LIVE site current blog-single to ensure the content will still work on the new designed page. Then I setup a planned approach for the Blog-single template build.
+-   2.20 hrs - Completed the Blog-single template build as well as playwright testing, created PR and reviewed with AI and applied all recommended fixes after validating them. 
 
 ---
 
