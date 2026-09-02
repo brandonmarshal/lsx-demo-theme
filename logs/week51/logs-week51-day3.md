@@ -31,10 +31,27 @@
 
 ---
 
+**Blog Single Page — Research & Planning**
+
+-   Compared the prototype design against LIVE's real blog post content to confirm the rebuild will still correctly hold existing LIVE post data — treated as critical before any build work starts
+-   Copied the prototype page into Figma using the html-to-design plugin
+-   Set up a full planned build approach for the Blog Single page — implementation to start after lunch
+
+---
+
+**Linear — Kanban Board Cleanup**
+
+-   Started sorting and tidying the personal Kanban board for easier day-to-day work tracking
+-   Not fully complete — remaining tidy-up planned for this evening
+
+---
+
 ## Time Logs
 
 -   1.0 hrs - Completing final changes required to the Blog and Work archive templates, and got those PR's ready to merge, after being reviewed by Zared, I merged them
 -   1.20 hrs - Made sure there were no merge conflicts on this single-work branch, after merging the others and then began using the Single page playwright test for the Single-Work template, but had some issues I had to resolve first and then re-ran the test.
+-   1.0 hrs - Cleaning up Linear workspace a bit, closing off old issues not related anymore, cleaning up the Kanban board so I can work with it on a daily basis correctly.
+-   2.0 hrs - Working on Blog-single. Firstly I could not find the design on the prototype, then AI found it for me. I had to then compare it against the LIVE site current blog-single to ensure the content will still work on the new designed page. Then I setup a planned approach for the Blog-single template build. 
 
 ---
 
