@@ -43,17 +43,31 @@
 
 -   Ran the repo's real axe-core accessibility test against all 9 affected pages on live dev (real violation data, not guesses), traced every finding to its source, and split them into 4 categories
 -   **Code fix done (Task 237):** `button.fill.background`/`border` (`brand-500`, 4.41:1) was below the 4.5:1 minimum on `is-style-button-secondary`, affecting the 404 page, Work archive CTA, and mobile menu CTA sitewide — fixed to `brand-600` (4.98:1); also found and fixed an undetected hover-state contrast failure on the same button (axe doesn't scan `:hover`) — changed to white (5.34:1)
--   PR #41 opened, merged with latest `develop`, conflict-free, ready for review
--   **Task 231 (blog color-contrast) — not a code fix:** confirmed `theme.json` already sets the correct passing `brand-600` value; live dev is still rendering the stale `brand-500` — recommended a WP global styles cache clear on dev rather than any code change
--   **Task 232 (ARIA link-name, 12 nodes) — confirmed a content/editorial task, not a theme bug:** grepped every pattern/template/style file, confirmed the markup is authored directly in specific posts' content, not from any shared component — picking this up next
--   **Task 240 (meetup-success ARIA cluster) — confirmed out of scope:** all 6 flagged nodes live inside embedded YouTube iframe internals the theme has zero control over; recommended reclassifying/closing on BugHerd as third-party, not actionable
+-   PR #41 opened, merged with latest `develop`, conflict-free
+-   **Task 231 (blog color-contrast) — resolved, no action needed:** re-checked live with a real axe-core scan against `/blog/` — zero violations; confirmed it really was just a stale dev-site cache that has since caught up to `theme.json`'s already-correct value
+-   **Task 232 (ARIA link-name, 12 links across 4 posts) — content fix complete:** added descriptive alt text to all 12 image-only links (viewed the 2 actual photos to write accurate alt text, matched 6 MailChimp icons to adjacent heading text, 4 partner logos in the Velociti post); verified via DB read-back that only alt attributes changed; moved to Testing on BugHerd
+-   **Task 240 (YouTube embed ARIA cluster) — confirmed and closed:** all 6 nodes live entirely inside YouTube's own iframe markup, no theme code involved; closed as third-party/not actionable
+-   **Task 237 — moved to Testing** on BugHerd; PR #41 covers both filled and outline button variants after a second round of review feedback, not yet merged
+-   All 4 BugHerd tasks under this issue now accounted for: 231 resolved (no action needed), 232 fixed and in Testing, 237 fixed and in Testing pending merge, 240 closed as out of scope
+
+---
+
+**LS-2935** — Fix ls-plugin CSS Loading Bug (style-linkable-blocks.css) `[In Progress]`
+
+-   **Root cause found via read-only audit of the separate `ls-plugin` repo:** `inc/linkable-blocks.php` line 49 enqueues the stylesheet with a typo'd filename (`style-linkable-blocks.css`) that doesn't exist; the real built file is `linkable-blocks.css`, no `style-` prefix — likely copy-pasted from 2 other blocks in the same plugin that genuinely do use that prefix
+-   Confirmed why it hits every page — enqueued sitewide with no template/block gating, so every page load requests the broken URL, gets a 404 HTML page back, and is blocked by strict MIME-type checking, matching the reported network-error/MIME-mismatch symptoms exactly, including on search and 404 pages
+-   **Fix implemented:** branch `fix-linkable-blocks-stylesheet-path` off `develop` in `ls-plugin`, one-line correction to the enqueued path; confirmed via full repo-wide search this typo appears in exactly one place; no rebuild needed since the correct file already exists and is already correctly built
+-   Verified via `composer run phplint` and `phpcs`, both clean (one pre-existing, unrelated `phpcs` finding confirmed to already exist on `develop` itself, unrelated to this fix)
+-   PR #19 opened on `ls-plugin` (separate repo from `ls-theme`), not yet merged
+-   Once merged and deployed, expected to resolve the CSS 404/MIME-mismatch symptoms sitewide and likely clear several of LS-2940's console-error tickets as a side effect — recommended re-triaging LS-2940 after this lands
 
 ---
 
 ## Time Logs
 
 -   2.0 hrs - Working on the Bugherd tasks logged from the Playwright tests
--   1.40 hrs - Continued work on the rest of the Bugherd tasks. Almost completed. I also merged all 4 approved PR's into develop, I had to handle all the merge conflicts after each PR merged, but was all a success in the end. 
+-   1.40 hrs - Continued work on the rest of the Bugherd tasks. Almost completed. I also merged all 4 approved PR's into develop, I had to handle all the merge conflicts after each PR merged, but was all a success in the end.
+-   2.30 hrs - Working on the rest of the Bugherds, accessibility violations and the ls-plugin CSS bug. 
 
 ## Notes
 
