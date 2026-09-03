@@ -63,11 +63,33 @@
 
 ---
 
+**LS-2596** — Build 404 Template `[In Review]`
+
+-   **Patterns built on PR #42 (`feature/ls-2596-404-template-patterns`):**
+    -   `patterns/template-404.php` rebuilt in place — large 404 numeral, H1, supporting copy, Homepage/Search CTAs, replacing the previous minimal search-only version
+    -   `patterns/sections/404-best-next-routes.php` new — "Five useful destinations" 5-card grid (Homepage, Pricing, Website packages, FAQ, Contact), full reuse of existing Card - Category style and link-arrow-accent styling, no new styles created
+    -   `templates/404.html` wired to the single `template-404` main pattern, matching the repo's existing `template-work-archive.php` convention
+-   **Design system additions:** new `effect.watermark.brand` semantic token (light 3.61:1, dark 15.4:1 contrast, both passing) plus 2 new palette presets backing it; new `1000` ("Display") fluid font-size preset for the 404 numeral since the theme's scale topped out at `900`; real inline Phosphor SVG icons embedded per card since `icon-block` doesn't render from `iconName` alone
+-   **Content:** created the FAQ page (`/faq/`) on dev so the FAQ card has a real destination; all card/button links point to real dev-site pages
+-   **Bugs found and fixed during the build:**
+    -   No gap before footer — WordPress core zeroes `margin-top` on template-part wrappers, needed `is-style-content-band` for real padding
+    -   Missing card icons — fixed via embedded SVG markup, not `iconName`
+    -   Gutenberg editor crash — invalid `"flow"` layout type corrected to `"default"`
+    -   Watermark token colour required several iterations before landing on the compliant fix (proper palette presets via `var:preset|color|...`, per design-token-policy) rather than `color-mix()` or raw hex
+    -   Hardcoded numeral font-size replaced with the new typography preset
+-   **Copilot review on PR #42 — 2 fixes applied:** related-routes section moved inside `<main>` (was rendering outside the landmark); eyebrow dot icon missing `verticalAlignment:"center"`, aligned with `work-related-routes.php`'s existing convention
+-   **Full validation run:** `php -l`, `phpcs` (zero findings), escape/security/schema checks all clean; `theme:validate` shows one pre-existing, unrelated failure confirmed already present on `develop` before this branch
+-   `CHANGELOG.md` updated
+-   **Outstanding:** manual visual QA in the Site Editor (light and dark) still pending
+
+---
+
 ## Time Logs
 
 -   2.0 hrs - Working on the Bugherd tasks logged from the Playwright tests
 -   1.40 hrs - Continued work on the rest of the Bugherd tasks. Almost completed. I also merged all 4 approved PR's into develop, I had to handle all the merge conflicts after each PR merged, but was all a success in the end.
--   2.30 hrs - Working on the rest of the Bugherds, accessibility violations and the ls-plugin CSS bug. 
+-   2.30 hrs - Working on the rest of the Bugherds, accessibility violations and the ls-plugin CSS bug.
+-   3.0 hrs - Working on LS-2596 creating the 404 template, runnning tests, created PR and did AI review.
 
 ## Notes
 
