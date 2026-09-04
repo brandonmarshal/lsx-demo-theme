@@ -17,6 +17,23 @@
 
 ---
 
+**WordPress 7.1 SVG Icons API — Migration Research for ls-theme**
+
+-   Investigated whether and how to migrate `ls-theme`'s existing hardcoded/inline SVG icons to WordPress 7.1's native Icons API
+-   **Key constraint confirmed:** the API's sanitizer only allows `<svg>`, `<path>`, and `<polygon>` — `<circle>`, `<rect>`, `<ellipse>`, and any `stroke` attribute are stripped entirely, a fixed core limit, not something to work around; fill-based icons migrate cleanly, stroke-based (outline) icons cannot without a redesign first
+-   **Full icon inventory completed** across the theme:
+    -   5 standalone icons — fill-based, sanitizer-compliant, just needs `fill="currentColor"` added
+    -   ~18 circle-bullet icons across content patterns — use `<circle>`, fails only on element type, mechanical fix (redraw as `<path>`)
+    -   ~24 badge icons across About/Insights/Pricing/Solutions mega-menus (4 files) — already fully compliant, no rework needed
+    -   Chevron icon — 32 occurrences (corrected up from an initial miscount of 13), stroke-based, blocked
+    -   6 unique Work-menu icons — stroke-based, blocked
+-   Confirmed the blocked set is confined entirely to the chevron + Work mega-menu — nothing else in the theme uses stroke icons
+-   **Plan structured into prerequisites + 4 risk-sequenced phases**, each with its own verification/QA step (Icon block picker, REST, visual diff) rather than assuming registration alone confirms success
+-   **Translated into Linear:** 1 epic (LS-3113) + 5 sub-issues — LS-3114 (prerequisites), LS-3115 (Phase 1 — 5 standalone icons), LS-3116 (Phase 2 — 18 circle-bullet icons, split into safe conversion + higher-risk usage-swap), LS-3117 (Phase 3 — badge icons), LS-3118 (Phase 4 — chevron + Work-menu redesign, blocked pending a design decision on fill-redesign vs leave-as-is)
+-   Ready to begin once prerequisite decisions are made — registration location (theme vs plugin), whether `theme-color-token-enforcer` is CI-blocking or on-demand, and register-only vs register-and-replace-usages
+
+---
+
 **Meeting — Ash Shaw, Zared Rogers & Warwick Booth: GitHub Control Plane & Agentic Workflow Alignment**
 
 -   **GitHub control plane:** `.github` repo confirmed as the org-wide control plane; Ash cleaning up root-level templates and files
@@ -34,6 +51,7 @@
 
 -   1.30 hrs - Study session, reading through the new WordPress 7.1 features, asking questions with AI for better understanding, then compare our ls-theme to see what I can plan for our site.
 -   0.40 hrs - Meeting with Ash, Zared and Warwick regarding the .gtihub rollout.
+-   1.50 hrs - Learning about the new Icon registering in WP 7.1. Then I audited the current theme repo and found all icons that would need to be migrated. I did planning and figured out which icons need fixing before the migration (Stoke icons are not supported on this new feature, so all stroked icons need to be replaced first before migration). I then built the Linear EPIC with its sub-issue to plan this migration, I will get this plan approved by Warwick. 
 
 ---
 
