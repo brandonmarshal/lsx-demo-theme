@@ -47,11 +47,22 @@
 
 ---
 
+**Merging PR #42 and PR #41 into `develop`**
+
+-   Merged PR #42 (404 template patterns) into `develop`
+-   Checked PR #41 for conflicts before merging — `theme.json` would merge cleanly, but `CHANGELOG.md` would conflict since both PRs added a new entry at the same spot
+-   Merged `develop` into the `feature/ls-2937` branch to bring in #42's changes and resolved the `CHANGELOG.md` conflict, keeping both changelog entries
+-   Verified GitHub showed the conflict cleared (`MERGEABLE`) and pushed
+-   Merged PR #41 into `develop`
+
+---
+
 ## Time Logs
 
 -   1.30 hrs - Study session, reading through the new WordPress 7.1 features, asking questions with AI for better understanding, then compare our ls-theme to see what I can plan for our site.
 -   0.40 hrs - Meeting with Ash, Zared and Warwick regarding the .gtihub rollout.
--   1.50 hrs - Learning about the new Icon registering in WP 7.1. Then I audited the current theme repo and found all icons that would need to be migrated. I did planning and figured out which icons need fixing before the migration (Stoke icons are not supported on this new feature, so all stroked icons need to be replaced first before migration). I then built the Linear EPIC with its sub-issue to plan this migration, I will get this plan approved by Warwick. 
+-   1.50 hrs - Learning about the new Icon registering in WP 7.1. Then I audited the current theme repo and found all icons that would need to be migrated. I did planning and figured out which icons need fixing before the migration (Stoke icons are not supported on this new feature, so all stroked icons need to be replaced first before migration). I then built the Linear EPIC with its sub-issue to plan this migration, I will get this plan approved by Warwick.
+-   0.25 hrs - Merging PR #42 and PR #41 from yesterday's work into develop. Had to fix CHANGELOG merge conflicts. 
 
 ---
 
