@@ -57,12 +57,29 @@
 
 ---
 
+**LS-2594** — Build Search Results Template `[In Progress]`
+
+-   Pulled design context via Figma MCP from all 6 frames (hero, results list, useful destinations, light + dark); resolved an initial light/dark screenshot mismatch by pulling the actual `get_design_context` code rather than trusting the raw screenshot render
+-   **Patterns built on PR #43 (`feature/ls-2594-search-template`):**
+    -   `patterns/hero/search-hero.php` — breadcrumb (embedded directly to avoid double padding), eyebrow, static "Search LightSpeed" H1 (deliberately not bound to the query term), description, pill search field
+    -   `patterns/sections/search-useful-destinations.php` — eyebrow, heading, 4-card grid (FAQ/Pricing/Website packages/Contact), reusing existing card styles and the same icons already used on the 404 template's "Best next routes" section
+    -   `patterns/template-search.php` rebuilt — hero → results query loop → useful destinations; results use `core/query` with `inherit:true`, category eyebrow per result, H2 post-title (fixed from an initial `level:3` that skipped a heading level), excerpt, hairline divider, whole-row clickable with hover matching the theme's stretched-link convention
+-   **Fixes found along the way:**
+    -   Search pill input text had no explicit colour, falling back to browser black — invisible in dark mode; fixed with proper text tokens, which also fixed the same latent bug on the Blog All Articles header search
+    -   Results-hover title colour was using the wrong semantic token (`link.accent` instead of `link.accent-hover`)
+    -   Font-leading mismatch between eyebrow and heading fonts was making spacing look uneven at identical margin values — fixed properly with `text-box-trim`/`text-box-edge` plus a unit-based transform fallback, resolved per-font by the browser rather than a guessed pixel offset
+-   **Verified against the dev site** — confirmed `ls-theme` is active there, `category` taxonomy matches local, and all 4 destination links are published and live; full lint/validation suite run clean, 2 pre-existing/unrelated issues noted rather than silently fixed
+-   **Self-flagged honestly:** the "Useful destinations" spacing fix took longer than it should have — mismeasuring gaps against a broken tool viewport, insisting the numbers were right when they weren't, and shipping a hardcoded pixel hack before landing on the real fix; acknowledged as self-caused delay, not genuine problem difficulty
+
+---
+
 ## Time Logs
 
 -   1.30 hrs - Study session, reading through the new WordPress 7.1 features, asking questions with AI for better understanding, then compare our ls-theme to see what I can plan for our site.
 -   0.40 hrs - Meeting with Ash, Zared and Warwick regarding the .gtihub rollout.
 -   1.50 hrs - Learning about the new Icon registering in WP 7.1. Then I audited the current theme repo and found all icons that would need to be migrated. I did planning and figured out which icons need fixing before the migration (Stoke icons are not supported on this new feature, so all stroked icons need to be replaced first before migration). I then built the Linear EPIC with its sub-issue to plan this migration, I will get this plan approved by Warwick.
--   0.25 hrs - Merging PR #42 and PR #41 from yesterday's work into develop. Had to fix CHANGELOG merge conflicts. 
+-   0.25 hrs - Merging PR #42 and PR #41 from yesterday's work into develop. Had to fix CHANGELOG merge conflicts.
+-   3.15 hrs - Working on LS-2594 the Search template for ls-theme. 
 
 ---
 
