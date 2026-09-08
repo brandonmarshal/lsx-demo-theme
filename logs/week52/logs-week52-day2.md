@@ -64,12 +64,44 @@
 
 ---
 
+**LS-3229** — Replace outermost/icon-block Usage with Core Icon Block Across ls-theme `[Backlog]`
+
+-   **Scope discovery:** re-scanned both `feature/ls-2594-search-template` (35 files) and `feature/ls-1598-build-services-page` (same 35 + 3 unique) — confirmed 38 unique files total, verified directly against both branches
+-   **Batching approach:** one 38-file PR ruled out as unreviewable — split into 5 stacked branches chaining sequentially (Batches 1–4 off each other, Batch 5 stacked separately on the unmerged `ls-1598` branch, same pattern as LS-3228 on Warwick's branch)
+-   **Final structure written into the issue:** Batch 1 Navigation/mega-menus (8 files, off `develop`), Batch 2 Homepage (8 files), Batch 3 Work section (8 files), Batch 4 Blog/cards/misc (11 files), Batch 5 Services (3 files, off `ls-1598`)
+-   Removed 2 prerequisite blockers from the issue description once no longer needed (icon collection already merged, markup check moved to implementation)
+-   **Handoff to a new session** — wrote a proper handoff prompt flagging the 2 real open items; new session correctly refused to proceed until both were resolved
+-   **Mapping document produced and corrected:** initial `icon-migration-mapping.md` undercounted real instances by grouping per unique icon rather than per literal occurrence (Batch 1 has 81 real instances, not ~42) — resolved by mechanically extracting every `<svg>` in Batch 1 and exact-path-matching each against the real `lightspeed` collection files, producing a verified 81-instance per-file table
+-   2 reconciliation flags confirmed: `trend-up`/`trending-up` are byte-identical but intentionally distinct slugs, kept separate; a mapping doc mis-attribution on `solutions-mega-menu.html` corrected — the per-occurrence table is now the source of truth
+-   **Core Icon block markup independently verified live** (insert → serialize → save → inspect via WP-CLI → render via curl) after first fixing a stale local plugin version blocking the test:
+    -   Confirmed `core/icon` is fully dynamic/server-rendered, saved as a self-closing comment with no inline SVG in source
+    -   Documented the real rendered markup and 4 favourable differences from the old `outermost/icon-block` output (single wrapper, inline styles direct on the `<svg>`, no rotation boilerplate unless set, automatic `aria-hidden` on decorative icons)
+    -   Noted a harmless lowercase `viewbox` attribute quirk so it isn't mistaken for a bug in review
+    -   Confirmed no conflict between the block-wide default CSS width fallback and per-instance explicit widths
+-   **2 open decision points before implementation:** confirming none of the 32 chevron occurrences need `flipHorizontal`/rotation attributes (none currently do); checking whether existing `.has-text-color`/wrapper-scoped CSS selectors still resolve now that those classes land directly on the `<svg>`
+-   No implementation started yet — next step is Batch 1 on `feature/ls-3229-icon-block-navigation`
+
+---
+
+**Meeting — Jose Abreu: Playwright Setup Alignment**
+
+-   Jose described his current AI-directed manual checks for front-end pages, templates, patterns, and editor errors; discussed converting these into formal Playwright specs
+-   Walked through the existing Playwright configuration, generic navigation tests, and documentation — suite covers broken CSS, runtime/network errors, accessibility, internal links, responsive overflow, media integrity, special routes, and page structure
+-   Agreed single-page tests are more appropriate during active development, while full-site scans + BugHerd reporting suit stable/deployed sites rather than local work
+-   Identified missing Firefox dependencies as the cause of 23 false BugHerd reports, separate from actual test accuracy — flagged as something to investigate and prevent going forward
+-   Reviewed the crawler and URL-limit files controlling full-site discovery
+-   **Action items:** share the Playwright setup document with Jose; Jose to review the shared document, Studio documentation, and repo configuration, and confirm access; Jose to evaluate converting his AI-directed checks into formal specs; add Jose's block-recovery checks to the generic Playwright suite; investigate and fix the missing Firefox dependency issue
+
+---
+
 ## Time Logs
 
 -   0.40 hrs - Reviewing and attending to AI reviews on PR #43. Applied changes and reviewed it again.
 -   0.30 hrs - Meeting with the team, discussing PR workflows
 -   1.30 hrs - Final preperations for meeting with Richard, then attended the actual meeting.
 -   2.20 hrs - Sourced, verified, and fixed 35 Phosphor-based SVG icons for the `ls-plugin` `lightspeed` icon collection (WP 7.1 Icons API).
+-   2.20 hrs - Working on LS-3229, this is now replacing the "outermost/icon-block" in all the patterns, with the new WordPress Core block for icons
+-   0.30 hrs - Had a meeting with Jose regarding my playwright setup in ls-theme and showed him how it works so he can implement it for his projects as well. 
 
 ---
 
