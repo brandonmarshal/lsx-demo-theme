@@ -31,7 +31,7 @@
 
 ---
 
-**Meeting — Richard (Head of Product, BugHerd)**
+**Meeting — Richard (Head of Product, BugHerd), 1hr 10min**
 
 -   Full session covering all planning points prepared in advance, plus questions Richard raised that were answered live
 -   **Current usage walkthrough:** demonstrated the automated Playwright → BugHerd pipeline — genuine defects (broken links, accessibility violations, layout overflow, broken assets, console errors) turned directly into de-duplicated, correctly-tagged tasks with no human reading raw test output first
@@ -47,11 +47,29 @@
 
 ---
 
+**LS-3228** — Source/Convert Missing Icons for the lightspeed Collection `[In Review]`
+
+-   **Research & verification before sourcing anything:**
+    -   Confirmed Phosphor's entire icon set lives in one source repo (`phosphor-icons/core`), so no risk of checking the wrong repo
+    -   Cross-referenced every icon in the LS-3227 inventory against the full 1,512-icon Phosphor `regular` set and the ~90 already in `lightspeed`, using exact SVG path-string matching rather than name guessing
+    -   Ran a full visual side-by-side comparison for every non-exact match, scored by accuracy %, flagging anything under 85% for manual review
+    -   Caught and corrected 2 wrong identifications from the original LS-3227 pass before anything was sourced — one guessed as "shopping-cart" was actually `airplane-tilt` (100% exact match, used for Tour Operators), another guessed as "trophy" was actually `paint-brush` (100% exact match, used for Design)
+    -   Checked 2 other in-flight, unmerged `ls-theme` branches for icon usage the original inventory might have missed — found 2 additional icons (`sparkle`, `question`) in the Services page work
+    -   Worked through every ambiguous icon directly with Brandon to confirm correct names/usage before finalising
+-   **Result:** 42 total icon needs identified → 5 reused from the existing collection → 3 pairs collapsed to one shared file each → 35 new files added (34 sourced from Phosphor `core`, 1 custom solid-fill `dot.svg` for section-badge bullet markers)
+-   PR #21 opened — stacked on Warwick's #20, diff limited to the 35 new files, blocked from merging until his lands
+-   **Review fix applied:** PR review flagged `fill="currentColor"` incorrectly placed on the `<svg>` root instead of the `<path>` — the WP 7.1 icon sanitiser strips root-level `fill`, so icons were rendering solid black; checked all 35 new files and found the same issue across all 34 Phosphor-sourced icons (not just the 2 originally flagged), plus `dot.svg` had no `fill` at all — fixed all 35 to match the collection's documented convention
+-   Not yet committed/pushed — handling manually
+-   **Next:** once PR #21 is reviewed/merged, the icon → theme-pattern mapping feeds directly into LS-3229's block-migration work
+
+---
+
 ## Time Logs
 
 -   0.40 hrs - Reviewing and attending to AI reviews on PR #43. Applied changes and reviewed it again.
 -   0.30 hrs - Meeting with the team, discussing PR workflows
 -   1.30 hrs - Final preperations for meeting with Richard, then attended the actual meeting.
+-   2.20 hrs - Sourced, verified, and fixed 35 Phosphor-based SVG icons for the `ls-plugin` `lightspeed` icon collection (WP 7.1 Icons API).
 
 ---
 
