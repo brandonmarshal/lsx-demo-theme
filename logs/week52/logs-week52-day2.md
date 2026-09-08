@@ -31,7 +31,7 @@
 
 ---
 
-**Meeting — Richard (Head of Product, BugHerd), 1hr 10min**
+**Meeting — Richard (Head of Product, BugHerd)**
 
 -   Full session covering all planning points prepared in advance, plus questions Richard raised that were answered live
 -   **Current usage walkthrough:** demonstrated the automated Playwright → BugHerd pipeline — genuine defects (broken links, accessibility violations, layout overflow, broken assets, console errors) turned directly into de-duplicated, correctly-tagged tasks with no human reading raw test output first
