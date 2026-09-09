@@ -32,7 +32,11 @@
     -   Structural difference from earlier batches — these files render icons dynamically via PHP arrays/loops rather than static instances; converted each array from raw inline SVG to bare `lightspeed/{name}` slugs and rewrote the loop templates to emit `wp:icon` blocks dynamically per iteration; removed now-dead raw-SVG variables
     -   2 icons needed file-specific disambiguation (`sparkle`/`question` byte-identical to `special-interests`/`help` used elsewhere) — resolved per-file, not guessed
     -   Verified via `php -l`, escape/security scans, and a PHP block-rendering test confirming exact icon/svg counts (15, 6, 26) and that every slug resolves
--   **Current state:** all 5 batches implemented with open PRs — #44/#45/#47/#48 (stacked chain, all carrying LS-3720's fix) and #50 (separate stack, also carrying the fix); `ls-1598` itself still needs its own PR opened before that stack can be reviewed in order; missing-icons tracking list and LS-3719's findings remain the two open threads for a bulk pass
+-   **Missing icons sourced, mapped, and PR'd on `ls-plugin`:**
+    -   Double-checked the tracking list against actual branch content before sourcing — corrected a count (`thank-you-consultation.php` has 4× `check`, not 3×) and confirmed the real gap is only 5 distinct icon shapes (`check`, `users`, `lightbulb` already exist and just needed reuse)
+    -   All 5 missing icons (`notepad`, `clipboard-text`, `github`, `rocket-launch`, `buildings`) mapped and byte-verified against Phosphor's real source, converted to the collection's `fill="currentColor"` convention
+    -   New branch `feature/ls-3229-source-remaining-lightspeed-icons` on `ls-plugin`, PR #24 opened, currently in review
+-   **Current state:** all 5 `ls-theme` batch PRs remain open (#44, #45, #47, #48, #50); once `ls-plugin#24` merges, plan is to return to the affected branches and convert the remaining skipped instances on those same branches — no new branch needed; LS-3719's audit findings still need dedicated follow-up fix issues, separately
 
 ---
 
@@ -97,6 +101,7 @@
 -   2.20 hrs - Continued working on LS-3229, one batch left to work on, but new bug discovered.
 -   0.30 hrs - Investigating the bugs and planning a linear issue for a full audit to find all the occurrences of this bug. I also investigated why the ls-plugin changes now effected pages on the site and its the taxonomy changes made, I will need to discuss those with Warwick.
 -   2.30 hrs - Complete all the batches for LS-3229. Audited the SCSS "outermost/Icon-block" occurrences and removed them from all styles. Restored the ls-plugin taxonomies back to match LIVE's ones.
+-   1.0 hrs - Auditing missing icons, then mapping them out to the missing icons to Phosphor icons, then implementing them on ls-plugin
 
 ---
 
