@@ -29,9 +29,22 @@
 
 ---
 
+**Linear — Skills & Issue Templates Reference Documentation**
+
+-   Reviewed the LightSpeed Skill catalogue and identified Skills created or updated in the 8–9 September cluster
+-   Confirmed creation/last-updated timestamps are available for Skills, but creator/editor attribution is not reliably available
+-   Reviewed 21 project-management, governance, and delivery-related Skills in full
+-   Created the **Linear Project Management Skills Reference** document, covering the selected Skills with "What it helps with" and "Real-world example" entries for each
+-   Reviewed the live LightSpeed issue-template inventory — 25 templates covering the canonical issue types
+-   Created the **LightSpeed Issue Templates Reference** document, explaining when to use each template with a practical example
+-   Confirmed both are best kept as separate team Documents — one for choosing/using Skills, one for choosing issue templates
+
+---
+
 ## Time Logs
 
 -   1.50 hrs - Working on the missing icons in the migration, went back and replaced all the ones skipped yesterday. Then aduited the merge conflicts and resolved those on all PR's. Audited "Attempt Recovery" bugs in the editor, but PR #51 will fix those on merge.
+-   0.45 hrs - Setting up the documentation for Linear skills and Linear issue templates. 
 
 ---
 
