@@ -26,6 +26,14 @@
     -   `package.json` — both sides appended a new stylesheet to the same build/watch command strings; merged both sets into each command
 -   Merged `develop` into the branch (not the reverse), resolved all 3 files, verified `php -l`/JSON validity, and confirmed the merged `build:css` script compiles clean with zero drift
 -   PR #51 now shows `MERGEABLE` — this unblocks Batch 5's PR (#50), which stacks on top of this branch
+-   **Section 3 built on a new stacked branch** (`feature/ls-1598-services-page-batch-2`, since the parent branch had grown too large to review as one PR) — "Fourteen services. One delivery model." 14-card bento grid, each card a single stretched link to its own service page, reusing the icon mapping already established in the hero
+    -   No existing card shell fit — added `styles/sections/cards/card-service-tile.json` after confirming the gap
+    -   Corrected the heading from Figma's literal "Ten services" to "Fourteen services" — the copy undercounted its own 14 cards
+    -   First attempt at fixing mobile/tablet spacing (native CSS Grid with `columnSpan`) technically worked in isolation but broke at real narrower viewports — reverted back to the plain `wp:columns` structure already used elsewhere on the page
+    -   Root-caused the actual gap bug — each row's `blockGap` only set its horizontal component, so the vertical gap fell back to WordPress's default once columns stacked on mobile/tablet; fixed with a single `blockGap` value applying to both axes
+    -   PR #54 opened, stacked correctly onto #50's branch (rebased there, force-pushed) forming one linear chain: `develop ← #51 ← #50 ← #54`; no file overlap with #50
+-   All changes validated (`php -l`, escape/security/schema/lint/PHPCS checks) clean throughout
+-   **Next:** Sections 4–5 and the CTA
 
 ---
 
@@ -45,14 +53,14 @@
 -   Mapped how the two connect into one overall workflow (Request → Skill/workflow → issue type → template → management → delivery/governance), with `skill-suggester` as the entry point when the right workflow is unclear
 -   Decided to merge both references into one combined Google Docs parent document (**LightSpeed Issue & Project Management Reference**), each kept in its own tab
 -   Drafted NotebookLM Studio prompts for a system overview, decision-tree infographic, ecosystem visual, and explainer videos, plus 4 distinct Slide Deck concepts covering the system overview, issue-type selection, skill selection, and a full request-to-delivery workflow walkthrough
-
 ---
 
 ## Time Logs
 
 -   1.50 hrs - Working on the missing icons in the migration, went back and replaced all the ones skipped yesterday. Then aduited the merge conflicts and resolved those on all PR's. Audited "Attempt Recovery" bugs in the editor, but PR #51 will fix those on merge.
 -   0.45 hrs - Setting up the documentation for Linear skills and Linear issue templates.
--   2.35 hrs - Completed the documentation for Linear Project Management and Templates, and also setup a NotebookLM for the team with visuals and infographics. I then began setting up OpenSpec In the repo so I could use it to plan out the PR/Changelog skill, then built it and opened the PR for reviewing. 
+-   2.35 hrs - Completed the documentation for Linear Project Management and Templates, and also setup a NotebookLM for the team with visuals and infographics. I then began setting up OpenSpec In the repo so I could use it to plan out the PR/Changelog skill, then built it and opened the PR for reviewing.
+-   2.0 hrs - Continued working on Service Page patterns, creating new branches and PR's then stacking them all that are related to the same page build.
 
 ---
 
