@@ -29,22 +29,30 @@
 
 ---
 
+**LS-3223** — Plan New Skills via OpenSpec `[In Progress]`
+
+-   OpenSpec set up in `ls-theme` as the repo's spec-driven planning workflow for new skills
+-   **First skill delivered end-to-end through the new process: `open-pr`** — full planning trail produced, `SKILL.md` implemented and validated against its own spec, live-tested by using the skill on itself to create its own PR
+-   PR #53 opened and currently in review
+-   **Remaining before closing out:** verify the `gh pr edit` (existing-PR) path once there's a live case to exercise it, and archive the OpenSpec change once merged
+
+---
+
 **Linear — Skills & Issue Templates Reference Documentation**
 
--   Reviewed the LightSpeed Skill catalogue and identified Skills created or updated in the 8–9 September cluster
--   Confirmed creation/last-updated timestamps are available for Skills, but creator/editor attribution is not reliably available
--   Reviewed 21 project-management, governance, and delivery-related Skills in full
--   Created the **Linear Project Management Skills Reference** document, covering the selected Skills with "What it helps with" and "Real-world example" entries for each
--   Reviewed the live LightSpeed issue-template inventory — 25 templates covering the canonical issue types
--   Created the **LightSpeed Issue Templates Reference** document, explaining when to use each template with a practical example
--   Confirmed both are best kept as separate team Documents — one for choosing/using Skills, one for choosing issue templates
+-   Reviewed the LightSpeed Skill catalogue and 21 project-management/governance/delivery-related Skills, and the live issue-template inventory (25 templates)
+-   Created two reference documents: **Linear Project Management Skills Reference** and **LightSpeed Issue Templates Reference**
+-   Mapped how the two connect into one overall workflow (Request → Skill/workflow → issue type → template → management → delivery/governance), with `skill-suggester` as the entry point when the right workflow is unclear
+-   Decided to merge both references into one combined Google Docs parent document (**LightSpeed Issue & Project Management Reference**), each kept in its own tab
+-   Drafted NotebookLM Studio prompts for a system overview, decision-tree infographic, ecosystem visual, and explainer videos, plus 4 distinct Slide Deck concepts covering the system overview, issue-type selection, skill selection, and a full request-to-delivery workflow walkthrough
 
 ---
 
 ## Time Logs
 
 -   1.50 hrs - Working on the missing icons in the migration, went back and replaced all the ones skipped yesterday. Then aduited the merge conflicts and resolved those on all PR's. Audited "Attempt Recovery" bugs in the editor, but PR #51 will fix those on merge.
--   0.45 hrs - Setting up the documentation for Linear skills and Linear issue templates. 
+-   0.45 hrs - Setting up the documentation for Linear skills and Linear issue templates.
+-   2.35 hrs - Completed the documentation for Linear Project Management and Templates, and also setup a NotebookLM for the team with visuals and infographics. I then began setting up OpenSpec In the repo so I could use it to plan out the PR/Changelog skill, then built it and opened the PR for reviewing. 
 
 ---
 
