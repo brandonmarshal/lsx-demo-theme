@@ -38,10 +38,36 @@
 
 ---
 
+**PR Branch Sync — Round 2, Post Icon Migration Stack Merge**
+
+-   Icon Block Migration stack (#44 → #45 → #47 → #48) merged into `develop`, landing 4 new commits and leaving `#53` and the full Services page stack (#51 → #50 → #54 → #55 → #56) stale again
+-   **Investigated GitHub's native "Rebase stack" button as a possible shortcut** — confirmed it's a mechanically equivalent server-side sequential rebase, but recommended against it here since it lacks the verification tooling (diff-against-base, `php -l`, JSON validation) that caught the real bug in the previous round; agreed to stick with the manual, verified approach
+-   Confirmed zero file overlap between what the Icon Block stack touched and what the Services page branches touch — a fundamentally lower-risk round than before
+-   **All 6 branches rebased in order — every single one applied with zero conflicts:** `#53` (independent), then `#51 → #50 → #54 → #55 → #56` in sequence
+-   Root cause of the clean run: Git's patch-id matching recognised each branch's older commits as already-applied once its parent had been updated, silently skipping them and only replaying each branch's genuinely new, unique commits
+-   Same full verification standard applied to every branch as the previous round (ancestry checks, conflict-marker sweep, PHP/JSON lint, CHANGELOG duplicate-heading check, legacy icon-markup sweep, full-tree diff against base) — all passed clean
+-   **Result:** all 6 branches now `MERGEABLE` against their current bases; Services stack intentionally held pending Playwright testing before merge — this round was pure hygiene to keep it current and conflict-free in the meantime
+
+---
+
+**LS-4124** — Automation: CodeRabbit Config — Automatically Review Pull Requests `[In Progress]`
+
+-   **PR #57 opened**, expanding `.coderabbit.yml`:
+    -   Widened `auto_review.base_branches` to include `feature/*`/`fix/*` so stacked PRs get auto-reviewed, not just PRs targeting `main`/`develop`
+    -   Enabled `finishing_touches` (autofix, docstrings, unit_tests), `tools` (eslint, markdownlint, gitleaks, trufflehog), and `knowledge_base.code_guidelines` pointed at `AGENTS.md`, plus related review-quality settings
+    -   Set `profile: assertive`, enabled `request_changes_workflow`
+    -   Added matching `CHANGELOG.md` entry
+-   CodeRabbit initially produced no comment at all on PR #57 despite the config looking correct — confirmed as an access/setup issue (GitHub App repo access), not a config problem
+-   **Resolved:** Warwick granted CodeRabbit's GitHub App access to `ls-theme`; triggered a review on PR #57 manually via `@coderabbitai review` and confirmed it's now working
+-   With access restored and the expanded config live, auto-review should now fire automatically on future PRs — including stacked ones on `feature/*`/`fix/*` — without needing the manual command
+
+---
+
 ## Time Logs
 
 -   0.40 hrs - Follow up meeting with Ash regarding the Spec-Kit setup and workflow.
 -   2.50 hrs - Rebasing 11 PR's that had merge conflicts because of updates made to develop (Spec-Kit) as well as other PR's that merged into develop while these were still open.
+-   2.15 hrs - Merging the Icon Migration PR stack, then rebasing the remaining PR's so they are up to date with no conflicts. Then I start working on the Coderabbit config, reading coderabbit docs before making decisions on the config. 
 
 ---
 
