@@ -58,8 +58,25 @@
     -   Set `profile: assertive`, enabled `request_changes_workflow`
     -   Added matching `CHANGELOG.md` entry
 -   CodeRabbit initially produced no comment at all on PR #57 despite the config looking correct — confirmed as an access/setup issue (GitHub App repo access), not a config problem
--   **Resolved:** Warwick granted CodeRabbit's GitHub App access to `ls-theme`; triggered a review on PR #57 manually via `@coderabbitai review` and confirmed it's now working
--   With access restored and the expanded config live, auto-review should now fire automatically on future PRs — including stacked ones on `feature/*`/`fix/*` — without needing the manual command
+-   **Access resolved:** Warwick granted CodeRabbit's GitHub App access to `ls-theme`; triggered a review manually via `@coderabbitai review`
+-   **First real review caught a genuine bug in the config itself:** `base_branches` entries are matched as regex, not glob — `feature/*`/`fix/*` are invalid regex (nothing to repeat before `*`); CodeRabbit autofixed this itself via commit `2bffd45`, correcting them to `feature/.*`/`fix/.*`
+-   Re-reviewed after the fix — clean: no actionable comments, 5/5 pre-merge checks passed, Merge Risk rated Minimal, `ashleyshaw` suggested as reviewer
+-   Noted for future reference: CodeRabbit only re-reviews on a new commit — running `@coderabbitai review` twice on the same commit is a no-op; plan confirmed as Advanced, 1 included review per hour
+-   PR #57 now ready for human review/merge
+
+---
+
+**LS-3222** — Fix: Mobile Menu — Restore Links and Remove Systems `[Tracking]`
+
+-   **Full Spec Kit workflow set up under `specs/001-fix-mobile-menu/` before implementation** — `spec.md` (3 prioritised user stories, 7 functional requirements, 4 success criteria, 16/16 quality checklist), `plan.md` (Constitution Check against AGENTS.md), `research.md`, `data-model.md`, `quickstart.md`, and a 17-task `tasks.md`
+-   Ran `/speckit-analyze` before implementing — no critical issues, one MEDIUM inconsistency found and tracked (spec assumed "Systems" was nested in a dropdown; actual markup had it as a standalone row)
+-   **Root cause found:** the real bug wasn't unclickable page-list links — it was that the accordion labels themselves (Work, Solutions, Services, Pricing, Insights, About) had no link at all, just a plain `<details>/<summary>` toggle
+-   **Fixed:** wrapped each accordion label in a real `<a>` to its overview page; clicking the label now navigates directly while clicking elsewhere in the row still toggles the dropdown natively, no JS needed
+-   **Removed "Systems":** deleted the dead `/systems/` row from the mobile menu template and from both local desktop Navigation menus; the equivalent live DEV menu content left untouched (read-only access there)
+-   **Mobile dropdown layout overhaul across all 6 menus:** converted 2-column page-list grids to single-column; decoupled each row's visual height (~29px) from its tap-target size (kept at the accessible ~44px minimum via an invisible expanded hit area); tightened heading/CTA spacing while preserving stronger separation between sections; increased "See all…" CTA font size to match page-link text; Services dropdown kept its lifecycle phase styling but with reduced indentation
+-   All link destinations verified against real DEV site content via read-only queries, not guessed
+-   **Known gaps left open:** 320px breakpoint not yet re-verified after the final round of changes (375px was); cross-browser/device QA still pending; "Systems" still present on DEV's live desktop Navigation (out of scope, read-only); changelog entry deferred to PR time
+-   2 commits on the branch so far; PR intentionally not opened yet — holding until the CodeRabbit config work above is confirmed working so review actually runs on it
 
 ---
 
@@ -67,7 +84,8 @@
 
 -   0.40 hrs - Follow up meeting with Ash regarding the Spec-Kit setup and workflow.
 -   2.50 hrs - Rebasing 11 PR's that had merge conflicts because of updates made to develop (Spec-Kit) as well as other PR's that merged into develop while these were still open.
--   2.15 hrs - Merging the Icon Migration PR stack, then rebasing the remaining PR's so they are up to date with no conflicts. Then I start working on the Coderabbit config, reading coderabbit docs before making decisions on the config. 
+-   2.15 hrs - Merging the Icon Migration PR stack, then rebasing the remaining PR's so they are up to date with no conflicts. Then I start working on the Coderabbit config, reading coderabbit docs before making decisions on the config.
+-   3.30 hrs - Setup planning for the mobile menu fixes using Spec-kit, implemented the work and then did reviews, additional changes were required. Tested all changes and confirm this is ready for a PR.
 
 ---
 
