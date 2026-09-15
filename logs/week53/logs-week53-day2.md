@@ -43,6 +43,13 @@
     -   Found the "All Services" section's eyebrow dot was still on the legacy `outermost/icon-block`, never migrated since this file was added after PR #50 — migrated it to `core/icon` (`lightspeed/dot`), completing the LS-3229 migration for this page; committed and pushed
     -   Filed LS-4168 for the underlying root cause — the `lightspeed/dot.svg` asset in `ls-plugin` has excessive internal padding, making the icon render smaller than intended everywhere it's used — left for a separate fix in `ls-plugin`
 -   **Linear housekeeping:** consolidated 7 prior progress-update comments on this issue into a single chronological summary comment for readability
+-   **CTA button overflow fixed:** "Request a systems review" button was spilling out past the CTA card's rounded border at narrow viewports (confirmed at 320px) — root cause was the button's flex-item wrapper missing a `min-width` override, so flexbox's default `min-width:auto` refused to let it shrink below its `white-space:nowrap` text width; fixed with a scoped rule in `corner-glow.scss` limited to buttons inside the CTA card, verified at 320px and 768px
+-   **Root cause of the "Block contains unexpected or invalid content" editor warnings found and fixed:**
+    -   Traced to a genuine WordPress core limitation — `wp_style_engine_get_styles()` silently drops `border-color`/`background-color` when the value uses `color-mix()`, confirmed directly by feeding it the exact JSON attributes and diffing against the hand-authored inline style; since the editor regenerates expected HTML from JSON attributes and compares it byte-for-byte, any block using `color-mix()` in border/background colour permanently fails validation even though it renders correctly on the front end
+    -   Fixed in `services-hero.php` (14 hero tag pills) and `services-linked-decisions.php` (6 step badges) — moved rest-state phase colours out of the JSON `style` attribute into real CSS classes keyed off the existing per-phase className, extending the same pattern already used for `:hover` states, and dropping the now-unneeded `!important`
+    -   Investigated a separate, unrelated overflow issue on the hero's "Services / Lifecycle" preview card (4 colour pills overflowing at certain widths) — no clean fix found, reverted in full, left for a follow-up
+-   **Stack rebased and re-verified mergeable:** the colour-mix fix landing on `#50` meant `#54`/`#55`/`#56` were stacked on an older point of that branch; rebased `batch-2 → batch-3 → batch-4` in sequence onto the updated `#50` with zero conflicts at every step; force-pushed all three — PRs #54, #55, #56 now all show `MERGEABLE`
+-   Confirmed merge order for the stack: top-down into each existing base (`#56`→`batch-3`, `#55`→`batch-2`, `#54`→`icon-block-services`, `#50`→`build-services-page`), stopping before `#51` merges into `develop`
 
 
 ---
@@ -51,6 +58,7 @@
 
 -   3.0 hrs - Setting up the PR for LS-3222 and setting up unit tests for the work, then ran through the tests and did Coderabbit review, applied all the recommended fixes, re-tested and all passed, ready for human review.
 -   3.30 hrs - Worked on Playwright tests and Manual QA for the Services page. Found and fixed several bugs, created a follow-up Linear issue for the icon bug, and ensured consistent icon sizing across all Service page patterns.
+-   2.15 hrs - Working on the manual QA checklist and applying fixes, between branches on the stack, which got confusing because some branches had work others did not and they each had their own issues
 
 ---
 
