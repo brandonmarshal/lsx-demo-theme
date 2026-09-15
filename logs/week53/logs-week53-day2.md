@@ -28,9 +28,29 @@
 
 ---
 
+**LS-1598** — Build Services Page `[In Progress]`
+
+-   **Playwright coverage confirmed:** the existing standing suite (accessibility, internal links, page structure, responsive overflow, network/console errors, site health, search) already covers `/services/` automatically via sitewide sitemap crawling — no separate test PR needed; used `SINGLE_PAGE_URL` to run all standing specs scoped to `/services/` only, without triggering sitewide BugHerd reporting
+-   **52 broken internal links found and fixed:**
+    -   Initial run surfaced 58 broken links, mostly shared header/footer/mega-menu links rather than page-specific content; created matching blank pages locally across 3 batches (51 pages + 1 `project`-type post) to bring local parity with DEV, re-running the suite after each batch until fully green
+    -   5 links (`/services/create`, `/services/evolve`, `/services/launch`, `/services/discover`, `/services/grow`) found as pre-existing unpublished drafts on DEV — published directly via MCP rather than creating duplicates
+    -   4 `/work/*` case-study links (including `slimmer-met-sarie`) were 404ing on DEV itself — root-caused to `ls-plugin` running an outdated version (0.1.0) predating the SCF JSON local-registration mechanism for the `project` post type; confirmed fixed after DEV was updated to 0.2.0
+    -   5 remaining mismatches (3 genuinely broken, 2 slug/path mismatches) flagged rather than papered over with stub pages, since they reflect real content/menu issues
+-   **Manual QA checklist written** covering hero, linked-decisions pill chain, service clusters, the "All services" grid, entry points, delivery-numbers stats, closing CTA, and cross-cutting checks (keyboard, screen reader, responsive, dark/light, cross-browser) — added to PR #56's Test Plan section
+-   **Icon-block migration cleanup:**
+    -   Investigated a reported badge-size inconsistency between Service Clusters and All Services icon wells; found and fixed a genuine 22px/18px width mismatch but confirmed it wasn't the actual cause of the reported issue — reverted that change in full
+    -   Root-caused the real eyebrow-dot sizing inconsistency to a `dimensions` attribute incorrectly nested as a sibling of `style` instead of inside it on Entry Points/Delivery by the Numbers — already fixed in pattern source by an earlier PR #55 commit, but the live page's saved content had been frozen before that fix and never resynced
+    -   Found the "All Services" section's eyebrow dot was still on the legacy `outermost/icon-block`, never migrated since this file was added after PR #50 — migrated it to `core/icon` (`lightspeed/dot`), completing the LS-3229 migration for this page; committed and pushed
+    -   Filed LS-4168 for the underlying root cause — the `lightspeed/dot.svg` asset in `ls-plugin` has excessive internal padding, making the icon render smaller than intended everywhere it's used — left for a separate fix in `ls-plugin`
+-   **Linear housekeeping:** consolidated 7 prior progress-update comments on this issue into a single chronological summary comment for readability
+
+
+---
+
 ## Time Logs
 
 -   3.0 hrs - Setting up the PR for LS-3222 and setting up unit tests for the work, then ran through the tests and did Coderabbit review, applied all the recommended fixes, re-tested and all passed, ready for human review.
+-   3.30 hrs - Worked on Playwright tests and Manual QA for the Services page. Found and fixed several bugs, created a follow-up Linear issue for the icon bug, and ensured consistent icon sizing across all Service page patterns.
 
 ---
 
