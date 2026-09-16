@@ -69,11 +69,23 @@
 
 ---
 
+**Meeting — Jose Abreu: CodeRabbit Configuration & Spec Kit Workflow**
+
+-   **CodeRabbit access diagnosed as the likely cause of missing automatic reviews** — walked through testing repository access and diagnosing whether missing reviews come from permissions vs configuration; reviewed config settings, linked-resource access, linting tools, unit-test generation, and auto-fixes that can commit directly to a branch
+-   Confirmed manual AI-review comments can be used as a way to test repository permissions
+-   **Transition from OpenSpec to Spec Kit discussed** — Jose moving to Spec Kit for future work while retaining completed OpenSpec decisions as reference material; agreed Spec Kit gives a more robust path from planning to implementation
+-   **Spec Kit workflow explained** — starting from a detailed Linear issue and running specify → clarify → plan → analyze → implement in sequence with AI assistance; Jose advised to model his repo configuration on the Alice theme repository, especially since additional CodeRabbit review credits weren't available
+-   Jose to contact Brandon if he runs into problems with CodeRabbit or the setup
+-   Closed with a brief note on a Claude service-status incident (broad Claude Sonnet server issues) that had explained some abnormal behaviour Jose had reported earlier
+
+---
+
 ## Time Logs
 
 -   2.50 hrs - Cleaned up the Linear project ahead of Spec Kit planning by reviewing 20 stale issues, closing 17 as Done and cancelling 3 superseded items, leaving a much cleaner backlog focused on active delivery, fixes, dependencies, and release QA.
 -   1.50 hrs - Reviewed and restructured the Linear project milestones using Spec Kit planning, mapped all 39 open issues into a new 6-milestone release plan, excluded out-of-scope bugs/tooling, and prepared the project for Linear re-planning and the first Services Family spec
 -   3.10 hrs - Executed the Linear re-planning, then wrote full spec→clarify→plan→tasks cycles for all 7 release batches (discovering and tracking 25 previously-missing pages/issues along the way), completing 100% of the planning with zero implementation started.
+-   0.45 hrs - Preparing for the meeting with Jose, then attended the meeting with him and went over what I planned. 
 
 ## Notes
 
