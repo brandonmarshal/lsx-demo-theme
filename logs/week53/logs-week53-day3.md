@@ -42,8 +42,30 @@
     -   Split "Launch" and "Post-Launch QA" into two separate milestones after they were flagged as wrongly bundled
     -   Resolved the legacy-page-redirect open question by folding it into Pre-Launch QA, and removed the now-redundant "Milestone Data Caveat" section — plan now has zero open questions
     -   Added a Reference Environments section — Figma provided per-page on demand, live site marked strictly read-only, dev/staging site marked read-only from planning context
--   Commit message for `release-plan.md` provided; not yet confirmed committed
--   **Next steps identified:** commit the release plan if not done; carry out the actual Linear re-planning (move 23 issues + 2 epics into the new milestones, create the missing Post-Launch QA and legacy-page-audit issues, set new milestone due dates); then run `/speckit-specify` for the Services Family as the first batch spec
+
+---
+
+**Linear Re-Planning — Execution**
+
+-   **Created 6 new milestones** (Priority Pages Complete, Core Site Pages Complete, AI Mega Page Complete, Pre-Launch Manual QA Complete, Website Launch, Post-Launch Manual QA Complete) — "Launch" renamed to "Website Launch" since Linear blocks duplicate milestone names
+-   Moved 25 open issues + 2 tracking epics out of the stale "Core & depth pages built" milestone into the new ones; verified the old milestone now correctly shows 100% with only its 4 already-Done items remaining
+-   Created LS-4176 (legacy-page redirect/retire audit) and LS-4177 (post-launch QA), labelled from the existing team taxonomy
+-   Left 4 historical milestones and all bug-fix/out-of-scope issues untouched as designed
+-   **Process correction applied before any spec work began:** all 7 batches to be fully planned in one sitting before implementation starts, with implementation handed to a coding agent per-task rather than `/speckit-implement`, and each page-build task structured to force the agent to request its Figma frame rather than assume it — applied consistently across every batch below
+
+---
+
+**Spec Kit Planning — All 7 Release Batches (Full spec → clarify → plan → tasks cycles)**
+
+-   **Batch 1 — Services Family:** clarify surfaced the batch was really 21 pages (a hidden hub → 6 phases → 14 services hierarchy), not the assumed 7, confirmed against live design and the dev site; 14 new Linear issues created (LS-4179–LS-4192); plan defines 2 shared patterns (Phase Hero/Badge, Service Card); 77 tasks across 7 phase-grouped user stories
+-   **Batch 2 — Core Site Pages:** 25 pages (Shared Foundations, About, Solutions); dev-site check found 4 more untracked pages and that Policies & Principles is 7 real pages, not 1 condensed page as originally claimed — 11 new Linear issues created (LS-4193–LS-4203); Contact-vs-Free-Consultation thank-you-page question resolved by direct evidence; plan defines 2 shared patterns; 87 tasks across 6 user stories
+-   **Batch 3 — AI Mega Page:** single page, confirmed genuinely greenfield on dev with no surprise scope; structural blocking gate added so it cannot implement until AI Services and AI Solutions actually exist, not just spec'd; 15 tasks
+-   **Batch 4 — Pre-Launch Manual QA:** scoped deliberately as coverage/acceptance-bar only, with test-case authoring staying in existing tooling; covers LS-3716 plus the legacy-page audit; 20 tasks, gated on batches 1–3 having working drafts
+-   **Batch 5 — Website Launch:** pure governance batch, no code; requires the rollback plan documented before the go/no-go decision; every task human-executed, never agent-executed against the live site; 14 tasks, gated on batch 4 completing
+-   **Batch 6 — Post-Launch Manual QA:** final batch; clarify fixed the live re-verification scope to the full LS-3716 journey set, overriding an initial sampling recommendation; defines the formal close-out point for the entire release plan; 18 tasks, gated on batch 5 completing
+-   **Release plan closed out** — `release-plan.md` updated with a summary table confirming all 7 batches have complete spec → plan → tasks, plus a final "Planning Complete" note; every cross-batch dependency (3→1/2, 4→1-3, 5→4, 6→5) implemented as a structural blocking task rather than a note
+-   **25 new Linear issues created this session's second half** (LS-4176, LS-4177, LS-4179–LS-4203)
+-   **Status:** planning fully complete across all 7 batches — zero implementation started anywhere
 
 ---
 
@@ -51,6 +73,7 @@
 
 -   2.50 hrs - Cleaned up the Linear project ahead of Spec Kit planning by reviewing 20 stale issues, closing 17 as Done and cancelling 3 superseded items, leaving a much cleaner backlog focused on active delivery, fixes, dependencies, and release QA.
 -   1.50 hrs - Reviewed and restructured the Linear project milestones using Spec Kit planning, mapped all 39 open issues into a new 6-milestone release plan, excluded out-of-scope bugs/tooling, and prepared the project for Linear re-planning and the first Services Family spec
+-   3.10 hrs - Executed the Linear re-planning, then wrote full spec→clarify→plan→tasks cycles for all 7 release batches (discovering and tracking 25 previously-missing pages/issues along the way), completing 100% of the planning with zero implementation started.
 
 ## Notes
 
