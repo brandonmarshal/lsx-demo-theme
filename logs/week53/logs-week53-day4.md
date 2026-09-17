@@ -6,19 +6,15 @@
 
 ---
 
-**Services Page PR Stack — Merge Conflict Investigation & Resolution**
-
--   Investigated merge conflicts across the 5-PR Services page stack (#51 → #50 → #54 → #55 → #56)
--   **Root cause #1 found:** PR #56 (`batch-4`) had been accidentally rebased onto `develop` at some point instead of its real parent (`batch-3`), duplicating its entire commit history under new hashes — fixed by rebuilding it from just its 6 genuinely new commits on top of `batch-3`, then force-pushing
--   **Root cause #2 found:** `CHANGELOG.md` conflict — `develop` had a new entry every branch in the stack was also trying to insert at the same spot — fixed by updating #51 against `develop` first, resolving that one conflict by hand, then flowing the fix upward through #50 → #54 → #55 → #56 in order, each branch only ever touching its real parent, never `develop` directly except #51
--   All 5 PRs verified `mergeable: true`, conflicts cleared
--   **Mistakes made and corrected along the way:** wrongly dismissed PR #54's conflict as a stale GitHub cache before properly verifying it was real; at one point suggested rebasing the whole stack onto `develop`, which would have repeated the exact mistake that broke #56; took direct pushback before finding the actual conflicting file; got stuck in an unwanted Plan Mode detour that added friction
--   **Individual PR merge blocked:** both GitHub's UI and API refused to merge PR #56 into #55 individually on this stacked setup, only allowing a full-stack merge — the entire stack was merged manually via GitHub's "merge full stack" option instead
-
----
-
 **LS-1598** — Design: Services Page — Build Services Page `[Done]`
 
+-   **Services Page PR Stack — merge conflict investigation & resolution:**
+    -   Investigated merge conflicts across the 5-PR Services page stack (#51 → #50 → #54 → #55 → #56)
+    -   **Root cause #1 found:** PR #56 (`batch-4`) had been accidentally rebased onto `develop` at some point instead of its real parent (`batch-3`), duplicating its entire commit history under new hashes — fixed by rebuilding it from just its 6 genuinely new commits on top of `batch-3`, then force-pushing
+    -   **Root cause #2 found:** `CHANGELOG.md` conflict — `develop` had a new entry every branch in the stack was also trying to insert at the same spot — fixed by updating #51 against `develop` first, resolving that one conflict by hand, then flowing the fix upward through #50 → #54 → #55 → #56 in order, each branch only ever touching its real parent, never `develop` directly except #51
+    -   All 5 PRs verified `mergeable: true`, conflicts cleared
+    -   **Mistakes made and corrected along the way:** wrongly dismissed PR #54's conflict as a stale GitHub cache before properly verifying it was real; at one point suggested rebasing the whole stack onto `develop`, which would have repeated the exact mistake that broke #56; took direct pushback before finding the actual conflicting file; got stuck in an unwanted Plan Mode detour that added friction
+    -   **Individual PR merge blocked:** both GitHub's UI and API refused to merge PR #56 into #55 individually on this stacked setup, only allowing a full-stack merge — the entire stack was merged manually via GitHub's "merge full stack" option instead
 -   Services page PR stack merged in full; issue completed
 
 ---
@@ -83,18 +79,26 @@
 
 **LS-3222** — Fix: Mobile Menu — Restore Links and Remove Systems `[Done]`
 
+-   **PR #58 merge conflict resolution:**
+    -   PR #58 showed as conflicting after `develop` moved on 5 commits (Services page build + icon migration, LS-1598/LS-3229)
+    -   Ran a local test merge to confirm scope — the only real conflict was `CHANGELOG.md`, both branches had added a new entry at the top; everything else merged cleanly
+    -   Merged `origin/develop` into the feature branch only, never touched `develop` itself
+    -   Resolved the changelog conflict by keeping both entries — LS-3222's entry on top, `develop`'s existing per-PR entries below, separated by `---`, no content lost or altered
+    -   Verified nothing went missing — diffed the feature branch against `origin/develop` and confirmed all mobile-menu changes (`parts/mobile-menu.html`, `_mega-menu.scss`, accordion styles, spec docs) were still intact
+    -   Committed and pushed to the feature branch only
 -   PR #58 merged — mobile menu link restoration and Systems removal complete; issue completed
 
 ---
 
-**PR #58 — Merge Conflict Resolution (LS-3222)**
+**LS-3223** — Plan New Skills via OpenSpec `[In Progress]`
 
--   PR #58 showed as conflicting after `develop` moved on 5 commits (Services page build + icon migration, LS-1598/LS-3229)
--   Ran a local test merge to confirm scope — the only real conflict was `CHANGELOG.md`, both branches had added a new entry at the top; everything else merged cleanly
--   Merged `origin/develop` into the feature branch only, never touched `develop` itself
--   Resolved the changelog conflict by keeping both entries — LS-3222's entry on top, `develop`'s existing per-PR entries below, separated by `---`, no content lost or altered
--   Verified nothing went missing — diffed the feature branch against `origin/develop` and confirmed all mobile-menu changes (`parts/mobile-menu.html`, `_mega-menu.scss`, accordion styles, spec docs) were still intact
--   Committed and pushed to the feature branch only
+-   **`open-pr` skill given a full PR-workflow upgrade against the LightSpeed "Pull Request & Code Review Workflow" doc** (creation-checklist section only) — closed every identified gap:
+    -   Branch-naming validation, base-branch selection by branch type, review-budget sizing, a full self-review gate (including confirming WCAG 2.2 AA as the current org-wide standard, overriding this repo's older figure), stacked-PR support, draft PR handling, mandatory changelog labelling in the same command call, and a new "Responding to feedback" section
+-   **Adopted LightSpeedWP's official PR templates** — pulled all 20 files from `lightspeedwp/.github`'s template folder and copied them into `ls-theme` so the skill has no external-repo runtime dependency; `open-pr` now resolves and follows the matching org template, layering in only what it lacks; created the 2 required changelog labels in `ls-theme`
+-   **Migrated skill planning from OpenSpec to Spec Kit** per direction — removed the old OpenSpec change folder and re-planned fresh under Spec Kit, running the full pipeline (specify → clarify → plan → tasks → analyze → implement) and producing a complete `specs/002-open-pr-skill/` planning set
+-   **Constitution amended to v1.3.0** — added Principle VIII (Branch, PR & Changelog Discipline) codifying all of the above so future Spec Kit-planned features are automatically checked against this standard; all 7 existing principles preserved, one pre-existing WCAG version inconsistency flagged as an open TODO rather than silently resolved
+-   Confirmed the actual `SKILL.md` artifact remains fully compliant with the agentskills.io packaging spec — unaffected by the planning-tool switch
+-   **19 of 27 tasks complete**; remaining 8 are live-verification tasks deliberately left unchecked until actually run — next step is using the updated skill to open its own real PR as live verification
 
 ---
 
@@ -117,6 +121,7 @@
 -   2.50 hrs - Worked through the Services PR stack by fixing the Icon block recovery and sizing issues, auditing and retesting the remaining console-error tickets while separating real defects from environment noise, and resolving PR #58’s merge conflict while verifying that all feature changes remained intact.
 -   0.30 hrs - Call with Ash regarding the Dev site progress as well as the PR Creation agent. Took notes and organised them for Linear issues as well.
 -   2.0 hrs - Fixed and closed the Services page's title, breadcrumb, and icon "Attempt Recovery" bugs (LS-4206/4208/4207), fixed the oversized `lightspeed/dot` icon padding (LS-4168), merged the full Services page and mobile menu PR stacks, and resolved/root-caused the remaining console-error tickets on LS-2940.
+-   2.15 hrs - Migrated the `open-pr` skill's planning from OpenSpec to Spec Kit, closed every gap against LightSpeed's official PR workflow doc and templates, and amended the repo's Spec Kit constitution to v1.3.0 to codify the new standard.
 
 ## Notes
 
