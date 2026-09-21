@@ -33,18 +33,34 @@
 
 ---
 
+**Icon Sourcing — `ls-plugin` `lightspeed` Collection Audit**
+
+-   Audited 17 design mockup images against the existing `lightspeed` icon collection across 3 rounds, confirming which icons already existed and flagging genuinely missing ones
+-   **8 new icons identified and added**, all `phosphor-icons/core` regular weight, matching the collection's convention: `circle`, `coins`, `hard-drives`, `chart-bar`, `users-three`, `paper-plane-tilt`, `git-fork`, `chat-circle-dots`
+-   `users-three` confirmed as the correct icon for the "Your Role" use case after a judgment call
+-   Branch `feature/ls-source-additional-lightspeed-icons` created off `develop`, matching repo naming convention
+-   **PR opened via `/open-pr`** — validated repo conventions against 3 prior icon PRs as precedent, ran `plugin:validate`, `security:scan`, and `xmllint` checks; PR #26 opened against `develop` with correct labels and assignee; matching `CHANGELOG.md` entry added in a follow-up commit
+-   **Open item:** the PR's test plan still has "icons appear correctly in the block editor's icon picker on WP 7.1+" unchecked — needs manual verification in an actual WordPress environment
+
+---
+
 **LS-4179** — Design: Discover Page — Build Discover Page `[Backlog]`
 
--   Working on branch `feature/ls-4179-build-discover-page`, local-only, not yet pushed
--   **4 patterns built, none committed yet — pending review:**
+-   Working on branch `feature/ls-4179-build-discover-page`
+-   **4 patterns built initially:**
     -   `discover-hero.php` — breadcrumb, "Phase 01" badge, heading, description, CTAs, share pill; full-bleed, permanently dark, with a subtle grid texture and radial phase-colour glow
     -   `phase-journey-nav.php` — reusable "Journey Phases" strip that auto-detects the current page by slug and highlights the active phase; built standalone so it can be reused unchanged on the future Create/Build/Launch/Grow/Evolve phase pages
     -   `discover-delivery-numbers.php` — 3-stat row reusing the existing Stat Segment style
     -   `discover-introduction.php` — two-column intro text section
 -   **New button styles added:** `button-phase-primary`/`button-phase-outline` — dedicated pill CTA styles for phase-page heroes, since sitewide button colours normally flip with the light/dark style variation but these heroes stay permanently dark
--   **Tokens added:** `phase.discover-on-dark` (theme.json + styles/dark.json), since the shipped `phase.discover` token was too dark to read on this hero's permanent black background; also a `heading-tight` line-height token for the hero's H1 — everything else reuses existing tokens and conventions
--   All changes validated (`php -l`, `phpcs`, schema/escape/security scans) clean; verified live locally across desktop/mobile, hover/focus states, and confirmed no block editor validation warnings or contrast issues
--   **Still open:** remaining Figma sections to extract and confirm against full page scope, design QA against Figma, SEO metadata, full responsive pass, and PR — nothing committed or pushed yet
+-   **Tokens added:** `phase.discover-on-dark` (theme.json + styles/dark.json), since the shipped `phase.discover` token was too dark to read on this hero's permanent black background; also a `heading-tight` line-height token for the hero's H1
+-   **3 commits made and pushed to origin:**
+    -   Initial 4 patterns + phase-hero button styles + tokens
+    -   Hero rebuilt to match the Figma prototype — full-bleed dark hero, grid + radial glow, compact phase pill, centred content stack, phase-coloured heading
+    -   Final visual refinement pass — fixed heading to wrap as the intended 2 lines instead of 3, rebalanced primary/secondary CTA widths and removed the arrow glyph from the secondary CTA, reduced background grid opacity to match reference, bumped "Send to a friend" text to the 16px preset and fixed its icon (`lightspeed/paper-plane-tilt` was silently blank before it existed in the collection — now resolved via the icon-sourcing PR above), added a subtle hover/focus state to that link
+-   Audited every icon reference across all 4 Discover patterns against the real `lightspeed` collection — confirmed all resolve correctly via the WordPress core Icon block
+-   All changes validated (`phpcs`, schema/escape/security scans) and manually QA'd (desktop/mobile, hover states, block editor with no validation warnings) clean throughout
+-   **Still open:** design QA against the remaining Figma frames, SEO metadata, full responsive pass, and PR review
 
 ---
 
@@ -53,6 +69,7 @@
 -   4.30 hrs - Reworked and corrected the pr-agent consolidation plan, fully merged the two overlapping PR agents into one tested, spec-compliant agent, and opened it for review across 3 stacked PRs with all CI issues resolved.
 -   1.40 hrs - Verified and applied all CodeRabbit feedback on PR #3400, completed the Spec Kit tasks/checklist/analyze cycle for the remaining work, closed a real undocumented CI policy gap, and got all 3 PRs re-verified as mergeable after two rounds of develop moving underneath them.
 -   2.0 hrs - Built the first 4 Discover page patterns (hero, phase-journey nav, delivery stats, intro) with new phase-specific button styles and dark-mode tokens, all validated and tested locally
+-   1.40 hrs - Sourced and added 8 missing icons to the `ls-plugin` icon collection with PR #26 opened, then used one of them to fix a silently-blank icon while refining the Discover hero's visuals across 3 committed pushes.
 
 ---
 
