@@ -33,10 +33,26 @@
 
 ---
 
+**LS-4179** — Design: Discover Page — Build Discover Page `[Backlog]`
+
+-   Working on branch `feature/ls-4179-build-discover-page`, local-only, not yet pushed
+-   **4 patterns built, none committed yet — pending review:**
+    -   `discover-hero.php` — breadcrumb, "Phase 01" badge, heading, description, CTAs, share pill; full-bleed, permanently dark, with a subtle grid texture and radial phase-colour glow
+    -   `phase-journey-nav.php` — reusable "Journey Phases" strip that auto-detects the current page by slug and highlights the active phase; built standalone so it can be reused unchanged on the future Create/Build/Launch/Grow/Evolve phase pages
+    -   `discover-delivery-numbers.php` — 3-stat row reusing the existing Stat Segment style
+    -   `discover-introduction.php` — two-column intro text section
+-   **New button styles added:** `button-phase-primary`/`button-phase-outline` — dedicated pill CTA styles for phase-page heroes, since sitewide button colours normally flip with the light/dark style variation but these heroes stay permanently dark
+-   **Tokens added:** `phase.discover-on-dark` (theme.json + styles/dark.json), since the shipped `phase.discover` token was too dark to read on this hero's permanent black background; also a `heading-tight` line-height token for the hero's H1 — everything else reuses existing tokens and conventions
+-   All changes validated (`php -l`, `phpcs`, schema/escape/security scans) clean; verified live locally across desktop/mobile, hover/focus states, and confirmed no block editor validation warnings or contrast issues
+-   **Still open:** remaining Figma sections to extract and confirm against full page scope, design QA against Figma, SEO metadata, full responsive pass, and PR — nothing committed or pushed yet
+
+---
+
 ## Time Logs
 
 -   4.30 hrs - Reworked and corrected the pr-agent consolidation plan, fully merged the two overlapping PR agents into one tested, spec-compliant agent, and opened it for review across 3 stacked PRs with all CI issues resolved.
 -   1.40 hrs - Verified and applied all CodeRabbit feedback on PR #3400, completed the Spec Kit tasks/checklist/analyze cycle for the remaining work, closed a real undocumented CI policy gap, and got all 3 PRs re-verified as mergeable after two rounds of develop moving underneath them.
+-   2.0 hrs - Built the first 4 Discover page patterns (hero, phase-journey nav, delivery stats, intro) with new phase-specific button styles and dark-mode tokens, all validated and tested locally
 
 ---
 
