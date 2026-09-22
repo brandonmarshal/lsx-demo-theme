@@ -24,8 +24,8 @@
     -   **Updated all 3 PRs against a 6-item documentation checklist:** added a "Status" section to each reflecting real current CI/mergeable state (#3403 genuinely `CONFLICTING`/`DIRTY` against #3401, linked to issue #3438); confirmed all 3 already use the correct routed PR template; added a missing DoD checklist section to #3400 and refreshed all 3 to current truth; filled in real Keep-a-Changelog-style entries on each PR and on root `CHANGELOG.md`; added Linear + PR links to the agent's own `CHANGELOG.md`; replaced the plain "Part of LS-4214" footer with a proper "Related Issues" section on all 3
     -   Rewrote GitHub issue #3438 into the correct Refactor template structure, preserving all existing content — pure structural remap, nothing deleted
     -   Reviewed #3401's human approval (Zared) — confirmed one real, not-yet-actioned finding (2 files still referencing a pre-restructuring flat file path) as still true against current repo state, recommended as a small follow-up commit pending go-ahead
--   **Current state:** all 3 PRs' documentation now accurate and complete; #3403 still has a real, unresolved merge conflict against #3401; the 2 stale flat-path references remain outstanding pending approval to fix
--   I rebased the stack in dependency order (`aiops`→`develop`, `refactor`→`aiops`, `fix`→`refactor`), resolving the `pr-creation-agent` deletion conflict by keeping the deletion and the `CHANGELOG.md` conflicts by hand-merging both sides' entries, verifying ancestry and a full passing test/lint run before each push.
+-   **Stack merged** — PRs #3400, #3401, and #3403 all merged to `develop`, completing User Story 1 (the `pr-creation-agent` → `pr-agent` merge and Agent Skills restructure); `agents/pr-agent/` is now the single, portable, tested PR agent, `agents/pr-creation-agent/` no longer exists
+-   **Current state:** Stories 2–4 remain for a follow-up stack; the 2 stale flat-path references from #3401's review are still outstanding pending approval to fix
 
 ---
 
@@ -63,7 +63,7 @@
 -   1.20 hrs - Diagnosed the recurring stacked-PR conflict cycle, restored correct branch ancestry through rebasing, verified CodeRabbit changes and PR state, and established a repeatable verification process while identifying concurrent branch updates as the main source of continued churn.
 -   2.30 hrs - Refined the Journey Phases navigation layout, responsive behaviour and full interactive states, fixed incorrect phase URLs and WordPress redirect behaviour, restored the live pattern reference on the test page, and completed supporting CSS/Sass integration work ahead of further design QA.
 -   0.10 hrs - Reviewed the agent PR conflict-resolution process and branching rules, clarified required PR/issue linking and the invalid epic branch prefix, and agreed on the remaining cleanup and reviewer follow-up actions.
--   1.30 hrs - LS-4214: Finished CodeRabbit review, then shifted to human-only review per management decision and brought all 3 PRs' documentation (status, checklists, changelogs) fully up to date.Also rebased and resolved all merge conflicts across all 3 PR's.
+-   2.0 hrs - LS-4214: Finished CodeRabbit review, shifted to human-only review per management decision, brought all 3 PRs' documentation fully up to date, rebased and resolved all merge conflicts across them, and merged the full stack to `develop`, completing the pr-agent consolidation with Stories 2–4 left for a follow-up.
 -   1.15 hrs - LS-4179: Fixed a repeat flattened-pattern bug on the Create page, renamed the Discover-only patterns for reuse, and scaffolded all 6 phase pages with live pattern references on the test site.
 
 ---
