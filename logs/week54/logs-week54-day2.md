@@ -61,6 +61,9 @@
 -   **Bug found and fixed:** `phase-support-focus.php`'s CTA button was unstyled, rendering in the sitewide default colour instead of the Discover phase accent — fixed by applying the correct phase button style
 -   **Environment issue found and noted:** new pattern files didn't register in WordPress until the theme's pattern-file cache was manually cleared — a transient that doesn't auto-invalidate when new files are added
 -   Confirmed the Discover page's original 4 patterns still show pre-existing "Attempt recovery" banners carried over from earlier in the branch — none of the 5 new patterns affected, verified via live editor console check
+-   **Light-mode colour contrast bug found and fixed:** 6 phase section patterns were using the permanently-dark `phase.discover-on-dark` token for their accent colour, which resolves to the same bright green regardless of light/dark mode — on these 6 adaptive (not forced-dark) patterns, this meant light mode rendered a bright dark-surface-only green directly on a light background instead of the correct, accessible adaptive value, a real accessibility issue, not just a visual nitpick
+-   Fixed by switching all 6 patterns to the plain adaptive `phase.discover` token; `phase-hero.php` and `phase-journey-nav.php` correctly kept `phase.discover-on-dark` since those two are genuinely permanently-dark; swept the whole `patterns/` directory to confirm zero remaining incorrect occurrences, `php -l` clean on all 6 changed files
+-   Currently investigating why the fix isn't yet showing on the live test site — likely a caching or pattern-reattachment issue, same class as previous sessions
 -   All new work validated (`php -l`, live front-end rendering, Site Editor validation check, visual QA against each Figma frame) clean
 -   **Still open:** content and phase colours for Create/Build/Launch/Grow/Evolve, the Pattern Overrides conversion, design QA against remaining Figma frames, SEO metadata, full responsive pass, and PR review
 
@@ -84,6 +87,7 @@
 -   2.0 hrs - LS-4214: Finished CodeRabbit review, shifted to human-only review per management decision, brought all 3 PRs' documentation fully up to date, rebased and resolved all merge conflicts across them, and merged the full stack to `develop`, completing the pr-agent consolidation with Stories 2–4 left for a follow-up.
 -   1.15 hrs - LS-4179: Fixed a repeat flattened-pattern bug on the Create page, renamed the Discover-only patterns for reuse, and scaffolded all 6 phase pages with live pattern references on the test site.
 -   2.50 hrs - Fixed the Journey Phases nav's block-validation errors and refined the Delivery Numbers section to match the prototype, then built 5 new shared, reusable section patterns from Figma — all designed to work unchanged across every phase page once their content and colours are swapped in.
+-   1.20 hrs - Fixed a real light-mode accessibility contrast bug caused by 6 patterns using the wrong dark-only colour token, and is now investigating why the fix isn't showing on the test site.
 
 ---
 
