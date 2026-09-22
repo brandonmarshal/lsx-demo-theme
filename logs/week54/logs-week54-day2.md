@@ -44,7 +44,25 @@
 -   **Reuse groundwork — 3 Discover-only patterns renamed to generic phase-page patterns (not yet committed):** `discover-hero.php` → `phase-hero.php`, `discover-delivery-numbers.php` → `phase-delivery-numbers.php`, `discover-introduction.php` → `phase-introduction.php`, plus matching SCSS/CSS class/PHP variable renames throughout
 -   **Shared structure approach agreed:** a shared page template was considered and ruled out since content differs per phase; a synced pattern with Overrides is the agreed direction so structure/styling stays centrally defined while each phase page keeps its own text/colour — conversion itself still to come
 -   **All 6 phase pages scaffolded on the local test site:** confirmed Discover/Create/Launch/Grow/Evolve already existed under `/services/`, created the missing Build page; all 6 now carry the same 4 live pattern references and correctly highlight only their own phase in the nav, verified via HTTP 200 + active-state check on each
--   **Still open:** content and phase colours for Create/Build/Launch/Grow/Evolve (pending reference images), the Overrides conversion, design QA against remaining Figma frames, SEO metadata, full responsive pass, and PR review
+-   **Journey Phases nav "Attempt Recovery" editor warnings fixed:**
+    -   Root cause 1: nav bar's inline style was missing `padding-top`/`padding-bottom` and its property order didn't match WordPress's serializer
+    -   Root cause 2: each step's accent colour was injected as a raw inline CSS custom property with no equivalent in `core/group`'s style schema, so it could never pass re-serialization
+    -   Fixed by correcting the padding and moving the accent colour into 6 new per-phase modifier classes in `phase-journey-nav.scss`; verified zero invalid blocks across the nav tree on all 6 phase pages
+-   **`phase-delivery-numbers.php` refined to match the prototype:** reduced section padding and removed top/bottom margin against the nav above it; background switched from `surface.canvas` to `surface.card` for a softer lifted panel tone; removed a redundant full-height divider in favour of the stat-segment style's own trailing divider; constrained description text width; unified heading/description to the 16px token; tightened line-height/letter-spacing and consolidated spacing to a single blockGap value; muted description colour from `text.muted` to `text.subtle`
+-   **Discover-only content overrides applied at the database level (not pattern changes):** the 3 stat numbers and the "Introduction" eyebrow label on the Discover page specifically now use the Discover phase colour token instead of the shared generic brand colour — confirmed the shared pattern files and other 5 phase pages remain unaffected
+-   **Also fixed in passing:** a stray orphaned block comment in the Discover page's stored content that was silently preventing the stats and introduction sections from rendering at all
+-   **5 new shared section patterns built from Figma, all designed to run unchanged across all 6 phase pages once copy/colour is swapped in:**
+    -   `phase-common-services.php` — "What happens during [Phase]" heading, pill list, footnote panel
+    -   `phase-services-in-phase.php` — auto-detects the current phase page and renders only that phase's service card(s) from an internal services-by-phase map kept in sync with `services-service-tiles.php`, needing zero manual per-page edits
+    -   `phase-support-focus.php` — two-column "Built to support [topic]" section with a bordered focus-area list and CTA
+    -   `phase-deliverables-and-role.php` — "What you receive and your role" two-card section
+    -   `phase-cta.php` — closing CTA reusing the existing phase button styles
+-   Zero new SCSS across all 5 — every visual treatment reuses existing classes/tokens; Discover green applied via the existing phase-on-dark token, no hardcoded hex
+-   **Bug found and fixed:** `phase-support-focus.php`'s CTA button was unstyled, rendering in the sitewide default colour instead of the Discover phase accent — fixed by applying the correct phase button style
+-   **Environment issue found and noted:** new pattern files didn't register in WordPress until the theme's pattern-file cache was manually cleared — a transient that doesn't auto-invalidate when new files are added
+-   Confirmed the Discover page's original 4 patterns still show pre-existing "Attempt recovery" banners carried over from earlier in the branch — none of the 5 new patterns affected, verified via live editor console check
+-   All new work validated (`php -l`, live front-end rendering, Site Editor validation check, visual QA against each Figma frame) clean
+-   **Still open:** content and phase colours for Create/Build/Launch/Grow/Evolve, the Pattern Overrides conversion, design QA against remaining Figma frames, SEO metadata, full responsive pass, and PR review
 
 ---
 
@@ -65,6 +83,7 @@
 -   0.10 hrs - Reviewed the agent PR conflict-resolution process and branching rules, clarified required PR/issue linking and the invalid epic branch prefix, and agreed on the remaining cleanup and reviewer follow-up actions.
 -   2.0 hrs - LS-4214: Finished CodeRabbit review, shifted to human-only review per management decision, brought all 3 PRs' documentation fully up to date, rebased and resolved all merge conflicts across them, and merged the full stack to `develop`, completing the pr-agent consolidation with Stories 2–4 left for a follow-up.
 -   1.15 hrs - LS-4179: Fixed a repeat flattened-pattern bug on the Create page, renamed the Discover-only patterns for reuse, and scaffolded all 6 phase pages with live pattern references on the test site.
+-   2.50 hrs - Fixed the Journey Phases nav's block-validation errors and refined the Delivery Numbers section to match the prototype, then built 5 new shared, reusable section patterns from Figma — all designed to work unchanged across every phase page once their content and colours are swapped in.
 
 ---
 
