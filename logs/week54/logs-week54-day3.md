@@ -23,6 +23,25 @@
 
 ---
 
+**LS-4179** — Design: Discover Page — Build Discover Page `[Backlog]`
+
+-   **Phase Delivery Numbers colour fix confirmed live and verified** on the actual test site
+-   **`phase-deliverables-and-role.php` refined:** widened heading wrapper to one line; restored native equal-height column stretch after removing a stray disabling attribute; contained and centred the two-card row; resized card text to match reference; fixed misaligned bullet dots against wrapped list text using measured geometry; card padding/background tuning reverted to transparent/border-only after a solid-fill attempt didn't land
+-   **`phase-cta.php` refined:** heading kept to one line via an independent width wrapper and rebalanced 62/38 columns; paragraph and button padding tightened without touching the shared button styles also used by the hero
+-   **Real accessibility bug found and fixed:** the checklist's white check icon on its green circle measured 1.61:1 contrast, well under the WCAG 3:1 minimum for graphical elements — switched to the same near-black pairing already used by the Primary button on that background, now measuring 13:1
+-   Added a new background grid to `phase-cta.scss` (same technique as the hero's own grid, own scoped class); gutter widened; content switched back to a plain wide-aligned row matching other phase patterns
+-   **`phase-services-in-phase.php` fixed:** card width/layout corrected for a lone-service case, heading demoted to H3 fixing a pre-existing heading-level skip, phase-accented icon well applied, hover-state colours corrected from a generic fallback to the actual phase colour
+-   **`phase-support-focus.php` refined (parallel session, reviewed and included):**
+    -   Eyebrow/heading widened to one line, top margin added for breathing room, two-column container narrowed/centred with a wider gutter, typography tightened
+    -   Filled dot bullet replaced with a hollow outlined circle in the Discover accent colour; CTA arrow confirmed matching the site's primary-button convention
+    -   **Bugs found and fixed:** hardcoded pixel container widths replaced with the theme's proper `align:"wide"` token; a gutter change that produced no visible difference was reverted; bullet vertical alignment corrected from top to center
+    -   **The recurring flattened-pattern bug hit again** — root-caused as the same frozen static-copy issue seen repeatedly on this branch; fixed via direct database re-sync, flagged that the remaining 5 phase pages will hit the same issue once built out
+    -   **Editor crash fixed:** "cannot be previewed" error traced to an invalid `"flow"` layout type on 2 wrapper groups, corrected to `"default"`
+    -   2 CHANGELOG entries added under `[Unreleased]` for this pattern's work
+-   **Still open:** content and phase colours for Create/Build/Launch/Grow/Evolve, the Pattern Overrides conversion, design QA against remaining Figma frames, SEO metadata, full responsive pass, and PR review
+
+---
+
 **Meeting — Ash Shaw: AI Agent Architecture & Interactive NotebookLM Reporting**
 
 -   **Interactive NotebookLM report reviewed** — flashcards covering concepts like context rot (model accuracy/recall degrading as context window token count grows); report customisation options (prompt style, sentence length) and UI tips (minimise the source sidebar, attempt the self-assessment questions) walked through
@@ -41,6 +60,7 @@
 
 -   2.40 hrs - LS-4214: Completed two doc-alignment audits, updated Story 2's spec with 5 new requirements and a scope correction on stack-restructuring advice, and left it fully planned and ready to implement next session.
 -   0.20 hrs - Meeting with Ash regarding new NoteBookLM setup
+-   2.0 hrs - Refined the Deliverables/Role, CTA, Services-in-Phase, and Support Focus patterns, fixing a real WCAG contrast failure and the same recurring flattened-pattern bug once again.
 
 ---
 
