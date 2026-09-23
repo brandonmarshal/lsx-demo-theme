@@ -38,6 +38,18 @@
     -   **The recurring flattened-pattern bug hit again** — root-caused as the same frozen static-copy issue seen repeatedly on this branch; fixed via direct database re-sync, flagged that the remaining 5 phase pages will hit the same issue once built out
     -   **Editor crash fixed:** "cannot be previewed" error traced to an invalid `"flow"` layout type on 2 wrapper groups, corrected to `"default"`
     -   2 CHANGELOG entries added under `[Unreleased]` for this pattern's work
+-   **Section background rebalance across the phase patterns:** `phase-support-focus.php`, `phase-common-services.php`, and `phase-delivery-numbers.php` now correctly carry the card background; `phase-services-in-phase.php` and `phase-deliverables-and-role.php` reverted to default canvas; equalised the spacing above `phase-support-focus.php`'s content row and CTA button
+-   **3 mobile layout bugs found and fixed:**
+    -   `phase-delivery-numbers.php` — stat dividers stayed vertical after stacking to one column on mobile; fixed by porting the existing homepage Stats Bar's own mobile fix, which this pattern had been missing
+    -   `phase-common-services.php` — pill list broke badly on mobile (stretched pills, jagged widths, a bullet dot floating at the vertical midpoint of wrapped two-line labels); restructured to single-column below 782px and re-anchored the dot to the first line using a token-driven calculation rather than a guessed offset
+    -   `phase-support-focus.php` — same first-line bullet-alignment bug on its focus-area list, fixed with the same technique sized to this list's own geometry
+    -   Also caught and fixed another instance of the invalid `"flow"` layout type on 2 more `phase-support-focus.php` wrapper groups, corrected to `"default"`
+-   **2 new shared patterns built from Figma:**
+    -   `phase-faq.php` — FAQ section authored with Discover's 5 real questions, reusing the existing Yoast FAQ block/accordion component as-is
+    -   `phase-where-to-go-next.php` — "Where to go next" section; the source Figma frame's grid was actually broken (4-column template with only 2 cards, mismatched min-width causing overlap) — built a real 2-column row instead, matching the working prototype; reused the existing Card - Link Row style and Link Arrow Accent convention
+    -   Both patterns' shared hover/accent colours default to a generic sitewide accent since the underlying components are reused elsewhere; added 2 new phase-scoped override files so phase pages read their own accent colour without touching those shared components' defaults anywhere else
+    -   Zero new colour tokens — confirmed all spacing/typography/radius values already existed
+-   All new/changed files validated (`php -l`, escape/security scan) clean, with one confirmed pre-existing false-positive noted rather than silently "fixed"; both new patterns temporarily tested live on the Discover page (open/close states, accent colours, mobile at 375px) before finalising
 -   **Still open:** content and phase colours for Create/Build/Launch/Grow/Evolve, the Pattern Overrides conversion, design QA against remaining Figma frames, SEO metadata, full responsive pass, and PR review
 
 ---
@@ -61,6 +73,7 @@
 -   2.40 hrs - LS-4214: Completed two doc-alignment audits, updated Story 2's spec with 5 new requirements and a scope correction on stack-restructuring advice, and left it fully planned and ready to implement next session.
 -   0.20 hrs - Meeting with Ash regarding new NoteBookLM setup
 -   2.0 hrs - Refined the Deliverables/Role, CTA, Services-in-Phase, and Support Focus patterns, fixing a real WCAG contrast failure and the same recurring flattened-pattern bug once again.
+-   2.50 hrs - Rebalanced section backgrounds, fixed 3 real mobile layout bugs, and built 2 new shared patterns (FAQ and Where to Go Next) for the phase pages.
 
 ---
 
